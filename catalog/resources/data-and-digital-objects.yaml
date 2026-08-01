@@ -13,13 +13,30 @@ resources:
   - repositories
   - transfer systems
   mechanism: Manifest-based packaging and fixity verification for reliable transfer
-  description: Manifest-based packaging format for transferring digital content with fixity and completeness checks.
-  evidence_level: A
-  maintenance_signal: Stable
-  north_star_utility: High
+  summary: Manifest-based packaging format for transferring digital content with fixity and completeness checks.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: Internet Engineering Task Force (IETF)
+    type: standards-body
+    url: https://www.ietf.org/
+  domains:
+  - cross-domain
+  - digital-preservation
+  source_urls:
+  - https://datatracker.ietf.org/doc/html/rfc8493
+  - https://github.com/LibraryOfCongress/bagit-python
+  alternatives:
+  - ro-crate
+  related_resource_ids: []
   decision_basis: Simple, durable mechanism for exchanging content packages with integrity evidence.
   boundary_note: Lower semantic expressiveness than RO-Crate; complementary for transfer and fixity.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: combine-omex-archive
   name: COMBINE/OMEX Archive
@@ -36,14 +53,31 @@ resources:
   - data
   - metadata
   mechanism: Archive format bundling models, simulations, metadata, and related files
-  description: Archive format bundling models, simulations, metadata, and related files; connects computational
-    models, simulation descriptions, data, and metadata.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
+  summary: Archive format bundling models, simulations, metadata, and related files; connects computational models,
+    simulation descriptions, data, and metadata.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - institutional-adoption
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  stewardship:
+    name: COMBINE Archive community
+    type: community
+    url: https://combinearchive.org/
+  domains:
+  - computational-biology
+  - systems-biology
+  source_urls:
+  - https://combinearchive.org/
+  - https://github.com/SemsProject/CombineArchive
+  alternatives: []
+  related_resource_ids: []
   decision_basis: Mature domain package enabling interoperable computational biology studies.
-  boundary_note: Domain exemplar with strong relation to SED-ML and SBML.
+  boundary_note: Domain exemplar with strong relation to SED-ML and SBML; closest general alternative RO-Crate remains in group A migration.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: fair-signposting
   name: FAIR Signposting
@@ -59,14 +93,31 @@ resources:
   - landing pages
   - metadata and content resources
   mechanism: Typed HTTP Link relations exposing identifiers, metadata, licenses, and files
-  description: Typed HTTP Link relations that let machine clients discover identifiers, metadata, licenses, and
-    files from repository landing pages.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
+  summary: Typed HTTP Link relations that let machine clients discover identifiers, metadata, licenses, and files
+    from repository landing pages.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: documented-tests
+  stewardship:
+    name: Signposting community
+    type: community
+    url: https://signposting.org/
+  domains:
+  - cross-domain
+  - scholarly-communication
+  source_urls:
+  - https://signposting.org/
+  - https://doi.org/10.5281/zenodo.10490289
+  alternatives: []
+  related_resource_ids: []
   decision_basis: Lightweight operational bridge allowing machines to navigate research objects across repositories.
-  boundary_note: Complements repository APIs and packaging formats.
+  boundary_note: Complements repository APIs and packaging formats; not a packaging or provenance standard.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: ro-crate
   name: RO-Crate
@@ -85,15 +136,35 @@ resources:
   - instruments
   - publications
   mechanism: JSON-LD research-object packaging with profiles and contextual entities
-  description: JSON-LD packaging for exchanging data, software, workflows, people, instruments, and provenance as
+  summary: JSON-LD packaging for exchanging data, software, workflows, people, instruments, and provenance as
     a coherent research object.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - public-validator
+  - independent-implementation
+  implementation_status: multiple-independent
+  conformance_status: public-validator
+  stewardship:
+    name: Research Object community
+    type: community
+    url: https://www.researchobject.org/
+  domains:
+  - cross-domain
+  source_urls:
+  - https://www.researchobject.org/ro-crate/specification/1.3/
+  - https://github.com/crs4/rocrate-validator
+  alternatives:
+  - bagit
+  related_resource_ids:
+  - workflow-ro-crate
+  - workflow-run-ro-crate
+  - workflow-testing-ro-crate
   decision_basis: One of the strongest cross-domain mechanisms for packaging heterogeneous scientific objects and
     context.
-  boundary_note: Use profiles to distinguish specialized use cases.
+  boundary_note: Use profiles to distinguish specialized use cases; packaging is distinct from execution provenance profiles.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: workflow-ro-crate
   name: Workflow RO-Crate
@@ -109,14 +180,33 @@ resources:
   - registries
   - metadata consumers
   mechanism: RO-Crate profile for packaging computational workflows and their metadata
-  description: RO-Crate profile for publishing portable workflow definitions, metadata, diagrams, examples, and
-    tests.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
+  summary: RO-Crate profile for publishing portable workflow definitions, metadata, diagrams, examples, and tests.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - institutional-adoption
+  implementation_status: reference-and-others
+  conformance_status: documented-tests
+  stewardship:
+    name: WorkflowHub / ELIXIR
+    type: consortium
+    url: https://workflowhub.eu/
+  domains:
+  - computational-workflows
+  - cross-domain
+  source_urls:
+  - https://about.workflowhub.eu/Workflow-RO-Crate/
+  - https://workflowhub.eu/
+  alternatives: []
+  related_resource_ids:
+  - ro-crate
+  - workflow-run-ro-crate
+  - workflow-testing-ro-crate
   decision_basis: Connects workflow authors, registries, and downstream systems through a portable research object.
   boundary_note: Distinct from execution provenance, which belongs to Workflow Run RO-Crate.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: workflow-run-ro-crate
   name: Workflow Run RO-Crate
@@ -133,14 +223,36 @@ resources:
   - archives
   - result consumers
   mechanism: Portable representation of workflow execution provenance and outputs
-  description: RO-Crate profile for exchanging workflow-run inputs, outputs, software, execution records, and provenance
+  summary: RO-Crate profile for exchanging workflow-run inputs, outputs, software, execution records, and provenance
     across workflow systems.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - independent-implementation
+  implementation_status: reference-and-others
+  conformance_status: documented-tests
+  stewardship:
+    name: Research Object community
+    type: community
+    url: https://www.researchobject.org/
+  domains:
+  - computational-workflows
+  - provenance
+  source_urls:
+  - https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/
+  - https://github.com/ResearchObject/workflow-run-crate
+  alternatives:
+  - cwlprov
+  related_resource_ids:
+  - ro-crate
+  - workflow-ro-crate
+  - cwlprov
+  - w3c-prov
   decision_basis: Direct cross-engine evidence format with multiple implementations and strong North-Star utility.
   boundary_note: Profile conformance does not alone prove semantic equivalence across implementations.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: workflow-testing-ro-crate
   name: Workflow Testing RO-Crate
@@ -155,12 +267,29 @@ resources:
   - monitoring services
   - CI systems
   mechanism: Research-object profile for packaging workflow tests, inputs, expected outputs, and services
-  description: Portable research-object profile for exchanging workflow test suites, inputs, expected outputs, and
+  summary: Portable research-object profile for exchanging workflow test suites, inputs, expected outputs, and
     test services.
-  evidence_level: B
-  maintenance_signal: Current
-  north_star_utility: High
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  implementation_status: reference-and-others
+  conformance_status: documented-tests
+  stewardship:
+    name: Research Object community
+    type: community
+    url: https://www.researchobject.org/
+  domains:
+  - computational-workflows
+  source_urls:
+  - https://w3id.org/ro/wftest
+  - https://lifemonitor.eu/
+  alternatives: []
+  related_resource_ids:
+  - workflow-ro-crate
+  - lifemonitor
   decision_basis: Makes workflow tests portable across registries and monitoring systems.
   boundary_note: Adoption should be reviewed alongside LifeMonitor and WorkflowHub.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
