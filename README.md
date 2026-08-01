@@ -54,6 +54,7 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 - [OBO Foundry](https://obofoundry.org/) - Shared principles, identifiers, and governance for interoperable open biomedical ontologies.
 - [QUDT](https://www.qudt.org/) - Ontologies for quantities, units, dimensions, and data types that preserve measurement meaning across scientific systems.
 - [Schema.org](https://schema.org/) - Shared web vocabulary used by scientific profiles to expose structured resources to search engines and machine clients.
+- [SDMX](https://sdmx.org/standards-2/) - ISO-backed standard for exchanging statistical data structures, constraints, and payloads through REST APIs and SDMX-JSON or SDMX-ML; connects national statistical offices, international agencies, and analysis systems.
 - [Simple Knowledge Organization System (SKOS)](https://www.w3.org/TR/skos-reference/) - RDF model for publishing, mapping, and exchanging thesauri, taxonomies, and controlled vocabularies.
 - [SOSA/SSN](https://www.w3.org/TR/vocab-ssn/) - W3C and OGC ontologies connecting sensors, observations, samples, actuators, and platforms.
 - [SpatioTemporal Asset Catalog (STAC)](https://stacspec.org/) - Common metadata model and APIs for spatiotemporal assets; connects geospatial assets, catalogs, clients, and cloud storage.

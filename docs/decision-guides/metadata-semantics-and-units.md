@@ -1,8 +1,8 @@
 # Metadata semantics and units
 
-Compare general vocabularies, scientific profiles, domain conventions, and unit systems. Connect broad web semantics to domain profiles where the catalog lists both. Catalog entries: [resource:schema-org], [resource:bioschemas], [resource:w3c-data-catalog-vocabulary-dcat], [resource:simple-knowledge-organization-system-skos], [resource:obo-foundry], [resource:edam-ontology], [resource:sosa-ssn], [resource:qudt], [resource:unified-code-for-units-of-measure-ucum], [resource:spatiotemporal-asset-catalog-stac], [resource:climate-and-forecast-cf-metadata-conventions], [resource:darwin-core], [resource:ddi-lifecycle], [resource:croissant].
+Compare general vocabularies, scientific profiles, domain conventions, and unit systems. Connect broad web semantics to domain profiles where the catalog lists both. Catalog entries: [resource:schema-org], [resource:bioschemas], [resource:w3c-data-catalog-vocabulary-dcat], [resource:simple-knowledge-organization-system-skos], [resource:obo-foundry], [resource:edam-ontology], [resource:sosa-ssn], [resource:qudt], [resource:unified-code-for-units-of-measure-ucum], [resource:spatiotemporal-asset-catalog-stac], [resource:climate-and-forecast-cf-metadata-conventions], [resource:darwin-core], [resource:ddi-lifecycle], [resource:sdmx], [resource:croissant].
 
-**Primary sources inspected:** [Schema.org](https://schema.org/), [Bioschemas profiles](https://bioschemas.org/profiles/), [DCAT 3](https://www.w3.org/TR/vocab-dcat-3/), [SKOS](https://www.w3.org/TR/skos-reference/), [OBO Foundry](http://obofoundry.org/), [EDAM](http://edamontology.org/), [SOSA/SSN](https://www.w3.org/TR/vocab-ssn/), [QUDT](https://www.qudt.org/), [UCUM](https://ucum.org/), [STAC specification](https://github.com/radiantearth/stac-spec), [CF Conventions](https://cfconventions.org/), [Darwin Core](https://dwc.tdwg.org/), [DDI Lifecycle](https://ddialliance.org/Specification/DDI-Lifecycle), [Croissant 1.1](https://docs.mlcommons.org/croissant/docs/croissant-spec-1.1.html).
+**Primary sources inspected:** [Schema.org](https://schema.org/), [Bioschemas profiles](https://bioschemas.org/profiles/), [DCAT 3](https://www.w3.org/TR/vocab-dcat-3/), [SKOS](https://www.w3.org/TR/skos-reference/), [OBO Foundry](http://obofoundry.org/), [EDAM](http://edamontology.org/), [SOSA/SSN](https://www.w3.org/TR/vocab-ssn/), [QUDT](https://www.qudt.org/), [UCUM](https://ucum.org/), [STAC specification](https://github.com/radiantearth/stac-spec), [CF Conventions](https://cfconventions.org/), [Darwin Core](https://dwc.tdwg.org/), [DDI Lifecycle](https://ddialliance.org/Specification/DDI-Lifecycle), [SDMX standards](https://sdmx.org/standards-2/), [Croissant 1.1](https://docs.mlcommons.org/croissant/docs/croissant-spec-1.1.html).
 
 ## General vocabularies and scientific profiles
 
@@ -24,6 +24,7 @@ Compare general vocabularies, scientific profiles, domain conventions, and unit 
 | [resource:climate-and-forecast-cf-metadata-conventions] | Climate/forecast NetCDF | Variables, coordinates, units in arrays | STAC catalog JSON; BagIt packaging |
 | [resource:darwin-core] | Biodiversity occurrence | Taxa, occurrences, events | EDAM workflow semantics |
 | [resource:ddi-lifecycle] | Social science surveys | Study, variable, and lifecycle metadata | Croissant ML dataset layout |
+| [resource:sdmx] | Official statistics | DSDs, constraints, statistical payloads | DDI survey documentation; DCAT catalog metadata only |
 | [resource:croissant] | ML datasets | Fields, splits, files for training pipelines | DDI survey wave definitions |
 
 ## Ontologies and terminologies
@@ -53,6 +54,7 @@ Use UCUM where APIs and conventions require standard unit strings; use QUDT wher
 - **Harmonize geospatial asset collections:** [resource:spatiotemporal-asset-catalog-stac]; use CF inside NetCDF assets when climate semantics apply.
 - **Document biodiversity surveys:** [resource:darwin-core]; map terms via SKOS where integrating foreign vocabularies.
 - **Describe social science study waves:** [resource:ddi-lifecycle].
+- **Exchange official statistics or macroeconomic indicators:** [resource:sdmx]; use [resource:w3c-data-catalog-vocabulary-dcat] for catalog discovery of statistical publications.
 - **Ship ML dataset metadata to training frameworks:** [resource:croissant].
 - **Align bioinformatics service descriptions:** [resource:edam-ontology] in tool and workflow metadata ([resource:workflowhub] uses Bioschemas/EDAM patterns).
 
