@@ -1,0 +1,42 @@
+catalog_version: 2.0.0
+reviewed_on: '2026-08-01'
+north_star: A technically competent user should identify the strongest available interoperability
+  mechanism for a concrete scientific integration problem.
+resources:
+- id: due-before
+  name: Example RO-Crate
+  url: https://www.researchobject.org/ro-crate/specification/1.3/
+  section: Data and Digital Objects
+  resource_type: Packaging Specification
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Research objects
+  - repositories
+  mechanism: Aggregates files and JSON-LD metadata into a portable research object
+  summary: Packaging convention that aggregates research data and metadata into a
+    portable research object.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - public-validator
+  implementation_status: multiple-independent
+  conformance_status: public-validator
+  stewardship:
+    name: Research Object community
+    type: community
+    url: https://www.researchobject.org/
+  domains:
+  - cross-domain
+  source_urls:
+  - https://www.researchobject.org/ro-crate/specification/1.3/
+  - https://github.com/crs4/rocrate-validator
+  alternatives: []
+  related_resource_ids: []
+  decision_basis: Widely used packaging contract for research objects with public
+    validators.
+  boundary_note: Packaging conformance does not prove reproducibility.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2026-07-01'
+  primary_source_inspected: true

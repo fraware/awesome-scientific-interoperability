@@ -148,7 +148,24 @@ def validate() -> list[str]:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.parse_args()
+    parser.add_argument(
+        "--schema-version",
+        choices=("1", "2"),
+        default="1",
+        help="Schema major version. Version 2 validates fixtures via validate_catalog_v2 and does not require live v1 shards to pass v2.",
+    )
+    args = parser.parse_args()
+    if args.schema_version == "2":
+        # Preserve argv for callers, but run the v2 CLI entry with fixture defaults only.
+        import validate_catalog_v2
+
+        argv_backup = sys.argv[:]
+        try:
+            sys.argv = [str(ROOT / "scripts" / "validate_catalog_v2.py")]
+            return validate_catalog_v2.main()
+        finally:
+            sys.argv = argv_backup
+
     errors = validate()
     if errors:
         for error in errors:
