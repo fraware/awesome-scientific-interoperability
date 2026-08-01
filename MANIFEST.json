@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 43,
+  "file_count": 44,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -204,8 +204,8 @@
     },
     {
       "path": "scripts/run_awesome_lint.mjs",
-      "sha256": "d6ebca74d42262f56293e632461e30018339ecc5128db886d69ab6269d720af0",
-      "bytes": 391
+      "sha256": "385ec36c5e2c58e565a9636aaa6192d36ca4a5045df19a710b0243dbeb9db981",
+      "bytes": 405
     },
     {
       "path": "scripts/validate_catalog.py",
