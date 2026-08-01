@@ -1,0 +1,41 @@
+catalog_version: 2.0.0
+reviewed_on: '2026-08-01'
+north_star: A technically competent user should identify the strongest available interoperability
+  mechanism for a concrete scientific integration problem.
+resources:
+- id: interval-too-long
+  name: Example Agent Protocol
+  url: https://modelcontextprotocol.io/specification/2026-07-28
+  section: Agents, Access, and Policy
+  resource_type: Protocol
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Research objects
+  - repositories
+  mechanism: Aggregates files and JSON-LD metadata into a portable research object
+  summary: Protocol for exposing tools and contextual resources to AI agents through
+    a documented interface.
+  maturity: emerging
+  evidence_types:
+  - normative-specification
+  - public-validator
+  implementation_status: reference-and-others
+  conformance_status: documented-tests
+  stewardship:
+    name: MCP project
+    type: community
+    url: https://modelcontextprotocol.io/
+  domains:
+  - cross-domain
+  - ai-agents
+  source_urls:
+  - https://modelcontextprotocol.io/specification/2026-07-28
+  alternatives: []
+  related_resource_ids: []
+  decision_basis: Emerging agent-tool interface with a published specification.
+  boundary_note: Tool invocation is not scientific authorization or provenance.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true

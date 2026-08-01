@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 47,
+  "file_count": 64,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/quality.yml",
-      "sha256": "1c2600d80d61172d4a716a257f73c981300cd90d16261da250b463ab8deba125",
-      "bytes": 773
+      "sha256": "14de1330b3bbe50a681336239ccb5793b115c90f45280f43e2475dedda748aa4",
+      "bytes": 824
     },
     {
       "path": ".gitignore",
@@ -128,6 +128,11 @@
       "bytes": 1786
     },
     {
+      "path": "docs/catalog-model-v2.md",
+      "sha256": "5e856a3fb4de9f35f4ba51b2a7ca4c04952427856e598b8c44ef9826ca6cb277",
+      "bytes": 3864
+    },
+    {
       "path": "docs/conflicts-of-interest.md",
       "sha256": "69149e72d7802266b5e1705d2862bf422527b1e5a0f24ca7c522f7f0617c4829",
       "bytes": 643
@@ -208,6 +213,11 @@
       "bytes": 3901
     },
     {
+      "path": "schema/catalog.schema.v2.json",
+      "sha256": "3c4e71e9f8dacedafa21d5ab58877d7793801e131fe763e3d01b592118687326",
+      "bytes": 7135
+    },
+    {
       "path": "scripts/check_links.py",
       "sha256": "8d22f0d699b0667f74fd6f345c5fc93bed93f9f5cdd1e9630b976ec930e761d7",
       "bytes": 10886
@@ -219,8 +229,13 @@
     },
     {
       "path": "scripts/validate_catalog.py",
-      "sha256": "f31ea2633dacf726888c5d4920d67480d4a5ad7886f64cd129217f175cb2f555",
-      "bytes": 6598
+      "sha256": "e25ad39a441ed13cf279f56f758411ae2b30e3df19a6ec26112e6abdb5ee8274",
+      "bytes": 7233
+    },
+    {
+      "path": "scripts/validate_catalog_v2.py",
+      "sha256": "9f91eb8d33161a5b88dddb5e0816051664439ef48ad45102bd08c79cff052f86",
+      "bytes": 8067
     },
     {
       "path": "scripts/verify_manifest.py",
@@ -228,9 +243,79 @@
       "bytes": 2523
     },
     {
+      "path": "tests/fixtures/v2/01-valid-minimal-pair.valid.yaml",
+      "sha256": "66db29e20482908c205bd47abced6015fcaab583d73c503ad8303fdb38dd0a3e",
+      "bytes": 2578
+    },
+    {
+      "path": "tests/fixtures/v2/02-valid-emerging-agent.valid.yaml",
+      "sha256": "0caf000b1c85c2a30809f251cb0622149a9bca9c41b3a78500b0012dff154e6b",
+      "bytes": 1392
+    },
+    {
+      "path": "tests/fixtures/v2/03-missing-stewardship.invalid.yaml",
+      "sha256": "bd67d2ac606ef4e9533830b96d803826d9369af2ff044131d4db6d373ef8ff9c",
+      "bytes": 1344
+    },
+    {
+      "path": "tests/fixtures/v2/04-missing-sources.invalid.yaml",
+      "sha256": "95fecadba587845bf72fdb29f21d625db1abd334f48e790c1bf84f8687359a00",
+      "bytes": 1314
+    },
+    {
+      "path": "tests/fixtures/v2/05-missing-review-due.invalid.yaml",
+      "sha256": "8b69e308760bd464e4ea5b08f6dc533bb2bb9ca27f47cfdf745b621f8714aca0",
+      "bytes": 1423
+    },
+    {
+      "path": "tests/fixtures/v2/06-bad-xref.invalid.yaml",
+      "sha256": "2f0195bae8809ca3336aa110e2297cbc3d072e1758352f44da27288d839e9512",
+      "bytes": 1461
+    },
+    {
+      "path": "tests/fixtures/v2/07-self-ref.invalid.yaml",
+      "sha256": "1b8ab75be7126e4860885134167f4fa74842939325c8151f7b4e659d19d5ba2b",
+      "bytes": 1455
+    },
+    {
+      "path": "tests/fixtures/v2/08-contradictory-implementation.invalid.yaml",
+      "sha256": "b642cde4ed80f790060a0c11838eccd555d377e5b871b38f20c9405d15e8c293",
+      "bytes": 1365
+    },
+    {
+      "path": "tests/fixtures/v2/09-due-before-reviewed.invalid.yaml",
+      "sha256": "c76fb963d30314ad5f518ec3f340634bd7ec34e8e2ba2563e1a5b90bad4ce0be",
+      "bytes": 1447
+    },
+    {
+      "path": "tests/fixtures/v2/10-emerging-interval-too-long.invalid.yaml",
+      "sha256": "2dc3250b2237106106bd32e63f286f1951f4499a3bead9d28263ec7b740454fb",
+      "bytes": 1387
+    },
+    {
+      "path": "tests/fixtures/v2/11-legacy-fields.invalid.yaml",
+      "sha256": "5b258c03d6cfc0baed93b20a693ecc160e3b3b000e8bd3f257168e91b81ad249",
+      "bytes": 1474
+    },
+    {
+      "path": "tests/fixtures/v2/12-missing-domains.invalid.yaml",
+      "sha256": "f109c3881b2b8b0320000fb7cf23573aeb161ab8c2b8a2d0f170b8ca1de1e463",
+      "bytes": 1419
+    },
+    {
+      "path": "tests/fixtures/v2/13-empty-evidence-types.invalid.yaml",
+      "sha256": "26aba9d117a351dee733e8656fd5021707760d357e6f782dc59eec0cd53ee199",
+      "bytes": 1405
+    },
+    {
       "path": "tests/test_catalog.py",
       "sha256": "99bcb821017340ba591077677eb8d052842383b35410ac6790fbb8058363d6fb",
       "bytes": 1868
+    },
+    {
+      "path": "tests/test_catalog_v2.py",
+      "sha256": "5fc26c340af0dda8b603572f596b2123ae9b88aa0cacf3fc58d96358e13866a7",
+      "bytes": 1712
     },
     {
       "path": "tests/test_links.py",
