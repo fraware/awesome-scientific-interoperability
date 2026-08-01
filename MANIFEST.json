@@ -229,13 +229,13 @@
     },
     {
       "path": "scripts/validate_catalog.py",
-      "sha256": "e25ad39a441ed13cf279f56f758411ae2b30e3df19a6ec26112e6abdb5ee8274",
-      "bytes": 7233
+      "sha256": "2bab9f6ed8735a7b22fda326066047c59b1f88a38b2aa0c45f897e510fb2d5af",
+      "bytes": 8988
     },
     {
       "path": "scripts/validate_catalog_v2.py",
-      "sha256": "9f91eb8d33161a5b88dddb5e0816051664439ef48ad45102bd08c79cff052f86",
-      "bytes": 8067
+      "sha256": "e617a1513b69560fa5939ed29b117ac438a14dd2170739c7ab029053c012a096",
+      "bytes": 8313
     },
     {
       "path": "scripts/verify_manifest.py",
