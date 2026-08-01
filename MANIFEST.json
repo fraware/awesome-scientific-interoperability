@@ -1,11 +1,11 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 80,
+  "file_count": 85,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
-      "sha256": "0dd0f0d95afa7f73e8eb8eabaa3970969f0dc0741ea6f4ca65f5c35550762be5",
-      "bytes": 2382
+      "sha256": "70298086bc0ccb3160764a1b9b3072729f895f77c457cc2b07013b8cad4cd779",
+      "bytes": 2516
     },
     {
       "path": ".github/ISSUE_TEMPLATE/correction.yml",
@@ -14,8 +14,8 @@
     },
     {
       "path": ".github/pull_request_template.md",
-      "sha256": "d2eee80c3d550ac3738414d876cde21f1b20956e02c3b87942f76ad9c8a95402",
-      "bytes": 1145
+      "sha256": "a676045b586e6483b56758592a7d019ff48e9e8dac147d2168d652ea607c8bc4",
+      "bytes": 1228
     },
     {
       "path": ".github/workflows/links.yml",
@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/quality.yml",
-      "sha256": "722bd8d88503bcee5920f7983e57a69389682da1827acb9656b1c9fd26715889",
-      "bytes": 827
+      "sha256": "b35ac5ab2b787ab1f78812dbd17d6df84fe747d7594ac3d88cbaa6275caacd10",
+      "bytes": 883
     },
     {
       "path": ".gitignore",
@@ -39,13 +39,13 @@
     },
     {
       "path": "Makefile",
-      "sha256": "d30e86f214cb91fc1642f518f265c59c4cb514fa0b540c43bbec5e54c823e105",
-      "bytes": 1047
+      "sha256": "fb27009f34d595b52fbb8732b9c227d0c4b3f6bc60c2dbaa51b4ba554642c3e5",
+      "bytes": 1091
     },
     {
       "path": "README.md",
-      "sha256": "68e5d647f6c97ca5a1cee388307dc58cd1cb4f18ae27fd0f256c130c876952de",
-      "bytes": 18024
+      "sha256": "24e414d945ca0a35a073d7b19d130f272c9ae89e914d1ebfc515bf1aaec68251",
+      "bytes": 18138
     },
     {
       "path": "archive.md",
@@ -124,8 +124,8 @@
     },
     {
       "path": "contributing.md",
-      "sha256": "22f0c9e19bab6287c30b97f8a621f4532d0dd9dd3ba15058111215277322a2fd",
-      "bytes": 2065
+      "sha256": "a7ed629acb1bb0c9df5e6e474d6dc3c20ae9c7816eb64a67db902ebdbf8ea27b",
+      "bytes": 2570
     },
     {
       "path": "docs/catalog-model-v2.md",
@@ -136,6 +136,21 @@
       "path": "docs/conflicts-of-interest.md",
       "sha256": "69149e72d7802266b5e1705d2862bf422527b1e5a0f24ca7c522f7f0617c4829",
       "bytes": 643
+    },
+    {
+      "path": "docs/decision-guides/README.md",
+      "sha256": "914437ebe748648e9d6f027ae0f37d0460709cc60c33ad580a5580a333139f21",
+      "bytes": 1564
+    },
+    {
+      "path": "docs/decision-guides/provenance-and-execution-evidence.md",
+      "sha256": "9b6d9eb9d157260f1dc84849decb85a48f998ed7f6c1e4a4cf4de0c3ee82eb9c",
+      "bytes": 7792
+    },
+    {
+      "path": "docs/decision-guides/research-object-packaging.md",
+      "sha256": "7f3fdfab50987a3b8962e02f4d7a0351fdc0eca007db996985318593c9ae2df5",
+      "bytes": 8069
     },
     {
       "path": "docs/editorial-policy.md",
@@ -154,13 +169,13 @@
     },
     {
       "path": "docs/maintenance-protocol.md",
-      "sha256": "514d77e33666f678d3a5a691bef3b495abfdfb67ae544d5873f385899395b244",
-      "bytes": 2683
+      "sha256": "b59f1c07f5f8e81428f83ecc66f4cb77fd30842b719f170bdd60aa27f982c44a",
+      "bytes": 2769
     },
     {
       "path": "docs/project-charter.md",
-      "sha256": "7f5d6d38ec672106d21b3917614fad74290871cf0eb6f8cf9150a6646406a6f1",
-      "bytes": 2148
+      "sha256": "33d7832b37c14ce3c8ce10964505f994dca24a63f9504151edc2ebc894c9702c",
+      "bytes": 2378
     },
     {
       "path": "docs/publishing.md",
@@ -254,8 +269,8 @@
     },
     {
       "path": "docs/watchlist.md",
-      "sha256": "34742925f485b663250a3ed51b82933b4d4202e73caa4fbe82bf92865a0d657b",
-      "bytes": 2293
+      "sha256": "08b9236adb76b4d5e479605f9b07f2e5168c34a98e2774de73bfff0972c79790",
+      "bytes": 2508
     },
     {
       "path": "license",
@@ -296,6 +311,11 @@
       "path": "scripts/validate_catalog.py",
       "sha256": "da485fce6413c5a93ebdcd96188030838bdddb2514574a78b82d44d190c09a9b",
       "bytes": 14250
+    },
+    {
+      "path": "scripts/validate_decision_guides.py",
+      "sha256": "b0fcc44f782da3c49326709c95dac498743b445026a5c7bafc2f1f3a8c3283fa",
+      "bytes": 2655
     },
     {
       "path": "scripts/verify_manifest.py",
@@ -391,6 +411,11 @@
       "path": "tests/test_catalog.py",
       "sha256": "17de56a2e9d8a7f8d391446a7c5618439b2955700e52b323f679c4fc4a7700c8",
       "bytes": 5666
+    },
+    {
+      "path": "tests/test_decision_guides.py",
+      "sha256": "b8f8ef1c1098270278ebb05b9de9934622ae085c8828b97c8d3cf58c616cc3ee",
+      "bytes": 2473
     },
     {
       "path": "tests/test_links.py",

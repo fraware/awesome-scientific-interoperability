@@ -6,6 +6,8 @@ Contributions should improve the list's ability to answer concrete scientific in
 
 Use the resource-proposal issue form or open a pull request that updates `README.md` and the relevant file under `catalog/resources/`. Update `catalog/resources.yaml` only when adding, removing, or renaming a catalog shard.
 
+Resources that do not yet satisfy the main-list bar belong on the structured watchlist (`catalog/watchlist.yaml` and `docs/watchlist.md`), not in the README or main catalog. Watchlist items do not count toward the 75 main-list records.
+
 A proposal must state:
 
 1. What scientific objects or systems interoperate.
@@ -25,6 +27,7 @@ A proposal must state:
 - Avoid taglines, marketing adjectives, star counts, funding claims, and unsupported adoption claims.
 - Update the relevant catalog shard with the same name, URL, section, and `summary` (README parity).
 - Populate v2 catalog fields: `maturity`, `evidence_types`, `implementation_status`, `conformance_status`, `stewardship`, `domains`, `source_urls`, `alternatives`, `related_resource_ids`, `reviewed_on`, and `review_due_on`.
+- For watchlist placement instead of main-list inclusion, update `catalog/watchlist.yaml` and `docs/watchlist.md` together with `candidate_section`, `status`, `reason`, review dates, promotion conditions, and rejection conditions.
 - Run the repository checks before submitting.
 
 ## Human Responsibility
@@ -36,6 +39,7 @@ Fully automated or unreviewed AI-generated submissions are rejected. Assistive t
 ```bash
 python -m pip install -r requirements-dev.txt
 python scripts/validate_catalog.py
+python scripts/validate_watchlist.py
 python scripts/check_review_freshness.py
 python -m unittest discover -s tests -v
 npx --yes awesome-lint

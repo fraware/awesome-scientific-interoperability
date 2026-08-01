@@ -4,7 +4,7 @@ title: "Add: "
 body:
   - type: markdown
     attributes:
-      value: Please read `contributing.md` and inspect primary technical sources before submitting.
+      value: Please read `contributing.md` and inspect primary technical sources before submitting. Resources that do not yet satisfy the main-list bar belong on the structured watchlist (`catalog/watchlist.yaml`), not in the README.
   - type: input
     id: name
     attributes:

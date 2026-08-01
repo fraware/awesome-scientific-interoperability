@@ -2,6 +2,8 @@
 
 These resources are relevant but do not yet satisfy the main-list admission bar or require a sharper representative-selection decision. Watchlist status is neither endorsement nor rejection.
 
+Structured records live in `catalog/watchlist.yaml` and are validated against `schema/watchlist.schema.json`. Each prose line below must match the corresponding record's `name`, `url`, and `reason` fields exactly.
+
 - [Agent2Agent (A2A) Protocol](https://a2a-protocol.org/v1.0.0/) - Potential inclusion when scientific multi-agent systems adopt it substantively.
 - [Cromwell](https://cromwell.readthedocs.io/) - Potentially redirect to WDL or select as a reference implementation after comparison.
 - [Five Safes RO-Crate](https://zenodo.org/records/10376350) - Reassess after implementation growth in TRE-FX, DARE UK, and EOSC-ENTRUST.
