@@ -1,4 +1,4 @@
-.PHONY: validate test manifest refresh-manifest links lint all
+.PHONY: validate test manifest refresh-manifest links lint all query query-json
 
 validate:
 	python scripts/validate_catalog.py
@@ -20,5 +20,11 @@ links:
 
 lint:
 	npx --yes awesome-lint
+
+query:
+	python scripts/query_catalog.py $(if $(SECTION),--section "$(SECTION)",) $(if $(LAYER),--layer "$(LAYER)",) $(if $(DOMAIN),--domain "$(DOMAIN)",) $(if $(CONNECTS),--connects "$(CONNECTS)",) $(if $(EVIDENCE),--evidence "$(EVIDENCE)",) $(if $(ID),--id "$(ID)",)
+
+query-json:
+	python scripts/query_catalog.py --format json $(if $(SECTION),--section "$(SECTION)",) $(if $(LAYER),--layer "$(LAYER)",) $(if $(DOMAIN),--domain "$(DOMAIN)",) $(if $(CONNECTS),--connects "$(CONNECTS)",) $(if $(EVIDENCE),--evidence "$(EVIDENCE)",) $(if $(ID),--id "$(ID)",)
 
 all: validate test lint

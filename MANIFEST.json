@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 77,
+  "file_count": 80,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -39,8 +39,8 @@
     },
     {
       "path": "Makefile",
-      "sha256": "2b75664f372bcd15667cb8fbfc6c813d4deab56856ca15fca7d993a7393bc392",
-      "bytes": 473
+      "sha256": "d30e86f214cb91fc1642f518f265c59c4cb514fa0b540c43bbec5e54c823e105",
+      "bytes": 1047
     },
     {
       "path": "README.md",
@@ -168,6 +168,11 @@
       "bytes": 1532
     },
     {
+      "path": "docs/querying-the-catalog.md",
+      "sha256": "dc52ac22b081200aac539a76e2443eb44139df600d658e633b6f5142a26b0c1c",
+      "bytes": 5665
+    },
+    {
       "path": "docs/review-checklist.md",
       "sha256": "72bd5ba6c2998cd9131f3c5720f82a879a93aadc74252264ccc88c64753c6426",
       "bytes": 1444
@@ -283,6 +288,11 @@
       "bytes": 1639
     },
     {
+      "path": "scripts/query_catalog.py",
+      "sha256": "d26bdcee39af8a1bac95495cff040845d1c50cfeef829b5aee6993bb1a77f721",
+      "bytes": 8021
+    },
+    {
       "path": "scripts/validate_catalog.py",
       "sha256": "da485fce6413c5a93ebdcd96188030838bdddb2514574a78b82d44d190c09a9b",
       "bytes": 14250
@@ -386,6 +396,11 @@
       "path": "tests/test_links.py",
       "sha256": "dd3209c83f9fd799e5fb9cef1d37319cc7695f8cbf40cb6440f7474dc505d5c9",
       "bytes": 4785
+    },
+    {
+      "path": "tests/test_query_catalog.py",
+      "sha256": "03c8236f2355b4d0d2949d0730e51ffbf7e7b51581454ce320a503576fd5583c",
+      "bytes": 6053
     }
   ]
 }
