@@ -47,7 +47,7 @@ resources:
   primary_source_inspected: true
 - id: autoprotocol
   name: Autoprotocol
-  url: https://autoprotocol.org/
+  url: https://github.com/autoprotocol/autoprotocol-python
   section: Instruments and Laboratories
   resource_type: Protocol Language
   interoperability_layers:

@@ -1,0 +1,8 @@
+version: 1
+accepted_redirect_hops: 5
+transient_statuses: [408, 425, 429, 500, 502, 503, 504]
+access_policy_statuses: [401, 403]
+permanent_failure_statuses: [404, 410]
+user_agent: awesome-scientific-interoperability-link-audit/1.0
+retries: 2
+backoff_seconds: 2

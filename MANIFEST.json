@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 44,
+  "file_count": 47,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -19,8 +19,8 @@
     },
     {
       "path": ".github/workflows/links.yml",
-      "sha256": "6e5f60db3467a0d99718be7355061dd7f62beac865cff2f847f32e79f344c98e",
-      "bytes": 407
+      "sha256": "50a72279ce1461d7085cf94228e15d059d6bfabb2fb285c1913f47a728d80ad5",
+      "bytes": 671
     },
     {
       "path": ".github/workflows/quality.yml",
@@ -44,8 +44,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "89bbfe397508a7e9068394a2fc635d0a318d67ea2e369ae0eae83c9bf8b2dcf8",
-      "bytes": 17989
+      "sha256": "68e5d647f6c97ca5a1cee388307dc58cd1cb4f18ae27fd0f256c130c876952de",
+      "bytes": 18024
     },
     {
       "path": "archive.md",
@@ -79,13 +79,13 @@
     },
     {
       "path": "catalog/resources/instruments-and-laboratories.yaml",
-      "sha256": "8cdce7fda79e05a8c5623537fc1e198b67f2f986bce831c728cfde6111249158",
-      "bytes": 6127
+      "sha256": "0d7d83535708ddefbc898580194c465952a10ab0b651cabf01762d70af8ea41e",
+      "bytes": 6153
     },
     {
       "path": "catalog/resources/knowledge-systems-and-publications.yaml",
-      "sha256": "bffd4bd2740724a5e33127962626bd7be24850284d43f6876c3a84c8ab18fc7b",
-      "bytes": 4583
+      "sha256": "2592c3e90cd7b88d4ce0fa02b32366e4c595ec053140e4f2377ee5fda0983468",
+      "bytes": 4592
     },
     {
       "path": "catalog/resources/metadata-and-semantics.yaml",
@@ -118,6 +118,11 @@
       "bytes": 456
     },
     {
+      "path": "config/link-policy.yaml",
+      "sha256": "7e5b3733eaa5727d37965e0a4a19bb40e47773652df094dcc34c967b3bce0799",
+      "bytes": 260
+    },
+    {
       "path": "contributing.md",
       "sha256": "4df129d28fe2c45847e1995e53bf436818df81ea4b49c7376bae446f2a0f50ea",
       "bytes": 1786
@@ -138,9 +143,14 @@
       "bytes": 57524
     },
     {
+      "path": "docs/link-audit-baseline.md",
+      "sha256": "3667541d1691315b5e11ca57749155b4357015adfbbc23de3a0f8163b010994a",
+      "bytes": 2774
+    },
+    {
       "path": "docs/maintenance-protocol.md",
-      "sha256": "157fed07391f69c9a653d0fa0b230724b244a040dd92a0bf38d3604f57390e1d",
-      "bytes": 1587
+      "sha256": "25388d4f928e3f349979214844b8b3b5e0f8926dcbc6262838b67dfafc088224",
+      "bytes": 2653
     },
     {
       "path": "docs/project-charter.md",
@@ -199,8 +209,8 @@
     },
     {
       "path": "scripts/check_links.py",
-      "sha256": "06a61263d42b7a1b2d3671066f5525c88ae92af838d6db3ab61e4a649ecac7a7",
-      "bytes": 2776
+      "sha256": "8d22f0d699b0667f74fd6f345c5fc93bed93f9f5cdd1e9630b976ec930e761d7",
+      "bytes": 10886
     },
     {
       "path": "scripts/generate_manifest.py",
@@ -221,6 +231,11 @@
       "path": "tests/test_catalog.py",
       "sha256": "99bcb821017340ba591077677eb8d052842383b35410ac6790fbb8058363d6fb",
       "bytes": 1868
+    },
+    {
+      "path": "tests/test_links.py",
+      "sha256": "dd3209c83f9fd799e5fb9cef1d37319cc7695f8cbf40cb6440f7474dc505d5c9",
+      "bytes": 4785
     }
   ]
 }
