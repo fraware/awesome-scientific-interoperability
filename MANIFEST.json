@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 85,
+  "file_count": 87,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -139,8 +139,8 @@
     },
     {
       "path": "docs/decision-guides/README.md",
-      "sha256": "914437ebe748648e9d6f027ae0f37d0460709cc60c33ad580a5580a333139f21",
-      "bytes": 1564
+      "sha256": "4881d67d95515a09d9d195a31dc8c2b7eaf5727a429016ce8f8f74cbc4965c7a",
+      "bytes": 1816
     },
     {
       "path": "docs/decision-guides/provenance-and-execution-evidence.md",
@@ -151,6 +151,16 @@
       "path": "docs/decision-guides/research-object-packaging.md",
       "sha256": "7f3fdfab50987a3b8962e02f4d7a0351fdc0eca007db996985318593c9ae2df5",
       "bytes": 8069
+    },
+    {
+      "path": "docs/decision-guides/workflow-testing-and-conformance.md",
+      "sha256": "cfe7f958cde443c359e75ad1e5148f02d9e777bd41abe6556c4e741b8feaf4be",
+      "bytes": 5972
+    },
+    {
+      "path": "docs/decision-guides/workflows-and-execution.md",
+      "sha256": "8556cbfaabe61a92b9ced45de87a5fc5bde8f56e57147d15df9a1d6bddbc60e1",
+      "bytes": 8285
     },
     {
       "path": "docs/editorial-policy.md",
