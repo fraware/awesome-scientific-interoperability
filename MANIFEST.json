@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 87,
+  "file_count": 89,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -139,8 +139,18 @@
     },
     {
       "path": "docs/decision-guides/README.md",
-      "sha256": "4881d67d95515a09d9d195a31dc8c2b7eaf5727a429016ce8f8f74cbc4965c7a",
-      "bytes": 1816
+      "sha256": "147086e00457ec494f9b4a80124def6442bc6582934a0352b709d7791ac824c5",
+      "bytes": 2102
+    },
+    {
+      "path": "docs/decision-guides/identifiers-and-discovery.md",
+      "sha256": "920678c4d546de7a82ed3111b6d59fa089bace3089a99e977f808264b5deefe1",
+      "bytes": 6821
+    },
+    {
+      "path": "docs/decision-guides/metadata-semantics-and-units.md",
+      "sha256": "fc1fb43cc93427552593651f2fcdc0bf7e4b37d013a755b9db6e8b80da791ff0",
+      "bytes": 6763
     },
     {
       "path": "docs/decision-guides/provenance-and-execution-evidence.md",

@@ -10,8 +10,10 @@ Problem-oriented comparison documents for overlapping interoperability mechanism
 | [Provenance and execution evidence](provenance-and-execution-evidence.md) | W3C PROV, P-Plan, CWLProv, Workflow Run RO-Crate, ISO 23494-2, runcrate |
 | [Workflows and execution](workflows-and-execution.md) | CWL, WDL, GA4GH TRS/WES/TES/DRS, WorkflowHub, Sapporo, backends |
 | [Workflow testing and conformance](workflow-testing-and-conformance.md) | CWL Conformance Tests, Workflow Testing RO-Crate, LifeMonitor |
+| [Identifiers and discovery](identifiers-and-discovery.md) | ORCID, ROR, IGSN, DOI/DataCite, Crossref, Identifiers.org, GA4GH discovery, FAIRsharing |
+| [Metadata semantics and units](metadata-semantics-and-units.md) | Schema.org, Bioschemas, DCAT, SKOS, OBO, EDAM, QUDT, UCUM, domain conventions |
 
-Additional guides are added in separate pull requests for identifiers and laboratory or agent boundaries.
+Additional guides are added in a separate pull request for laboratory and agent boundaries.
 
 ## How to use these guides
 
