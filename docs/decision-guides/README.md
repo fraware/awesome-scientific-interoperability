@@ -12,8 +12,9 @@ Problem-oriented comparison documents for overlapping interoperability mechanism
 | [Workflow testing and conformance](workflow-testing-and-conformance.md) | CWL Conformance Tests, Workflow Testing RO-Crate, LifeMonitor |
 | [Identifiers and discovery](identifiers-and-discovery.md) | ORCID, ROR, IGSN, DOI/DataCite, Crossref, Identifiers.org, GA4GH discovery, FAIRsharing |
 | [Metadata semantics and units](metadata-semantics-and-units.md) | Schema.org, Bioschemas, DCAT, SKOS, OBO, EDAM, QUDT, UCUM, domain conventions |
-
-Additional guides are added in a separate pull request for laboratory and agent boundaries.
+| [Laboratory interoperability](laboratory-interoperability.md) | SiLA 2, OPC UA LADS, Autoprotocol, AnIML, ADF, FHIR, LOINC |
+| [Scientific agents and tool interfaces](scientific-agents-and-tool-interfaces.md) | MCP, ToolUniverse, emerging watchlist protocols |
+| [Controlled data access](controlled-data-access.md) | GA4GH Passports, DUO, emerging policy packaging |
 
 ## How to use these guides
 
