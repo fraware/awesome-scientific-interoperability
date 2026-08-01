@@ -14,14 +14,32 @@ resources:
   - access committees
   - automated matching systems
   mechanism: Machine-readable terms describing permitted and restricted data uses
-  description: Ontology for expressing data-use permissions and restrictions so repositories and access systems
+  summary: Ontology for expressing data-use permissions and restrictions so repositories and access systems
     can match requests computationally.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: Global Alliance for Genomics and Health
+    type: consortium
+    url: https://www.ga4gh.org/
+  domains:
+  - genomics
+  - data-governance
+  source_urls:
+  - https://www.ga4gh.org/product/data-use-ontology-duo/
+  - https://github.com/EBISPOT/DUO
+  alternatives: []
+  related_resource_ids:
+  - ga4gh-passports
   decision_basis: Concrete semantic bridge between data governance decisions and computational access systems.
-  boundary_note: Genomics-originated but broadly relevant to controlled scientific data.
+  boundary_note: Genomics-originated but broadly relevant to controlled scientific data; authorization transport is
+    separate from DUO terms.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: ga4gh-passports
   name: GA4GH Passports
@@ -38,13 +56,32 @@ resources:
   - data services
   - controlled-access systems
   mechanism: Machine-readable researcher visas and access assertions built on federated identity
-  description: Machine-readable researcher visas and access assertions for interoperable controlled-data authorization.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
+  summary: Machine-readable researcher visas and access assertions for interoperable controlled-data authorization.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  - interoperability-demonstration
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  stewardship:
+    name: Global Alliance for Genomics and Health
+    type: consortium
+    url: https://www.ga4gh.org/
+  domains:
+  - genomics
+  - data-governance
+  source_urls:
+  - https://www.ga4gh.org/product/ga4gh-passports/
+  - https://github.com/ga4gh-duri/ga4gh-passport-standard
+  alternatives: []
+  related_resource_ids:
+  - ga4gh-data-use-ontology-duo
   decision_basis: Strong scientific authorization profile connecting identity and controlled genomic data services.
-  boundary_note: Domain exemplar; relies on underlying OAuth/OIDC infrastructure.
+  boundary_note: Domain exemplar; relies on underlying OAuth/OIDC infrastructure and complementary use-condition
+    vocabularies such as DUO.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: model-context-protocol-mcp
   name: Model Context Protocol (MCP)
@@ -60,14 +97,33 @@ resources:
   - APIs
   - data resources
   mechanism: Standard protocol for capability discovery, tool invocation, resources, and prompts
-  description: Open protocol for exposing tools, resources, prompts, and capabilities to AI applications through
+  summary: Open protocol for exposing tools, resources, prompts, and capabilities to AI applications through
     a standardized client-server interface.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
-  decision_basis: General protocol with immediate relevance to scientific tool and data interoperability.
-  boundary_note: Scientific inclusion requires examples or profiles that preserve domain semantics and evidence.
+  maturity: emerging
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  implementation_status: multiple-independent
+  conformance_status: documented-tests
+  stewardship:
+    name: Model Context Protocol project
+    type: community
+    url: https://modelcontextprotocol.io/
+  domains:
+  - ai-agents
+  - cross-domain
+  source_urls:
+  - https://modelcontextprotocol.io/specification/2026-07-28
+  - https://github.com/modelcontextprotocol/specification
+  alternatives: []
+  related_resource_ids:
+  - tooluniverse
+  decision_basis: General agent-tool interface with a published 2026-07-28 specification and multiple SDK
+    implementations.
+  boundary_note: Scientific inclusion requires domain profiles that preserve semantics and evidence; tool invocation
+    is not authorization or provenance.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-01-31'
   primary_source_inspected: true
 - id: tooluniverse
   name: ToolUniverse
@@ -84,12 +140,30 @@ resources:
   - APIs
   - datasets
   mechanism: Standardized tool descriptions, invocation, composition, and monitoring across scientific resources
-  description: Scientific tool platform that standardizes discovery, invocation, composition, and monitoring across
+  summary: Scientific tool platform that standardizes discovery, invocation, composition, and monitoring across
     heterogeneous tools, models, APIs, and datasets.
-  evidence_level: B
-  maintenance_signal: Current
-  north_star_utility: High
-  decision_basis: Directly addresses scientific-agent access to a large, heterogeneous tool ecosystem.
-  boundary_note: Platform-centered; review openness, schemas, and independent reuse of its interfaces.
+  maturity: emerging
+  evidence_types:
+  - reference-implementation
+  - interoperability-demonstration
+  implementation_status: single-known
+  conformance_status: none-known
+  stewardship:
+    name: Zitnik Lab, Harvard Medical School
+    type: institution
+    url: https://zitniklab.hms.harvard.edu/
+  domains:
+  - ai-agents
+  - computational-biology
+  source_urls:
+  - https://zitniklab.hms.harvard.edu/ToolUniverse/en/
+  - https://github.com/mims-harvard/ToolUniverse
+  alternatives: []
+  related_resource_ids:
+  - model-context-protocol-mcp
+  decision_basis: Directly addresses scientific-agent access to a large heterogeneous tool ecosystem with documented
+    MCP integration.
+  boundary_note: Platform-centered; openness of schemas and independent reuse of interfaces require periodic review.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-01-31'
   primary_source_inspected: true

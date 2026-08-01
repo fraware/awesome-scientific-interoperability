@@ -4,7 +4,7 @@ resources:
   name: Allotrope Data Format
   url: https://docs.allotrope.org/
   section: Instruments and Laboratories
-  resource_type: Data and Semantic Framework
+  resource_type: Analytical Data Exchange Framework
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -15,20 +15,40 @@ resources:
   - analytics
   - archives
   mechanism: Common data format, ontologies, and metadata models for analytical laboratory data
-  description: Common data format, ontologies, and metadata models for exchanging analytical laboratory data across
+  summary: Common data format, ontologies, and metadata models for exchanging analytical laboratory data across
     instruments and applications.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
-  decision_basis: Substantial cross-vendor scientific-data interoperability ecosystem.
-  boundary_note: Governance and access conditions should be described accurately.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  stewardship:
+    name: Allotrope Foundation
+    type: consortium
+    url: https://www.allotrope.org/
+  domains:
+  - analytical-chemistry
+  - laboratory-data
+  source_urls:
+  - https://docs.allotrope.org/
+  - https://www.allotrope.org/adf/
+  alternatives:
+  - analytical-information-markup-language-animl
+  related_resource_ids:
+  - analytical-information-markup-language-animl
+  decision_basis: Substantial cross-vendor analytical-data interoperability ecosystem with published ontologies and
+    format specifications.
+  boundary_note: Consortium membership and licensing govern some specification access; analytical-data exchange only,
+    not device control.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: analytical-information-markup-language-animl
   name: Analytical Information Markup Language (AnIML)
   url: https://www.animl.org/
   section: Instruments and Laboratories
-  resource_type: Data Standard
+  resource_type: Analytical Data Standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -37,19 +57,36 @@ resources:
   - laboratory software
   - data archives
   mechanism: XML-based exchange format for analytical chemistry and instrument data
-  description: XML-based standard for exchanging analytical chemistry and instrument data across vendor systems.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
-  decision_basis: Direct laboratory-data interoperability standard with explicit cross-vendor purpose.
-  boundary_note: Domain-specific technique definitions may vary in maturity.
+  summary: XML-based standard for exchanging analytical chemistry and instrument data across vendor systems.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: ASTM International
+    type: standards-body
+    url: https://www.astm.org/
+  domains:
+  - analytical-chemistry
+  source_urls:
+  - https://www.animl.org/
+  - https://www.astm.org/e13
+  alternatives:
+  - allotrope-data-format
+  related_resource_ids:
+  - allotrope-data-format
+  decision_basis: Direct laboratory analytical-data interoperability standard with explicit cross-vendor purpose.
+  boundary_note: Domain-specific technique definitions may vary in maturity; device communication is out of scope.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: autoprotocol
   name: Autoprotocol
   url: https://github.com/autoprotocol/autoprotocol-python
   section: Instruments and Laboratories
-  resource_type: Protocol Language
+  resource_type: Laboratory Procedure Language
   interoperability_layers:
   - Syntactic
   - Operational
@@ -58,20 +95,37 @@ resources:
   - cloud laboratories
   - automation systems
   mechanism: Machine-readable, platform-independent descriptions of laboratory procedures
-  description: Machine-readable language for expressing platform-independent laboratory procedures for automated
+  summary: Machine-readable language for expressing platform-independent laboratory procedures for automated
     execution.
-  evidence_level: B
-  maintenance_signal: Current
-  north_star_utility: High
-  decision_basis: Important operational contract for expressing executable wet-lab procedures.
-  boundary_note: Review current ecosystem breadth and specification stewardship.
+  maturity: emerging
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  stewardship:
+    name: Autoprotocol community
+    type: community
+    url: https://github.com/autoprotocol/autoprotocol-python
+  domains:
+  - laboratory-automation
+  source_urls:
+  - https://github.com/autoprotocol/autoprotocol-python
+  - https://autoprotocol.org/
+  alternatives: []
+  related_resource_ids: []
+  decision_basis: Important operational contract for expressing executable wet-lab procedures independent of a single
+    vendor platform.
+  boundary_note: Procedure representation does not establish device compatibility; ecosystem breadth and stewardship
+    require periodic review.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-01-31'
   primary_source_inspected: true
 - id: hl7-fhir
   name: HL7 FHIR
   url: https://hl7.org/fhir/
   section: Instruments and Laboratories
-  resource_type: Domain API / Data Standard
+  resource_type: Clinical Exchange Standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -82,14 +136,32 @@ resources:
   - applications
   - data services
   mechanism: Modular resources and APIs for interoperable health information exchange
-  description: Modular resources and APIs for exchanging clinical and laboratory information across independent
+  summary: Modular resources and APIs for exchanging clinical and laboratory information across independent
     health systems.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
-  decision_basis: Exceptional domain exemplar demonstrating a large modular interoperability ecosystem.
-  boundary_note: Include as a domain exemplar, not as evidence that the list covers all healthcare standards.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: public-suite
+  stewardship:
+    name: HL7 International
+    type: standards-body
+    url: https://www.hl7.org/
+  domains:
+  - clinical-informatics
+  - laboratory-medicine
+  source_urls:
+  - https://hl7.org/fhir/
+  - https://github.com/FHIR/fhir-test-cases
+  alternatives: []
+  related_resource_ids:
+  - loinc
+  decision_basis: Exceptional domain exemplar demonstrating a large modular clinical and laboratory exchange ecosystem.
+  boundary_note: Included as a clinical-exchange exemplar, not as evidence that the list covers all healthcare standards.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: loinc
   name: LOINC
@@ -104,19 +176,37 @@ resources:
   - health systems
   - research datasets
   mechanism: Universal codes for laboratory and clinical observations
-  description: Universal codes for exchanging laboratory tests, measurements, and clinical observations.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
-  decision_basis: Mature semantic interoperability mechanism for laboratory measurements and observations.
-  boundary_note: Clinical orientation should be acknowledged; pairs naturally with FHIR and UCUM.
+  summary: Universal codes for exchanging laboratory tests, measurements, and clinical observations.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: Regenstrief Institute
+    type: institution
+    url: https://loinc.org/
+  domains:
+  - clinical-informatics
+  - laboratory-medicine
+  source_urls:
+  - https://loinc.org/
+  - https://loinc.org/kb/users-guide/
+  alternatives: []
+  related_resource_ids:
+  - hl7-fhir
+  decision_basis: Mature semantic interoperability mechanism for laboratory measurements and clinical observations.
+  boundary_note: Clinical terminology orientation; pairs naturally with FHIR for exchange and UCUM for units outside
+    this catalog.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: opc-ua-laboratory-and-analytical-device-standard-lads
   name: OPC UA Laboratory and Analytical Device Standard (LADS)
   url: https://opcfoundation.org/markets-collaboration/lads/
   section: Instruments and Laboratories
-  resource_type: Companion Specification
+  resource_type: Device Communication Standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -125,20 +215,38 @@ resources:
   - Laboratory and analytical devices
   - automation and monitoring systems
   mechanism: OPC UA information model and services for standardized laboratory-device communication
-  description: OPC UA companion specification for standardized control, status, and data access across laboratory
+  summary: OPC UA companion specification for standardized control, status, and data access across laboratory
     devices.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  stewardship:
+    name: OPC Foundation
+    type: consortium
+    url: https://opcfoundation.org/
+  domains:
+  - laboratory-automation
+  - analytical-instruments
+  source_urls:
+  - https://opcfoundation.org/markets-collaboration/lads/
+  - https://reference.opcfoundation.org/
+  alternatives:
+  - sila-2
+  related_resource_ids:
+  - sila-2
   decision_basis: Modern industrial-scientific bridge for interoperable device control, status, and data access.
-  boundary_note: Compare with SiLA 2; both may be included because they address different ecosystems.
+  boundary_note: Device communication does not standardize experimental semantics or analytical file exchange.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: sila-2
   name: SiLA 2
   url: https://sila2.gitlab.io/sila_base/
   section: Instruments and Laboratories
-  resource_type: Communication Standard
+  resource_type: Device Communication Standard
   interoperability_layers:
   - Syntactic
   - Operational
@@ -147,12 +255,29 @@ resources:
   - services
   - orchestration software
   mechanism: gRPC-based device and service communication with extensible feature definitions
-  description: Open gRPC-based standard for controlling laboratory devices and services through extensible feature
+  summary: Open gRPC-based standard for controlling laboratory devices and services through extensible feature
     definitions.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: SiLA Consortium
+    type: consortium
+    url: https://sila-standard.com/
+  domains:
+  - laboratory-automation
+  source_urls:
+  - https://sila2.gitlab.io/sila_base/
+  - https://gitlab.com/sila2
+  alternatives:
+  - opc-ua-laboratory-and-analytical-device-standard-lads
+  related_resource_ids:
+  - opc-ua-laboratory-and-analytical-device-standard-lads
   decision_basis: Canonical open laboratory-device interoperability standard with multi-language implementations.
-  boundary_note: Device communication does not by itself standardize experimental semantics.
+  boundary_note: Device communication does not by itself standardize experimental semantics or analytical data formats.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true

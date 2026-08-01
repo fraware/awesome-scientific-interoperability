@@ -69,7 +69,15 @@ def parse_date(value: str) -> date:
     return datetime.strptime(value, "%Y-%m-%d").date()
 
 
-def semantic_errors(catalog: dict[str, Any]) -> list[str]:
+def is_v2_resource(resource: dict[str, Any]) -> bool:
+    return "summary" in resource
+
+
+def semantic_errors(
+    catalog: dict[str, Any],
+    *,
+    known_ids: set[str] | None = None,
+) -> list[str]:
     errors: list[str] = []
     resources = catalog.get("resources", [])
     ids = [resource.get("id") for resource in resources]
@@ -79,7 +87,8 @@ def semantic_errors(catalog: dict[str, Any]) -> list[str]:
         if duplicates:
             errors.append(f"duplicate {field}: {duplicates}")
 
-    known_ids = {resource_id for resource_id in ids if isinstance(resource_id, str)}
+    if known_ids is None:
+        known_ids = {resource_id for resource_id in ids if isinstance(resource_id, str)}
     for resource in resources:
         resource_id = resource.get("id", "<missing>")
         reviewed_on = resource.get("reviewed_on")
@@ -129,14 +138,18 @@ def semantic_errors(catalog: dict[str, Any]) -> list[str]:
     return errors
 
 
-def validate_catalog(catalog: dict[str, Any]) -> list[str]:
+def validate_catalog(
+    catalog: dict[str, Any],
+    *,
+    known_ids: set[str] | None = None,
+) -> list[str]:
     schema = load_schema()
     errors: list[str] = []
     validator = Draft202012Validator(schema, format_checker=FormatChecker())
     for error in sorted(validator.iter_errors(catalog), key=lambda item: list(item.absolute_path)):
         path = ".".join(str(part) for part in error.absolute_path) or "catalog"
         errors.append(f"schema:{path}: {error.message}")
-    errors.extend(semantic_errors(catalog))
+    errors.extend(semantic_errors(catalog, known_ids=known_ids))
     return errors
 
 
