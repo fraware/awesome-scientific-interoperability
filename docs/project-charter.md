@@ -37,3 +37,7 @@ An entry must expose a reusable public contract, supply inspectable technical ma
 ## Operating Principle
 
 The README is manually authored and authoritative. The indexed, section-scoped catalog validates consistency and supports maintenance; it never decides inclusion or generates the README.
+
+## Problem-Oriented Navigation
+
+Users may also enter the corpus through the [integration problem index](integration-problems.md), which maps concrete integration situations to catalog resources without ranking universal winners.

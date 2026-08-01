@@ -23,6 +23,7 @@ Disclose any affiliation with affected resources or organizations.
 - [ ] v2 catalog fields are complete (`stewardship`, `review_due_on`, `source_urls`, evidence statuses, and cross-references).
 - [ ] I recorded limitations and the closest alternative in the catalog.
 - [ ] I ran `python scripts/validate_catalog.py`.
+- [ ] I ran `python scripts/validate_watchlist.py` when watchlist records changed.
 - [ ] I ran `python scripts/check_review_freshness.py`.
 - [ ] I ran `python -m unittest discover -s tests -v`.
 - [ ] I accept responsibility for the factual accuracy of this contribution.

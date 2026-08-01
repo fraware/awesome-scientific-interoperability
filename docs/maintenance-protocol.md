@@ -9,7 +9,7 @@ The project remains useful only when its descriptions, URLs, standards status, a
 3. Compare the candidate with the strongest existing alternative.
 4. Update the README and the relevant catalog shard in the same change.
 5. Record the decision basis, limitations, stewardship, `reviewed_on`, and `review_due_on`.
-6. Run catalog validation, review freshness, offline URL validation, unit tests, and Awesome lint.
+6. Run catalog validation, watchlist validation, review freshness, offline URL validation, unit tests, and Awesome lint.
 7. Require independent approval when the contributor is affiliated with the resource.
 
 ## Monthly
@@ -17,7 +17,7 @@ The project remains useful only when its descriptions, URLs, standards status, a
 - Triage resource proposals and corrections.
 - Resolve broken canonical URLs using the link-classification remediation rules below.
 - Review resources reported as archived, deprecated, or superseded.
-- Keep the watchlist separate from the main list.
+- Keep the watchlist separate from the main list and current in `catalog/watchlist.yaml` and `docs/watchlist.md`.
 
 ## Quarterly
 
