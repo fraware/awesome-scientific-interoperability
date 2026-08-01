@@ -63,6 +63,7 @@ Expose resource descriptions to search engines with [resource:bioschemas] profil
 ### When an alternative is stronger
 
 - Domain-specific survey or social-science archives: [resource:ddi-lifecycle] discovery metadata may be richer than generic DCAT alone.
+- Official statistics or macroeconomic indicator feeds: [resource:sdmx] supplies Data Structure Definitions and payload contracts beyond catalog metadata.
 - Biodiversity aggregators: [resource:darwin-core] terms often appear in occurrence indexes alongside catalog metadata.
 - Machine-learning dataset consumers expecting training-ready packaging: [resource:croissant] descriptions may be more actionable than DCAT distributions alone.
 - Workflow execution after discovery: pair registry results with [resource:ga4gh-workflow-execution-service-wes] rather than treating registry metadata as execution contracts.
@@ -76,7 +77,7 @@ Expose resource descriptions to search engines with [resource:bioschemas] profil
 
 ### Relevant catalog entries
 
-[resource:w3c-data-catalog-vocabulary-dcat] [resource:spatiotemporal-asset-catalog-stac] [resource:fairsharing] [resource:ga4gh-tool-registry-service-trs] [resource:workflowhub] [resource:ga4gh-service-registry] [resource:ga4gh-service-info] [resource:bioschemas] [resource:schema-org] [resource:fair-signposting] [resource:ddi-lifecycle] [resource:darwin-core] [resource:croissant]
+[resource:w3c-data-catalog-vocabulary-dcat] [resource:spatiotemporal-asset-catalog-stac] [resource:fairsharing] [resource:ga4gh-tool-registry-service-trs] [resource:workflowhub] [resource:ga4gh-service-registry] [resource:ga4gh-service-info] [resource:bioschemas] [resource:schema-org] [resource:fair-signposting] [resource:ddi-lifecycle] [resource:sdmx] [resource:darwin-core] [resource:croissant]
 
 ### Example architecture
 
@@ -96,7 +97,7 @@ Independent systems must exchange dataset descriptions, observation records, or 
 
 For general catalog and service descriptions, combine [resource:schema-org] with domain profiles such as [resource:bioschemas] or [resource:spatiotemporal-asset-catalog-stac]. For controlled vocabularies and ontology graphs, use [resource:simple-knowledge-organization-system-skos] mappings and community ontologies governed by [resource:obo-foundry]. For bioinformatics tool and data typing, [resource:edam-ontology] connects operations, formats, and topics.
 
-For measurable quantities, pair [resource:qudt] (dimensions, quantities, and semantic unit typing) with [resource:unified-code-for-units-of-measure-ucum] (machine-processable unit codes). Domain field conventions such as [resource:climate-and-forecast-cf-metadata-conventions], [resource:darwin-core], and [resource:ddi-lifecycle] supply community-agreed variable and record semantics where generic vocabularies are insufficient.
+For measurable quantities, pair [resource:qudt] (dimensions, quantities, and semantic unit typing) with [resource:unified-code-for-units-of-measure-ucum] (machine-processable unit codes). Domain field conventions such as [resource:climate-and-forecast-cf-metadata-conventions], [resource:darwin-core], [resource:ddi-lifecycle], and [resource:sdmx] supply community-agreed variable and record semantics where generic vocabularies are insufficient.
 
 ### When an alternative is stronger
 
@@ -113,7 +114,7 @@ For measurable quantities, pair [resource:qudt] (dimensions, quantities, and sem
 
 ### Relevant catalog entries
 
-[resource:schema-org] [resource:bioschemas] [resource:w3c-data-catalog-vocabulary-dcat] [resource:simple-knowledge-organization-system-skos] [resource:obo-foundry] [resource:edam-ontology] [resource:qudt] [resource:unified-code-for-units-of-measure-ucum] [resource:climate-and-forecast-cf-metadata-conventions] [resource:darwin-core] [resource:ddi-lifecycle] [resource:sosa-ssn] [resource:croissant] [resource:cross-domain-interoperability-framework-cdif]
+[resource:schema-org] [resource:bioschemas] [resource:w3c-data-catalog-vocabulary-dcat] [resource:simple-knowledge-organization-system-skos] [resource:obo-foundry] [resource:edam-ontology] [resource:qudt] [resource:unified-code-for-units-of-measure-ucum] [resource:climate-and-forecast-cf-metadata-conventions] [resource:darwin-core] [resource:ddi-lifecycle] [resource:sdmx] [resource:sosa-ssn] [resource:croissant] [resource:cross-domain-interoperability-framework-cdif]
 
 ### Example architecture
 

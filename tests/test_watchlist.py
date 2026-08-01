@@ -31,15 +31,15 @@ class WatchlistTests(unittest.TestCase):
     def test_seed_size(self) -> None:
         watchlist = module.load_watchlist()
         prose = module.prose_entries(PROSE_PATH.read_text(encoding="utf-8"))
-        self.assertEqual(len(watchlist["items"]), 16)
-        self.assertEqual(len(prose), 16)
+        self.assertEqual(len(watchlist["items"]), 17)
+        self.assertEqual(len(prose), 17)
 
     def test_watchlist_does_not_count_toward_main_list(self) -> None:
         import validate_catalog
 
         catalog, _, readme = validate_catalog.load()
-        self.assertEqual(len(catalog["resources"]), 75)
-        self.assertEqual(len(validate_catalog.readme_entries(readme)), 75)
+        self.assertEqual(len(catalog["resources"]), 76)
+        self.assertEqual(len(validate_catalog.readme_entries(readme)), 76)
 
     def test_no_catalog_id_overlap(self) -> None:
         watchlist = module.load_watchlist()

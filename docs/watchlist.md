@@ -20,3 +20,4 @@ Structured records live in `catalog/watchlist.yaml` and are validated against `s
 - [SciToolAgent](https://github.com/hicai-zju/scitoolagent) - Potential Reference Architecture entry, not a foundational standard.
 - [Snakemake](https://snakemake.github.io/) - Compare against workflow-engine selection policy and Related Lists.
 - [SPDX](https://spdx.dev/specifications/) - Include only if scientific software assurance becomes an explicit launch subproblem.
+- [DDI Cross Domain Integration (DDI-CDI)](https://ddialliance.org/Specification/DDI-CDI/) - Published v1.0 cross-domain datum and process model complements DDI Lifecycle but production adoption remains early.

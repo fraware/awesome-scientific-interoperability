@@ -377,6 +377,57 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+- id: sdmx
+  name: SDMX
+  url: https://sdmx.org/standards-2/
+  section: Metadata and Semantics
+  resource_type: Statistical Metadata and Data Exchange Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - National statistical offices
+  - international agencies
+  - analysis systems
+  mechanism: ISO 17369 information model with REST API and SDMX-JSON or SDMX-ML transmission
+    formats for statistical structures and datasets
+  summary: ISO-backed standard for exchanging statistical data structures, constraints, and payloads
+    through REST APIs and SDMX-JSON or SDMX-ML; connects national statistical offices, international
+    agencies, and analysis systems.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  - interoperability-demonstration
+  implementation_status: multiple-independent
+  conformance_status: documented-tests
+  stewardship:
+    name: SDMX initiative (seven sponsor organizations)
+    type: consortium
+    url: https://sdmx.org/
+  domains:
+  - social-science
+  - cross-domain
+  source_urls:
+  - https://sdmx.org/standards-2/
+  - https://sdmx.org/wp-content/uploads/SDMX_3-1-0_SECTION_1_FINAL.pdf
+  - https://sdmx.org/wp-content/uploads/SDMX-MES_OG_TermsOfReference.pdf
+  alternatives:
+  - ddi-lifecycle
+  - w3c-data-catalog-vocabulary-dcat
+  related_resource_ids:
+  - ddi-lifecycle
+  - w3c-data-catalog-vocabulary-dcat
+  - simple-knowledge-organization-system-skos
+  decision_basis: Strongest documented contract for operational exchange of official statistics
+    and macroeconomic indicators where producers and consumers must share Data Structure Definitions
+    and payload formats.
+  boundary_note: Addresses statistical structure and payload exchange, not survey wave lifecycle
+    documentation; pair with DDI Lifecycle when study metadata must accompany statistical feeds.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
 - id: simple-knowledge-organization-system-skos
   name: Simple Knowledge Organization System (SKOS)
   url: https://www.w3.org/TR/skos-reference/
