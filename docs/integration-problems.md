@@ -66,6 +66,7 @@ Expose resource descriptions to search engines with [resource:bioschemas] profil
 - Official statistics or macroeconomic indicator feeds: [resource:sdmx] supplies Data Structure Definitions and payload contracts beyond catalog metadata.
 - Biodiversity aggregators: [resource:darwin-core] terms often appear in occurrence indexes alongside catalog metadata.
 - Machine-learning dataset consumers expecting training-ready packaging: [resource:croissant] descriptions may be more actionable than DCAT distributions alone.
+- Federated materials-structure databases: [resource:optimade] provides a standardized REST query contract across providers.
 - Workflow execution after discovery: pair registry results with [resource:ga4gh-workflow-execution-service-wes] rather than treating registry metadata as execution contracts.
 
 ### Limitations and common category errors
@@ -77,7 +78,7 @@ Expose resource descriptions to search engines with [resource:bioschemas] profil
 
 ### Relevant catalog entries
 
-[resource:w3c-data-catalog-vocabulary-dcat] [resource:spatiotemporal-asset-catalog-stac] [resource:fairsharing] [resource:ga4gh-tool-registry-service-trs] [resource:workflowhub] [resource:ga4gh-service-registry] [resource:ga4gh-service-info] [resource:bioschemas] [resource:schema-org] [resource:fair-signposting] [resource:ddi-lifecycle] [resource:sdmx] [resource:darwin-core] [resource:croissant]
+[resource:w3c-data-catalog-vocabulary-dcat] [resource:spatiotemporal-asset-catalog-stac] [resource:fairsharing] [resource:optimade] [resource:ga4gh-tool-registry-service-trs] [resource:workflowhub] [resource:ga4gh-service-registry] [resource:ga4gh-service-info] [resource:bioschemas] [resource:schema-org] [resource:fair-signposting] [resource:ddi-lifecycle] [resource:sdmx] [resource:darwin-core] [resource:croissant]
 
 ### Example architecture
 
@@ -140,7 +141,9 @@ For fixity-checked transfer without rich semantic graphs, [resource:bagit] remai
 
 - Executed CWL runs with PROV-oriented tooling: [resource:cwlprov] may integrate more directly with CWL-centric pipelines than authoring a crate from scratch.
 - Exact reproducibility of a computational environment rather than semantic packaging: [resource:reprozip] captures execution-centric bundles.
-- Lightweight scholarly transfer with manifest-only guarantees: [resource:bagit] over full RO-Crate when semantic linking is out of scope.
+- Scattering-facility experimental files: [resource:nexus] application definitions over HDF5.
+- Crystallographic structure deposition: [resource:crystallographic-information-framework-cif] with IUCr dictionaries.
+- Dynamic simulation model exchange: [resource:functional-mock-up-interface-fmi] FMUs between independent CAE tools.
 
 ### Limitations and common category errors
 
@@ -151,7 +154,7 @@ For fixity-checked transfer without rich semantic graphs, [resource:bagit] remai
 
 ### Relevant catalog entries
 
-[resource:ro-crate] [resource:workflow-ro-crate] [resource:workflow-run-ro-crate] [resource:workflow-testing-ro-crate] [resource:bagit] [resource:combine-omex-archive] [resource:fair-signposting] [resource:cwlprov] [resource:reprozip] [resource:ro-crate-validator]
+[resource:ro-crate] [resource:workflow-ro-crate] [resource:workflow-run-ro-crate] [resource:workflow-testing-ro-crate] [resource:bagit] [resource:combine-omex-archive] [resource:fair-signposting] [resource:crystallographic-information-framework-cif] [resource:functional-mock-up-interface-fmi] [resource:nexus] [resource:cwlprov] [resource:reprozip] [resource:ro-crate-validator]
 
 ### Example architecture
 
