@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Generate a deterministic SHA-256 manifest for every tracked release file."""
+"""Generate a deterministic SHA-256 manifest for every tracked release file.
+
+Hashes git index blob contents so results are independent of working-tree
+line-ending conversion (for example core.autocrlf on Windows).
+"""
 
 from __future__ import annotations
 
@@ -13,24 +17,34 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "MANIFEST.json"
 
 
-def tracked_files() -> list[Path]:
+def tracked_paths() -> list[str]:
     result = subprocess.run(
         ["git", "ls-files", "-z"],
         cwd=ROOT,
         check=True,
         capture_output=True,
     )
-    paths = [ROOT / item.decode("utf-8") for item in result.stdout.split(b"\0") if item]
-    return sorted((path for path in paths if path != MANIFEST), key=lambda path: path.relative_to(ROOT).as_posix())
+    paths = [item.decode("utf-8") for item in result.stdout.split(b"\0") if item]
+    return sorted(path for path in paths if path != "MANIFEST.json")
+
+
+def index_blob(path: str) -> bytes:
+    result = subprocess.run(
+        ["git", "show", f":{path}"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+    )
+    return result.stdout
 
 
 def build_manifest() -> dict:
     files = []
-    for path in tracked_files():
-        data = path.read_bytes()
+    for path in tracked_paths():
+        data = index_blob(path)
         files.append(
             {
-                "path": path.relative_to(ROOT).as_posix(),
+                "path": path,
                 "sha256": hashlib.sha256(data).hexdigest(),
                 "bytes": len(data),
             }
