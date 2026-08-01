@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 44,
+  "file_count": 45,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -131,6 +131,11 @@
       "path": "docs/editorial-policy.md",
       "sha256": "c337ad693a3ce396c3f8eda0a9092cc9fd1ad7d48e5aad3c1b1fbf5832280be0",
       "bytes": 2395
+    },
+    {
+      "path": "docs/engineering-takeover-specification.md",
+      "sha256": "51b195dbc94b5a4fbd0d5c4c78786fa542fdce303d7860677028b6f168a27582",
+      "bytes": 57524
     },
     {
       "path": "docs/maintenance-protocol.md",
