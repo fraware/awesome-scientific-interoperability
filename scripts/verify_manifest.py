@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Verify that MANIFEST.json exactly covers every tracked release file."""
+"""Verify that MANIFEST.json exactly covers every tracked release file.
+
+Compares against git index blob contents so verification matches CI checkouts
+regardless of local working-tree line endings.
+"""
 
 from __future__ import annotations
 
@@ -24,6 +28,16 @@ def tracked_paths() -> list[str]:
     return sorted(path for path in paths if path != "MANIFEST.json")
 
 
+def index_blob(path: str) -> bytes:
+    result = subprocess.run(
+        ["git", "show", f":{path}"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+    )
+    return result.stdout
+
+
 def main() -> int:
     payload = json.loads(MANIFEST.read_text(encoding="utf-8"))
     entries = payload.get("files", [])
@@ -45,11 +59,11 @@ def main() -> int:
 
     for entry in entries:
         relative = entry.get("path", "")
-        path = ROOT / relative
-        if not path.is_file():
-            errors.append(f"missing file: {relative}")
+        try:
+            data = index_blob(relative)
+        except subprocess.CalledProcessError:
+            errors.append(f"missing indexed file: {relative}")
             continue
-        data = path.read_bytes()
         digest = hashlib.sha256(data).hexdigest()
         if entry.get("sha256") != digest:
             errors.append(f"SHA-256 mismatch: {relative}")

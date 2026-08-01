@@ -18,7 +18,6 @@ links:
 	python scripts/check_links.py
 
 lint:
-	npm install --no-save --package-lock=false awesome-lint@2.3.0
-	node scripts/run_awesome_lint.mjs
+	npx --yes awesome-lint
 
 all: validate test lint
