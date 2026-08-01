@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 74,
+  "file_count": 78,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -69,13 +69,13 @@
     },
     {
       "path": "catalog/resources/foundations.yaml",
-      "sha256": "b2fdc0cb176318e8f70bc9e4636941fcedfe9357d9d468e0e372046557530eb8",
-      "bytes": 3937
+      "sha256": "2d2902ba80116e50da43c6a8625d5cad604892d96425f247134851e9ecbc3fd8",
+      "bytes": 5832
     },
     {
       "path": "catalog/resources/identifiers-and-discovery.yaml",
-      "sha256": "b1184a0ad48ea7b6c00a82ad5e8be770385d8760dc0933070cbf177f4133210a",
-      "bytes": 8992
+      "sha256": "2283624f5b797ff5aa859eadade5644c054c5ae5d4ce43599a9729c0c50dbcc5",
+      "bytes": 13900
     },
     {
       "path": "catalog/resources/instruments-and-laboratories.yaml",
@@ -89,8 +89,8 @@
     },
     {
       "path": "catalog/resources/metadata-and-semantics.yaml",
-      "sha256": "3b34cee39f2726e4982b396f755d9616df1be6012d653b0cd929b5259e3f06df",
-      "bytes": 12286
+      "sha256": "fe657c56ae769cab6174de95a28687cd07e40f753cad11d49e55d7c7e98ca4a2",
+      "bytes": 18748
     },
     {
       "path": "catalog/resources/provenance-and-evidence.yaml",
@@ -183,6 +183,16 @@
       "bytes": 2569
     },
     {
+      "path": "docs/reviews/foundations.md",
+      "sha256": "d932ea98900b38b8f93424afea50f905db53a63146badabba45471bcbcaf31dd",
+      "bytes": 2005
+    },
+    {
+      "path": "docs/reviews/identifiers-and-discovery.md",
+      "sha256": "83f4408fd269dacd55bdf26a879905846ee352349b39ae57c9c0c30389931a28",
+      "bytes": 2934
+    },
+    {
       "path": "docs/reviews/instruments-and-laboratories.md",
       "sha256": "de92da8bf009ab9183bb4b3a2975b58d645579ef6d566e0b3b8af71131808c33",
       "bytes": 1992
@@ -191,6 +201,11 @@
       "path": "docs/reviews/knowledge-systems-and-publications.md",
       "sha256": "93e902628c53d2bf06a537f67250100ac78bb1a74647be001bdf3ad7c7bf294d",
       "bytes": 1358
+    },
+    {
+      "path": "docs/reviews/metadata-and-semantics.md",
+      "sha256": "a0d4f623812db228a5584de8af3922b29e0c1bb3f5d9c81ade9f5e364afdbdc1",
+      "bytes": 3453
     },
     {
       "path": "docs/reviews/provenance-and-evidence.md",
@@ -274,8 +289,8 @@
     },
     {
       "path": "scripts/validate_catalog_v2.py",
-      "sha256": "e617a1513b69560fa5939ed29b117ac438a14dd2170739c7ab029053c012a096",
-      "bytes": 8313
+      "sha256": "9a8d9a0094842306ac2e97d9771eb122878472702329eafb5652409b26da9494",
+      "bytes": 8893
     },
     {
       "path": "scripts/verify_manifest.py",
@@ -348,6 +363,11 @@
       "bytes": 1405
     },
     {
+      "path": "tests/fixtures/v2/pr-04-group-a-combined.valid.yaml",
+      "sha256": "97ffeb5455ed314739815607715b1cf18c727fafe296dd00443d75c6a51ba5a5",
+      "bytes": 38576
+    },
+    {
       "path": "tests/fixtures/v2/pr-05-group-b-combined.valid.yaml",
       "sha256": "52e6ee3f67a62cac3aed81bdbb4ae3d87cee00d153b00cd4981af7ecb79754dc",
       "bytes": 38767
@@ -364,8 +384,8 @@
     },
     {
       "path": "tests/test_catalog_v2.py",
-      "sha256": "5fc26c340af0dda8b603572f596b2123ae9b88aa0cacf3fc58d96358e13866a7",
-      "bytes": 1712
+      "sha256": "3cd7b6141932296add6e7d0f720f3b05ff3b2056ad47b04208c652eecef6ec12",
+      "bytes": 2112
     },
     {
       "path": "tests/test_links.py",

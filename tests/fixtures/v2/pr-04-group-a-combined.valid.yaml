@@ -1,0 +1,1190 @@
+catalog_version: 2.0.0
+reviewed_on: '2026-08-01'
+north_star: A technically competent user should identify the strongest available interoperability
+  mechanism for a concrete scientific integration problem.
+resources:
+- id: cross-domain-interoperability-framework-cdif
+  name: Cross-Domain Interoperability Framework (CDIF)
+  url: https://cdif.codata.org/
+  section: Foundations
+  resource_type: Framework / Specification
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  connects:
+  - Research data
+  - metadata systems
+  - domain repositories
+  - cross-domain consumers
+  mechanism: Common discovery, integration, provenance, and semantic profiles for
+    cross-domain data use
+  summary: Discovery, integration, provenance, and semantic profiles for reusing research
+    data across scientific domains.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  stewardship:
+    name: CODATA (Committee on Data of the International Science Council)
+    type: consortium
+    url: https://codata.org/
+  domains:
+  - cross-domain
+  source_urls:
+  - https://cdif.codata.org/
+  - https://doi.org/10.5281/zenodo.11236871
+  alternatives: []
+  related_resource_ids:
+  - eosc-interoperability-framework
+  - fair-principles
+  decision_basis: Directly addresses cross-domain scientific data interoperability
+    and provides a current specification suite.
+  boundary_note: 'Overlap with EOSC is complementary: CDIF supplies concrete cross-domain
+    information profiles.'
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: eosc-interoperability-framework
+  name: EOSC Interoperability Framework
+  url: https://eosc.eu/eosc-interoperability-framework/
+  section: Foundations
+  resource_type: Framework
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  - Organizational
+  connects:
+  - European research infrastructures
+  - services
+  - data
+  - users
+  mechanism: Common interoperability architecture, guidelines, and governance for
+    federated research services
+  summary: Technical, semantic, organizational, and legal guidance for federating
+    European research data and services.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  stewardship:
+    name: EOSC Association
+    type: consortium
+    url: https://eosc.eu/
+  domains:
+  - cross-domain
+  - european-research
+  source_urls:
+  - https://eosc.eu/eosc-interoperability-framework/
+  - https://doi.org/10.5281/zenodo.10843882
+  alternatives: []
+  related_resource_ids:
+  - cross-domain-interoperability-framework-cdif
+  - fair-digital-object-framework
+  decision_basis: Major cross-domain framework that organizes technical, semantic,
+    organizational, and legal interoperability in a scientific federation.
+  boundary_note: Distinct from service directories because it defines the interoperability
+    architecture.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: fair-digital-object-framework
+  name: FAIR Digital Object Framework
+  url: https://fairdo.org/specifications/
+  section: Foundations
+  resource_type: Framework / Specification
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  - Evidentiary
+  connects:
+  - Digital objects
+  - repositories
+  - automated services
+  mechanism: Typed, identified, machine-actionable digital objects with kernel information
+    and operations
+  summary: Typed and persistently identified digital objects designed for machine
+    action across repositories and automated services.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  stewardship:
+    name: FAIR Digital Object Forum (FDO Forum)
+    type: community
+    url: https://fairdo.org/
+  domains:
+  - cross-domain
+  source_urls:
+  - https://fairdo.org/specifications/
+  - https://doi.org/10.5281/zenodo.7781925
+  alternatives: []
+  related_resource_ids:
+  - fair-principles
+  decision_basis: Defines a reusable object model intended to support machine processing
+    and cross-system exchange.
+  boundary_note: Do not duplicate every FDO implementation; curate only field-defining
+    specifications and test systems.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: fair-principles
+  name: FAIR Principles
+  url: https://www.go-fair.org/fair-principles/
+  section: Foundations
+  resource_type: Principles
+  interoperability_layers:
+  - Semantic
+  - Organizational
+  connects:
+  - Digital research objects
+  - repositories
+  - research communities
+  mechanism: Four principles defining machine-actionable findability, accessibility,
+    interoperability, and reuse
+  summary: Principles for machine-actionable findability, accessibility, interoperability,
+    and reuse across digital research objects and services.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: GO FAIR Foundation
+    type: foundation
+    url: https://www.go-fair.org/
+  domains:
+  - cross-domain
+  source_urls:
+  - https://www.go-fair.org/fair-principles/
+  - https://www.nature.com/articles/sdata201618
+  alternatives: []
+  related_resource_ids:
+  - fair-digital-object-framework
+  - fairsharing
+  decision_basis: Field-defining foundation. The interoperability principle and machine-actionability
+    framing are necessary to understand the category.
+  boundary_note: Keep the entry focused on the principles; redirect implementation
+    directories to FAIRsharing.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: crossref-rest-api-and-metadata
+  name: Crossref REST API and Metadata
+  url: https://www.crossref.org/documentation/retrieve-metadata/rest-api/
+  section: Identifiers and Discovery
+  resource_type: Metadata Service / API
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Scholarly works
+  - publishers
+  - discovery systems
+  - research graphs
+  mechanism: Open scholarly metadata API linked through DOIs and relationships
+  summary: Open scholarly metadata API linked through DOIs and relationships; connects
+    scholarly works, publishers, discovery systems, and research graphs.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  - independent-implementation
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: Crossref
+    type: foundation
+    url: https://www.crossref.org/
+  domains:
+  - scholarly-communication
+  source_urls:
+  - https://www.crossref.org/documentation/retrieve-metadata/rest-api/
+  - https://api.crossref.org/
+  alternatives:
+  - datacite-metadata-schema-and-rest-api
+  related_resource_ids:
+  - scholix
+  decision_basis: Foundational discovery interface for scholarly metadata and cross-system
+    linking.
+  boundary_note: Publication-centered; use DataCite and Scholix for broader research-object
+    relations.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: datacite-metadata-schema-and-rest-api
+  name: DataCite Metadata Schema and REST API
+  url: https://support.datacite.org/docs/api
+  section: Identifiers and Discovery
+  resource_type: Metadata Standard / API
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Research objects
+  - repositories
+  - discovery services
+  - citation systems
+  mechanism: DOI metadata schema and APIs for registration, discovery, and relation
+    expression
+  summary: DOI metadata schema and APIs for registration, discovery, and relation
+    expression; connects research objects, repositories, discovery services, and citation
+    systems.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  - independent-implementation
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: DataCite
+    type: consortium
+    url: https://datacite.org/
+  domains:
+  - cross-domain
+  - research-data
+  source_urls:
+  - https://support.datacite.org/docs/api
+  - https://schema.datacite.org/
+  alternatives:
+  - crossref-rest-api-and-metadata
+  related_resource_ids:
+  - igsn-id
+  decision_basis: Core interoperability infrastructure connecting research objects,
+    repositories, and citation systems.
+  boundary_note: Distinct from Crossref through its strong research-data and software
+    coverage.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: fairsharing
+  name: FAIRsharing
+  url: https://fairsharing.org/
+  section: Identifiers and Discovery
+  resource_type: Curated Registry
+  interoperability_layers:
+  - Semantic
+  - Organizational
+  connects:
+  - Standards
+  - databases
+  - repositories
+  - policies
+  - users
+  mechanism: Curated records and relationships among research standards, databases,
+    and policies
+  summary: Curated records and relationships among research standards, databases,
+    and policies; connects standards, databases, repositories, policies, and users.
+  maturity: established
+  evidence_types:
+  - institutional-adoption
+  - independent-implementation
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  stewardship:
+    name: FAIRsharing (University of Oxford Data Readiness Group)
+    type: institution
+    url: https://fairsharing.org/
+  domains:
+  - cross-domain
+  source_urls:
+  - https://fairsharing.org/
+  - https://fairsharing.github.io/FAIRsharing-API/
+  alternatives: []
+  related_resource_ids:
+  - fair-principles
+  decision_basis: Canonical discovery infrastructure for standards and their relationships
+    across scientific domains.
+  boundary_note: The list should point to FAIRsharing instead of reproducing its comprehensive
+    registry function.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: ga4gh-service-info
+  name: GA4GH Service Info
+  url: https://www.ga4gh.org/product/service-info/
+  section: Identifiers and Discovery
+  resource_type: API Standard
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - Genomic cloud services
+  - clients
+  - registries
+  mechanism: Common endpoint for service identity, version, organization, and type
+    metadata
+  summary: Common endpoint for service identity, version, organization, and type metadata;
+    connects genomic cloud services, clients, and registries.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: documented-tests
+  stewardship:
+    name: Global Alliance for Genomics and Health (GA4GH)
+    type: consortium
+    url: https://www.ga4gh.org/
+  domains:
+  - genomics
+  source_urls:
+  - https://www.ga4gh.org/product/service-info/
+  - https://github.com/ga4gh-discovery/ga4gh-service-info
+  alternatives: []
+  related_resource_ids:
+  - ga4gh-service-registry
+  decision_basis: A concise, reusable service-description contract supporting interoperable
+    genomics infrastructure.
+  boundary_note: Domain exemplar with broader service-discovery lessons.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: ga4gh-service-registry
+  name: GA4GH Service Registry
+  url: https://www.ga4gh.org/product/service-registry/
+  section: Identifiers and Discovery
+  resource_type: API Standard / Registry
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - Clients
+  - genomic services
+  - federated registries
+  mechanism: Common API for discovering standards-compliant services
+  summary: Common API for discovering standards-compliant services; connects clients,
+    genomic services, and federated registries.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: documented-tests
+  stewardship:
+    name: Global Alliance for Genomics and Health (GA4GH)
+    type: consortium
+    url: https://www.ga4gh.org/
+  domains:
+  - genomics
+  source_urls:
+  - https://www.ga4gh.org/product/service-registry/
+  - https://github.com/ga4gh-discovery/ga4gh-service-registry
+  alternatives: []
+  related_resource_ids:
+  - ga4gh-service-info
+  - ga4gh-tool-registry-service-trs
+  decision_basis: Directly connects distributed genomic services and clients through
+    a shared discovery contract.
+  boundary_note: Should be distinguished from the broader GA4GH Planet implementation
+    registry.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: ga4gh-tool-registry-service-trs
+  name: GA4GH Tool Registry Service (TRS)
+  url: https://www.ga4gh.org/product/tool-registry-service-trs/
+  section: Identifiers and Discovery
+  resource_type: API Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Workflow registries
+  - tools
+  - workflow engines
+  - clients
+  mechanism: Standard API for discovering and retrieving versioned tools and workflows
+  summary: Standard API for discovering and retrieving versioned tools and workflows;
+    connects workflow registries, tools, workflow engines, and clients.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: documented-tests
+  stewardship:
+    name: Global Alliance for Genomics and Health (GA4GH)
+    type: consortium
+    url: https://www.ga4gh.org/
+  domains:
+  - genomics
+  - computational-workflows
+  source_urls:
+  - https://www.ga4gh.org/product/tool-registry-service-trs/
+  - https://github.com/ga4gh/tool-registry-service-schemas
+  alternatives: []
+  related_resource_ids:
+  - ga4gh-service-registry
+  - common-workflow-language-cwl
+  decision_basis: One of the clearest operational contracts linking workflow registries
+    and execution ecosystems.
+  boundary_note: Genomics-originated but used in broader workflow infrastructure.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: identifiers-org
+  name: Identifiers.org
+  url: https://identifiers.org/
+  section: Identifiers and Discovery
+  resource_type: Registry / Resolver
+  interoperability_layers:
+  - Semantic
+  - Operational
+  connects:
+  - Life-science identifiers
+  - databases
+  - applications
+  mechanism: Registry of identifier namespaces with standardized resolution
+  summary: Registry of identifier namespaces with standardized resolution; connects
+    Life-science identifiers, databases, and applications.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  - independent-implementation
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: EMBL-EBI (ELIXIR Interoperability Platform)
+    type: institution
+    url: https://www.ebi.ac.uk/
+  domains:
+  - life-sciences
+  source_urls:
+  - https://identifiers.org/
+  - https://docs.identifiers.org/
+  alternatives: []
+  related_resource_ids: []
+  decision_basis: Important operational bridge across heterogeneous life-science identifier
+    schemes.
+  boundary_note: Domain-centered, but the registry pattern is transferable.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: igsn-id
+  name: IGSN ID
+  url: https://ev.igsn.org/about-igsns
+  section: Identifiers and Discovery
+  resource_type: Identifier System
+  interoperability_layers:
+  - Semantic
+  - Evidentiary
+  connects:
+  - Physical samples
+  - datasets
+  - publications
+  - repositories
+  mechanism: Globally unique persistent identifiers and metadata for material samples
+  summary: Globally unique persistent identifiers and metadata for material samples;
+    connects physical samples, datasets, publications, and repositories.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: IGSN e.V.
+    type: foundation
+    url: https://ev.igsn.org/
+  domains:
+  - cross-domain
+  - sample-curation
+  source_urls:
+  - https://ev.igsn.org/about-igsns
+  - https://support.datacite.org/docs/igsn-ids
+  alternatives: []
+  related_resource_ids:
+  - datacite-metadata-schema-and-rest-api
+  decision_basis: Connects physical scientific samples to digital records and downstream
+    research outputs.
+  boundary_note: Sample-focused; broader object identity remains outside its scope.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: orcid
+  name: ORCID
+  url: https://info.orcid.org/what-is-orcid/
+  section: Identifiers and Discovery
+  resource_type: Identifier System / API
+  interoperability_layers:
+  - Semantic
+  - Operational
+  connects:
+  - Researchers
+  - publishers
+  - funders
+  - repositories
+  mechanism: Persistent researcher identifiers and public/member APIs
+  summary: Persistent researcher identifiers and public/member APIs; connects researchers,
+    publishers, funders, and repositories.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  - independent-implementation
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: ORCID
+    type: foundation
+    url: https://orcid.org/
+  domains:
+  - cross-domain
+  - scholarly-communication
+  source_urls:
+  - https://info.orcid.org/what-is-orcid/
+  - https://pub.orcid.org/v3.0/
+  alternatives: []
+  related_resource_ids:
+  - research-organization-registry-ror
+  decision_basis: Canonical cross-system identity layer for researchers with broad
+    scientific infrastructure integration.
+  boundary_note: Personal identity only; organization and object identity require
+    complementary systems.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: research-organization-registry-ror
+  name: Research Organization Registry (ROR)
+  url: https://ror.org/about/
+  section: Identifiers and Discovery
+  resource_type: Identifier Registry / API
+  interoperability_layers:
+  - Semantic
+  - Operational
+  connects:
+  - Research organizations
+  - publishers
+  - funders
+  - repositories
+  mechanism: Open organization identifiers, metadata, and APIs
+  summary: Open organization identifiers, metadata, and APIs; connects research organizations,
+    publishers, funders, and repositories.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  - independent-implementation
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: ROR (Research Organization Registry)
+    type: community
+    url: https://ror.org/
+  domains:
+  - cross-domain
+  - scholarly-communication
+  source_urls:
+  - https://ror.org/about/
+  - https://github.com/ror-community/ror-api
+  alternatives: []
+  related_resource_ids:
+  - orcid
+  decision_basis: Provides an open, shared organization identity layer across research
+    systems.
+  boundary_note: Complementary to ORCID and funder identifiers.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: bioschemas
+  name: Bioschemas
+  url: https://bioschemas.org/profiles/
+  section: Metadata and Semantics
+  resource_type: Scientific Metadata Profiles
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Life-science resources
+  - search engines
+  - registries
+  mechanism: Schema.org profiles for datasets, tools, workflows, training materials,
+    and scientific resources
+  summary: Schema.org profiles for datasets, tools, workflows, training materials,
+    and scientific resources; connects Life-science resources, search engines, and
+    registries.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: Bioschemas community
+    type: community
+    url: https://bioschemas.org/
+  domains:
+  - life-sciences
+  source_urls:
+  - https://bioschemas.org/profiles/
+  - https://github.com/Bioschemas/bioschemas.github.io
+  alternatives: []
+  related_resource_ids:
+  - schema-org
+  decision_basis: Strong domain exemplar translating general web semantics into actionable
+    scientific resource profiles.
+  boundary_note: Life-science-centered; avoid listing every profile individually.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: climate-and-forecast-cf-metadata-conventions
+  name: Climate and Forecast (CF) Metadata Conventions
+  url: https://cfconventions.org/
+  section: Metadata and Semantics
+  resource_type: Metadata Convention
+  interoperability_layers:
+  - Semantic
+  connects:
+  - NetCDF datasets
+  - climate and forecast tools
+  - archives
+  mechanism: Standardized variable descriptions, units, coordinates, and metadata
+    conventions
+  summary: Standardized variable descriptions, units, coordinates, and metadata conventions;
+    connects NetCDF datasets, climate and forecast tools, and archives.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: CF Conventions community
+    type: community
+    url: https://cfconventions.org/
+  domains:
+  - climate-science
+  - geosciences
+  source_urls:
+  - https://cfconventions.org/
+  - https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html
+  alternatives: []
+  related_resource_ids:
+  - unified-code-for-units-of-measure-ucum
+  decision_basis: The semantic layer that makes NetCDF climate data interpretable
+    across tools.
+  boundary_note: Prefer this over a generic NetCDF entry for the interoperability
+    list.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: croissant
+  name: Croissant
+  url: https://docs.mlcommons.org/croissant/docs/croissant-spec-1.1.html
+  section: Metadata and Semantics
+  resource_type: Dataset Metadata Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Machine-learning datasets
+  - repositories
+  - training frameworks
+  - consumers
+  mechanism: Machine-readable dataset descriptions built on Schema.org
+  summary: Machine-readable dataset descriptions built on Schema.org; connects machine-learning
+    datasets, repositories, training frameworks, and consumers.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - independent-implementation
+  implementation_status: multiple-independent
+  conformance_status: public-validator
+  stewardship:
+    name: MLCommons
+    type: consortium
+    url: https://mlcommons.org/
+  domains:
+  - machine-learning
+  - research-data
+  source_urls:
+  - https://docs.mlcommons.org/croissant/docs/croissant-spec-1.1.html
+  - https://github.com/mlcommons/croissant
+  alternatives: []
+  related_resource_ids:
+  - schema-org
+  decision_basis: Current, implementation-oriented bridge between dataset repositories
+    and ML tooling.
+  boundary_note: Include for AI-ready scientific datasets, while excluding generic
+    AI datasets.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: darwin-core
+  name: Darwin Core
+  url: https://dwc.tdwg.org/
+  section: Metadata and Semantics
+  resource_type: Vocabulary / Standard
+  interoperability_layers:
+  - Semantic
+  connects:
+  - Biodiversity observations
+  - collections
+  - aggregators
+  - repositories
+  mechanism: Shared terms for biodiversity occurrence, taxonomy, location, and event
+    data
+  summary: Shared terms for biodiversity occurrence, taxonomy, location, and event
+    data; connects biodiversity observations, collections, aggregators, and repositories.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: Biodiversity Information Standards (TDWG)
+    type: standards-body
+    url: https://www.tdwg.org/
+  domains:
+  - biodiversity
+  source_urls:
+  - https://dwc.tdwg.org/
+  - https://github.com/tdwg/dwc
+  alternatives: []
+  related_resource_ids: []
+  decision_basis: Mature domain standard enabling global biodiversity data exchange.
+  boundary_note: Domain exemplar with broad institutional adoption.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: ddi-lifecycle
+  name: DDI Lifecycle
+  url: https://ddialliance.org/Specification/DDI-Lifecycle/
+  section: Metadata and Semantics
+  resource_type: Metadata Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  connects:
+  - Social-science data
+  - surveys
+  - archives
+  - analysis systems
+  mechanism: Lifecycle metadata model covering conceptualization, collection, processing,
+    and dissemination
+  summary: Lifecycle metadata model covering conceptualization, collection, processing,
+    and dissemination; connects social-science data, surveys, archives, and analysis
+    systems.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: DDI Alliance
+    type: consortium
+    url: https://ddialliance.org/
+  domains:
+  - social-science
+  source_urls:
+  - https://ddialliance.org/Specification/DDI-Lifecycle/
+  - https://github.com/ddialliance/Specification-DDI-Lifecycle
+  alternatives: []
+  related_resource_ids: []
+  decision_basis: Mature lifecycle metadata standard connecting social-science study
+    design, collection, processing, archiving, and dissemination across independent
+    institutions and systems.
+  boundary_note: Include as a social-science domain standard; avoid expanding into
+    a comprehensive survey-metadata catalog.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: edam-ontology
+  name: EDAM Ontology
+  url: https://edamontology.org/
+  section: Metadata and Semantics
+  resource_type: Ontology
+  interoperability_layers:
+  - Semantic
+  connects:
+  - Bioinformatics tools
+  - data
+  - formats
+  - operations
+  - workflow registries
+  mechanism: Controlled concepts connecting scientific operations, data types, formats,
+    and topics
+  summary: Controlled concepts connecting scientific operations, data types, formats,
+    and topics; connects bioinformatics tools, data, formats, operations, and workflow
+    registries.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: EDAM ontology maintainers (ELIXIR Norway / EMBL-EBI)
+    type: community
+    url: https://edamontology.org/
+  domains:
+  - bioinformatics
+  - life-sciences
+  source_urls:
+  - https://edamontology.org/
+  - https://github.com/edamontology/edamontology
+  alternatives: []
+  related_resource_ids:
+  - obo-foundry
+  - ga4gh-tool-registry-service-trs
+  decision_basis: Operationally useful semantic bridge across tools, workflows, and
+    registries.
+  boundary_note: Life-science-focused but unusually clear in connecting operations
+    to data and formats.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: obo-foundry
+  name: OBO Foundry
+  url: https://obofoundry.org/
+  section: Metadata and Semantics
+  resource_type: Ontology Governance / Registry
+  interoperability_layers:
+  - Semantic
+  - Organizational
+  connects:
+  - Biomedical ontologies
+  - data systems
+  - knowledge graphs
+  mechanism: Shared principles, identifiers, and coordination for interoperable open
+    ontologies
+  summary: Shared principles, identifiers, and governance for interoperable open biomedical
+    ontologies.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: OBO Foundry
+    type: community
+    url: https://obofoundry.org/
+  domains:
+  - biomedical
+  - life-sciences
+  source_urls:
+  - https://obofoundry.org/
+  - https://github.com/OBOFoundry/OBOFoundry.github.io
+  alternatives: []
+  related_resource_ids:
+  - edam-ontology
+  decision_basis: Field-defining governance and coordination mechanism for interoperable
+    biomedical semantics.
+  boundary_note: Curate the Foundry as the ecosystem entry, not every member ontology.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: qudt
+  name: QUDT
+  url: https://www.qudt.org/
+  section: Metadata and Semantics
+  resource_type: Ontology / Vocabulary
+  interoperability_layers:
+  - Semantic
+  connects:
+  - Quantities
+  - units
+  - scientific datasets
+  - knowledge systems
+  mechanism: Machine-readable ontologies for quantities, units, dimensions, and data
+    types
+  summary: Ontologies for quantities, units, dimensions, and data types that preserve
+    measurement meaning across scientific systems.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  stewardship:
+    name: QUDT.org
+    type: community
+    url: https://www.qudt.org/
+  domains:
+  - cross-domain
+  source_urls:
+  - https://www.qudt.org/
+  - https://github.com/qudt/qudt-public-repo
+  alternatives:
+  - unified-code-for-units-of-measure-ucum
+  related_resource_ids: []
+  decision_basis: Directly addresses a recurring source of semantic incompatibility
+    in scientific systems.
+  boundary_note: 'Compare with UCUM: QUDT emphasizes semantic models; UCUM emphasizes
+    computable unit codes.'
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: schema-org
+  name: Schema.org
+  url: https://schema.org/
+  section: Metadata and Semantics
+  resource_type: Vocabulary
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Web resources
+  - search systems
+  - structured-data consumers
+  mechanism: Shared web vocabulary expressed through JSON-LD, Microdata, or RDFa
+  summary: Shared web vocabulary used by scientific profiles to expose structured
+    resources to search engines and machine clients.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  - independent-implementation
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: Schema.org community
+    type: community
+    url: https://schema.org/
+  domains:
+  - cross-domain
+  source_urls:
+  - https://schema.org/
+  - https://github.com/schemaorg/schemaorg
+  alternatives: []
+  related_resource_ids:
+  - bioschemas
+  - croissant
+  - w3c-data-catalog-vocabulary-dcat
+  decision_basis: Foundational semantic substrate used by scientific profiles including
+    Bioschemas and dataset descriptions.
+  boundary_note: General-purpose; include because scientific profiles depend on it.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: simple-knowledge-organization-system-skos
+  name: Simple Knowledge Organization System (SKOS)
+  url: https://www.w3.org/TR/skos-reference/
+  section: Metadata and Semantics
+  resource_type: Vocabulary / Standard
+  interoperability_layers:
+  - Semantic
+  connects:
+  - Taxonomies
+  - thesauri
+  - knowledge graphs
+  - metadata systems
+  mechanism: RDF model for sharing and linking controlled vocabularies
+  summary: RDF model for publishing, mapping, and exchanging thesauri, taxonomies,
+    and controlled vocabularies.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: World Wide Web Consortium (W3C)
+    type: standards-body
+    url: https://www.w3.org/
+  domains:
+  - cross-domain
+  - semantic-web
+  source_urls:
+  - https://www.w3.org/TR/skos-reference/
+  - https://www.w3.org/2009/08/skos-reference/skos.html
+  alternatives: []
+  related_resource_ids:
+  - w3c-data-catalog-vocabulary-dcat
+  decision_basis: Foundational mechanism for cross-system vocabulary exchange and
+    mapping.
+  boundary_note: Generic standard justified by pervasive scientific semantic infrastructure
+    use.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: sosa-ssn
+  name: SOSA/SSN
+  url: https://www.w3.org/TR/vocab-ssn/
+  section: Metadata and Semantics
+  resource_type: Ontology / Standard
+  interoperability_layers:
+  - Semantic
+  connects:
+  - Sensors
+  - observations
+  - samples
+  - actuators
+  - platforms
+  mechanism: W3C/OGC ontologies for observations, sampling, sensing, and actuation
+  summary: W3C and OGC ontologies connecting sensors, observations, samples, actuators,
+    and platforms.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: World Wide Web Consortium (W3C) and Open Geospatial Consortium (OGC)
+    type: standards-body
+    url: https://www.w3.org/
+  domains:
+  - environmental-science
+  - sensor-networks
+  source_urls:
+  - https://www.w3.org/TR/vocab-ssn/
+  - https://www.ogc.org/standards/ssn/
+  alternatives: []
+  related_resource_ids: []
+  decision_basis: Core semantic contract for instrument, sensor, observation, and
+    sample interoperability.
+  boundary_note: Broad enough to connect environmental, laboratory, and IoT scientific
+    systems.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: spatiotemporal-asset-catalog-stac
+  name: SpatioTemporal Asset Catalog (STAC)
+  url: https://stacspec.org/
+  section: Metadata and Semantics
+  resource_type: Specification / API
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Geospatial assets
+  - catalogs
+  - clients
+  - cloud storage
+  mechanism: Common metadata model and APIs for spatiotemporal assets
+  summary: Common metadata model and APIs for spatiotemporal assets; connects geospatial
+    assets, catalogs, clients, and cloud storage.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: documented-tests
+  stewardship:
+    name: STAC community
+    type: community
+    url: https://stacspec.org/
+  domains:
+  - geospatial
+  - earth-observation
+  source_urls:
+  - https://stacspec.org/
+  - https://github.com/radiantearth/stac-spec
+  alternatives: []
+  related_resource_ids:
+  - w3c-data-catalog-vocabulary-dcat
+  decision_basis: Strong cross-provider interoperability standard for Earth-observation
+    and geospatial scientific assets.
+  boundary_note: Domain exemplar with mature implementation diversity.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: unified-code-for-units-of-measure-ucum
+  name: Unified Code for Units of Measure (UCUM)
+  url: https://ucum.org/
+  section: Metadata and Semantics
+  resource_type: Coding Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Measurements
+  - clinical systems
+  - laboratory data
+  - software
+  mechanism: Unambiguous machine-processable codes for units of measure
+  summary: Machine-processable codes for unambiguous exchange and computation of measurement
+    units.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: Regenstrief Institute (UCUM)
+    type: institution
+    url: https://ucum.org/
+  domains:
+  - cross-domain
+  - clinical-informatics
+  source_urls:
+  - https://ucum.org/
+  - https://github.com/UnifiedCodeUnits4UnitsOfMeasure/ucum
+  alternatives:
+  - qudt
+  related_resource_ids: []
+  decision_basis: Provides a compact operational unit contract used across clinical
+    and scientific systems.
+  boundary_note: Complementary to QUDT rather than redundant.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: w3c-data-catalog-vocabulary-dcat
+  name: W3C Data Catalog Vocabulary (DCAT)
+  url: https://www.w3.org/TR/vocab-dcat-3/
+  section: Metadata and Semantics
+  resource_type: Vocabulary / Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Data catalogs
+  - datasets
+  - services
+  - federated discovery systems
+  mechanism: RDF vocabulary for interoperable catalog and dataset descriptions
+  summary: RDF vocabulary for exchanging catalog, dataset, distribution, and data-service
+    descriptions across federated catalogs.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: World Wide Web Consortium (W3C)
+    type: standards-body
+    url: https://www.w3.org/
+  domains:
+  - cross-domain
+  - research-data
+  source_urls:
+  - https://www.w3.org/TR/vocab-dcat-3/
+  - https://github.com/w3c/dxwg
+  alternatives: []
+  related_resource_ids:
+  - schema-org
+  - simple-knowledge-organization-system-skos
+  decision_basis: Widely used contract for federating data catalogs and services.
+  boundary_note: General-purpose, but central to scientific data-catalog interoperability.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true

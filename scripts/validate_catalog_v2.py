@@ -50,6 +50,13 @@ def load_catalog_from_index(index_path: Path) -> dict[str, Any]:
     }
 
 
+def load_all_live_ids() -> set[str]:
+    if not DEFAULT_INDEX.exists():
+        return set()
+    catalog = load_catalog_from_index(DEFAULT_INDEX)
+    return {resource_id for resource in catalog["resources"] if (resource_id := resource.get("id"))}
+
+
 def load_catalog_document(path: Path) -> dict[str, Any]:
     with path.open(encoding="utf-8") as handle:
         payload = yaml.safe_load(handle)
@@ -176,11 +183,13 @@ def main() -> int:
     args = parser.parse_args()
 
     failures = 0
+    live_ids = load_all_live_ids()
 
     if args.fixtures_dir.is_dir():
         for path in sorted(args.fixtures_dir.glob("*.yaml")):
             catalog = load_catalog_document(path)
-            errors = validate_catalog(catalog)
+            catalog_ids = {resource_id for resource in catalog["resources"] if (resource_id := resource.get("id"))}
+            errors = validate_catalog(catalog, known_ids=live_ids | catalog_ids)
             expect_invalid = path.name.endswith(".invalid.yaml")
             if expect_invalid and not errors:
                 print(f"ERROR: fixture {path.name} expected to be invalid but passed", file=sys.stderr)
@@ -200,7 +209,8 @@ def main() -> int:
 
     for path in catalogs:
         catalog = load_catalog_from_index(path) if path.name == "resources.yaml" else load_catalog_document(path)
-        errors = validate_catalog(catalog)
+        catalog_ids = {resource_id for resource in catalog["resources"] if (resource_id := resource.get("id"))}
+        errors = validate_catalog(catalog, known_ids=live_ids | catalog_ids)
         if errors:
             print(f"ERROR: {path}:", file=sys.stderr)
             for error in errors:
