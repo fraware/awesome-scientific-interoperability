@@ -8,7 +8,9 @@ import json
 import re
 import sys
 from collections import Counter
+from datetime import date, datetime
 from pathlib import Path
+from typing import Any
 
 import yaml
 from jsonschema import Draft202012Validator, FormatChecker
@@ -26,9 +28,20 @@ BANNED_MARKETING = (
     "best-in-class",
     "revolutionary",
 )
+EMERGING_SHORT_SECTIONS = {
+    "Instruments and Laboratories",
+    "Agents, Access, and Policy",
+}
+FORBIDDEN_LEGACY_FIELDS = frozenset(
+    {"evidence_level", "maintenance_signal", "north_star_utility", "description"}
+)
 
 
-def load() -> tuple[dict, dict, str]:
+def parse_date(value: str) -> date:
+    return datetime.strptime(value, "%Y-%m-%d").date()
+
+
+def load() -> tuple[dict[str, Any], dict[str, Any], str]:
     with CATALOG_PATH.open(encoding="utf-8") as handle:
         index = yaml.safe_load(handle)
 
@@ -36,8 +49,8 @@ def load() -> tuple[dict, dict, str]:
     if not isinstance(resource_files, list) or not resource_files:
         raise ValueError("catalog index must define a non-empty resource_files list")
 
-    resources = []
-    seen_files = set()
+    resources: list[dict[str, Any]] = []
+    seen_files: set[str] = set()
     for relative_path in resource_files:
         if relative_path in seen_files:
             raise ValueError(f"duplicate resource file in catalog index: {relative_path}")
@@ -68,14 +81,43 @@ def load() -> tuple[dict, dict, str]:
     return catalog, schema, readme
 
 
-def is_v2_resource(resource: dict) -> bool:
-    return "summary" in resource
+def load_catalog_from_index(index_path: Path) -> dict[str, Any]:
+    with index_path.open(encoding="utf-8") as handle:
+        index = yaml.safe_load(handle)
+    resources: list[dict[str, Any]] = []
+    for relative_path in index.get("resource_files", []):
+        path = index_path.parent / relative_path
+        with path.open(encoding="utf-8") as handle:
+            shard = yaml.safe_load(handle)
+        resources.extend(shard.get("resources", []))
+    return {
+        "catalog_version": index["catalog_version"],
+        "reviewed_on": index["reviewed_on"],
+        "north_star": index["north_star"],
+        "resources": resources,
+    }
 
 
-def resource_description(resource: dict) -> str:
-    if is_v2_resource(resource):
-        return resource.get("summary", "")
-    return resource.get("description", "")
+def load_catalog_document(path: Path) -> dict[str, Any]:
+    with path.open(encoding="utf-8") as handle:
+        payload = yaml.safe_load(handle)
+    if "resources" in payload and "catalog_version" in payload:
+        return payload
+    if "resources" in payload and "section" in payload:
+        return {
+            "catalog_version": "2.0.0",
+            "reviewed_on": date.today().isoformat(),
+            "north_star": "A technically competent user should identify the strongest interoperability mechanism.",
+            "resources": payload["resources"],
+        }
+    raise ValueError(f"unsupported catalog document: {path}")
+
+
+def load_all_live_ids() -> set[str]:
+    if not CATALOG_PATH.exists():
+        return set()
+    catalog = load_catalog_from_index(CATALOG_PATH)
+    return {resource_id for resource in catalog["resources"] if (resource_id := resource.get("id"))}
 
 
 def readme_entries(readme: str) -> list[dict[str, str]]:
@@ -92,66 +134,114 @@ def readme_entries(readme: str) -> list[dict[str, str]]:
     return entries
 
 
-def validate() -> list[str]:
-    catalog, schema, readme = load()
+def semantic_errors(
+    catalog: dict[str, Any],
+    *,
+    known_ids: set[str] | None = None,
+    as_of: date | None = None,
+) -> list[str]:
     errors: list[str] = []
-
-    v1_resource_schema = schema["properties"]["resources"]["items"]
-    v1_validator = Draft202012Validator(v1_resource_schema, format_checker=FormatChecker())
-
-    for field in ("catalog_version", "reviewed_on", "north_star"):
-        if field not in catalog:
-            errors.append(f"schema:catalog: missing required field {field!r}")
-
     resources = catalog.get("resources", [])
-    if len(resources) < schema["properties"]["resources"].get("minItems", 1):
-        errors.append(
-            f"schema:resources: array is too short ({len(resources)} < "
-            f"{schema['properties']['resources']['minItems']})"
-        )
-
+    ids = [resource.get("id") for resource in resources]
     for field in ("id", "name", "url"):
         values = [resource.get(field) for resource in resources]
         duplicates = sorted(value for value, count in Counter(values).items() if count > 1)
         if duplicates:
             errors.append(f"duplicate {field}: {duplicates}")
 
-    all_ids = {resource.get("id") for resource in resources if resource.get("id")}
-    v2_resources = [resource for resource in resources if is_v2_resource(resource)]
+    if known_ids is None:
+        known_ids = {resource_id for resource_id in ids if isinstance(resource_id, str)}
 
-    if v2_resources:
-        import validate_catalog_v2
-
-        v2_catalog = {
-            "catalog_version": catalog["catalog_version"],
-            "reviewed_on": catalog["reviewed_on"],
-            "north_star": catalog["north_star"],
-            "resources": v2_resources,
-        }
-        errors.extend(validate_catalog_v2.validate_catalog(v2_catalog, known_ids=all_ids))
-
+    reference_date = as_of or date.today()
     for resource in resources:
-        if is_v2_resource(resource):
-            continue
         resource_id = resource.get("id", "<missing>")
-        for error in sorted(v1_validator.iter_errors(resource), key=lambda item: list(item.absolute_path)):
-            path = ".".join(str(part) for part in error.absolute_path) or resource_id
-            errors.append(f"schema:{resource_id}.{path}: {error.message}")
+        reviewed_on = resource.get("reviewed_on")
+        review_due_on = resource.get("review_due_on")
+        if isinstance(reviewed_on, str) and isinstance(review_due_on, str):
+            try:
+                start = parse_date(reviewed_on)
+                due = parse_date(review_due_on)
+            except ValueError as exc:
+                errors.append(f"{resource_id}: invalid review date: {exc}")
+            else:
+                if due <= start:
+                    errors.append(f"{resource_id}: review_due_on must be later than reviewed_on")
+                interval = (due - start).days
+                maturity = resource.get("maturity")
+                section = resource.get("section")
+                max_interval = 183 if maturity == "emerging" and section in EMERGING_SHORT_SECTIONS else 365
+                if interval > max_interval:
+                    errors.append(
+                        f"{resource_id}: review interval {interval}d exceeds maximum {max_interval}d"
+                    )
+                if due < reference_date:
+                    errors.append(
+                        f"{resource_id}: review_due_on {review_due_on} precedes as-of date "
+                        f"{reference_date.isoformat()}"
+                    )
 
+        for field in ("alternatives", "related_resource_ids"):
+            for ref in resource.get(field, []):
+                if ref == resource_id:
+                    errors.append(f"{resource_id}: {field} must not self-reference")
+                elif ref not in known_ids:
+                    errors.append(f"{resource_id}: {field} unknown id {ref!r}")
+
+        if resource.get("implementation_status") == "multiple-independent":
+            if len(resource.get("source_urls", [])) < 2:
+                errors.append(
+                    f"{resource_id}: multiple-independent requires at least two source_urls"
+                )
+
+        if resource.get("conformance_status") in {"public-suite", "public-validator"}:
+            if not resource.get("source_urls"):
+                errors.append(
+                    f"{resource_id}: public conformance evidence requires source_urls"
+                )
+
+        present_legacy = sorted(FORBIDDEN_LEGACY_FIELDS & set(resource))
+        if present_legacy:
+            errors.append(f"{resource_id}: legacy fields present: {present_legacy}")
+
+    return errors
+
+
+def validate_catalog(
+    catalog: dict[str, Any],
+    schema: dict[str, Any],
+    *,
+    known_ids: set[str] | None = None,
+    as_of: date | None = None,
+) -> list[str]:
+    errors: list[str] = []
+    validator = Draft202012Validator(schema, format_checker=FormatChecker())
+    for error in sorted(validator.iter_errors(catalog), key=lambda item: list(item.absolute_path)):
+        path = ".".join(str(part) for part in error.absolute_path) or "catalog"
+        errors.append(f"schema:{path}: {error.message}")
+    errors.extend(semantic_errors(catalog, known_ids=known_ids, as_of=as_of))
+    return errors
+
+
+def validate(*, as_of: date | None = None) -> list[str]:
+    catalog, schema, readme = load()
+    errors = validate_catalog(catalog, schema, as_of=as_of)
+
+    resources = catalog.get("resources", [])
     for resource in resources:
-        description = resource_description(resource)
-        if description and description[0].isalpha() and not description[0].isupper():
-            errors.append(f"{resource.get('id')}: description must start with an uppercase character")
-        if description and not description.endswith("."):
-            errors.append(f"{resource.get('id')}: description must end with a period")
-        lower = description.casefold()
+        resource_id = resource.get("id", "<missing>")
+        summary = resource.get("summary", "")
+        if summary and summary[0].isalpha() and not summary[0].isupper():
+            errors.append(f"{resource_id}: summary must start with an uppercase character")
+        if summary and not summary.endswith("."):
+            errors.append(f"{resource_id}: summary must end with a period")
+        lower = summary.casefold()
         for phrase in BANNED_MARKETING:
             if phrase in lower:
-                errors.append(f"{resource.get('id')}: promotional phrase: {phrase}")
-        if len(description) > 260:
-            errors.append(f"{resource.get('id')}: description exceeds 260 characters")
+                errors.append(f"{resource_id}: promotional phrase: {phrase}")
+        if len(summary) > 260:
+            errors.append(f"{resource_id}: summary exceeds 260 characters")
         if len(resource.get("connects", [])) < 2:
-            errors.append(f"{resource.get('id')}: must identify at least two connected objects or systems")
+            errors.append(f"{resource_id}: must identify at least two connected objects or systems")
 
     readme_items = readme_entries(readme)
     catalog_keyed = {(r["name"], r["url"]): r for r in resources}
@@ -172,11 +262,11 @@ def validate() -> list[str]:
                 f"{catalog_item['id']}: README/catalog section mismatch: "
                 f"{readme_item['section']!r} != {catalog_item['section']!r}"
             )
-        catalog_description = resource_description(catalog_item)
-        if catalog_description != readme_item["description"]:
+        catalog_summary = catalog_item.get("summary", "")
+        if catalog_summary != readme_item["description"]:
             errors.append(
-                f"{catalog_item['id']}: README/catalog description mismatch: "
-                f"{readme_item['description']!r} != {catalog_description!r}"
+                f"{catalog_item['id']}: README/catalog summary mismatch: "
+                f"{readme_item['description']!r} != {catalog_summary!r}"
             )
 
     contents_index = readme.find("## Contents")
@@ -191,32 +281,71 @@ def validate() -> list[str]:
     return errors
 
 
+def run_fixture_suite(fixtures_dir: Path, *, as_of: date | None = None) -> int:
+    live_ids = load_all_live_ids()
+    failures = 0
+    for path in sorted(fixtures_dir.glob("*.yaml")):
+        catalog = load_catalog_document(path)
+        catalog_ids = {resource_id for resource in catalog["resources"] if (resource_id := resource.get("id"))}
+        with SCHEMA_PATH.open(encoding="utf-8") as handle:
+            schema = json.load(handle)
+        errors = validate_catalog(catalog, schema, known_ids=live_ids | catalog_ids, as_of=as_of)
+        expect_invalid = path.name.endswith(".invalid.yaml")
+        if expect_invalid and not errors:
+            print(f"ERROR: fixture {path.name} expected to be invalid but passed", file=sys.stderr)
+            failures += 1
+        elif not expect_invalid and errors:
+            print(f"ERROR: fixture {path.name} expected to be valid:", file=sys.stderr)
+            for error in errors:
+                print(f"  {error}", file=sys.stderr)
+            failures += 1
+        else:
+            state = "invalid" if expect_invalid else "valid"
+            print(f"Fixture {path.name}: {state} as expected ({len(errors)} error(s)).")
+    return failures
+
+
 def main() -> int:
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--schema-version",
-        choices=("1", "2"),
-        default="1",
-        help="Schema major version. Version 2 validates fixtures via validate_catalog_v2 and does not require live v1 shards to pass v2.",
+        "--as-of",
+        type=str,
+        default=None,
+        help="Reference date YYYY-MM-DD for review freshness (default: today)",
+    )
+    parser.add_argument(
+        "--fixtures-dir",
+        type=Path,
+        default=None,
+        help="Validate v2 fixture YAML files in this directory",
     )
     args = parser.parse_args()
-    if args.schema_version == "2":
-        # Preserve argv for callers, but run the v2 CLI entry with fixture defaults only.
-        import validate_catalog_v2
 
-        argv_backup = sys.argv[:]
-        try:
-            sys.argv = [str(ROOT / "scripts" / "validate_catalog_v2.py")]
-            return validate_catalog_v2.main()
-        finally:
-            sys.argv = argv_backup
+    as_of: date | None
+    try:
+        as_of = parse_date(args.as_of) if args.as_of else None
+    except ValueError as exc:
+        print(f"ERROR: invalid --as-of date: {exc}", file=sys.stderr)
+        return 1
 
-    errors = validate()
+    failures = 0
+    if args.fixtures_dir is not None:
+        if not args.fixtures_dir.is_dir():
+            print(f"ERROR: fixtures directory not found: {args.fixtures_dir}", file=sys.stderr)
+            return 1
+        failures += run_fixture_suite(args.fixtures_dir, as_of=as_of)
+
+    errors = validate(as_of=as_of)
     if errors:
         for error in errors:
             print(f"ERROR: {error}", file=sys.stderr)
         print(f"Validation failed with {len(errors)} error(s).", file=sys.stderr)
+        return 1 if failures == 0 else 1
+
+    if failures:
+        print(f"Fixture validation failed with {failures} failure group(s).", file=sys.stderr)
         return 1
+
     catalog, _, readme = load()
     print(f"Validated {len(catalog['resources'])} catalog entries and {len(readme_entries(readme))} README entries.")
     return 0
