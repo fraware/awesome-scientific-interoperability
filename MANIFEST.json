@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/quality.yml",
-      "sha256": "fa6a54fede95327d44dcdbad017f5d1ff1772ac13253a9208c1dc7df242b5df9",
-      "bytes": 987
+      "sha256": "b87ccba9f7dc0fadfe2a754934a3978e13459eb0894b5e73c199fb0ba491b7db",
+      "bytes": 1319
     },
     {
       "path": ".gitignore",
@@ -39,8 +39,8 @@
     },
     {
       "path": "Makefile",
-      "sha256": "67a21fa9f13a913fb77e3ceea7834b4de8303057837f082ba5896d55c31117e3",
-      "bytes": 1171
+      "sha256": "ae223b01d2f80e11bcfd4b268bef5c488be43d7d31352120194d76048658e436",
+      "bytes": 1307
     },
     {
       "path": "README.md",
