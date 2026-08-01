@@ -154,7 +154,7 @@
     },
     {
       "path": "docs/coverage-baseline.md",
-      "sha256": "4508f8ab08b54b38b776f0598b99e1bca4c02e460336a900db80a738ad11587e",
+      "sha256": "a4da9769532fc8e1573491fee0aacb8cc8508631f9169ce5c3415e3fc12184ef",
       "bytes": 2029
     },
     {
@@ -519,8 +519,8 @@
     },
     {
       "path": "tests/test_coverage_audit.py",
-      "sha256": "2dbfb654da90e750dd23878311852811b1ff4b665d811d1cca8143e28ad254c3",
-      "bytes": 5353
+      "sha256": "922a4c5a3801381780c98a010a1ef54030aa9cf1f7431eeee806ef1f851cbfcd",
+      "bytes": 5387
     },
     {
       "path": "tests/test_decision_guides.py",
