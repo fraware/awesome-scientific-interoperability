@@ -8,8 +8,10 @@ Problem-oriented comparison documents for overlapping interoperability mechanism
 |-------|-------|
 | [Research object packaging](research-object-packaging.md) | RO-Crate profiles, BagIt, COMBINE/OMEX, FAIR Signposting |
 | [Provenance and execution evidence](provenance-and-execution-evidence.md) | W3C PROV, P-Plan, CWLProv, Workflow Run RO-Crate, ISO 23494-2, runcrate |
+| [Workflows and execution](workflows-and-execution.md) | CWL, WDL, GA4GH TRS/WES/TES/DRS, WorkflowHub, Sapporo, backends |
+| [Workflow testing and conformance](workflow-testing-and-conformance.md) | CWL Conformance Tests, Workflow Testing RO-Crate, LifeMonitor |
 
-Additional guides are added in separate pull requests for workflows, identifiers, and laboratory or agent boundaries.
+Additional guides are added in separate pull requests for identifiers and laboratory or agent boundaries.
 
 ## How to use these guides
 
