@@ -1,0 +1,19 @@
+watchlist_version: 1.0.0
+reviewed_on: '2026-08-01'
+items:
+- id: fixture-unknown-section
+  name: Fixture Unknown Section Item
+  url: https://example.org/unknown-section
+  candidate_section: Not A Real Section
+  status: monitor
+  reason: Fixture item with an unknown candidate section.
+  missing_evidence:
+  - Independent adoption evidence.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - Objective promotion signal observed.
+  rejection_conditions:
+  - Objective rejection signal observed.
+  source_urls:
+  - https://example.org/unknown-section

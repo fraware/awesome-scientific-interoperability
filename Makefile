@@ -3,6 +3,7 @@
 validate:
 	python scripts/validate_catalog.py
 	python scripts/validate_decision_guides.py
+	python scripts/validate_watchlist.py
 	python scripts/check_review_freshness.py
 	python scripts/check_links.py --offline
 	python scripts/verify_manifest.py

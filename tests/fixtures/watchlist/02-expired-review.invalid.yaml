@@ -1,0 +1,19 @@
+watchlist_version: 1.0.0
+reviewed_on: '2026-08-01'
+items:
+- id: fixture-expired-item
+  name: Fixture Expired Item
+  url: https://example.org/expired
+  candidate_section: Foundations
+  status: monitor
+  reason: Fixture item with an expired review deadline.
+  missing_evidence:
+  - Independent adoption evidence.
+  reviewed_on: '2025-01-01'
+  review_due_on: '2025-06-01'
+  promotion_conditions:
+  - Objective promotion signal observed.
+  rejection_conditions:
+  - Objective rejection signal observed.
+  source_urls:
+  - https://example.org/expired

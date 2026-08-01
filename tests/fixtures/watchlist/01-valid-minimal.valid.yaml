@@ -1,0 +1,19 @@
+watchlist_version: 1.0.0
+reviewed_on: '2026-08-01'
+items:
+- id: fixture-valid-item
+  name: Fixture Valid Item
+  url: https://example.org/fixture
+  candidate_section: Foundations
+  status: monitor
+  reason: Fixture item for schema validation tests.
+  missing_evidence:
+  - Independent adoption evidence.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - Objective promotion signal observed.
+  rejection_conditions:
+  - Objective rejection signal observed.
+  source_urls:
+  - https://example.org/fixture

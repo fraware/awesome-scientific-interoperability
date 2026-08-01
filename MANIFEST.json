@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 92,
+  "file_count": 99,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/quality.yml",
-      "sha256": "b35ac5ab2b787ab1f78812dbd17d6df84fe747d7594ac3d88cbaa6275caacd10",
-      "bytes": 883
+      "sha256": "e0bcd49f60d5e0fcab247f656a37d609e7b25a3a03c7306aea5280873bdb1876",
+      "bytes": 933
     },
     {
       "path": ".gitignore",
@@ -39,8 +39,8 @@
     },
     {
       "path": "Makefile",
-      "sha256": "fb27009f34d595b52fbb8732b9c227d0c4b3f6bc60c2dbaa51b4ba554642c3e5",
-      "bytes": 1091
+      "sha256": "6be20c0f6a713babefe5de078d72d6cd4cf292a6cf49553c04255d0e96bd56aa",
+      "bytes": 1129
     },
     {
       "path": "README.md",
@@ -111,6 +111,11 @@
       "path": "catalog/resources/workflows-and-execution.yaml",
       "sha256": "7d045b269d47de294494d3805b5de242819ac2e92b93a0b6691beddd670863bf",
       "bytes": 14709
+    },
+    {
+      "path": "catalog/watchlist.yaml",
+      "sha256": "d605581388c5fb3297b5a834754f4c18b472fa500a71dcebc7e91f2e492f2721",
+      "bytes": 14793
     },
     {
       "path": "code-of-conduct.md",
@@ -323,6 +328,11 @@
       "bytes": 7129
     },
     {
+      "path": "schema/watchlist.schema.json",
+      "sha256": "c6d1bd910fad9ca74e1f609646ba0b6f1f550b7620caeeb29e79d59c1716010e",
+      "bytes": 2494
+    },
+    {
       "path": "scripts/check_links.py",
       "sha256": "8d22f0d699b0667f74fd6f345c5fc93bed93f9f5cdd1e9630b976ec930e761d7",
       "bytes": 10886
@@ -351,6 +361,11 @@
       "path": "scripts/validate_decision_guides.py",
       "sha256": "b0fcc44f782da3c49326709c95dac498743b445026a5c7bafc2f1f3a8c3283fa",
       "bytes": 2655
+    },
+    {
+      "path": "scripts/validate_watchlist.py",
+      "sha256": "7adaeb618804909400ecb478f552f8bf1abde059ac248db6c4df6ba38ef1ee2a",
+      "bytes": 7757
     },
     {
       "path": "scripts/verify_manifest.py",
@@ -443,6 +458,21 @@
       "bytes": 28663
     },
     {
+      "path": "tests/fixtures/watchlist/01-valid-minimal.valid.yaml",
+      "sha256": "0b08573ddbc262fc5f6b9feb64b14ec008e54445b7d922251a282176ac874197",
+      "bytes": 538
+    },
+    {
+      "path": "tests/fixtures/watchlist/02-expired-review.invalid.yaml",
+      "sha256": "4e95d31e80cc9d077056be231eed754b6e8191510df86de13456c4be9427573d",
+      "bytes": 546
+    },
+    {
+      "path": "tests/fixtures/watchlist/03-unknown-section.invalid.yaml",
+      "sha256": "df066ae130aebaa2d38e582a31546e74578a783e61efcc14c39c64c8f50e5d33",
+      "bytes": 582
+    },
+    {
       "path": "tests/test_catalog.py",
       "sha256": "17de56a2e9d8a7f8d391446a7c5618439b2955700e52b323f679c4fc4a7700c8",
       "bytes": 5666
@@ -461,6 +491,11 @@
       "path": "tests/test_query_catalog.py",
       "sha256": "03c8236f2355b4d0d2949d0730e51ffbf7e7b51581454ce320a503576fd5583c",
       "bytes": 6053
+    },
+    {
+      "path": "tests/test_watchlist.py",
+      "sha256": "ae91362ba93f1db2718b3906bdc1afda3137d8741c85924a31a02cbfb0488392",
+      "bytes": 3741
     }
   ]
 }

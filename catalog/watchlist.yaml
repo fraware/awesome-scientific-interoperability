@@ -1,0 +1,307 @@
+watchlist_version: 1.0.0
+reviewed_on: '2026-08-01'
+items:
+- id: agent2agent-a2a-protocol
+  name: Agent2Agent (A2A) Protocol
+  url: https://a2a-protocol.org/v1.0.0/
+  candidate_section: Agents, Access, and Policy
+  status: monitor
+  reason: Potential inclusion when scientific multi-agent systems adopt it substantively.
+  missing_evidence:
+  - Published scientific multi-agent pilots or production deployments beyond general agent tooling.
+  - Documented interoperability contracts with laboratory or workflow systems in this corpus.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - At least two independent scientific deployments with documented cross-system agent handoffs.
+  - Clear boundary against MCP-only tooling entries already in the main list.
+  rejection_conditions:
+  - Remains a general agent protocol without substantive scientific adoption evidence.
+  - Superseded by a finalized IEEE or domain standard with stronger governance.
+  source_urls:
+  - https://a2a-protocol.org/v1.0.0/
+- id: cromwell
+  name: Cromwell
+  url: https://cromwell.readthedocs.io/
+  candidate_section: Workflows and Execution
+  status: needs-boundary-decision
+  reason: Potentially redirect to WDL or select as a reference implementation after comparison.
+  missing_evidence:
+  - A precise decision on whether WDL or Cromwell is the stronger representative for workflow execution.
+  - Documented cross-backend interoperability claims distinct from WDL already listed.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - Boundary analysis shows Cromwell adds distinct interoperability value beyond WDL.
+  - Selected as a Reference Architecture with explicit comparison to Nextflow and Snakemake.
+  rejection_conditions:
+  - WDL remains the canonical workflow-language entry and Cromwell adds no new mechanism.
+  - Better represented through an existing main-list workflow resource.
+  source_urls:
+  - https://cromwell.readthedocs.io/
+- id: five-safes-ro-crate
+  name: Five Safes RO-Crate
+  url: https://zenodo.org/records/10376350
+  candidate_section: Data and Digital Objects
+  status: needs-evidence
+  reason: Reassess after implementation growth in TRE-FX, DARE UK, and EOSC-ENTRUST.
+  missing_evidence:
+  - Independent production deployments beyond the originating research programs.
+  - Public conformance or validation evidence tied to the Five Safes profile.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - Multiple independent TRE or trusted-research implementations publish machine-readable Five Safes metadata.
+  - Clear boundary against RO-Crate and related policy mechanisms already in the main list.
+  rejection_conditions:
+  - Remains a pilot profile without broader adoption.
+  - Absorbed into a broader RO-Crate or policy standard without a distinct mechanism.
+  source_urls:
+  - https://zenodo.org/records/10376350
+- id: galaxy
+  name: Galaxy
+  url: https://galaxyproject.org/
+  candidate_section: Research Software and Environments
+  status: needs-boundary-decision
+  reason: Potential Reference Architecture or domain exemplar after precise contribution analysis.
+  missing_evidence:
+  - A written boundary decision against existing workflow and environment entries.
+  - Documented interoperability mechanisms not already covered by main-list resources.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - Precise analysis shows Galaxy contributes a distinct integration pattern for scientific environments.
+  - Selected as Reference Architecture with explicit comparison to workflow-engine entries.
+  rejection_conditions:
+  - Interoperability contributions are fully subsumed by existing workflow or platform entries.
+  - Cannot be described without duplicating main-list mechanisms.
+  source_urls:
+  - https://galaxyproject.org/
+- id: ieee-p3971
+  name: IEEE P3971
+  url: https://standards.ieee.org/ieee/3971/12500/
+  candidate_section: Agents, Access, and Policy
+  status: monitor
+  reason: Candidate for launch only as an emerging standards effort with explicit status.
+  missing_evidence:
+  - Published IEEE standard text beyond draft or project authorization status.
+  - Independent implementations demonstrating the proposed scientific context mechanism.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - IEEE publishes an approved standard with a public specification and governance record.
+  - At least one substantive implementation or pilot in a scientific integration context.
+  rejection_conditions:
+  - Project stalls, is withdrawn, or lacks a public specification.
+  - Superseded by another standard already represented in the main list.
+  source_urls:
+  - https://standards.ieee.org/ieee/3971/12500/
+- id: labop
+  name: LabOP
+  url: https://bioprotocols.github.io/
+  candidate_section: Instruments and Laboratories
+  status: needs-evidence
+  reason: Potential emerging entry with six-month review cadence.
+  missing_evidence:
+  - Independent laboratory information-system implementations beyond the originating project.
+  - Documented interoperability with instrument control or LIMS systems in this corpus.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-02-01'
+  promotion_conditions:
+  - Multiple independent pilots or production uses with public technical artifacts.
+  - Clear emerging-resource boundary against SiLA and other laboratory entries.
+  rejection_conditions:
+  - Remains a single-project protocol without broader adoption.
+  - Overlaps an existing main-list laboratory mechanism without adding distinct value.
+  source_urls:
+  - https://bioprotocols.github.io/
+- id: nextflow
+  name: Nextflow
+  url: https://www.nextflow.io/
+  candidate_section: Workflows and Execution
+  status: needs-boundary-decision
+  reason: Include only if its cross-backend contracts and interoperability contributions are described precisely.
+  missing_evidence:
+  - Precise description of cross-backend execution contracts distinct from CWL and WDL.
+  - Boundary analysis against Snakemake and existing workflow entries.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - Documented cross-backend interoperability mechanism not covered by CWL or WDL entries.
+  - Selected with explicit comparison to Snakemake and workflow-engine policy.
+  rejection_conditions:
+  - Adds no mechanism beyond languages and engines already in the main list.
+  - Better covered by a Related List or external workflow-engine roundup.
+  source_urls:
+  - https://www.nextflow.io/
+- id: official-mcp-registry
+  name: Official MCP Registry
+  url: https://modelcontextprotocol.io/registry/about
+  candidate_section: Agents, Access, and Policy
+  status: monitor
+  reason: Reassess after registry stabilization and meaningful scientific coverage.
+  missing_evidence:
+  - Registry stabilization with durable governance and versioning policy.
+  - Documented scientific tool or data integrations beyond general-purpose agent servers.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - Registry publishes stable metadata contracts with substantive scientific server coverage.
+  - Clear boundary against MCP specification entries already in the main list.
+  rejection_conditions:
+  - Remains an unstable or general-purpose registry without scientific relevance.
+  - Duplicates MCP protocol coverage without a distinct interoperability mechanism.
+  source_urls:
+  - https://modelcontextprotocol.io/registry/about
+- id: open-digital-rights-language-odrl
+  name: Open Digital Rights Language (ODRL)
+  url: https://www.w3.org/TR/odrl-model/
+  candidate_section: Foundations
+  status: monitor
+  reason: Potential foundation for machine-readable licenses and data-use policies.
+  missing_evidence:
+  - Independent scientific data-use or licensing deployments using ODRL as the primary contract.
+  - Boundary analysis against DUC, DUO, and Creative Commons entries in the main list.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - Multiple scientific repositories or gateways publish ODRL policies as operational contracts.
+  - Demonstrated complement to, not duplication of, existing policy vocabularies in the corpus.
+  rejection_conditions:
+  - Scientific adoption remains theoretical or limited to non-primary policy layers.
+  - Better represented through an existing main-list licensing or policy entry.
+  source_urls:
+  - https://www.w3.org/TR/odrl-model/
+- id: openalex
+  name: OpenAlex
+  url: https://openalex.org/
+  candidate_section: Knowledge Systems and Publications
+  status: needs-boundary-decision
+  reason: Potential inclusion after defining a policy for broad research graphs.
+  missing_evidence:
+  - An editorial policy for when broad bibliographic graphs belong in the main list.
+  - Documented interoperability mechanisms beyond APIs already covered by Crossref and DataCite.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - Project charter defines a repeatable bar for research-graph resources.
+  - OpenAlex demonstrates a distinct integration mechanism not covered by identifier entries.
+  rejection_conditions:
+  - Treated as a bibliographic database rather than an interoperability mechanism.
+  - Policy decision keeps broad graphs outside the main list scope.
+  source_urls:
+  - https://openalex.org/
+- id: oxford-common-file-layout-ocfl
+  name: Oxford Common File Layout (OCFL)
+  url: https://ocfl.io/
+  candidate_section: Data and Digital Objects
+  status: needs-boundary-decision
+  reason: Potential inclusion if repository interoperability is retained as a launch priority.
+  missing_evidence:
+  - Confirmed editorial priority for repository-layout interoperability at launch.
+  - Comparison with BagIt, RO-Crate, and other packaging mechanisms in the main list.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - Launch scope explicitly includes repository preservation layouts.
+  - OCFL shows independent adoption beyond a single vendor or pilot archive.
+  rejection_conditions:
+  - Repository layout interoperability is deferred from launch scope.
+  - Mechanism overlaps BagIt or RO-Crate without a distinct integration role.
+  source_urls:
+  - https://ocfl.io/
+- id: prov-one
+  name: PROV-ONE
+  url: https://purl.dataone.org/provone-v1-dev
+  candidate_section: Provenance and Evidence
+  status: needs-boundary-decision
+  reason: Potential domain/reference entry after comparison with P-Plan and OPMW.
+  missing_evidence:
+  - Boundary analysis against P-Plan, OPMW, and PROV entries already in the main list.
+  - Evidence of active stewardship and implementations beyond historical DataONE usage.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - Demonstrated distinct scientific-workflow provenance role not covered by existing entries.
+  - Selected as a domain extension with explicit comparison to P-Plan and OPMW.
+  rejection_conditions:
+  - Superseded or fully subsumed by W3C PROV and existing workflow provenance models.
+  - Insufficient maintenance signal for a main-list entry.
+  source_urls:
+  - https://purl.dataone.org/provone-v1-dev
+- id: science-context-protocol
+  name: Science Context Protocol
+  url: https://arxiv.org/abs/2512.24189
+  candidate_section: Agents, Access, and Policy
+  status: monitor
+  reason: Monitor alongside IEEE P3971.
+  missing_evidence:
+  - Peer-reviewed specification or reference implementation beyond the preprint.
+  - Independent adoption evidence distinct from IEEE P3971 governance.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - Public specification with credible stewardship and at least one substantive pilot.
+  - Clear relationship to IEEE P3971 documented without duplicating an existing entry.
+  rejection_conditions:
+  - Remains a preprint without implementations or governance.
+  - Merged into or superseded by IEEE P3971 or another main-list standard.
+  source_urls:
+  - https://arxiv.org/abs/2512.24189
+- id: scitoolagent
+  name: SciToolAgent
+  url: https://github.com/hicai-zju/scitoolagent
+  candidate_section: Agents, Access, and Policy
+  status: needs-boundary-decision
+  reason: Potential Reference Architecture entry, not a foundational standard.
+  missing_evidence:
+  - Evidence of independent deployments beyond the originating repository.
+  - Boundary decision against MCP and other agent-framework entries.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - Multiple independent scientific agent integrations with documented tool contracts.
+  - Accepted as Reference Architecture with explicit non-standard scope.
+  rejection_conditions:
+  - Single-project research prototype without broader adoption.
+  - Mechanism duplicated by MCP or other main-list agent resources.
+  source_urls:
+  - https://github.com/hicai-zju/scitoolagent
+- id: snakemake
+  name: Snakemake
+  url: https://snakemake.github.io/
+  candidate_section: Workflows and Execution
+  status: needs-boundary-decision
+  reason: Compare against workflow-engine selection policy and Related Lists.
+  missing_evidence:
+  - Workflow-engine selection policy applied to Snakemake versus CWL and WDL.
+  - Documented interoperability contributions beyond a workflow language implementation.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - Policy accepts an additional workflow engine with a distinct cross-system mechanism.
+  - Explicit comparison with Nextflow and existing main-list workflow resources.
+  rejection_conditions:
+  - Covered by Related Lists or external workflow roundups without a new mechanism.
+  - Adds no interoperability contract beyond languages already in the main list.
+  source_urls:
+  - https://snakemake.github.io/
+- id: spdx
+  name: SPDX
+  url: https://spdx.dev/specifications/
+  candidate_section: Validation and Conformance
+  status: needs-boundary-decision
+  reason: Include only if scientific software assurance becomes an explicit launch subproblem.
+  missing_evidence:
+  - Editorial decision that software assurance is in scope for the launch corpus.
+  - Independent scientific deployments using SPDX as an interoperability contract.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  promotion_conditions:
+  - Launch scope includes software bill-of-materials or license interoperability.
+  - SPDX demonstrates operational use in scientific software pipelines beyond generic OSS practice.
+  rejection_conditions:
+  - Software assurance remains out of scope for this interoperability list.
+  - Better represented through external software-supply-chain resources.
+  source_urls:
+  - https://spdx.dev/specifications/
