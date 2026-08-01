@@ -16,13 +16,14 @@
 
 - [ ] The resource is among the strongest current examples for its function.
 - [ ] A stronger included resource does not make it redundant.
-- [ ] The description states the actual interoperability contribution without promotional language.
+- [ ] The `summary` states the actual interoperability contribution without promotional language and matches the README sentence.
 
 ## Maintenance
 
-- [ ] Maintenance or standards stewardship is credible.
+- [ ] Maintenance or standards stewardship is credible and recorded in `stewardship`.
 - [ ] The resource is not archived, deprecated, or materially undocumented.
-- [ ] The review date is recorded in the catalog.
+- [ ] `reviewed_on` and `review_due_on` are recorded; `review_due_on` is later than `reviewed_on` and within the allowed interval for the resource maturity and section.
+- [ ] `primary_source_inspected` is true and `source_urls` list the inspected primary technical sources.
 
 ## Integrity
 

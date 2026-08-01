@@ -36,6 +36,13 @@ body:
     validations:
       required: true
   - type: textarea
+    id: summary
+    attributes:
+      label: README summary sentence
+      description: One objective sentence ending with a period; must match the catalog `summary` field exactly.
+    validations:
+      required: true
+  - type: textarea
     id: relationship
     attributes:
       label: What interoperates with what?

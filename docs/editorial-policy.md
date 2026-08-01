@@ -28,9 +28,9 @@ An emerging resource requires a public technical artifact, credible stewardship,
 
 A domain standard belongs when it has explicit exchange semantics, multi-institutional stewardship, and multiple implementations or established institutional adoption. Domain exemplars should expose patterns useful beyond one field.
 
-## Descriptions
+## Summaries
 
-Each entry description states what the resource is, which systems or objects it connects, and the mechanism enabling that relationship. Descriptions avoid marketing language, institutional prestige claims, and guarantees of universal compatibility.
+Each entry `summary` states what the resource is, which systems or objects it connects, and the mechanism enabling that relationship. Summaries must exactly match the README sentence, start with an uppercase character, end with a period, and avoid marketing language, institutional prestige claims, and guarantees of universal compatibility.
 
 ## Removal
 

@@ -8,8 +8,8 @@ The project remains useful only when its descriptions, URLs, standards status, a
 2. Apply the sentence test from the project charter.
 3. Compare the candidate with the strongest existing alternative.
 4. Update the README and the relevant catalog shard in the same change.
-5. Record the decision basis, limitations, maintenance signal, and review date.
-6. Run catalog validation, offline URL validation, unit tests, and Awesome lint.
+5. Record the decision basis, limitations, stewardship, `reviewed_on`, and `review_due_on`.
+6. Run catalog validation, review freshness, offline URL validation, unit tests, and Awesome lint.
 7. Require independent approval when the contributor is affiliated with the resource.
 
 ## Monthly

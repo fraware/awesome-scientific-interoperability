@@ -23,7 +23,8 @@ A proposal must state:
 - Place the entry in one primary section.
 - Write one concise, objective sentence ending with a period.
 - Avoid taglines, marketing adjectives, star counts, funding claims, and unsupported adoption claims.
-- Update the relevant catalog shard with the same name, URL, section, and description.
+- Update the relevant catalog shard with the same name, URL, section, and `summary` (README parity).
+- Populate v2 catalog fields: `maturity`, `evidence_types`, `implementation_status`, `conformance_status`, `stewardship`, `domains`, `source_urls`, `alternatives`, `related_resource_ids`, `reviewed_on`, and `review_due_on`.
 - Run the repository checks before submitting.
 
 ## Human Responsibility
@@ -35,6 +36,7 @@ Fully automated or unreviewed AI-generated submissions are rejected. Assistive t
 ```bash
 python -m pip install -r requirements-dev.txt
 python scripts/validate_catalog.py
+python scripts/check_review_freshness.py
 python -m unittest discover -s tests -v
 npx --yes awesome-lint
 ```
