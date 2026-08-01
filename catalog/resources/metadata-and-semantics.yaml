@@ -635,3 +635,44 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+
+- id: isa-json
+  name: ISA-JSON
+  url: https://isa-specs.readthedocs.io/en/latest/isajson.html
+  section: Metadata and Semantics
+  resource_type: Experimental Metadata Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Life-science studies
+  - assays
+  - repositories
+  - analysis pipelines
+  mechanism: JSON Schema serialization of Investigation/Study/Assay experimental metadata model
+  summary: JSON serialization of the Investigation/Study/Assay model for experimental metadata; connects life-science studies, assays, repositories, and analysis pipelines.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - independent-implementation
+  implementation_status: multiple-independent
+  conformance_status: public-validator
+  stewardship:
+    name: ISA-Tools community
+    type: community
+    url: https://isa-tools.org/
+  domains:
+  - life-sciences
+  source_urls:
+  - https://isa-specs.readthedocs.io/en/latest/isajson.html
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC8444265/
+  alternatives:
+  - ro-crate
+  related_resource_ids:
+  - bioschemas
+  decision_basis: Strongest open contract for machine-readable multi-assay experimental metadata beyond ad hoc JSON-LD packaging alone.
+  boundary_note: Experimental metadata model, not an instrument control or clinical exchange standard.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true

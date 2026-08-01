@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 110,
+  "file_count": 111,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -44,8 +44,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "29cc57aca460f9fbe13d00e4e4fedafc3fa51c7ac053867d7bce01a04f3a21c3",
-      "bytes": 19321
+      "sha256": "c0e525e0c88737cd236c64fbfbe221e0ab5433650ebd0c01ecb2ec7e3454fb07",
+      "bytes": 20190
     },
     {
       "path": "archive.md",
@@ -64,8 +64,8 @@
     },
     {
       "path": "catalog/resources/data-and-digital-objects.yaml",
-      "sha256": "8acaeceb491dc46e371ede0359d40fffcb871ad9909266a8b6bd43bd448e0fb8",
-      "bytes": 14388
+      "sha256": "58718649a59cb763c5a4f4a62cfa85781cda322e8043b0b249e0d70f0468a69d",
+      "bytes": 17202
     },
     {
       "path": "catalog/resources/foundations.yaml",
@@ -79,8 +79,8 @@
     },
     {
       "path": "catalog/resources/instruments-and-laboratories.yaml",
-      "sha256": "149cab773b0cc49281837f5125d058ac3fba37583e07d582111d261d256030fe",
-      "bytes": 9780
+      "sha256": "7b9760a89ad53230bf1f3c5c1024d8119fea7b7732b6043a825b311144ef6c75",
+      "bytes": 11232
     },
     {
       "path": "catalog/resources/knowledge-systems-and-publications.yaml",
@@ -109,8 +109,8 @@
     },
     {
       "path": "catalog/resources/workflows-and-execution.yaml",
-      "sha256": "7d045b269d47de294494d3805b5de242819ac2e92b93a0b6691beddd670863bf",
-      "bytes": 14709
+      "sha256": "fb322c04c1f9284f7778b4c6606eaf3df4c81ea872a59c233a2ace231af4b2c5",
+      "bytes": 16234
     },
     {
       "path": "catalog/watchlist.yaml",
@@ -136,6 +136,11 @@
       "path": "contributing.md",
       "sha256": "a7ed629acb1bb0c9df5e6e474d6dc3c20ae9c7816eb64a67db902ebdbf8ea27b",
       "bytes": 2570
+    },
+    {
+      "path": "docs/candidate-reviews/geospatial-and-environmental.md",
+      "sha256": "b526fbab36c532f49681659fd79c82c388a0cffc0c838e5fb73a1ab162b7d8a2",
+      "bytes": 834
     },
     {
       "path": "docs/candidate-reviews/physical-science-and-engineering.md",
@@ -319,8 +324,8 @@
     },
     {
       "path": "docs/source-notes.md",
-      "sha256": "868f23b1e54bca66fc0470fcd2eaaffd76c815d07a0b4c5206e25b6fa7a3fa8e",
-      "bytes": 1487
+      "sha256": "275c63a7cfeb1b64f711e18cb0c3c91ec9b9348dc3dee0cc457be74fff4b083e",
+      "bytes": 1862
     },
     {
       "path": "docs/taxonomy.md",
@@ -519,7 +524,7 @@
     },
     {
       "path": "tests/test_catalog.py",
-      "sha256": "2e7bbb4df3f78ac40c340d923cd2f27da54c4e4e9793a7a35b9adf96fa0ed0df",
+      "sha256": "1e5e4b23cdf55d65d46ccc766b6a354e6b3ea8764cd778fbda86d1757333aac3",
       "bytes": 5666
     },
     {
@@ -544,12 +549,12 @@
     },
     {
       "path": "tests/test_query_catalog.py",
-      "sha256": "da46080795ddf12745f8ff20a6c1e95c85bdb0d27f98d8282d5f7ea7ae044d0a",
+      "sha256": "4eecf61baffe15e85573dba54f1a1b3eae0cd96c271bc64d9609613d9a350f39",
       "bytes": 6053
     },
     {
       "path": "tests/test_watchlist.py",
-      "sha256": "6c63616cde58102467089a2c2da0b5182821d960f11fdfbd64c1a739c2c91868",
+      "sha256": "b1f905df92b2d35d1ded652ee25e05b623e6075d68ba4b109313f4a1f63fab77",
       "bytes": 3741
     }
   ]

@@ -24,8 +24,8 @@ class QueryCatalogTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.resources = module.load_resources()
-        if len(cls.resources) < 84:
-            raise AssertionError(f"expected at least 84 resources, got {len(cls.resources)}")
+        if len(cls.resources) < 87:
+            raise AssertionError(f"expected at least 87 resources, got {len(cls.resources)}")
 
     def run_query(self, *args: str) -> tuple[int, str]:
         buffer = io.StringIO()
