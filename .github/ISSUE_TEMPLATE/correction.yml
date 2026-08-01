@@ -1,7 +1,6 @@
 name: Report a correction
 description: Report an inaccurate description, moved URL, maintenance change, duplicate, or scope problem.
 title: "Correction: "
-labels: [correction]
 body:
   - type: input
     id: resource

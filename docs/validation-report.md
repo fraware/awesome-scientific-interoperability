@@ -15,6 +15,7 @@
 - Contributing and Footnotes are excluded from Contents.
 - All 75 canonical URLs passed offline HTTPS syntax validation.
 - All four repository unit tests passed.
+- The release manifest covers every tracked file except the manifest itself and verifies SHA-256 digests and byte counts in CI.
 - The repository was initialized on `main` and committed as a clean Git working tree.
 
 ## Checks Delegated to GitHub Actions

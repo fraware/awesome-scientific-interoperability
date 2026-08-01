@@ -6,6 +6,7 @@ This list selects standards, protocols, formats, schemas, APIs, ontologies, regi
 
 ## Contents
 
+- [Selection Standard](#selection-standard)
 - [Foundations](#foundations)
 - [Identifiers and Discovery](#identifiers-and-discovery)
 - [Metadata and Semantics](#metadata-and-semantics)
@@ -17,7 +18,6 @@ This list selects standards, protocols, formats, schemas, APIs, ontologies, regi
 - [Instruments and Laboratories](#instruments-and-laboratories)
 - [Agents, Access, and Policy](#agents-access-and-policy)
 - [Validation and Conformance](#validation-and-conformance)
-- [Related Lists](#related-lists)
 
 ## Selection Standard
 
