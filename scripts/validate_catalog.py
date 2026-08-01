@@ -68,6 +68,16 @@ def load() -> tuple[dict, dict, str]:
     return catalog, schema, readme
 
 
+def is_v2_resource(resource: dict) -> bool:
+    return "summary" in resource
+
+
+def resource_description(resource: dict) -> str:
+    if is_v2_resource(resource):
+        return resource.get("summary", "")
+    return resource.get("description", "")
+
+
 def readme_entries(readme: str) -> list[dict[str, str]]:
     entries = []
     section = None
@@ -86,20 +96,50 @@ def validate() -> list[str]:
     catalog, schema, readme = load()
     errors: list[str] = []
 
-    validator = Draft202012Validator(schema, format_checker=FormatChecker())
-    for error in sorted(validator.iter_errors(catalog), key=lambda item: list(item.absolute_path)):
-        path = ".".join(str(part) for part in error.absolute_path) or "catalog"
-        errors.append(f"schema:{path}: {error.message}")
+    v1_resource_schema = schema["properties"]["resources"]["items"]
+    v1_validator = Draft202012Validator(v1_resource_schema, format_checker=FormatChecker())
+
+    for field in ("catalog_version", "reviewed_on", "north_star"):
+        if field not in catalog:
+            errors.append(f"schema:catalog: missing required field {field!r}")
 
     resources = catalog.get("resources", [])
+    if len(resources) < schema["properties"]["resources"].get("minItems", 1):
+        errors.append(
+            f"schema:resources: array is too short ({len(resources)} < "
+            f"{schema['properties']['resources']['minItems']})"
+        )
+
     for field in ("id", "name", "url"):
         values = [resource.get(field) for resource in resources]
         duplicates = sorted(value for value, count in Counter(values).items() if count > 1)
         if duplicates:
             errors.append(f"duplicate {field}: {duplicates}")
 
+    all_ids = {resource.get("id") for resource in resources if resource.get("id")}
+    v2_resources = [resource for resource in resources if is_v2_resource(resource)]
+
+    if v2_resources:
+        import validate_catalog_v2
+
+        v2_catalog = {
+            "catalog_version": catalog["catalog_version"],
+            "reviewed_on": catalog["reviewed_on"],
+            "north_star": catalog["north_star"],
+            "resources": v2_resources,
+        }
+        errors.extend(validate_catalog_v2.validate_catalog(v2_catalog, known_ids=all_ids))
+
     for resource in resources:
-        description = resource.get("description", "")
+        if is_v2_resource(resource):
+            continue
+        resource_id = resource.get("id", "<missing>")
+        for error in sorted(v1_validator.iter_errors(resource), key=lambda item: list(item.absolute_path)):
+            path = ".".join(str(part) for part in error.absolute_path) or resource_id
+            errors.append(f"schema:{resource_id}.{path}: {error.message}")
+
+    for resource in resources:
+        description = resource_description(resource)
         if description and description[0].isalpha() and not description[0].isupper():
             errors.append(f"{resource.get('id')}: description must start with an uppercase character")
         if description and not description.endswith("."):
@@ -127,12 +167,17 @@ def validate() -> list[str]:
     for key in sorted(set(catalog_keyed) & set(readme_keyed)):
         catalog_item = catalog_keyed[key]
         readme_item = readme_keyed[key]
-        for field in ("section", "description"):
-            if catalog_item[field] != readme_item[field]:
-                errors.append(
-                    f"{catalog_item['id']}: README/catalog {field} mismatch: "
-                    f"{readme_item[field]!r} != {catalog_item[field]!r}"
-                )
+        if catalog_item["section"] != readme_item["section"]:
+            errors.append(
+                f"{catalog_item['id']}: README/catalog section mismatch: "
+                f"{readme_item['section']!r} != {catalog_item['section']!r}"
+            )
+        catalog_description = resource_description(catalog_item)
+        if catalog_description != readme_item["description"]:
+            errors.append(
+                f"{catalog_item['id']}: README/catalog description mismatch: "
+                f"{readme_item['description']!r} != {catalog_description!r}"
+            )
 
     contents_index = readme.find("## Contents")
     first_section = re.search(r"^## .+$", readme, re.MULTILINE)

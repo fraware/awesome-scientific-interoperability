@@ -14,13 +14,35 @@ resources:
   - provenance consumers
   - research-object systems
   mechanism: PROV-based representation of CWL workflow execution packaged in research objects
-  description: PROV-based profile that packages CWL workflow execution records as portable research objects.
-  evidence_level: B
-  maintenance_signal: Current
-  north_star_utility: High
+  summary: PROV-based profile that packages CWL workflow execution records as portable research objects.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  implementation_status: reference-and-others
+  conformance_status: documented-tests
+  stewardship:
+    name: Common Workflow Language project
+    type: community
+    url: https://www.commonwl.org/
+  domains:
+  - computational-workflows
+  - provenance
+  source_urls:
+  - https://cwltool.readthedocs.io/en/latest/CWLProv.html
+  - https://github.com/common-workflow-language/cwltool
+  alternatives:
+  - workflow-run-ro-crate
+  related_resource_ids:
+  - common-workflow-language-cwl
+  - cwltool
+  - w3c-prov
+  - workflow-run-ro-crate
+  - runcrate
   decision_basis: Concrete bridge between a workflow language, execution provenance, and portable evidence.
   boundary_note: Related to Workflow Run RO-Crate; descriptions must clarify their distinct profiles and evolution.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: iso-23494-2-2026-common-provenance-model
   name: ISO 23494-2:2026 Common Provenance Model
@@ -37,14 +59,29 @@ resources:
   - biobanks
   - software
   mechanism: Common provenance model and serialization requirements for traceability and interoperability
-  description: International provenance standard for tracing biological materials and derived data across laboratories,
+  summary: International provenance standard for tracing biological materials and derived data across laboratories,
     biobanks, and software systems.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
+  maturity: established
+  evidence_types:
+  - normative-specification
+  implementation_status: unknown
+  conformance_status: none-known
+  stewardship:
+    name: International Organization for Standardization (ISO)
+    type: standards-body
+    url: https://www.iso.org/
+  domains:
+  - biotechnology
+  - provenance
+  source_urls:
+  - https://www.iso.org/standard/87714.html
+  alternatives: []
+  related_resource_ids:
+  - w3c-prov
   decision_basis: Newly published international scientific provenance standard with explicit interoperability requirements.
   boundary_note: Biotechnology-focused; include as a current domain standard and monitor implementation uptake.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: p-plan
   name: P-Plan
@@ -60,13 +97,29 @@ resources:
   - variables
   - execution provenance
   mechanism: PROV extension linking plans and workflow structures to executions
-  description: W3C PROV extension linking prospective plans, workflow structures, variables, and execution provenance.
-  evidence_level: B
-  maintenance_signal: Stable
-  north_star_utility: High
+  summary: W3C PROV extension linking prospective plans, workflow structures, variables, and execution provenance.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  implementation_status: unknown
+  conformance_status: none-known
+  stewardship:
+    name: Open Provenance Model for Workflows (OPMW)
+    type: community
+    url: https://www.opmw.org/
+  domains:
+  - provenance
+  - computational-workflows
+  source_urls:
+  - https://www.opmw.org/model/p-plan/
+  - https://www.w3.org/TR/prov-o/
+  alternatives: []
+  related_resource_ids:
+  - w3c-prov
   decision_basis: Addresses the important bridge between intended scientific procedures and observed execution.
   boundary_note: Assess current implementation adoption during double review.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: runcrate
   name: runcrate
@@ -83,13 +136,32 @@ resources:
   - notebooks
   - provenance consumers
   mechanism: Tools for inspecting, replaying, and converting workflow-run research objects
-  description: Tools for inspecting, replaying, and converting Workflow Run RO-Crate and CWLProv execution records.
-  evidence_level: B
-  maintenance_signal: Current
-  north_star_utility: High
+  summary: Tools for inspecting, replaying, and converting Workflow Run RO-Crate and CWLProv execution records.
+  maturity: maintained
+  evidence_types:
+  - reference-implementation
+  - interoperability-demonstration
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  stewardship:
+    name: Research Object community
+    type: community
+    url: https://www.researchobject.org/
+  domains:
+  - computational-workflows
+  - provenance
+  source_urls:
+  - https://www.researchobject.org/runcrate/
+  - https://github.com/ResearchObject/runcrate
+  alternatives: []
+  related_resource_ids:
+  - workflow-run-ro-crate
+  - cwlprov
+  - w3c-prov
   decision_basis: Makes a portable provenance profile operationally usable and inspectable.
   boundary_note: Implementation maturity and supported profiles should be recorded.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: w3c-prov
   name: W3C PROV
@@ -105,12 +177,32 @@ resources:
   - agents
   - provenance producers and consumers
   mechanism: Shared data model, ontology, and serializations for provenance exchange
-  description: Cross-domain data model, ontology, and serializations for exchanging provenance among independent
+  summary: Cross-domain data model, ontology, and serializations for exchanging provenance among independent
     producers and consumers.
-  evidence_level: A
-  maintenance_signal: Stable
-  north_star_utility: High
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: World Wide Web Consortium (W3C)
+    type: standards-body
+    url: https://www.w3.org/
+  domains:
+  - cross-domain
+  - provenance
+  source_urls:
+  - https://www.w3.org/TR/prov-o/
+  - https://www.w3.org/TR/prov-dm/
+  alternatives: []
+  related_resource_ids:
+  - cwlprov
+  - p-plan
+  - workflow-run-ro-crate
+  - runcrate
   decision_basis: Foundational cross-domain provenance contract used by many scientific profiles.
-  boundary_note: General standard justified by extensive scientific reuse.
+  boundary_note: General standard justified by extensive scientific reuse; profiles such as CWLProv and Workflow Run RO-Crate specialize it.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true

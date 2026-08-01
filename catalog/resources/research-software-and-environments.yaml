@@ -13,15 +13,32 @@ resources:
   - HPC systems
   - container registries
   mechanism: Portable container images and runtime designed for scientific and HPC environments
-  description: Portable container images and runtime designed for scientific and HPC environments; connects scientific
+  summary: Portable container images and runtime designed for scientific and HPC environments; connects scientific
     software environments, HPC systems, and container registries.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: Apptainer Project
+    type: foundation
+    url: https://apptainer.org/
+  domains:
+  - scientific-computing
+  - hpc
+  source_urls:
+  - https://apptainer.org/docs/user/latest/introduction.html
+  - https://github.com/apptainer/apptainer
+  alternatives: []
+  related_resource_ids: []
   decision_basis: High-value operational interoperability layer across scientific computing environments where OCI
     workflows alone may be insufficient.
-  boundary_note: The entry should emphasize image/runtime portability across HPC infrastructure.
+  boundary_note: The entry should emphasize image/runtime portability across HPC infrastructure; OCI containers are a separate operational layer.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: citation-file-format-citation-cff
   name: Citation File Format (CITATION.cff)
@@ -37,15 +54,34 @@ resources:
   - archives
   - publishers
   mechanism: Human- and machine-readable software citation metadata
-  description: Repository-local YAML metadata that connects software projects with citation, archival, and publishing
+  summary: Repository-local YAML metadata that connects software projects with citation, archival, and publishing
     systems.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: public-validator
+  stewardship:
+    name: Citation File Format project
+    type: community
+    url: https://citation-file-format.github.io/
+  domains:
+  - research-software
+  - scholarly-communication
+  source_urls:
+  - https://citation-file-format.github.io/
+  - https://github.com/citation-file-format/cffconvert
+  alternatives:
+  - codemeta
+  related_resource_ids:
+  - codemeta
   decision_basis: Practical interoperability mechanism connecting source repositories with citation and archival
     systems.
   boundary_note: Narrower than CodeMeta but exceptionally deployable.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: codemeta
   name: CodeMeta
@@ -61,14 +97,31 @@ resources:
   - registries
   - citation systems
   mechanism: Shared software metadata vocabulary and crosswalks among metadata standards
-  description: Shared research-software metadata vocabulary and crosswalks connecting repositories, registries,
-    and citation systems.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
+  summary: Shared research-software metadata vocabulary and crosswalks connecting repositories, registries, and
+    citation systems.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: CodeMeta project
+    type: community
+    url: https://codemeta.github.io/
+  domains:
+  - research-software
+  source_urls:
+  - https://codemeta.github.io/
+  - https://github.com/codemeta/codemeta
+  alternatives:
+  - citation-file-format-citation-cff
+  related_resource_ids:
+  - citation-file-format-citation-cff
   decision_basis: Core cross-system metadata bridge for research software discovery and exchange.
   boundary_note: Complementary to CITATION.cff, which emphasizes repository-local citation metadata.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: reprozip
   name: ReproZip
@@ -83,14 +136,30 @@ resources:
   - execution environments
   - reproduction tools
   mechanism: Captures files, dependencies, and execution traces into portable experiment packages
-  description: Captures files, dependencies, and execution traces into portable experiment packages; connects computational
+  summary: Captures files, dependencies, and execution traces into portable experiment packages; connects computational
     experiments, execution environments, and reproduction tools.
-  evidence_level: B
-  maintenance_signal: Current
-  north_star_utility: High
+  maturity: maintained
+  evidence_types:
+  - reference-implementation
+  - interoperability-demonstration
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  stewardship:
+    name: ReproZip project (NYU Tandon School of Engineering)
+    type: institution
+    url: https://www.reprozip.org/
+  domains:
+  - reproducibility
+  - computational-science
+  source_urls:
+  - https://www.reprozip.org/
+  - https://github.com/ViDA-NYU/reprozip
+  alternatives: []
+  related_resource_ids: []
   decision_basis: Strong executable-environment bridge supporting transfer and reproduction across systems.
-  boundary_note: Interoperability depends on unpacker support and environment compatibility.
+  boundary_note: Interoperability depends on unpacker support and environment compatibility; packaging not provenance.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
 - id: software-hash-identifiers-swhids
   name: Software Hash Identifiers (SWHIDs)
@@ -106,12 +175,28 @@ resources:
   - publications
   - research records
   mechanism: Intrinsic persistent identifiers derived from software artifact content and structure
-  description: Intrinsic persistent identifiers that connect exact source-code artifacts with archives, publications,
+  summary: Intrinsic persistent identifiers that connect exact source-code artifacts with archives, publications,
     and research records.
-  evidence_level: A
-  maintenance_signal: Current
-  north_star_utility: High
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  stewardship:
+    name: Software Heritage
+    type: institution
+    url: https://www.softwareheritage.org/
+  domains:
+  - research-software
+  - digital-preservation
+  source_urls:
+  - https://www.swhid.org/
+  - https://www.softwareheritage.org/
+  alternatives: []
+  related_resource_ids: []
   decision_basis: Connects exact software artifacts to scholarly records and reproducibility evidence.
   boundary_note: Complement DOI-level software records with content-addressed identity.
   reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
   primary_source_inspected: true
