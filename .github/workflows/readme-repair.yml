@@ -1,0 +1,38 @@
+name: One-shot README repair
+
+on:
+  push:
+    branches: [agent/launch-hardening]
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: agent/launch-hardening
+      - name: Repair exact URL and remove this workflow
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          path = Path('README.md')
+          text = path.read_text(encoding='utf-8')
+          old = 'https://www.commonwll.org/'
+          new = 'https://www.commonwl.org/'
+          if text.count(old) != 1:
+              raise SystemExit(f'expected exactly one malformed URL, found {text.count(old)}')
+          path.write_text(text.replace(old, new), encoding='utf-8')
+          PY
+          git rm .github/workflows/readme-repair.yml
+          python3 scripts/generate_manifest.py
+      - name: Commit repaired release tree
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md MANIFEST.json
+          git commit -m 'Repair CWL URL and refresh manifest'
+          git push origin HEAD:agent/launch-hardening
