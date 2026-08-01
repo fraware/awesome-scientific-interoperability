@@ -1,0 +1,73 @@
+name: Propose a resource removal
+description: Propose moving a main-list resource to the archive or removing an entry that no longer meets the inclusion standard.
+title: "Remove: "
+labels:
+  - removal
+body:
+  - type: markdown
+    attributes:
+      value: Read `docs/editorial-policy.md`, `docs/reviewer-roles.md`, and `docs/decision-records.md` before submitting. Removal requires two maintainer approvals, including one section reviewer for the affected section. Update `README.md`, the catalog shard, `archive.md`, and `docs/reviews/` in the same pull request.
+  - type: input
+    id: resource
+    attributes:
+      label: Resource name and catalog ID
+      description: Example — "NeXus (`resource:nexus`)"
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Current section
+      options:
+        - Foundations
+        - Identifiers and Discovery
+        - Metadata and Semantics
+        - Data and Digital Objects
+        - Research Software and Environments
+        - Workflows and Execution
+        - Provenance and Evidence
+        - Knowledge Systems and Publications
+        - Instruments and Laboratories
+        - Agents, Access, and Policy
+        - Validation and Conformance
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Primary removal reason
+      options:
+        - Deprecated or superseded
+        - Abandoned or unmaintained
+        - Inaccessible or materially undocumented
+        - No longer among strongest current options
+        - Duplicate or redundant with stronger entry
+        - Scope error (should never have been included)
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary sources supporting removal
+      description: Official deprecation notices, repository archival, replacement specifications, or maintenance evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: replacement
+    attributes:
+      label: Recommended alternative (if any)
+      description: Name the strongest current main-list entry or watchlist candidate readers should use instead.
+  - type: textarea
+    id: archive
+    attributes:
+      label: Proposed archive note
+      description: One sentence for `archive.md` with date and reason.
+    validations:
+      required: true
+  - type: textarea
+    id: conflict
+    attributes:
+      label: Affiliation or conflict of interest
+      description: Write "None" when no conflict exists.
+    validations:
+      required: true
