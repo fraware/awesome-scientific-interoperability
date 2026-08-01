@@ -2,7 +2,7 @@
 
 **Baseline date:** 2026-08-01  
 **Catalog version:** 2.0.0  
-**Main-list entries:** 75  
+**Main-list entries:** 76  
 **Audit command:** `python scripts/audit_coverage.py --as-of 2026-08-01`
 
 This document records reproducible corpus-balance metrics from the structured catalog. Counts and concentration signals support maintainer review; they are not quality scores and do not determine inclusion or exclusion.
@@ -15,18 +15,18 @@ Classification thresholds and explicit substrate and standard-family mappings li
 
 | Metric | Value |
 |--------|------:|
-| Total main-list entries | 75 |
+| Total main-list entries | 76 |
 | Sections represented | 11 |
 | Distinct domain tags | 44 |
 | Entries tagged `cross-domain` | 21 (28.0%) |
 | Largest scientific domain tag | `computational-workflows` (17 entries, 22.67%) |
-| General-purpose substrate share | 8 entries (10.67%) |
+| General-purpose substrate share | 8 entries (10.53%) |
 | Entries with neither alternatives nor related links | 17 |
 | Overdue reviews (as of baseline date) | 0 |
 
 ## Active concentration warnings
 
-1. **substrate-concentration** — general-purpose substrates at 10.67%.
+1. **substrate-concentration** — general-purpose substrates at 10.53%.
 2. **implementation-family-concentration** — CWL family has three implementation entries.
 3. **isolated-entries** — 17 entries record neither alternatives nor related resource links.
 

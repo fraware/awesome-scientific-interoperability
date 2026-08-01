@@ -44,7 +44,7 @@ class CoverageAuditTests(unittest.TestCase):
         first = module.compute_metrics(self.resources, policy, as_of=as_of)
         second = module.compute_metrics(self.resources, policy, as_of=as_of)
         self.assertEqual(first, second)
-        self.assertEqual(first["total_entries"], 75)
+        self.assertEqual(first["total_entries"], len(self.resources))
 
     def test_live_report_deterministic(self) -> None:
         as_of = date(2026, 8, 1)
@@ -126,7 +126,7 @@ class CoverageAuditTests(unittest.TestCase):
             self.assertEqual(code, 0)
             payload = json.loads(json_path.read_text(encoding="utf-8"))
             markdown = markdown_path.read_text(encoding="utf-8")
-            self.assertEqual(payload["metrics"]["total_entries"], 75)
+            self.assertEqual(payload["metrics"]["total_entries"], len(self.resources))
             self.assertIn("# Coverage Audit Report", markdown)
             self.assertIn("does not assign quality scores", markdown)
 
