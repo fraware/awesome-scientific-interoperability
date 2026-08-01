@@ -1,11 +1,14 @@
 # Awesome Scientific Interoperability [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+<!--lint disable awesome-github-->
+
 > Scientific interoperability enables independently developed data, software, workflows, instruments, knowledge systems, and agents to exchange, interpret, execute, preserve, and compose information through documented contracts.
 
 This list selects standards, protocols, formats, schemas, APIs, ontologies, registries, implementations, mappings, and test suites that materially support those relationships. Every entry answers two questions: **what interoperates with what, and through which mechanism?**
 
 ## Contents
 
+- [Selection Standard](#selection-standard)
 - [Foundations](#foundations)
 - [Identifiers and Discovery](#identifiers-and-discovery)
 - [Metadata and Semantics](#metadata-and-semantics)
@@ -147,4 +150,4 @@ Read [contributing.md](contributing.md) before proposing a resource. A proposal 
 - The manually edited README is authoritative. The [machine-readable catalog](catalog/resources.yaml) exists for validation, maintenance, and downstream analysis; it does not generate this list.
 - Promising resources that do not yet satisfy the main-list bar are tracked in [docs/watchlist.md](docs/watchlist.md).
 - Editorial decisions follow the [project charter](docs/project-charter.md), [taxonomy](docs/taxonomy.md), and [conflict-of-interest policy](docs/conflicts-of-interest.md).
-- Release checks and publication instructions are recorded in the [validation report](docs/validation-report.md) and [publishing guide](docs/publishing.md).
+- Release checks and publication instructions are recorded in the [validation report](docs/validation-report.md) and [publhing guide](docs/publishing.md).
