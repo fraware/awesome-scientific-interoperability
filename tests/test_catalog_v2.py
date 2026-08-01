@@ -18,6 +18,15 @@ sys.modules["validate_catalog_v2"] = module
 spec.loader.exec_module(module)
 
 FIXTURES = ROOT / "tests" / "fixtures" / "v2"
+LIVE_INDEX = ROOT / "catalog" / "resources.yaml"
+
+
+def known_ids_for(catalog: dict) -> set[str]:
+    live_ids = module.load_all_live_ids()
+    catalog_ids = {
+        resource_id for resource in catalog["resources"] if (resource_id := resource.get("id"))
+    }
+    return live_ids | catalog_ids
 
 
 class CatalogV2Tests(unittest.TestCase):
@@ -29,18 +38,23 @@ class CatalogV2Tests(unittest.TestCase):
         for path in sorted(FIXTURES.glob("*.valid.yaml")):
             with self.subTest(path=path.name):
                 catalog = module.load_catalog_document(path)
-                self.assertEqual(module.validate_catalog(catalog), [])
+                self.assertEqual(
+                    module.validate_catalog(catalog, known_ids=known_ids_for(catalog)),
+                    [],
+                )
 
     def test_invalid_fixtures_fail(self) -> None:
         for path in sorted(FIXTURES.glob("*.invalid.yaml")):
             with self.subTest(path=path.name):
                 catalog = module.load_catalog_document(path)
-                self.assertTrue(module.validate_catalog(catalog))
+                self.assertTrue(
+                    module.validate_catalog(catalog, known_ids=known_ids_for(catalog))
+                )
 
-    def test_live_v1_catalog_is_not_required_to_pass_v2(self) -> None:
-        catalog = module.load_catalog_from_index(ROOT / "catalog" / "resources.yaml")
-        errors = module.validate_catalog(catalog)
-        self.assertTrue(errors, "live v1 records must still fail v2 until migration")
+    def test_live_catalog_passes_v2(self) -> None:
+        catalog = module.load_catalog_from_index(LIVE_INDEX)
+        errors = module.validate_catalog(catalog, known_ids=known_ids_for(catalog))
+        self.assertEqual(errors, [])
 
 
 if __name__ == "__main__":
