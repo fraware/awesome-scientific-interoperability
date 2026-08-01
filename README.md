@@ -64,6 +64,8 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 
 ## Data and Digital Objects
 
+- [OGC API - Coverages](https://ogcapi.ogc.org/coverages/) - REST API for discovering, querying, and retrieving raster coverages and data cubes; connects geospatial services, clients, and analysis pipelines.
+- [OGC API - Features](https://ogcapi.ogc.org/features/) - REST API for creating, modifying, and querying vector feature collections; connects GIS clients, web services, and geospatial databases.
 - [BagIt](https://datatracker.ietf.org/doc/html/rfc8493) - Manifest-based packaging format for transferring digital content with fixity and completeness checks.
 - [Crystallographic Information Framework (CIF)](https://www.iucr.org/resources/cif) - IUCr dictionaries and file syntax for exchanging and archiving crystallographic and structural-science data; connects diffractometers, structure databases, and journals.
 - [COMBINE/OMEX Archive](https://combinearchive.org/) - Archive format bundling models, simulations, metadata, and related files; connects computational models, simulation descriptions, data, and metadata.
@@ -85,6 +87,7 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 
 ## Workflows and Execution
 
+- [openEO API](https://www.ogc.org/standards/openeo/) - OGC Community Standard REST API for interoperable Earth-observation data processing across cloud backends; connects EO clients, datacube services, and STAC-compatible catalogs.
 - [Common Workflow Language (CWL)](https://www.commonwl.org/) - Portable declarative standard for describing command-line tools and workflows across independent runners and computing environments.
 - [cwltool](https://github.com/common-workflow-language/cwltool) - Reference CWL runner connecting specification validation, conformance testing, workflow execution, and provenance capture.
 - [GA4GH Data Repository Service (DRS)](https://www.ga4gh.org/product/data-repository-service-drs/) - Standard API for resolving and accessing data objects across repositories, clouds, and workflow systems.
@@ -114,6 +117,7 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 
 ## Instruments and Laboratories
 
+- [OGC SensorThings API](https://www.ogc.org/standards/sensorthings/) - REST API for managing and retrieving IoT sensor observations and tasking actuators; connects sensor networks, dashboards, and environmental monitoring systems.
 - [Allotrope Data Format](https://docs.allotrope.org/) - Common data format, ontologies, and metadata models for exchanging analytical laboratory data across instruments and applications.
 - [Analytical Information Markup Language (AnIML)](https://www.animl.org/) - XML-based standard for exchanging analytical chemistry and instrument data across vendor systems.
 - [Autoprotocol](https://github.com/autoprotocol/autoprotocol-python) - Machine-readable language for expressing platform-independent laboratory procedures for automated execution.

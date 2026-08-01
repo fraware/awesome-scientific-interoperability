@@ -420,3 +420,44 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+
+- id: openeo-api
+  name: openEO API
+  url: https://www.ogc.org/standards/openeo/
+  section: Workflows and Execution
+  resource_type: Earth Observation Processing API
+  interoperability_layers:
+  - Operational
+  connects:
+  - EO clients
+  - datacube services
+  - STAC-compatible catalogs
+  mechanism: OGC Community Standard REST API with predefined processes and STAC-aligned collection discovery
+  summary: OGC Community Standard REST API for interoperable Earth-observation data processing across cloud backends; connects EO clients, datacube services, and STAC-compatible catalogs.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: documented-tests
+  stewardship:
+    name: openEO consortium / OGC
+    type: consortium
+    url: https://openeo.org/
+  domains:
+  - environmental-science
+  - geospatial
+  source_urls:
+  - https://www.ogc.org/standards/openeo/
+  - https://docs.ogc.org/cs/24-059/24-059.html
+  alternatives:
+  - spatiotemporal-asset-catalog-stac
+  related_resource_ids:
+  - spatiotemporal-asset-catalog-stac
+  - ogc-api-coverages
+  decision_basis: Strongest EO-specific processing contract for cloud datacube backends where generic OGC API - Processes is too broad.
+  boundary_note: EO cloud processing API; not a general workflow language or provenance packaging standard.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
