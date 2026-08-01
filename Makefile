@@ -1,4 +1,4 @@
-.PHONY: validate test manifest refresh-manifest links lint all query query-json
+.PHONY: validate test manifest refresh-manifest links lint all query query-json coverage-audit
 
 validate:
 	python scripts/validate_catalog.py
@@ -8,6 +8,9 @@ validate:
 	python scripts/check_review_freshness.py
 	python scripts/check_links.py --offline
 	python scripts/verify_manifest.py
+
+coverage-audit:
+	python scripts/audit_coverage.py --json-report coverage-audit.json --markdown-report coverage-audit.md
 
 test:
 	python -m unittest discover -s tests -v
