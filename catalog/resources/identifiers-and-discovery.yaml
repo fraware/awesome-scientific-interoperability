@@ -426,3 +426,43 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+- id: optimade
+  name: OPTIMADE
+  url: https://www.optimade.org/specification/latest/
+  section: Identifiers and Discovery
+  resource_type: Domain Discovery API
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - Materials databases
+  - clients
+  - meta-index services
+  mechanism: JSON:API-based REST endpoints with standardized structure schemas and federated /links discovery
+  summary: REST API for federated query and discovery across independent materials-structure databases; connects
+    materials databases, clients, and meta-index services.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - conformance-suite
+  implementation_status: multiple-independent
+  conformance_status: public-validator
+  stewardship:
+    name: OPTIMADE consortium (Materials-Consortia)
+    type: consortium
+    url: https://optimade.org/
+  domains:
+  - materials-science
+  source_urls:
+  - https://www.optimade.org/specification/latest/
+  - https://github.com/Materials-Consortia/OPTIMADE
+  alternatives:
+  - fairsharing
+  related_resource_ids:
+  - fairsharing
+  decision_basis: Strongest public contract for cross-database materials-structure discovery without bespoke per-provider APIs.
+  boundary_note: Structure retrieval API, not a full materials simulation or workflow interchange standard.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
