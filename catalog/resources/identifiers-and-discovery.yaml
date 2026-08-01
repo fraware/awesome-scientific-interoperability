@@ -1,0 +1,233 @@
+section: Identifiers and Discovery
+resources:
+- id: crossref-rest-api-and-metadata
+  name: Crossref REST API and Metadata
+  url: https://www.crossref.org/documentation/retrieve-metadata/rest-api/
+  section: Identifiers and Discovery
+  resource_type: Metadata Service / API
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Scholarly works
+  - publishers
+  - discovery systems
+  - research graphs
+  mechanism: Open scholarly metadata API linked through DOIs and relationships
+  description: Open scholarly metadata API linked through DOIs and relationships; connects scholarly works, publishers,
+    discovery systems, and research graphs.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Foundational discovery interface for scholarly metadata and cross-system linking.
+  boundary_note: Publication-centered; use DataCite and Scholix for broader research-object relations.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: datacite-metadata-schema-and-rest-api
+  name: DataCite Metadata Schema and REST API
+  url: https://support.datacite.org/docs/api
+  section: Identifiers and Discovery
+  resource_type: Metadata Standard / API
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Research objects
+  - repositories
+  - discovery services
+  - citation systems
+  mechanism: DOI metadata schema and APIs for registration, discovery, and relation expression
+  description: DOI metadata schema and APIs for registration, discovery, and relation expression; connects research
+    objects, repositories, discovery services, and citation systems.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Core interoperability infrastructure connecting research objects, repositories, and citation systems.
+  boundary_note: Distinct from Crossref through its strong research-data and software coverage.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: fairsharing
+  name: FAIRsharing
+  url: https://fairsharing.org/
+  section: Identifiers and Discovery
+  resource_type: Curated Registry
+  interoperability_layers:
+  - Semantic
+  - Organizational
+  connects:
+  - Standards
+  - databases
+  - repositories
+  - policies
+  - users
+  mechanism: Curated records and relationships among research standards, databases, and policies
+  description: Curated records and relationships among research standards, databases, and policies; connects standards,
+    databases, repositories, policies, and users.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Canonical discovery infrastructure for standards and their relationships across scientific domains.
+  boundary_note: The list should point to FAIRsharing instead of reproducing its comprehensive registry function.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: ga4gh-service-info
+  name: GA4GH Service Info
+  url: https://www.ga4gh.org/product/service-info/
+  section: Identifiers and Discovery
+  resource_type: API Standard
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - Genomic cloud services
+  - clients
+  - registries
+  mechanism: Common endpoint for service identity, version, organization, and type metadata
+  description: Common endpoint for service identity, version, organization, and type metadata; connects genomic
+    cloud services, clients, and registries.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: A concise, reusable service-description contract supporting interoperable genomics infrastructure.
+  boundary_note: Domain exemplar with broader service-discovery lessons.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: ga4gh-service-registry
+  name: GA4GH Service Registry
+  url: https://www.ga4gh.org/product/service-registry/
+  section: Identifiers and Discovery
+  resource_type: API Standard / Registry
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - Clients
+  - genomic services
+  - federated registries
+  mechanism: Common API for discovering standards-compliant services
+  description: Common API for discovering standards-compliant services; connects clients, genomic services, and
+    federated registries.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Directly connects distributed genomic services and clients through a shared discovery contract.
+  boundary_note: Should be distinguished from the broader GA4GH Planet implementation registry.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: ga4gh-tool-registry-service-trs
+  name: GA4GH Tool Registry Service (TRS)
+  url: https://www.ga4gh.org/product/tool-registry-service-trs/
+  section: Identifiers and Discovery
+  resource_type: API Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Workflow registries
+  - tools
+  - workflow engines
+  - clients
+  mechanism: Standard API for discovering and retrieving versioned tools and workflows
+  description: Standard API for discovering and retrieving versioned tools and workflows; connects workflow registries,
+    tools, workflow engines, and clients.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: One of the clearest operational contracts linking workflow registries and execution ecosystems.
+  boundary_note: Genomics-originated but used in broader workflow infrastructure.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: identifiers-org
+  name: Identifiers.org
+  url: https://identifiers.org/
+  section: Identifiers and Discovery
+  resource_type: Registry / Resolver
+  interoperability_layers:
+  - Semantic
+  - Operational
+  connects:
+  - Life-science identifiers
+  - databases
+  - applications
+  mechanism: Registry of identifier namespaces with standardized resolution
+  description: Registry of identifier namespaces with standardized resolution; connects Life-science identifiers,
+    databases, and applications.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Important operational bridge across heterogeneous life-science identifier schemes.
+  boundary_note: Domain-centered, but the registry pattern is transferable.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: igsn-id
+  name: IGSN ID
+  url: https://ev.igsn.org/about-igsns
+  section: Identifiers and Discovery
+  resource_type: Identifier System
+  interoperability_layers:
+  - Semantic
+  - Evidentiary
+  connects:
+  - Physical samples
+  - datasets
+  - publications
+  - repositories
+  mechanism: Globally unique persistent identifiers and metadata for material samples
+  description: Globally unique persistent identifiers and metadata for material samples; connects physical samples,
+    datasets, publications, and repositories.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Connects physical scientific samples to digital records and downstream research outputs.
+  boundary_note: Sample-focused; broader object identity remains outside its scope.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: orcid
+  name: ORCID
+  url: https://info.orcid.org/what-is-orcid/
+  section: Identifiers and Discovery
+  resource_type: Identifier System / API
+  interoperability_layers:
+  - Semantic
+  - Operational
+  connects:
+  - Researchers
+  - publishers
+  - funders
+  - repositories
+  mechanism: Persistent researcher identifiers and public/member APIs
+  description: Persistent researcher identifiers and public/member APIs; connects researchers, publishers, funders,
+    and repositories.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Canonical cross-system identity layer for researchers with broad scientific infrastructure integration.
+  boundary_note: Personal identity only; organization and object identity require complementary systems.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: research-organization-registry-ror
+  name: Research Organization Registry (ROR)
+  url: https://ror.org/about/
+  section: Identifiers and Discovery
+  resource_type: Identifier Registry / API
+  interoperability_layers:
+  - Semantic
+  - Operational
+  connects:
+  - Research organizations
+  - publishers
+  - funders
+  - repositories
+  mechanism: Open organization identifiers, metadata, and APIs
+  description: Open organization identifiers, metadata, and APIs; connects research organizations, publishers, funders,
+    and repositories.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Provides an open, shared organization identity layer across research systems.
+  boundary_note: Complementary to ORCID and funder identifiers.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true

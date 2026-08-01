@@ -1,0 +1,95 @@
+section: Validation and Conformance
+resources:
+- id: biosimulators-test-suite
+  name: BioSimulators Test Suite
+  url: https://docs.biosimulators.org/Biosimulators_test_suite/
+  section: Validation and Conformance
+  resource_type: Execution Test Suite
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Biosimulation tools
+  - container interfaces
+  - standard models and simulations
+  mechanism: Automated testing of standardized simulator interfaces, formats, and execution behavior
+  description: Automated execution tests for standardized simulator interfaces, modeling formats, containers, and
+    scientific assertions.
+  evidence_level: C
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Strong evidence-backed interoperability system combining standard interfaces, containers, and
+    scientific assertions.
+  boundary_note: Domain-specific and complementary to the SBML Test Suite.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: cwl-conformance-tests
+  name: CWL Conformance Tests
+  url: https://github.com/common-workflow-language/cwl-v1.2
+  section: Validation and Conformance
+  resource_type: Conformance Suite
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - CWL specifications
+  - workflow runners
+  - implementation maintainers
+  mechanism: Versioned tests checking workflow-runner behavior against CWL requirements
+  description: Versioned test suite for checking workflow-runner behavior against Common Workflow Language requirements.
+  evidence_level: C
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Mature implementation-level conformance infrastructure tied to a portable scientific workflow
+    standard.
+  boundary_note: Passing conformance does not establish full scientific-stack interoperability.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: ro-crate-validator
+  name: RO-Crate Validator
+  url: https://github.com/crs4/rocrate-validator
+  section: Validation and Conformance
+  resource_type: Validator
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  connects:
+  - RO-Crate profiles
+  - crate producers
+  - repositories
+  - CI systems
+  mechanism: Profile-aware validation through SHACL and programmatic checks
+  description: Profile-aware validator for base RO-Crate and scientific extensions using SHACL and programmatic
+    checks.
+  evidence_level: C
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Maintained validator covering several core and workflow-oriented RO-Crate profiles.
+  boundary_note: Validation establishes profile conformance, not cross-system interoperability.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: sbml-test-suite
+  name: SBML Test Suite
+  url: https://sbml.org/software/sbml-test-suite/
+  section: Validation and Conformance
+  resource_type: Semantic Conformance Suite
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - SBML simulators
+  - model implementations
+  - expected simulation results
+  mechanism: Syntactic, deterministic semantic, and stochastic test cases with public results
+  description: Public syntactic, deterministic semantic, and stochastic tests for comparing independent systems-biology
+    simulators.
+  evidence_level: C
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Exceptional precedent for testing scientific semantic behavior across independent implementations.
+  boundary_note: Domain-specific but highly transferable as a conformance architecture.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true

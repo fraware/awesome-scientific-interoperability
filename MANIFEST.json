@@ -1,0 +1,206 @@
+{
+  "generated_on": "2026-08-01",
+  "file_count": 40,
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
+      "sha256": "9f51d37138990a9fb681e83be4fd5f81571eae1700e0d3a9c887dc516d416792",
+      "bytes": 2164
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/correction.yml",
+      "sha256": "a40c39fe9a860869b0dcc214bc6aa4520d663bec76616fd6bfeafe04033f7a96",
+      "bytes": 638
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "sha256": "5fabdaae841a6b6d36f7a193608359d2537ef19d2ae37350c411df6f8c9e6dde",
+      "bytes": 966
+    },
+    {
+      "path": ".github/workflows/links.yml",
+      "sha256": "7410868d63d1f4763d87422a5f16133055ca8204db533db9b54fdf4591ab201a",
+      "bytes": 407
+    },
+    {
+      "path": ".github/workflows/quality.yml",
+      "sha256": "7be88997ae81394ae8d47b4bcb9bcb82b64d2272bc408119e1f9ecec7a927861",
+      "bytes": 687
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "b97cdcd795c2606a974d33f1d429f4cfb99a32da4d10206a45fcc363ae6be10d",
+      "bytes": 69
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "aba22923b0939281c8128125073bc8ce9140401f87dca49b7f6b7fca8d9c3fde",
+      "bytes": 565
+    },
+    {
+      "path": "Makefile",
+      "sha256": "f2c16aa92a5779923625494134a622675c4e06872f4cc698898e5283c1f5c913",
+      "bytes": 268
+    },
+    {
+      "path": "README.md",
+      "sha256": "af8ff0e38e34c839aa0e994e832d2fcae6b3072d31266dd746e2cdafe509d8df",
+      "bytes": 17979
+    },
+    {
+      "path": "archive.md",
+      "sha256": "8defddc3ac86428af423c6c8ae60330d0bc526addd2c4b8b20a542bc16d57ed7",
+      "bytes": 280
+    },
+    {
+      "path": "catalog/resources/agents-access-and-policy.yaml",
+      "sha256": "026e3e1a0ead6c5f4a60543d692c1a2f648c9bda1a2a7f50cbbe69173d1e400f",
+      "bytes": 3774
+    },
+    {
+      "path": "catalog/resources/data-and-digital-objects.yaml",
+      "sha256": "013aab1625e1947c3f957643266d6def860b5274b43bc5594e9e02647868ed8d",
+      "bytes": 6234
+    },
+    {
+      "path": "catalog/resources/foundations.yaml",
+      "sha256": "b2fdc0cb176318e8f70bc9e4636941fcedfe9357d9d468e0e372046557530eb8",
+      "bytes": 3937
+    },
+    {
+      "path": "catalog/resources/identifiers-and-discovery.yaml",
+      "sha256": "b1184a0ad48ea7b6c00a82ad5e8be770385d8760dc0933070cbf177f4133210a",
+      "bytes": 8992
+    },
+    {
+      "path": "catalog/resources/instruments-and-laboratories.yaml",
+      "sha256": "8cdce7fda79e05a8c5623537fc1e198b67f2f986bce831c728cfde6111249158",
+      "bytes": 6127
+    },
+    {
+      "path": "catalog/resources/knowledge-systems-and-publications.yaml",
+      "sha256": "bffd4bd2740724a5e33127962626bd7be24850284d43f6876c3a84c8ab18fc7b",
+      "bytes": 4583
+    },
+    {
+      "path": "catalog/resources/metadata-and-semantics.yaml",
+      "sha256": "3b34cee39f2726e4982b396f755d9616df1be6012d653b0cd929b5259e3f06df",
+      "bytes": 12286
+    },
+    {
+      "path": "catalog/resources/provenance-and-evidence.yaml",
+      "sha256": "fda73679a5e98a5276d083375b9865dc70bd845b20549981fd9a31cc0e388986",
+      "bytes": 4407
+    },
+    {
+      "path": "catalog/resources/research-software-and-environments.yaml",
+      "sha256": "b5179a542427980d6b0ae5fd4703a5d98f094d5d203d10d167abea23ac672776",
+      "bytes": 4705
+    },
+    {
+      "path": "catalog/resources/validation-and-conformance.yaml",
+      "sha256": "6cedcfbc7733210a01cff580b7ddb0cba7b708159161dd413502c96bf729cc46",
+      "bytes": 3685
+    },
+    {
+      "path": "catalog/resources/workflows-and-execution.yaml",
+      "sha256": "82b1b5284cfa8e28c772f3453197b5b7ffbc4d7304f1becf56725b6506e8e72e",
+      "bytes": 8949
+    },
+    {
+      "path": "catalog/resources.yaml",
+      "sha256": "8ca205f9836e3e3f2d37a39f8982df83bfb849810b08ad8ce0dd4f77fc409806",
+      "bytes": 733
+    },
+    {
+      "path": "code-of-conduct.md",
+      "sha256": "9ea9f921edba071ef561044efeb3e1f6ad8b47ffa198b6c398f51ce1fb5ca79c",
+      "bytes": 456
+    },
+    {
+      "path": "contributing.md",
+      "sha256": "4df129d28fe2c45847e1995e53bf436818df81ea4b49c7376bae446f2a0f50ea",
+      "bytes": 1786
+    },
+    {
+      "path": "docs/conflicts-of-interest.md",
+      "sha256": "69149e72d7802266b5e1705d2862bf422527b1e5a0f24ca7c522f7f0617c4829",
+      "bytes": 643
+    },
+    {
+      "path": "docs/editorial-policy.md",
+      "sha256": "c337ad693a3ce396c3f8eda0a9092cc9fd1ad7d48e5aad3c1b1fbf5832280be0",
+      "bytes": 2395
+    },
+    {
+      "path": "docs/project-charter.md",
+      "sha256": "7f5d6d38ec672106d21b3917614fad74290871cf0eb6f8cf9150a6646406a6f1",
+      "bytes": 2148
+    },
+    {
+      "path": "docs/publishing.md",
+      "sha256": "67ee520d730972f76d30747cd9a73c980afc0625b6dfc103f2fb4357a47047d6",
+      "bytes": 1048
+    },
+    {
+      "path": "docs/review-checklist.md",
+      "sha256": "f562ea3a2499d62d08a266d688dfaefdacf6088134cf682f099b0ee47072d649",
+      "bytes": 1160
+    },
+    {
+      "path": "docs/roadmap.md",
+      "sha256": "247b07d8fbbe87eedfaba343616b7bdbdfe7dc6cb6eb41f25f47b86ee9af4c64",
+      "bytes": 873
+    },
+    {
+      "path": "docs/source-notes.md",
+      "sha256": "d5e73e538df92c743f7acec2eae9c08e05b640dd8a3118f47d34de4e16a87936",
+      "bytes": 645
+    },
+    {
+      "path": "docs/taxonomy.md",
+      "sha256": "bda120ce65ad7eb7c78cfc97da4fad44bba6287ad38676e909472821da42f399",
+      "bytes": 1578
+    },
+    {
+      "path": "docs/validation-report.md",
+      "sha256": "f894f4474aac69a01d5ef66dce51c5d1a363a6f9800b3c7ba78223990c94392c",
+      "bytes": 1522
+    },
+    {
+      "path": "docs/watchlist.md",
+      "sha256": "34742925f485b663250a3ed51b82933b4d4202e73caa4fbe82bf92865a0d657b",
+      "bytes": 2293
+    },
+    {
+      "path": "license",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "bytes": 7048
+    },
+    {
+      "path": "requirements-dev.txt",
+      "sha256": "0b0709dc3105d98b29f4fc6a870c15c0cf42191498384ef8a2a32d3fcf5f34ed",
+      "bytes": 33
+    },
+    {
+      "path": "schema/catalog.schema.json",
+      "sha256": "d77619072e4d76b9cf4ec628dc01dfa63b65a0f99771be434d31557873063f0e",
+      "bytes": 3901
+    },
+    {
+      "path": "scripts/check_links.py",
+      "sha256": "06a61263d42b7a1b2d3671066f5525c88ae92af838d6db3ab61e4a649ecac7a7",
+      "bytes": 2776
+    },
+    {
+      "path": "scripts/validate_catalog.py",
+      "sha256": "f31ea2633dacf726888c5d4920d67480d4a5ad7886f64cd129217f175cb2f555",
+      "bytes": 6598
+    },
+    {
+      "path": "tests/test_catalog.py",
+      "sha256": "99bcb821017340ba591077677eb8d052842383b35410ac6790fbb8058363d6fb",
+      "bytes": 1868
+    }
+  ]
+}

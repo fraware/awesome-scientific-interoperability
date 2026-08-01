@@ -1,0 +1,77 @@
+name: Propose a resource
+description: Propose a standard, implementation, registry, mapping, validator, or reference architecture.
+title: "Add: "
+labels: [candidate]
+body:
+  - type: markdown
+    attributes:
+      value: Please read `contributing.md` and inspect primary technical sources before submitting.
+  - type: input
+    id: name
+    attributes:
+      label: Canonical resource name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Canonical technical URL
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Proposed section
+      options:
+        - Foundations
+        - Identifiers and Discovery
+        - Metadata and Semantics
+        - Data and Digital Objects
+        - Research Software and Environments
+        - Workflows and Execution
+        - Provenance and Evidence
+        - Knowledge Systems and Publications
+        - Instruments and Laboratories
+        - Agents, Access, and Policy
+        - Validation and Conformance
+    validations:
+      required: true
+  - type: textarea
+    id: relationship
+    attributes:
+      label: What interoperates with what?
+      description: Name the independently developed scientific objects or systems.
+    validations:
+      required: true
+  - type: textarea
+    id: mechanism
+    attributes:
+      label: Documented mechanism
+      description: Name the standard, protocol, format, schema, API, ontology, mapping, or test contract.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary sources and maintenance evidence
+    validations:
+      required: true
+  - type: textarea
+    id: distinction
+    attributes:
+      label: Why is this one of the strongest examples?
+    validations:
+      required: true
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Limitations and closest alternatives
+    validations:
+      required: true
+  - type: textarea
+    id: conflict
+    attributes:
+      label: Affiliation or conflict of interest
+      description: Write “None” when no conflict exists.
+    validations:
+      required: true

@@ -1,0 +1,232 @@
+section: Workflows and Execution
+resources:
+- id: common-workflow-language-cwl
+  name: Common Workflow Language (CWL)
+  url: https://www.commonwl.org/
+  section: Workflows and Execution
+  resource_type: Workflow Language / Standard
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  - Evidentiary
+  connects:
+  - Workflow definitions
+  - runners
+  - registries
+  - execution systems
+  mechanism: Portable declarative workflow and tool descriptions with conformance tests
+  description: Portable declarative standard for describing command-line tools and workflows across independent
+    runners and computing environments.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Canonical cross-engine workflow portability standard with a mature conformance ecosystem.
+  boundary_note: Execution portability still depends on supported features and environments.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: cwltool
+  name: cwltool
+  url: https://github.com/common-workflow-language/cwltool
+  section: Workflows and Execution
+  resource_type: Reference Implementation
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  - Evidentiary
+  connects:
+  - CWL workflows
+  - command-line tools
+  - conformance tests
+  - provenance consumers
+  mechanism: Reference CWL runner with validation and provenance support
+  description: Reference CWL runner connecting specification validation, conformance testing, workflow execution,
+    and provenance capture.
+  evidence_level: B
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Canonical implementation linking the CWL specification, conformance suite, execution, and provenance.
+  boundary_note: Avoid treating it as evidence that every CWL runner is equivalent.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: ga4gh-data-repository-service-drs
+  name: GA4GH Data Repository Service (DRS)
+  url: https://www.ga4gh.org/product/data-repository-service-drs/
+  section: Workflows and Execution
+  resource_type: API Standard
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - Data repositories
+  - workflow engines
+  - clients
+  - cloud systems
+  mechanism: Common API for resolving and accessing data objects across repositories
+  description: Standard API for resolving and accessing data objects across repositories, clouds, and workflow systems.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Critical data-access bridge in federated scientific workflow stacks.
+  boundary_note: Access authorization remains a separate interoperability layer.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: ga4gh-task-execution-service-tes
+  name: GA4GH Task Execution Service (TES)
+  url: https://www.ga4gh.org/product/task-execution-service-tes/
+  section: Workflows and Execution
+  resource_type: API Standard
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - Workflow engines
+  - task executors
+  - cloud and HPC resources
+  mechanism: Common API for executing individual computational tasks
+  description: Standard API that separates workflow orchestration from individual task execution across compute
+    backends.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Separates workflow orchestration from interoperable task execution across backends.
+  boundary_note: Genomics origin, but broadly useful cloud-compute contract.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: ga4gh-workflow-execution-service-wes
+  name: GA4GH Workflow Execution Service (WES)
+  url: https://www.ga4gh.org/product/workflow-execution-service-wes/
+  section: Workflows and Execution
+  resource_type: API Standard
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - Workflow clients
+  - execution services
+  - heterogeneous workflow engines
+  mechanism: Common API for submitting, monitoring, and retrieving workflow runs
+  description: Standard API for submitting, monitoring, and retrieving workflow runs from heterogeneous execution
+    services.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Direct operational interoperability contract between clients and workflow-execution services.
+  boundary_note: Implementation listings do not guarantee conformance; test evidence should be noted.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: lifemonitor
+  name: LifeMonitor
+  url: https://lifemonitor.eu/
+  section: Workflows and Execution
+  resource_type: Testing / Monitoring Service
+  interoperability_layers:
+  - Operational
+  - Evidentiary
+  connects:
+  - Workflow registries
+  - CI services
+  - test definitions
+  - users
+  mechanism: Monitoring of workflow tests described through Workflow Testing RO-Crate
+  description: Monitoring service that executes portable workflow tests described with Workflow Testing RO-Crate.
+  evidence_level: C
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Unusually direct bridge between portable workflow-test descriptions and external execution services.
+  boundary_note: Narrower than a general interoperability observatory.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: sapporo
+  name: Sapporo
+  url: https://github.com/sapporo-wes/sapporo
+  section: Workflows and Execution
+  resource_type: Reference Implementation
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - GA4GH WES clients
+  - CWL, WDL, Nextflow and Snakemake runners
+  mechanism: Workflow-execution service implementing WES across multiple workflow languages
+  description: Reference WES implementation that exposes CWL, WDL, Nextflow, and Snakemake runners through one execution
+    API.
+  evidence_level: B
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Concrete cross-language WES implementation and useful reference point for testing client-service
+    interoperability.
+  boundary_note: Implementation inclusion should be tied to reference value and multi-language support.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: wfexs-backend
+  name: WfExS-backend
+  url: https://github.com/inab/WfExS-backend
+  section: Workflows and Execution
+  resource_type: Workflow Execution Backend
+  interoperability_layers:
+  - Operational
+  - Evidentiary
+  connects:
+  - Workflow languages
+  - research objects
+  - execution environments
+  - provenance consumers
+  mechanism: Workflow execution backend supporting multiple engines and RO-Crate packaging
+  description: Workflow execution backend connecting multiple workflow engines with reproducible environments and
+    RO-Crate evidence packages.
+  evidence_level: B
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Strong reference implementation connecting heterogeneous workflows with reproducible execution
+    and evidence packaging.
+  boundary_note: Independent review should confirm current supported engines and profiles.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: workflow-description-language-wdl
+  name: Workflow Description Language (WDL)
+  url: https://openwdl.org/
+  section: Workflows and Execution
+  resource_type: Workflow Language
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - Workflow definitions
+  - workflow engines
+  - cloud and HPC backends
+  mechanism: Portable workflow language with multiple execution implementations
+  description: Workflow language implemented by multiple engines for executing scientific pipelines across cloud
+    and high-performance computing backends.
+  evidence_level: B
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Major scientific workflow language with meaningful implementation diversity.
+  boundary_note: Governance and conformance maturity should be compared with CWL.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: workflowhub
+  name: WorkflowHub
+  url: https://workflowhub.eu/
+  section: Workflows and Execution
+  resource_type: Workflow Registry
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  - Evidentiary
+  connects:
+  - Workflow authors
+  - registries
+  - workflow engines
+  - repositories
+  mechanism: FAIR workflow registry using RO-Crate, Bioschemas, and GA4GH TRS
+  description: FAIR workflow registry connecting RO-Crate packaging, Bioschemas metadata, GA4GH TRS discovery, and
+    external execution services.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Exemplary multi-standard infrastructure connecting workflow publication, discovery, packaging,
+    and execution systems.
+  boundary_note: Registry role is distinct from LifeMonitor's test monitoring.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true

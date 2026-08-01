@@ -1,0 +1,166 @@
+section: Data and Digital Objects
+resources:
+- id: bagit
+  name: BagIt
+  url: https://datatracker.ietf.org/doc/html/rfc8493
+  section: Data and Digital Objects
+  resource_type: Packaging Standard
+  interoperability_layers:
+  - Syntactic
+  - Evidentiary
+  connects:
+  - Digital content packages
+  - repositories
+  - transfer systems
+  mechanism: Manifest-based packaging and fixity verification for reliable transfer
+  description: Manifest-based packaging format for transferring digital content with fixity and completeness checks.
+  evidence_level: A
+  maintenance_signal: Stable
+  north_star_utility: High
+  decision_basis: Simple, durable mechanism for exchanging content packages with integrity evidence.
+  boundary_note: Lower semantic expressiveness than RO-Crate; complementary for transfer and fixity.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: combine-omex-archive
+  name: COMBINE/OMEX Archive
+  url: https://combinearchive.org/
+  section: Data and Digital Objects
+  resource_type: Packaging Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  connects:
+  - Computational models
+  - simulation descriptions
+  - data
+  - metadata
+  mechanism: Archive format bundling models, simulations, metadata, and related files
+  description: Archive format bundling models, simulations, metadata, and related files; connects computational
+    models, simulation descriptions, data, and metadata.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Mature domain package enabling interoperable computational biology studies.
+  boundary_note: Domain exemplar with strong relation to SED-ML and SBML.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: fair-signposting
+  name: FAIR Signposting
+  url: https://signposting.org/
+  section: Data and Digital Objects
+  resource_type: Web Link Convention
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - Repositories
+  - machine clients
+  - landing pages
+  - metadata and content resources
+  mechanism: Typed HTTP Link relations exposing identifiers, metadata, licenses, and files
+  description: Typed HTTP Link relations that let machine clients discover identifiers, metadata, licenses, and
+    files from repository landing pages.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Lightweight operational bridge allowing machines to navigate research objects across repositories.
+  boundary_note: Complements repository APIs and packaging formats.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: ro-crate
+  name: RO-Crate
+  url: https://www.researchobject.org/ro-crate/specification/1.3/
+  section: Data and Digital Objects
+  resource_type: Packaging Specification
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  connects:
+  - Data
+  - software
+  - workflows
+  - people
+  - instruments
+  - publications
+  mechanism: JSON-LD research-object packaging with profiles and contextual entities
+  description: JSON-LD packaging for exchanging data, software, workflows, people, instruments, and provenance as
+    a coherent research object.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: One of the strongest cross-domain mechanisms for packaging heterogeneous scientific objects and
+    context.
+  boundary_note: Use profiles to distinguish specialized use cases.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: workflow-ro-crate
+  name: Workflow RO-Crate
+  url: https://about.workflowhub.eu/Workflow-RO-Crate/
+  section: Data and Digital Objects
+  resource_type: RO-Crate Profile
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  connects:
+  - Workflow definitions
+  - registries
+  - metadata consumers
+  mechanism: RO-Crate profile for packaging computational workflows and their metadata
+  description: RO-Crate profile for publishing portable workflow definitions, metadata, diagrams, examples, and
+    tests.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Connects workflow authors, registries, and downstream systems through a portable research object.
+  boundary_note: Distinct from execution provenance, which belongs to Workflow Run RO-Crate.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: workflow-run-ro-crate
+  name: Workflow Run RO-Crate
+  url: https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/
+  section: Data and Digital Objects
+  resource_type: RO-Crate Profile
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  connects:
+  - Workflow engines
+  - provenance producers
+  - archives
+  - result consumers
+  mechanism: Portable representation of workflow execution provenance and outputs
+  description: RO-Crate profile for exchanging workflow-run inputs, outputs, software, execution records, and provenance
+    across workflow systems.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Direct cross-engine evidence format with multiple implementations and strong North-Star utility.
+  boundary_note: Profile conformance does not alone prove semantic equivalence across implementations.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: workflow-testing-ro-crate
+  name: Workflow Testing RO-Crate
+  url: https://w3id.org/ro/wftest
+  section: Data and Digital Objects
+  resource_type: RO-Crate Profile
+  interoperability_layers:
+  - Syntactic
+  - Evidentiary
+  connects:
+  - Workflow test definitions
+  - monitoring services
+  - CI systems
+  mechanism: Research-object profile for packaging workflow tests, inputs, expected outputs, and services
+  description: Portable research-object profile for exchanging workflow test suites, inputs, expected outputs, and
+    test services.
+  evidence_level: B
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Makes workflow tests portable across registries and monitoring systems.
+  boundary_note: Adoption should be reviewed alongside LifeMonitor and WorkflowHub.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true

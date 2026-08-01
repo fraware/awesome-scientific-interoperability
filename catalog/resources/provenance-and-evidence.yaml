@@ -1,0 +1,116 @@
+section: Provenance and Evidence
+resources:
+- id: cwlprov
+  name: CWLProv
+  url: https://cwltool.readthedocs.io/en/latest/CWLProv.html
+  section: Provenance and Evidence
+  resource_type: Provenance Profile
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  connects:
+  - CWL runners
+  - provenance consumers
+  - research-object systems
+  mechanism: PROV-based representation of CWL workflow execution packaged in research objects
+  description: PROV-based profile that packages CWL workflow execution records as portable research objects.
+  evidence_level: B
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Concrete bridge between a workflow language, execution provenance, and portable evidence.
+  boundary_note: Related to Workflow Run RO-Crate; descriptions must clarify their distinct profiles and evolution.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: iso-23494-2-2026-common-provenance-model
+  name: ISO 23494-2:2026 Common Provenance Model
+  url: https://www.iso.org/standard/87714.html
+  section: Provenance and Evidence
+  resource_type: International Standard
+  interoperability_layers:
+  - Semantic
+  - Evidentiary
+  connects:
+  - Biological materials
+  - derived data
+  - laboratories
+  - biobanks
+  - software
+  mechanism: Common provenance model and serialization requirements for traceability and interoperability
+  description: International provenance standard for tracing biological materials and derived data across laboratories,
+    biobanks, and software systems.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Newly published international scientific provenance standard with explicit interoperability requirements.
+  boundary_note: Biotechnology-focused; include as a current domain standard and monitor implementation uptake.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: p-plan
+  name: P-Plan
+  url: https://www.opmw.org/model/p-plan/
+  section: Provenance and Evidence
+  resource_type: Ontology
+  interoperability_layers:
+  - Semantic
+  - Evidentiary
+  connects:
+  - Prospective plans
+  - workflow steps
+  - variables
+  - execution provenance
+  mechanism: PROV extension linking plans and workflow structures to executions
+  description: W3C PROV extension linking prospective plans, workflow structures, variables, and execution provenance.
+  evidence_level: B
+  maintenance_signal: Stable
+  north_star_utility: High
+  decision_basis: Addresses the important bridge between intended scientific procedures and observed execution.
+  boundary_note: Assess current implementation adoption during double review.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: runcrate
+  name: runcrate
+  url: https://www.researchobject.org/runcrate/
+  section: Provenance and Evidence
+  resource_type: Implementation / Toolkit
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  connects:
+  - Workflow Run RO-Crates
+  - command-line users
+  - notebooks
+  - provenance consumers
+  mechanism: Tools for inspecting, replaying, and converting workflow-run research objects
+  description: Tools for inspecting, replaying, and converting Workflow Run RO-Crate and CWLProv execution records.
+  evidence_level: B
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Makes a portable provenance profile operationally usable and inspectable.
+  boundary_note: Implementation maturity and supported profiles should be recorded.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: w3c-prov
+  name: W3C PROV
+  url: https://www.w3.org/TR/prov-o/
+  section: Provenance and Evidence
+  resource_type: Provenance Standard
+  interoperability_layers:
+  - Semantic
+  - Evidentiary
+  connects:
+  - Activities
+  - entities
+  - agents
+  - provenance producers and consumers
+  mechanism: Shared data model, ontology, and serializations for provenance exchange
+  description: Cross-domain data model, ontology, and serializations for exchanging provenance among independent
+    producers and consumers.
+  evidence_level: A
+  maintenance_signal: Stable
+  north_star_utility: High
+  decision_basis: Foundational cross-domain provenance contract used by many scientific profiles.
+  boundary_note: General standard justified by extensive scientific reuse.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true

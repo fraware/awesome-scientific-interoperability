@@ -1,0 +1,100 @@
+section: Foundations
+resources:
+- id: cross-domain-interoperability-framework-cdif
+  name: Cross-Domain Interoperability Framework (CDIF)
+  url: https://cdif.codata.org/
+  section: Foundations
+  resource_type: Framework / Specification
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  connects:
+  - Research data
+  - metadata systems
+  - domain repositories
+  - cross-domain consumers
+  mechanism: Common discovery, integration, provenance, and semantic profiles for cross-domain data use
+  description: Discovery, integration, provenance, and semantic profiles for reusing research data across scientific
+    domains.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Directly addresses cross-domain scientific data interoperability and provides a current specification
+    suite.
+  boundary_note: 'Overlap with EOSC is complementary: CDIF supplies concrete cross-domain information profiles.'
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: eosc-interoperability-framework
+  name: EOSC Interoperability Framework
+  url: https://eosc.eu/eosc-interoperability-framework/
+  section: Foundations
+  resource_type: Framework
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  - Organizational
+  connects:
+  - European research infrastructures
+  - services
+  - data
+  - users
+  mechanism: Common interoperability architecture, guidelines, and governance for federated research services
+  description: Technical, semantic, organizational, and legal guidance for federating European research data and
+    services.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Major cross-domain framework that organizes technical, semantic, organizational, and legal interoperability
+    in a scientific federation.
+  boundary_note: Distinct from service directories because it defines the interoperability architecture.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: fair-digital-object-framework
+  name: FAIR Digital Object Framework
+  url: https://fairdo.org/specifications/
+  section: Foundations
+  resource_type: Framework / Specification
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  - Evidentiary
+  connects:
+  - Digital objects
+  - repositories
+  - automated services
+  mechanism: Typed, identified, machine-actionable digital objects with kernel information and operations
+  description: Typed and persistently identified digital objects designed for machine action across repositories
+    and automated services.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Defines a reusable object model intended to support machine processing and cross-system exchange.
+  boundary_note: Do not duplicate every FDO implementation; curate only field-defining specifications and test systems.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: fair-principles
+  name: FAIR Principles
+  url: https://www.go-fair.org/fair-principles/
+  section: Foundations
+  resource_type: Principles
+  interoperability_layers:
+  - Semantic
+  - Organizational
+  connects:
+  - Digital research objects
+  - repositories
+  - research communities
+  mechanism: Four principles defining machine-actionable findability, accessibility, interoperability, and reuse
+  description: Principles for machine-actionable findability, accessibility, interoperability, and reuse across
+    digital research objects and services.
+  evidence_level: A
+  maintenance_signal: Stable
+  north_star_utility: High
+  decision_basis: Field-defining foundation. The interoperability principle and machine-actionability framing are
+    necessary to understand the category.
+  boundary_note: Keep the entry focused on the principles; redirect implementation directories to FAIRsharing.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true

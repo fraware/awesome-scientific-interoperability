@@ -1,0 +1,318 @@
+section: Metadata and Semantics
+resources:
+- id: bioschemas
+  name: Bioschemas
+  url: https://bioschemas.org/profiles/
+  section: Metadata and Semantics
+  resource_type: Scientific Metadata Profiles
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Life-science resources
+  - search engines
+  - registries
+  mechanism: Schema.org profiles for datasets, tools, workflows, training materials, and scientific resources
+  description: Schema.org profiles for datasets, tools, workflows, training materials, and scientific resources;
+    connects Life-science resources, search engines, and registries.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Strong domain exemplar translating general web semantics into actionable scientific resource profiles.
+  boundary_note: Life-science-centered; avoid listing every profile individually.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: climate-and-forecast-cf-metadata-conventions
+  name: Climate and Forecast (CF) Metadata Conventions
+  url: https://cfconventions.org/
+  section: Metadata and Semantics
+  resource_type: Metadata Convention
+  interoperability_layers:
+  - Semantic
+  connects:
+  - NetCDF datasets
+  - climate and forecast tools
+  - archives
+  mechanism: Standardized variable descriptions, units, coordinates, and metadata conventions
+  description: Standardized variable descriptions, units, coordinates, and metadata conventions; connects NetCDF
+    datasets, climate and forecast tools, and archives.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: The semantic layer that makes NetCDF climate data interpretable across tools.
+  boundary_note: Prefer this over a generic NetCDF entry for the interoperability list.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: croissant
+  name: Croissant
+  url: https://docs.mlcommons.org/croissant/docs/croissant-spec-1.1.html
+  section: Metadata and Semantics
+  resource_type: Dataset Metadata Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Machine-learning datasets
+  - repositories
+  - training frameworks
+  - consumers
+  mechanism: Machine-readable dataset descriptions built on Schema.org
+  description: Machine-readable dataset descriptions built on Schema.org; connects machine-learning datasets, repositories,
+    training frameworks, and consumers.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Current, implementation-oriented bridge between dataset repositories and ML tooling.
+  boundary_note: Include for AI-ready scientific datasets, while excluding generic AI datasets.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: darwin-core
+  name: Darwin Core
+  url: https://dwc.tdwg.org/
+  section: Metadata and Semantics
+  resource_type: Vocabulary / Standard
+  interoperability_layers:
+  - Semantic
+  connects:
+  - Biodiversity observations
+  - collections
+  - aggregators
+  - repositories
+  mechanism: Shared terms for biodiversity occurrence, taxonomy, location, and event data
+  description: Shared terms for biodiversity occurrence, taxonomy, location, and event data; connects biodiversity
+    observations, collections, aggregators, and repositories.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Mature domain standard enabling global biodiversity data exchange.
+  boundary_note: Domain exemplar with broad institutional adoption.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: ddi-lifecycle
+  name: DDI Lifecycle
+  url: https://ddialliance.org/Specification/DDI-Lifecycle/
+  section: Metadata and Semantics
+  resource_type: Metadata Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  connects:
+  - Social-science data
+  - surveys
+  - archives
+  - analysis systems
+  mechanism: Lifecycle metadata model covering conceptualization, collection, processing, and dissemination
+  description: Lifecycle metadata model covering conceptualization, collection, processing, and dissemination; connects
+    social-science data, surveys, archives, and analysis systems.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Mature lifecycle metadata standard connecting social-science study design, collection, processing,
+    archiving, and dissemination across independent institutions and systems.
+  boundary_note: Include as a social-science domain standard; avoid expanding into a comprehensive survey-metadata
+    catalog.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: edam-ontology
+  name: EDAM Ontology
+  url: https://edamontology.org/
+  section: Metadata and Semantics
+  resource_type: Ontology
+  interoperability_layers:
+  - Semantic
+  connects:
+  - Bioinformatics tools
+  - data
+  - formats
+  - operations
+  - workflow registries
+  mechanism: Controlled concepts connecting scientific operations, data types, formats, and topics
+  description: Controlled concepts connecting scientific operations, data types, formats, and topics; connects bioinformatics
+    tools, data, formats, operations, and workflow registries.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Operationally useful semantic bridge across tools, workflows, and registries.
+  boundary_note: Life-science-focused but unusually clear in connecting operations to data and formats.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: obo-foundry
+  name: OBO Foundry
+  url: https://obofoundry.org/
+  section: Metadata and Semantics
+  resource_type: Ontology Governance / Registry
+  interoperability_layers:
+  - Semantic
+  - Organizational
+  connects:
+  - Biomedical ontologies
+  - data systems
+  - knowledge graphs
+  mechanism: Shared principles, identifiers, and coordination for interoperable open ontologies
+  description: Shared principles, identifiers, and governance for interoperable open biomedical ontologies.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Field-defining governance and coordination mechanism for interoperable biomedical semantics.
+  boundary_note: Curate the Foundry as the ecosystem entry, not every member ontology.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: qudt
+  name: QUDT
+  url: https://www.qudt.org/
+  section: Metadata and Semantics
+  resource_type: Ontology / Vocabulary
+  interoperability_layers:
+  - Semantic
+  connects:
+  - Quantities
+  - units
+  - scientific datasets
+  - knowledge systems
+  mechanism: Machine-readable ontologies for quantities, units, dimensions, and data types
+  description: Ontologies for quantities, units, dimensions, and data types that preserve measurement meaning across
+    scientific systems.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Directly addresses a recurring source of semantic incompatibility in scientific systems.
+  boundary_note: 'Compare with UCUM: QUDT emphasizes semantic models; UCUM emphasizes computable unit codes.'
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: schema-org
+  name: Schema.org
+  url: https://schema.org/
+  section: Metadata and Semantics
+  resource_type: Vocabulary
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Web resources
+  - search systems
+  - structured-data consumers
+  mechanism: Shared web vocabulary expressed through JSON-LD, Microdata, or RDFa
+  description: Shared web vocabulary used by scientific profiles to expose structured resources to search engines
+    and machine clients.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Foundational semantic substrate used by scientific profiles including Bioschemas and dataset descriptions.
+  boundary_note: General-purpose; include because scientific profiles depend on it.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: simple-knowledge-organization-system-skos
+  name: Simple Knowledge Organization System (SKOS)
+  url: https://www.w3.org/TR/skos-reference/
+  section: Metadata and Semantics
+  resource_type: Vocabulary / Standard
+  interoperability_layers:
+  - Semantic
+  connects:
+  - Taxonomies
+  - thesauri
+  - knowledge graphs
+  - metadata systems
+  mechanism: RDF model for sharing and linking controlled vocabularies
+  description: RDF model for publishing, mapping, and exchanging thesauri, taxonomies, and controlled vocabularies.
+  evidence_level: A
+  maintenance_signal: Stable
+  north_star_utility: High
+  decision_basis: Foundational mechanism for cross-system vocabulary exchange and mapping.
+  boundary_note: Generic standard justified by pervasive scientific semantic infrastructure use.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: sosa-ssn
+  name: SOSA/SSN
+  url: https://www.w3.org/TR/vocab-ssn/
+  section: Metadata and Semantics
+  resource_type: Ontology / Standard
+  interoperability_layers:
+  - Semantic
+  connects:
+  - Sensors
+  - observations
+  - samples
+  - actuators
+  - platforms
+  mechanism: W3C/OGC ontologies for observations, sampling, sensing, and actuation
+  description: W3C and OGC ontologies connecting sensors, observations, samples, actuators, and platforms.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Core semantic contract for instrument, sensor, observation, and sample interoperability.
+  boundary_note: Broad enough to connect environmental, laboratory, and IoT scientific systems.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: spatiotemporal-asset-catalog-stac
+  name: SpatioTemporal Asset Catalog (STAC)
+  url: https://stacspec.org/
+  section: Metadata and Semantics
+  resource_type: Specification / API
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Geospatial assets
+  - catalogs
+  - clients
+  - cloud storage
+  mechanism: Common metadata model and APIs for spatiotemporal assets
+  description: Common metadata model and APIs for spatiotemporal assets; connects geospatial assets, catalogs, clients,
+    and cloud storage.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Strong cross-provider interoperability standard for Earth-observation and geospatial scientific
+    assets.
+  boundary_note: Domain exemplar with mature implementation diversity.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: unified-code-for-units-of-measure-ucum
+  name: Unified Code for Units of Measure (UCUM)
+  url: https://ucum.org/
+  section: Metadata and Semantics
+  resource_type: Coding Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Measurements
+  - clinical systems
+  - laboratory data
+  - software
+  mechanism: Unambiguous machine-processable codes for units of measure
+  description: Machine-processable codes for unambiguous exchange and computation of measurement units.
+  evidence_level: A
+  maintenance_signal: Stable
+  north_star_utility: High
+  decision_basis: Provides a compact operational unit contract used across clinical and scientific systems.
+  boundary_note: Complementary to QUDT rather than redundant.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: w3c-data-catalog-vocabulary-dcat
+  name: W3C Data Catalog Vocabulary (DCAT)
+  url: https://www.w3.org/TR/vocab-dcat-3/
+  section: Metadata and Semantics
+  resource_type: Vocabulary / Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Data catalogs
+  - datasets
+  - services
+  - federated discovery systems
+  mechanism: RDF vocabulary for interoperable catalog and dataset descriptions
+  description: RDF vocabulary for exchanging catalog, dataset, distribution, and data-service descriptions across
+    federated catalogs.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Widely used contract for federating data catalogs and services.
+  boundary_note: General-purpose, but central to scientific data-catalog interoperability.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true

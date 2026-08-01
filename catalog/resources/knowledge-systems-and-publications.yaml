@@ -1,0 +1,120 @@
+section: Knowledge Systems and Publications
+resources:
+- id: journal-article-tag-suite-jats
+  name: Journal Article Tag Suite (JATS)
+  url: https://jats.nlm.nih.gov/
+  section: Knowledge Systems and Publications
+  resource_type: Markup Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Publishers
+  - repositories
+  - indexing services
+  - full-text consumers
+  mechanism: XML model for exchanging journal articles and associated metadata
+  description: XML standard for exchanging scholarly articles and associated metadata among publishers, repositories,
+    and indexing systems.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Foundational scholarly-content interchange standard with broad implementation.
+  boundary_note: Publication representation only; links to data and software require complementary standards.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: nanopublications
+  name: Nanopublications
+  url: https://nanopub.net/
+  section: Knowledge Systems and Publications
+  resource_type: Publication Model / Protocol
+  interoperability_layers:
+  - Semantic
+  - Evidentiary
+  connects:
+  - Scientific assertions
+  - provenance
+  - publication networks
+  - knowledge graphs
+  mechanism: Small immutable RDF publications combining assertion, provenance, and publication information
+  description: Immutable RDF publications that combine a scientific assertion with provenance and publication information.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Distinctive interoperable unit for machine-actionable scientific claims with provenance.
+  boundary_note: Best suited to fine-grained assertions rather than complete research objects.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: open-research-knowledge-graph-orkg
+  name: Open Research Knowledge Graph (ORKG)
+  url: https://www.orkg.org/
+  section: Knowledge Systems and Publications
+  resource_type: Knowledge Infrastructure
+  interoperability_layers:
+  - Semantic
+  - Operational
+  connects:
+  - Scientific claims
+  - publications
+  - comparisons
+  - machine consumers
+  mechanism: Structured scholarly knowledge representations and APIs
+  description: Structured scholarly representations and APIs for exchanging scientific claims, comparisons, and
+    research contributions.
+  evidence_level: B
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Substantial machine-actionable publication and knowledge-system infrastructure.
+  boundary_note: The entry should specify interoperable representations and interfaces, avoiding broad platform
+    claims.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: openaire-research-graph
+  name: OpenAIRE Research Graph
+  url: https://graph.openaire.eu/
+  section: Knowledge Systems and Publications
+  resource_type: Research Graph / APIs
+  interoperability_layers:
+  - Semantic
+  - Operational
+  connects:
+  - Publications
+  - datasets
+  - software
+  - projects
+  - organizations
+  - services
+  mechanism: Open scholarly graph integrating heterogeneous research metadata and relationships
+  description: Open scholarly graph integrating publications, datasets, software, projects, organizations, and services
+    through shared metadata and APIs.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Major cross-object scientific knowledge infrastructure with open interfaces and broad source integration.
+  boundary_note: Graph inclusion should emphasize exchange and relation integration, not scale alone.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: scholix
+  name: Scholix
+  url: https://www.scholix.org/
+  section: Knowledge Systems and Publications
+  resource_type: Link Exchange Framework
+  interoperability_layers:
+  - Semantic
+  - Operational
+  connects:
+  - Literature
+  - datasets
+  - repositories
+  - publishers
+  - link aggregators
+  mechanism: Common information model and exchange framework for links between scholarly literature and data
+  description: Common information model and exchange framework for links between scholarly literature and research
+    data.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Directly connects publications and research data across independent infrastructures.
+  boundary_note: Focus the entry on link interoperability, not general scholarly graphs.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true

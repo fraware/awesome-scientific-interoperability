@@ -1,0 +1,95 @@
+section: Agents, Access, and Policy
+resources:
+- id: ga4gh-data-use-ontology-duo
+  name: GA4GH Data Use Ontology (DUO)
+  url: https://www.ga4gh.org/product/data-use-ontology-duo/
+  section: Agents, Access, and Policy
+  resource_type: Ontology
+  interoperability_layers:
+  - Semantic
+  - Organizational
+  connects:
+  - Data-use conditions
+  - repositories
+  - access committees
+  - automated matching systems
+  mechanism: Machine-readable terms describing permitted and restricted data uses
+  description: Ontology for expressing data-use permissions and restrictions so repositories and access systems
+    can match requests computationally.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Concrete semantic bridge between data governance decisions and computational access systems.
+  boundary_note: Genomics-originated but broadly relevant to controlled scientific data.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: ga4gh-passports
+  name: GA4GH Passports
+  url: https://www.ga4gh.org/product/ga4gh-passports/
+  section: Agents, Access, and Policy
+  resource_type: Authorization Standard
+  interoperability_layers:
+  - Semantic
+  - Operational
+  - Organizational
+  connects:
+  - Researchers
+  - identity providers
+  - data services
+  - controlled-access systems
+  mechanism: Machine-readable researcher visas and access assertions built on federated identity
+  description: Machine-readable researcher visas and access assertions for interoperable controlled-data authorization.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Strong scientific authorization profile connecting identity and controlled genomic data services.
+  boundary_note: Domain exemplar; relies on underlying OAuth/OIDC infrastructure.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: model-context-protocol-mcp
+  name: Model Context Protocol (MCP)
+  url: https://modelcontextprotocol.io/specification/2026-07-28
+  section: Agents, Access, and Policy
+  resource_type: Agent-Tool Protocol
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - AI agents
+  - tools
+  - APIs
+  - data resources
+  mechanism: Standard protocol for capability discovery, tool invocation, resources, and prompts
+  description: Open protocol for exposing tools, resources, prompts, and capabilities to AI applications through
+    a standardized client-server interface.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: General protocol with immediate relevance to scientific tool and data interoperability.
+  boundary_note: Scientific inclusion requires examples or profiles that preserve domain semantics and evidence.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: tooluniverse
+  name: ToolUniverse
+  url: https://zitniklab.hms.harvard.edu/ToolUniverse/en/
+  section: Agents, Access, and Policy
+  resource_type: Scientific Tool Platform / Registry
+  interoperability_layers:
+  - Semantic
+  - Operational
+  connects:
+  - Scientific agents
+  - tools
+  - models
+  - APIs
+  - datasets
+  mechanism: Standardized tool descriptions, invocation, composition, and monitoring across scientific resources
+  description: Scientific tool platform that standardizes discovery, invocation, composition, and monitoring across
+    heterogeneous tools, models, APIs, and datasets.
+  evidence_level: B
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Directly addresses scientific-agent access to a large, heterogeneous tool ecosystem.
+  boundary_note: Platform-centered; review openness, schemas, and independent reuse of its interfaces.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true

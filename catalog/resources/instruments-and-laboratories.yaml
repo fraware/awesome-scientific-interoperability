@@ -1,0 +1,158 @@
+section: Instruments and Laboratories
+resources:
+- id: allotrope-data-format
+  name: Allotrope Data Format
+  url: https://docs.allotrope.org/
+  section: Instruments and Laboratories
+  resource_type: Data and Semantic Framework
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  connects:
+  - Laboratory instruments
+  - data systems
+  - analytics
+  - archives
+  mechanism: Common data format, ontologies, and metadata models for analytical laboratory data
+  description: Common data format, ontologies, and metadata models for exchanging analytical laboratory data across
+    instruments and applications.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Substantial cross-vendor scientific-data interoperability ecosystem.
+  boundary_note: Governance and access conditions should be described accurately.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: analytical-information-markup-language-animl
+  name: Analytical Information Markup Language (AnIML)
+  url: https://www.animl.org/
+  section: Instruments and Laboratories
+  resource_type: Data Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Analytical instruments
+  - laboratory software
+  - data archives
+  mechanism: XML-based exchange format for analytical chemistry and instrument data
+  description: XML-based standard for exchanging analytical chemistry and instrument data across vendor systems.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Direct laboratory-data interoperability standard with explicit cross-vendor purpose.
+  boundary_note: Domain-specific technique definitions may vary in maturity.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: autoprotocol
+  name: Autoprotocol
+  url: https://autoprotocol.org/
+  section: Instruments and Laboratories
+  resource_type: Protocol Language
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - Experimental procedures
+  - cloud laboratories
+  - automation systems
+  mechanism: Machine-readable, platform-independent descriptions of laboratory procedures
+  description: Machine-readable language for expressing platform-independent laboratory procedures for automated
+    execution.
+  evidence_level: B
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Important operational contract for expressing executable wet-lab procedures.
+  boundary_note: Review current ecosystem breadth and specification stewardship.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: hl7-fhir
+  name: HL7 FHIR
+  url: https://hl7.org/fhir/
+  section: Instruments and Laboratories
+  resource_type: Domain API / Data Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Clinical systems
+  - laboratories
+  - applications
+  - data services
+  mechanism: Modular resources and APIs for interoperable health information exchange
+  description: Modular resources and APIs for exchanging clinical and laboratory information across independent
+    health systems.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Exceptional domain exemplar demonstrating a large modular interoperability ecosystem.
+  boundary_note: Include as a domain exemplar, not as evidence that the list covers all healthcare standards.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: loinc
+  name: LOINC
+  url: https://loinc.org/
+  section: Instruments and Laboratories
+  resource_type: Terminology Standard
+  interoperability_layers:
+  - Semantic
+  connects:
+  - Laboratory tests
+  - clinical observations
+  - health systems
+  - research datasets
+  mechanism: Universal codes for laboratory and clinical observations
+  description: Universal codes for exchanging laboratory tests, measurements, and clinical observations.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Mature semantic interoperability mechanism for laboratory measurements and observations.
+  boundary_note: Clinical orientation should be acknowledged; pairs naturally with FHIR and UCUM.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: opc-ua-laboratory-and-analytical-device-standard-lads
+  name: OPC UA Laboratory and Analytical Device Standard (LADS)
+  url: https://opcfoundation.org/markets-collaboration/lads/
+  section: Instruments and Laboratories
+  resource_type: Companion Specification
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Laboratory and analytical devices
+  - automation and monitoring systems
+  mechanism: OPC UA information model and services for standardized laboratory-device communication
+  description: OPC UA companion specification for standardized control, status, and data access across laboratory
+    devices.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Modern industrial-scientific bridge for interoperable device control, status, and data access.
+  boundary_note: Compare with SiLA 2; both may be included because they address different ecosystems.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true
+- id: sila-2
+  name: SiLA 2
+  url: https://sila2.gitlab.io/sila_base/
+  section: Instruments and Laboratories
+  resource_type: Communication Standard
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - Laboratory devices
+  - services
+  - orchestration software
+  mechanism: gRPC-based device and service communication with extensible feature definitions
+  description: Open gRPC-based standard for controlling laboratory devices and services through extensible feature
+    definitions.
+  evidence_level: A
+  maintenance_signal: Current
+  north_star_utility: High
+  decision_basis: Canonical open laboratory-device interoperability standard with multi-language implementations.
+  boundary_note: Device communication does not by itself standardize experimental semantics.
+  reviewed_on: '2026-08-01'
+  primary_source_inspected: true

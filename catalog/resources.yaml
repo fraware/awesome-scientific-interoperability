@@ -1,0 +1,16 @@
+catalog_version: 1.0.0
+reviewed_on: '2026-08-01'
+north_star: A technically competent user can identify the strongest available interoperability mechanism for a concrete
+  scientific integration problem without conducting a new landscape search.
+resource_files:
+- resources/foundations.yaml
+- resources/identifiers-and-discovery.yaml
+- resources/metadata-and-semantics.yaml
+- resources/data-and-digital-objects.yaml
+- resources/research-software-and-environments.yaml
+- resources/workflows-and-execution.yaml
+- resources/provenance-and-evidence.yaml
+- resources/knowledge-systems-and-publications.yaml
+- resources/instruments-and-laboratories.yaml
+- resources/agents-access-and-policy.yaml
+- resources/validation-and-conformance.yaml

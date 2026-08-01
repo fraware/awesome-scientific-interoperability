@@ -1,0 +1,27 @@
+name: Report a correction
+description: Report an inaccurate description, moved URL, maintenance change, duplicate, or scope problem.
+title: "Correction: "
+labels: [correction]
+body:
+  - type: input
+    id: resource
+    attributes:
+      label: Resource
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is incorrect or outdated?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Primary supporting sources
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed correction

@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/fraware/awesome-scientific-interoperability/blob/main/schema/catalog.schema.json",
+  "title": "Awesome Scientific Interoperability catalog",
+  "type": "object",
+  "required": [
+    "catalog_version",
+    "reviewed_on",
+    "north_star",
+    "resources"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "catalog_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "reviewed_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "north_star": {
+      "type": "string",
+      "minLength": 40
+    },
+    "resources": {
+      "type": "array",
+      "minItems": 50,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "url",
+          "section",
+          "resource_type",
+          "interoperability_layers",
+          "connects",
+          "mechanism",
+          "description",
+          "evidence_level",
+          "maintenance_signal",
+          "north_star_utility",
+          "decision_basis",
+          "boundary_note",
+          "reviewed_on",
+          "primary_source_inspected"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 2
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "section": {
+            "enum": [
+              "Foundations",
+              "Identifiers and Discovery",
+              "Metadata and Semantics",
+              "Data and Digital Objects",
+              "Research Software and Environments",
+              "Workflows and Execution",
+              "Provenance and Evidence",
+              "Knowledge Systems and Publications",
+              "Instruments and Laboratories",
+              "Agents, Access, and Policy",
+              "Validation and Conformance"
+            ]
+          },
+          "resource_type": {
+            "type": "string",
+            "minLength": 2
+          },
+          "interoperability_layers": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "Syntactic",
+                "Semantic",
+                "Operational",
+                "Evidentiary",
+                "Organizational"
+              ]
+            }
+          },
+          "connects": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 2
+            }
+          },
+          "mechanism": {
+            "type": "string",
+            "minLength": 10
+          },
+          "description": {
+            "type": "string",
+            "minLength": 20,
+            "pattern": "^[A-Z0-9].*\\.$"
+          },
+          "evidence_level": {
+            "enum": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          "maintenance_signal": {
+            "enum": [
+              "Current",
+              "Stable",
+              "Emerging"
+            ]
+          },
+          "north_star_utility": {
+            "enum": [
+              "High",
+              "Medium",
+              "Low"
+            ]
+          },
+          "decision_basis": {
+            "type": "string",
+            "minLength": 20
+          },
+          "boundary_note": {
+            "type": "string",
+            "minLength": 10
+          },
+          "reviewed_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "primary_source_inspected": {
+            "const": true
+          }
+        }
+      }
+    }
+  }
+}
