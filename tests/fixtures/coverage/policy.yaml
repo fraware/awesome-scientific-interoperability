@@ -1,0 +1,18 @@
+version: 1
+thresholds:
+  min_entries_per_section: 3
+  max_single_domain_share: 0.30
+  max_general_purpose_substrate_share: 0.10
+  max_implementations_per_family: 1
+general_purpose_substrate_ids:
+  - general-vocab
+  - general-units
+implementation_resource_types:
+  - Reference Implementation
+  - Testing / Monitoring Service
+standard_families:
+  demo-family:
+    - demo-spec
+    - demo-impl-a
+    - demo-impl-b
+    - demo-impl-c

@@ -1,0 +1,50 @@
+version: 1
+thresholds:
+  min_entries_per_section: 3
+  max_single_domain_share: 0.30
+  max_general_purpose_substrate_share: 0.10
+  max_implementations_per_family: 2
+general_purpose_substrate_ids:
+  - bagit
+  - p-plan
+  - qudt
+  - schema-org
+  - simple-knowledge-organization-system-skos
+  - unified-code-for-units-of-measure-ucum
+  - w3c-data-catalog-vocabulary-dcat
+  - w3c-prov
+implementation_resource_types:
+  - Reference Implementation
+  - Implementation / Toolkit
+  - Workflow Execution Backend
+  - Testing / Monitoring Service
+standard_families:
+  cwl:
+    - common-workflow-language-cwl
+    - cwltool
+    - cwl-conformance-tests
+    - cwlprov
+    - lifemonitor
+    - sapporo
+  ro-crate:
+    - ro-crate
+    - workflow-ro-crate
+    - workflow-run-ro-crate
+    - workflow-testing-ro-crate
+    - ro-crate-validator
+    - runcrate
+  ga4gh-apis:
+    - ga4gh-data-repository-service-drs
+    - ga4gh-service-info
+    - ga4gh-service-registry
+    - ga4gh-task-execution-service-tes
+    - ga4gh-tool-registry-service-trs
+    - ga4gh-workflow-execution-service-wes
+  wdl:
+    - workflow-description-language-wdl
+    - wfexs-backend
+  w3c-prov-family:
+    - w3c-prov
+    - cwlprov
+    - p-plan
+    - iso-23494-2-2026-common-provenance-model

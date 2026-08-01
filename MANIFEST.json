@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 104,
+  "file_count": 110,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/quality.yml",
-      "sha256": "fa6a54fede95327d44dcdbad017f5d1ff1772ac13253a9208c1dc7df242b5df9",
-      "bytes": 987
+      "sha256": "b87ccba9f7dc0fadfe2a754934a3978e13459eb0894b5e73c199fb0ba491b7db",
+      "bytes": 1319
     },
     {
       "path": ".gitignore",
@@ -39,8 +39,8 @@
     },
     {
       "path": "Makefile",
-      "sha256": "67a21fa9f13a913fb77e3ceea7834b4de8303057837f082ba5896d55c31117e3",
-      "bytes": 1171
+      "sha256": "ae223b01d2f80e11bcfd4b268bef5c488be43d7d31352120194d76048658e436",
+      "bytes": 1307
     },
     {
       "path": "README.md",
@@ -123,6 +123,11 @@
       "bytes": 456
     },
     {
+      "path": "config/coverage-policy.yaml",
+      "sha256": "2d1c545a80b28ab099de0400b5aa6541e63b18d4f6af2d29dfa28bb574a4fc1b",
+      "bytes": 1235
+    },
+    {
       "path": "config/link-policy.yaml",
       "sha256": "7e5b3733eaa5727d37965e0a4a19bb40e47773652df094dcc34c967b3bce0799",
       "bytes": 260
@@ -151,6 +156,11 @@
       "path": "docs/conflicts-of-interest.md",
       "sha256": "69149e72d7802266b5e1705d2862bf422527b1e5a0f24ca7c522f7f0617c4829",
       "bytes": 643
+    },
+    {
+      "path": "docs/coverage-baseline.md",
+      "sha256": "a4da9769532fc8e1573491fee0aacb8cc8508631f9169ce5c3415e3fc12184ef",
+      "bytes": 2029
     },
     {
       "path": "docs/decision-guides/README.md",
@@ -348,6 +358,11 @@
       "bytes": 2494
     },
     {
+      "path": "scripts/audit_coverage.py",
+      "sha256": "243bc689aa9670b97a5033986911f7fbe888a03fe28222ca8a86b0eaaf8c0627",
+      "bytes": 19252
+    },
+    {
       "path": "scripts/check_links.py",
       "sha256": "8d22f0d699b0667f74fd6f345c5fc93bed93f9f5cdd1e9630b976ec930e761d7",
       "bytes": 10886
@@ -391,6 +406,16 @@
       "path": "scripts/verify_manifest.py",
       "sha256": "8015ebe08e8746d5cafa97ecee8d77afe6141bedef81d15fe79586e66094093a",
       "bytes": 2523
+    },
+    {
+      "path": "tests/fixtures/coverage/catalog.yaml",
+      "sha256": "4e53604e071474a3c74a9609ae349087ee431b2572415d668cc07fad687715d6",
+      "bytes": 3433
+    },
+    {
+      "path": "tests/fixtures/coverage/policy.yaml",
+      "sha256": "2534c24c5a0c826ce295547db90ad1566e2867db64bc3cb3b70b47d45ab8e08f",
+      "bytes": 428
     },
     {
       "path": "tests/fixtures/v2/01-valid-minimal-pair.valid.yaml",
@@ -496,6 +521,11 @@
       "path": "tests/test_catalog.py",
       "sha256": "2e7bbb4df3f78ac40c340d923cd2f27da54c4e4e9793a7a35b9adf96fa0ed0df",
       "bytes": 5666
+    },
+    {
+      "path": "tests/test_coverage_audit.py",
+      "sha256": "922a4c5a3801381780c98a010a1ef54030aa9cf1f7431eeee806ef1f851cbfcd",
+      "bytes": 5387
     },
     {
       "path": "tests/test_decision_guides.py",
