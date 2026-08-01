@@ -18,10 +18,14 @@
 - The release manifest covers every tracked file except the manifest itself and verifies SHA-256 digests and byte counts in CI.
 - The repository was initialized on `main` and committed as a clean Git working tree.
 
+## Awesome Lint
+
+- Native `npx --yes awesome-lint` is configured in `.github/workflows/quality.yml` and the Makefile. No custom rule filter remains.
+- Repository description and topics satisfy the Awesome GitHub metadata rule.
+
 ## Checks Delegated to GitHub Actions
 
-- `awesome-lint` is configured in `.github/workflows/quality.yml`. The local execution environment could not retrieve the npm package from its internal registry, so this check must run in GitHub Actions after publication.
-- Network link validation is configured as a weekly and manually dispatchable workflow in `.github/workflows/links.yml`. The local execution environment has no external DNS access.
+- Network link validation is configured as a weekly and manually dispatchable workflow in `.github/workflows/links.yml`.
 
 ## Release Constraint
 

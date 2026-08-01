@@ -1,231 +1,226 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 45,
+  "file_count": 44,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
-      "sha256": "d374044b6f771a5465ca1c6f9384fe77917fd0204e8608d64215f3779491b72c",
-      "bytes": 2144
+      "sha256": "e456558fbd36a3ecac2cf1ad977d0d1ce42092310996fe0d90d4bc359ffd186f",
+      "bytes": 2220
     },
     {
       "path": ".github/ISSUE_TEMPLATE/correction.yml",
-      "sha256": "7d6e46277193805a7852f6728673f09b2a70e2ae3e911e19a5322e8d7a62b991",
-      "bytes": 617
-    },
-    {
-      "path": ".github/pull_request_template.md",
-      "sha256": "5fabdaae841a6b6d36f7a193608359d2537ef19d2ae37350c411df6f8c9e6dde",
-      "bytes": 966
-    },
-    {
-      "path": ".github/workflows/links.yml",
-      "sha256": "6e5f60db3467a0d99718be7355061dd7f62beac865cff2f847f32e79f344c98e",
-      "bytes": 407
-    },
-    {
-      "path": ".github/workflows/quality.yml",
-      "sha256": "144b198b9a3e00b37d06c864c5c59dfebbd13d8d78c2bf6be8a62c10918c33ed",
-      "bytes": 859
-    },
-    {
-      "path": ".gitignore",
-      "sha256": "b97cdcd795c2606a974d33f1d429f4cfb99a32da4d10206a45fcc363ae6be10d",
-      "bytes": 69
-    },
-    {
-      "path": "CITATION.cff",
-      "sha256": "aba22923b0939281c8128125073bc8ce9140401f87dca49b7f6b7fca8d9c3fde",
-      "bytes": 565
-    },
-    {
-      "path": "Makefile",
-      "sha256": "4282187eae41cc5994f5469be17b3e823a7248042633d104f3aa84392a045a43",
-      "bytes": 505
-    },
-    {
-      "path": "README.md",
-      "sha256": "89bbfe397508a7e9068394a2fc635d0a318d67ea2e369ae0eae83c9bf8b2dcf8",
-      "bytes": 17989
-    },
-    {
-      "path": "archive.md",
-      "sha256": "8defddc3ac86428af423c6c8ae60330d0bc526addd2c4b8b20a542bc16d57ed7",
-      "bytes": 280
-    },
-    {
-      "path": "catalog/resources.yaml",
-      "sha256": "8ca205f9836e3e3f2d37a39f8982df83bfb849810b08ad8ce0dd4f77fc409806",
-      "bytes": 733
-    },
-    {
-      "path": "catalog/resources/agents-access-and-policy.yaml",
-      "sha256": "026e3e1a0ead6c5f4a60543d692c1a2f648c9bda1a2a7f50cbbe69173d1e400f",
-      "bytes": 3774
-    },
-    {
-      "path": "catalog/resources/data-and-digital-objects.yaml",
-      "sha256": "013aab1625e1947c3f957643266d6def860b5274b43bc5594e9e02647868ed8d",
-      "bytes": 6234
-    },
-    {
-      "path": "catalog/resources/foundations.yaml",
-      "sha256": "b2fdc0cb176318e8f70bc9e4636941fcedfe9357d9d468e0e372046557530eb8",
-      "bytes": 3937
-    },
-    {
-      "path": "catalog/resources/identifiers-and-discovery.yaml",
-      "sha256": "b1184a0ad48ea7b6c00a82ad5e8be770385d8760dc0933070cbf177f4133210a",
-      "bytes": 8992
-    },
-    {
-      "path": "catalog/resources/instruments-and-laboratories.yaml",
-      "sha256": "8cdce7fda79e05a8c5623537fc1e198b67f2f986bce831c728cfde6111249158",
-      "bytes": 6127
-    },
-    {
-      "path": "catalog/resources/knowledge-systems-and-publications.yaml",
-      "sha256": "bffd4bd2740724a5e33127962626bd7be24850284d43f6876c3a84c8ab18fc7b",
-      "bytes": 4583
-    },
-    {
-      "path": "catalog/resources/metadata-and-semantics.yaml",
-      "sha256": "3b34cee39f2726e4982b396f755d9616df1be6012d653b0cd929b5259e3f06df",
-      "bytes": 12286
-    },
-    {
-      "path": "catalog/resources/provenance-and-evidence.yaml",
-      "sha256": "fda73679a5e98a5276d083375b9865dc70bd845b20549981fd9a31cc0e388986",
-      "bytes": 4407
-    },
-    {
-      "path": "catalog/resources/research-software-and-environments.yaml",
-      "sha256": "b5179a542427980d6b0ae5fd4703a5d98f094d5d203d10d167abea23ac672776",
-      "bytes": 4705
-    },
-    {
-      "path": "catalog/resources/validation-and-conformance.yaml",
-      "sha256": "6cedcfbc7733210a01cff580b7ddb0cba7b708159161dd413502c96bf729cc46",
-      "bytes": 3685
-    },
-    {
-      "path": "catalog/resources/workflows-and-execution.yaml",
-      "sha256": "82b1b5284cfa8e28c772f3453197b5b7ffbc4d7304f1becf56725b6506e8e72e",
-      "bytes": 8949
-    },
-    {
-      "path": "code-of-conduct.md",
-      "sha256": "9ea9f921edba071ef561044efeb3e1f6ad8b47ffa198b6c398f51ce1fb5ca79c",
-      "bytes": 456
-    },
-    {
-      "path": "contributing.md",
-      "sha256": "4df129d28fe2c45847e1995e53bf436818df81ea4b49c7376bae446f2a0f50ea",
-      "bytes": 1786
-    },
-    {
-      "path": "docs/conflicts-of-interest.md",
-      "sha256": "69149e72d7802266b5e1705d2862bf422527b1e5a0f24ca7c522f7f0617c4829",
+      "sha256": "5c979dbabd7ae1b773ad3c73668dc230d8e6e48b75491bf402415e4887c0059b",
       "bytes": 643
     },
     {
+      "path": ".github/pull_request_template.md",
+      "sha256": "407369582e59cdfb0e8302e15185409288a89a01343125f3cfb8e27648c52fc9",
+      "bytes": 992
+    },
+    {
+      "path": ".github/workflows/links.yml",
+      "sha256": "c8dbe302069bff530144e2830efa8760f824c02c758a9a681cb9b0542ecd66da",
+      "bytes": 427
+    },
+    {
+      "path": ".github/workflows/quality.yml",
+      "sha256": "b0cbe8c999a84498f6784ffb86b24bd0f3a6a2269ecb6d08e601020d594f8d1f",
+      "bytes": 807
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "0bdc43d2bea12421f92871785272737fcfc4524fb373f4420ed236048c7634f7",
+      "bytes": 75
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "6030649598e980c695751e0fca6d34061f249285247747a51f2232b8ff091cf1",
+      "bytes": 584
+    },
+    {
+      "path": "Makefile",
+      "sha256": "b2e82ac3ce1c4adda3ca3e32faba687b52c0eefde68dda50ef041bd193b8d61c",
+      "bytes": 454
+    },
+    {
+      "path": "README.md",
+      "sha256": "e2f68e1843bf51410acb834ce1580ee6f56caa62e72c846892a6625181a56902",
+      "bytes": 18139
+    },
+    {
+      "path": "archive.md",
+      "sha256": "d48bf0621af0604a886634f9b07986b33707b53cf7d7191c91854dedfbac2a76",
+      "bytes": 285
+    },
+    {
+      "path": "catalog/resources.yaml",
+      "sha256": "e29f1407b99ad50ad73ef9f9ae62562ceba3b97004f6882eb73c2598f7f8fe39",
+      "bytes": 749
+    },
+    {
+      "path": "catalog/resources/agents-access-and-policy.yaml",
+      "sha256": "27623f8f0581652025a2834a27ea1f04325b16a82c911d1244da6610d9abc077",
+      "bytes": 3869
+    },
+    {
+      "path": "catalog/resources/data-and-digital-objects.yaml",
+      "sha256": "d3d2ffd2bd5936161e7a15dbcda528e7ca21055f07c98ebeea92a4f0d308d989",
+      "bytes": 6400
+    },
+    {
+      "path": "catalog/resources/foundations.yaml",
+      "sha256": "10d336f4519fe70923687c7535b006a34278e31c158e4623c4e320ae120af0f0",
+      "bytes": 4037
+    },
+    {
+      "path": "catalog/resources/identifiers-and-discovery.yaml",
+      "sha256": "ffe3ebad63d3ccb49127a1f9ac8a31377f6430d4b5d5a990cce08eed429b8639",
+      "bytes": 9225
+    },
+    {
+      "path": "catalog/resources/instruments-and-laboratories.yaml",
+      "sha256": "0331de86f5d4734cc103a94de94eb9dae661c305ee9356337778bd8300bf56b9",
+      "bytes": 6285
+    },
+    {
+      "path": "catalog/resources/knowledge-systems-and-publications.yaml",
+      "sha256": "1faad9cc5bd133b9dcd471f276a0757008114e714a4e636129da6a5b5c0085f4",
+      "bytes": 4703
+    },
+    {
+      "path": "catalog/resources/metadata-and-semantics.yaml",
+      "sha256": "0024b6bbe77014824b064c4a4a38c807e139a15552a2c7d4741f1eb79f683353",
+      "bytes": 12604
+    },
+    {
+      "path": "catalog/resources/provenance-and-evidence.yaml",
+      "sha256": "4f802dacf493aeccd441c971bfe8709f4d28add3e602c8fc5b3a637b943caca2",
+      "bytes": 4523
+    },
+    {
+      "path": "catalog/resources/research-software-and-environments.yaml",
+      "sha256": "2613df0d6750915b4d8005097bbe6eda40309ec2ef15ee4cab0e4631908f8493",
+      "bytes": 4822
+    },
+    {
+      "path": "catalog/resources/validation-and-conformance.yaml",
+      "sha256": "14007851e24f776cef6b3d831cc1a6ae1909885b48710e95dd218fc901944f17",
+      "bytes": 3780
+    },
+    {
+      "path": "catalog/resources/workflows-and-execution.yaml",
+      "sha256": "3d6c508a833e330e563476e0d4c00f78ffb4604a0500e900f474f9024146a729",
+      "bytes": 9181
+    },
+    {
+      "path": "code-of-conduct.md",
+      "sha256": "d3e7141c6551da7c52c1cd2d55c31262710eef36b8197bae397539a2ff91d8cd",
+      "bytes": 461
+    },
+    {
+      "path": "contributing.md",
+      "sha256": "de4b607322ca0ee26689d43f635f443c4702e3127c369f565a93ec6e32fcda15",
+      "bytes": 1832
+    },
+    {
+      "path": "docs/conflicts-of-interest.md",
+      "sha256": "4303dc1736c41c353227354eb9d0dcb375bcc46a54cea66974c2ae257c28f587",
+      "bytes": 650
+    },
+    {
       "path": "docs/editorial-policy.md",
-      "sha256": "c337ad693a3ce396c3f8eda0a9092cc9fd1ad7d48e5aad3c1b1fbf5832280be0",
-      "bytes": 2395
+      "sha256": "9ad032e4052abef77a10834cb746f5b33dac433a4ff9cd366f555e09c3b2ac4e",
+      "bytes": 2432
     },
     {
       "path": "docs/engineering-takeover-specification.md",
-      "sha256": "51b195dbc94b5a4fbd0d5c4c78786fa542fdce303d7860677028b6f168a27582",
-      "bytes": 57524
+      "sha256": "3c4ad40403af31827b4b43186a90565635c9cbf5c3cb365ef90b1a7c8928faf9",
+      "bytes": 59042
     },
     {
       "path": "docs/maintenance-protocol.md",
-      "sha256": "157fed07391f69c9a653d0fa0b230724b244a040dd92a0bf38d3604f57390e1d",
-      "bytes": 1587
+      "sha256": "be510bff9a8210e85ae142e50b0faeac0dfcfb24821ce3339321a1e6b558f73f",
+      "bytes": 1625
     },
     {
       "path": "docs/project-charter.md",
-      "sha256": "7f5d6d38ec672106d21b3917614fad74290871cf0eb6f8cf9150a6646406a6f1",
-      "bytes": 2148
+      "sha256": "9c3185392a9cea7441ddbc56f17c7f2e53d3f43257bde64f1fe83d4687b9a8e2",
+      "bytes": 2187
     },
     {
       "path": "docs/publishing.md",
-      "sha256": "60c5a6b6203b4d3fc2609c0506cb74b2890fc268dfae205cb252eb0103c83595",
-      "bytes": 1837
+      "sha256": "312cc13c96377e3460ea1ad25ade5fa8fea3e12593e0683cb31c7d087698d4fd",
+      "bytes": 1568
     },
     {
       "path": "docs/review-checklist.md",
-      "sha256": "f562ea3a2499d62d08a266d688dfaefdacf6088134cf682f099b0ee47072d649",
-      "bytes": 1160
+      "sha256": "dba91d7b4a1f79626449af79636879961e1eecdbaaf1283a967648e54b79ae46",
+      "bytes": 1191
     },
     {
       "path": "docs/roadmap.md",
-      "sha256": "247b07d8fbbe87eedfaba343616b7bdbdfe7dc6cb6eb41f25f47b86ee9af4c64",
-      "bytes": 873
+      "sha256": "76d20ee02b29b6cdfa25079c6b7b7840cc611cff2f88699c856dfb1f32ac6071",
+      "bytes": 891
     },
     {
       "path": "docs/source-notes.md",
-      "sha256": "d5e73e538df92c743f7acec2eae9c08e05b640dd8a3118f47d34de4e16a87936",
-      "bytes": 645
+      "sha256": "391db5e9878144753b2fb9ae2ace7ead76d2be2facd5f511b5eec9ef1ba2be27",
+      "bytes": 657
     },
     {
       "path": "docs/taxonomy.md",
-      "sha256": "bda120ce65ad7eb7c78cfc97da4fad44bba6287ad38676e909472821da42f399",
-      "bytes": 1578
+      "sha256": "e77b2eedfb76f212572d156675bebf2422386289a0e20168b65f9f0a9eaf328f",
+      "bytes": 1623
     },
     {
       "path": "docs/validation-report.md",
-      "sha256": "ba63df73e4705c0c5628a9be670a270a083d962dcadafd4b96a6d12ac083a5d1",
-      "bytes": 1650
+      "sha256": "ed06f9d336cd7202c67a78dfd2c596d571d4f5fa1f38bff839bdd272fcdbf49f",
+      "bytes": 1628
     },
     {
       "path": "docs/watchlist.md",
-      "sha256": "34742925f485b663250a3ed51b82933b4d4202e73caa4fbe82bf92865a0d657b",
-      "bytes": 2293
+      "sha256": "c6320693cd00a19cd11542c2b3dd09d586668921f2bc5b6c5179f47f1966fc45",
+      "bytes": 2313
     },
     {
       "path": "license",
-      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
-      "bytes": 7048
+      "sha256": "f4e7f373b9b996950337e8d41a4a2939c2d90b7725e9baf3d5084a22717ad328",
+      "bytes": 7169
     },
     {
       "path": "requirements-dev.txt",
-      "sha256": "0b0709dc3105d98b29f4fc6a870c15c0cf42191498384ef8a2a32d3fcf5f34ed",
-      "bytes": 33
+      "sha256": "03e41047a96b960e8ca5aad6b0ea79fbf6894fc9b6d82f3092780ebd74e46345",
+      "bytes": 35
     },
     {
       "path": "schema/catalog.schema.json",
-      "sha256": "d77619072e4d76b9cf4ec628dc01dfa63b65a0f99771be434d31557873063f0e",
-      "bytes": 3901
+      "sha256": "2187dea200f80a2f58e7a90e20c4ab72ca3da96376f0d572860ce1953867f412",
+      "bytes": 4056
     },
     {
       "path": "scripts/check_links.py",
-      "sha256": "06a61263d42b7a1b2d3671066f5525c88ae92af838d6db3ab61e4a649ecac7a7",
-      "bytes": 2776
+      "sha256": "3d65c28215e5be170a0be8dcd9dd1e5e4259868f2d541e9b0dafb6fb54923048",
+      "bytes": 2851
     },
     {
       "path": "scripts/generate_manifest.py",
-      "sha256": "f575fe601d0b19cd144741967d322a4ae13e4a3f968bec0863c6ff4237a46f2b",
-      "bytes": 1383
-    },
-    {
-      "path": "scripts/run_awesome_lint.mjs",
-      "sha256": "385ec36c5e2c58e565a9636aaa6192d36ca4a5045df19a710b0243dbeb9db981",
-      "bytes": 405
+      "sha256": "41e69c91b872b77268c782e8011960e37979ece10ed5abd483fd35f3cbbc0551",
+      "bytes": 1435
     },
     {
       "path": "scripts/validate_catalog.py",
-      "sha256": "f31ea2633dacf726888c5d4920d67480d4a5ad7886f64cd129217f175cb2f555",
-      "bytes": 6598
+      "sha256": "d42d86b9b333eb3b23c0676686e6363246529c0a5f1fc230a9bf633bdcf15057",
+      "bytes": 6762
     },
     {
       "path": "scripts/verify_manifest.py",
-      "sha256": "5ef0bd40740b32931a5730d00ef2040b336391dd56d7e69304610aa8a83d0e30",
-      "bytes": 2182
+      "sha256": "25701fc5cfcc1091fcaf7edc5f97cdd8e4293194d5cafa0967a4c30a80a724a2",
+      "bytes": 2251
     },
     {
       "path": "tests/test_catalog.py",
-      "sha256": "99bcb821017340ba591077677eb8d052842383b35410ac6790fbb8058363d6fb",
-      "bytes": 1868
+      "sha256": "bb0cfdf65fc93ad2687d91b8e2c6084d361602961b7ac78db62c3f238bf2a9a7",
+      "bytes": 1921
     }
   ]
 }
