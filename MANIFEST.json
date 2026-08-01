@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 99,
+  "file_count": 102,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/quality.yml",
-      "sha256": "e0bcd49f60d5e0fcab247f656a37d609e7b25a3a03c7306aea5280873bdb1876",
-      "bytes": 933
+      "sha256": "fa6a54fede95327d44dcdbad017f5d1ff1772ac13253a9208c1dc7df242b5df9",
+      "bytes": 987
     },
     {
       "path": ".gitignore",
@@ -39,8 +39,8 @@
     },
     {
       "path": "Makefile",
-      "sha256": "6be20c0f6a713babefe5de078d72d6cd4cf292a6cf49553c04255d0e96bd56aa",
-      "bytes": 1129
+      "sha256": "67a21fa9f13a913fb77e3ceea7834b4de8303057837f082ba5896d55c31117e3",
+      "bytes": 1171
     },
     {
       "path": "README.md",
@@ -203,6 +203,11 @@
       "bytes": 57524
     },
     {
+      "path": "docs/integration-problems.md",
+      "sha256": "1898f8b5df75cb716eca708effe9540760f9b1710513e580d1229f98f9fbb38b",
+      "bytes": 33812
+    },
+    {
       "path": "docs/link-audit-baseline.md",
       "sha256": "3667541d1691315b5e11ca57749155b4357015adfbbc23de3a0f8163b010994a",
       "bytes": 2774
@@ -363,6 +368,11 @@
       "bytes": 2655
     },
     {
+      "path": "scripts/validate_problem_index.py",
+      "sha256": "3ff2b310b9dbc742dd33a3aa38e005ecfef7d38011786de32fb71c28878ba02e",
+      "bytes": 4252
+    },
+    {
       "path": "scripts/validate_watchlist.py",
       "sha256": "7adaeb618804909400ecb478f552f8bf1abde059ac248db6c4df6ba38ef1ee2a",
       "bytes": 7757
@@ -486,6 +496,11 @@
       "path": "tests/test_links.py",
       "sha256": "dd3209c83f9fd799e5fb9cef1d37319cc7695f8cbf40cb6440f7474dc505d5c9",
       "bytes": 4785
+    },
+    {
+      "path": "tests/test_problem_index.py",
+      "sha256": "26b70ec4b42021988c838199ee15665312fbf024129d83d3614c16db3acc23bf",
+      "bytes": 4167
     },
     {
       "path": "tests/test_query_catalog.py",
