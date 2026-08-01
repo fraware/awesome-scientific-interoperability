@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 64,
+  "file_count": 69,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -59,8 +59,8 @@
     },
     {
       "path": "catalog/resources/agents-access-and-policy.yaml",
-      "sha256": "026e3e1a0ead6c5f4a60543d692c1a2f648c9bda1a2a7f50cbbe69173d1e400f",
-      "bytes": 3774
+      "sha256": "53217aa2681327f0177c076821d934ecb4ac681ad00769d4f4ec29041568db92",
+      "bytes": 5961
     },
     {
       "path": "catalog/resources/data-and-digital-objects.yaml",
@@ -79,13 +79,13 @@
     },
     {
       "path": "catalog/resources/instruments-and-laboratories.yaml",
-      "sha256": "0d7d83535708ddefbc898580194c465952a10ab0b651cabf01762d70af8ea41e",
-      "bytes": 6153
+      "sha256": "149cab773b0cc49281837f5125d058ac3fba37583e07d582111d261d256030fe",
+      "bytes": 9780
     },
     {
       "path": "catalog/resources/knowledge-systems-and-publications.yaml",
-      "sha256": "2592c3e90cd7b88d4ce0fa02b32366e4c595ec053140e4f2377ee5fda0983468",
-      "bytes": 4592
+      "sha256": "8b80f5bb6c2e0ca4123147c4e24f41be730119d3222565ecdfc482f2084283a5",
+      "bytes": 6940
     },
     {
       "path": "catalog/resources/metadata-and-semantics.yaml",
@@ -104,8 +104,8 @@
     },
     {
       "path": "catalog/resources/validation-and-conformance.yaml",
-      "sha256": "6cedcfbc7733210a01cff580b7ddb0cba7b708159161dd413502c96bf729cc46",
-      "bytes": 3685
+      "sha256": "60637863c84ef4b81027f255ef32707be3a33c795dbc25b74931f9efd6ddc99c",
+      "bytes": 5823
     },
     {
       "path": "catalog/resources/workflows-and-execution.yaml",
@@ -173,6 +173,26 @@
       "bytes": 1160
     },
     {
+      "path": "docs/reviews/agents-access-and-policy.md",
+      "sha256": "1888e7754fb07ae010897d81b14324f8d11f80ffda54973d50bebe274d0d939c",
+      "bytes": 1918
+    },
+    {
+      "path": "docs/reviews/instruments-and-laboratories.md",
+      "sha256": "de92da8bf009ab9183bb4b3a2975b58d645579ef6d566e0b3b8af71131808c33",
+      "bytes": 1992
+    },
+    {
+      "path": "docs/reviews/knowledge-systems-and-publications.md",
+      "sha256": "93e902628c53d2bf06a537f67250100ac78bb1a74647be001bdf3ad7c7bf294d",
+      "bytes": 1358
+    },
+    {
+      "path": "docs/reviews/validation-and-conformance.md",
+      "sha256": "c0c5aeb14a2c41a02340f5fef3819580343aeab697063b18854dc615a6606eb6",
+      "bytes": 1947
+    },
+    {
       "path": "docs/roadmap.md",
       "sha256": "247b07d8fbbe87eedfaba343616b7bdbdfe7dc6cb6eb41f25f47b86ee9af4c64",
       "bytes": 873
@@ -229,13 +249,13 @@
     },
     {
       "path": "scripts/validate_catalog.py",
-      "sha256": "e25ad39a441ed13cf279f56f758411ae2b30e3df19a6ec26112e6abdb5ee8274",
-      "bytes": 7233
+      "sha256": "2bab9f6ed8735a7b22fda326066047c59b1f88a38b2aa0c45f897e510fb2d5af",
+      "bytes": 8988
     },
     {
       "path": "scripts/validate_catalog_v2.py",
-      "sha256": "9f91eb8d33161a5b88dddb5e0816051664439ef48ad45102bd08c79cff052f86",
-      "bytes": 8067
+      "sha256": "e617a1513b69560fa5939ed29b117ac438a14dd2170739c7ab029053c012a096",
+      "bytes": 8313
     },
     {
       "path": "scripts/verify_manifest.py",
@@ -306,6 +326,11 @@
       "path": "tests/fixtures/v2/13-empty-evidence-types.invalid.yaml",
       "sha256": "26aba9d117a351dee733e8656fd5021707760d357e6f782dc59eec0cd53ee199",
       "bytes": 1405
+    },
+    {
+      "path": "tests/fixtures/v2/pr-06-group-c-combined.valid.yaml",
+      "sha256": "9ba907dcb63aee025ee732d16f89fa702ffa51ca8c31ddb22dedbc4bbae578c6",
+      "bytes": 28663
     },
     {
       "path": "tests/test_catalog.py",
