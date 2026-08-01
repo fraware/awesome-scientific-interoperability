@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 109,
+  "file_count": 110,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -44,8 +44,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "145bf140a76da65d7ef01803b9d86cf0cedd4831e366edef5135280921dd13cd",
-      "bytes": 18399
+      "sha256": "29cc57aca460f9fbe13d00e4e4fedafc3fa51c7ac053867d7bce01a04f3a21c3",
+      "bytes": 19321
     },
     {
       "path": "archive.md",
@@ -64,8 +64,8 @@
     },
     {
       "path": "catalog/resources/data-and-digital-objects.yaml",
-      "sha256": "4da2692eacc729a3d6b96e7e6c523d35a92ee21f8675d9877c9c562a802f8fea",
-      "bytes": 9886
+      "sha256": "8acaeceb491dc46e371ede0359d40fffcb871ad9909266a8b6bd43bd448e0fb8",
+      "bytes": 14388
     },
     {
       "path": "catalog/resources/foundations.yaml",
@@ -74,8 +74,8 @@
     },
     {
       "path": "catalog/resources/identifiers-and-discovery.yaml",
-      "sha256": "2283624f5b797ff5aa859eadade5644c054c5ae5d4ce43599a9729c0c50dbcc5",
-      "bytes": 13900
+      "sha256": "8166e0c6070384346a417f920feb1cd2036d65f0e69a8be9f2a8f4c18f6543d4",
+      "bytes": 15348
     },
     {
       "path": "catalog/resources/instruments-and-laboratories.yaml",
@@ -138,6 +138,11 @@
       "bytes": 2570
     },
     {
+      "path": "docs/candidate-reviews/physical-science-and-engineering.md",
+      "sha256": "bddaa0aac721d60538b1dc8620eddd8a2b5b698d3009033538984768612b6b51",
+      "bytes": 2981
+    },
+    {
       "path": "docs/candidate-reviews/statistical-and-social-science.md",
       "sha256": "50dc321e82e69e7283778f8a6ccbd4bd0709c244f6f8d10ada571218a817b4bd",
       "bytes": 8091
@@ -169,8 +174,8 @@
     },
     {
       "path": "docs/decision-guides/identifiers-and-discovery.md",
-      "sha256": "920678c4d546de7a82ed3111b6d59fa089bace3089a99e977f808264b5deefe1",
-      "bytes": 6821
+      "sha256": "271f85ac8cae20c0388701534e610ab697cf72d7d7f20e969a715b7febc68d02",
+      "bytes": 6842
     },
     {
       "path": "docs/decision-guides/laboratory-interoperability.md",
@@ -219,8 +224,8 @@
     },
     {
       "path": "docs/integration-problems.md",
-      "sha256": "c1b6908672943649a521b634ca467d32bffd182245b61562f5a4e49733cb534f",
-      "bytes": 34016
+      "sha256": "60bbe8db0dd3d7f2a60dbe84d8f3e3c12da06420d97d8a0ac2aa5bf7fbec5de5",
+      "bytes": 34467
     },
     {
       "path": "docs/link-audit-baseline.md",
@@ -314,8 +319,8 @@
     },
     {
       "path": "docs/source-notes.md",
-      "sha256": "b4a718a3f4edaff4329754276402b61d5ffd299d2b2ec4e418c50b9100713020",
-      "bytes": 1222
+      "sha256": "868f23b1e54bca66fc0470fcd2eaaffd76c815d07a0b4c5206e25b6fa7a3fa8e",
+      "bytes": 1487
     },
     {
       "path": "docs/taxonomy.md",
@@ -514,7 +519,7 @@
     },
     {
       "path": "tests/test_catalog.py",
-      "sha256": "c0b1a34e5c80ebf428b3c352423bf48e2147a1a0f060e4f354c75b73b84af61e",
+      "sha256": "2e7bbb4df3f78ac40c340d923cd2f27da54c4e4e9793a7a35b9adf96fa0ed0df",
       "bytes": 5666
     },
     {
@@ -539,12 +544,12 @@
     },
     {
       "path": "tests/test_query_catalog.py",
-      "sha256": "4f3eb22b5fdfcdaa1492fccf98f6d0e1d79faba336724929aa4d9485ab4e024b",
+      "sha256": "da46080795ddf12745f8ff20a6c1e95c85bdb0d27f98d8282d5f7ea7ae044d0a",
       "bytes": 6053
     },
     {
       "path": "tests/test_watchlist.py",
-      "sha256": "fe03c63212974f2449b7426220d001647b1f562b587ef142f4155716c46132b7",
+      "sha256": "6c63616cde58102467089a2c2da0b5182821d960f11fdfbd64c1a739c2c91868",
       "bytes": 3741
     }
   ]

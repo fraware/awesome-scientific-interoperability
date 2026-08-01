@@ -36,8 +36,8 @@ class CatalogTests(unittest.TestCase):
 
     def test_seed_size(self) -> None:
         catalog, _, readme = module.load()
-        self.assertEqual(len(catalog["resources"]), 76)
-        self.assertEqual(len(module.readme_entries(readme)), 76)
+        self.assertEqual(len(catalog["resources"]), 80)
+        self.assertEqual(len(module.readme_entries(readme)), 80)
 
     def test_catalog_version_is_v2(self) -> None:
         catalog, _, _ = module.load()

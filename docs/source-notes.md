@@ -14,3 +14,7 @@ A listed version or maintenance signal should be rechecked whenever an entry is 
 ## PR-16A exclusions (2026-08-01)
 
 **RDF Data Cube Vocabulary** ([W3C Recommendation](https://www.w3.org/TR/vocab-data-cube/)) — excluded from the main list after PR-16A review. The cube model is compatible with SDMX; for operational statistical exchange SDMX is the stronger entry. RDF Data Cube remains appropriate for Linked Data publication portals already covered in part by [resource:w3c-data-catalog-vocabulary-dcat] and [resource:simple-knowledge-organization-system-skos]. Re-evaluate only if a distinct scientific profile supplies a contract not subsumed by SDMX.
+
+## PR-16B exclusions (2026-08-01)
+
+**Generic HDF5** ([HDF Group](https://www.hdfgroup.org/)) — excluded; container format without a domain interoperability contract. **NeXus** is the included HDF5 scientific profile for neutron, X-ray, and muon scattering data.

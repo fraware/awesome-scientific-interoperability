@@ -293,3 +293,123 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+- id: crystallographic-information-framework-cif
+  name: Crystallographic Information Framework (CIF)
+  url: https://www.iucr.org/resources/cif
+  section: Data and Digital Objects
+  resource_type: Domain Data Exchange Standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Diffractometers
+  - structure databases
+  - journals
+  mechanism: STAR-derived file syntax with machine-readable domain dictionaries and validation services
+  summary: IUCr dictionaries and file syntax for exchanging and archiving crystallographic and structural-science
+    data; connects diffractometers, structure databases, and journals.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  - public-validator
+  implementation_status: multiple-independent
+  conformance_status: public-validator
+  stewardship:
+    name: International Union of Crystallography (IUCr)
+    type: standards-body
+    url: https://www.iucr.org/resources/cif/comcifs/policy
+  domains:
+  - materials-science
+  - chemistry
+  source_urls:
+  - https://www.iucr.org/resources/cif
+  - https://www.iucr.org/resources/cif/spec
+  alternatives: []
+  related_resource_ids: []
+  decision_basis: Authoritative structural-science exchange contract with journal and database adoption plus public validation tooling.
+  boundary_note: Crystallography and structural science scope; not a general materials-database API.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: functional-mock-up-interface-fmi
+  name: Functional Mock-up Interface (FMI)
+  url: https://fmi-standard.org/docs/3.0/
+  section: Data and Digital Objects
+  resource_type: Model Exchange Standard
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - Simulation tools
+  - digital-twin platforms
+  - supplier models
+  mechanism: FMU container with XML model description and C API for model exchange or co-simulation
+  summary: ZIP-packaged dynamic models with XML, C code, and co-simulation or model-exchange APIs; connects
+    simulation tools, digital-twin platforms, and supplier models.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: public-validator
+  stewardship:
+    name: Modelica Association Project FMI
+    type: consortium
+    url: https://fmi-standard.org/about/
+  domains:
+  - engineering
+  - cross-domain
+  source_urls:
+  - https://fmi-standard.org/docs/3.0/
+  - https://github.com/modelica/fmi-standard
+  alternatives:
+  - combine-omex-archive
+  related_resource_ids: []
+  decision_basis: De facto contract for exchanging dynamic simulation models across independent CAE and systems-engineering tools.
+  boundary_note: Model container and runtime API, not a general workflow or provenance standard.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: nexus
+  name: NeXus
+  url: https://www.nexusformat.org/
+  section: Data and Digital Objects
+  resource_type: Scientific Data Profile
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Beamlines
+  - analysis software
+  - facility archives
+  mechanism: HDF5 hierarchy rules, NXDL application definitions, and nxvalidate conformance checks
+  summary: HDF5-based application definitions and field dictionary for neutron, X-ray, and muon experimental
+    data; connects beamlines, analysis software, and facility archives.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  - conformance-suite
+  implementation_status: multiple-independent
+  conformance_status: public-validator
+  stewardship:
+    name: NeXus International Advisory Committee (NIAC)
+    type: community
+    url: https://www.nexusformat.org/
+  domains:
+  - physics
+  - materials-science
+  source_urls:
+  - https://www.nexusformat.org/
+  - https://manual.nexusformat.org/impatient/
+  - https://journals.iucr.org/j/issues/2015/01/00/po5029/po5029.pdf
+  alternatives: []
+  related_resource_ids:
+  - climate-and-forecast-cf-metadata-conventions
+  decision_basis: Strongest documented HDF5 scientific profile for scattering-facility data exchange with application definitions and validation.
+  boundary_note: Scientific profile over HDF5, not generic HDF5; facility-scoped domain standard.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true

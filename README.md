@@ -40,6 +40,7 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 - [GA4GH Tool Registry Service (TRS)](https://www.ga4gh.org/product/tool-registry-service-trs/) - Standard API for discovering and retrieving versioned tools and workflows; connects workflow registries, tools, workflow engines, and clients.
 - [Identifiers.org](https://identifiers.org/) - Registry of identifier namespaces with standardized resolution; connects Life-science identifiers, databases, and applications.
 - [IGSN ID](https://ev.igsn.org/about-igsns) - Globally unique persistent identifiers and metadata for material samples; connects physical samples, datasets, publications, and repositories.
+- [OPTIMADE](https://www.optimade.org/specification/latest/) - REST API for federated query and discovery across independent materials-structure databases; connects materials databases, clients, and meta-index services.
 - [ORCID](https://info.orcid.org/what-is-orcid/) - Persistent researcher identifiers and public/member APIs; connects researchers, publishers, funders, and repositories.
 - [Research Organization Registry (ROR)](https://ror.org/about/) - Open organization identifiers, metadata, and APIs; connects research organizations, publishers, funders, and repositories.
 
@@ -64,8 +65,11 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 ## Data and Digital Objects
 
 - [BagIt](https://datatracker.ietf.org/doc/html/rfc8493) - Manifest-based packaging format for transferring digital content with fixity and completeness checks.
+- [Crystallographic Information Framework (CIF)](https://www.iucr.org/resources/cif) - IUCr dictionaries and file syntax for exchanging and archiving crystallographic and structural-science data; connects diffractometers, structure databases, and journals.
 - [COMBINE/OMEX Archive](https://combinearchive.org/) - Archive format bundling models, simulations, metadata, and related files; connects computational models, simulation descriptions, data, and metadata.
+- [Functional Mock-up Interface (FMI)](https://fmi-standard.org/docs/3.0/) - ZIP-packaged dynamic models with XML, C code, and co-simulation or model-exchange APIs; connects simulation tools, digital-twin platforms, and supplier models.
 - [FAIR Signposting](https://signposting.org/) - Typed HTTP Link relations that let machine clients discover identifiers, metadata, licenses, and files from repository landing pages.
+- [NeXus](https://www.nexusformat.org/) - HDF5-based application definitions and field dictionary for neutron, X-ray, and muon experimental data; connects beamlines, analysis software, and facility archives.
 - [RO-Crate](https://www.researchobject.org/ro-crate/specification/1.3/) - JSON-LD packaging for exchanging data, software, workflows, people, instruments, and provenance as a coherent research object.
 - [Workflow RO-Crate](https://about.workflowhub.eu/Workflow-RO-Crate/) - RO-Crate profile for publishing portable workflow definitions, metadata, diagrams, examples, and tests.
 - [Workflow Run RO-Crate](https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/) - RO-Crate profile for exchanging workflow-run inputs, outputs, software, execution records, and provenance across workflow systems.
