@@ -21,7 +21,7 @@ Maintain the repository publicly for at least 30 days, recheck the current centr
 
 ## Repository Metadata Required for Awesome Lint
 
-The GitHub repository description and topics cannot be set through the publication connector used for the initial release. Until a maintainer sets them in repository settings, the README disables only the `awesome-github` metadata rule.
+The GitHub repository description and topics cannot be set through the publication connector used for the initial release. Until a maintainer sets them in repository settings, `scripts/run_awesome_lint.mjs` excludes only the `awesome-github` metadata rule while retaining every content and structure rule.
 
 Set the description to:
 
@@ -29,4 +29,4 @@ Set the description to:
 Standards and tools that make scientific data, software, workflows, instruments, knowledge systems, and agents work together.
 ```
 
-Add the topics `awesome`, `awesome-list`, `scientific-interoperability`, `research-infrastructure`, and `open-science`. Then remove `<!--lint disable awesome-github-->` from `README.md` and rerun the Quality workflow.
+Add the topics `awesome`, `awesome-list`, `scientific-interoperability`, `research-infrastructure`, and `open-science`. Then remove the single-rule filter from `scripts/run_awesome_lint.mjs`, run the standard `npx --yes awesome-lint`, and rerun the Quality workflow.

@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/quality.yml",
-      "sha256": "1c2600d80d61172d4a716a257f73c981300cd90d16261da250b463ab8deba125",
-      "bytes": 773
+      "sha256": "144b198b9a3e00b37d06c864c5c59dfebbd13d8d78c2bf6be8a62c10918c33ed",
+      "bytes": 859
     },
     {
       "path": ".gitignore",
@@ -39,13 +39,13 @@
     },
     {
       "path": "Makefile",
-      "sha256": "46b7111b45c7fa56c6b5e1cc7ee6a3291c93300a6018da7ddc01d966f2f0a85d",
-      "bytes": 431
+      "sha256": "4282187eae41cc5994f5469be17b3e823a7248042633d104f3aa84392a045a43",
+      "bytes": 505
     },
     {
       "path": "README.md",
-      "sha256": "5e54b7875c46f5aaaf47f4382634b9933268cabf787993696154ea193f028692",
-      "bytes": 18059
+      "sha256": "89bbfe397508a7e9068394a2fc635d0a318d67ea2e369ae0eae83c9bf8b2dcf8",
+      "bytes": 17989
     },
     {
       "path": "archive.md",
@@ -144,8 +144,8 @@
     },
     {
       "path": "docs/publishing.md",
-      "sha256": "12e21557ae8a4b1886df5bbae127f60d5cedf339cd8407d3fc4cb9cb734d1a95",
-      "bytes": 1719
+      "sha256": "60c5a6b6203b4d3fc2609c0506cb74b2890fc268dfae205cb252eb0103c83595",
+      "bytes": 1837
     },
     {
       "path": "docs/review-checklist.md",
@@ -201,6 +201,11 @@
       "path": "scripts/generate_manifest.py",
       "sha256": "f575fe601d0b19cd144741967d322a4ae13e4a3f968bec0863c6ff4237a46f2b",
       "bytes": 1383
+    },
+    {
+      "path": "scripts/run_awesome_lint.mjs",
+      "sha256": "d6ebca74d42262f56293e632461e30018339ecc5128db886d69ab6269d720af0",
+      "bytes": 391
     },
     {
       "path": "scripts/validate_catalog.py",

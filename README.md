@@ -1,7 +1,5 @@
 # Awesome Scientific Interoperability [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-<!--lint disable awesome-github-->
-
 > Scientific interoperability enables independently developed data, software, workflows, instruments, knowledge systems, and agents to exchange, interpret, execute, preserve, and compose information through documented contracts.
 
 This list selects standards, protocols, formats, schemas, APIs, ontologies, registries, implementations, mappings, and test suites that materially support those relationships. Every entry answers two questions: **what interoperates with what, and through which mechanism?**
@@ -20,7 +18,6 @@ This list selects standards, protocols, formats, schemas, APIs, ontologies, regi
 - [Instruments and Laboratories](#instruments-and-laboratories)
 - [Agents, Access, and Policy](#agents-access-and-policy)
 - [Validation and Conformance](#validation-and-conformance)
-- [Related Lists](#related-lists)
 
 ## Selection Standard
 
@@ -83,7 +80,7 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 
 ## Workflows and Execution
 
-- [Common Workflow Language (CWL)](https://www.commonwl.org/) - Portable declarative standard for describing command-line tools and workflows across independent runners and computing environments.
+- [Common Workflow Language (CWL)](https://www.commonwll.org/) - Portable declarative standard for describing command-line tools and workflows across independent runners and computing environments.
 - [cwltool](https://github.com/common-workflow-language/cwltool) - Reference CWL runner connecting specification validation, conformance testing, workflow execution, and provenance capture.
 - [GA4GH Data Repository Service (DRS)](https://www.ga4gh.org/product/data-repository-service-drs/) - Standard API for resolving and accessing data objects across repositories, clouds, and workflow systems.
 - [GA4GH Task Execution Service (TES)](https://www.ga4gh.org/product/task-execution-service-tes/) - Standard API that separates workflow orchestration from individual task execution across compute backends.
@@ -150,4 +147,4 @@ Read [contributing.md](contributing.md) before proposing a resource. A proposal 
 - The manually edited README is authoritative. The [machine-readable catalog](catalog/resources.yaml) exists for validation, maintenance, and downstream analysis; it does not generate this list.
 - Promising resources that do not yet satisfy the main-list bar are tracked in [docs/watchlist.md](docs/watchlist.md).
 - Editorial decisions follow the [project charter](docs/project-charter.md), [taxonomy](docs/taxonomy.md), and [conflict-of-interest policy](docs/conflicts-of-interest.md).
-- Release checks and publication instructions are recorded in the [validation report](docs/validation-report.md) and [publhing guide](docs/publishing.md).
+- Release checks and publication instructions are recorded in the [validation report](docs/validation-report.md) and [publishing guide](docs/publishing.md).

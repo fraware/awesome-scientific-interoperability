@@ -31,4 +31,5 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: "22"
-      - run: npx --yes awesome-lint
+      - run: npm install --no-save --package-lock=false awesome-lint@2.3.0
+      - run: node scripts/run_awesome_lint.mjs
