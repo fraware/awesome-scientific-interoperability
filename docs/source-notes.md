@@ -18,3 +18,9 @@ A listed version or maintenance signal should be rechecked whenever an entry is 
 ## PR-16B exclusions (2026-08-01)
 
 **Generic HDF5** ([HDF Group](https://www.hdfgroup.org/)) — excluded; container format without a domain interoperability contract. **NeXus** is the included HDF5 scientific profile for neutron, X-ray, and muon scattering data.
+
+## PR-16C exclusions (2026-08-01)
+
+**OGC API - Records** — excluded; federated catalog discovery is already addressed by [resource:w3c-data-catalog-vocabulary-dcat] and [resource:spatiotemporal-asset-catalog-stac].
+
+**OGC API - Processes** — excluded for this corpus; generic geoprocessing is less decision-critical than **openEO** for EO cloud processing integrations.

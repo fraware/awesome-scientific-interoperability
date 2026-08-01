@@ -413,3 +413,81 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+
+- id: ogc-api-coverages
+  name: OGC API - Coverages
+  url: https://ogcapi.ogc.org/coverages/
+  section: Data and Digital Objects
+  resource_type: Geospatial Data API
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - Geospatial services
+  - clients
+  - analysis pipelines
+  mechanism: OGC API - Common REST resources for coverage collections, schemas, and retrieval
+  summary: REST API for discovering, querying, and retrieving raster coverages and data cubes; connects geospatial services, clients, and analysis pipelines.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - conformance-suite
+  implementation_status: multiple-independent
+  conformance_status: public-suite
+  stewardship:
+    name: Open Geospatial Consortium (OGC)
+    type: standards-body
+    url: https://www.ogc.org/
+  domains:
+  - geospatial
+  - environmental-science
+  source_urls:
+  - https://ogcapi.ogc.org/coverages/overview.html
+  - https://docs.ogc.org/is/
+  alternatives:
+  - spatiotemporal-asset-catalog-stac
+  related_resource_ids:
+  - spatiotemporal-asset-catalog-stac
+  - climate-and-forecast-cf-metadata-conventions
+  decision_basis: Strongest operational API for querying raster stacks and coverages where STAC alone only catalogs assets.
+  boundary_note: Data access API, not a file-format or semantic observation model; pair with STAC for discovery.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
+- id: ogc-api-features
+  name: OGC API - Features
+  url: https://ogcapi.ogc.org/features/
+  section: Data and Digital Objects
+  resource_type: Geospatial Data API
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - GIS clients
+  - web services
+  - geospatial databases
+  mechanism: OGC API - Common REST endpoints for feature collections, items, and queryables
+  summary: REST API for creating, modifying, and querying vector feature collections; connects GIS clients, web services, and geospatial databases.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - conformance-suite
+  implementation_status: multiple-independent
+  conformance_status: public-suite
+  stewardship:
+    name: Open Geospatial Consortium (OGC)
+    type: standards-body
+    url: https://www.ogc.org/
+  domains:
+  - geospatial
+  source_urls:
+  - https://ogcapi.ogc.org/features/
+  - https://docs.ogc.org/is/17-069r4/17-069r4.html
+  alternatives: []
+  related_resource_ids:
+  - spatiotemporal-asset-catalog-stac
+  decision_basis: Canonical REST replacement path for WFS-style vector feature exchange across independent servers.
+  boundary_note: Feature geometry and properties access; not a catalog vocabulary or sensor semantics layer.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true
