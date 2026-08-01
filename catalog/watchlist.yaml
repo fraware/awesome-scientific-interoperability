@@ -305,3 +305,24 @@ items:
   - Better represented through external software-supply-chain resources.
   source_urls:
   - https://spdx.dev/specifications/
+- id: ddi-cross-domain-integration-ddi-cdi
+  name: DDI Cross Domain Integration (DDI-CDI)
+  url: https://ddialliance.org/Specification/DDI-CDI/
+  candidate_section: Metadata and Semantics
+  status: needs-evidence
+  reason: Published v1.0 cross-domain datum and process model complements DDI Lifecycle but production adoption remains early.
+  missing_evidence:
+  - Multiple independent production pipelines publishing and consuming DDI-CDI serializations beyond pilot integrations.
+  - Public validators or documented conformance tests beyond JSON Schema for the abstract model.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-02-01'
+  promotion_conditions:
+  - Independent archives or integration systems use DDI-CDI in production with documented cross-domain datum exchange.
+  - Clear boundary analysis shows distinct integration value from DDI Lifecycle for datum-level cross-domain integration.
+  rejection_conditions:
+  - Remains specification-only without substantive adoption evidence.
+  - Merged into DDI Lifecycle product updates without a distinct interoperability mechanism.
+  source_urls:
+  - https://ddialliance.org/Specification/DDI-CDI/
+  - https://ddialliance.org/hubfs/Specification/DDI-CDI/1.0/DDI-CDI_Model_Specification.pdf
+  - https://github.com/ddi-cdi/ddi-cdi

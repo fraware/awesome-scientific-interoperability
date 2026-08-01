@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 108,
+  "file_count": 109,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -44,8 +44,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "24e414d945ca0a35a073d7b19d130f272c9ae89e914d1ebfc515bf1aaec68251",
-      "bytes": 18138
+      "sha256": "145bf140a76da65d7ef01803b9d86cf0cedd4831e366edef5135280921dd13cd",
+      "bytes": 18399
     },
     {
       "path": "archive.md",
@@ -89,8 +89,8 @@
     },
     {
       "path": "catalog/resources/metadata-and-semantics.yaml",
-      "sha256": "fe657c56ae769cab6174de95a28687cd07e40f753cad11d49e55d7c7e98ca4a2",
-      "bytes": 18748
+      "sha256": "8234900e72fcabb169831c6f6bf9545de51956c968dbf1de5dbd1637b8efe89c",
+      "bytes": 20733
     },
     {
       "path": "catalog/resources/provenance-and-evidence.yaml",
@@ -114,8 +114,8 @@
     },
     {
       "path": "catalog/watchlist.yaml",
-      "sha256": "d605581388c5fb3297b5a834754f4c18b472fa500a71dcebc7e91f2e492f2721",
-      "bytes": 14793
+      "sha256": "277bbc7d1babe87cb589adac49c12dd2e3279f4315310f7d8e5dee61a5cb26bf",
+      "bytes": 16078
     },
     {
       "path": "code-of-conduct.md",
@@ -136,6 +136,11 @@
       "path": "contributing.md",
       "sha256": "a7ed629acb1bb0c9df5e6e474d6dc3c20ae9c7816eb64a67db902ebdbf8ea27b",
       "bytes": 2570
+    },
+    {
+      "path": "docs/candidate-reviews/statistical-and-social-science.md",
+      "sha256": "50dc321e82e69e7283778f8a6ccbd4bd0709c244f6f8d10ada571218a817b4bd",
+      "bytes": 8091
     },
     {
       "path": "docs/catalog-model-v2.md",
@@ -174,8 +179,8 @@
     },
     {
       "path": "docs/decision-guides/metadata-semantics-and-units.md",
-      "sha256": "fc1fb43cc93427552593651f2fcdc0bf7e4b37d013a755b9db6e8b80da791ff0",
-      "bytes": 6763
+      "sha256": "6590b21e227d6e178d13fe48281966b1fe1ef212637588933ac4017fd82b44f3",
+      "bytes": 7148
     },
     {
       "path": "docs/decision-guides/provenance-and-execution-evidence.md",
@@ -214,8 +219,8 @@
     },
     {
       "path": "docs/integration-problems.md",
-      "sha256": "1898f8b5df75cb716eca708effe9540760f9b1710513e580d1229f98f9fbb38b",
-      "bytes": 33812
+      "sha256": "c1b6908672943649a521b634ca467d32bffd182245b61562f5a4e49733cb534f",
+      "bytes": 34016
     },
     {
       "path": "docs/link-audit-baseline.md",
@@ -309,13 +314,13 @@
     },
     {
       "path": "docs/source-notes.md",
-      "sha256": "d5e73e538df92c743f7acec2eae9c08e05b640dd8a3118f47d34de4e16a87936",
-      "bytes": 645
+      "sha256": "b4a718a3f4edaff4329754276402b61d5ffd299d2b2ec4e418c50b9100713020",
+      "bytes": 1222
     },
     {
       "path": "docs/taxonomy.md",
-      "sha256": "bda120ce65ad7eb7c78cfc97da4fad44bba6287ad38676e909472821da42f399",
-      "bytes": 1578
+      "sha256": "89d54bae2a2124c2a32aafe122c66408cbfdb827b0d20a4d24eea7ec047c1c19",
+      "bytes": 5836
     },
     {
       "path": "docs/validation-report.md",
@@ -324,8 +329,8 @@
     },
     {
       "path": "docs/watchlist.md",
-      "sha256": "08b9236adb76b4d5e479605f9b07f2e5168c34a98e2774de73bfff0972c79790",
-      "bytes": 2508
+      "sha256": "3c0ba13806cf2b8dee73e1f006bf709ce2cc851cc53a539f53734639357784a0",
+      "bytes": 2718
     },
     {
       "path": "license",
@@ -509,7 +514,7 @@
     },
     {
       "path": "tests/test_catalog.py",
-      "sha256": "17de56a2e9d8a7f8d391446a7c5618439b2955700e52b323f679c4fc4a7700c8",
+      "sha256": "c0b1a34e5c80ebf428b3c352423bf48e2147a1a0f060e4f354c75b73b84af61e",
       "bytes": 5666
     },
     {
@@ -534,12 +539,12 @@
     },
     {
       "path": "tests/test_query_catalog.py",
-      "sha256": "03c8236f2355b4d0d2949d0730e51ffbf7e7b51581454ce320a503576fd5583c",
+      "sha256": "4f3eb22b5fdfcdaa1492fccf98f6d0e1d79faba336724929aa4d9485ab4e024b",
       "bytes": 6053
     },
     {
       "path": "tests/test_watchlist.py",
-      "sha256": "ae91362ba93f1db2718b3906bdc1afda3137d8741c85924a31a02cbfb0488392",
+      "sha256": "fe03c63212974f2449b7426220d001647b1f562b587ef142f4155716c46132b7",
       "bytes": 3741
     }
   ]
