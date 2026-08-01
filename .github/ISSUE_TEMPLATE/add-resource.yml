@@ -1,7 +1,6 @@
 name: Propose a resource
 description: Propose a standard, implementation, registry, mapping, validator, or reference architecture.
 title: "Add: "
-labels: [candidate]
 body:
   - type: markdown
     attributes:
