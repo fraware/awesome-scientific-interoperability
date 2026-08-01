@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 110,
+  "file_count": 112,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -44,8 +44,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "29cc57aca460f9fbe13d00e4e4fedafc3fa51c7ac053867d7bce01a04f3a21c3",
-      "bytes": 19321
+      "sha256": "790d99215451b8a8c473a24bded7a4592118c2ab2f6a33018edc411deab4f814",
+      "bytes": 20870
     },
     {
       "path": "archive.md",
@@ -64,8 +64,8 @@
     },
     {
       "path": "catalog/resources/data-and-digital-objects.yaml",
-      "sha256": "8acaeceb491dc46e371ede0359d40fffcb871ad9909266a8b6bd43bd448e0fb8",
-      "bytes": 14388
+      "sha256": "58718649a59cb763c5a4f4a62cfa85781cda322e8043b0b249e0d70f0468a69d",
+      "bytes": 17202
     },
     {
       "path": "catalog/resources/foundations.yaml",
@@ -79,8 +79,8 @@
     },
     {
       "path": "catalog/resources/instruments-and-laboratories.yaml",
-      "sha256": "149cab773b0cc49281837f5125d058ac3fba37583e07d582111d261d256030fe",
-      "bytes": 9780
+      "sha256": "d05f21e58b1405c9d26c8317847008eeedd10e826196d2ad8f02b43f374b16bd",
+      "bytes": 12631
     },
     {
       "path": "catalog/resources/knowledge-systems-and-publications.yaml",
@@ -89,13 +89,13 @@
     },
     {
       "path": "catalog/resources/metadata-and-semantics.yaml",
-      "sha256": "8234900e72fcabb169831c6f6bf9545de51956c968dbf1de5dbd1637b8efe89c",
-      "bytes": 20733
+      "sha256": "f1570c61d879502c7715a71f719120e563b1e461ea5a781b73c5f6003e7449a6",
+      "bytes": 22190
     },
     {
       "path": "catalog/resources/provenance-and-evidence.yaml",
-      "sha256": "54e5f0212fdba60f0c8ed7568ea2e46a525593785ead0536f4f7b787e2020611",
-      "bytes": 6817
+      "sha256": "ae3df03dd721adc517e0582088e9a5f549dda90067eb07e4cdc800279521b5d8",
+      "bytes": 8355
     },
     {
       "path": "catalog/resources/research-software-and-environments.yaml",
@@ -109,8 +109,8 @@
     },
     {
       "path": "catalog/resources/workflows-and-execution.yaml",
-      "sha256": "7d045b269d47de294494d3805b5de242819ac2e92b93a0b6691beddd670863bf",
-      "bytes": 14709
+      "sha256": "fb322c04c1f9284f7778b4c6606eaf3df4c81ea872a59c233a2ace231af4b2c5",
+      "bytes": 16234
     },
     {
       "path": "catalog/watchlist.yaml",
@@ -136,6 +136,16 @@
       "path": "contributing.md",
       "sha256": "a7ed629acb1bb0c9df5e6e474d6dc3c20ae9c7816eb64a67db902ebdbf8ea27b",
       "bytes": 2570
+    },
+    {
+      "path": "docs/candidate-reviews/experimental-and-biomedical.md",
+      "sha256": "416bcea6e2eed6668d9b316240e8bf528b70f9133ee88f2b8ae4e6b6baf24d03",
+      "bytes": 856
+    },
+    {
+      "path": "docs/candidate-reviews/geospatial-and-environmental.md",
+      "sha256": "b526fbab36c532f49681659fd79c82c388a0cffc0c838e5fb73a1ab162b7d8a2",
+      "bytes": 834
     },
     {
       "path": "docs/candidate-reviews/physical-science-and-engineering.md",
@@ -319,8 +329,8 @@
     },
     {
       "path": "docs/source-notes.md",
-      "sha256": "868f23b1e54bca66fc0470fcd2eaaffd76c815d07a0b4c5206e25b6fa7a3fa8e",
-      "bytes": 1487
+      "sha256": "5108bbaf52b53ef4d91d4c02f480f9d536da804bea566f5723add8e8e43ca605",
+      "bytes": 2207
     },
     {
       "path": "docs/taxonomy.md",
@@ -519,7 +529,7 @@
     },
     {
       "path": "tests/test_catalog.py",
-      "sha256": "2e7bbb4df3f78ac40c340d923cd2f27da54c4e4e9793a7a35b9adf96fa0ed0df",
+      "sha256": "36898b6ff98d562eea8ac95e0e77647999b338f494a7a0172d2501c100b3522d",
       "bytes": 5666
     },
     {
@@ -544,12 +554,12 @@
     },
     {
       "path": "tests/test_query_catalog.py",
-      "sha256": "da46080795ddf12745f8ff20a6c1e95c85bdb0d27f98d8282d5f7ea7ae044d0a",
+      "sha256": "b89a314a42e26c0111eaa326fadc1fa7ca26f3cbce26b66ca6ddd43911eadc91",
       "bytes": 6053
     },
     {
       "path": "tests/test_watchlist.py",
-      "sha256": "6c63616cde58102467089a2c2da0b5182821d960f11fdfbd64c1a739c2c91868",
+      "sha256": "1056681761f0861d10129702b6c8ba1c42dbcd9b2d0b19cad6137cb7ba413463",
       "bytes": 3741
     }
   ]

@@ -206,3 +206,46 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+
+- id: biocompute-objects
+  name: BioCompute Objects
+  url: https://docs.biocomputeobject.org/
+  section: Provenance and Evidence
+  resource_type: Regulated Computational Record Standard
+  interoperability_layers:
+  - Syntactic
+  - Evidentiary
+  connects:
+  - Sequencing platforms
+  - regulators
+  - reproducibility services
+  mechanism: IEEE 2791 JSON domains for pipeline parameters, execution, I/O, and provenance
+  summary: IEEE 2791 JSON records documenting HTS bioinformatics pipelines, parameters, and provenance; connects sequencing platforms, regulators, and reproducibility services.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - institutional-adoption
+  - public-validator
+  implementation_status: multiple-independent
+  conformance_status: public-validator
+  stewardship:
+    name: IEEE / BioCompute community
+    type: standards-body
+    url: https://docs.biocomputeobject.org/
+  domains:
+  - genomics
+  - life-sciences
+  source_urls:
+  - https://docs.biocomputeobject.org/
+  - https://github.com/biocompute-objects/BCO_Documentation
+  alternatives:
+  - workflow-run-ro-crate
+  - cwlprov
+  related_resource_ids:
+  - workflow-run-ro-crate
+  - cwlprov
+  decision_basis: Distinct regulated HTS pipeline record where RO-Crate profiles alone do not capture FDA-facing execution domains.
+  boundary_note: HTS and bioinformatics pipeline documentation; not a general workflow language or wet-lab device protocol.
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  primary_source_inspected: true

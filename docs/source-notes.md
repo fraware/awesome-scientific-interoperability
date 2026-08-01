@@ -24,3 +24,9 @@ A listed version or maintenance signal should be rechecked whenever an entry is 
 **OGC API - Records** — excluded; federated catalog discovery is already addressed by [resource:w3c-data-catalog-vocabulary-dcat] and [resource:spatiotemporal-asset-catalog-stac].
 
 **OGC API - Processes** — excluded for this corpus; generic geoprocessing is less decision-critical than **openEO** for EO cloud processing integrations.
+
+## PR-16D exclusions (2026-08-01)
+
+**Full DICOM** — excluded; **DICOMweb** is the included web integration profile.
+
+**Additional RO/provenance profiles** — excluded; existing entries ([resource:ro-crate], Workflow Run RO-Crate, CWLProv, ISO 23494-2, P-Plan) already cover the packaging and provenance integration problems for this corpus.

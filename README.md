@@ -46,6 +46,7 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 
 ## Metadata and Semantics
 
+- [ISA-JSON](https://isa-specs.readthedocs.io/en/latest/isajson.html) - JSON serialization of the Investigation/Study/Assay model for experimental metadata; connects life-science studies, assays, repositories, and analysis pipelines.
 - [Bioschemas](https://bioschemas.org/profiles/) - Schema.org profiles for datasets, tools, workflows, training materials, and scientific resources; connects Life-science resources, search engines, and registries.
 - [Climate and Forecast (CF) Metadata Conventions](https://cfconventions.org/) - Standardized variable descriptions, units, coordinates, and metadata conventions; connects NetCDF datasets, climate and forecast tools, and archives.
 - [Croissant](https://docs.mlcommons.org/croissant/docs/croissant-spec-1.1.html) - Machine-readable dataset descriptions built on Schema.org; connects machine-learning datasets, repositories, training frameworks, and consumers.
@@ -101,6 +102,7 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 
 ## Provenance and Evidence
 
+- [BioCompute Objects](https://docs.biocomputeobject.org/) - IEEE 2791 JSON records documenting HTS bioinformatics pipelines, parameters, and provenance; connects sequencing platforms, regulators, and reproducibility services.
 - [CWLProv](https://cwltool.readthedocs.io/en/latest/CWLProv.html) - PROV-based profile that packages CWL workflow execution records as portable research objects.
 - [ISO 23494-2:2026 Common Provenance Model](https://www.iso.org/standard/87714.html) - International provenance standard for tracing biological materials and derived data across laboratories, biobanks, and software systems.
 - [P-Plan](https://www.opmw.org/model/p-plan/) - W3C PROV extension linking prospective plans, workflow structures, variables, and execution provenance.
@@ -117,6 +119,7 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 
 ## Instruments and Laboratories
 
+- [DICOMweb](https://www.dicomstandard.org/using/dicomweb) - DICOM PS3.18 REST services for web-based medical and scientific imaging exchange; connects PACS, viewers, and analysis pipelines.
 - [OGC SensorThings API](https://www.ogc.org/standards/sensorthings/) - REST API for managing and retrieving IoT sensor observations and tasking actuators; connects sensor networks, dashboards, and environmental monitoring systems.
 - [Allotrope Data Format](https://docs.allotrope.org/) - Common data format, ontologies, and metadata models for exchanging analytical laboratory data across instruments and applications.
 - [Analytical Information Markup Language (AnIML)](https://www.animl.org/) - XML-based standard for exchanging analytical chemistry and instrument data across vendor systems.
