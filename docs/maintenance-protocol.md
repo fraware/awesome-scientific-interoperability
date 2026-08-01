@@ -15,16 +15,27 @@ The project remains useful only when its descriptions, URLs, standards status, a
 ## Monthly
 
 - Triage resource proposals and corrections.
-- Resolve broken canonical URLs.
+- Resolve broken canonical URLs using the link-classification remediation rules below.
 - Review resources reported as archived, deprecated, or superseded.
 - Keep the watchlist separate from the main list.
 
 ## Quarterly
 
-- Run the network link workflow.
+- Run the network link workflow and download the JSON/Markdown artifacts.
+- Remediate unresolved `permanent-failure`, `invalid-url`, and `tls-or-dns-failure` classifications before the next release.
 - Review section balance and duplicate functionality.
 - Reassess fast-moving laboratory and agent interoperability resources.
 - Confirm that validators and conformance suites still reflect current specifications.
+
+## Link Remediation Rules
+
+Network audits classify each main-list URL as one of: `ok`, `redirected`, `access-policy`, `transient-failure`, `permanent-failure`, `tls-or-dns-failure`, or `invalid-url` (`config/link-policy.yaml`, `scripts/check_links.py`).
+
+1. Inspect the project’s official site, specification repository, and redirect destination before changing a URL.
+2. Replace a URL only when the new target is more canonical or the old target is permanently broken or TLS/DNS-unusable.
+3. Preserve a valid canonical URL that returns 401, 403, or 429 when the response is an access policy or rate limit.
+4. Record persistent exceptions in `docs/link-audit-baseline.md` with rationale; do not add a silent allowlist without documented justification.
+5. Update README and the relevant catalog shard together whenever a canonical URL changes.
 
 ## Annually
 

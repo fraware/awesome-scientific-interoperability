@@ -96,7 +96,7 @@ resources:
   primary_source_inspected: true
 - id: scholix
   name: Scholix
-  url: https://www.scholix.org/
+  url: https://github.com/scholix/schema
   section: Knowledge Systems and Publications
   resource_type: Link Exchange Framework
   interoperability_layers:

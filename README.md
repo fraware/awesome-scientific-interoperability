@@ -105,13 +105,13 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 - [Nanopublications](https://nanopub.net/) - Immutable RDF publications that combine a scientific assertion with provenance and publication information.
 - [Open Research Knowledge Graph (ORKG)](https://www.orkg.org/) - Structured scholarly representations and APIs for exchanging scientific claims, comparisons, and research contributions.
 - [OpenAIRE Research Graph](https://graph.openaire.eu/) - Open scholarly graph integrating publications, datasets, software, projects, organizations, and services through shared metadata and APIs.
-- [Scholix](https://www.scholix.org/) - Common information model and exchange framework for links between scholarly literature and research data.
+- [Scholix](https://github.com/scholix/schema) - Common information model and exchange framework for links between scholarly literature and research data.
 
 ## Instruments and Laboratories
 
 - [Allotrope Data Format](https://docs.allotrope.org/) - Common data format, ontologies, and metadata models for exchanging analytical laboratory data across instruments and applications.
 - [Analytical Information Markup Language (AnIML)](https://www.animl.org/) - XML-based standard for exchanging analytical chemistry and instrument data across vendor systems.
-- [Autoprotocol](https://autoprotocol.org/) - Machine-readable language for expressing platform-independent laboratory procedures for automated execution.
+- [Autoprotocol](https://github.com/autoprotocol/autoprotocol-python) - Machine-readable language for expressing platform-independent laboratory procedures for automated execution.
 - [HL7 FHIR](https://hl7.org/fhir/) - Modular resources and APIs for exchanging clinical and laboratory information across independent health systems.
 - [LOINC](https://loinc.org/) - Universal codes for exchanging laboratory tests, measurements, and clinical observations.
 - [OPC UA Laboratory and Analytical Device Standard (LADS)](https://opcfoundation.org/markets-collaboration/lads/) - OPC UA companion specification for standardized control, status, and data access across laboratory devices.
