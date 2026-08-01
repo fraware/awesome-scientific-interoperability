@@ -119,7 +119,7 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 
 ## Instruments and Laboratories
 
-- [DICOMweb](https://www.dicomstandard.org/using/dicomweb) - DICOM PS3.18 REST services (QIDO-RS, WADO-RS, STOW-RS) for web-based medical and scientific imaging exchange; connects PACS, viewers, and analysis pipelines.
+- [DICOMweb](https://www.dicomstandard.org/using/dicomweb) - DICOM PS3.18 REST services for web-based medical and scientific imaging exchange; connects PACS, viewers, and analysis pipelines.
 - [OGC SensorThings API](https://www.ogc.org/standards/sensorthings/) - REST API for managing and retrieving IoT sensor observations and tasking actuators; connects sensor networks, dashboards, and environmental monitoring systems.
 - [Allotrope Data Format](https://docs.allotrope.org/) - Common data format, ontologies, and metadata models for exchanging analytical laboratory data across instruments and applications.
 - [Analytical Information Markup Language (AnIML)](https://www.animl.org/) - XML-based standard for exchanging analytical chemistry and instrument data across vendor systems.
