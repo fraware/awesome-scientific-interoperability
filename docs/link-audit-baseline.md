@@ -1,7 +1,8 @@
 # Link Audit Baseline
 
 **Audit date:** 2026-08-01  
-**Source run:** GitHub Actions Links workflow on `main` (`30720888543`) before PR-02 classification hardening, plus local classification against the remediated catalog.
+**Latest source run:** GitHub Actions Links workflow on `main` (`30723706703`, 2026-08-01T23:38:21Z) after PR-16D and PR-18 merges.  
+**Initial source run:** `30720888543` before PR-02 classification hardening, plus local classification against the remediated catalog.
 
 ## Policy
 
@@ -33,6 +34,27 @@ No 404/410 responses were observed for main-list URLs in the baseline run.
 3. Preserve valid canonical URLs that return 401/403/429.
 4. Record persistent exceptions here with rationale; do not add silent allowlist entries in code.
 
+## v1.1.0 release audit (run `30723706703`)
+
+| Classification | Count |
+| --- | ---: |
+| ok | 78 |
+| redirected | 7 |
+| access-policy | 2 |
+| transient-failure | 0 |
+| permanent-failure | 0 |
+| tls-or-dns-failure | 0 |
+| invalid-url | 0 |
+
+**URLs checked:** 87 main-list canonical URLs. **Blocking failures:** 0.
+
+Access-policy responses (unchanged from initial baseline):
+
+- `https://www.iso.org/standard/87714.html` — ISO 23494-2 catalogue page.
+- `https://www.iucr.org/resources/cif` — IUCr CIF landing page (added with PR-16B).
+
+Seven URLs returned successful redirects (for example CDIF, COMBINE Archive, DDI Lifecycle, EDAM, EOSC Interoperability Framework, workflow-testing RO-Crate profile, ORKG). These are reported but do not fail the audit.
+
 ## Post-remediation expectation
 
-After PR-02 merges, a Links workflow run on the exact head should classify every main-list URL and report zero unresolved blocking failures. JSON and Markdown artifacts are uploaded from `.github/workflows/links.yml`.
+After PR-02 merges, a Links workflow run on the exact head should classify every main-list URL and report zero unresolved blocking failures. JSON and Markdown artifacts are uploaded from `.github/workflows/links.yml`. Run `30723706703` satisfies this expectation for the v1.1.0 corpus.

@@ -2,7 +2,7 @@
 
 **Baseline date:** 2026-08-01  
 **Catalog version:** 2.0.0  
-**Main-list entries:** 76  
+**Main-list entries:** 87  
 **Audit command:** `python scripts/audit_coverage.py --as-of 2026-08-01`
 
 This document records reproducible corpus-balance metrics from the structured catalog. Counts and concentration signals support maintainer review; they are not quality scores and do not determine inclusion or exclusion.
@@ -15,28 +15,29 @@ Classification thresholds and explicit substrate and standard-family mappings li
 
 | Metric | Value |
 |--------|------:|
-| Total main-list entries | 76 |
+| Total main-list entries | 87 |
 | Sections represented | 11 |
-| Distinct domain tags | 44 |
-| Entries tagged `cross-domain` | 21 (28.0%) |
-| Largest scientific domain tag | `computational-workflows` (17 entries, 22.67%) |
-| General-purpose substrate share | 8 entries (10.53%) |
-| Entries with neither alternatives nor related links | 17 |
+| Distinct domain tags | 48 |
+| Entries tagged `cross-domain` | 23 (26.4%) |
+| Largest scientific domain tag | `computational-workflows` (17 entries, 19.54%) |
+| General-purpose substrate share | 8 entries (9.2%) |
+| Entries with neither alternatives nor related links | 18 |
 | Overdue reviews (as of baseline date) | 0 |
+| Evidence entries without source URLs | 0 |
 
 ## Active concentration warnings
 
-1. **substrate-concentration** — general-purpose substrates at 10.53%.
-2. **implementation-family-concentration** — CWL family has three implementation entries.
-3. **isolated-entries** — 17 entries record neither alternatives nor related resource links.
+1. **implementation-family-concentration** — CWL family has three implementation entries (threshold 2).
+2. **isolated-entries** — 18 entries record neither alternatives nor related resource links.
 
-## Concrete gaps
+## Domain gap reviews (PR-16A–D, merged)
 
-- **Physical sciences and engineering:** thin coverage; NeXus, CIF, and FMI deferred to PR-16B.
-- **Statistical and social-science exchange:** DDI Lifecycle and Croissant only; SDMX deferred to PR-16A.
-- **Geospatial operations:** STAC, SOSA/SSN, and CF each appear once; OGC API coverage deferred to PR-16C.
-- **Experimental and biomedical research objects:** deferred to PR-16D.
-- **Cross-linking:** 17 isolated entries weaken problem-index navigation.
+- **PR-16A:** SDMX added; DDI-CDI on watchlist.
+- **PR-16B:** FMI, CIF, NeXus, OPTIMADE added.
+- **PR-16C:** OGC API — Features, Coverages, SensorThings, openEO added.
+- **PR-16D:** ISA-JSON, BioCompute Objects, DICOMweb added.
+
+Remaining thin areas and watchlist candidates are documented under `docs/candidate-reviews/` and `docs/watchlist.md`.
 
 ## Regeneration
 
