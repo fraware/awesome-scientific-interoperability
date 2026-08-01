@@ -1,7 +1,12 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 112,
+  "file_count": 118,
   "files": [
+    {
+      "path": ".github/CODEOWNERS",
+      "sha256": "51523087379892cd6ecc02f7eafefcd1afc10e8c5384ca984fe98befa3f11406",
+      "bytes": 1954
+    },
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
       "sha256": "70298086bc0ccb3160764a1b9b3072729f895f77c457cc2b07013b8cad4cd779",
@@ -13,9 +18,19 @@
       "bytes": 617
     },
     {
+      "path": ".github/ISSUE_TEMPLATE/remove-resource.yml",
+      "sha256": "62a11ff2750f2cb5b8c227b3c6b52a7c6106d4b072bfd28e586b2a5abe9a798b",
+      "bytes": 2567
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/taxonomy-change.yml",
+      "sha256": "57e4cb6d0cf5071cf5d38813fed7dc710052a1a30662712df5a8c201d4154b01",
+      "bytes": 2261
+    },
+    {
       "path": ".github/pull_request_template.md",
-      "sha256": "a676045b586e6483b56758592a7d019ff48e9e8dac147d2168d652ea607c8bc4",
-      "bytes": 1228
+      "sha256": "9678e0f944116e4c587c5fade8ddc6625e527d138666c441f0fbb87b97af0b49",
+      "bytes": 2214
     },
     {
       "path": ".github/workflows/links.yml",
@@ -134,8 +149,8 @@
     },
     {
       "path": "contributing.md",
-      "sha256": "a7ed629acb1bb0c9df5e6e474d6dc3c20ae9c7816eb64a67db902ebdbf8ea27b",
-      "bytes": 2570
+      "sha256": "054bb98a4a4562d86a1db067dc6e7f78953a272a5cfd21b2e3c27439f1e6626e",
+      "bytes": 3768
     },
     {
       "path": "docs/candidate-reviews/experimental-and-biomedical.md",
@@ -164,8 +179,8 @@
     },
     {
       "path": "docs/conflicts-of-interest.md",
-      "sha256": "69149e72d7802266b5e1705d2862bf422527b1e5a0f24ca7c522f7f0617c4829",
-      "bytes": 643
+      "sha256": "3084706dc8180be5976c9f4583cb1a219a6d961ac38f20b3c3ee5d0da17fa1c2",
+      "bytes": 2532
     },
     {
       "path": "docs/coverage-baseline.md",
@@ -223,6 +238,11 @@
       "bytes": 8285
     },
     {
+      "path": "docs/decision-records.md",
+      "sha256": "19a433efac289d63479383978c90ea26a675f650d9fb44b3c04fec4fe3a03e5e",
+      "bytes": 7388
+    },
+    {
       "path": "docs/editorial-policy.md",
       "sha256": "5955ecc1cc62648ecc184044ff49cac3d025d384f2adcf1ab37e1c5132531194",
       "bytes": 2485
@@ -231,6 +251,11 @@
       "path": "docs/engineering-takeover-specification.md",
       "sha256": "51b195dbc94b5a4fbd0d5c4c78786fa542fdce303d7860677028b6f168a27582",
       "bytes": 57524
+    },
+    {
+      "path": "docs/human-review-log.md",
+      "sha256": "51c8cfea5957b267d82df62dce46fb7891df304e716495cbf53df02eae792258",
+      "bytes": 8722
     },
     {
       "path": "docs/integration-problems.md",
@@ -244,8 +269,8 @@
     },
     {
       "path": "docs/maintenance-protocol.md",
-      "sha256": "b59f1c07f5f8e81428f83ecc66f4cb77fd30842b719f170bdd60aa27f982c44a",
-      "bytes": 2769
+      "sha256": "dc4cda4add9080dd5f74bfcd70a62b3cd01f85a9f24c2bb7bc08397015da9a72",
+      "bytes": 3701
     },
     {
       "path": "docs/project-charter.md",
@@ -254,8 +279,8 @@
     },
     {
       "path": "docs/publishing.md",
-      "sha256": "2296cdfe074f969d6ce5fc10627dc47fdcfa46c783f7ba78dcb1d5b1fb179420",
-      "bytes": 1532
+      "sha256": "7b0f3e26c30a8332392673f690ec05162c2be9b0b4fca549446ac0f7ebb1f7f9",
+      "bytes": 7510
     },
     {
       "path": "docs/querying-the-catalog.md",
@@ -266,6 +291,11 @@
       "path": "docs/review-checklist.md",
       "sha256": "72bd5ba6c2998cd9131f3c5720f82a879a93aadc74252264ccc88c64753c6426",
       "bytes": 1444
+    },
+    {
+      "path": "docs/reviewer-roles.md",
+      "sha256": "16bdfea758ec89fa21fed1cc24251ce2a7eab64aaf6afa760ae00bfe09bd12fa",
+      "bytes": 4056
     },
     {
       "path": "docs/reviews/agents-access-and-policy.md",
@@ -334,8 +364,8 @@
     },
     {
       "path": "docs/taxonomy.md",
-      "sha256": "89d54bae2a2124c2a32aafe122c66408cbfdb827b0d20a4d24eea7ec047c1c19",
-      "bytes": 5836
+      "sha256": "6d0f5047eaa51ec6693330ff17456a1491df9ce8f52918efd8b2a590e598eeb9",
+      "bytes": 5880
     },
     {
       "path": "docs/validation-report.md",

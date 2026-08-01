@@ -1,3 +1,15 @@
+## Change type
+
+Select one (see [reviewer roles](docs/reviewer-roles.md) for required approvals):
+
+- [ ] Typographic correction (one maintainer)
+- [ ] Canonical URL correction, no identity change (one maintainer + green CI)
+- [ ] Resource addition, removal, or section move (two approvals, one section reviewer)
+- [ ] Affiliated resource change (two independent approvals)
+- [ ] Schema or validator change (catalog engineer + lead maintainer)
+- [ ] Taxonomy change (lead maintainer + two section reviewers)
+- [ ] Other editorial or documentation change
+
 ## Change
 
 Describe the resource addition, correction, removal, or editorial change.
@@ -14,9 +26,13 @@ List the specification, documentation, repository, validator, implementation rep
 
 Disclose any affiliation with affected resources or organizations.
 
+## Required reviewers
+
+List the roles that must approve before merge (maintainer, section reviewer, catalog engineer, release reviewer). Confirm approvals are independent for affiliated changes.
+
 ## Checklist
 
-- [ ] I read `contributing.md` and `docs/editorial-policy.md`.
+- [ ] I read `contributing.md`, `docs/editorial-policy.md`, and `docs/reviewer-roles.md`.
 - [ ] I inspected primary technical sources.
 - [ ] The README and catalog contain the same name, URL, section, and `summary`.
 - [ ] The `summary` is objective, specific, and ends with a period.
@@ -26,4 +42,6 @@ Disclose any affiliation with affected resources or organizations.
 - [ ] I ran `python scripts/validate_watchlist.py` when watchlist records changed.
 - [ ] I ran `python scripts/check_review_freshness.py`.
 - [ ] I ran `python -m unittest discover -s tests -v`.
+- [ ] I ran `python scripts/generate_manifest.py` and `python scripts/verify_manifest.py` when tracked files changed.
+- [ ] I understand that CI and validators enforce consistency but do not decide inclusion.
 - [ ] I accept responsibility for the factual accuracy of this contribution.

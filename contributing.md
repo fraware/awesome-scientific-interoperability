@@ -2,6 +2,8 @@
 
 Contributions should improve the list's ability to answer concrete scientific integration questions. Link-only proposals are rejected.
 
+Read [reviewer roles](docs/reviewer-roles.md) for approval requirements before opening a pull request. Read [decision records](docs/decision-records.md) for recurring maintainer decisions about profiles, workflow engines, agent protocols, validation, and reference architectures.
+
 ## Propose a Resource
 
 Use the resource-proposal issue form or open a pull request that updates `README.md` and the relevant file under `catalog/resources/`. Update `catalog/resources.yaml` only when adding, removing, or renaming a catalog shard.
@@ -33,6 +35,21 @@ A proposal must state:
 ## Human Responsibility
 
 Fully automated or unreviewed AI-generated submissions are rejected. Assistive tools may support discovery, comparison, or drafting, but the contributor must inspect the primary sources, verify every factual claim, and accept responsibility for the final text.
+
+Validators, linters, link checkers, and coverage audits enforce consistency. They never decide inclusion, removal, section placement, or taxonomy. A green CI run is required for most merges but is never sufficient on its own for editorial changes.
+
+## Approval requirements
+
+| Change type | Approvals |
+| --- | --- |
+| Typographic correction | One maintainer |
+| Canonical URL correction (no identity change) | One maintainer plus green CI |
+| Resource addition, removal, or section move | Two approvals, including one section reviewer |
+| Affiliated resource change | Two approvals; independent assessment required |
+| Schema or validator change | Catalog engineer plus lead maintainer |
+| Taxonomy change | Lead maintainer plus two section reviewers |
+
+Disclose conflicts per [conflicts of interest](docs/conflicts-of-interest.md). Use the removal or taxonomy-change issue forms when proposing those change types.
 
 ## Local Checks
 

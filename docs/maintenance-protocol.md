@@ -2,6 +2,8 @@
 
 The project remains useful only when its descriptions, URLs, standards status, and representative choices stay current.
 
+Maintainer roles, the approval matrix, and recurring editorial decisions are documented in [reviewer roles](reviewer-roles.md) and [decision records](decision-records.md). Section reviewers inspect primary sources for their catalog shard and matching file under `docs/reviews/`; names will be added to `.github/CODEOWNERS` as the team grows.
+
 ## Every Contribution
 
 1. Inspect primary technical sources.
@@ -10,7 +12,8 @@ The project remains useful only when its descriptions, URLs, standards status, a
 4. Update the README and the relevant catalog shard in the same change.
 5. Record the decision basis, limitations, stewardship, `reviewed_on`, and `review_due_on`.
 6. Run catalog validation, watchlist validation, review freshness, offline URL validation, unit tests, and Awesome lint.
-7. Require independent approval when the contributor is affiliated with the resource.
+7. Require independent approval when the contributor is affiliated with the resource (see [conflicts of interest](conflicts-of-interest.md) and [reviewer roles](reviewer-roles.md)).
+8. Match the change type to the approval matrix before merge; typographic fixes need one maintainer, resource changes need two approvals including a section reviewer.
 
 ## Monthly
 
@@ -47,3 +50,7 @@ Network audits classify each main-list URL as one of: `ok`, `redirected`, `acces
 ## Release Invariant
 
 The README remains manually authored and authoritative. Structured metadata and automated checks enforce consistency; they never decide inclusion or generate the list.
+
+## Governance Invariant
+
+Tools—validators, linters, link checkers, coverage audits, and manifest verification—enforce consistency and surface defects. Maintainers decide inclusion, removal, watchlist placement, taxonomy, and release timing. No automated score, audit metric, or CI job overrides human editorial judgment.

@@ -1,0 +1,63 @@
+name: Propose a taxonomy change
+description: Propose splitting, merging, renaming, or adding a catalog section.
+title: "Taxonomy: "
+labels:
+  - taxonomy
+body:
+  - type: markdown
+    attributes:
+      value: Read `docs/taxonomy.md`, `docs/reviewer-roles.md`, and `docs/decision-records.md` before submitting. Taxonomy changes require lead maintainer approval plus two section reviewers and must include a reasoned decision record—not a cosmetic reorganization. Validators and CI do not authorize taxonomy changes.
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: Change type
+      options:
+        - Split an existing section
+        - Merge two sections
+        - Rename a section
+        - Add a new section
+        - Move resources between sections (no structural change)
+    validations:
+      required: true
+  - type: textarea
+    id: sections
+    attributes:
+      label: Affected section(s)
+      description: Name current and proposed section titles.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Recurring integration problem each section answers
+      description: For splits or new sections, name the distinct user decision each section improves.
+    validations:
+      required: true
+  - type: textarea
+    id: threshold
+    attributes:
+      label: Threshold evidence
+      description: For new or split sections, list main-list entries (minimum three for a new section per PR-17) and explain why the combined section is insufficient.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Files and compatibility impact
+      description: README headings, catalog shards, schema enums, issue forms, decision guides, tests, problem index, watchlist, and manifest.
+    validations:
+      required: true
+  - type: textarea
+    id: decision_record
+    attributes:
+      label: Proposed decision record text
+      description: Draft language for `docs/taxonomy.md` or `docs/decision-records.md`.
+    validations:
+      required: true
+  - type: textarea
+    id: conflict
+    attributes:
+      label: Affiliation or conflict of interest
+      description: Write "None" when no conflict exists.
+    validations:
+      required: true

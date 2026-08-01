@@ -91,4 +91,4 @@ No main-list entry is classified as a reference architecture. Broad platforms un
 **Evidence for future reassessment:**
 
 - At least three watchlist or new candidates pass reference-architecture promotion conditions with explicit comparison to existing main-list entries (see `catalog/watchlist.yaml` promotion conditions for `galaxy`, `cromwell`, `scitoolagent`).
-- A maintainer decision record (PR-18) formalizes reference-architecture criteria so inclusion is consistent.
+- A maintainer decision record in [decision records](decision-records.md) (DR-005) formalizes reference-architecture criteria so inclusion is consistent.

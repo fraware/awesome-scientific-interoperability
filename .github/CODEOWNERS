@@ -1,0 +1,51 @@
+# Maintainer ownership for Awesome Scientific Interoperability
+#
+# The repository owner (@fraware) is the lead maintainer and currently owns all
+# paths. Section reviewers, catalog engineers, and release reviewers will be
+# added to the relevant paths as the maintainer team grows. Until then,
+# @fraware fulfills every role described in docs/reviewer-roles.md.
+#
+# Automated tools and CI never gain CODEOWNERS authority. Validators enforce
+# consistency; humans decide inclusion, removal, and taxonomy.
+
+# Default
+* @fraware
+
+# Authoritative list and editorial surface
+/README.md @fraware
+/archive.md @fraware
+/contributing.md @fraware
+
+# Catalog index and shards — one section reviewer per shard when appointed
+/catalog/resources.yaml @fraware
+/catalog/resources/foundations.yaml @fraware
+/catalog/resources/identifiers-and-discovery.yaml @fraware
+/catalog/resources/metadata-and-semantics.yaml @fraware
+/catalog/resources/data-and-digital-objects.yaml @fraware
+/catalog/resources/research-software-and-environments.yaml @fraware
+/catalog/resources/workflows-and-execution.yaml @fraware
+/catalog/resources/provenance-and-evidence.yaml @fraware
+/catalog/resources/knowledge-systems-and-publications.yaml @fraware
+/catalog/resources/instruments-and-laboratories.yaml @fraware
+/catalog/resources/agents-access-and-policy.yaml @fraware
+/catalog/resources/validation-and-conformance.yaml @fraware
+/catalog/watchlist.yaml @fraware
+
+# Section review notes
+/docs/reviews/ @fraware
+
+# Taxonomy, governance, and decision records
+/docs/taxonomy.md @fraware
+/docs/editorial-policy.md @fraware
+/docs/conflicts-of-interest.md @fraware
+/docs/reviewer-roles.md @fraware
+/docs/decision-records.md @fraware
+/docs/maintenance-protocol.md @fraware
+/docs/project-charter.md @fraware
+
+# Schema, validators, and integrity tooling — catalog engineer plus lead maintainer
+/schema/ @fraware
+/scripts/ @fraware
+/tests/ @fraware
+/config/ @fraware
+/.github/workflows/ @fraware
