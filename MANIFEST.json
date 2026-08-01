@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 118,
+  "file_count": 119,
   "files": [
     {
       "path": ".github/CODEOWNERS",
@@ -49,7 +49,7 @@
     },
     {
       "path": "CITATION.cff",
-      "sha256": "aba22923b0939281c8128125073bc8ce9140401f87dca49b7f6b7fca8d9c3fde",
+      "sha256": "9af008907c1b5ebaeb55bbac82218a33111412774f9cb8a4b8a9273f93e3ce10",
       "bytes": 565
     },
     {
@@ -64,8 +64,8 @@
     },
     {
       "path": "archive.md",
-      "sha256": "8defddc3ac86428af423c6c8ae60330d0bc526addd2c4b8b20a542bc16d57ed7",
-      "bytes": 280
+      "sha256": "7b4a1f0c9a8b2a437e17d407df816d4b7a3daac6669221f09aa26c29c56bd29e",
+      "bytes": 306
     },
     {
       "path": "catalog/resources.yaml",
@@ -133,6 +133,11 @@
       "bytes": 16078
     },
     {
+      "path": "changelog.md",
+      "sha256": "ea85c2c710a8607e47142f05df80d5ef44dd6afe012a868427c9bcc158fd9447",
+      "bytes": 4297
+    },
+    {
       "path": "code-of-conduct.md",
       "sha256": "9ea9f921edba071ef561044efeb3e1f6ad8b47ffa198b6c398f51ce1fb5ca79c",
       "bytes": 456
@@ -184,8 +189,8 @@
     },
     {
       "path": "docs/coverage-baseline.md",
-      "sha256": "a4da9769532fc8e1573491fee0aacb8cc8508631f9169ce5c3415e3fc12184ef",
-      "bytes": 2029
+      "sha256": "c56a2f6d4dd27babb4272c3d1d71abea901abf999185ac75cd94d7a318d635b5",
+      "bytes": 1933
     },
     {
       "path": "docs/decision-guides/README.md",
@@ -264,8 +269,8 @@
     },
     {
       "path": "docs/link-audit-baseline.md",
-      "sha256": "3667541d1691315b5e11ca57749155b4357015adfbbc23de3a0f8163b010994a",
-      "bytes": 2774
+      "sha256": "be10e8088db180f2bf02d23911b4c7256e490f123f50de8b890414adcc08400d",
+      "bytes": 3699
     },
     {
       "path": "docs/maintenance-protocol.md",
@@ -369,8 +374,8 @@
     },
     {
       "path": "docs/validation-report.md",
-      "sha256": "1e7bc8012919f775c151bf6989ad81424fd476438789ffd2708134af5dea9fb8",
-      "bytes": 2619
+      "sha256": "68f4f03076af79d135e4edf15db82f480ccef67bdf1c6b763b4c5240e8aa1de1",
+      "bytes": 5551
     },
     {
       "path": "docs/watchlist.md",
