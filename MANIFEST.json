@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 89,
+  "file_count": 92,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -139,13 +139,23 @@
     },
     {
       "path": "docs/decision-guides/README.md",
-      "sha256": "147086e00457ec494f9b4a80124def6442bc6582934a0352b709d7791ac824c5",
-      "bytes": 2102
+      "sha256": "5978d6fa5c996220f60dcfebafea0169b28f9d85186c6d56e90fa0376a3832eb",
+      "bytes": 2378
+    },
+    {
+      "path": "docs/decision-guides/controlled-data-access.md",
+      "sha256": "fbbbc64d8ed2b3a7e47213f984e0ba4db890ef94b3719a82268001b0ba8952d9",
+      "bytes": 5189
     },
     {
       "path": "docs/decision-guides/identifiers-and-discovery.md",
       "sha256": "920678c4d546de7a82ed3111b6d59fa089bace3089a99e977f808264b5deefe1",
       "bytes": 6821
+    },
+    {
+      "path": "docs/decision-guides/laboratory-interoperability.md",
+      "sha256": "4f3b444deb8f76646810174dc5d3a22913a59e394f91cbe7cafd8259e4f7767d",
+      "bytes": 6195
     },
     {
       "path": "docs/decision-guides/metadata-semantics-and-units.md",
@@ -161,6 +171,11 @@
       "path": "docs/decision-guides/research-object-packaging.md",
       "sha256": "7f3fdfab50987a3b8962e02f4d7a0351fdc0eca007db996985318593c9ae2df5",
       "bytes": 8069
+    },
+    {
+      "path": "docs/decision-guides/scientific-agents-and-tool-interfaces.md",
+      "sha256": "92b242e238b854a6e028ab13d289eabf731eeaf5eb390872c869ae6ba39437a2",
+      "bytes": 5916
     },
     {
       "path": "docs/decision-guides/workflow-testing-and-conformance.md",
