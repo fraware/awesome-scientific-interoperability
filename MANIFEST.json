@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-01",
-  "file_count": 64,
+  "file_count": 69,
   "files": [
     {
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
@@ -64,8 +64,8 @@
     },
     {
       "path": "catalog/resources/data-and-digital-objects.yaml",
-      "sha256": "013aab1625e1947c3f957643266d6def860b5274b43bc5594e9e02647868ed8d",
-      "bytes": 6234
+      "sha256": "4da2692eacc729a3d6b96e7e6c523d35a92ee21f8675d9877c9c562a802f8fea",
+      "bytes": 9886
     },
     {
       "path": "catalog/resources/foundations.yaml",
@@ -94,13 +94,13 @@
     },
     {
       "path": "catalog/resources/provenance-and-evidence.yaml",
-      "sha256": "fda73679a5e98a5276d083375b9865dc70bd845b20549981fd9a31cc0e388986",
-      "bytes": 4407
+      "sha256": "54e5f0212fdba60f0c8ed7568ea2e46a525593785ead0536f4f7b787e2020611",
+      "bytes": 6817
     },
     {
       "path": "catalog/resources/research-software-and-environments.yaml",
-      "sha256": "b5179a542427980d6b0ae5fd4703a5d98f094d5d203d10d167abea23ac672776",
-      "bytes": 4705
+      "sha256": "3218734c0154db1ea5b069a8157cd43e6110df21b3994cb221a1ce097fe3c1ec",
+      "bytes": 7102
     },
     {
       "path": "catalog/resources/validation-and-conformance.yaml",
@@ -109,8 +109,8 @@
     },
     {
       "path": "catalog/resources/workflows-and-execution.yaml",
-      "sha256": "82b1b5284cfa8e28c772f3453197b5b7ffbc4d7304f1becf56725b6506e8e72e",
-      "bytes": 8949
+      "sha256": "7d045b269d47de294494d3805b5de242819ac2e92b93a0b6691beddd670863bf",
+      "bytes": 14709
     },
     {
       "path": "code-of-conduct.md",
@@ -171,6 +171,26 @@
       "path": "docs/review-checklist.md",
       "sha256": "f562ea3a2499d62d08a266d688dfaefdacf6088134cf682f099b0ee47072d649",
       "bytes": 1160
+    },
+    {
+      "path": "docs/reviews/data-and-digital-objects.md",
+      "sha256": "343ecffb3297816e12743b95652b58d891570cb3255def6e162580220640314e",
+      "bytes": 2569
+    },
+    {
+      "path": "docs/reviews/provenance-and-evidence.md",
+      "sha256": "32e50024313e8af982335ff50ce162e2fc12f027fcc34db81e40184633799388",
+      "bytes": 1700
+    },
+    {
+      "path": "docs/reviews/research-software-and-environments.md",
+      "sha256": "7a3541a9d4b838a82f72a2220286f94d94658fa7b28cd3a77ccecb99629e44c7",
+      "bytes": 1846
+    },
+    {
+      "path": "docs/reviews/workflows-and-execution.md",
+      "sha256": "9b44c5b424ca9e2890d95b352c26b30800e0fb87e63ab20610d2f5a29f84c2b0",
+      "bytes": 2659
     },
     {
       "path": "docs/roadmap.md",
@@ -306,6 +326,11 @@
       "path": "tests/fixtures/v2/13-empty-evidence-types.invalid.yaml",
       "sha256": "26aba9d117a351dee733e8656fd5021707760d357e6f782dc59eec0cd53ee199",
       "bytes": 1405
+    },
+    {
+      "path": "tests/fixtures/v2/pr-05-group-b-combined.valid.yaml",
+      "sha256": "52e6ee3f67a62cac3aed81bdbb4ae3d87cee00d153b00cd4981af7ecb79754dc",
+      "bytes": 38767
     },
     {
       "path": "tests/test_catalog.py",
