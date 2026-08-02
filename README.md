@@ -1,13 +1,15 @@
 # Awesome Scientific Interoperability [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> Scientific interoperability enables independently developed data, software, workflows, instruments, knowledge systems, and agents to exchange, interpret, execute, preserve, and compose information through documented contracts.
+> Curated public mechanisms that let independently developed scientific data, software, workflows, instruments, knowledge systems, and agents exchange, interpret, execute, preserve, and compose information through documented contracts.
 
-This list selects standards, protocols, formats, schemas, APIs, ontologies, registries, implementations, mappings, and test suites that materially support those relationships. Every entry answers two questions: **what interoperates with what, and through which mechanism?**
+**North Star.** A technically competent user should be able to identify the strongest available interoperability mechanism for a concrete scientific integration problem without conducting a new landscape search.
+
+Every accepted entry completes one sentence test: the resource enables **X** to exchange, interpret, execute, preserve, or compose with **Y** through **documented mechanism Z**.
 
 ## Contents
 
-- [Selection Standard](#selection-standard)
 - [How to use this list](#how-to-use-this-list)
+- [Selection Standard](#selection-standard)
 - [Foundations](#foundations)
 - [Identifiers and Discovery](#identifiers-and-discovery)
 - [Metadata and Semantics](#metadata-and-semantics)
@@ -20,15 +22,27 @@ This list selects standards, protocols, formats, schemas, APIs, ontologies, regi
 - [Agents, Access, and Policy](#agents-access-and-policy)
 - [Validation and Conformance](#validation-and-conformance)
 
-## Selection Standard
-
-An entry must expose a reusable and publicly inspectable interoperability mechanism, demonstrate credible maintenance or stewardship, and add decision value beyond stronger resources already included. General scientific software, broad open-science guidance, private connectors, and projects whose interoperability contribution cannot be stated precisely are excluded. See the [editorial policy](docs/editorial-policy.md) for the complete standard.
-
 ## How to use this list
 
-Start from the decision path that matches your question, then return to the curated entries below. Begin with a concrete [integration problem](docs/integration-problems.md), compare options in the [decision guides](docs/decision-guides/README.md), run [local catalog queries](docs/querying-the-catalog.md), or inspect the [watchlist](docs/watchlist.md) for near-miss resources. A read-only browser explorer is published at [fraware.github.io/awesome-scientific-interoperability](https://fraware.github.io/awesome-scientific-interoperability/).
+Choose the path that matches your question, then return to the curated entries below.
 
-The manually edited README remains authoritative for inclusion. The machine-readable catalog validates and supports queries; it does not generate this list. See [Footnotes](#footnotes).
+**Integration problems.** Start from a concrete situation in the [integration problem index](docs/integration-problems.md).
+
+**Decision guides.** Compare overlapping options in the [decision guides](docs/decision-guides/README.md).
+
+**Catalog explorer.** Browse the read-only [GitHub Pages explorer](https://fraware.github.io/awesome-scientific-interoperability/).
+
+**Local queries.** Run structured lookups via [querying the catalog](docs/querying-the-catalog.md).
+
+**Watchlist.** Inspect near-miss and emerging resources in the [watchlist](docs/watchlist.md).
+
+This README is manually curated and remains authoritative for inclusion. The machine-readable catalog validates consistency and supports queries; it does not generate this list.
+
+## Selection Standard
+
+An entry belongs on the main list only when it exposes a reusable, publicly inspectable interoperability mechanism; passes the sentence test with precise connected systems and mechanism; shows credible maintenance or stewardship; adds decision value beyond stronger resources already listed; and advances the North Star for a concrete scientific integration question.
+
+General scientific software, broad open-science guidance, private connectors, and projects whose interoperability contribution cannot be stated precisely are excluded. See the [editorial policy](docs/editorial-policy.md) for the complete admission and exclusion rules.
 
 ## Foundations
 
@@ -197,6 +211,6 @@ Read [contributing.md](contributing.md) before proposing a resource. A proposal 
 ## Footnotes
 
 - The manually edited README is authoritative. The [machine-readable catalog](catalog/resources.yaml) exists for validation, maintenance, and downstream analysis; it does not generate this list.
-- Decision paths for problems, guides, local queries, and the watchlist appear under How to use this list above.
+- Decision paths for problems, guides, the explorer, local queries, and the watchlist appear under How to use this list.
 - Editorial decisions follow the [project charter](docs/project-charter.md), [taxonomy](docs/taxonomy.md), and [conflict-of-interest policy](docs/conflicts-of-interest.md).
 - Release checks and publication instructions are recorded in the [validation report](docs/validation-report.md) and [publishing guide](docs/publishing.md).
