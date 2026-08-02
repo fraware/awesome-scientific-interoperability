@@ -1,0 +1,32 @@
+name: Batch G source snapshot
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/batch-g-source-snapshot.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Package exact tracked tree
+        run: |
+          python - <<'PY'
+          import subprocess, zipfile
+          files = subprocess.check_output(['git', 'ls-files'], text=True).splitlines()
+          excluded = {'.github/workflows/batch-g-source-snapshot.yml'}
+          with zipfile.ZipFile('batch-g-source-tree.zip', 'w', zipfile.ZIP_DEFLATED) as archive:
+              for path in files:
+                  if path not in excluded:
+                      archive.write(path, path)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: batch-g-source-tree
+          path: batch-g-source-tree.zip
+          retention-days: 1
