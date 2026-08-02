@@ -24,4 +24,4 @@ A federated variant-analysis system commonly uses [resource:ga4gh-refget-sequenc
 
 ## Related candidate boundaries
 
-Beacon v2 remains a discovery candidate, the HTS file specifications remain a file-family boundary decision, Crypt4GH remains an encryption-container candidate, and RNAget remains a transcriptomics-access candidate. Their roles should not be inferred from the four mechanisms admitted here.
+Beacon v2 remains on the structured watchlist pending a GA4GH discovery-family budget and independent federation evidence. HTS file specifications are represented by htsget; Crypt4GH and RNAget are closed as out of scope for the current corpus. Their roles should not be inferred from the four mechanisms admitted here.

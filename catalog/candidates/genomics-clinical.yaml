@@ -6,9 +6,9 @@ candidates:
   candidate_section: Identifiers and Discovery
   coverage_family: genomic-discovery
   priority: P1
-  disposition: deferred-family-review
-  deferred_family_id: ga4gh-discovery-and-access-concentration
-  scheduled_review: '2027-02-02'
+  disposition: watchlist
+  current_repository_state: watchlist
+  review_due_on: '2027-02-02'
   mechanism: Federated API for discovering genomic and phenotypic records through standardized query and response
     models.
   why_distinct: Provides privacy-aware distributed genomic discovery distinct from Service Registry and direct object
@@ -17,10 +17,13 @@ candidates:
   - https://www.ga4gh.org/product/beacon-api/
   - https://docs.genomebeacons.org/
   - https://github.com/ga4gh-beacon/beacon-v2
-  evidence_notes: Credible GA4GH discovery standard, but Batch C already admitted VRS, Phenopackets, htsget, and
-    refget. Further GA4GH discovery entries need an explicit family-concentration revisit rather than piecemeal admission.
-  next_step: Closed as deferred under ga4gh-discovery-and-access-concentration until a scheduled family review
-    reopens Beacon against Service Registry and Phenopackets roles.
+  evidence_notes: Beacon v2 is a credible GA4GH federated discovery protocol with approved specification status,
+    but Batch C already admitted VRS, Phenopackets, htsget, and refget. Family concentration outweighs immediate
+    admission; retain on the structured watchlist until a GA4GH discovery-family budget and independent federation
+    evidence clear the bar.
+  next_step: Monitor under catalog/watchlist.yaml; promote only after an explicit GA4GH discovery-family policy
+    budgets another discovery role and at least two independent Beacon v2 federation deployments publish public
+    technical artifacts.
 - id: ga4gh-hts-specifications
   name: GA4GH HTS Specifications (SAM/BAM/CRAM and VCF/BCF)
   official_url: https://samtools.github.io/hts-specs/

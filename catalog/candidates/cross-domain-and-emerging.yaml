@@ -26,7 +26,9 @@ candidates:
   candidate_section: Data and Digital Objects
   coverage_family: system-simulation-composition
   priority: P1
-  disposition: deferred-family-review
+  disposition: rejected-represented-by
+  represented_by_resource_ids:
+  - functional-mock-up-interface-fmi
   mechanism: Modelica Association standard for exchanging system structures, component connections, parameter
     sets, and referenced simulation artifacts.
   why_distinct: Complements FMI by standardizing composition and parameterization of multi-component simulation
@@ -34,18 +36,20 @@ candidates:
   primary_sources:
   - https://ssp-standard.org/
   - https://github.com/modelica/ssp-standard
-  evidence_notes: SSP complements FMI for system composition, but FMI already occupies the engineering/model-exchange
-    exemplar. Further Modelica Association standards need a family review rather than immediate admission.
-  next_step: Closed as deferred under modelica-cosimulation-family with FMI as the admitted anchor.
-  deferred_family_id: modelica-cosimulation-family
-  scheduled_review: '2027-02-02'
+  evidence_notes: SSP complements FMI for system composition and parameterization, but FMI already occupies
+    the engineering model-exchange exemplar. Admitting another Modelica Association composition standard
+    would over-concentrate the family without a sharper North-Star decision.
+  next_step: Closed as represented by functional-mock-up-interface-fmi; reopen only for an approved
+    system-composition decision guide beyond FMI.
 - id: distributed-co-simulation-protocol-dcp
   name: Distributed Co-Simulation Protocol (DCP)
   official_url: https://dcp-standard.org/
   candidate_section: Workflows and Execution
   coverage_family: distributed-co-simulation
   priority: P1
-  disposition: deferred-family-review
+  disposition: rejected-represented-by
+  represented_by_resource_ids:
+  - functional-mock-up-interface-fmi
   mechanism: Real-time communication and state-management protocol for distributed co-simulation across
     tools and hardware.
   why_distinct: Addresses operational interoperability among simulation components, complementing FMI
@@ -53,12 +57,11 @@ candidates:
   primary_sources:
   - https://dcp-standard.org/
   - https://github.com/modelica/DCP-standard
-  evidence_notes: DCP addresses distributed co-simulation transport. Adoption breadth and overlap with
-    FMI operational use require a joint family review before any admission.
-  next_step: Closed as deferred under modelica-cosimulation-family; do not admit beside FMI without documented
-    independent operational deployments.
-  deferred_family_id: modelica-cosimulation-family
-  scheduled_review: '2027-02-02'
+  evidence_notes: DCP addresses distributed co-simulation transport, but public evidence of independent
+    scientific operational deployments is thinner than FMI model-exchange use. FMI remains the catalog's
+    engineering/simulation interoperability anchor.
+  next_step: Closed as represented by functional-mock-up-interface-fmi; reopen only with documented
+    independent operational co-simulation deployments and an approved family budget.
 - id: asam-measurement-data-format-mdf
   name: ASAM Measurement Data Format (MDF)
   official_url: https://www.asam.net/standards/detail/mdf/
