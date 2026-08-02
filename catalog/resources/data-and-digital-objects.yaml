@@ -951,3 +951,199 @@ resources:
     reviewed_on: '2026-08-02'
     conflict_disclosure: none identified; human maintainer approval required before merge
     decision_record: issue-44-batch-a
+- id: ome-ngff
+  name: OME-NGFF / OME-Zarr
+  url: https://ngff.openmicroscopy.org/0.5/
+  section: Data and Digital Objects
+  resource_kind: exchange-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Bioimaging acquisition and conversion tools
+  - object stores
+  - image viewers
+  - analysis platforms
+  mechanism: Versioned OME metadata and hierarchy rules over Zarr v3 for multiscale images, labels, plates,
+    wells, axes, and coordinate transformations
+  summary: Cloud-native OME-Zarr specification for exchanging chunked multidimensional bioimages, multiscales,
+    labels, plates, wells, axes, and coordinate metadata across storage and analysis systems.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - independent-implementation
+  - public-validator
+  - institutional-adoption
+  implementation_status: reference-and-others
+  conformance_status: public-validator
+  steward_id: open-microscopy-environment
+  scientific_domains:
+  - bioimaging
+  - life-sciences
+  integration_functions:
+  - research-data
+  - laboratory-data
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
+  source_refs:
+  - ref_id: ngff-openmicroscopy-org-0-5
+    role: technical-definition
+  - ref_id: github-com-ome-ngff
+    role: stewardship
+  - ref_id: ngff-openmicroscopy-org-tools
+    role: adoption
+  - ref_id: github-com-ome-ome-zarr-py
+    role: implementation
+  - ref_id: github-com-glencoesoftware-bioformats2raw
+    role: implementation
+  - ref_id: ome-github-io-ome-ngff-validator
+    role: conformance
+  relations:
+  - type: complements
+    resource_id: dicomweb
+  - type: complements
+    resource_id: ro-crate
+  decision_basis: Strongest current cloud and object-store exchange contract for multidimensional bioimaging,
+    with a released specification, active tools, and public validation.
+  boundary_note: OME-TIFF remains stronger for mature single-file exchange; OME-Zarr 0.5 depends on Zarr v3
+    and still contains transitional metadata, so version support must be recorded.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-02-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-b
+- id: flexible-image-transport-system-fits
+  name: Flexible Image Transport System (FITS)
+  url: https://fits.gsfc.nasa.gov/fits_standard.html
+  section: Data and Digital Objects
+  resource_kind: exchange-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Astronomical instruments
+  - mission archives
+  - analysis libraries
+  - visualization and catalog tools
+  mechanism: IAU-governed header-data-unit format for multidimensional arrays, images, ASCII and binary tables,
+    metadata, coordinates, and registered conventions
+  summary: IAU-governed astronomical exchange standard for multidimensional arrays, images, spectra, tables,
+    metadata, coordinates, and compressed scientific data across instruments, archives, and software.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  - public-validator
+  implementation_status: multiple-independent
+  conformance_status: public-validator
+  steward_id: iau-fits-working-group
+  scientific_domains:
+  - astronomy
+  - physics
+  integration_functions:
+  - research-data
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: fits-gsfc-nasa-gov-fits-standard
+    role: technical-definition
+  - ref_id: fits-gsfc-nasa-gov-iau-fwg-rules
+    role: stewardship
+  - ref_id: fits-gsfc-nasa-gov-registry
+    role: maintenance
+  - ref_id: heasarc-gsfc-nasa-gov-cfitsio
+    role: implementation
+  - ref_id: docs-astropy-org-fits
+    role: implementation
+  - ref_id: docs-astropy-org-fits-verification
+    role: conformance
+  relations:
+  - type: complements
+    resource_id: ivoa-votable
+  - type: complements
+    resource_id: ivoa-table-access-protocol-tap
+  decision_basis: Foundational astronomy file and metadata contract with formal IAU governance, decades of
+    archive use, independent libraries, and public verification.
+  boundary_note: FITS is strongest for durable astronomical files; VOTable is stronger for VO table responses,
+    TAP for remote query services, and ASDF for some hierarchical modern data models.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-b
+- id: ivoa-votable
+  name: IVOA VOTable
+  url: https://www.ivoa.net/documents/VOTable/
+  section: Data and Digital Objects
+  resource_kind: exchange-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Virtual Observatory services
+  - astronomy catalogs
+  - table clients
+  - analysis applications
+  mechanism: Versioned XML table format with rich field metadata, arrays, links, parameters, and TABLEDATA,
+    BINARY, BINARY2, or FITS serializations
+  summary: IVOA XML table standard for exchanging astronomical tabular data, arrays, field metadata, links,
+    parameters, and multiple serializations across Virtual Observatory services and clients.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  - public-validator
+  implementation_status: multiple-independent
+  conformance_status: public-validator
+  steward_id: international-virtual-observatory-alliance
+  scientific_domains:
+  - astronomy
+  integration_functions:
+  - research-data
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: ivoa-net-documents-votable
+    role: technical-definition
+  - ref_id: ivoa-net-about
+    role: stewardship
+  - ref_id: github-com-ivoa-std-votable
+    role: maintenance
+  - ref_id: docs-astropy-org-votable
+    role: implementation
+  - ref_id: star-bris-ac-uk-stilts
+    role: implementation
+  - ref_id: star-bris-ac-uk-stilts-votlint
+    role: conformance
+  relations:
+  - type: complements
+    resource_id: ivoa-table-access-protocol-tap
+  - type: complements
+    resource_id: flexible-image-transport-system-fits
+  decision_basis: Canonical Virtual Observatory table serialization with a current IVOA Recommendation, independent
+    readers and writers, and direct semantic validation.
+  boundary_note: VOTable serializes and annotates table results; TAP defines remote query behavior, while FITS
+    remains stronger for durable array and image files.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-b

@@ -70,3 +70,11 @@ standard_families:
     - neurodata-without-borders-nwb
     - dicomweb
     - nexus
+  astronomy-data-services:
+    - flexible-image-transport-system-fits
+    - ivoa-votable
+    - ivoa-table-access-protocol-tap
+  bioimaging-data:
+    - ome-ngff
+    - dicomweb
+    - nexus

@@ -305,3 +305,147 @@ implementations:
   - nwb-org-nwbinspector
   - nwb-org-nwb-schema
   notes: Official schema and best-practice validator that invokes PyNWB validation by default.
+- id: ome-zarr-py
+  name: ome-zarr-py
+  url: https://github.com/ome/ome-zarr-py
+  implements_resource_id: ome-ngff
+  operator_steward_id: open-microscopy-environment
+  relationship: reference-implementation
+  supported_versions:
+  - OME-Zarr 0.4 and evolving 0.5 support
+  evidence_ref_ids:
+  - github-com-ome-ome-zarr-py
+  - ngff-openmicroscopy-org-0-5
+  notes: Official Python reader, writer, and utility library in the OME ecosystem.
+- id: bioformats2raw-ome-ngff
+  name: bioformats2raw
+  url: https://github.com/glencoesoftware/bioformats2raw
+  implements_resource_id: ome-ngff
+  operator_steward_id: glencoe-software
+  relationship: independent-implementation
+  supported_versions:
+  - OME-Zarr 0.4 and 0.5 output
+  evidence_ref_ids:
+  - github-com-glencoesoftware-bioformats2raw
+  - ngff-openmicroscopy-org-0-5
+  notes: Separately operated converter that writes OME-Zarr from microscopy formats.
+- id: ome-ngff-validator
+  name: OME-NGFF Validator
+  url: https://ome.github.io/ome-ngff-validator/
+  implements_resource_id: ome-ngff
+  operator_steward_id: open-microscopy-environment
+  relationship: validator
+  supported_versions:
+  - OME-Zarr 0.4 and 0.5 examples
+  evidence_ref_ids:
+  - ome-github-io-ome-ngff-validator
+  - ngff-openmicroscopy-org-0-5
+  notes: Public browser validator for OME-Zarr metadata and hierarchy examples.
+- id: cfitsio-fits
+  name: CFITSIO
+  url: https://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html
+  implements_resource_id: flexible-image-transport-system-fits
+  operator_steward_id: heasarc-nasa-goddard
+  relationship: independent-implementation
+  supported_versions:
+  - FITS Standard 4.0 and registered conventions
+  evidence_ref_ids:
+  - heasarc-gsfc-nasa-gov-cfitsio
+  - fits-gsfc-nasa-gov-fits-standard
+  notes: NASA-maintained C and Fortran library for reading and writing FITS.
+- id: astropy-fits
+  name: Astropy FITS
+  url: https://docs.astropy.org/en/stable/io/fits/
+  implements_resource_id: flexible-image-transport-system-fits
+  operator_steward_id: astropy-project
+  relationship: independent-implementation
+  supported_versions:
+  - FITS Standard 4.0 structures and common conventions
+  evidence_ref_ids:
+  - docs-astropy-org-fits
+  - fits-gsfc-nasa-gov-fits-standard
+  notes: Independent Python implementation for FITS images, tables, headers, and HDUs.
+- id: astropy-fits-verification
+  name: Astropy FITS verification
+  url: https://docs.astropy.org/en/stable/io/fits/usage/verification.html
+  implements_resource_id: flexible-image-transport-system-fits
+  operator_steward_id: astropy-project
+  relationship: validator
+  supported_versions:
+  - FITS standard structural verification
+  evidence_ref_ids:
+  - docs-astropy-org-fits-verification
+  - fits-gsfc-nasa-gov-fits-standard
+  notes: Public verification interface for reporting or rejecting FITS standard violations.
+- id: opencadc-tap
+  name: OpenCADC TAP
+  url: https://github.com/opencadc/tap
+  implements_resource_id: ivoa-table-access-protocol-tap
+  operator_steward_id: canadian-astronomy-data-centre
+  relationship: independent-implementation
+  supported_versions:
+  - TAP 1.1
+  evidence_ref_ids:
+  - github-com-opencadc-tap
+  - ivoa-net-documents-tap
+  notes: Independent client and server implementation of TAP 1.1.
+- id: dachs-tap
+  name: GAVO DaCHS
+  url: https://dachs-doc.readthedocs.io/
+  implements_resource_id: ivoa-table-access-protocol-tap
+  operator_steward_id: german-astrophysical-virtual-observatory
+  relationship: independent-implementation
+  supported_versions:
+  - TAP publishing and ADQL services
+  evidence_ref_ids:
+  - dachs-doc-readthedocs-io
+  - ivoa-net-documents-tap
+  notes: Separately operated Virtual Observatory publishing stack with TAP services.
+- id: stilts-taplint
+  name: STILTS taplint
+  url: https://www.star.bris.ac.uk/~mbt/stilts/sun256/taplint.html
+  implements_resource_id: ivoa-table-access-protocol-tap
+  operator_steward_id: starlink-java-project
+  relationship: validator
+  supported_versions:
+  - TAP 1.0 and 1.1 interfaces plus related VO standards
+  evidence_ref_ids:
+  - star-bris-ac-uk-stilts-taplint
+  - ivoa-net-documents-tap
+  notes: Public staged TAP service validator; its documentation explicitly limits comprehensiveness.
+- id: astropy-votable
+  name: Astropy VOTable
+  url: https://docs.astropy.org/en/stable/io/votable/index.html
+  implements_resource_id: ivoa-votable
+  operator_steward_id: astropy-project
+  relationship: independent-implementation
+  supported_versions:
+  - VOTable 1.1 through 1.5
+  evidence_ref_ids:
+  - docs-astropy-org-votable
+  - ivoa-net-documents-votable
+  notes: Independent Python reader, writer, and validation-capable VOTable implementation.
+- id: stilts-votable
+  name: STILTS VOTable
+  url: https://www.star.bris.ac.uk/mbt/stilts/
+  implements_resource_id: ivoa-votable
+  operator_steward_id: starlink-java-project
+  relationship: independent-implementation
+  supported_versions:
+  - VOTable 1.x including 1.5 support
+  evidence_ref_ids:
+  - star-bris-ac-uk-stilts
+  - ivoa-net-documents-votable
+  notes: Independent Java table stack that reads, writes, and transforms VOTable documents.
+- id: stilts-votlint
+  name: STILTS votlint
+  url: https://www.star.bris.ac.uk/~mbt/stilts/sun256/votlint.html
+  implements_resource_id: ivoa-votable
+  operator_steward_id: starlink-java-project
+  relationship: validator
+  supported_versions:
+  - VOTable schema and semantic checks
+  evidence_ref_ids:
+  - star-bris-ac-uk-stilts-votlint
+  - ivoa-net-documents-votable
+  notes: Public validator for schema, data structure, datatypes, arrays, and semantic consistency.

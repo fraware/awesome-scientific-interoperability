@@ -10,12 +10,13 @@ The expansion registry is machine-readable under `catalog/expansion-candidates.y
 
 The review contains:
 
-- **56 candidates**;
-- **54 distinct interoperability families**;
-- **15 P0 admission candidates**;
+- **52 unresolved candidates**;
+- **52 distinct unresolved interoperability families**;
+- **11 P0 admission candidates**;
 - **26 P1 boundary-review candidates**;
 - **15 P2 candidates**;
-- **15 `admission-pr`**, **28 `boundary-review`**, and **13 `watchlist`** dispositions.
+- **11 `admission-pr`**, **28 `boundary-review`**, and **13 `watchlist`** unresolved dispositions.
+- **9 completed candidate IDs** tracked against the original 61-resource research program.
 
 Comprehensiveness here means systematic coverage of consequential interoperability mechanisms. It does not mean listing every scientific format, software package, ontology, or implementation.
 
@@ -254,3 +255,15 @@ The expansion track is complete when every P0 candidate has one durable outcome:
 - rejected through a recorded boundary decision.
 
 P1 and P2 records remain machine-readable so new evidence can change their disposition without repeating the landscape search.
+## Batch B outcome — astronomy and bioimaging
+
+The stacked Batch B candidate tree proposes admission of OME-NGFF, FITS, IVOA TAP, and IVOA VOTable. The four IDs are removed from unresolved candidate shards and recorded in `completed_candidate_ids`; the validator now enforces `unresolved candidates + completed candidate IDs = 61`, preserving the full research universe as the queue declines.
+
+Boundary outcomes retained for later adjudication:
+
+- OME-TIFF remains a major installed-base bioimaging format and is compared directly against OME-NGFF.
+- ObsCore remains a TAP profile decision, not an automatic peer protocol entry.
+- SAMP remains an application-messaging decision.
+- ASDF remains a modern hierarchical astronomy-format candidate requiring archive-adoption review.
+
+The Batch B records remain AI-assisted author review pending human maintainer approval.

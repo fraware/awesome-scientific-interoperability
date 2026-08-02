@@ -453,3 +453,58 @@ stewards:
   type: community
   url: https://tellurium.readthedocs.io/
   aliases: []
+- id: open-microscopy-environment
+  name: Open Microscopy Environment
+  type: community
+  url: https://www.openmicroscopy.org/
+  aliases:
+  - OME
+  - OME-NGFF community
+- id: glencoe-software
+  name: Glencoe Software
+  type: institution
+  url: https://www.glencoesoftware.com/
+  aliases: []
+- id: iau-fits-working-group
+  name: IAU FITS Working Group
+  type: standards-body
+  url: https://fits.gsfc.nasa.gov/iaufwg/
+  aliases:
+  - IAU-FWG
+- id: heasarc-nasa-goddard
+  name: NASA HEASARC
+  type: institution
+  url: https://heasarc.gsfc.nasa.gov/
+  aliases:
+  - High Energy Astrophysics Science Archive Research Center
+- id: astropy-project
+  name: Astropy Project
+  type: community
+  url: https://www.astropy.org/
+  aliases: []
+- id: international-virtual-observatory-alliance
+  name: International Virtual Observatory Alliance
+  type: standards-body
+  url: https://www.ivoa.net/
+  aliases:
+  - IVOA
+- id: canadian-astronomy-data-centre
+  name: Canadian Astronomy Data Centre
+  type: institution
+  url: https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/
+  aliases:
+  - CADC
+  - OpenCADC
+- id: german-astrophysical-virtual-observatory
+  name: German Astrophysical Virtual Observatory
+  type: institution
+  url: https://www.g-vo.org/
+  aliases:
+  - GAVO
+- id: starlink-java-project
+  name: Starlink Java Project
+  type: community
+  url: https://www.star.bris.ac.uk/mbt/stilts/
+  aliases:
+  - STILTS
+  - Starjava

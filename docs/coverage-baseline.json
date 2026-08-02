@@ -1,0 +1,755 @@
+{
+  "metrics": {
+    "generated_on": "2026-08-02",
+    "total_entries": 96,
+    "entries_per_section": {
+      "Data and Digital Objects": 19,
+      "Metadata and Semantics": 16,
+      "Identifiers and Discovery": 12,
+      "Workflows and Execution": 11,
+      "Instruments and Laboratories": 9,
+      "Provenance and Evidence": 7,
+      "Knowledge Systems and Publications": 5,
+      "Research Software and Environments": 5,
+      "Agents, Access, and Policy": 4,
+      "Foundations": 4,
+      "Validation and Conformance": 4
+    },
+    "domains_per_entry": {
+      "1": 28,
+      "2": 60,
+      "3": 2,
+      "4": 1,
+      "5": 4,
+      "6": 1
+    },
+    "entries_per_domain": {
+      "cross-domain": 24,
+      "computational-workflows": 18,
+      "life-sciences": 12,
+      "research-data": 12,
+      "genomics": 11,
+      "scholarly-communication": 9,
+      "provenance": 7,
+      "systems-biology": 6,
+      "computational-biology": 5,
+      "geospatial": 5,
+      "biosimulation": 4,
+      "computational-science": 4,
+      "environmental-science": 4,
+      "astronomy": 3,
+      "biomedical": 3,
+      "clinical-informatics": 3,
+      "laboratory-automation": 3,
+      "laboratory-data": 3,
+      "materials-science": 3,
+      "reproducibility": 3,
+      "research-software": 3,
+      "ai-agents": 2,
+      "analytical-chemistry": 2,
+      "data-governance": 2,
+      "digital-preservation": 2,
+      "laboratory-medicine": 2,
+      "neuroscience": 2,
+      "physics": 2,
+      "research-information": 2,
+      "semantic-web": 2,
+      "social-science": 2,
+      "analytical-instruments": 1,
+      "biodiversity": 1,
+      "bioimaging": 1,
+      "bioinformatics": 1,
+      "biotechnology": 1,
+      "chemistry": 1,
+      "climate-science": 1,
+      "clinical-laboratory": 1,
+      "earth-observation": 1,
+      "engineering": 1,
+      "european-research": 1,
+      "geosciences": 1,
+      "hpc": 1,
+      "knowledge-representation": 1,
+      "machine-learning": 1,
+      "research-objects": 1,
+      "sample-curation": 1,
+      "scientific-computing": 1,
+      "sensor-networks": 1
+    },
+    "domain_concentration": {
+      "entries_per_domain": {
+        "cross-domain": 24,
+        "computational-workflows": 18,
+        "life-sciences": 12,
+        "research-data": 12,
+        "genomics": 11,
+        "scholarly-communication": 9,
+        "provenance": 7,
+        "systems-biology": 6,
+        "computational-biology": 5,
+        "geospatial": 5,
+        "biosimulation": 4,
+        "computational-science": 4,
+        "environmental-science": 4,
+        "astronomy": 3,
+        "biomedical": 3,
+        "clinical-informatics": 3,
+        "laboratory-automation": 3,
+        "laboratory-data": 3,
+        "materials-science": 3,
+        "reproducibility": 3,
+        "research-software": 3,
+        "ai-agents": 2,
+        "analytical-chemistry": 2,
+        "data-governance": 2,
+        "digital-preservation": 2,
+        "laboratory-medicine": 2,
+        "neuroscience": 2,
+        "physics": 2,
+        "research-information": 2,
+        "semantic-web": 2,
+        "social-science": 2,
+        "analytical-instruments": 1,
+        "biodiversity": 1,
+        "bioimaging": 1,
+        "bioinformatics": 1,
+        "biotechnology": 1,
+        "chemistry": 1,
+        "climate-science": 1,
+        "clinical-laboratory": 1,
+        "earth-observation": 1,
+        "engineering": 1,
+        "european-research": 1,
+        "geosciences": 1,
+        "hpc": 1,
+        "knowledge-representation": 1,
+        "machine-learning": 1,
+        "research-objects": 1,
+        "sample-curation": 1,
+        "scientific-computing": 1,
+        "sensor-networks": 1
+      },
+      "scientific_domain_counts": {
+        "computational-workflows": 18,
+        "life-sciences": 12,
+        "research-data": 12,
+        "genomics": 11,
+        "scholarly-communication": 9,
+        "provenance": 7,
+        "systems-biology": 6,
+        "computational-biology": 5,
+        "geospatial": 5,
+        "biosimulation": 4,
+        "computational-science": 4,
+        "environmental-science": 4,
+        "astronomy": 3,
+        "biomedical": 3,
+        "clinical-informatics": 3,
+        "laboratory-automation": 3,
+        "laboratory-data": 3,
+        "materials-science": 3,
+        "reproducibility": 3,
+        "research-software": 3,
+        "ai-agents": 2,
+        "analytical-chemistry": 2,
+        "data-governance": 2,
+        "digital-preservation": 2,
+        "laboratory-medicine": 2,
+        "neuroscience": 2,
+        "physics": 2,
+        "research-information": 2,
+        "semantic-web": 2,
+        "social-science": 2,
+        "analytical-instruments": 1,
+        "biodiversity": 1,
+        "bioimaging": 1,
+        "bioinformatics": 1,
+        "biotechnology": 1,
+        "chemistry": 1,
+        "climate-science": 1,
+        "clinical-laboratory": 1,
+        "earth-observation": 1,
+        "engineering": 1,
+        "european-research": 1,
+        "geosciences": 1,
+        "hpc": 1,
+        "knowledge-representation": 1,
+        "machine-learning": 1,
+        "research-objects": 1,
+        "sample-curation": 1,
+        "scientific-computing": 1,
+        "sensor-networks": 1
+      },
+      "cross_domain_tagged_entries": 24,
+      "largest_scientific_domain": "computational-workflows",
+      "largest_scientific_domain_count": 18,
+      "largest_scientific_domain_share": 0.1875,
+      "largest_scientific_domain_share_percent": 18.75
+    },
+    "interoperability_layers": {
+      "Semantic": 67,
+      "Syntactic": 66,
+      "Operational": 53,
+      "Evidentiary": 27,
+      "Organizational": 7
+    },
+    "resource_kinds": {
+      "exchange-standard": 17,
+      "api-standard": 15,
+      "ontology-vocabulary": 12,
+      "metadata-standard": 9,
+      "packaging-format": 8,
+      "specification": 6,
+      "identifier-system": 5,
+      "conformance-artifact": 4,
+      "implementation": 4,
+      "link-protocol": 4,
+      "registry-catalog": 4,
+      "execution-service": 3,
+      "provenance-model": 3,
+      "workflow-language": 2
+    },
+    "maturity_states": {
+      "established": 58,
+      "maintained": 34,
+      "emerging": 4
+    },
+    "evidence_types": {
+      "normative-specification": 85,
+      "institutional-adoption": 58,
+      "reference-implementation": 37,
+      "independent-implementation": 29,
+      "interoperability-demonstration": 13,
+      "public-validator": 13,
+      "conformance-suite": 12,
+      "documented-tests": 8
+    },
+    "implementation_status": {
+      "reference-and-others": 78,
+      "multiple-independent": 11,
+      "single-known": 4,
+      "unknown": 2,
+      "not-applicable": 1
+    },
+    "conformance_status": {
+      "none-known": 68,
+      "public-validator": 14,
+      "public-suite": 13,
+      "documented-tests": 1
+    },
+    "stewardship_types": {
+      "community": 39,
+      "consortium": 24,
+      "standards-body": 19,
+      "institution": 9,
+      "foundation": 5
+    },
+    "review_schedule": {
+      "reviewed_on": {
+        "2026-08-01": 87,
+        "2026-08-02": 9
+      },
+      "review_due_on_values": [
+        "2027-01-31",
+        "2027-02-02",
+        "2027-08-01",
+        "2027-08-02"
+      ],
+      "upcoming_deadlines": [
+        {
+          "review_due_on": "2027-01-31",
+          "id": "autoprotocol",
+          "name": "Autoprotocol",
+          "section": "Instruments and Laboratories"
+        },
+        {
+          "review_due_on": "2027-01-31",
+          "id": "model-context-protocol-mcp",
+          "name": "Model Context Protocol (MCP)",
+          "section": "Agents, Access, and Policy"
+        },
+        {
+          "review_due_on": "2027-01-31",
+          "id": "tooluniverse",
+          "name": "ToolUniverse",
+          "section": "Agents, Access, and Policy"
+        },
+        {
+          "review_due_on": "2027-02-02",
+          "id": "brain-imaging-data-structure-bids",
+          "name": "Brain Imaging Data Structure (BIDS)",
+          "section": "Data and Digital Objects"
+        },
+        {
+          "review_due_on": "2027-02-02",
+          "id": "neurodata-without-borders-nwb",
+          "name": "Neurodata Without Borders (NWB)",
+          "section": "Data and Digital Objects"
+        },
+        {
+          "review_due_on": "2027-02-02",
+          "id": "ome-ngff",
+          "name": "OME-NGFF / OME-Zarr",
+          "section": "Data and Digital Objects"
+        },
+        {
+          "review_due_on": "2027-08-01",
+          "id": "allotrope-data-format",
+          "name": "Allotrope Data Format",
+          "section": "Instruments and Laboratories"
+        },
+        {
+          "review_due_on": "2027-08-01",
+          "id": "analytical-information-markup-language-animl",
+          "name": "Analytical Information Markup Language (AnIML)",
+          "section": "Instruments and Laboratories"
+        },
+        {
+          "review_due_on": "2027-08-01",
+          "id": "apptainer-singularity-image-format",
+          "name": "Apptainer / Singularity Image Format",
+          "section": "Research Software and Environments"
+        },
+        {
+          "review_due_on": "2027-08-01",
+          "id": "bagit",
+          "name": "BagIt",
+          "section": "Data and Digital Objects"
+        },
+        {
+          "review_due_on": "2027-08-01",
+          "id": "biocompute-objects",
+          "name": "BioCompute Objects",
+          "section": "Provenance and Evidence"
+        },
+        {
+          "review_due_on": "2027-08-01",
+          "id": "bioschemas",
+          "name": "Bioschemas",
+          "section": "Metadata and Semantics"
+        },
+        {
+          "review_due_on": "2027-08-01",
+          "id": "biosimulators-test-suite",
+          "name": "BioSimulators Test Suite",
+          "section": "Validation and Conformance"
+        },
+        {
+          "review_due_on": "2027-08-01",
+          "id": "citation-file-format-citation-cff",
+          "name": "Citation File Format (CITATION.cff)",
+          "section": "Research Software and Environments"
+        },
+        {
+          "review_due_on": "2027-08-01",
+          "id": "climate-and-forecast-cf-metadata-conventions",
+          "name": "Climate and Forecast (CF) Metadata Conventions",
+          "section": "Metadata and Semantics"
+        },
+        {
+          "review_due_on": "2027-08-01",
+          "id": "codemeta",
+          "name": "CodeMeta",
+          "section": "Research Software and Environments"
+        },
+        {
+          "review_due_on": "2027-08-01",
+          "id": "combine-omex-archive",
+          "name": "COMBINE/OMEX Archive",
+          "section": "Data and Digital Objects"
+        },
+        {
+          "review_due_on": "2027-08-01",
+          "id": "common-workflow-language-cwl",
+          "name": "Common Workflow Language (CWL)",
+          "section": "Workflows and Execution"
+        },
+        {
+          "review_due_on": "2027-08-01",
+          "id": "croissant",
+          "name": "Croissant",
+          "section": "Metadata and Semantics"
+        },
+        {
+          "review_due_on": "2027-08-01",
+          "id": "cross-domain-interoperability-framework-cdif",
+          "name": "Cross-Domain Interoperability Framework (CDIF)",
+          "section": "Foundations"
+        }
+      ],
+      "overdue_count": 0,
+      "overdue_entries": []
+    },
+    "implementations_per_family": {
+      "astronomy-data-services": {
+        "member_count": 3,
+        "member_ids": [
+          "flexible-image-transport-system-fits",
+          "ivoa-votable",
+          "ivoa-table-access-protocol-tap"
+        ],
+        "implementation_count": 0,
+        "implementations": [],
+        "role_buckets": {
+          "conformance": {
+            "count": 0,
+            "members": []
+          },
+          "multi-engine-service": {
+            "count": 0,
+            "members": []
+          },
+          "runner": {
+            "count": 0,
+            "members": []
+          }
+        },
+        "unknown_member_ids": []
+      },
+      "bioimaging-data": {
+        "member_count": 3,
+        "member_ids": [
+          "ome-ngff",
+          "dicomweb",
+          "nexus"
+        ],
+        "implementation_count": 0,
+        "implementations": [],
+        "role_buckets": {
+          "conformance": {
+            "count": 0,
+            "members": []
+          },
+          "multi-engine-service": {
+            "count": 0,
+            "members": []
+          },
+          "runner": {
+            "count": 0,
+            "members": []
+          }
+        },
+        "unknown_member_ids": []
+      },
+      "combine-modeling": {
+        "member_count": 6,
+        "member_ids": [
+          "systems-biology-markup-language-sbml",
+          "simulation-experiment-description-markup-language-sed-ml",
+          "cellml",
+          "combine-omex-archive",
+          "sbml-test-suite",
+          "biosimulators-test-suite"
+        ],
+        "implementation_count": 2,
+        "implementations": [
+          {
+            "id": "sbml-test-suite",
+            "name": "SBML Test Suite",
+            "resource_kind": "conformance-artifact"
+          },
+          {
+            "id": "biosimulators-test-suite",
+            "name": "BioSimulators Test Suite",
+            "resource_kind": "conformance-artifact"
+          }
+        ],
+        "role_buckets": {
+          "conformance": {
+            "count": 2,
+            "members": [
+              {
+                "id": "sbml-test-suite",
+                "name": "SBML Test Suite",
+                "resource_kind": "conformance-artifact"
+              },
+              {
+                "id": "biosimulators-test-suite",
+                "name": "BioSimulators Test Suite",
+                "resource_kind": "conformance-artifact"
+              }
+            ]
+          },
+          "multi-engine-service": {
+            "count": 0,
+            "members": []
+          },
+          "runner": {
+            "count": 0,
+            "members": []
+          }
+        },
+        "unknown_member_ids": []
+      },
+      "cwl": {
+        "member_count": 6,
+        "member_ids": [
+          "common-workflow-language-cwl",
+          "cwltool",
+          "cwl-conformance-tests",
+          "cwlprov",
+          "lifemonitor",
+          "sapporo"
+        ],
+        "implementation_count": 4,
+        "implementations": [
+          {
+            "id": "cwltool",
+            "name": "cwltool",
+            "resource_kind": "implementation"
+          },
+          {
+            "id": "cwl-conformance-tests",
+            "name": "CWL Conformance Tests",
+            "resource_kind": "conformance-artifact"
+          },
+          {
+            "id": "lifemonitor",
+            "name": "LifeMonitor",
+            "resource_kind": "execution-service"
+          },
+          {
+            "id": "sapporo",
+            "name": "Sapporo",
+            "resource_kind": "implementation"
+          }
+        ],
+        "role_buckets": {
+          "conformance": {
+            "count": 1,
+            "members": [
+              {
+                "id": "cwl-conformance-tests",
+                "name": "CWL Conformance Tests",
+                "resource_kind": "conformance-artifact"
+              }
+            ]
+          },
+          "multi-engine-service": {
+            "count": 1,
+            "members": [
+              {
+                "id": "lifemonitor",
+                "name": "LifeMonitor",
+                "resource_kind": "execution-service"
+              }
+            ]
+          },
+          "runner": {
+            "count": 2,
+            "members": [
+              {
+                "id": "cwltool",
+                "name": "cwltool",
+                "resource_kind": "implementation"
+              },
+              {
+                "id": "sapporo",
+                "name": "Sapporo",
+                "resource_kind": "implementation"
+              }
+            ]
+          }
+        },
+        "unknown_member_ids": []
+      },
+      "ga4gh-apis": {
+        "member_count": 6,
+        "member_ids": [
+          "ga4gh-data-repository-service-drs",
+          "ga4gh-service-info",
+          "ga4gh-service-registry",
+          "ga4gh-task-execution-service-tes",
+          "ga4gh-tool-registry-service-trs",
+          "ga4gh-workflow-execution-service-wes"
+        ],
+        "implementation_count": 0,
+        "implementations": [],
+        "role_buckets": {
+          "conformance": {
+            "count": 0,
+            "members": []
+          },
+          "multi-engine-service": {
+            "count": 0,
+            "members": []
+          },
+          "runner": {
+            "count": 0,
+            "members": []
+          }
+        },
+        "unknown_member_ids": []
+      },
+      "neuroscience-data": {
+        "member_count": 4,
+        "member_ids": [
+          "brain-imaging-data-structure-bids",
+          "neurodata-without-borders-nwb",
+          "dicomweb",
+          "nexus"
+        ],
+        "implementation_count": 0,
+        "implementations": [],
+        "role_buckets": {
+          "conformance": {
+            "count": 0,
+            "members": []
+          },
+          "multi-engine-service": {
+            "count": 0,
+            "members": []
+          },
+          "runner": {
+            "count": 0,
+            "members": []
+          }
+        },
+        "unknown_member_ids": []
+      },
+      "ro-crate": {
+        "member_count": 6,
+        "member_ids": [
+          "ro-crate",
+          "workflow-ro-crate",
+          "workflow-run-ro-crate",
+          "workflow-testing-ro-crate",
+          "ro-crate-validator",
+          "runcrate"
+        ],
+        "implementation_count": 2,
+        "implementations": [
+          {
+            "id": "ro-crate-validator",
+            "name": "RO-Crate Validator",
+            "resource_kind": "conformance-artifact"
+          },
+          {
+            "id": "runcrate",
+            "name": "runcrate",
+            "resource_kind": "implementation"
+          }
+        ],
+        "role_buckets": {
+          "conformance": {
+            "count": 1,
+            "members": [
+              {
+                "id": "ro-crate-validator",
+                "name": "RO-Crate Validator",
+                "resource_kind": "conformance-artifact"
+              }
+            ]
+          },
+          "multi-engine-service": {
+            "count": 0,
+            "members": []
+          },
+          "runner": {
+            "count": 1,
+            "members": [
+              {
+                "id": "runcrate",
+                "name": "runcrate",
+                "resource_kind": "implementation"
+              }
+            ]
+          }
+        },
+        "unknown_member_ids": []
+      },
+      "w3c-prov-family": {
+        "member_count": 4,
+        "member_ids": [
+          "w3c-prov",
+          "cwlprov",
+          "p-plan",
+          "iso-23494-2-2026-common-provenance-model"
+        ],
+        "implementation_count": 0,
+        "implementations": [],
+        "role_buckets": {
+          "conformance": {
+            "count": 0,
+            "members": []
+          },
+          "multi-engine-service": {
+            "count": 0,
+            "members": []
+          },
+          "runner": {
+            "count": 0,
+            "members": []
+          }
+        },
+        "unknown_member_ids": []
+      },
+      "wdl": {
+        "member_count": 2,
+        "member_ids": [
+          "workflow-description-language-wdl",
+          "wfexs-backend"
+        ],
+        "implementation_count": 1,
+        "implementations": [
+          {
+            "id": "wfexs-backend",
+            "name": "WfExS-backend",
+            "resource_kind": "execution-service"
+          }
+        ],
+        "role_buckets": {
+          "conformance": {
+            "count": 0,
+            "members": []
+          },
+          "multi-engine-service": {
+            "count": 1,
+            "members": [
+              {
+                "id": "wfexs-backend",
+                "name": "WfExS-backend",
+                "resource_kind": "execution-service"
+              }
+            ]
+          },
+          "runner": {
+            "count": 0,
+            "members": []
+          }
+        },
+        "unknown_member_ids": []
+      }
+    },
+    "general_purpose_substrates": {
+      "configured_substrate_ids": [
+        "bagit",
+        "p-plan",
+        "qudt",
+        "schema-org",
+        "simple-knowledge-organization-system-skos",
+        "unified-code-for-units-of-measure-ucum",
+        "w3c-data-catalog-vocabulary-dcat",
+        "w3c-prov"
+      ],
+      "present_substrate_ids": [
+        "bagit",
+        "p-plan",
+        "qudt",
+        "schema-org",
+        "simple-knowledge-organization-system-skos",
+        "unified-code-for-units-of-measure-ucum",
+        "w3c-data-catalog-vocabulary-dcat",
+        "w3c-prov"
+      ],
+      "missing_configured_ids": [],
+      "count": 8,
+      "total_entries": 96,
+      "share": 0.0833,
+      "share_percent": 8.33
+    },
+    "isolated_entries": [],
+    "evidence_without_source": []
+  },
+  "warnings": [],
+  "integrity_failures": []
+}
