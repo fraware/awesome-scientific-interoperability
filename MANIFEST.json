@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-02",
-  "file_count": 172,
+  "file_count": 175,
   "files": [
     {
       "path": ".github/CODEOWNERS",
@@ -44,13 +44,18 @@
     },
     {
       "path": ".github/workflows/quality.yml",
-      "sha256": "7eb5381036fc134c5a2614c2657fb75dc86dd4127f03605105d674853e8cc316",
-      "bytes": 1744
+      "sha256": "af68fefca7259860e410d9126925285851a66dda9ca89711a40f0dd47a4127ce",
+      "bytes": 1934
+    },
+    {
+      "path": ".github/workflows/release-exports.yml",
+      "sha256": "3dc86cbe9ba802b3322ed960eee01558482f185fb6590c4facdaea50e08185b3",
+      "bytes": 819
     },
     {
       "path": ".gitignore",
-      "sha256": "b97cdcd795c2606a974d33f1d429f4cfb99a32da4d10206a45fcc363ae6be10d",
-      "bytes": 69
+      "sha256": "b99de2f6b9ac6edc59aad9145e8d8e26671242aa82d17b26ed4361cfca104644",
+      "bytes": 75
     },
     {
       "path": "CITATION.cff",
@@ -59,8 +64,8 @@
     },
     {
       "path": "Makefile",
-      "sha256": "de27e9673f50301f99c4487efa31494d12f24c8e2a7813f28a9031ae3ec175f7",
-      "bytes": 1413
+      "sha256": "9adb53dc9694942156f29ac8bec92ba9b3fa5cb4e35e64ea2c02e712e7adffb4",
+      "bytes": 1463
     },
     {
       "path": "README.md",
@@ -439,8 +444,8 @@
     },
     {
       "path": "docs/querying-the-catalog.md",
-      "sha256": "090a395d54e5bc003ca590dd2dcc34c2e0b501ce2897a38b22ee2e17b20adb0c",
-      "bytes": 7980
+      "sha256": "61cb10e9646e7da51136df0a4bad3e81940c4ee5f513db4f043df694eaecf737",
+      "bytes": 9436
     },
     {
       "path": "docs/review-checklist.md",
@@ -601,6 +606,11 @@
       "path": "scripts/check_review_freshness.py",
       "sha256": "bdc1c52d8de29b0231ff166309bb3d01fa6d9dda113deb9e831600795c87318a",
       "bytes": 2941
+    },
+    {
+      "path": "scripts/export_catalog.py",
+      "sha256": "ed61561087f8190e301faa63992db2291f5e57ec1bb8c553c8fd42935fe5c72c",
+      "bytes": 16571
     },
     {
       "path": "scripts/generate_manifest.py",
@@ -816,6 +826,11 @@
       "path": "tests/test_expansion_candidates.py",
       "sha256": "5dc9aa321925e620776a47ac979fba9b1160189df18e2b5f4b28462821fdd401",
       "bytes": 2396
+    },
+    {
+      "path": "tests/test_export_catalog.py",
+      "sha256": "70b066389e1fda9cf47a3988a38d8a082e34df9d36e0913b3d16436342337ce1",
+      "bytes": 6935
     },
     {
       "path": "tests/test_fail_closed_depth.py",
