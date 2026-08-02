@@ -38,8 +38,8 @@ class WatchlistTests(unittest.TestCase):
         import validate_catalog
 
         catalog, _, readme = validate_catalog.load()
-        self.assertEqual(len(catalog["resources"]), 109)
-        self.assertEqual(len(validate_catalog.readme_entries(readme)), 109)
+        self.assertEqual(len(catalog["resources"]), 113)
+        self.assertEqual(len(validate_catalog.readme_entries(readme)), 113)
 
     def test_no_catalog_id_overlap(self) -> None:
         watchlist = module.load_watchlist()

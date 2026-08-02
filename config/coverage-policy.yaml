@@ -74,10 +74,12 @@ standard_families:
   - flexible-image-transport-system-fits
   - ivoa-votable
   - ivoa-table-access-protocol-tap
+  - ivoa-observation-core-obscore
   bioimaging-data:
   - ome-ngff
   - dicomweb
   - nexus
+  - ome-data-model-and-ome-tiff
   ga4gh-genomic-data:
   - ga4gh-variation-representation-specification-vrs
   - ga4gh-phenopackets
@@ -114,3 +116,9 @@ standard_families:
   computational-neuroscience-model-exchange:
   - neuroml
   - sonata
+  astronomy-application-messaging:
+  - ivoa-simple-application-messaging-protocol-samp
+  astronomy-data-formats:
+  - flexible-image-transport-system-fits
+  - advanced-scientific-data-format-asdf
+  - ivoa-votable

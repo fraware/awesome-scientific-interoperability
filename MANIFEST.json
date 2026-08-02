@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-02",
-  "file_count": 171,
+  "file_count": 172,
   "files": [
     {
       "path": ".github/CODEOWNERS",
@@ -64,8 +64,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "7f8dc800e64b94dbca0e4fdb084ae675fca7d6c866d451eee787dbca1e3eff66",
-      "bytes": 26098
+      "sha256": "9166b885848982206050d10db38f955df96f4cf65d7dfdf0eefc93a4e0d734c6",
+      "bytes": 27125
     },
     {
       "path": "archive.md",
@@ -74,8 +74,8 @@
     },
     {
       "path": "catalog/candidates/bioimaging-astronomy.yaml",
-      "sha256": "16304fa2e98976dae9f32f949cbbd0545748324498a2228bc1252e00da91d9f4",
-      "bytes": 3499
+      "sha256": "452d2c764a5104bd2a4f9a3508ddd75e83dacf62d535cfad49f9a5984cb647dc",
+      "bytes": 43
     },
     {
       "path": "catalog/candidates/chemistry-proteomics.yaml",
@@ -114,18 +114,18 @@
     },
     {
       "path": "catalog/expansion-candidates.yaml",
-      "sha256": "898861719326d9d1857fb9a8abe3b07e8c3a4c711b63160f18f548faf9192e9a",
-      "bytes": 1397
+      "sha256": "13d3f6800df17690c10a5bf7a01be3c750a934fcb05b16ef4db225fcc52bb037",
+      "bytes": 1548
     },
     {
       "path": "catalog/implementations.yaml",
-      "sha256": "da1820d2a64748265deada134d2cc8c02a4ba2b048b7b19845feb49379222971",
-      "bytes": 30780
+      "sha256": "5a602af558c8b2ce2b09457347f4e8edad6ec1508f8782272fc5477e7bf61ac3",
+      "bytes": 35638
     },
     {
       "path": "catalog/references.yaml",
-      "sha256": "37bd4d83669a76152d031a424a9ca9924f492b22c47a6351b0dd9f29cdaa68ac",
-      "bytes": 90286
+      "sha256": "cb3f269b16eda987532b5492d04403ab72c570a2084f14737a7756bfb095815d",
+      "bytes": 94802
     },
     {
       "path": "catalog/resources.yaml",
@@ -139,8 +139,8 @@
     },
     {
       "path": "catalog/resources/data-and-digital-objects.yaml",
-      "sha256": "44328beefa1e004c76985e69f16d636c5f93d5575e88e6e62219814c6c64b58c",
-      "bytes": 55468
+      "sha256": "78b548e383d070b88dc3fc13753a19b816f6eda2209e1f00c79ceb8b3acfd839",
+      "bytes": 60440
     },
     {
       "path": "catalog/resources/foundations.yaml",
@@ -164,8 +164,8 @@
     },
     {
       "path": "catalog/resources/metadata-and-semantics.yaml",
-      "sha256": "b46684d864c4c0bb02cb0997afbb3e8fbf2b141cf390550a0d4f75faf88587d5",
-      "bytes": 40545
+      "sha256": "2dd9eeba95d9fa42a242a157bf34d98e6d14893b860f0ba0ebf04a95c1e821bc",
+      "bytes": 42966
     },
     {
       "path": "catalog/resources/provenance-and-evidence.yaml",
@@ -184,13 +184,13 @@
     },
     {
       "path": "catalog/resources/workflows-and-execution.yaml",
-      "sha256": "88f521dd4781ae81ce73fd402f641c66276ef41b614ef9d499c2ded5f6b5f491",
-      "bytes": 23530
+      "sha256": "8acb017231fcb7b0a9a6d45c0f93425b1413ffcbf706c2c460bc016d4a82a800",
+      "bytes": 25992
     },
     {
       "path": "catalog/stewards.yaml",
-      "sha256": "7ea355b64d85c079495b5f5cd19cc3eb80095e31774fc41cd8b04f79ee15ba54",
-      "bytes": 16521
+      "sha256": "1ab02866b0ea5c1a50ac0243e8f0203c99e2eb21665f787dd2b73ab783e63736",
+      "bytes": 16804
     },
     {
       "path": "catalog/watchlist.yaml",
@@ -199,8 +199,8 @@
     },
     {
       "path": "changelog.md",
-      "sha256": "10f3df8397abc237ed9d78a04e825da3e4dc4bbf6c472c65f356f6824bec9602",
-      "bytes": 8029
+      "sha256": "e550c7fc60a99417be9bcebad65f084455e9a9bd9ceef17ee6ce52369537f0c0",
+      "bytes": 8452
     },
     {
       "path": "code-of-conduct.md",
@@ -214,8 +214,8 @@
     },
     {
       "path": "config/coverage-policy.yaml",
-      "sha256": "b0faf392c7a9ad69fee0813f9d8726cfb3a1122348483e8bf58c357d1254bb9a",
-      "bytes": 2772
+      "sha256": "7dab4bc08e1b7790a1cf39869989e191e0323636761c1b44c2904d477f4f6efe",
+      "bytes": 3050
     },
     {
       "path": "config/link-policy.yaml",
@@ -229,8 +229,8 @@
     },
     {
       "path": "docs/candidate-reviews/comprehensive-expansion-2026.md",
-      "sha256": "badab5751669bac47d0ece2f67ffccd196915897b44f9e891cd1d797f3913835",
-      "bytes": 15865
+      "sha256": "b67a9027a7c09f4456f03d28371f594c37f6fc84f0c46192d43d5f01350afc33",
+      "bytes": 16542
     },
     {
       "path": "docs/candidate-reviews/experimental-and-biomedical.md",
@@ -274,22 +274,22 @@
     },
     {
       "path": "docs/coverage-baseline.json",
-      "sha256": "0ee580fcba3c6cba87e9490db1c6d565505a5aba7b7f03ae3140eb92b05499c1",
-      "bytes": 26058
+      "sha256": "e956381ee8da7bc86d84394da2dd56f4b6c424bc41a1d180164892867e930043",
+      "bytes": 27442
     },
     {
       "path": "docs/coverage-baseline.md",
-      "sha256": "1e38d21b0ece89a517c104a1d67877569ee4914dddf57aecb2205ff647ff0a47",
+      "sha256": "2687878b40ea4f448dd691953e2f460effca5aa5de72f047f2755c0316cab084",
       "bytes": 303
     },
     {
       "path": "docs/data-quality-baseline.json",
-      "sha256": "c97e11af6850afa539b620efc2be42e90eec7e4d5731bcbcd3eb08a8e0100886",
+      "sha256": "ac82258efd887da0f1a0b72f93da0471fa7e51e54da4da5dc847fee2ba754a3f",
       "bytes": 266
     },
     {
       "path": "docs/data-quality-baseline.md",
-      "sha256": "8678426a39d67458a3ce1df02343c986f53389ec8d5677ce7213ee169ad49059",
+      "sha256": "1d4d1bd7c4f0fa19fe935a67f29ce1ebe6068eed32b907ca090228fe159218be",
       "bytes": 2297
     },
     {
@@ -299,13 +299,13 @@
     },
     {
       "path": "docs/decision-guides/astronomy-data-and-services.md",
-      "sha256": "97238506a4b5fea36da04eb400f6637d038f12aa0f17ab47da7503616f4ae5a2",
-      "bytes": 3947
+      "sha256": "060d142d6b6437367bd0c52f68ac84dc3abc08d58067540f7495fb3d0805b136",
+      "bytes": 4334
     },
     {
       "path": "docs/decision-guides/bioimaging-data.md",
-      "sha256": "7f13fe451f9e1eedc059d389622f1c48a0e028f793bafca3cdb67d8bed4b9e6b",
-      "bytes": 3570
+      "sha256": "b424b056f744b2b2de839640c0c6aa12a0da577fab1648c4ee9c8583c267c647",
+      "bytes": 3718
     },
     {
       "path": "docs/decision-guides/clinical-research-data-models.md",
@@ -409,13 +409,13 @@
     },
     {
       "path": "docs/human-review-log.md",
-      "sha256": "41d12f4a0b75d9d7afec3fd4143b1634c300cc2b1941e61ab14975cbe83856cc",
-      "bytes": 13744
+      "sha256": "522edc5f64eb5d450649bc3e4d283d69de217a606792e9644b7fa39cb59adc0d",
+      "bytes": 14277
     },
     {
       "path": "docs/integration-problems.md",
-      "sha256": "5d46125cc86b44aa0f411b3746ee471a020aee65c43a932931cd77e7a3cd9fec",
-      "bytes": 49095
+      "sha256": "0f3727298e1c27b98efa68969ab45c4606dada995004e699b9da3852ec1fa9fa",
+      "bytes": 48942
     },
     {
       "path": "docs/link-audit-baseline.md",
@@ -434,7 +434,7 @@
     },
     {
       "path": "docs/publishing.md",
-      "sha256": "29f5aa0a797b1f61c6773dde0f43005fe91a074c3f65039746351022556f5cb1",
+      "sha256": "518582dc6246b7c697e237eedee2306d5807eee3ceaf99874e212bc873cec840",
       "bytes": 7511
     },
     {
@@ -534,8 +534,8 @@
     },
     {
       "path": "docs/validation-report.md",
-      "sha256": "60753e1a9c49ba34d6f6e4dee93f6bede6cc5d1e368d5739142488cbcca1d3d4",
-      "bytes": 5182
+      "sha256": "bdc29434d4730d2270a769a360a1077a5940d35f112b9ca44e58cf4c4e39d762",
+      "bytes": 5413
     },
     {
       "path": "docs/watchlist.md",
@@ -788,8 +788,13 @@
       "bytes": 2471
     },
     {
+      "path": "tests/test_batch_g_astronomy_bioimaging.py",
+      "sha256": "5091b572c8bdd1c79d7daa74c77e968bc51d3e7dde57d849490edbc7c66931e4",
+      "bytes": 2813
+    },
+    {
       "path": "tests/test_catalog.py",
-      "sha256": "4288965f8fabd03025c5ea6fb90064fffe3971dd392b889c3a62d5c21855a733",
+      "sha256": "1a3593f174bc005310de945757a04fb8d61e8f81b1809da6859a4998982253f7",
       "bytes": 5991
     },
     {
@@ -819,8 +824,8 @@
     },
     {
       "path": "tests/test_independence.py",
-      "sha256": "9f1cf5e24f2429dae065cfd3ed86d7c75e50bd503f6a036b3a6e67f3e9deb563",
-      "bytes": 9337
+      "sha256": "2876188fdecff85cfc6d4f4ad4b2628b7c9dec9689b353936c234c70caa8bbcf",
+      "bytes": 9453
     },
     {
       "path": "tests/test_links.py",
@@ -844,7 +849,7 @@
     },
     {
       "path": "tests/test_review_provenance.py",
-      "sha256": "410f94d5136498b7d5b55887e711ad0a80bdde0b46c2208cb549a27669ba2ca2",
+      "sha256": "67728ee5b00451e05244ab5dd3e96e3cc9bf158075d6f625e9a101c5cd41e660",
       "bytes": 1869
     },
     {
@@ -854,7 +859,7 @@
     },
     {
       "path": "tests/test_watchlist.py",
-      "sha256": "402dfa9fcb764c7a60b584ff265a305d531b40bf5e00b7aa6d31ccd511a9f927",
+      "sha256": "906ce7c15883b00f793da7ad5c63f67e35c040a5cd879c5ca0e7f1ec0ba7007f",
       "bytes": 3934
     }
   ]

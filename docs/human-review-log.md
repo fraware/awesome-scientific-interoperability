@@ -87,7 +87,7 @@ Exclusions and watchlist placements are recorded in the candidate review files a
 
 ## Current corpus status (2026-08-02)
 
-- **Main-list entries:** 109 on the stacked Issue #44 Batch F candidate tree (README and catalog parity enforced by CI).
+- **Main-list entries:** 113 on the stacked Issue #44 Batch G candidate tree (README and catalog parity enforced by CI).
 - **Section review files:** 11 under `docs/reviews/`.
 - **Gap review files:** 4 under `docs/candidate-reviews/`.
 - **Review freshness:** Enforced by `scripts/check_review_freshness.py` in CI.
@@ -189,3 +189,12 @@ Review artifacts:
 - **Review status:** AI-assisted author review only; independent human maintainer review remains required before merge.
 - **Evidence boundary:** NeuroML carries direct public schema-validation evidence. SONATA remains `none-known` for public format-wide conformance despite documented implementations and interoperability demonstrations.
 - **Dependency:** Stacked on draft PR #51; review and merge only after Batches A through E are approved in order.
+
+
+## Batch G author review — 2026-08-02
+
+- **Scope:** OME-TIFF, ObsCore/ObsTAP, SAMP, and ASDF.
+- **Reviewer identity:** `ai-assisted-catalog-maintainer`.
+- **Review type:** author-level primary-source review.
+- **Evidence boundary:** implementation independence, validator scope, extension availability, and family roles were reviewed conservatively.
+- **Merge gate:** human maintainer approval remains required for specification versions, operator identities, conformance classifications, typed relations, and decision guidance.

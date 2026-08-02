@@ -815,3 +815,118 @@ implementations:
   evidence_ref_ids:
   - workflowhub-eu-developer-trs
   - ga4gh-org-product-tool-registry-service-trs
+- id: bioformats-ome-tiff
+  name: OME Bio-Formats OME-TIFF support
+  url: https://github.com/ome/bioformats
+  implements_resource_id: ome-data-model-and-ome-tiff
+  operator_steward_id: open-microscopy-environment
+  relationship: official-implementation
+  supported_versions:
+  - OME schema 2016-06 and legacy schema versions
+  evidence_ref_ids:
+  - github-com-ome-bioformats
+  - docs-openmicroscopy-bio-formats-ome-tiff
+  notes: Official OME ecosystem reader, writer, and conversion implementation.
+- id: bioio-ome-tiff
+  name: BioIO OME-TIFF
+  url: https://github.com/bioio-devs/bioio-ome-tiff
+  implements_resource_id: ome-data-model-and-ome-tiff
+  operator_steward_id: bioio-project
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-bioio-devs-bioio-ome-tiff
+  - docs-openmicroscopy-ome-model-6-2-2-ome-tiff-specification
+  notes: Separately operated Python reader and writer for OME-TIFF.
+- id: bioformats-ome-xml-validator
+  name: Bio-Formats OME-XML validation
+  url: https://docs.openmicroscopy.org/bio-formats/latest/users/comlinetools/xml-validation.html
+  implements_resource_id: ome-data-model-and-ome-tiff
+  operator_steward_id: open-microscopy-environment
+  relationship: validator
+  evidence_ref_ids:
+  - docs-openmicroscopy-bio-formats-xml-validation
+  - docs-openmicroscopy-ome-model-6-2-2-ome-tiff-specification
+  notes: Validates OME-XML extracted from OME-TIFF; it does not validate every TIFF layout or pixel-semantic
+    constraint.
+- id: dachs-obscore
+  name: GAVO DaCHS ObsCore publishing
+  url: https://dachs-doc.readthedocs.io/tutorial.html
+  implements_resource_id: ivoa-observation-core-obscore
+  operator_steward_id: german-astrophysical-virtual-observatory
+  relationship: independent-implementation
+  supported_versions:
+  - ObsCore 1.1 / ObsTAP
+  evidence_ref_ids:
+  - dachs-doc-readthedocs-io-obscore-tutorial
+  - ivoa-net-documents-obscore
+  notes: Separately operated publishing stack that materializes the ivoa.obscore view through TAP.
+- id: cadc-obscore
+  name: CADC ObsCore service
+  url: https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/doc/tap/
+  implements_resource_id: ivoa-observation-core-obscore
+  operator_steward_id: canadian-astronomy-data-centre
+  relationship: independent-implementation
+  supported_versions:
+  - ObsCore 1.1 / ObsTAP
+  evidence_ref_ids:
+  - cadc-ccda-tap-obscore
+  - ivoa-net-documents-obscore
+  notes: Independently operated observation-discovery service exposing ObsCore through CADC TAP.
+- id: stilts-obstap-validator
+  name: STILTS ObsTAP validation stage
+  url: https://www.star.bris.ac.uk/~mbt/stilts/sun256/ObsTapStage.html
+  implements_resource_id: ivoa-observation-core-obscore
+  operator_steward_id: starlink-java-project
+  relationship: validator
+  evidence_ref_ids:
+  - star-bris-ac-uk-stilts-obstapstage
+  - ivoa-net-documents-obscore
+  notes: Checks declared ObsCore table metadata and representative content; it is not scientific certification
+    of archive metadata.
+- id: pyvo-samp
+  name: PyVO SAMP
+  url: https://pyvo.readthedocs.io/en/latest/samp/index.html
+  implements_resource_id: ivoa-simple-application-messaging-protocol-samp
+  operator_steward_id: astropy-project
+  relationship: independent-implementation
+  supported_versions:
+  - SAMP 1.3 Standard and Web profiles
+  evidence_ref_ids:
+  - pyvo-readthedocs-io-samp
+  - ivoa-net-documents-samp
+  notes: Current Python hub and client implementation under the PyVO project.
+- id: jsamp
+  name: JSAMP
+  url: https://www.star.bris.ac.uk/~mbt/jsamp/
+  implements_resource_id: ivoa-simple-application-messaging-protocol-samp
+  operator_steward_id: starlink-java-project
+  relationship: independent-implementation
+  supported_versions:
+  - SAMP 1.3
+  evidence_ref_ids:
+  - star-bris-ac-uk-jsamp
+  - ivoa-net-documents-samp
+  notes: Separately operated Java toolkit used by astronomy desktop applications including TOPCAT.
+- id: asdf-python
+  name: ASDF Python implementation
+  url: https://github.com/asdf-format/asdf
+  implements_resource_id: advanced-scientific-data-format-asdf
+  operator_steward_id: asdf-format-project
+  relationship: official-implementation
+  supported_versions:
+  - ASDF Standard 1.x
+  evidence_ref_ids:
+  - github-com-asdf-format-asdf
+  - asdf-standard-readthedocs-io-latest
+  notes: Official Python implementation of the ASDF specification and extension system.
+- id: asdf-python-validator
+  name: asdftool validate
+  url: https://github.com/asdf-format/asdf/blob/main/asdf/commands/validate.py
+  implements_resource_id: advanced-scientific-data-format-asdf
+  operator_steward_id: asdf-format-project
+  relationship: validator
+  evidence_ref_ids:
+  - github-com-asdf-format-asdf-validate-command
+  - github-com-asdf-format-asdf
+  notes: Validates ASDF files against core and installed extension schemas; successful validation depends
+    on extension availability.

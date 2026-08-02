@@ -706,3 +706,66 @@ resources:
     reviewed_on: '2026-08-02'
     conflict_disclosure: none identified; human maintainer approval required before merge
     decision_record: issue-44-batch-c
+- id: ivoa-simple-application-messaging-protocol-samp
+  name: IVOA Simple Application Messaging Protocol (SAMP)
+  url: https://www.ivoa.net/documents/SAMP/
+  section: Workflows and Execution
+  resource_kind: api-standard
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - Astronomy desktop applications
+  - browser clients
+  - message hubs
+  - data-analysis tools
+  mechanism: Hub-mediated Standard and Web profiles with typed messages for data and command exchange
+  summary: IVOA hub-based messaging protocol that lets independent desktop and browser astronomy applications
+    discover one another and exchange data references, selections, coordinates, and commands.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  steward_id: international-virtual-observatory-alliance
+  scientific_domains:
+  - astronomy
+  integration_functions:
+  - scientific-computing
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: ivoa-net-documents-samp
+    role: technical-definition
+  - ref_id: github-com-ivoa-std-samp
+    role: stewardship
+  - ref_id: pyvo-readthedocs-io-samp
+    role: implementation
+  - ref_id: star-bris-ac-uk-jsamp
+    role: implementation
+  relations:
+  - type: complements
+    resource_id: ivoa-votable
+  - type: complements
+    resource_id: flexible-image-transport-system-fits
+  - type: complements
+    resource_id: ivoa-table-access-protocol-tap
+  - type: complements
+    resource_id: advanced-scientific-data-format-asdf
+  decision_basis: Rare mature application-interoperability protocol that lets specialized astronomy tools
+    compose interactively without becoming one monolithic application.
+  boundary_note: SAMP exchanges messages and references between running applications; it does not define
+    durable file semantics, remote archive queries, authorization, workflow provenance, or scientific
+    correctness. No public protocol-wide conformance suite was identified.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-02-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-g

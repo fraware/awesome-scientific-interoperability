@@ -1,6 +1,6 @@
 # Validation Report
 
-**State:** Stacked Issue #44 Batch F candidate tree
+**State:** Stacked Issue #44 Batch G candidate tree
 **Validation date:** 2026-08-02
 **Catalog version:** 2.2.0
 **Human review status:** Pending maintainer approval before merge
@@ -9,19 +9,19 @@
 
 | Item | Count |
 |---|---:|
-| Main-list catalog entries | 109 |
-| README list entries (parity) | 109 |
+| Main-list catalog entries | 113 |
+| README list entries (parity) | 113 |
 | Section-scoped resource shards | 11 |
-| Technical references | 450 |
-| Steward identities | 121 |
-| Implementation/validator identities | 73 |
+| Technical references | 470 |
+| Steward identities | 123 |
+| Implementation/validator identities | 83 |
 | Watchlist items | 16 |
-| Expansion candidates remaining | 39 |
+| Expansion candidates remaining | 35 |
 | Decision guides (excluding index) | 19 |
 | Integration problems | 21 |
-| Deterministic unit tests | 129 |
+| Deterministic unit tests | 135 |
 
-## Proposed Batch A through Batch F additions
+## Proposed Batch A through Batch G additions
 
 ### Batch A — systems biology and neuroscience
 
@@ -63,13 +63,20 @@
 - NeuroML
 - SONATA
 
+### Batch G — astronomy and bioimaging boundary mechanisms
+
+- OME Data Model and OME-TIFF
+- IVOA Observation Core (ObsCore/ObsTAP)
+- IVOA Simple Application Messaging Protocol (SAMP)
+- Advanced Scientific Data Format (ASDF)
+
 The records include claim-specific references, normalized stewards, implementation identities, typed relations, controlled taxonomy, review provenance, direct decision paths, and conservative conformance classifications. Strong implementation-independence claims require separately operated implementation identities. Public-suite, public-validator, and documented-test claims require direct artifacts.
 
 ## Completed local checks
 
-- JSON Schema and semantic validation passed for all 109 resources.
-- README/catalog name, URL, section, and summary parity passed at 109/109.
-- All 450 references, 121 stewards, and 73 implementation identities resolve without unknown IDs.
+- JSON Schema and semantic validation passed for all 113 resources.
+- README/catalog name, URL, section, and summary parity passed at 113/113.
+- All 470 references, 123 stewards, and 83 implementation identities resolve without unknown IDs.
 - Independent-implementation checks passed using distinct operator identities outside each specification steward.
 - Public-suite, public-validator, and documented-tests claims resolve to direct artifact-class evidence.
 - Typed relations resolve without isolates or self-links.
@@ -78,9 +85,9 @@ The records include claim-specific references, normalized stewards, implementati
 - Review freshness passes as of 2026-08-02.
 - Data-quality audit reports zero integrity errors and zero evidence-depth queues.
 - Coverage audit reports no concentration or integrity warnings.
-- Offline syntax validation covers 483 unique HTTPS URLs across canonical, watchlist, steward, implementation, and evidence references.
-- All 129 deterministic unit tests pass.
-- Manifest verified for 171 tracked release files.
+- Offline syntax validation covers 505 unique HTTPS URLs across canonical, watchlist, steward, implementation, and evidence references.
+- All 135 deterministic unit tests pass.
+- Manifest verified for 172 tracked release files.
 
 ## Network link audit status
 
@@ -92,7 +99,7 @@ The last completed network audit remains the historical v1.1.0 run:
 - **Blocking failures:** 0
 - **Classifications:** 78 ok, 7 redirected, 2 access-policy
 
-Batches A through F add new URLs. This report does not claim that those URLs have passed a live network audit. The Links workflow must run on the exact final mergeable head, and its JSON and Markdown artifacts must be retained before the next release.
+Batches A through G add new URLs. This report does not claim that those URLs have passed a live network audit. The Links workflow must run on the exact final mergeable head, and its JSON and Markdown artifacts must be retained before the next release.
 
 ## Quality workflow alignment
 
@@ -110,7 +117,7 @@ Batches A through F add new URLs. This report does not claim that those URLs hav
 
 ## Review constraint
 
-The twenty proposed Batch A through Batch E records were prepared through AI-assisted primary-source review and carry author-level review provenance. They must not be represented as independently reviewed. Human maintainers must inspect the primary sources, implementation operators, evidence classifications, family boundaries, typed relations, and decision-guide recommendations before approval.
+The twenty-six proposed Batch A through Batch G records were prepared through AI-assisted primary-source review and carry author-level review provenance. They must not be represented as independently reviewed. Human maintainers must inspect the primary sources, implementation operators, evidence classifications, family boundaries, typed relations, and decision-guide recommendations before approval.
 
 ## Release constraints
 

@@ -1202,3 +1202,67 @@ resources:
     reviewed_on: '2026-08-02'
     conflict_disclosure: none identified; human maintainer approval required before merge
     decision_record: issue-44-batch-d
+- id: ivoa-observation-core-obscore
+  name: IVOA Observation Core (ObsCore/ObsTAP)
+  url: https://ivoa.net/documents/ObsCore/
+  section: Metadata and Semantics
+  resource_kind: metadata-standard
+  interoperability_layers:
+  - Semantic
+  - Operational
+  connects:
+  - Astronomy archives
+  - TAP services
+  - observation-discovery clients
+  - Virtual Observatory registries
+  mechanism: Core observation metadata model and required ivoa.obscore table profile exposed through TAP
+  summary: IVOA core observation metadata model and ObsTAP profile for issuing uniform discovery queries
+    across independently operated astronomy archives.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  - public-validator
+  implementation_status: multiple-independent
+  conformance_status: public-validator
+  steward_id: international-virtual-observatory-alliance
+  scientific_domains:
+  - astronomy
+  integration_functions:
+  - research-data
+  - knowledge-representation
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: ivoa-net-documents-obscore
+    role: technical-definition
+  - ref_id: ivoa-net-about
+    role: stewardship
+  - ref_id: dachs-doc-readthedocs-io-obscore-tutorial
+    role: implementation
+  - ref_id: cadc-ccda-tap-obscore
+    role: implementation
+  - ref_id: star-bris-ac-uk-stilts-obstapstage
+    role: conformance
+  relations:
+  - type: profile-of
+    resource_id: ivoa-table-access-protocol-tap
+  - type: serializes
+    resource_id: ivoa-votable
+  - type: complements
+    resource_id: flexible-image-transport-system-fits
+  decision_basis: Canonical interoperable observation-discovery profile for posing one query across multiple
+    astronomy TAP services without learning each archive schema.
+  boundary_note: ObsCore standardizes a minimal discovery view, not complete archive metadata or data
+    access. Validator success covers declared table metadata and sampled values, not scientific completeness,
+    calibration quality, or every accepted erratum and extension.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-02-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-g

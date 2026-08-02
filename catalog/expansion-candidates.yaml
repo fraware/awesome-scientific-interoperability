@@ -28,6 +28,10 @@ completed_candidate_ids:
 - data-package-standard
 - neuroml
 - sonata
+- advanced-scientific-data-format-asdf
+- ivoa-observation-core-obscore
+- ivoa-simple-application-messaging-protocol-samp
+- ome-data-model-and-ome-tiff
 candidate_files:
 - candidates/systems-biology-neuroscience.yaml
 - candidates/bioimaging-astronomy.yaml
