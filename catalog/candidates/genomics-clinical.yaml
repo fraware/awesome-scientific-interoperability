@@ -1,22 +1,5 @@
 theme: genomics-clinical
 candidates:
-- id: cdisc-operational-data-model-odm
-  name: CDISC Operational Data Model (ODM)
-  official_url: https://www.cdisc.org/standards/data-exchange/odm-xml/odm-v2-0
-  candidate_section: Data and Digital Objects
-  coverage_family: clinical-study-data-exchange
-  priority: P0
-  disposition: admission-pr
-  mechanism: Vendor-neutral model for exchanging and archiving clinical study data, metadata, administrative records,
-    references, and audit information.
-  why_distinct: Provides a formal cross-system study-operation and archival contract distinct from healthcare APIs
-    and observational common data models.
-  primary_sources:
-  - https://www.cdisc.org/standards/data-exchange/odm-xml/odm-v2-0
-  - https://www.cdisc.org/standards/data-exchange
-  - https://github.com/cdisc-org
-  evidence_notes: CDISC ODM v2.0 with XML schema and standard extensions used across clinical study systems.
-  next_step: Admission PR with OMOP and FHIR boundary analysis; note access constraints for some specification files.
 - id: ga4gh-beacon-v2
   name: GA4GH Beacon v2
   official_url: https://www.ga4gh.org/product/beacon-api/

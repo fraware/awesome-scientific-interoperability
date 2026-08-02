@@ -998,3 +998,207 @@ resources:
     reviewed_on: '2026-08-02'
     conflict_disclosure: none identified; human maintainer approval required before merge
     decision_record: issue-44-batch-c
+- id: minimum-information-about-any-sequence-mixs
+  name: Minimum Information about any (X) Sequence (MIxS)
+  url: https://genomicsstandardsconsortium.github.io/mixs/
+  section: Metadata and Semantics
+  resource_kind: metadata-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Organizational
+  connects:
+  - Sequencing projects
+  - sample repositories
+  - environmental surveys
+  - sequence archives
+  mechanism: Versioned LinkML checklists, environmental extensions, controlled terms, and generated schemas for
+    contextual sequence and sample metadata
+  summary: Versioned checklists and environmental extensions for exchanging contextual metadata about sequenced
+    samples, collection environments, and processing methods.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - documented-tests
+  implementation_status: single-known
+  conformance_status: documented-tests
+  steward_id: genomic-standards-consortium
+  scientific_domains:
+  - genomics
+  - environmental-science
+  - bioinformatics
+  integration_functions:
+  - research-data
+  - sample-curation
+  - knowledge-representation
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: genomicsstandardsconsortium-github-mixs-docs
+    role: technical-definition
+  - ref_id: github-com-genomicsstandardsconsortium-mixs
+    role: implementation
+  - ref_id: github-com-genomicsstandardsconsortium-mixs-tests
+    role: conformance
+  - ref_id: gensc-org-root
+    role: stewardship
+  relations:
+  - type: complements
+    resource_id: igsn-id
+  - type: complements
+    resource_id: isa-json
+  - type: complements
+    resource_id: darwin-core
+  - type: complements
+    resource_id: ga4gh-phenopackets
+  decision_basis: Strongest maintained contextual-metadata contract for connecting sequence records with samples,
+    environments, and processing context.
+  boundary_note: MIxS describes sequence-associated sample context; it does not replace persistent sample identifiers,
+    general experiment models, or biodiversity occurrence vocabularies.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-d
+- id: ecological-metadata-language-eml
+  name: Ecological Metadata Language (EML)
+  url: https://eml.ecoinformatics.org/
+  section: Metadata and Semantics
+  resource_kind: metadata-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  connects:
+  - Ecological datasets
+  - repositories
+  - data tables
+  - research methods
+  mechanism: Modular XML schemas and document-wide validation rules for dataset identity, coverage, methods, provenance,
+    entities, attributes, and distribution metadata
+  summary: Community-maintained XML metadata standard for exchanging ecological dataset descriptions, methods, coverage,
+    provenance, table structures, and distributions.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - public-validator
+  - institutional-adoption
+  implementation_status: reference-and-others
+  conformance_status: public-validator
+  steward_id: ecological-metadata-language-community
+  scientific_domains:
+  - environmental-science
+  - biodiversity
+  integration_functions:
+  - research-data
+  - provenance
+  - digital-preservation
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: eml-ecoinformatics-org-root
+    role: technical-definition
+  - ref_id: eml-ecoinformatics-org-schema
+    role: technical-definition
+  - ref_id: eml-ecoinformatics-org-validation
+    role: conformance
+  - ref_id: github-com-nceas-eml
+    role: implementation
+  - ref_id: docs-ropensci-org-eml
+    role: implementation
+  - ref_id: docs-ropensci-org-emld-eml-validate
+    role: conformance
+  relations:
+  - type: complements
+    resource_id: darwin-core
+  - type: complements
+    resource_id: w3c-data-catalog-vocabulary-dcat
+  - type: complements
+    resource_id: ro-crate
+  decision_basis: Mature domain metadata contract for preserving the structure, methods, coverage, and provenance
+    needed to interpret ecological datasets.
+  boundary_note: EML describes datasets and methods; Darwin Core focuses on biodiversity records, DCAT on catalog
+    federation, and RO-Crate on contextual packaging.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-d
+- id: omop-common-data-model
+  name: OMOP Common Data Model
+  url: https://ohdsi.github.io/CommonDataModel/
+  section: Metadata and Semantics
+  resource_kind: metadata-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Organizational
+  connects:
+  - Observational health databases
+  - ETL pipelines
+  - federated studies
+  - analytics tools
+  mechanism: Versioned relational schema, standardized vocabularies, conventions, generated DDL, and quality checks
+    for harmonized longitudinal health data
+  summary: Shared relational model and vocabularies for harmonizing longitudinal observational health data across
+    institutions and federated analytical studies.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - institutional-adoption
+  - public-validator
+  implementation_status: reference-and-others
+  conformance_status: public-validator
+  steward_id: ohdsi
+  scientific_domains:
+  - clinical-informatics
+  - biomedical
+  integration_functions:
+  - research-data
+  - knowledge-representation
+  - data-governance
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
+  source_refs:
+  - ref_id: ohdsi-common-data-model
+    role: technical-definition
+  - ref_id: github-com-ohdsi-common-data-model
+    role: implementation
+  - ref_id: ohdsi-data-quality-dashboard
+    role: conformance
+  - ref_id: ohdsi-data-quality-dashboard-cdmfield
+    role: conformance
+  - ref_id: ohdsi-org-root
+    role: stewardship
+  relations:
+  - type: complements
+    resource_id: hl7-fhir
+  - type: complements
+    resource_id: cdisc-operational-data-model-odm
+  - type: complements
+    resource_id: ga4gh-phenopackets
+  decision_basis: Strongest widely deployed common-data-model pattern for distributed observational health research
+    and reusable analytical methods.
+  boundary_note: OMOP harmonizes source data into an analytical model; FHIR and ODM exchange operational records
+    and study structures instead of defining the same analytical representation.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-d

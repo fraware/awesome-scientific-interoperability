@@ -1147,3 +1147,139 @@ resources:
     reviewed_on: '2026-08-02'
     conflict_disclosure: none identified; human maintainer approval required before merge
     decision_record: issue-44-batch-b
+- id: hupo-psi-mzml
+  name: HUPO-PSI mzML
+  url: https://www.psidev.info/mzML
+  section: Data and Digital Objects
+  resource_kind: exchange-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  connects:
+  - Mass spectrometers
+  - vendor converters
+  - analysis software
+  - proteomics repositories
+  mechanism: Controlled-vocabulary-backed XML schema for spectra, chromatograms, binary arrays, instrument configuration,
+    acquisition, and processing metadata
+  summary: HUPO-PSI XML standard for exchanging mass-spectrometry spectra, chromatograms, binary arrays, instrument
+    settings, acquisition context, and processing metadata.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  - public-validator
+  implementation_status: multiple-independent
+  conformance_status: public-validator
+  steward_id: hupo-proteomics-standards-initiative
+  scientific_domains:
+  - analytical-chemistry
+  - life-sciences
+  - bioinformatics
+  integration_functions:
+  - laboratory-data
+  - research-data
+  infrastructure_contexts:
+  - analytical-instruments
+  artifact_classes: []
+  source_refs:
+  - ref_id: psidev-info-mzml
+    role: technical-definition
+  - ref_id: github-com-hupo-psi-mzml
+    role: technical-definition
+  - ref_id: github-com-hupo-psi-psi-ms-cv
+    role: technical-definition
+  - ref_id: proteowizard-sourceforge-mzml
+    role: implementation
+  - ref_id: openms-mzmlfile
+    role: implementation
+  - ref_id: pymzml-readthedocs
+    role: implementation
+  - ref_id: openms-mzmlvalidator
+    role: conformance
+  - ref_id: psidev-info-root
+    role: stewardship
+  relations:
+  - type: complements
+    resource_id: analytical-information-markup-language-animl
+  - type: complements
+    resource_id: allotrope-data-format
+  decision_basis: Dominant open exchange contract for mass-spectrometry primary data with controlled semantics,
+    independent software support, and direct semantic validation.
+  boundary_note: mzML focuses on mass-spectrometry data; AnIML and Allotrope cover broader analytical domains, and
+    downstream identification formats remain separate PSI family decisions.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-d
+- id: cdisc-operational-data-model-odm
+  name: CDISC Operational Data Model (ODM)
+  url: https://www.cdisc.org/standards/data-exchange/odm-xml/odm-v2-0
+  section: Data and Digital Objects
+  resource_kind: exchange-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  - Organizational
+  connects:
+  - Clinical study systems
+  - electronic data capture platforms
+  - archives
+  - submission pipelines
+  mechanism: Vendor-neutral study data and metadata model with audit, administrative, reference, query, and extension
+    structures serializable as XML, JSON, or other media types
+  summary: Vendor-neutral model for exchanging and archiving clinical study data, metadata, administrative records,
+    reference information, audit trails, and operational structures.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  implementation_status: single-known
+  conformance_status: none-known
+  steward_id: cdisc
+  scientific_domains:
+  - clinical-informatics
+  - biomedical
+  integration_functions:
+  - research-data
+  - data-governance
+  - digital-preservation
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: cdisc-odm-v2-0
+    role: technical-definition
+  - ref_id: cdisc-data-exchange
+    role: stewardship
+  - ref_id: cdisc-odm-linkml
+    role: implementation
+  - ref_id: cdisc-odm-implementation
+    role: technical-definition
+  - ref_id: cdisc-org-root
+    role: stewardship
+  relations:
+  - type: complements
+    resource_id: hl7-fhir
+  - type: complements
+    resource_id: omop-common-data-model
+  decision_basis: Authoritative cross-system study-operation and archival contract for clinical research data and
+    metadata.
+  boundary_note: ODM exchanges study structures and operational records; OMOP supports observational analytics,
+    FHIR supports broader healthcare exchange, and deployed tools may implement earlier ODM versions.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-d

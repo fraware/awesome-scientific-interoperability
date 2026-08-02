@@ -10,13 +10,13 @@ The expansion registry is machine-readable under `catalog/expansion-candidates.y
 
 The review contains:
 
-- **48 unresolved candidates**;
-- **48 distinct unresolved interoperability families**;
-- **7 P0 admission candidates**;
+- **43 unresolved candidates**;
+- **43 distinct unresolved interoperability families**;
+- **2 P0 admission candidates**;
 - **26 P1 boundary-review candidates**;
 - **15 P2 candidates**;
-- **7 `admission-pr`**, **28 `boundary-review`**, and **13 `watchlist`** unresolved dispositions.
-- **13 completed candidate IDs** tracked against the original 61-resource research program.
+- **2 `admission-pr`**, **28 `boundary-review`**, and **13 `watchlist`** unresolved dispositions.
+- **18 completed candidate IDs** tracked against the original 61-resource research program.
 
 Comprehensiveness here means systematic coverage of consequential interoperability mechanisms. It does not mean listing every scientific format, software package, ontology, or implementation.
 
@@ -80,24 +80,19 @@ Beacon v2, the HTS file-format family, Crypt4GH, and RNAget remain boundary or w
 
 ### Ecology, environment, and agriculture
 
-The current list includes Darwin Core but lacks ecology dataset metadata and contextual sequence metadata.
-
-P0 candidates:
-
-- **Ecological Metadata Language (EML)** — dataset methods, coverage, provenance, tables, and distribution metadata;
-- **MIxS** — contextual metadata for sequenced samples and environmental packages.
+Batch D proposes EML and MIxS as complementary mechanisms for ecology dataset metadata and contextual sequence metadata.
 
 MIAPPE and BrAPI form a coherent plant-science pair but need an adoption and overlap review. GeoPackage, GeoParquet, SensorML, WaterML, OGC API Records, OGC API EDR, and GeoSciML are retained as boundary or watchlist candidates under an explicit OGC family policy.
 
 ### Chemistry, proteomics, and analytical instruments
 
-HUPO-PSI mzML is the strongest missing analytical-data exchange standard. It connects instrument output, spectra, chromatograms, metadata, controlled vocabularies, repositories, and analysis tools. It provides decision value beyond the broader AnIML and Allotrope entries.
+Batch D proposes HUPO-PSI mzML as the mass-spectrometry primary-data exchange standard, with AnIML and Allotrope retained as broader analytical-data comparisons.
 
 mzIdentML, mzTab, nmrML, and CML remain boundary candidates. The catalog should represent the PSI ecosystem by functional role and avoid admitting every related format without a concrete integration problem.
 
 ### Clinical and observational research
 
-FHIR covers healthcare resource exchange, but two different research problems remain missing:
+Batch D proposes two complementary clinical-research mechanisms beyond FHIR:
 
 - **CDISC ODM** — clinical study operational-data and metadata exchange and archival;
 - **OMOP Common Data Model** — harmonization of longitudinal observational health data for federated analysis.
@@ -283,3 +278,7 @@ Boundary outcomes retained for later adjudication:
 - RNAget remains a transcriptomics-access adoption decision.
 
 The Batch C records remain AI-assisted author review pending human maintainer approval.
+
+## Batch D implementation status
+
+The stacked Issue #44 Batch D candidate tree proposes admission of MIxS, EML, HUPO-PSI mzML, OMOP Common Data Model, and CDISC ODM. The five IDs are removed from unresolved candidate shards and recorded in `completed_candidate_ids`; the conservation invariant remains `unresolved candidates + completed candidate IDs = 61`. Human maintainer review remains required.

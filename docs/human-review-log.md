@@ -87,7 +87,7 @@ Exclusions and watchlist placements are recorded in the candidate review files a
 
 ## Current corpus status (2026-08-02)
 
-- **Main-list entries:** 100 on the stacked Issue #44 Batch C candidate tree (README and catalog parity enforced by CI).
+- **Main-list entries:** 105 on the stacked Issue #44 Batch D candidate tree (README and catalog parity enforced by CI).
 - **Section review files:** 11 under `docs/reviews/`.
 - **Gap review files:** 4 under `docs/candidate-reviews/`.
 - **Review freshness:** Enforced by `scripts/check_review_freshness.py` in CI.
@@ -155,3 +155,17 @@ Review artifacts:
 - [Metadata and Semantics](reviews/metadata-and-semantics.md)
 - [Workflows and Execution](reviews/workflows-and-execution.md)
 - [Genomic representation and access decision guide](decision-guides/genomic-representation-and-access.md)
+
+## Issue #44 Batch D — pending human maintainer review (2026-08-02)
+
+**Scope:** Proposed admission of MIxS, EML, HUPO-PSI mzML, OMOP Common Data Model, and CDISC ODM on top of Batches A through C.
+
+Evidence was classified through AI-assisted primary-source review. The records remain `review_type: author`; no independent human review is claimed. Human review must check version scope, implementation-operator separation, validator boundaries, ecology and PSI family granularity, clinical-model distinctions, typed relations, and decision-guide recommendations.
+
+Review artifacts:
+
+- [Metadata and Semantics](reviews/metadata-and-semantics.md)
+- [Data and Digital Objects](reviews/data-and-digital-objects.md)
+- [Ecology and sequence-context guide](decision-guides/ecology-and-sequence-context-metadata.md)
+- [Mass-spectrometry guide](decision-guides/mass-spectrometry-data.md)
+- [Clinical research data models guide](decision-guides/clinical-research-data-models.md)

@@ -69,6 +69,10 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 - [GA4GH Variation Representation Specification (VRS)](https://vrs.ga4gh.org/en/stable/) - Versioned schemas and algorithms for representing, normalizing, identifying, and exchanging genomic variation across independent systems.
 - [GA4GH Phenopackets](https://www.ga4gh.org/product/phenopackets/) - Machine-readable schema for exchanging patient and sample phenotypes, diseases, biosamples, pedigrees, measurements, and genomic interpretations.
 
+- [Minimum Information about any (X) Sequence (MIxS)](https://genomicsstandardsconsortium.github.io/mixs/) - Versioned checklists and environmental extensions for exchanging contextual metadata about sequenced samples, collection environments, and processing methods.
+- [Ecological Metadata Language (EML)](https://eml.ecoinformatics.org/) - Community-maintained XML metadata standard for exchanging ecological dataset descriptions, methods, coverage, provenance, table structures, and distributions.
+- [OMOP Common Data Model](https://ohdsi.github.io/CommonDataModel/) - Shared relational model and vocabularies for harmonizing longitudinal observational health data across institutions and federated analytical studies.
+
 ## Data and Digital Objects
 
 - [OGC API - Coverages](https://ogcapi.ogc.org/coverages/) - REST API for discovering, querying, and retrieving raster coverages and data cubes; connects geospatial services, clients, and analysis pipelines.
@@ -91,6 +95,9 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 - [CellML](https://www.cellml.org/specifications/cellml_2.0/) - XML and MathML-based standard for exchanging modular mathematical models with explicit components, variables, units, imports, resets, and reusable model composition.
 - [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/en/stable/) - Community specification for organizing and describing neuroimaging, electrophysiology, microscopy, behavioral, and derivative datasets through standardized paths and sidecar metadata.
 - [Neurodata Without Borders (NWB)](https://nwb.org/tools/core/nwb-schema/) - Extensible schema and HDF5-based standard for exchanging neurophysiology acquisition, processing, analysis, behavioral, and experimental metadata across tools and archives.
+
+- [HUPO-PSI mzML](https://www.psidev.info/mzML) - HUPO-PSI XML standard for exchanging mass-spectrometry spectra, chromatograms, binary arrays, instrument settings, acquisition context, and processing metadata.
+- [CDISC Operational Data Model (ODM)](https://www.cdisc.org/standards/data-exchange/odm-xml/odm-v2-0) - Vendor-neutral model for exchanging and archiving clinical study data, metadata, administrative records, reference information, audit trails, and operational structures.
 
 ## Research Software and Environments
 

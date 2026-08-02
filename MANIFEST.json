@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-02",
-  "file_count": 163,
+  "file_count": 167,
   "files": [
     {
       "path": ".github/CODEOWNERS",
@@ -64,8 +64,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "d90934481cbe213e47bd1d8e174ac0ed47cd76d68042b8b9e3fab5ccb8788c59",
-      "bytes": 24054
+      "sha256": "183c8acf7535500bbcf0f7efd3c320152b360b12fb340df7eebf195e4ba50f6c",
+      "bytes": 25264
     },
     {
       "path": "archive.md",
@@ -79,23 +79,23 @@
     },
     {
       "path": "catalog/candidates/chemistry-proteomics.yaml",
-      "sha256": "5201f9d86e35fd78932dfdc99f373d0960f0c9ae438fe1018821e6f7c7559f9a",
-      "bytes": 5708
+      "sha256": "d14a595f24dcb8ca1e08263da27c950b1e415300f0b7b8e6e18474b07c9d37d8",
+      "bytes": 4839
     },
     {
       "path": "catalog/candidates/cross-domain-and-emerging.yaml",
-      "sha256": "860c257a62423571a2e2f7ed60a9f8c502a0271806f1e80844b79c27fc053488",
-      "bytes": 4746
+      "sha256": "c00a2b5025dc39174f853c05a7ef050b5f5438c15e707375c758f1d7e0f84988",
+      "bytes": 3846
     },
     {
       "path": "catalog/candidates/ecology-agriculture.yaml",
-      "sha256": "1c77ba45c4e3c667c828633627cbc472f14ec45f30e3a494ec4f67b7889d78b5",
-      "bytes": 3273
+      "sha256": "93674f47fd6805d3f022c5c608cf34992b5657eb9327d36fcd542ca93bd02935",
+      "bytes": 1553
     },
     {
       "path": "catalog/candidates/genomics-clinical.yaml",
-      "sha256": "294764a5d237dab5887ae436ffa0c57637a619f5be0d2e2d0f3315e1949d6475",
-      "bytes": 5756
+      "sha256": "4cc2cb57b9ea7a6b4a959c80d366ba48e6482da34f9b96f170d82242dce0dd87",
+      "bytes": 4748
     },
     {
       "path": "catalog/candidates/geospatial-environmental.yaml",
@@ -114,18 +114,18 @@
     },
     {
       "path": "catalog/expansion-candidates.yaml",
-      "sha256": "71e75b549fc3823b56d8a1c024972d593ac73853cf2cbf4d6569acc6dad384f1",
-      "bytes": 1164
+      "sha256": "60aeefb06a11f71bf25d34c7ccd4834facf3fd7127d33db656509d62876a61a2",
+      "bytes": 1321
     },
     {
       "path": "catalog/implementations.yaml",
-      "sha256": "91b9a8fcb5a9ac54908566f9e566eb2e38fcae8a9fdf1a9f8713ea7c4c5531bb",
-      "bytes": 21017
+      "sha256": "fa2cce01a514ef3e5b3073809decfa59664f759c786605788f51096ddfe46217",
+      "bytes": 25176
     },
     {
       "path": "catalog/references.yaml",
-      "sha256": "42224451a7a408a4bfd4e0c3713209833b0ecb53c34a7392494ac159d2c8b078",
-      "bytes": 77836
+      "sha256": "3a08336388712a23298e69e504fb4b1e79bc37644191f1e3da9e34a8b0f3a0a5",
+      "bytes": 83532
     },
     {
       "path": "catalog/resources.yaml",
@@ -139,8 +139,8 @@
     },
     {
       "path": "catalog/resources/data-and-digital-objects.yaml",
-      "sha256": "277e9e6cc87e0fa6f3e6ef740b437a0e52d4256f64abfef0fdc6ed3ee360b774",
-      "bytes": 39502
+      "sha256": "3493334ecc63100bc0c4f5acacb95b03bd21667d698bf98187931ed8ad557919",
+      "bytes": 44311
     },
     {
       "path": "catalog/resources/foundations.yaml",
@@ -164,8 +164,8 @@
     },
     {
       "path": "catalog/resources/metadata-and-semantics.yaml",
-      "sha256": "7a66c3b5ca034fa354874d229f408ebc47a04287454c6fffe42d772c36df3276",
-      "bytes": 33319
+      "sha256": "b46684d864c4c0bb02cb0997afbb3e8fbf2b141cf390550a0d4f75faf88587d5",
+      "bytes": 40545
     },
     {
       "path": "catalog/resources/provenance-and-evidence.yaml",
@@ -189,8 +189,8 @@
     },
     {
       "path": "catalog/stewards.yaml",
-      "sha256": "d1212683e9da7b88707d0f3b4f948cb919bcf2ec12f3e1db02000addfe078e56",
-      "bytes": 13643
+      "sha256": "4b8a99378efe5981ab9570ea21b89a20f80547cda5f6b9134653873f4a3316b8",
+      "bytes": 14855
     },
     {
       "path": "catalog/watchlist.yaml",
@@ -199,8 +199,8 @@
     },
     {
       "path": "changelog.md",
-      "sha256": "af780b93f4c325b62a48494f65b8aade19f6e5fc70017e65addf511ff1199f75",
-      "bytes": 5972
+      "sha256": "91aa19f485f2d037d4a11abc9676f4061f83d83fd706688ccde5c2577015a6ab",
+      "bytes": 6553
     },
     {
       "path": "code-of-conduct.md",
@@ -214,8 +214,8 @@
     },
     {
       "path": "config/coverage-policy.yaml",
-      "sha256": "3c405928900ab665d73844f4f1a55d15e0c19f44c0af557b08a30c2a01c3d576",
-      "bytes": 2139
+      "sha256": "66517029b16b1b6956b0cd454f4237993ec698b36b46d0afa3e4b76e97982464",
+      "bytes": 2500
     },
     {
       "path": "config/link-policy.yaml",
@@ -229,8 +229,8 @@
     },
     {
       "path": "docs/candidate-reviews/comprehensive-expansion-2026.md",
-      "sha256": "42e74bd2ab79ea54ec00a8731d34a714c3b7c960b1674cc9f9480e1d3e626cd8",
-      "bytes": 14539
+      "sha256": "c49feead67f2d2acf15429c7990883a4d8c8174c2aaa783e3d760b5c8d52131b",
+      "bytes": 14605
     },
     {
       "path": "docs/candidate-reviews/experimental-and-biomedical.md",
@@ -274,28 +274,28 @@
     },
     {
       "path": "docs/coverage-baseline.json",
-      "sha256": "0138f220ceffaaaf640ad4073b5164cf77e11c7e50c64ad9894e87667477084b",
-      "bytes": 21743
+      "sha256": "acd7a7b4e2f865b7c33a9334daa1ba381ab3b111fee65dead14f34460e3cfc25",
+      "bytes": 24292
     },
     {
       "path": "docs/coverage-baseline.md",
-      "sha256": "b99e4c52ebc18bb79ba91499293598c345eaa4e5d6b199c517346ef63ad69679",
+      "sha256": "7a58fd30c06803c0bdc9fca554ff9c2e0402a1c00d51474e95826abf83711242",
       "bytes": 303
     },
     {
       "path": "docs/data-quality-baseline.json",
-      "sha256": "7e99eb4fd1ac1c80e9b9a66831dee07bbd957b221f05da408a1e9296b7aefa6a",
+      "sha256": "364e7520ecdc892f3c2ce8f821c88c5477e7891f88ec591ec0d73c20175fa4ce",
       "bytes": 266
     },
     {
       "path": "docs/data-quality-baseline.md",
-      "sha256": "a84d33c24df5a020d45d4fa54156179ef9ad6aa078931e818346d108ed5694d1",
+      "sha256": "9b059520ce52f2183db0fe24ee3e3393b31f41675d0d6791d73fd43647759112",
       "bytes": 2297
     },
     {
       "path": "docs/decision-guides/README.md",
-      "sha256": "62ce9d76d0061ef5992a910ae01036f42d34ffb6a5059cf361af684d786929c2",
-      "bytes": 3104
+      "sha256": "b8b1734fb588f38c5e37c32534814b2581bd999329e7c5343f27b2bd27cf8b75",
+      "bytes": 3445
     },
     {
       "path": "docs/decision-guides/astronomy-data-and-services.md",
@@ -308,9 +308,19 @@
       "bytes": 3570
     },
     {
+      "path": "docs/decision-guides/clinical-research-data-models.md",
+      "sha256": "040036bb517ed998163146c4c42bf620e735b8b670e597430bfefff0d3b5faac",
+      "bytes": 2138
+    },
+    {
       "path": "docs/decision-guides/controlled-data-access.md",
       "sha256": "fbbbc64d8ed2b3a7e47213f984e0ba4db890ef94b3719a82268001b0ba8952d9",
       "bytes": 5189
+    },
+    {
+      "path": "docs/decision-guides/ecology-and-sequence-context-metadata.md",
+      "sha256": "3a12815aa398defa2417d9d456b84d860361ca5b9fbc39219fc1ec3ed6f6fa94",
+      "bytes": 2323
     },
     {
       "path": "docs/decision-guides/genomic-representation-and-access.md",
@@ -326,6 +336,11 @@
       "path": "docs/decision-guides/laboratory-interoperability.md",
       "sha256": "4f3b444deb8f76646810174dc5d3a22913a59e394f91cbe7cafd8259e4f7767d",
       "bytes": 6195
+    },
+    {
+      "path": "docs/decision-guides/mass-spectrometry-data.md",
+      "sha256": "bf57f153c376b1e1b091e1c575d3e5daeff12b394751f660292deeba6183ae5a",
+      "bytes": 1863
     },
     {
       "path": "docs/decision-guides/metadata-semantics-and-units.md",
@@ -384,17 +399,17 @@
     },
     {
       "path": "docs/human-review-log.md",
-      "sha256": "49d6cbacdb5b837a4e40f66b31f179ad6931dd5f7c2a8d6255fbdecc51791685",
-      "bytes": 11159
+      "sha256": "5e9344f2dee36745c3f296d99ebf8b32ae5947bc4e3e732bdd3b3578336b5dfd",
+      "bytes": 12130
     },
     {
       "path": "docs/integration-problems.md",
-      "sha256": "7f577a9f0fe550ba6a6ace67495d1ff67d9a5998ab9ebcb3b6869a24c93d2995",
-      "bytes": 44376
+      "sha256": "8383e5efc4125f95d2f35634e1ff140a09ca7fff1a9213a1335f03d0ebc148f2",
+      "bytes": 46023
     },
     {
       "path": "docs/link-audit-baseline.md",
-      "sha256": "9be998c476736b348763859e1f35af73aab123bbc2ce112aacc6c2cf2f629954",
+      "sha256": "c1ea368838f8a5959f2c001d67b04276503a9642f5578fb9a9b727d88939941f",
       "bytes": 4111
     },
     {
@@ -409,7 +424,7 @@
     },
     {
       "path": "docs/publishing.md",
-      "sha256": "8dec39ea50a54af9e4510b628920130b0c86d7140ab00b66429855337746cc5c",
+      "sha256": "023703b67b3ac8f23630c1aa3ca38d55407e6d44f8a33b441d34d1f0a94757cd",
       "bytes": 7511
     },
     {
@@ -439,8 +454,8 @@
     },
     {
       "path": "docs/reviews/data-and-digital-objects.md",
-      "sha256": "d052c717e57f8ea72573ef0a8575dc8ddc83b508c479512cae588b2b0d9d9171",
-      "bytes": 6003
+      "sha256": "2e14a7150a383383bbc6b39d6b454def5d3ce6f9e20efdddb7b0c67a97dee595",
+      "bytes": 6659
     },
     {
       "path": "docs/reviews/foundations.md",
@@ -469,8 +484,8 @@
     },
     {
       "path": "docs/reviews/metadata-and-semantics.md",
-      "sha256": "bd6d1f6cef4487399d925f55af8167e979da8ae0101d48a4e8a4b675543f6a2c",
-      "bytes": 4596
+      "sha256": "e00687b6d6faceb6da8961255040a2dc3a1ba26c325be7ec47154490025cce73",
+      "bytes": 5458
     },
     {
       "path": "docs/reviews/provenance-and-evidence.md",
@@ -509,8 +524,8 @@
     },
     {
       "path": "docs/validation-report.md",
-      "sha256": "ff63bdba870954fd5e50b1348617aaefae052eff1eb2bdd867b1a61784743c5d",
-      "bytes": 4797
+      "sha256": "0a38e4e81b8f0594005ade47ddda962dacdf3a38a0130725ac3ae56d22d05d47",
+      "bytes": 5030
     },
     {
       "path": "docs/watchlist.md",
@@ -619,8 +634,8 @@
     },
     {
       "path": "scripts/validate_problem_index.py",
-      "sha256": "1329a27ed7a3f296345979cef1f127e279db9c36b31c553dcb05f04a8eb98aac",
-      "bytes": 4402
+      "sha256": "0d002ac05bdbd93c26b1c0bd310797f30c59caeeeefbcb88b1264089a082f2cd",
+      "bytes": 4538
     },
     {
       "path": "scripts/validate_watchlist.py",
@@ -748,8 +763,13 @@
       "bytes": 1963
     },
     {
+      "path": "tests/test_batch_d_standards.py",
+      "sha256": "07e41eb6ae171269e4801e923c67e62f2435c07d096eacae48e007296bc3c7d4",
+      "bytes": 2217
+    },
+    {
       "path": "tests/test_catalog.py",
-      "sha256": "496cadb833343c6b4cb4acc150745b779606e325234d6888b4a757a13b842fd8",
+      "sha256": "60897289ec6f0be7da3ba0ac2b6ea18dc5a91b8c0670704c3f5b729fb9acad7b",
       "bytes": 5991
     },
     {
@@ -779,8 +799,8 @@
     },
     {
       "path": "tests/test_independence.py",
-      "sha256": "e9ca7bda49108b77296b73d34702dfba1b718da017cb59ec4e9bcaa7be5a7e43",
-      "bytes": 9304
+      "sha256": "9f1cf5e24f2429dae065cfd3ed86d7c75e50bd503f6a036b3a6e67f3e9deb563",
+      "bytes": 9337
     },
     {
       "path": "tests/test_links.py",
@@ -804,7 +824,7 @@
     },
     {
       "path": "tests/test_review_provenance.py",
-      "sha256": "ea149edb16824b5630428ab97f98f20e8d78b55f413d14f102818f94db28d084",
+      "sha256": "39cb2cdfb3aac03cd8f5468c0d389ad20dd15a2c67120d35884fc1c01f1afff1",
       "bytes": 1869
     },
     {
@@ -814,7 +834,7 @@
     },
     {
       "path": "tests/test_watchlist.py",
-      "sha256": "8e43663d9a635b9113915e018c92fba7bdebd2da0a4a950bc2a6376d112e140d",
+      "sha256": "82a8649e0cb0aca2f318209d1ea418f3adbe77b31f64e269d85e4f998f6da5c3",
       "bytes": 3934
     }
   ]

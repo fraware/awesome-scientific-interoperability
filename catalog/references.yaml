@@ -2347,3 +2347,171 @@ references:
   type: implementation-repository
   publisher: github.com/andrewyatz
   accessed_on: '2026-08-02'
+- id: genomicsstandardsconsortium-github-mixs-docs
+  title: MIxS specification documentation
+  url: https://genomicsstandardsconsortium.github.io/mixs/
+  type: specification
+  publisher: Genomic Standards Consortium
+  accessed_on: '2026-08-02'
+- id: github-com-genomicsstandardsconsortium-mixs
+  title: MIxS source and LinkML implementation
+  url: https://github.com/GenomicsStandardsConsortium/mixs
+  type: implementation-repository
+  publisher: GitHub
+  accessed_on: '2026-08-02'
+- id: github-com-genomicsstandardsconsortium-mixs-tests
+  title: MIxS valid and invalid example tests
+  url: https://github.com/GenomicsStandardsConsortium/mixs/tree/main/tests
+  type: conformance-suite
+  publisher: GitHub
+  accessed_on: '2026-08-02'
+- id: gensc-org-root
+  title: Genomic Standards Consortium
+  url: https://www.gensc.org/
+  type: governance-source
+  publisher: Genomic Standards Consortium
+  accessed_on: '2026-08-02'
+- id: eml-ecoinformatics-org-root
+  title: Ecological Metadata Language 2.2.0
+  url: https://eml.ecoinformatics.org/
+  type: specification
+  publisher: EML community
+  accessed_on: '2026-08-02'
+- id: eml-ecoinformatics-org-schema
+  title: EML XML Schema documentation
+  url: https://eml.ecoinformatics.org/eml-schema
+  type: normative-schema
+  publisher: EML community
+  accessed_on: '2026-08-02'
+- id: eml-ecoinformatics-org-validation
+  title: EML validation rules and validity parser
+  url: https://eml.ecoinformatics.org/validation-and-content-references
+  type: validator
+  publisher: EML community
+  accessed_on: '2026-08-02'
+- id: github-com-nceas-eml
+  title: EML specification source and validator
+  url: https://github.com/NCEAS/eml
+  type: implementation-repository
+  publisher: GitHub
+  accessed_on: '2026-08-02'
+- id: docs-ropensci-org-eml
+  title: rOpenSci EML package
+  url: https://docs.ropensci.org/EML/
+  type: implementation-repository
+  publisher: rOpenSci
+  accessed_on: '2026-08-02'
+- id: docs-ropensci-org-emld-eml-validate
+  title: rOpenSci emld EML validator
+  url: https://docs.ropensci.org/emld/reference/eml_validate.html
+  type: validator
+  publisher: rOpenSci
+  accessed_on: '2026-08-02'
+- id: psidev-info-mzml
+  title: HUPO-PSI mzML
+  url: https://www.psidev.info/mzML
+  type: specification
+  publisher: HUPO-PSI
+  accessed_on: '2026-08-02'
+- id: github-com-hupo-psi-mzml
+  title: HUPO-PSI mzML specification repository
+  url: https://github.com/HUPO-PSI/mzML
+  type: implementation-repository
+  publisher: GitHub
+  accessed_on: '2026-08-02'
+- id: github-com-hupo-psi-psi-ms-cv
+  title: PSI-MS controlled vocabulary
+  url: https://github.com/HUPO-PSI/psi-ms-CV
+  type: normative-schema
+  publisher: GitHub
+  accessed_on: '2026-08-02'
+- id: proteowizard-sourceforge-mzml
+  title: ProteoWizard mzML implementation
+  url: https://proteowizard.sourceforge.io/formats/mzml.html
+  type: implementation-repository
+  publisher: ProteoWizard
+  accessed_on: '2026-08-02'
+- id: openms-mzmlfile
+  title: OpenMS mzML reader and writer
+  url: https://openms.de/documentation/classOpenMS_1_1MzMLFile.html
+  type: implementation-repository
+  publisher: OpenMS
+  accessed_on: '2026-08-02'
+- id: openms-mzmlvalidator
+  title: OpenMS mzML semantic validator
+  url: https://openms.de/current_doxygen/html/classOpenMS_1_1Internal_1_1MzMLValidator.html
+  type: validator
+  publisher: OpenMS
+  accessed_on: '2026-08-02'
+- id: pymzml-readthedocs
+  title: pymzML reader documentation
+  url: https://pymzml.readthedocs.io/en/latest/
+  type: implementation-repository
+  publisher: pymzML
+  accessed_on: '2026-08-02'
+- id: psidev-info-root
+  title: Proteomics Standards Initiative
+  url: https://www.psidev.info/
+  type: governance-source
+  publisher: HUPO-PSI
+  accessed_on: '2026-08-02'
+- id: ohdsi-common-data-model
+  title: OMOP Common Data Model
+  url: https://ohdsi.github.io/CommonDataModel/
+  type: specification
+  publisher: OHDSI
+  accessed_on: '2026-08-02'
+- id: github-com-ohdsi-common-data-model
+  title: OMOP Common Data Model source and DDL package
+  url: https://github.com/OHDSI/CommonDataModel
+  type: implementation-repository
+  publisher: GitHub
+  accessed_on: '2026-08-02'
+- id: ohdsi-data-quality-dashboard
+  title: OMOP DataQualityDashboard
+  url: https://ohdsi.github.io/DataQualityDashboard/
+  type: validator
+  publisher: OHDSI
+  accessed_on: '2026-08-02'
+- id: ohdsi-data-quality-dashboard-cdmfield
+  title: OMOP CDM field conformance check
+  url: https://ohdsi.github.io/DataQualityDashboard/articles/checks/cdmField.html
+  type: validator
+  publisher: OHDSI
+  accessed_on: '2026-08-02'
+- id: ohdsi-org-root
+  title: Observational Health Data Sciences and Informatics
+  url: https://www.ohdsi.org/
+  type: governance-source
+  publisher: OHDSI
+  accessed_on: '2026-08-02'
+- id: cdisc-odm-v2-0
+  title: CDISC Operational Data Model v2.0
+  url: https://www.cdisc.org/standards/data-exchange/odm-xml/odm-v2-0
+  type: specification
+  publisher: CDISC
+  accessed_on: '2026-08-02'
+- id: cdisc-data-exchange
+  title: CDISC Data Exchange standards
+  url: https://www.cdisc.org/standards/data-exchange
+  type: governance-source
+  publisher: CDISC
+  accessed_on: '2026-08-02'
+- id: cdisc-odm-linkml
+  title: CDISC ODM v2.0 LinkML model
+  url: https://cdisc-org.github.io/DataExchange-ODM-LinkML/
+  type: implementation-repository
+  publisher: CDISC
+  accessed_on: '2026-08-02'
+- id: cdisc-odm-implementation
+  title: CDISC ODM implementation guidance
+  url: https://www.cdisc.org/odm-implementation
+  type: technical-documentation
+  publisher: CDISC
+  accessed_on: '2026-08-02'
+- id: cdisc-org-root
+  title: Clinical Data Interchange Standards Consortium
+  url: https://www.cdisc.org/
+  type: governance-source
+  publisher: CDISC
+  accessed_on: '2026-08-02'

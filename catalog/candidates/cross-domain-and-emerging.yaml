@@ -1,23 +1,5 @@
 theme: cross-domain-and-emerging
 candidates:
-- id: omop-common-data-model
-  name: OMOP Common Data Model
-  official_url: https://ohdsi.github.io/CommonDataModel/
-  candidate_section: Metadata and Semantics
-  coverage_family: observational-health-data-harmonization
-  priority: P0
-  disposition: admission-pr
-  mechanism: Standardized relational data model and vocabularies for harmonizing longitudinal observational health
-    data across institutions.
-  why_distinct: Adds a mature common-data-model pattern for federated clinical research that FHIR exchange alone
-    does not provide.
-  primary_sources:
-  - https://ohdsi.github.io/CommonDataModel/
-  - https://github.com/OHDSI/CommonDataModel
-  - https://ohdsi.github.io/DataQualityDashboard/
-  evidence_notes: Current CDM v5.4 family, broad international adoption, generated DDLs, vocabularies, and data-quality
-    tooling.
-  next_step: Admission PR with FHIR and CDISC boundary analysis.
 - id: hupo-psi-mztab
   name: HUPO-PSI mzTab
   official_url: https://www.psidev.info/mztab

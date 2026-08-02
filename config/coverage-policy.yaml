@@ -1,86 +1,104 @@
 version: 1
 thresholds:
   min_entries_per_section: 3
-  max_single_domain_share: 0.30
-  max_general_purpose_substrate_share: 0.10
+  max_single_domain_share: 0.3
+  max_general_purpose_substrate_share: 0.1
   max_implementations_per_family: 2
   max_per_family_role_bucket: 2
 general_purpose_substrate_ids:
-  - bagit
-  - p-plan
-  - qudt
-  - schema-org
-  - simple-knowledge-organization-system-skos
-  - unified-code-for-units-of-measure-ucum
-  - w3c-data-catalog-vocabulary-dcat
-  - w3c-prov
+- bagit
+- p-plan
+- qudt
+- schema-org
+- simple-knowledge-organization-system-skos
+- unified-code-for-units-of-measure-ucum
+- w3c-data-catalog-vocabulary-dcat
+- w3c-prov
 implementation_resource_kinds:
-  - implementation
-  - execution-service
-  - conformance-artifact
+- implementation
+- execution-service
+- conformance-artifact
 family_role_buckets:
   runner:
     resource_kinds:
-      - implementation
+    - implementation
   conformance:
     resource_kinds:
-      - conformance-artifact
+    - conformance-artifact
   multi-engine-service:
     resource_kinds:
-      - execution-service
+    - execution-service
 standard_families:
   cwl:
-    - common-workflow-language-cwl
-    - cwltool
-    - cwl-conformance-tests
-    - cwlprov
-    - lifemonitor
-    - sapporo
+  - common-workflow-language-cwl
+  - cwltool
+  - cwl-conformance-tests
+  - cwlprov
+  - lifemonitor
+  - sapporo
   ro-crate:
-    - ro-crate
-    - workflow-ro-crate
-    - workflow-run-ro-crate
-    - workflow-testing-ro-crate
-    - ro-crate-validator
-    - runcrate
+  - ro-crate
+  - workflow-ro-crate
+  - workflow-run-ro-crate
+  - workflow-testing-ro-crate
+  - ro-crate-validator
+  - runcrate
   ga4gh-apis:
-    - ga4gh-data-repository-service-drs
-    - ga4gh-service-info
-    - ga4gh-service-registry
-    - ga4gh-task-execution-service-tes
-    - ga4gh-tool-registry-service-trs
-    - ga4gh-workflow-execution-service-wes
+  - ga4gh-data-repository-service-drs
+  - ga4gh-service-info
+  - ga4gh-service-registry
+  - ga4gh-task-execution-service-tes
+  - ga4gh-tool-registry-service-trs
+  - ga4gh-workflow-execution-service-wes
   wdl:
-    - workflow-description-language-wdl
-    - wfexs-backend
+  - workflow-description-language-wdl
+  - wfexs-backend
   w3c-prov-family:
-    - w3c-prov
-    - cwlprov
-    - p-plan
-    - iso-23494-2-2026-common-provenance-model
+  - w3c-prov
+  - cwlprov
+  - p-plan
+  - iso-23494-2-2026-common-provenance-model
   combine-modeling:
-    - systems-biology-markup-language-sbml
-    - simulation-experiment-description-markup-language-sed-ml
-    - cellml
-    - combine-omex-archive
-    - sbml-test-suite
-    - biosimulators-test-suite
+  - systems-biology-markup-language-sbml
+  - simulation-experiment-description-markup-language-sed-ml
+  - cellml
+  - combine-omex-archive
+  - sbml-test-suite
+  - biosimulators-test-suite
   neuroscience-data:
-    - brain-imaging-data-structure-bids
-    - neurodata-without-borders-nwb
-    - dicomweb
-    - nexus
+  - brain-imaging-data-structure-bids
+  - neurodata-without-borders-nwb
+  - dicomweb
+  - nexus
   astronomy-data-services:
-    - flexible-image-transport-system-fits
-    - ivoa-votable
-    - ivoa-table-access-protocol-tap
+  - flexible-image-transport-system-fits
+  - ivoa-votable
+  - ivoa-table-access-protocol-tap
   bioimaging-data:
-    - ome-ngff
-    - dicomweb
-    - nexus
+  - ome-ngff
+  - dicomweb
+  - nexus
   ga4gh-genomic-data:
-    - ga4gh-variation-representation-specification-vrs
-    - ga4gh-phenopackets
-    - ga4gh-htsget
-    - ga4gh-refget-sequences
-    - ga4gh-data-repository-service-drs
+  - ga4gh-variation-representation-specification-vrs
+  - ga4gh-phenopackets
+  - ga4gh-htsget
+  - ga4gh-refget-sequences
+  - ga4gh-data-repository-service-drs
+  sequence-context-metadata:
+  - minimum-information-about-any-sequence-mixs
+  - igsn-id
+  - isa-json
+  - darwin-core
+  ecology-dataset-metadata:
+  - ecological-metadata-language-eml
+  - darwin-core
+  - w3c-data-catalog-vocabulary-dcat
+  mass-spectrometry-data:
+  - hupo-psi-mzml
+  - analytical-information-markup-language-animl
+  - allotrope-data-format
+  clinical-research-data:
+  - omop-common-data-model
+  - cdisc-operational-data-model-odm
+  - hl7-fhir
+  - ga4gh-phenopackets
