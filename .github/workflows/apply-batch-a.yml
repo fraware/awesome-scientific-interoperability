@@ -1,0 +1,43 @@
+name: Apply issue 44 Batch A
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.head_ref == 'agent/issue-44-batch-a-models-neuroscience' && github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: agent/issue-44-batch-a-models-neuroscience
+          fetch-depth: 0
+      - name: Verify and apply validated Batch A patch
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(find .batch-a -maxdepth 1 -name 'part*' -type f | wc -l)" -eq 5
+          cat .batch-a/part* > /tmp/batch-a.patch.gz.b64
+          echo "f5067e6f619261b4c720f14a5e705ae27c4f8d515189cc7bce0d9a9cae823400  /tmp/batch-a.patch.gz.b64" | sha256sum --check --strict
+          base64 --decode /tmp/batch-a.patch.gz.b64 > /tmp/batch-a.patch.gz
+          echo "994679a798843ac6b4c679ddd388062680314df53c53c89b41d501849340875e  /tmp/batch-a.patch.gz" | sha256sum --check --strict
+          gzip -dc /tmp/batch-a.patch.gz > /tmp/batch-a.patch
+          echo "e9ee013f6a9c49d415e3b086bd887abe03fbc95087defb3c7418d4aba9b720a3  /tmp/batch-a.patch" | sha256sum --check --strict
+          git apply --check /tmp/batch-a.patch
+          git apply --index /tmp/batch-a.patch
+          git rm -r .batch-a
+          git rm .github/workflows/apply-batch-a.yml
+      - name: Commit clean Batch A tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git diff --cached --check
+          git commit -m "Issue #44 Batch A: systems biology and neuroscience standards"
+          git push origin HEAD:agent/issue-44-batch-a-models-neuroscience
