@@ -121,6 +121,12 @@ references:
   type: technical-documentation
   publisher: cfconventions.org
   accessed_on: '2026-08-01'
+- id: cfconventions-org-data-cf-conventions-cf-conventions-1-11-cf
+  title: CF Conventions 1.11
+  url: https://cfconventions.org/Data/cf-conventions/cf-conventions-1.11/cf-conventions.html
+  type: specification
+  publisher: cfconventions.org
+  accessed_on: '2026-08-01'
 - id: cfconventions-org-root
   title: Climate and Forecast (CF) Metadata Conventions
   url: https://cfconventions.org/
@@ -132,6 +138,12 @@ references:
   url: https://citation-file-format.github.io/
   type: implementation-repository
   publisher: citation-file-format.github.io
+  accessed_on: '2026-08-01'
+- id: cite-opengeospatial-org-teamengine
+  title: OGC TEAM Engine
+  url: https://cite.opengeospatial.org/teamengine/
+  type: conformance-suite
+  publisher: cite.opengeospatial.org
   accessed_on: '2026-08-01'
 - id: codata-org-root
   title: CODATA (Committee on Data of the International Science Council)
@@ -240,6 +252,12 @@ references:
   url: https://www.dicomstandard.org/using/dicomweb
   type: specification
   publisher: dicomstandard.org
+  accessed_on: '2026-08-01'
+- id: dockstore-org
+  title: Dockstore TRS adoption
+  url: https://dockstore.org/
+  type: adoption-evidence
+  publisher: dockstore.org
   accessed_on: '2026-08-01'
 - id: docs-allotrope-org-root
   title: Allotrope Data Format
@@ -403,6 +421,12 @@ references:
   type: specification
   publisher: fmi-standard.org
   accessed_on: '2026-08-01'
+- id: force11-org-info-the-fair-data-principles
+  title: FORCE11 FAIR Principles
+  url: https://force11.org/info/the-fair-data-principles/
+  type: adoption-evidence
+  publisher: force11.org
+  accessed_on: '2026-08-01'
 - id: ga4gh-org-product-data-repository-service-drs
   title: GA4GH Data Repository Service (DRS)
   url: https://www.ga4gh.org/product/data-repository-service-drs/
@@ -463,6 +487,18 @@ references:
   type: specification
   publisher: galaxyproject.org
   accessed_on: '2026-08-01'
+- id: github-com-animl-animl-core
+  title: AnIML core
+  url: https://github.com/AnIML/animl-core
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-apache-incubator-openprovenance
+  title: OpenProvenance / PROV tools
+  url: https://github.com/apache/incubator-openprovenance
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-apptainer-apptainer
   title: Apptainer / Singularity Image Format
   url: https://github.com/apptainer/apptainer
@@ -481,9 +517,33 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-biocompute-objects-bco-editor
+  title: BCO editor
+  url: https://github.com/biocompute-objects/bco-editor
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-biocompute-objects-bco-schema
+  title: BCO schema
+  url: https://github.com/biocompute-objects/bco-schema
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-bioschemas-bioschemas-dde
+  title: Bioschemas DDE
+  url: https://github.com/BioSchemas/bioschemas-dde
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-bioschemas-bioschemas-github-io
   title: Bioschemas
   url: https://github.com/Bioschemas/bioschemas.github.io
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-bioschemas-specifications
+  title: Bioschemas specifications
+  url: https://github.com/Bioschemas/specifications
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
@@ -493,9 +553,21 @@ references:
   type: conformance-suite
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-bis-aml-sdmx
+  title: SDMX Python tools
+  url: https://github.com/bis-aml/sdmx
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-broadinstitute-cromwell
   title: Cromwell WDL engine
   url: https://github.com/broadinstitute/cromwell
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-cf-convention-cf-conventions
+  title: CF Conventions repository
+  url: https://github.com/cf-convention/cf-conventions
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
@@ -505,15 +577,39 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-citation-file-format-cff-converter-python
+  title: cffconvert
+  url: https://github.com/citation-file-format/cff-converter-python
+  type: validator
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-citation-file-format-cffconvert
   title: Citation File Format (CITATION.cff)
   url: https://github.com/citation-file-format/cffconvert
   type: validator
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-citation-file-format-citation-file-format
+  title: CFF specification repo
+  url: https://github.com/citation-file-format/citation-file-format
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ckan-ckan
+  title: CKAN DCAT adoption
+  url: https://github.com/ckan/ckan
+  type: adoption-evidence
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-codemeta-codemeta
   title: CodeMeta
   url: https://github.com/codemeta/codemeta
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-comcifs-cif-core
+  title: CIF core dictionary repository
+  url: https://github.com/COMCIFS/cif_core
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
@@ -523,9 +619,27 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-common-workflow-language-cwlprov
+  title: CWLProv
+  url: https://github.com/common-workflow-language/cwlprov
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-common-workflow-language-cwlprov-py
+  title: cwlprov-py
+  url: https://github.com/common-workflow-language/cwlprov-py
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-common-workflow-language-cwltool
   title: cwltool
   url: https://github.com/common-workflow-language/cwltool
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-crossref-rest-api-doc
+  title: Crossref REST API docs repo
+  url: https://github.com/CrossRef/rest-api-doc
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
@@ -541,6 +655,24 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-datacite-datacite
+  title: DataCite repository
+  url: https://github.com/datacite/datacite
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-dcm4che-dcm4che
+  title: dcm4che DICOMweb stack
+  url: https://github.com/dcm4che/dcm4che
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ddi-alliance-ddi-lifecycle
+  title: DDI Lifecycle repository
+  url: https://github.com/DDI-Alliance/ddi-lifecycle
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-ddi-cdi-ddi-cdi
   title: DDI Cross Domain Integration (DDI-CDI)
   url: https://github.com/ddi-cdi/ddi-cdi
@@ -550,6 +682,12 @@ references:
 - id: github-com-ddialliance-specification-ddi-lifecycle
   title: DDI Lifecycle
   url: https://github.com/ddialliance/Specification-DDI-Lifecycle
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-dockstore-dockstore
+  title: Dockstore
+  url: https://github.com/dockstore/dockstore
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
@@ -574,6 +712,12 @@ references:
 - id: github-com-ga4gh-data-repository-service-schemas
   title: GA4GH Data Repository Service (DRS)
   url: https://github.com/ga4gh/data-repository-service-schemas
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ga4gh-data-use-ontology
+  title: GA4GH DUO
+  url: https://github.com/ga4gh/data-use-ontology
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
@@ -607,10 +751,28 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-ga4gh-ga4gh-schemas
+  title: GA4GH schemas (legacy)
+  url: https://github.com/ga4gh/ga4gh-schemas
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-ga4gh-openapi-test-runner
   title: GA4GH TES compliance suite (openapi-test-runner)
   url: https://github.com/ga4gh/openapi-test-runner
   type: conformance-suite
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ga4gh-service-info
+  title: GA4GH service-info
+  url: https://github.com/ga4gh/service-info
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ga4gh-service-registry
+  title: GA4GH service-registry
+  url: https://github.com/ga4gh/service-registry
+  type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
 - id: github-com-ga4gh-task-execution-schemas
@@ -631,9 +793,33 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-gvwilson-fair-signposting
+  title: FAIR Signposting materials
+  url: https://github.com/gvwilson/fair-signposting
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-hicai-zju-scitoolagent
   title: SciToolAgent
   url: https://github.com/hicai-zju/scitoolagent
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-hl7-fhir
+  title: HL7 FHIR repository
+  url: https://github.com/HL7/fhir
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-identifiers-org-identifiers-org
+  title: Identifiers.org repository
+  url: https://github.com/identifiers-org/identifiers-org
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-igsn-igsn-json
+  title: IGSN JSON
+  url: https://github.com/IGSN/igsn-json
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
@@ -643,9 +829,27 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-isa-tools-isa-api
+  title: ISA-API
+  url: https://github.com/ISA-tools/isa-api
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-isa-tools-isavalidator-isaconverter-biimanager
+  title: ISA validator tools
+  url: https://github.com/ISA-tools/ISAvalidator-ISAconverter-BIImanager
+  type: validator
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-jats-tml-jats-tag-library
   title: Journal Article Tag Suite (JATS)
   url: https://github.com/JATS-TML/JATS-Tag-Library
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-libraryofcongress-bagit-java
+  title: bagit-java
+  url: https://github.com/LibraryOfCongress/bagit-java
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
@@ -667,6 +871,12 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-materials-consortia-optimade-python-tools
+  title: OPTIMADE Python tools
+  url: https://github.com/Materials-Consortia/optimade-python-tools
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-mims-harvard-tooluniverse
   title: ToolUniverse
   url: https://github.com/mims-harvard/ToolUniverse
@@ -676,6 +886,12 @@ references:
 - id: github-com-mlcommons-croissant
   title: Croissant
   url: https://github.com/mlcommons/croissant
+  type: validator
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-modelcontextprotocol-servers
+  title: MCP reference servers
+  url: https://github.com/modelcontextprotocol/servers
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
@@ -683,6 +899,12 @@ references:
   title: Model Context Protocol (MCP)
   url: https://github.com/modelcontextprotocol/specification
   type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-modelica-fmi-cross-check
+  title: FMI Cross-Check
+  url: https://github.com/modelica/fmi-cross-check
+  type: conformance-suite
   publisher: github.com
   accessed_on: '2026-08-01'
 - id: github-com-modelica-fmi-standard
@@ -697,9 +919,51 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-nanopublication-nanopub-java
+  title: nanopub-java
+  url: https://github.com/Nanopublication/nanopub-java
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-nanopublication-nanopub-python
+  title: nanopub-python
+  url: https://github.com/Nanopublication/nanopub-python
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ncbi-jats
+  title: NCBI JATS
+  url: https://github.com/ncbi/JATS
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ncbi-jats-xslt
+  title: JATS XSLT
+  url: https://github.com/ncbi/jats-xslt
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-nexusformat-cnxvalidate
+  title: NeXus cnxvalidate
+  url: https://github.com/nexusformat/cnxvalidate
+  type: validator
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-nexusformat-definitions
+  title: NeXus definitions
+  url: https://github.com/nexusformat/definitions
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-obofoundry-obofoundry-github-io
   title: OBO Foundry
   url: https://github.com/OBOFoundry/OBOFoundry.github.io
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ohif-viewers
+  title: OHIF Viewer
+  url: https://github.com/OHIF/Viewers
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
@@ -727,6 +991,24 @@ references:
   type: conformance-suite
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-openaire-scholexplorer
+  title: ScholeXplorer
+  url: https://github.com/OpenAIRE/scholexplorer
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-opengeospatial-ets-ogcapi-features10
+  title: OGC API Features ETS
+  url: https://github.com/opengeospatial/ets-ogcapi-features10
+  type: conformance-suite
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-opengeospatial-ets-sta10
+  title: OGC SensorThings ETS
+  url: https://github.com/opengeospatial/ets-sta10
+  type: conformance-suite
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-openwdl-miniwdl
   title: miniwdl WDL runner
   url: https://github.com/openwdl/miniwdl
@@ -739,6 +1021,12 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-orcid-orcid-source
+  title: ORCID Source
+  url: https://github.com/ORCID/ORCID-Source
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-qudt-qudt-public-repo
   title: QUDT
   url: https://github.com/qudt/qudt-public-repo
@@ -748,6 +1036,18 @@ references:
 - id: github-com-radiantearth-stac-spec
   title: SpatioTemporal Asset Catalog (STAC)
   url: https://github.com/radiantearth/stac-spec
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-radiantearth-stac-validator
+  title: STAC Validator
+  url: https://github.com/radiantearth/stac-validator
+  type: validator
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-researchobject-ro-crate-py
+  title: ro-crate-py
+  url: https://github.com/ResearchObject/ro-crate-py
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
@@ -775,6 +1075,12 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-sbmlteam-libsbml
+  title: libSBML
+  url: https://github.com/sbmlteam/libsbml
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-sbmlteam-sbml-test-suite
   title: SBML Test Suite
   url: https://github.com/sbmlteam/sbml-test-suite
@@ -793,15 +1099,63 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-scholix-scholix
+  title: Scholix repository
+  url: https://github.com/scholix/scholix
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-sdmx-twg-sdmx-ml
+  title: SDMX-ML
+  url: https://github.com/sdmx-twg/sdmx-ml
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-semsproject-combinearchive
   title: COMBINE/OMEX Archive
   url: https://github.com/SemsProject/CombineArchive
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-sila-standard-sila2core
+  title: SiLA2 Core
+  url: https://github.com/SILA-Standard/SiLA2Core
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-softwareheritage-swh-model
+  title: Software Heritage model (SWHID)
+  url: https://github.com/SoftwareHeritage/swh-model
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-stac-utils-stac-api-validator
+  title: STAC API Validator
+  url: https://github.com/stac-utils/stac-api-validator
+  type: validator
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-sylabs-singularity
+  title: SingularityCE
+  url: https://github.com/sylabs/singularity
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-tdwg-dwc
   title: Darwin Core
   url: https://github.com/tdwg/dwc
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-tdwg-rdf
+  title: TDWG RDF guidance
+  url: https://github.com/tdwg/rdf
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ucum-org-ucum
+  title: UCUM repository
+  url: https://github.com/ucum-org/ucum
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
@@ -823,10 +1177,28 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-w3c-prov
+  title: W3C PROV repository
+  url: https://github.com/w3c/prov
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-w3c-sdw
+  title: W3C Spatial Data on the Web (SOSA/SSN)
+  url: https://github.com/w3c/sdw
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: gitlab-com-sila2
   title: SiLA 2
   url: https://gitlab.com/sila2
   type: technical-documentation
+  publisher: gitlab.com
+  accessed_on: '2026-08-01'
+- id: gitlab-com-sila2-sila-base
+  title: SiLA2 base
+  url: https://gitlab.com/SiLA2/sila_base
+  type: implementation-repository
   publisher: gitlab.com
   accessed_on: '2026-08-01'
 - id: go-fair-org-fair-principles
@@ -1273,6 +1645,12 @@ references:
   type: technical-documentation
   publisher: sdmx.org
   accessed_on: '2026-08-01'
+- id: signposting-org-fair
+  title: FAIR Signposting specification
+  url: https://signposting.org/FAIR/
+  type: specification
+  publisher: signposting.org
+  accessed_on: '2026-08-01'
 - id: signposting-org-root
   title: FAIR Signposting
   url: https://signposting.org/
@@ -1416,6 +1794,18 @@ references:
   url: https://workflowhub.eu/
   type: governance-source
   publisher: workflowhub.eu
+  accessed_on: '2026-08-01'
+- id: www-iucr-org-resources-cif-software-checkcif
+  title: checkCIF
+  url: https://www.iucr.org/resources/cif/software/checkcif
+  type: validator
+  publisher: iucr.org
+  accessed_on: '2026-08-01'
+- id: www-softwareheritage-org-2020-07-06-software-hash-identifier
+  title: SWHID announcement
+  url: https://www.softwareheritage.org/2020/07/06/software-hash-identifiers-swhids/
+  type: technical-documentation
+  publisher: softwareheritage.org
   accessed_on: '2026-08-01'
 - id: zenodo-org-records-10376350
   title: Five Safes RO-Crate

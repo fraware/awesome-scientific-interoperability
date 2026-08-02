@@ -40,3 +40,9 @@ None.
 ## v2.1 provenance migration (2026-08-01)
 
 - Closed isolate: `identifiers-org` related to DataCite and ORCID.
+
+## Issue #30 Batch 2 identifiers evidence (2026-08-01)
+
+- Enriched ORCID/ROR/DataCite/Crossref/Identifiers.org/IGSN/OPTIMADE/TRS/service-info/registry with primary implementation or adoption repositories.
+- Downgraded GA4GH service-info/registry/TRS and OPTIMADE conformance to none-known where no public suite artifact is cited.
+
