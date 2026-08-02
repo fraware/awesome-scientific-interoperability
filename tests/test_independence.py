@@ -235,6 +235,7 @@ class IndependenceValidatorTests(unittest.TestCase):
             [
                 "bagit",
                 "brain-imaging-data-structure-bids",
+                "breeding-api-brapi",
                 "common-workflow-language-cwl",
                 "dicomweb",
                 "flexible-image-transport-system-fits",

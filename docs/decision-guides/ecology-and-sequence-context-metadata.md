@@ -11,10 +11,12 @@ Use this guide when scientific data must retain ecological dataset context, biod
 | Exchange biodiversity occurrences and taxonomic records | [resource:darwin-core] | Shared terms support observations, collections, taxonomy, events, and locations | Darwin Core does not describe complete dataset methods or table structures |
 | Identify physical samples persistently | [resource:igsn-id] | Persistent identifiers connect samples with datasets and publications | IGSN does not supply the full contextual metadata model |
 | Describe investigation, study, and assay structure | [resource:isa-json] | Multi-assay experimental model connects studies, samples, assays, and pipelines | ISA-JSON is not a domain-specific sequence or ecology profile |
+| Describe plant phenotyping experiments, environments, and phenotypes | [resource:minimum-information-about-plant-phenotyping-experiments-miappe] | Plant-phenotyping checklist and data model with ISA-compatible implementations | Complements rather than replaces breeding APIs |
+| Exchange plant breeding germplasm, trials, and phenotypes across databases | [resource:breeding-api-brapi] | Modular REST API used by independently operated breeding systems | Metadata completeness expectations remain in MIAPPE |
 
 ## Composition pattern
 
-A sequencing project assigns [resource:igsn-id] identifiers to samples, records sequence and environmental context with [resource:minimum-information-about-any-sequence-mixs], describes the broader experiment with [resource:isa-json], and publishes ecological dataset methods and table structures with [resource:ecological-metadata-language-eml]. [resource:darwin-core] remains appropriate for occurrence and taxonomic records.
+A sequencing project assigns [resource:igsn-id] identifiers to samples, records sequence and environmental context with [resource:minimum-information-about-any-sequence-mixs], describes the broader experiment with [resource:isa-json], and publishes ecological dataset methods and table structures with [resource:ecological-metadata-language-eml]. Plant phenotyping programs add [resource:minimum-information-about-plant-phenotyping-experiments-miappe] metadata and exchange breeding entities through [resource:breeding-api-brapi]. [resource:darwin-core] remains appropriate for occurrence and taxonomic records.
 
 ## Evidence boundaries
 

@@ -1266,3 +1266,73 @@ resources:
     reviewed_on: '2026-08-02'
     conflict_disclosure: none identified; human maintainer approval required before merge
     decision_record: issue-44-batch-g
+- id: minimum-information-about-plant-phenotyping-experiments-miappe
+  name: MIAPPE
+  url: https://www.miappe.org/
+  section: Metadata and Semantics
+  resource_kind: metadata-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Organizational
+  connects:
+  - Plant phenotyping experiments
+  - breeding databases
+  - ISA-compatible repositories
+  - environmental and treatment metadata
+  mechanism: Minimum-information checklist and data model for plant phenotyping experiments, environments,
+    treatments, observation units, and phenotypes
+  summary: Community minimum-information standard and data model for describing plant phenotyping experiments,
+    environments, treatments, observation units, and phenotype measurements.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - public-validator
+  - institutional-adoption
+  implementation_status: reference-and-others
+  conformance_status: public-validator
+  steward_id: miappe-community
+  scientific_domains:
+  - life-sciences
+  - environmental-science
+  - biotechnology
+  integration_functions:
+  - research-data
+  - knowledge-representation
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: www-miappe-org-root
+    role: stewardship
+  - ref_id: www-miappe-org-releases
+    role: technical-definition
+  - ref_id: github-com-miappe-miappe
+    role: technical-definition
+  - ref_id: github-com-miappe-isa-tab-for-plant-phenotyping
+    role: implementation
+  - ref_id: ipk-bit-github-io-isa4j-miappe-validation
+    role: conformance
+  relations:
+  - type: complements
+    resource_id: breeding-api-brapi
+  - type: complements
+    resource_id: isa-json
+  - type: complements
+    resource_id: ecological-metadata-language-eml
+  - type: complements
+    resource_id: minimum-information-about-any-sequence-mixs
+  decision_basis: Strongest maintained plant-phenotyping metadata contract connecting experiments, environments,
+    and phenotypes beyond general ecology or sequence-context standards.
+  boundary_note: MIAPPE describes phenotyping experiment metadata; it does not replace breeding-database
+    APIs, general ecological dataset packaging, or sequence-sample checklists. Validator evidence is bounded
+    to configured ISA/MIAPPE field checks.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-deferred-family-admissions

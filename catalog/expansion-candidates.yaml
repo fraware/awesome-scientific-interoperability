@@ -32,6 +32,9 @@ completed_candidate_ids:
 - ivoa-observation-core-obscore
 - ivoa-simple-application-messaging-protocol-samp
 - ome-data-model-and-ome-tiff
+- minimum-information-about-plant-phenotyping-experiments-miappe
+- breeding-api-brapi
+- synthetic-biology-open-language-sbol
 candidate_files:
 - candidates/systems-biology-neuroscience.yaml
 - candidates/bioimaging-astronomy.yaml

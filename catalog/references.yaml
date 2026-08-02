@@ -79,6 +79,18 @@ references:
   type: specification
   publisher: arxiv.org
   accessed_on: '2026-08-01'
+- id: asdf-readthedocs-io-stable
+  title: ASDF Python documentation
+  url: https://asdf.readthedocs.io/en/stable/
+  type: technical-documentation
+  publisher: asdf.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: asdf-standard-readthedocs-io-latest
+  title: ASDF Standard 1.6.0
+  url: https://asdf-standard.readthedocs.io/en/latest/
+  type: specification
+  publisher: asdf-standard.readthedocs.io
+  accessed_on: '2026-08-02'
 - id: astm-org-e13
   title: Analytical Information Markup Language (AnIML)
   url: https://www.astm.org/e13
@@ -139,12 +151,42 @@ references:
   type: governance-source
   publisher: biosimulators.org
   accessed_on: '2026-08-01'
+- id: brapi-org-root
+  title: Breeding API (BrAPI)
+  url: https://brapi.org/
+  type: governance-source
+  publisher: brapi.org
+  accessed_on: '2026-08-02'
+- id: brapi-org-servers
+  title: BrAPI compatible servers directory
+  url: https://brapi.org/servers
+  type: adoption-evidence
+  publisher: brapi.org
+  accessed_on: '2026-08-02'
+- id: brapi-org-specification
+  title: BrAPI specification index
+  url: https://brapi.org/specification
+  type: specification
+  publisher: brapi.org
+  accessed_on: '2026-08-02'
 - id: bsc-es-root
   title: Barcelona Supercomputing Center (INB)
   url: https://www.bsc.es/
   type: governance-source
   publisher: bsc.es
   accessed_on: '2026-08-01'
+- id: cadc-ccda-tap-obscore
+  title: CADC TAP and ObsCore query documentation
+  url: https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/doc/tap/
+  type: technical-documentation
+  publisher: cadc-ccda.hia-iha.nrc-cnrc.gc.ca
+  accessed_on: '2026-08-02'
+- id: cassavabase-org-brapi-v2
+  title: Cassavabase BrAPI v2 endpoint
+  url: https://cassavabase.org/brapi/v2/
+  type: implementation-repository
+  publisher: cassavabase.org
+  accessed_on: '2026-08-02'
 - id: cdif-codata-org-root
   title: Cross-Domain Interoperability Framework (CDIF)
   url: https://cdif.codata.org/
@@ -292,6 +334,12 @@ references:
 - id: dachs-doc-readthedocs-io
   title: GAVO DaCHS 2.9 documentation
   url: https://dachs-doc.readthedocs.io/
+  type: technical-documentation
+  publisher: dachs-doc.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: dachs-doc-readthedocs-io-obscore-tutorial
+  title: DaCHS ObsCore publishing tutorial
+  url: https://dachs-doc.readthedocs.io/tutorial.html
   type: technical-documentation
   publisher: dachs-doc.readthedocs.io
   accessed_on: '2026-08-02'
@@ -511,6 +559,30 @@ references:
   type: technical-documentation
   publisher: docs.ogc.org
   accessed_on: '2026-08-01'
+- id: docs-openmicroscopy-bio-formats-ome-tiff
+  title: Bio-Formats OME-TIFF reader and writer
+  url: https://docs.openmicroscopy.org/bio-formats/latest/formats/ome-tiff.html
+  type: technical-documentation
+  publisher: docs.openmicroscopy.org
+  accessed_on: '2026-08-02'
+- id: docs-openmicroscopy-bio-formats-xml-validation
+  title: Bio-Formats OME-XML validation
+  url: https://docs.openmicroscopy.org/bio-formats/latest/users/comlinetools/xml-validation.html
+  type: validator
+  publisher: docs.openmicroscopy.org
+  accessed_on: '2026-08-02'
+- id: docs-openmicroscopy-ome-model-6-2-2-ome-tiff-specification
+  title: OME-TIFF specification 6.2.2
+  url: https://docs.openmicroscopy.org/ome-model/6.2.2/ome-tiff/specification.html
+  type: specification
+  publisher: docs.openmicroscopy.org
+  accessed_on: '2026-08-02'
+- id: docs-openmicroscopy-ome-model-6-2-2-root
+  title: OME Data Model and File Formats 6.2.2
+  url: https://docs.openmicroscopy.org/ome-model/6.2.2/
+  type: technical-documentation
+  publisher: docs.openmicroscopy.org
+  accessed_on: '2026-08-02'
 - id: docs-ropensci-org-eml
   title: rOpenSci EML package
   url: https://docs.ropensci.org/EML/
@@ -865,6 +937,24 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-02'
+- id: github-com-asdf-format-asdf
+  title: ASDF Python implementation
+  url: https://github.com/asdf-format/asdf
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-asdf-format-asdf-standard
+  title: ASDF Standard repository
+  url: https://github.com/asdf-format/asdf-standard
+  type: governance-source
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-asdf-format-asdf-validate-command
+  title: ASDF validator command implementation
+  url: https://github.com/asdf-format/asdf/blob/main/asdf/commands/validate.py
+  type: validator
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-autoprotocol-autoprotocol-python
   title: Autoprotocol
   url: https://github.com/autoprotocol/autoprotocol-python
@@ -895,6 +985,12 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-bioio-devs-bioio-ome-tiff
+  title: BioIO OME-TIFF reader and writer
+  url: https://github.com/bioio-devs/bioio-ome-tiff
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-bioschemas-bioschemas-dde
   title: Bioschemas DDE
   url: https://github.com/BioSchemas/bioschemas-dde
@@ -1303,6 +1399,12 @@ references:
   type: validator
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-ivoa-std-samp
+  title: IVOA SAMP specification repository
+  url: https://github.com/ivoa-std/SAMP
+  type: governance-source
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-ivoa-std-tap
   title: IVOA TAP specification repository
   url: https://github.com/ivoa-std/TAP
@@ -1351,6 +1453,18 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-miappe-isa-tab-for-plant-phenotyping
+  title: ISA-Tab configurations for plant phenotyping (MIAPPE)
+  url: https://github.com/MIAPPE/ISA-Tab-for-plant-phenotyping
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-miappe-miappe
+  title: MIAPPE checklist and data model repository
+  url: https://github.com/MIAPPE/MIAPPE
+  type: specification
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-mims-harvard-tooluniverse
   title: ToolUniverse
   url: https://github.com/mims-harvard/ToolUniverse
@@ -1513,6 +1627,12 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-ome-bioformats
+  title: OME Bio-Formats
+  url: https://github.com/ome/bioformats
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-ome-ngff
   title: OME-NGFF specification repository
   url: https://github.com/ome/ngff
@@ -1596,6 +1716,12 @@ references:
   url: https://github.com/phenopackets/phenopacket-tools
   type: validator
   publisher: github.com/phenopackets
+  accessed_on: '2026-08-02'
+- id: github-com-plantbreeding-api
+  title: BrAPI OpenAPI specification repository
+  url: https://github.com/plantbreeding/API
+  type: specification
+  publisher: github.com
   accessed_on: '2026-08-02'
 - id: github-com-qudt-qudt-public-repo
   title: QUDT
@@ -1723,6 +1849,24 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-synbiodex-libsbolj3
+  title: libSBOLj3 implementation
+  url: https://github.com/SynBioDex/libSBOLj3
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-synbiodex-pysbol3
+  title: pySBOL3 implementation
+  url: https://github.com/SynBioDex/pySBOL3
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-synbiodex-sbol-specification
+  title: SBOL specification source repository
+  url: https://github.com/SynBioDex/SBOL-specification
+  type: specification
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-sys-bio-tellurium
   title: Tellurium
   url: https://github.com/sys-bio/tellurium
@@ -1861,6 +2005,18 @@ references:
   type: specification
   publisher: info.orcid.org
   accessed_on: '2026-08-01'
+- id: ipk-bit-github-io-isa4j-miappe-validation
+  title: isa4j MIAPPE validation documentation
+  url: https://ipk-bit.github.io/isa4j/miappe-validation.html
+  type: validator
+  publisher: ipk-bit.github.io
+  accessed_on: '2026-08-02'
+- id: ipk-gatersleben-brapi-v1
+  title: IPK Gatersleben BrAPI endpoint
+  url: https://webapps.ipk-gatersleben.de/api/brapi/v1/
+  type: implementation-repository
+  publisher: ipk-gatersleben.de
+  accessed_on: '2026-08-02'
 - id: isa-specs-readthedocs-io-en-latest-isajson-html
   title: ISA-JSON
   url: https://isa-specs.readthedocs.io/en/latest/isajson.html
@@ -1907,6 +2063,18 @@ references:
   title: International Virtual Observatory Alliance
   url: https://www.ivoa.net/about/what-is-ivoa.html
   type: governance-source
+  publisher: ivoa.net
+  accessed_on: '2026-08-02'
+- id: ivoa-net-documents-obscore
+  title: IVOA Observation Core 1.1
+  url: https://ivoa.net/documents/ObsCore/
+  type: specification
+  publisher: ivoa.net
+  accessed_on: '2026-08-02'
+- id: ivoa-net-documents-samp
+  title: IVOA Simple Application Messaging Protocol 1.3
+  url: https://www.ivoa.net/documents/SAMP/
+  type: specification
   publisher: ivoa.net
   accessed_on: '2026-08-02'
 - id: ivoa-net-documents-tap
@@ -2353,6 +2521,18 @@ references:
   type: implementation-repository
   publisher: pymzML
   accessed_on: '2026-08-02'
+- id: pysbol3-readthedocs-io-stable-validation
+  title: pySBOL3 validation documentation
+  url: https://pysbol3.readthedocs.io/en/stable/validation.html
+  type: validator
+  publisher: pysbol3.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: pyvo-readthedocs-io-samp
+  title: PyVO SAMP implementation
+  url: https://pyvo.readthedocs.io/en/latest/samp/index.html
+  type: technical-documentation
+  publisher: pyvo.readthedocs.io
+  accessed_on: '2026-08-02'
 - id: qudt-org-root
   title: QUDT
   url: https://www.qudt.org/
@@ -2443,6 +2623,18 @@ references:
   type: conformance-suite
   publisher: sbml.org
   accessed_on: '2026-08-01'
+- id: sbolstandard-org-datamodel-specification-version-3-1-0
+  title: SBOL Data Model Version 3.1.0
+  url: https://sbolstandard.org/datamodel-specification/version-3.1.0/
+  type: specification
+  publisher: sbolstandard.org
+  accessed_on: '2026-08-02'
+- id: sbolstandard-org-root
+  title: Synthetic Biology Open Language (SBOL)
+  url: https://sbolstandard.org/
+  type: governance-source
+  publisher: sbolstandard.org
+  accessed_on: '2026-08-02'
 - id: schema-datacite-org-root
   title: DataCite Metadata Schema and REST API
   url: https://schema.datacite.org/
@@ -2551,10 +2743,22 @@ references:
   type: specification
   publisher: standards.ieee.org
   accessed_on: '2026-08-01'
+- id: star-bris-ac-uk-jsamp
+  title: JSAMP Java toolkit
+  url: https://www.star.bris.ac.uk/~mbt/jsamp/
+  type: implementation-repository
+  publisher: star.bris.ac.uk
+  accessed_on: '2026-08-02'
 - id: star-bris-ac-uk-stilts
   title: STILTS 3.5-5
   url: https://www.star.bris.ac.uk/mbt/stilts/
   type: technical-documentation
+  publisher: star.bris.ac.uk
+  accessed_on: '2026-08-02'
+- id: star-bris-ac-uk-stilts-obstapstage
+  title: STILTS ObsTAP validation stage
+  url: https://www.star.bris.ac.uk/~mbt/stilts/sun256/ObsTapStage.html
+  type: validator
   publisher: star.bris.ac.uk
   accessed_on: '2026-08-02'
 - id: star-bris-ac-uk-stilts-taplint
@@ -2568,6 +2772,12 @@ references:
   url: https://www.star.bris.ac.uk/~mbt/stilts/sun256/votlint.html
   type: validator
   publisher: star.bris.ac.uk
+  accessed_on: '2026-08-02'
+- id: stdatamodels-readthedocs-io-schemas
+  title: JWST data-model ASDF schemas
+  url: https://stdatamodels.readthedocs.io/en/latest/jwst/datamodels/schemas.html
+  type: adoption-evidence
+  publisher: stdatamodels.readthedocs.io
   accessed_on: '2026-08-02'
 - id: support-datacite-org-docs-api
   title: DataCite Metadata Schema and REST API
@@ -2701,6 +2911,18 @@ references:
   type: validator
   publisher: iucr.org
   accessed_on: '2026-08-01'
+- id: www-miappe-org-releases
+  title: MIAPPE releases
+  url: https://www.miappe.org/releases/
+  type: technical-documentation
+  publisher: miappe.org
+  accessed_on: '2026-08-02'
+- id: www-miappe-org-root
+  title: Minimum Information About Plant Phenotyping Experiments (MIAPPE)
+  url: https://www.miappe.org/
+  type: governance-source
+  publisher: miappe.org
+  accessed_on: '2026-08-02'
 - id: www-softwareheritage-org-2020-07-06-software-hash-identifier
   title: SWHID announcement
   url: https://www.softwareheritage.org/2020/07/06/software-hash-identifiers-swhids/
@@ -2725,123 +2947,3 @@ references:
   type: specification
   publisher: zitniklab.hms.harvard.edu
   accessed_on: '2026-08-01'
-- id: docs-openmicroscopy-ome-model-6-2-2-ome-tiff-specification
-  title: OME-TIFF specification 6.2.2
-  url: https://docs.openmicroscopy.org/ome-model/6.2.2/ome-tiff/specification.html
-  type: specification
-  publisher: docs.openmicroscopy.org
-  accessed_on: '2026-08-02'
-- id: docs-openmicroscopy-ome-model-6-2-2-root
-  title: OME Data Model and File Formats 6.2.2
-  url: https://docs.openmicroscopy.org/ome-model/6.2.2/
-  type: technical-documentation
-  publisher: docs.openmicroscopy.org
-  accessed_on: '2026-08-02'
-- id: docs-openmicroscopy-bio-formats-ome-tiff
-  title: Bio-Formats OME-TIFF reader and writer
-  url: https://docs.openmicroscopy.org/bio-formats/latest/formats/ome-tiff.html
-  type: technical-documentation
-  publisher: docs.openmicroscopy.org
-  accessed_on: '2026-08-02'
-- id: docs-openmicroscopy-bio-formats-xml-validation
-  title: Bio-Formats OME-XML validation
-  url: https://docs.openmicroscopy.org/bio-formats/latest/users/comlinetools/xml-validation.html
-  type: validator
-  publisher: docs.openmicroscopy.org
-  accessed_on: '2026-08-02'
-- id: github-com-ome-bioformats
-  title: OME Bio-Formats
-  url: https://github.com/ome/bioformats
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: github-com-bioio-devs-bioio-ome-tiff
-  title: BioIO OME-TIFF reader and writer
-  url: https://github.com/bioio-devs/bioio-ome-tiff
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: ivoa-net-documents-obscore
-  title: IVOA Observation Core 1.1
-  url: https://ivoa.net/documents/ObsCore/
-  type: specification
-  publisher: ivoa.net
-  accessed_on: '2026-08-02'
-- id: dachs-doc-readthedocs-io-obscore-tutorial
-  title: DaCHS ObsCore publishing tutorial
-  url: https://dachs-doc.readthedocs.io/tutorial.html
-  type: technical-documentation
-  publisher: dachs-doc.readthedocs.io
-  accessed_on: '2026-08-02'
-- id: cadc-ccda-tap-obscore
-  title: CADC TAP and ObsCore query documentation
-  url: https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/doc/tap/
-  type: technical-documentation
-  publisher: cadc-ccda.hia-iha.nrc-cnrc.gc.ca
-  accessed_on: '2026-08-02'
-- id: star-bris-ac-uk-stilts-obstapstage
-  title: STILTS ObsTAP validation stage
-  url: https://www.star.bris.ac.uk/~mbt/stilts/sun256/ObsTapStage.html
-  type: validator
-  publisher: star.bris.ac.uk
-  accessed_on: '2026-08-02'
-- id: ivoa-net-documents-samp
-  title: IVOA Simple Application Messaging Protocol 1.3
-  url: https://www.ivoa.net/documents/SAMP/
-  type: specification
-  publisher: ivoa.net
-  accessed_on: '2026-08-02'
-- id: github-com-ivoa-std-samp
-  title: IVOA SAMP specification repository
-  url: https://github.com/ivoa-std/SAMP
-  type: governance-source
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: pyvo-readthedocs-io-samp
-  title: PyVO SAMP implementation
-  url: https://pyvo.readthedocs.io/en/latest/samp/index.html
-  type: technical-documentation
-  publisher: pyvo.readthedocs.io
-  accessed_on: '2026-08-02'
-- id: star-bris-ac-uk-jsamp
-  title: JSAMP Java toolkit
-  url: https://www.star.bris.ac.uk/~mbt/jsamp/
-  type: implementation-repository
-  publisher: star.bris.ac.uk
-  accessed_on: '2026-08-02'
-- id: asdf-standard-readthedocs-io-latest
-  title: ASDF Standard 1.6.0
-  url: https://asdf-standard.readthedocs.io/en/latest/
-  type: specification
-  publisher: asdf-standard.readthedocs.io
-  accessed_on: '2026-08-02'
-- id: github-com-asdf-format-asdf-standard
-  title: ASDF Standard repository
-  url: https://github.com/asdf-format/asdf-standard
-  type: governance-source
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: github-com-asdf-format-asdf
-  title: ASDF Python implementation
-  url: https://github.com/asdf-format/asdf
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: asdf-readthedocs-io-stable
-  title: ASDF Python documentation
-  url: https://asdf.readthedocs.io/en/stable/
-  type: technical-documentation
-  publisher: asdf.readthedocs.io
-  accessed_on: '2026-08-02'
-- id: github-com-asdf-format-asdf-validate-command
-  title: ASDF validator command implementation
-  url: https://github.com/asdf-format/asdf/blob/main/asdf/commands/validate.py
-  type: validator
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: stdatamodels-readthedocs-io-schemas
-  title: JWST data-model ASDF schemas
-  url: https://stdatamodels.readthedocs.io/en/latest/jwst/datamodels/schemas.html
-  type: adoption-evidence
-  publisher: stdatamodels.readthedocs.io
-  accessed_on: '2026-08-02'

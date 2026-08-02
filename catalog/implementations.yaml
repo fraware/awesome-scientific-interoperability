@@ -107,6 +107,19 @@ implementations:
   - github-com-alleninstitute-sonata-developer-guide
   notes: Allen Institute toolkit for building and simulating SONATA-described networks; same-origin software
     is not counted as independent implementation evidence.
+- id: cassavabase-brapi
+  name: Cassavabase BrAPI server
+  url: https://cassavabase.org/brapi/v2/
+  implements_resource_id: breeding-api-brapi
+  operator_steward_id: boyce-thompson-institute
+  relationship: independent-implementation
+  supported_versions:
+  - BrAPI V2
+  evidence_ref_ids:
+  - cassavabase-org-brapi-v2
+  - brapi-org-servers
+  notes: Production Breedbase-family server operated outside the BrAPI specification steward, listed in
+    the BrAPI servers directory.
 - id: cdisc-odm-linkml-model
   name: CDISC ODM v2.0 LinkML model
   url: https://cdisc-org.github.io/DataExchange-ODM-LinkML/
@@ -293,6 +306,31 @@ implementations:
   - github-com-samtools-htslib
   - github-com-samtools-hts-specs-htsget
   notes: Separately operated genomic data library with htsget client support.
+- id: ipk-gatersleben-brapi
+  name: IPK Gatersleben BrAPI server
+  url: https://webapps.ipk-gatersleben.de/api/brapi/v1/
+  implements_resource_id: breeding-api-brapi
+  operator_steward_id: ipk-gatersleben
+  relationship: independent-implementation
+  supported_versions:
+  - BrAPI V1
+  evidence_ref_ids:
+  - ipk-gatersleben-brapi-v1
+  - brapi-org-servers
+  notes: Institute-operated germplasm and phenotypic BrAPI endpoint distinct from Breedbase operators.
+- id: isa4j-miappe-validator
+  name: isa4j MIAPPE validation
+  url: https://ipk-bit.github.io/isa4j/miappe-validation.html
+  implements_resource_id: minimum-information-about-plant-phenotyping-experiments-miappe
+  operator_steward_id: ipk-gatersleben
+  relationship: validator
+  supported_versions:
+  - MIAPPE v1.1 configuration checks
+  evidence_ref_ids:
+  - ipk-bit-github-io-isa4j-miappe-validation
+  - www-miappe-org-root
+  notes: Separately operated Java library validating investigation/study/assay objects against MIAPPE
+    field requirements; does not certify scientific completeness.
 - id: libcellml
   name: libCellML
   url: https://github.com/cellml/libcellml
@@ -306,6 +344,19 @@ implementations:
   - libcellml-org-root
   - cellml-org-specifications-cellml-2-0
   notes: Primary C++ and Python library targeting full CellML 2.0 support.
+- id: libsbolj3
+  name: libSBOLj3
+  url: https://github.com/SynBioDex/libSBOLj3
+  implements_resource_id: synthetic-biology-open-language-sbol
+  operator_steward_id: sbol-community
+  relationship: reference-implementation
+  supported_versions:
+  - SBOL 3
+  evidence_ref_ids:
+  - github-com-synbiodex-libsbolj3
+  - sbolstandard-org-datamodel-specification-version-3-1-0
+  notes: Java graph-based SBOL 3 library with validation support; same steward community as pySBOL3, so
+    not counted as an independent operator for multiple-independent claims.
 - id: libsedml
   name: libSEDML
   url: https://github.com/fbergmann/libSEDML
@@ -365,6 +416,18 @@ implementations:
   relationship: official-implementation
   evidence_ref_ids:
   - github-com-modelcontextprotocol-specification
+- id: miappe-isa-tab-configurations
+  name: MIAPPE ISA-Tab plant-phenotyping configurations
+  url: https://github.com/MIAPPE/ISA-Tab-for-plant-phenotyping
+  implements_resource_id: minimum-information-about-plant-phenotyping-experiments-miappe
+  operator_steward_id: miappe-community
+  relationship: reference-implementation
+  supported_versions:
+  - MIAPPE 1.1/1.2 ISA-Tab configurations
+  evidence_ref_ids:
+  - github-com-miappe-isa-tab-for-plant-phenotyping
+  - github-com-miappe-miappe
+  notes: Community ISA-Tab configuration package for expressing MIAPPE-compatible plant phenotyping studies.
 - id: miniwdl-wdl-engine
   name: miniwdl
   url: https://github.com/openwdl/miniwdl
@@ -673,6 +736,20 @@ implementations:
   - github-com-neurodatawithoutborders-pynwb
   - nwb-org-nwb-schema
   notes: Official Python API for reading, writing, and validating NWB files.
+- id: pysbol3
+  name: pySBOL3
+  url: https://github.com/SynBioDex/pySBOL3
+  implements_resource_id: synthetic-biology-open-language-sbol
+  operator_steward_id: sbol-community
+  relationship: reference-implementation
+  supported_versions:
+  - SBOL 3
+  evidence_ref_ids:
+  - github-com-synbiodex-pysbol3
+  - pysbol3-readthedocs-io-stable-validation
+  - sbolstandard-org-datamodel-specification-version-3-1-0
+  notes: Python library implementing SBOL 3 with document validation reports; SynBioDex-maintained reference
+    tooling.
 - id: refget-compliance-suite
   name: Refget compliance suite
   url: https://github.com/ga4gh/refget

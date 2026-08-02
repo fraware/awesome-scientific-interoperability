@@ -744,6 +744,8 @@ resources:
   - type: complements
     resource_id: combine-omex-archive
   - type: complements
+    resource_id: synthetic-biology-open-language-sbol
+  - type: complements
     resource_id: sbml-test-suite
   decision_basis: Canonical systems-biology model exchange language with public conformance tests 
     and separately operated simulation tools.
@@ -1720,3 +1722,75 @@ resources:
     reviewed_on: '2026-08-02'
     conflict_disclosure: none identified; human maintainer approval required before merge
     decision_record: issue-44-batch-g
+- id: synthetic-biology-open-language-sbol
+  name: Synthetic Biology Open Language (SBOL)
+  url: https://sbolstandard.org/datamodel-specification/version-3.1.0/
+  section: Data and Digital Objects
+  resource_kind: exchange-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  connects:
+  - Genetic design tools
+  - synthetic-biology repositories
+  - sequence editors
+  - laboratory planning systems
+  mechanism: RDF data model and validation rules for exchanging genetic designs, components, sequences,
+    interactions, constraints, and provenance
+  summary: Community data model for exchanging synthetic-biology designs, including components, sequences,
+    interactions, constraints, combinatorial derivation, and provenance.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - public-validator
+  - institutional-adoption
+  implementation_status: reference-and-others
+  conformance_status: public-validator
+  steward_id: sbol-community
+  scientific_domains:
+  - biotechnology
+  - systems-biology
+  - computational-biology
+  integration_functions:
+  - research-data
+  - computational-science
+  - laboratory-data
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: sbolstandard-org-datamodel-specification-version-3-1-0
+    role: technical-definition
+  - ref_id: sbolstandard-org-root
+    role: stewardship
+  - ref_id: github-com-synbiodex-sbol-specification
+    role: technical-definition
+  - ref_id: github-com-synbiodex-pysbol3
+    role: implementation
+  - ref_id: pysbol3-readthedocs-io-stable-validation
+    role: conformance
+  - ref_id: github-com-synbiodex-libsbolj3
+    role: implementation
+  relations:
+  - type: complements
+    resource_id: systems-biology-markup-language-sbml
+  - type: complements
+    resource_id: combine-omex-archive
+  - type: alternative-to
+    resource_id: cellml
+  decision_basis: Strongest governed design-exchange contract for synthetic biology, distinct from executable
+    systems-biology model languages.
+  boundary_note: SBOL exchanges genetic design intent and structure; SBML/CellML exchange executable mathematical
+    models. pySBOL3 validation checks data-model rules and does not prove biological correctness or laboratory
+    executability. libSBOLj3 shares the SBOL community steward identity and is not counted as an independent
+    operator.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-deferred-family-admissions
