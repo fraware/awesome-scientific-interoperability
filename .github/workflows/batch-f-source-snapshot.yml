@@ -1,9 +1,9 @@
 name: Batch F source snapshot
 
 on:
-  push:
-    branches:
-      - agent/issue-44-batch-f-neuroscience-model-exchange
+  pull_request:
+    paths:
+      - '.github/workflows/batch-f-source-snapshot.yml'
   workflow_dispatch:
 
 permissions:
