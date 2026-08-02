@@ -7,6 +7,7 @@ This list selects standards, protocols, formats, schemas, APIs, ontologies, regi
 ## Contents
 
 - [Selection Standard](#selection-standard)
+- [How to use this list](#how-to-use-this-list)
 - [Foundations](#foundations)
 - [Identifiers and Discovery](#identifiers-and-discovery)
 - [Metadata and Semantics](#metadata-and-semantics)
@@ -22,6 +23,12 @@ This list selects standards, protocols, formats, schemas, APIs, ontologies, regi
 ## Selection Standard
 
 An entry must expose a reusable and publicly inspectable interoperability mechanism, demonstrate credible maintenance or stewardship, and add decision value beyond stronger resources already included. General scientific software, broad open-science guidance, private connectors, and projects whose interoperability contribution cannot be stated precisely are excluded. See the [editorial policy](docs/editorial-policy.md) for the complete standard.
+
+## How to use this list
+
+Start from the decision path that matches your question, then return to the curated entries below. Begin with a concrete [integration problem](docs/integration-problems.md), compare options in the [decision guides](docs/decision-guides/README.md), run [local catalog queries](docs/querying-the-catalog.md), or inspect the [watchlist](docs/watchlist.md) for near-miss resources.
+
+The manually edited README remains authoritative for inclusion. The machine-readable catalog validates and supports queries; it does not generate this list. See [Footnotes](#footnotes).
 
 ## Foundations
 
@@ -190,7 +197,6 @@ Read [contributing.md](contributing.md) before proposing a resource. A proposal 
 ## Footnotes
 
 - The manually edited README is authoritative. The [machine-readable catalog](catalog/resources.yaml) exists for validation, maintenance, and downstream analysis; it does not generate this list.
-- Navigate by concrete integration problem through the [integration problem index](docs/integration-problems.md).
-- Promising resources that do not yet satisfy the main-list bar are tracked in [docs/watchlist.md](docs/watchlist.md).
+- Decision paths for problems, guides, local queries, and the watchlist appear under How to use this list above.
 - Editorial decisions follow the [project charter](docs/project-charter.md), [taxonomy](docs/taxonomy.md), and [conflict-of-interest policy](docs/conflicts-of-interest.md).
 - Release checks and publication instructions are recorded in the [validation report](docs/validation-report.md) and [publishing guide](docs/publishing.md).
