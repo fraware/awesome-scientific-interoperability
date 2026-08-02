@@ -93,6 +93,20 @@ implementations:
   - github-com-glencoesoftware-bioformats2raw
   - ngff-openmicroscopy-org-0-5
   notes: Separately operated converter that writes OME-Zarr from microscopy formats.
+- id: bmtk-sonata
+  name: Brain Modeling Toolkit SONATA support
+  url: https://github.com/AllenInstitute/bmtk
+  implements_resource_id: sonata
+  operator_steward_id: allen-institute
+  relationship: official-implementation
+  supported_versions:
+  - SONATA network, configuration, input, and report conventions
+  evidence_ref_ids:
+  - github-com-alleninstitute-bmtk
+  - github-com-alleninstitute-sonata
+  - github-com-alleninstitute-sonata-developer-guide
+  notes: Allen Institute toolkit for building and simulating SONATA-described networks; same-origin software
+    is not counted as independent implementation evidence.
 - id: cdisc-odm-linkml-model
   name: CDISC ODM v2.0 LinkML model
   url: https://cdisc-org.github.io/DataExchange-ODM-LinkML/
@@ -131,8 +145,7 @@ implementations:
   notes: Imports and exports SBML through a separately governed simulation environment.
 - id: copasi-sedml
   name: COPASI
-  url: 
-    https://copasi.org/Support/User_Manual/Importing_and_Exporting/Importing_and_Exporting_SEDML_Files/
+  url: https://copasi.org/Support/User_Manual/Importing_and_Exporting/Importing_and_Exporting_SEDML_Files/
   implements_resource_id: simulation-experiment-description-markup-language-sed-ml
   operator_steward_id: copasi-project
   relationship: independent-implementation
@@ -215,16 +228,15 @@ implementations:
   evidence_ref_ids:
   - ga4gh-github-io-refget-compliance-ena-server
   - ga4gh-github-io-refget-sequences
-  notes: EMBL-EBI-operated reference sequence service independently tested by the public compliance 
-    suite.
+  notes: EMBL-EBI-operated reference sequence service independently tested by the public compliance suite.
 - id: frictionless-js
   name: frictionless-js
   url: https://github.com/frictionlessdata/frictionless-js
   implements_resource_id: data-package-standard
   operator_steward_id: frictionless-js-project
   relationship: independent-implementation
-  notes: JavaScript ecosystem support exists, but Data Package v2 migration remains uneven relative 
-    to the Python framework.
+  notes: JavaScript ecosystem support exists, but Data Package v2 migration remains uneven relative to
+    the Python framework.
   evidence_ref_ids:
   - github-com-frictionlessdata-frictionless-js
   - datapackage-org-blog-2024-06-26-v2-release
@@ -359,8 +371,8 @@ implementations:
   implements_resource_id: workflow-description-language-wdl
   operator_steward_id: chanzuckerberg-initiative
   relationship: independent-implementation
-  notes: CZI-originated WDL runner; repository is hosted under the OpenWDL GitHub org but operated 
-    independently of OpenWDL language stewardship.
+  notes: CZI-originated WDL runner; repository is hosted under the OpenWDL GitHub org but operated independently
+    of OpenWDL language stewardship.
   evidence_ref_ids:
   - github-com-openwdl-miniwdl
   - miniwdl-readthedocs-getting-started
@@ -396,6 +408,47 @@ implementations:
   - mne-tools-mne-bids-stable
   - bids-specification-readthedocs-stable
   notes: Creates and reads BIDS-compatible datasets through the separately governed MNE project.
+- id: netpyne-neuroml
+  name: NetPyNE NeuroML import and export
+  url: https://doc.netpyne.org/netpyne.conversion.neuromlFormat.html
+  implements_resource_id: neuroml
+  operator_steward_id: netpyne-project
+  relationship: independent-implementation
+  supported_versions:
+  - NeuroML 2 import and export
+  evidence_ref_ids:
+  - doc-netpyne-org-neuroml-format
+  - docs-neuroml-org-userdocs-software-supporting-tools
+  - netpyne-org-about
+  notes: Separately governed modeling environment with documented NeuroML 2 import and export paths; supported
+    subsets must be verified for each workflow.
+- id: netpyne-sonata
+  name: NetPyNE SONATA import and export
+  url: https://doc.netpyne.org/netpyne.conversion.sonataImport.html
+  implements_resource_id: sonata
+  operator_steward_id: netpyne-project
+  relationship: independent-implementation
+  supported_versions:
+  - SONATA network import and export
+  evidence_ref_ids:
+  - doc-netpyne-org-sonata-import
+  - github-com-alleninstitute-sonata
+  - netpyne-org-about
+  notes: Separately governed simulator and modeling project with documented SONATA conversion support;
+    this does not establish format-wide conformance.
+- id: neuroml-schema-validator
+  name: NeuroML schema validation through pyNeuroML and jNeuroML
+  url: https://docs.neuroml.org/Userdocs/ValidatingNeuroMLModels.html
+  implements_resource_id: neuroml
+  operator_steward_id: neuroml-community
+  relationship: validator
+  supported_versions:
+  - NeuroML 2.3 schema
+  evidence_ref_ids:
+  - docs-neuroml-org-userdocs-validating-neuroml-models
+  - docs-neuroml-org-userdocs-specification
+  notes: Official command-line and Python validation paths check schema names, types, values, inclusion,
+    cardinality, and hierarchy; they do not prove numerical equivalence.
 - id: nomad-optimade-server
   name: NOMAD OPTIMADE
   url: https://nomad-lab.eu/prod/rae/optimade/
@@ -594,6 +647,20 @@ implementations:
   evidence_ref_ids:
   - pymzml-readthedocs
   - psidev-info-mzml
+- id: pyneuroml
+  name: pyNeuroML
+  url: https://github.com/NeuroML/pyNeuroML
+  implements_resource_id: neuroml
+  operator_steward_id: neuroml-community
+  relationship: official-implementation
+  supported_versions:
+  - NeuroML 2.3 and LEMS
+  evidence_ref_ids:
+  - github-com-neuroml-pyneuroml
+  - docs-neuroml-org-userdocs-specification
+  - docs-neuroml-org-root
+  notes: Core NeuroML Python toolkit for building, validating, simulating, visualizing, and converting
+    models; shared stewardship prevents it from counting as independent.
 - id: pynwb
   name: PyNWB
   url: https://github.com/NeurodataWithoutBorders/pynwb
@@ -728,8 +795,7 @@ implementations:
   evidence_ref_ids:
   - github-com-ga4gh-vrs-python
   - vrs-ga4gh-org-stable
-  notes: Reference Python implementation for VRS models, normalization, translation, and computed 
-    identifiers.
+  notes: Reference Python implementation for VRS models, normalization, translation, and computed identifiers.
 - id: vrs-python-validation
   name: VRS-Python validation tests
   url: https://github.com/ga4gh/vrs-python/tree/main/tests/validation
@@ -739,8 +805,7 @@ implementations:
   evidence_ref_ids:
   - github-com-ga4gh-vrs-python-tests-validation
   - github-com-ga4gh-vrs-python
-  notes: Specification-derived tests embedded in the reference implementation; not independent 
-    certification.
+  notes: Specification-derived tests embedded in the reference implementation; not independent certification.
 - id: workflowhub-trs
   name: WorkflowHub TRS
   url: https://workflowhub.eu/ga4gh/trs/v2/

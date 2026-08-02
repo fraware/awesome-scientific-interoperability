@@ -637,3 +637,40 @@ Use [resource:hupo-psi-mzml] to exchange spectra, chromatograms, binary arrays, 
 [problem:integrate-clinical-research-data]
 
 Use [resource:hl7-fhir] for operational healthcare exchange, [resource:cdisc-operational-data-model-odm] for clinical-study interchange and archival, [resource:omop-common-data-model] for harmonized observational analytics, and [resource:ga4gh-phenopackets] for phenotype-centered genomic records. See the [clinical research data models guide](decision-guides/clinical-research-data-models.md).
+
+## 21. Exchange computational-neuroscience models across simulators and scales
+
+[problem:exchange-computational-neuroscience-models]
+
+### Situation
+
+A modeling program must preserve explicit cellular and network semantics, execute models in independently developed simulators, and exchange instantiated large-scale circuits and simulation products without confusing model validity with behavioral equivalence.
+
+### Starting point
+
+Use [resource:neuroml] for declarative neuronal cells, morphologies, membrane properties, channels, networks, inputs, units, and simulation definitions. Use [resource:sonata] when large instantiated networks, configurations, inputs, spikes, and time-series reports require HDF5-backed performance representation.
+
+The mechanisms are complementary. Retain a canonical semantic representation where feasible, record conversion and profile decisions, and test representative models in every target simulator.
+
+### When an alternative is stronger
+
+- Experimental neurophysiology acquisition and analysis data: use [resource:neurodata-without-borders-nwb].
+- Subject, session, modality, and derivative organization: use [resource:brain-imaging-data-structure-bids].
+- General systems-biology reaction or physiological equation models: use [resource:systems-biology-markup-language-sbml] or [resource:cellml].
+- Exact conversion and execution evidence: use [resource:workflow-run-ro-crate] or [resource:cwlprov].
+
+### Limitations and common category errors
+
+- Treating NeuroML schema validation as proof of numerical equivalence across simulators.
+- Treating SONATA implementation tests as a public format-wide conformance suite.
+- Treating HDF5 readability as evidence of SONATA or NWB semantics.
+- Omitting converter versions, extension profiles, unsupported constructs, or parameter mappings.
+- Using an experimental-data standard as the canonical computational model language.
+
+### Relevant catalog entries
+
+[resource:neuroml] [resource:sonata] [resource:neurodata-without-borders-nwb] [resource:brain-imaging-data-structure-bids] [resource:systems-biology-markup-language-sbml] [resource:cellml] [resource:workflow-run-ro-crate] [resource:cwlprov]
+
+### Example architecture
+
+A repository validates canonical NeuroML models and runs cross-simulator fixtures. A versioned conversion step emits SONATA networks for large-scale BMTK or NetPyNE execution, records mappings and unsupported constructs, and packages execution evidence with Workflow Run RO-Crate. Experimental comparison data remains in NWB, with BIDS or RO-Crate supplying study-level organization.

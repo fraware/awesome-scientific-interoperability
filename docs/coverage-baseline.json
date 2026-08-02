@@ -1,9 +1,9 @@
 {
   "metrics": {
     "generated_on": "2026-08-02",
-    "total_entries": 107,
+    "total_entries": 109,
     "entries_per_section": {
-      "Data and Digital Objects": 23,
+      "Data and Digital Objects": 25,
       "Metadata and Semantics": 21,
       "Identifiers and Discovery": 13,
       "Workflows and Execution": 12,
@@ -21,40 +21,42 @@
       "3": 3,
       "4": 3,
       "5": 8,
-      "6": 4
+      "6": 5,
+      "7": 1
     },
     "entries_per_domain": {
       "cross-domain": 29,
-      "research-data": 23,
+      "research-data": 25,
       "computational-workflows": 19,
       "genomics": 16,
       "life-sciences": 13,
       "scholarly-communication": 9,
       "provenance": 8,
       "clinical-informatics": 7,
+      "computational-biology": 7,
       "biomedical": 6,
+      "biosimulation": 6,
+      "computational-science": 6,
       "environmental-science": 6,
       "systems-biology": 6,
       "bioinformatics": 5,
-      "computational-biology": 5,
       "digital-preservation": 5,
       "geospatial": 5,
       "knowledge-representation": 5,
-      "biosimulation": 4,
-      "computational-science": 4,
+      "reproducibility": 5,
       "data-governance": 4,
       "laboratory-data": 4,
+      "neuroscience": 4,
       "analytical-chemistry": 3,
       "astronomy": 3,
       "laboratory-automation": 3,
       "materials-science": 3,
-      "reproducibility": 3,
       "research-software": 3,
       "ai-agents": 2,
       "analytical-instruments": 2,
       "biodiversity": 2,
+      "hpc": 2,
       "laboratory-medicine": 2,
-      "neuroscience": 2,
       "physics": 2,
       "research-information": 2,
       "sample-curation": 2,
@@ -69,7 +71,6 @@
       "engineering": 1,
       "european-research": 1,
       "geosciences": 1,
-      "hpc": 1,
       "machine-learning": 1,
       "research-objects": 1,
       "scientific-computing": 1,
@@ -78,36 +79,37 @@
     "domain_concentration": {
       "entries_per_domain": {
         "cross-domain": 29,
-        "research-data": 23,
+        "research-data": 25,
         "computational-workflows": 19,
         "genomics": 16,
         "life-sciences": 13,
         "scholarly-communication": 9,
         "provenance": 8,
         "clinical-informatics": 7,
+        "computational-biology": 7,
         "biomedical": 6,
+        "biosimulation": 6,
+        "computational-science": 6,
         "environmental-science": 6,
         "systems-biology": 6,
         "bioinformatics": 5,
-        "computational-biology": 5,
         "digital-preservation": 5,
         "geospatial": 5,
         "knowledge-representation": 5,
-        "biosimulation": 4,
-        "computational-science": 4,
+        "reproducibility": 5,
         "data-governance": 4,
         "laboratory-data": 4,
+        "neuroscience": 4,
         "analytical-chemistry": 3,
         "astronomy": 3,
         "laboratory-automation": 3,
         "materials-science": 3,
-        "reproducibility": 3,
         "research-software": 3,
         "ai-agents": 2,
         "analytical-instruments": 2,
         "biodiversity": 2,
+        "hpc": 2,
         "laboratory-medicine": 2,
-        "neuroscience": 2,
         "physics": 2,
         "research-information": 2,
         "sample-curation": 2,
@@ -122,43 +124,43 @@
         "engineering": 1,
         "european-research": 1,
         "geosciences": 1,
-        "hpc": 1,
         "machine-learning": 1,
         "research-objects": 1,
         "scientific-computing": 1,
         "sensor-networks": 1
       },
       "scientific_domain_counts": {
-        "research-data": 23,
+        "research-data": 25,
         "computational-workflows": 19,
         "genomics": 16,
         "life-sciences": 13,
         "scholarly-communication": 9,
         "provenance": 8,
         "clinical-informatics": 7,
+        "computational-biology": 7,
         "biomedical": 6,
+        "biosimulation": 6,
+        "computational-science": 6,
         "environmental-science": 6,
         "systems-biology": 6,
         "bioinformatics": 5,
-        "computational-biology": 5,
         "digital-preservation": 5,
         "geospatial": 5,
         "knowledge-representation": 5,
-        "biosimulation": 4,
-        "computational-science": 4,
+        "reproducibility": 5,
         "data-governance": 4,
         "laboratory-data": 4,
+        "neuroscience": 4,
         "analytical-chemistry": 3,
         "astronomy": 3,
         "laboratory-automation": 3,
         "materials-science": 3,
-        "reproducibility": 3,
         "research-software": 3,
         "ai-agents": 2,
         "analytical-instruments": 2,
         "biodiversity": 2,
+        "hpc": 2,
         "laboratory-medicine": 2,
-        "neuroscience": 2,
         "physics": 2,
         "research-information": 2,
         "sample-curation": 2,
@@ -173,7 +175,6 @@
         "engineering": 1,
         "european-research": 1,
         "geosciences": 1,
-        "hpc": 1,
         "machine-learning": 1,
         "research-objects": 1,
         "scientific-computing": 1,
@@ -181,19 +182,19 @@
       },
       "cross_domain_tagged_entries": 29,
       "largest_scientific_domain": "research-data",
-      "largest_scientific_domain_count": 23,
-      "largest_scientific_domain_share": 0.215,
-      "largest_scientific_domain_share_percent": 21.5
+      "largest_scientific_domain_count": 25,
+      "largest_scientific_domain_share": 0.2294,
+      "largest_scientific_domain_share_percent": 22.94
     },
     "interoperability_layers": {
-      "Semantic": 76,
-      "Syntactic": 76,
-      "Operational": 57,
+      "Semantic": 78,
+      "Syntactic": 78,
+      "Operational": 59,
       "Evidentiary": 31,
       "Organizational": 11
     },
     "resource_kinds": {
-      "exchange-standard": 19,
+      "exchange-standard": 21,
       "api-standard": 16,
       "metadata-standard": 14,
       "ontology-vocabulary": 12,
@@ -209,36 +210,36 @@
       "workflow-language": 2
     },
     "maturity_states": {
-      "established": 64,
+      "established": 66,
       "maintained": 39,
       "emerging": 4
     },
     "evidence_types": {
-      "normative-specification": 96,
-      "institutional-adoption": 63,
-      "reference-implementation": 45,
-      "independent-implementation": 34,
-      "public-validator": 19,
-      "interoperability-demonstration": 14,
+      "normative-specification": 98,
+      "institutional-adoption": 65,
+      "reference-implementation": 46,
+      "independent-implementation": 36,
+      "public-validator": 20,
+      "interoperability-demonstration": 16,
       "conformance-suite": 13,
       "documented-tests": 11
     },
     "implementation_status": {
-      "reference-and-others": 84,
+      "reference-and-others": 86,
       "multiple-independent": 13,
       "single-known": 7,
       "unknown": 2,
       "not-applicable": 1
     },
     "conformance_status": {
-      "none-known": 70,
-      "public-validator": 20,
+      "none-known": 71,
+      "public-validator": 21,
       "public-suite": 14,
       "documented-tests": 3
     },
     "stewardship_types": {
-      "community": 42,
-      "consortium": 31,
+      "community": 43,
+      "consortium": 32,
       "standards-body": 20,
       "institution": 9,
       "foundation": 5
@@ -246,7 +247,7 @@
     "review_schedule": {
       "reviewed_on": {
         "2026-08-01": 87,
-        "2026-08-02": 20
+        "2026-08-02": 22
       },
       "review_due_on_values": [
         "2027-01-31",
@@ -287,8 +288,20 @@
         },
         {
           "review_due_on": "2027-02-02",
+          "id": "neuroml",
+          "name": "NeuroML",
+          "section": "Data and Digital Objects"
+        },
+        {
+          "review_due_on": "2027-02-02",
           "id": "ome-ngff",
           "name": "OME-NGFF / OME-Zarr",
+          "section": "Data and Digital Objects"
+        },
+        {
+          "review_due_on": "2027-02-02",
+          "id": "sonata",
+          "name": "SONATA",
           "section": "Data and Digital Objects"
         },
         {
@@ -362,18 +375,6 @@
           "id": "common-workflow-language-cwl",
           "name": "Common Workflow Language (CWL)",
           "section": "Workflows and Execution"
-        },
-        {
-          "review_due_on": "2027-08-01",
-          "id": "croissant",
-          "name": "Croissant",
-          "section": "Metadata and Semantics"
-        },
-        {
-          "review_due_on": "2027-08-01",
-          "id": "cross-domain-interoperability-framework-cdif",
-          "name": "Cross-Domain Interoperability Framework (CDIF)",
-          "section": "Foundations"
         }
       ],
       "overdue_count": 0,
@@ -494,6 +495,30 @@
                 "resource_kind": "conformance-artifact"
               }
             ]
+          },
+          "multi-engine-service": {
+            "count": 0,
+            "members": []
+          },
+          "runner": {
+            "count": 0,
+            "members": []
+          }
+        },
+        "unknown_member_ids": []
+      },
+      "computational-neuroscience-model-exchange": {
+        "member_count": 2,
+        "member_ids": [
+          "neuroml",
+          "sonata"
+        ],
+        "implementation_count": 0,
+        "implementations": [],
+        "role_buckets": {
+          "conformance": {
+            "count": 0,
+            "members": []
           },
           "multi-engine-service": {
             "count": 0,
@@ -923,9 +948,9 @@
       ],
       "missing_configured_ids": [],
       "count": 8,
-      "total_entries": 107,
-      "share": 0.0748,
-      "share_percent": 7.48
+      "total_entries": 109,
+      "share": 0.0734,
+      "share_percent": 7.34
     },
     "isolated_entries": [],
     "evidence_without_source": []

@@ -1,6 +1,13 @@
 stewards_version: 1.0.0
 reviewed_on: '2026-08-02'
 stewards:
+- id: allen-institute
+  name: Allen Institute
+  type: institution
+  url: https://alleninstitute.org/
+  aliases:
+  - Allen Institute for Brain Science
+  - AIBS
 - id: allotrope-foundation
   name: Allotrope Foundation
   type: consortium
@@ -354,12 +361,24 @@ stewards:
   type: standards-body
   url: https://jats.nlm.nih.gov/
   aliases: []
+- id: netpyne-project
+  name: NetPyNE Project
+  type: community
+  url: https://www.netpyne.org/about
+  aliases:
+  - Networks using Python and NEURON
 - id: neurodata-without-borders
   name: Neurodata Without Borders
   type: community
   url: https://nwb.org/
   aliases:
   - NWB
+- id: neuroml-community
+  name: NeuroML Community
+  type: community
+  url: https://neuroml.org/
+  aliases:
+  - NeuroML Initiative
 - id: nexus-international-advisory-committee-niac
   name: NeXus International Advisory Committee (NIAC)
   type: community
@@ -575,6 +594,12 @@ stewards:
   type: institution
   url: https://www.softwareheritage.org/
   aliases: []
+- id: sonata-community
+  name: SONATA Community
+  type: consortium
+  url: https://github.com/AllenInstitute/sonata
+  aliases:
+  - Allen Institute and Blue Brain Project SONATA collaboration
 - id: stac-community
   name: STAC community
   type: community

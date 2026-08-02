@@ -87,7 +87,7 @@ Exclusions and watchlist placements are recorded in the candidate review files a
 
 ## Current corpus status (2026-08-02)
 
-- **Main-list entries:** 107 on the stacked Issue #44 Batch E candidate tree (README and catalog parity enforced by CI).
+- **Main-list entries:** 109 on the stacked Issue #44 Batch F candidate tree (README and catalog parity enforced by CI).
 - **Section review files:** 11 under `docs/reviews/`.
 - **Gap review files:** 4 under `docs/candidate-reviews/`.
 - **Review freshness:** Enforced by `scripts/check_review_freshness.py` in CI.
@@ -181,3 +181,11 @@ Review artifacts:
 - [Data and Digital Objects](reviews/data-and-digital-objects.md)
 - [Repository preservation and data packaging guide](decision-guides/repository-preservation-and-data-packaging.md)
 - [Research object packaging guide](decision-guides/research-object-packaging.md)
+
+
+## Issue #44 Batch F — computational-neuroscience model exchange
+
+- **Scope:** NeuroML and SONATA admissions, implementation identities, evidence boundaries, typed relations, decision support, and progression-safe expansion validation.
+- **Review status:** AI-assisted author review only; independent human maintainer review remains required before merge.
+- **Evidence boundary:** NeuroML carries direct public schema-validation evidence. SONATA remains `none-known` for public format-wide conformance despite documented implementations and interoperability demonstrations.
+- **Dependency:** Stacked on draft PR #51; review and merge only after Batches A through E are approved in order.

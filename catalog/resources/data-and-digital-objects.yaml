@@ -1439,3 +1439,153 @@ resources:
     reviewed_on: '2026-08-02'
     conflict_disclosure: none identified; human maintainer approval required before merge
     decision_record: issue-44-batch-e
+- id: neuroml
+  name: NeuroML
+  url: https://docs.neuroml.org/Userdocs/Specification.html
+  section: Data and Digital Objects
+  resource_kind: exchange-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Computational neuroscience model authors
+  - neural simulators
+  - model repositories
+  - validation and conversion tools
+  mechanism: XML schema and LEMS definitions for neuronal morphologies, membrane properties, channels,
+    cells, networks, inputs, units, and simulations
+  summary: Declarative NeuroML 2 and LEMS standard for exchanging neuronal cell, channel, network, input,
+    and simulation models across computational-neuroscience tools.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  - public-validator
+  - interoperability-demonstration
+  implementation_status: reference-and-others
+  conformance_status: public-validator
+  steward_id: neuroml-community
+  scientific_domains:
+  - neuroscience
+  - biosimulation
+  - computational-biology
+  integration_functions:
+  - computational-science
+  - research-data
+  - reproducibility
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: docs-neuroml-org-userdocs-specification
+    role: technical-definition
+  - ref_id: docs-neuroml-org-neuromlorg-board
+    role: stewardship
+  - ref_id: github-com-neuroml-pyneuroml
+    role: implementation
+  - ref_id: doc-netpyne-org-neuroml-format
+    role: implementation
+  - ref_id: docs-neuroml-org-userdocs-validating-neuroml-models
+    role: conformance
+  - ref_id: docs-neuroml-org-userdocs-testing-neuroml-models
+    role: interoperability-testing
+  - ref_id: docs-neuroml-org-userdocs-software-supporting-tools
+    role: adoption
+  relations:
+  - type: complements
+    resource_id: sonata
+  - type: complements
+    resource_id: neurodata-without-borders-nwb
+  - type: complements
+    resource_id: brain-imaging-data-structure-bids
+  decision_basis: Strongest governed declarative language for portable computational-neuroscience model
+    semantics, with a current specification, official validation, and documented support across independent
+    modeling environments.
+  boundary_note: Schema validation establishes structural NeuroML validity. It does not prove that every
+    simulator supports the same language subset or that independently executed models produce numerically
+    equivalent dynamics. SONATA is stronger for performance-oriented representation of very large instantiated
+    networks.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-02-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-f
+- id: sonata
+  name: SONATA
+  url: https://github.com/AllenInstitute/sonata
+  section: Data and Digital Objects
+  resource_kind: exchange-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Large-scale neuronal network builders
+  - high-performance simulators
+  - analysis and visualization tools
+  - simulation input and output pipelines
+  mechanism: HDF5, CSV, and JSON conventions for neuronal nodes, edges, type tables, simulation configuration,
+    inputs, spikes, and time-series reports
+  summary: Scalable open data format for exchanging large neuronal network models, simulation configurations,
+    inputs, and outputs across high-performance neuroscience tools.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - independent-implementation
+  - institutional-adoption
+  - interoperability-demonstration
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  steward_id: sonata-community
+  scientific_domains:
+  - neuroscience
+  - biosimulation
+  - computational-biology
+  integration_functions:
+  - computational-science
+  - research-data
+  - reproducibility
+  infrastructure_contexts:
+  - hpc
+  artifact_classes: []
+  source_refs:
+  - ref_id: github-com-alleninstitute-sonata
+    role: technical-definition
+  - ref_id: github-com-alleninstitute-sonata
+    role: stewardship
+  - ref_id: github-com-alleninstitute-sonata-developer-guide
+    role: technical-definition
+  - ref_id: github-com-alleninstitute-bmtk
+    role: implementation
+  - ref_id: doc-netpyne-org-sonata-import
+    role: implementation
+  - ref_id: doi-org-10-1371-journal-pcbi-1007696
+    role: interoperability-testing
+  relations:
+  - type: complements
+    resource_id: neuroml
+  - type: complements
+    resource_id: neurodata-without-borders-nwb
+  - type: complements
+    resource_id: workflow-run-ro-crate
+  decision_basis: Strongest open performance representation for large-scale neuronal circuits and simulation
+    products when HDF5-backed scale and cross-platform exchange dominate the integration decision.
+  boundary_note: SONATA intentionally complements declarative model languages such as NeuroML. Its flexible
+    extension points and implementation-specific parameter namespaces require profile and subset agreements.
+    No public format-wide conformance suite was identified, and implementation tests do not establish
+    universal SONATA conformance.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-02-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-f

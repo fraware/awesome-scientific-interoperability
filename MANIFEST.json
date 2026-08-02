@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-02",
-  "file_count": 169,
+  "file_count": 171,
   "files": [
     {
       "path": ".github/CODEOWNERS",
@@ -64,8 +64,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "869fd10e7ded8df5c77d99c68b922834bc4fe13d46816d22f7dad40329c3fa54",
-      "bytes": 25654
+      "sha256": "7f8dc800e64b94dbca0e4fdb084ae675fca7d6c866d451eee787dbca1e3eff66",
+      "bytes": 26098
     },
     {
       "path": "archive.md",
@@ -109,23 +109,23 @@
     },
     {
       "path": "catalog/candidates/systems-biology-neuroscience.yaml",
-      "sha256": "5cc14fea52a9c9c7127d16f5b9f45fae2a1df838895d4fda722d3932fdbbba28",
-      "bytes": 3074
+      "sha256": "7feb1e998c286b15d360e3db087dda52a36d8c89d4985a96480211c877d95194",
+      "bytes": 1457
     },
     {
       "path": "catalog/expansion-candidates.yaml",
-      "sha256": "8007a5da8eab8368d5ebdf82a04658f5716623cceb8b45f1cf9ba1be90bb5fa2",
-      "bytes": 1380
+      "sha256": "898861719326d9d1857fb9a8abe3b07e8c3a4c711b63160f18f548faf9192e9a",
+      "bytes": 1397
     },
     {
       "path": "catalog/implementations.yaml",
-      "sha256": "865c9469e674a03d3e1627e4e3b6edabfce5cea204d005eef3bf7ab9be0e86b4",
-      "bytes": 27863
+      "sha256": "da1820d2a64748265deada134d2cc8c02a4ba2b048b7b19845feb49379222971",
+      "bytes": 30780
     },
     {
       "path": "catalog/references.yaml",
-      "sha256": "31980470cd34b4b07d6706a57eaf3bb37283d0218b9a98c0c55ba95dd3615a30",
-      "bytes": 86974
+      "sha256": "37bd4d83669a76152d031a424a9ca9924f492b22c47a6351b0dd9f29cdaa68ac",
+      "bytes": 90286
     },
     {
       "path": "catalog/resources.yaml",
@@ -139,8 +139,8 @@
     },
     {
       "path": "catalog/resources/data-and-digital-objects.yaml",
-      "sha256": "d80e5a1336fd2f112b84365e688eb0fe8287d3fb71a2c8922656b2bd2ce258da",
-      "bytes": 49775
+      "sha256": "44328beefa1e004c76985e69f16d636c5f93d5575e88e6e62219814c6c64b58c",
+      "bytes": 55468
     },
     {
       "path": "catalog/resources/foundations.yaml",
@@ -189,8 +189,8 @@
     },
     {
       "path": "catalog/stewards.yaml",
-      "sha256": "5fd42a8d94c0ef4be21325beaebd9f56c94255bcd23c9c98fec717c85c597603",
-      "bytes": 15893
+      "sha256": "7ea355b64d85c079495b5f5cd19cc3eb80095e31774fc41cd8b04f79ee15ba54",
+      "bytes": 16521
     },
     {
       "path": "catalog/watchlist.yaml",
@@ -199,8 +199,8 @@
     },
     {
       "path": "changelog.md",
-      "sha256": "22477041fa75b6361dff60c1388e1504efb1da7ad6ca6e517f518bfa9b97528a",
-      "bytes": 7148
+      "sha256": "10f3df8397abc237ed9d78a04e825da3e4dc4bbf6c472c65f356f6824bec9602",
+      "bytes": 8029
     },
     {
       "path": "code-of-conduct.md",
@@ -214,8 +214,8 @@
     },
     {
       "path": "config/coverage-policy.yaml",
-      "sha256": "248830691896df5a1da554a5caf3d55b20e74fde909889888004c4b2ec037b2c",
-      "bytes": 2704
+      "sha256": "b0faf392c7a9ad69fee0813f9d8726cfb3a1122348483e8bf58c357d1254bb9a",
+      "bytes": 2772
     },
     {
       "path": "config/link-policy.yaml",
@@ -229,8 +229,8 @@
     },
     {
       "path": "docs/candidate-reviews/comprehensive-expansion-2026.md",
-      "sha256": "393b22d3c676e26b4d363960a3bd936749bcf8c73913e60024623b747523451e",
-      "bytes": 15103
+      "sha256": "badab5751669bac47d0ece2f67ffccd196915897b44f9e891cd1d797f3913835",
+      "bytes": 15865
     },
     {
       "path": "docs/candidate-reviews/experimental-and-biomedical.md",
@@ -274,28 +274,28 @@
     },
     {
       "path": "docs/coverage-baseline.json",
-      "sha256": "602f7f4d24741d0814ec731e21323d84e9fe079905cc7954294665211a76811b",
-      "bytes": 25536
+      "sha256": "0ee580fcba3c6cba87e9490db1c6d565505a5aba7b7f03ae3140eb92b05499c1",
+      "bytes": 26058
     },
     {
       "path": "docs/coverage-baseline.md",
-      "sha256": "6069d5cc48f7082b261f879b95962f55185b6a9ccd554636023fa002acb86bb7",
+      "sha256": "1e38d21b0ece89a517c104a1d67877569ee4914dddf57aecb2205ff647ff0a47",
       "bytes": 303
     },
     {
       "path": "docs/data-quality-baseline.json",
-      "sha256": "9bbdc62d81125ead8cd6586d8273caa459a519c9d38f3a8814b0aa9dd0e7ad96",
+      "sha256": "c97e11af6850afa539b620efc2be42e90eec7e4d5731bcbcd3eb08a8e0100886",
       "bytes": 266
     },
     {
       "path": "docs/data-quality-baseline.md",
-      "sha256": "a571652f706047b73e021b421fc0ad054c4e0539f18f302b8011a72d3dd05171",
+      "sha256": "8678426a39d67458a3ce1df02343c986f53389ec8d5677ce7213ee169ad49059",
       "bytes": 2297
     },
     {
       "path": "docs/decision-guides/README.md",
-      "sha256": "76680217d5add8b5edcdacc7ea3f0cd4933904a8d24bdd53a8d74708c9bc796e",
-      "bytes": 3624
+      "sha256": "cb2e342b665362d90cdd06bfd9764d1d407c9dfb633df89a1a9d2003175c076e",
+      "bytes": 3805
     },
     {
       "path": "docs/decision-guides/astronomy-data-and-services.md",
@@ -311,6 +311,11 @@
       "path": "docs/decision-guides/clinical-research-data-models.md",
       "sha256": "040036bb517ed998163146c4c42bf620e735b8b670e597430bfefff0d3b5faac",
       "bytes": 2138
+    },
+    {
+      "path": "docs/decision-guides/computational-neuroscience-model-exchange.md",
+      "sha256": "c160f6dcf3c40ca075e8d70913e331cc20f7dff174db3b5c69cfadd83e77999b",
+      "bytes": 5302
     },
     {
       "path": "docs/decision-guides/controlled-data-access.md",
@@ -349,8 +354,8 @@
     },
     {
       "path": "docs/decision-guides/neuroscience-data-standards.md",
-      "sha256": "ce212558a8ac2b87c29445d03c62391b62d38e5458822352d03afcb39266e60c",
-      "bytes": 3454
+      "sha256": "f697c776fda6e72f11d56d3818f729bce364e33f5f5efd39024d6335143c3b74",
+      "bytes": 4008
     },
     {
       "path": "docs/decision-guides/provenance-and-execution-evidence.md",
@@ -404,13 +409,13 @@
     },
     {
       "path": "docs/human-review-log.md",
-      "sha256": "8f5bb32e6cd3d392d78cb8478754896563abd1e76339cc3368393dcf9f9e0d24",
-      "bytes": 13052
+      "sha256": "41d12f4a0b75d9d7afec3fd4143b1634c300cc2b1941e61ab14975cbe83856cc",
+      "bytes": 13744
     },
     {
       "path": "docs/integration-problems.md",
-      "sha256": "a2874a571cb4cce2fa8d166ec7cdea2d6df113e3a6f92b24772ec1e814cdd36f",
-      "bytes": 46505
+      "sha256": "5d46125cc86b44aa0f411b3746ee471a020aee65c43a932931cd77e7a3cd9fec",
+      "bytes": 49095
     },
     {
       "path": "docs/link-audit-baseline.md",
@@ -429,7 +434,7 @@
     },
     {
       "path": "docs/publishing.md",
-      "sha256": "46773b5c9d79ae1732a07d6a3a2d10e5738929c6dfd464ca500650da35b1bbc5",
+      "sha256": "29f5aa0a797b1f61c6773dde0f43005fe91a074c3f65039746351022556f5cb1",
       "bytes": 7511
     },
     {
@@ -529,8 +534,8 @@
     },
     {
       "path": "docs/validation-report.md",
-      "sha256": "34935358c5a457391ea43b21ede1ea0a681b318f7cf8da005dfb3f9e06193c2f",
-      "bytes": 5103
+      "sha256": "60753e1a9c49ba34d6f6e4dee93f6bede6cc5d1e368d5739142488cbcca1d3d4",
+      "bytes": 5182
     },
     {
       "path": "docs/watchlist.md",
@@ -634,13 +639,13 @@
     },
     {
       "path": "scripts/validate_expansion_candidates.py",
-      "sha256": "78e29676c61a21cb07ad9f08e7dfd37cd3f7fd2c964d9951c7c931ab3d456fa0",
-      "bytes": 6722
+      "sha256": "07e5eb92e3d710e57d17ad3eb5fed5a73b47a1b8f756f2c86fa5ce5f634ea84c",
+      "bytes": 6875
     },
     {
       "path": "scripts/validate_problem_index.py",
-      "sha256": "0d002ac05bdbd93c26b1c0bd310797f30c59caeeeefbcb88b1264089a082f2cd",
-      "bytes": 4538
+      "sha256": "802b1a5159b6234d1979953cb890d464f33d021348e87403cc1361b520f8e859",
+      "bytes": 4592
     },
     {
       "path": "scripts/validate_watchlist.py",
@@ -778,8 +783,13 @@
       "bytes": 2209
     },
     {
+      "path": "tests/test_batch_f_neuroscience_models.py",
+      "sha256": "d4f433fd2d6b2d835922c6abd9a172d8285e6b042b9ff1aa1afe0aacad01fe86",
+      "bytes": 2471
+    },
+    {
       "path": "tests/test_catalog.py",
-      "sha256": "57247398274165177751a9a1e7a58b78b6e6bc906a619f83f31e97e663b02ae5",
+      "sha256": "4288965f8fabd03025c5ea6fb90064fffe3971dd392b889c3a62d5c21855a733",
       "bytes": 5991
     },
     {
@@ -799,8 +809,8 @@
     },
     {
       "path": "tests/test_expansion_candidates.py",
-      "sha256": "3130d270f0262b70dc52fa823acdb2d9a5a68298551b99710cc2d41e685c9544",
-      "bytes": 2246
+      "sha256": "5dc9aa321925e620776a47ac979fba9b1160189df18e2b5f4b28462821fdd401",
+      "bytes": 2396
     },
     {
       "path": "tests/test_fail_closed_depth.py",
@@ -834,7 +844,7 @@
     },
     {
       "path": "tests/test_review_provenance.py",
-      "sha256": "9351d7e73c2bca4fac21bf9f02b8b7ca8c1f08fdbb89b38b031561d38a53a5cc",
+      "sha256": "410f94d5136498b7d5b55887e711ad0a80bdde0b46c2208cb549a27669ba2ca2",
       "bytes": 1869
     },
     {
@@ -844,7 +854,7 @@
     },
     {
       "path": "tests/test_watchlist.py",
-      "sha256": "20a9e09281a2982ae1600285a8270a862e814da19b0583107272a9ee1a097673",
+      "sha256": "402dfa9fcb764c7a60b584ff265a305d531b40bf5e00b7aa6d31ccd511a9f927",
       "bytes": 3934
     }
   ]

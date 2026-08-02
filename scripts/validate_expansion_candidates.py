@@ -126,11 +126,14 @@ def validate() -> list[str]:
         errors.append(
             "candidate registry plus completed outcomes must equal research_program_size"
         )
-    if len(candidates) < 40:
-        errors.append("candidate registry must retain at least 40 unresolved researched candidates")
+    if not isinstance(program_size, int) or program_size < 60:
+        errors.append("research_program_size must preserve the comprehensive landscape baseline (>=60)")
     families = {item.get("coverage_family") for item in candidates}
-    if len(families) < 35:
-        errors.append("candidate registry must cover at least 35 distinct unresolved interoperability families")
+    minimum_family_count = max(1, (4 * len(candidates) + 4) // 5) if candidates else 0
+    if len(families) < minimum_family_count:
+        errors.append(
+            "unresolved candidate families must cover at least 80% of unresolved records"
+        )
 
     return errors
 

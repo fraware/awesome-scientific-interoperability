@@ -97,6 +97,8 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 - [CellML](https://www.cellml.org/specifications/cellml_2.0/) - XML and MathML-based standard for exchanging modular mathematical models with explicit components, variables, units, imports, resets, and reusable model composition.
 - [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/en/stable/) - Community specification for organizing and describing neuroimaging, electrophysiology, microscopy, behavioral, and derivative datasets through standardized paths and sidecar metadata.
 - [Neurodata Without Borders (NWB)](https://nwb.org/tools/core/nwb-schema/) - Extensible schema and HDF5-based standard for exchanging neurophysiology acquisition, processing, analysis, behavioral, and experimental metadata across tools and archives.
+- [NeuroML](https://docs.neuroml.org/Userdocs/Specification.html) - Declarative NeuroML 2 and LEMS standard for exchanging neuronal cell, channel, network, input, and simulation models across computational-neuroscience tools.
+- [SONATA](https://github.com/AllenInstitute/sonata) - Scalable open data format for exchanging large neuronal network models, simulation configurations, inputs, and outputs across high-performance neuroscience tools.
 
 - [HUPO-PSI mzML](https://www.psidev.info/mzML) - HUPO-PSI XML standard for exchanging mass-spectrometry spectra, chromatograms, binary arrays, instrument settings, acquisition context, and processing metadata.
 - [CDISC Operational Data Model (ODM)](https://www.cdisc.org/standards/data-exchange/odm-xml/odm-v2-0) - Vendor-neutral model for exchanging and archiving clinical study data, metadata, administrative records, reference information, audit trails, and operational structures.

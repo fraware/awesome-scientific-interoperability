@@ -19,6 +19,12 @@ references:
   type: technical-documentation
   publisher: academic.oup.com
   accessed_on: '2026-08-01'
+- id: alleninstitute-org-root
+  title: Allen Institute
+  url: https://alleninstitute.org/
+  type: governance-source
+  publisher: Allen Institute
+  accessed_on: '2026-08-02'
 - id: allotrope-org-adf
   title: Allotrope Data Format
   url: https://www.allotrope.org/adf/
@@ -57,8 +63,7 @@ references:
   accessed_on: '2026-08-01'
 - id: archivematica-adr-0006-bagit
   title: Archivematica ADR 0006 — Use BagIt to package transfers
-  url: 
-    https://github.com/archivematica/archivematica-architectural-decisions/blob/main/0006-use-bagit-to-package-transfers.md
+  url: https://github.com/archivematica/archivematica-architectural-decisions/blob/main/0006-use-bagit-to-package-transfers.md
   type: technical-documentation
   publisher: github.com
   accessed_on: '2026-08-02'
@@ -250,15 +255,13 @@ references:
   accessed_on: '2026-08-01'
 - id: copasi-org-sbml-import-export
   title: COPASI SBML import and export
-  url: 
-    https://copasi.org/Support/User_Manual/Importing_and_Exporting/Importing_and_Exporting_SBML_Files/
+  url: https://copasi.org/Support/User_Manual/Importing_and_Exporting/Importing_and_Exporting_SBML_Files/
   type: technical-documentation
   publisher: copasi.org
   accessed_on: '2026-08-02'
 - id: copasi-org-sedml-import-export
   title: COPASI SED-ML import and export
-  url: 
-    https://copasi.org/Support/User_Manual/Importing_and_Exporting/Importing_and_Exporting_SEDML_Files/
+  url: https://copasi.org/Support/User_Manual/Importing_and_Exporting/Importing_and_Exporting_SEDML_Files/
   type: technical-documentation
   publisher: copasi.org
   accessed_on: '2026-08-02'
@@ -376,6 +379,18 @@ references:
   type: specification
   publisher: dicomstandard.org
   accessed_on: '2026-08-01'
+- id: doc-netpyne-org-neuroml-format
+  title: NetPyNE NeuroML import and export module
+  url: https://doc.netpyne.org/netpyne.conversion.neuromlFormat.html
+  type: api-documentation
+  publisher: NetPyNE
+  accessed_on: '2026-08-02'
+- id: doc-netpyne-org-sonata-import
+  title: NetPyNE SONATA import and export module
+  url: https://doc.netpyne.org/netpyne.conversion.sonataImport.html
+  type: api-documentation
+  publisher: NetPyNE
+  accessed_on: '2026-08-02'
 - id: dockstore-org
   title: Dockstore TRS adoption
   url: https://dockstore.org/
@@ -430,6 +445,42 @@ references:
   type: specification
   publisher: docs.mlcommons.org
   accessed_on: '2026-08-01'
+- id: docs-neuroml-org-neuromlorg-board
+  title: NeuroML Editorial Board
+  url: https://docs.neuroml.org/NeuroMLOrg/Board.html
+  type: governance-source
+  publisher: NeuroML
+  accessed_on: '2026-08-02'
+- id: docs-neuroml-org-root
+  title: NeuroML Documentation
+  url: https://docs.neuroml.org/
+  type: technical-documentation
+  publisher: NeuroML
+  accessed_on: '2026-08-02'
+- id: docs-neuroml-org-userdocs-software-supporting-tools
+  title: Tools and resources with NeuroML support
+  url: https://docs.neuroml.org/Userdocs/Software/SupportingTools.html
+  type: adoption-evidence
+  publisher: NeuroML
+  accessed_on: '2026-08-02'
+- id: docs-neuroml-org-userdocs-specification
+  title: NeuroML schema and specification
+  url: https://docs.neuroml.org/Userdocs/Specification.html
+  type: specification
+  publisher: NeuroML
+  accessed_on: '2026-08-02'
+- id: docs-neuroml-org-userdocs-testing-neuroml-models
+  title: Testing and validating NeuroML models across simulators
+  url: https://docs.neuroml.org/Userdocs/TestingNeuroMLModels.html
+  type: interoperability-result
+  publisher: NeuroML
+  accessed_on: '2026-08-02'
+- id: docs-neuroml-org-userdocs-validating-neuroml-models
+  title: Validating NeuroML models
+  url: https://docs.neuroml.org/Userdocs/ValidatingNeuroMLModels.html
+  type: validator
+  publisher: NeuroML
+  accessed_on: '2026-08-02'
 - id: docs-ogc-org-cs-24-059-24-059-html
   title: openEO API
   url: https://docs.ogc.org/cs/24-059/24-059.html
@@ -472,6 +523,12 @@ references:
   type: technical-documentation
   publisher: doi.org
   accessed_on: '2026-08-01'
+- id: doi-org-10-1371-journal-pcbi-1007696
+  title: The SONATA data format for efficient description of large-scale network models
+  url: https://doi.org/10.1371/journal.pcbi.1007696
+  type: interoperability-result
+  publisher: PLOS Computational Biology
+  accessed_on: '2026-08-02'
 - id: doi-org-10-5281-zenodo-10490289
   title: FAIR Signposting
   url: https://doi.org/10.5281/zenodo.10490289
@@ -735,6 +792,24 @@ references:
   url: https://www.gensc.org/
   type: governance-source
   publisher: Genomic Standards Consortium
+  accessed_on: '2026-08-02'
+- id: github-com-alleninstitute-bmtk
+  title: Brain Modeling Toolkit
+  url: https://github.com/AllenInstitute/bmtk
+  type: implementation-repository
+  publisher: Allen Institute
+  accessed_on: '2026-08-02'
+- id: github-com-alleninstitute-sonata
+  title: SONATA Data Format
+  url: https://github.com/AllenInstitute/sonata
+  type: specification
+  publisher: Allen Institute and Blue Brain Project
+  accessed_on: '2026-08-02'
+- id: github-com-alleninstitute-sonata-developer-guide
+  title: SONATA Developer Guide
+  url: https://github.com/AllenInstitute/sonata/blob/master/docs/SONATA_DEVELOPER_GUIDE.md
+  type: specification
+  publisher: Allen Institute and Blue Brain Project
   accessed_on: '2026-08-02'
 - id: github-com-andrewyatz-refget-server-perl
   title: Refget reference server Perl implementation
@@ -1360,6 +1435,12 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-02'
+- id: github-com-neuroml-pyneuroml
+  title: pyNeuroML
+  url: https://github.com/NeuroML/pyNeuroML
+  type: implementation-repository
+  publisher: NeuroML
+  accessed_on: '2026-08-02'
 - id: github-com-nexusformat-cnxvalidate
   title: NeXus cnxvalidate
   url: https://github.com/nexusformat/cnxvalidate
@@ -1912,6 +1993,12 @@ references:
   type: technical-documentation
   publisher: nature.com
   accessed_on: '2026-08-01'
+- id: netpyne-org-about
+  title: About NetPyNE and project governance
+  url: https://www.netpyne.org/about
+  type: governance-source
+  publisher: NetPyNE
+  accessed_on: '2026-08-02'
 - id: nextflow-io-root
   title: Nextflow
   url: https://www.nextflow.io/
