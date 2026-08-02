@@ -37,3 +37,6 @@ Resource-ID markers are checked by `scripts/validate_decision_guides.py` in Qual
 - [Integration problems](../integration-problems.md) — problem-class index
 - [Catalog model v2](../catalog-model-v2.md)
 - [Querying the catalog](../querying-the-catalog.md)
+| [Ecology and sequence-context metadata](ecology-and-sequence-context-metadata.md) | MIxS, EML, Darwin Core, IGSN, ISA-JSON |
+| [Mass-spectrometry data exchange](mass-spectrometry-data.md) | mzML, AnIML, Allotrope Data Format |
+| [Clinical research data models](clinical-research-data-models.md) | FHIR, CDISC ODM, OMOP CDM, Phenopackets |

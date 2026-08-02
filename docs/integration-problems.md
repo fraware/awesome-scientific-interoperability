@@ -618,3 +618,21 @@ A microscopy facility converts acquisition files to versioned OME-Zarr, validate
 ## 17. Represent genomic variation and exchange phenotype context while accessing distributed sequence data
 
 Use [resource:ga4gh-variation-representation-specification-vrs] for normalized variation concepts and computed identifiers, [resource:ga4gh-phenopackets] for phenotype and interpretation records, [resource:ga4gh-htsget] for region-scoped read or variant retrieval, and [resource:ga4gh-refget-sequences] for content-derived reference-sequence identity and retrieval. [resource:ga4gh-data-repository-service-drs] complements htsget when complete data objects must be resolved. See the [genomic representation and access guide](decision-guides/genomic-representation-and-access.md).
+
+## 18. Preserve sequence-sample and ecological dataset context
+
+[problem:preserve-sequence-and-ecology-context]
+
+Use [resource:minimum-information-about-any-sequence-mixs] for sequence-associated sample and environmental metadata, [resource:ecological-metadata-language-eml] for complete ecological dataset descriptions, [resource:igsn-id] for persistent sample identity, [resource:darwin-core] for biodiversity records, and [resource:isa-json] for investigation, study, and assay structure. See the [ecology and sequence-context guide](decision-guides/ecology-and-sequence-context-metadata.md).
+
+## 19. Exchange mass-spectrometry primary data
+
+[problem:exchange-mass-spectrometry-data]
+
+Use [resource:hupo-psi-mzml] to exchange spectra, chromatograms, binary arrays, instrument settings, acquisition context, and processing metadata across converters, analysis tools, and repositories. Compare [resource:analytical-information-markup-language-animl] and [resource:allotrope-data-format] when the integration spans broader analytical techniques. See the [mass-spectrometry guide](decision-guides/mass-spectrometry-data.md).
+
+## 20. Separate clinical exchange, study operations, and observational analytics
+
+[problem:integrate-clinical-research-data]
+
+Use [resource:hl7-fhir] for operational healthcare exchange, [resource:cdisc-operational-data-model-odm] for clinical-study interchange and archival, [resource:omop-common-data-model] for harmonized observational analytics, and [resource:ga4gh-phenopackets] for phenotype-centered genomic records. See the [clinical research data models guide](decision-guides/clinical-research-data-models.md).

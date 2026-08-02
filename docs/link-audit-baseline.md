@@ -57,7 +57,7 @@ Seven URLs returned successful redirects (for example CDIF, COMBINE Archive, DDI
 
 ## Stacked expansion offline scope (2026-08-02)
 
-`python scripts/check_links.py --offline --scope all` validates the syntax of **417 unique HTTPS URLs** on the stacked Batch C candidate tree. This is an offline structural check, not a replacement for the network audit. The historical network classifications below remain limited to the 87-entry v1.1.0 corpus until the Links workflow is run on the new exact head.
+`python scripts/check_links.py --offline --scope all` validates the syntax of **448 unique HTTPS URLs** on the stacked Batch D candidate tree. This is an offline structural check, not a replacement for the network audit. The historical network classifications below remain limited to the 87-entry v1.1.0 corpus until the Links workflow is run on the new exact head.
 
 ## Post-remediation expectation
 

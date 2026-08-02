@@ -1,10 +1,10 @@
 {
   "metrics": {
     "generated_on": "2026-08-02",
-    "total_entries": 100,
+    "total_entries": 105,
     "entries_per_section": {
-      "Data and Digital Objects": 19,
-      "Metadata and Semantics": 18,
+      "Data and Digital Objects": 21,
+      "Metadata and Semantics": 21,
       "Identifiers and Discovery": 13,
       "Workflows and Execution": 12,
       "Instruments and Laboratories": 9,
@@ -20,45 +20,46 @@
       "2": 60,
       "3": 2,
       "4": 3,
-      "5": 6,
-      "6": 1
+      "5": 8,
+      "6": 4
     },
     "entries_per_domain": {
-      "cross-domain": 26,
+      "cross-domain": 27,
+      "research-data": 21,
       "computational-workflows": 19,
-      "research-data": 16,
-      "genomics": 15,
-      "life-sciences": 12,
+      "genomics": 16,
+      "life-sciences": 13,
       "scholarly-communication": 9,
-      "provenance": 7,
+      "provenance": 8,
+      "clinical-informatics": 7,
+      "biomedical": 6,
+      "environmental-science": 6,
       "systems-biology": 6,
-      "clinical-informatics": 5,
+      "bioinformatics": 5,
       "computational-biology": 5,
       "geospatial": 5,
-      "biomedical": 4,
+      "knowledge-representation": 5,
       "biosimulation": 4,
       "computational-science": 4,
-      "environmental-science": 4,
+      "data-governance": 4,
+      "digital-preservation": 4,
+      "laboratory-data": 4,
+      "analytical-chemistry": 3,
       "astronomy": 3,
-      "bioinformatics": 3,
-      "knowledge-representation": 3,
       "laboratory-automation": 3,
-      "laboratory-data": 3,
       "materials-science": 3,
       "reproducibility": 3,
       "research-software": 3,
       "ai-agents": 2,
-      "analytical-chemistry": 2,
-      "data-governance": 2,
-      "digital-preservation": 2,
+      "analytical-instruments": 2,
+      "biodiversity": 2,
       "laboratory-medicine": 2,
       "neuroscience": 2,
       "physics": 2,
       "research-information": 2,
+      "sample-curation": 2,
       "semantic-web": 2,
       "social-science": 2,
-      "analytical-instruments": 1,
-      "biodiversity": 1,
       "bioimaging": 1,
       "biotechnology": 1,
       "chemistry": 1,
@@ -71,47 +72,47 @@
       "hpc": 1,
       "machine-learning": 1,
       "research-objects": 1,
-      "sample-curation": 1,
       "scientific-computing": 1,
       "sensor-networks": 1
     },
     "domain_concentration": {
       "entries_per_domain": {
-        "cross-domain": 26,
+        "cross-domain": 27,
+        "research-data": 21,
         "computational-workflows": 19,
-        "research-data": 16,
-        "genomics": 15,
-        "life-sciences": 12,
+        "genomics": 16,
+        "life-sciences": 13,
         "scholarly-communication": 9,
-        "provenance": 7,
+        "provenance": 8,
+        "clinical-informatics": 7,
+        "biomedical": 6,
+        "environmental-science": 6,
         "systems-biology": 6,
-        "clinical-informatics": 5,
+        "bioinformatics": 5,
         "computational-biology": 5,
         "geospatial": 5,
-        "biomedical": 4,
+        "knowledge-representation": 5,
         "biosimulation": 4,
         "computational-science": 4,
-        "environmental-science": 4,
+        "data-governance": 4,
+        "digital-preservation": 4,
+        "laboratory-data": 4,
+        "analytical-chemistry": 3,
         "astronomy": 3,
-        "bioinformatics": 3,
-        "knowledge-representation": 3,
         "laboratory-automation": 3,
-        "laboratory-data": 3,
         "materials-science": 3,
         "reproducibility": 3,
         "research-software": 3,
         "ai-agents": 2,
-        "analytical-chemistry": 2,
-        "data-governance": 2,
-        "digital-preservation": 2,
+        "analytical-instruments": 2,
+        "biodiversity": 2,
         "laboratory-medicine": 2,
         "neuroscience": 2,
         "physics": 2,
         "research-information": 2,
+        "sample-curation": 2,
         "semantic-web": 2,
         "social-science": 2,
-        "analytical-instruments": 1,
-        "biodiversity": 1,
         "bioimaging": 1,
         "biotechnology": 1,
         "chemistry": 1,
@@ -124,45 +125,45 @@
         "hpc": 1,
         "machine-learning": 1,
         "research-objects": 1,
-        "sample-curation": 1,
         "scientific-computing": 1,
         "sensor-networks": 1
       },
       "scientific_domain_counts": {
+        "research-data": 21,
         "computational-workflows": 19,
-        "research-data": 16,
-        "genomics": 15,
-        "life-sciences": 12,
+        "genomics": 16,
+        "life-sciences": 13,
         "scholarly-communication": 9,
-        "provenance": 7,
+        "provenance": 8,
+        "clinical-informatics": 7,
+        "biomedical": 6,
+        "environmental-science": 6,
         "systems-biology": 6,
-        "clinical-informatics": 5,
+        "bioinformatics": 5,
         "computational-biology": 5,
         "geospatial": 5,
-        "biomedical": 4,
+        "knowledge-representation": 5,
         "biosimulation": 4,
         "computational-science": 4,
-        "environmental-science": 4,
+        "data-governance": 4,
+        "digital-preservation": 4,
+        "laboratory-data": 4,
+        "analytical-chemistry": 3,
         "astronomy": 3,
-        "bioinformatics": 3,
-        "knowledge-representation": 3,
         "laboratory-automation": 3,
-        "laboratory-data": 3,
         "materials-science": 3,
         "reproducibility": 3,
         "research-software": 3,
         "ai-agents": 2,
-        "analytical-chemistry": 2,
-        "data-governance": 2,
-        "digital-preservation": 2,
+        "analytical-instruments": 2,
+        "biodiversity": 2,
         "laboratory-medicine": 2,
         "neuroscience": 2,
         "physics": 2,
         "research-information": 2,
+        "sample-curation": 2,
         "semantic-web": 2,
         "social-science": 2,
-        "analytical-instruments": 1,
-        "biodiversity": 1,
         "bioimaging": 1,
         "biotechnology": 1,
         "chemistry": 1,
@@ -175,28 +176,27 @@
         "hpc": 1,
         "machine-learning": 1,
         "research-objects": 1,
-        "sample-curation": 1,
         "scientific-computing": 1,
         "sensor-networks": 1
       },
-      "cross_domain_tagged_entries": 26,
-      "largest_scientific_domain": "computational-workflows",
-      "largest_scientific_domain_count": 19,
-      "largest_scientific_domain_share": 0.19,
-      "largest_scientific_domain_share_percent": 19.0
+      "cross_domain_tagged_entries": 27,
+      "largest_scientific_domain": "research-data",
+      "largest_scientific_domain_count": 21,
+      "largest_scientific_domain_share": 0.2,
+      "largest_scientific_domain_share_percent": 20.0
     },
     "interoperability_layers": {
-      "Semantic": 70,
-      "Syntactic": 69,
+      "Semantic": 75,
+      "Syntactic": 74,
       "Operational": 55,
-      "Evidentiary": 27,
-      "Organizational": 8
+      "Evidentiary": 30,
+      "Organizational": 11
     },
     "resource_kinds": {
-      "exchange-standard": 17,
+      "exchange-standard": 19,
       "api-standard": 16,
+      "metadata-standard": 14,
       "ontology-vocabulary": 12,
-      "metadata-standard": 11,
       "packaging-format": 8,
       "identifier-system": 6,
       "specification": 6,
@@ -209,44 +209,44 @@
       "workflow-language": 2
     },
     "maturity_states": {
-      "established": 60,
-      "maintained": 36,
+      "established": 63,
+      "maintained": 38,
       "emerging": 4
     },
     "evidence_types": {
-      "normative-specification": 89,
-      "institutional-adoption": 59,
-      "reference-implementation": 40,
-      "independent-implementation": 31,
+      "normative-specification": 94,
+      "institutional-adoption": 62,
+      "reference-implementation": 43,
+      "independent-implementation": 33,
+      "public-validator": 17,
       "interoperability-demonstration": 14,
-      "public-validator": 14,
       "conformance-suite": 13,
-      "documented-tests": 9
+      "documented-tests": 10
     },
     "implementation_status": {
-      "reference-and-others": 80,
-      "multiple-independent": 12,
-      "single-known": 5,
+      "reference-and-others": 82,
+      "multiple-independent": 13,
+      "single-known": 7,
       "unknown": 2,
       "not-applicable": 1
     },
     "conformance_status": {
-      "none-known": 69,
-      "public-validator": 15,
+      "none-known": 70,
+      "public-validator": 18,
       "public-suite": 14,
-      "documented-tests": 2
+      "documented-tests": 3
     },
     "stewardship_types": {
-      "community": 39,
-      "consortium": 28,
-      "standards-body": 19,
+      "community": 40,
+      "consortium": 31,
+      "standards-body": 20,
       "institution": 9,
       "foundation": 5
     },
     "review_schedule": {
       "reviewed_on": {
         "2026-08-01": 87,
-        "2026-08-02": 13
+        "2026-08-02": 18
       },
       "review_due_on_values": [
         "2027-01-31",
@@ -430,6 +430,32 @@
         },
         "unknown_member_ids": []
       },
+      "clinical-research-data": {
+        "member_count": 4,
+        "member_ids": [
+          "omop-common-data-model",
+          "cdisc-operational-data-model-odm",
+          "hl7-fhir",
+          "ga4gh-phenopackets"
+        ],
+        "implementation_count": 0,
+        "implementations": [],
+        "role_buckets": {
+          "conformance": {
+            "count": 0,
+            "members": []
+          },
+          "multi-engine-service": {
+            "count": 0,
+            "members": []
+          },
+          "runner": {
+            "count": 0,
+            "members": []
+          }
+        },
+        "unknown_member_ids": []
+      },
       "combine-modeling": {
         "member_count": 6,
         "member_ids": [
@@ -552,6 +578,31 @@
         },
         "unknown_member_ids": []
       },
+      "ecology-dataset-metadata": {
+        "member_count": 3,
+        "member_ids": [
+          "ecological-metadata-language-eml",
+          "darwin-core",
+          "w3c-data-catalog-vocabulary-dcat"
+        ],
+        "implementation_count": 0,
+        "implementations": [],
+        "role_buckets": {
+          "conformance": {
+            "count": 0,
+            "members": []
+          },
+          "multi-engine-service": {
+            "count": 0,
+            "members": []
+          },
+          "runner": {
+            "count": 0,
+            "members": []
+          }
+        },
+        "unknown_member_ids": []
+      },
       "ga4gh-apis": {
         "member_count": 6,
         "member_ids": [
@@ -588,6 +639,31 @@
           "ga4gh-htsget",
           "ga4gh-refget-sequences",
           "ga4gh-data-repository-service-drs"
+        ],
+        "implementation_count": 0,
+        "implementations": [],
+        "role_buckets": {
+          "conformance": {
+            "count": 0,
+            "members": []
+          },
+          "multi-engine-service": {
+            "count": 0,
+            "members": []
+          },
+          "runner": {
+            "count": 0,
+            "members": []
+          }
+        },
+        "unknown_member_ids": []
+      },
+      "mass-spectrometry-data": {
+        "member_count": 3,
+        "member_ids": [
+          "hupo-psi-mzml",
+          "analytical-information-markup-language-animl",
+          "allotrope-data-format"
         ],
         "implementation_count": 0,
         "implementations": [],
@@ -684,6 +760,32 @@
         },
         "unknown_member_ids": []
       },
+      "sequence-context-metadata": {
+        "member_count": 4,
+        "member_ids": [
+          "minimum-information-about-any-sequence-mixs",
+          "igsn-id",
+          "isa-json",
+          "darwin-core"
+        ],
+        "implementation_count": 0,
+        "implementations": [],
+        "role_buckets": {
+          "conformance": {
+            "count": 0,
+            "members": []
+          },
+          "multi-engine-service": {
+            "count": 0,
+            "members": []
+          },
+          "runner": {
+            "count": 0,
+            "members": []
+          }
+        },
+        "unknown_member_ids": []
+      },
       "w3c-prov-family": {
         "member_count": 4,
         "member_ids": [
@@ -770,9 +872,9 @@
       ],
       "missing_configured_ids": [],
       "count": 8,
-      "total_entries": 100,
-      "share": 0.08,
-      "share_percent": 8.0
+      "total_entries": 105,
+      "share": 0.0762,
+      "share_percent": 7.62
     },
     "isolated_entries": [],
     "evidence_without_source": []

@@ -41,7 +41,7 @@ class ReviewProvenanceTests(unittest.TestCase):
             resource_id=None,
             review_type="author",
         )
-        self.assertEqual(len(authors), 100)
+        self.assertEqual(len(authors), 105)
         independent = query_module.apply_filters(
             resources,
             section=None,

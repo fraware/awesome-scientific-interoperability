@@ -240,6 +240,7 @@ class IndependenceValidatorTests(unittest.TestCase):
                 "flexible-image-transport-system-fits",
                 "ga4gh-refget-sequences",
                 "ga4gh-tool-registry-service-trs",
+                "hupo-psi-mzml",
                 "ivoa-table-access-protocol-tap",
                 "ivoa-votable",
                 "optimade",

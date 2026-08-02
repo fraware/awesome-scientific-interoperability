@@ -76,3 +76,9 @@ None.
 **Boundary decisions:** OME-TIFF remains the mature single-file bioimaging alternative; Zarr alone is a substrate. ASDF remains a separate astronomy-format candidate. FITS and VOTable are complementary rather than interchangeable.
 
 **Conflict disclosure:** None identified. Human maintainer approval is recorded as a merge prerequisite.
+## Issue #44 Batch D candidate additions — pending human review
+
+| Resource | Primary evidence | Conservative classification |
+|---|---|---|
+| HUPO-PSI mzML | [PSI specification](https://www.psidev.info/mzML); [OpenMS validator](https://openms.de/current_doxygen/html/classOpenMS_1_1Internal_1_1MzMLValidator.html) | Established; multiple independent implementations; public semantic validator |
+| CDISC ODM v2.0 | [ODM v2.0](https://www.cdisc.org/standards/data-exchange/odm-xml/odm-v2-0); [LinkML model](https://cdisc-org.github.io/DataExchange-ODM-LinkML/) | Maintained; single known official implementation; no public conformance artifact recorded |

@@ -55,3 +55,10 @@ None.
 - Completed Schema.org, SDMX, SKOS, SOSA/SSN, STAC, UCUM, DCAT evidence dispositions; STAC upgraded to public-validator then MI claim adjusted to reference-and-others where independence evidence remained thin.
 | GA4GH Variation Representation Specification (VRS) | [VRS specification](https://vrs.ga4gh.org/en/stable/); [VRS-Python](https://github.com/ga4gh/vrs-python); [validation tests](https://github.com/ga4gh/vrs-python/tree/main/tests/validation) |
 | GA4GH Phenopackets | [GA4GH product page](https://www.ga4gh.org/product/phenopackets/); [schema documentation](https://phenopacket-schema.readthedocs.io/en/latest/); [validator tools](https://github.com/phenopackets/phenopacket-tools) |
+## Issue #44 Batch D candidate additions — pending human review
+
+| Resource | Primary evidence | Conservative classification |
+|---|---|---|
+| MIxS | [specification](https://genomicsstandardsconsortium.github.io/mixs/); [source and tests](https://github.com/GenomicsStandardsConsortium/mixs) | Maintained; single known official implementation; documented tests |
+| Ecological Metadata Language | [EML 2.2.0](https://eml.ecoinformatics.org/); [validation rules](https://eml.ecoinformatics.org/validation-and-content-references) | Established; reference and other implementation; public validator |
+| OMOP Common Data Model | [CDM documentation](https://ohdsi.github.io/CommonDataModel/); [DataQualityDashboard](https://ohdsi.github.io/DataQualityDashboard/) | Established; reference and other implementations; public validator with bounded data-quality scope |

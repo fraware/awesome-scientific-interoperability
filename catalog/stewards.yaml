@@ -523,3 +523,54 @@ stewards:
   type: community
   url: https://github.com/andrewyatz/refget-server-perl
   aliases: []
+- id: genomic-standards-consortium
+  name: Genomic Standards Consortium
+  type: consortium
+  url: https://www.gensc.org/
+  aliases:
+  - GSC
+- id: ecological-metadata-language-community
+  name: Ecological Metadata Language community
+  type: community
+  url: https://eml.ecoinformatics.org/
+  aliases:
+  - EML
+- id: ropensci
+  name: rOpenSci
+  type: community
+  url: https://ropensci.org/
+  aliases: []
+- id: hupo-proteomics-standards-initiative
+  name: HUPO Proteomics Standards Initiative
+  type: consortium
+  url: https://www.psidev.info/
+  aliases:
+  - HUPO-PSI
+  - PSI
+- id: proteowizard-project
+  name: ProteoWizard project
+  type: community
+  url: https://proteowizard.sourceforge.io/
+  aliases: []
+- id: openms-project
+  name: OpenMS project
+  type: community
+  url: https://openms.de/
+  aliases: []
+- id: pymzml-project
+  name: pymzML project
+  type: community
+  url: https://pymzml.readthedocs.io/en/latest/
+  aliases: []
+- id: ohdsi
+  name: Observational Health Data Sciences and Informatics
+  type: consortium
+  url: https://www.ohdsi.org/
+  aliases:
+  - OHDSI
+- id: cdisc
+  name: Clinical Data Interchange Standards Consortium
+  type: standards-body
+  url: https://www.cdisc.org/
+  aliases:
+  - CDISC

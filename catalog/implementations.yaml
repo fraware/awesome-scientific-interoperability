@@ -547,3 +547,126 @@ implementations:
   - github-com-ga4gh-refget
   - ga4gh-github-io-refget-compliance
   notes: Public compliance tooling and report aggregation for refget sequence services.
+- id: mixs-linkml-schema
+  name: MIxS LinkML schema and generated artifacts
+  url: https://github.com/GenomicsStandardsConsortium/mixs
+  implements_resource_id: minimum-information-about-any-sequence-mixs
+  operator_steward_id: genomic-standards-consortium
+  relationship: official-implementation
+  supported_versions:
+  - 6.x
+  evidence_ref_ids:
+  - github-com-genomicsstandardsconsortium-mixs
+  - genomicsstandardsconsortium-github-mixs-docs
+- id: mixs-example-test-suite
+  name: MIxS valid and invalid example suite
+  url: https://github.com/GenomicsStandardsConsortium/mixs/tree/main/tests
+  implements_resource_id: minimum-information-about-any-sequence-mixs
+  operator_steward_id: genomic-standards-consortium
+  relationship: conformance-suite
+  evidence_ref_ids:
+  - github-com-genomicsstandardsconsortium-mixs-tests
+- id: eml-release-validator
+  name: EML release validator
+  url: https://eml.ecoinformatics.org/validation-and-content-references
+  implements_resource_id: ecological-metadata-language-eml
+  operator_steward_id: ecological-metadata-language-community
+  relationship: validator
+  supported_versions:
+  - 2.2.0
+  evidence_ref_ids:
+  - eml-ecoinformatics-org-validation
+  - github-com-nceas-eml
+- id: ropensci-eml
+  name: rOpenSci EML package
+  url: https://docs.ropensci.org/EML/
+  implements_resource_id: ecological-metadata-language-eml
+  operator_steward_id: ropensci
+  relationship: independent-implementation
+  supported_versions:
+  - 2.2.0
+  evidence_ref_ids:
+  - docs-ropensci-org-eml
+  - eml-ecoinformatics-org-root
+- id: ropensci-emld-validator
+  name: rOpenSci emld validator
+  url: https://docs.ropensci.org/emld/reference/eml_validate.html
+  implements_resource_id: ecological-metadata-language-eml
+  operator_steward_id: ropensci
+  relationship: validator
+  evidence_ref_ids:
+  - docs-ropensci-org-emld-eml-validate
+- id: proteowizard-mzml
+  name: ProteoWizard
+  url: https://proteowizard.sourceforge.io/formats/mzml.html
+  implements_resource_id: hupo-psi-mzml
+  operator_steward_id: proteowizard-project
+  relationship: reference-implementation
+  supported_versions:
+  - '1.1'
+  evidence_ref_ids:
+  - proteowizard-sourceforge-mzml
+  - psidev-info-mzml
+- id: openms-mzml
+  name: OpenMS mzML support
+  url: https://openms.de/documentation/classOpenMS_1_1MzMLFile.html
+  implements_resource_id: hupo-psi-mzml
+  operator_steward_id: openms-project
+  relationship: independent-implementation
+  supported_versions:
+  - '1.1'
+  evidence_ref_ids:
+  - openms-mzmlfile
+  - psidev-info-mzml
+- id: pymzml-reader
+  name: pymzML
+  url: https://pymzml.readthedocs.io/en/latest/
+  implements_resource_id: hupo-psi-mzml
+  operator_steward_id: pymzml-project
+  relationship: independent-implementation
+  supported_versions:
+  - '1.1'
+  evidence_ref_ids:
+  - pymzml-readthedocs
+  - psidev-info-mzml
+- id: openms-mzml-validator
+  name: OpenMS MzMLValidator
+  url: https://openms.de/current_doxygen/html/classOpenMS_1_1Internal_1_1MzMLValidator.html
+  implements_resource_id: hupo-psi-mzml
+  operator_steward_id: openms-project
+  relationship: validator
+  evidence_ref_ids:
+  - openms-mzmlvalidator
+- id: omop-cdm-r-package
+  name: OMOP CommonDataModel package
+  url: https://github.com/OHDSI/CommonDataModel
+  implements_resource_id: omop-common-data-model
+  operator_steward_id: ohdsi
+  relationship: official-implementation
+  supported_versions:
+  - 5.4.2
+  evidence_ref_ids:
+  - github-com-ohdsi-common-data-model
+  - ohdsi-common-data-model
+- id: omop-data-quality-dashboard
+  name: OMOP DataQualityDashboard
+  url: https://ohdsi.github.io/DataQualityDashboard/
+  implements_resource_id: omop-common-data-model
+  operator_steward_id: ohdsi
+  relationship: validator
+  supported_versions:
+  - '5.4'
+  evidence_ref_ids:
+  - ohdsi-data-quality-dashboard
+  - ohdsi-data-quality-dashboard-cdmfield
+- id: cdisc-odm-linkml-model
+  name: CDISC ODM v2.0 LinkML model
+  url: https://cdisc-org.github.io/DataExchange-ODM-LinkML/
+  implements_resource_id: cdisc-operational-data-model-odm
+  operator_steward_id: cdisc
+  relationship: official-implementation
+  supported_versions:
+  - '2.0'
+  evidence_ref_ids:
+  - cdisc-odm-linkml
+  - cdisc-odm-v2-0

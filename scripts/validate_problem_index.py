@@ -35,6 +35,9 @@ REQUIRED_PROBLEMS = frozenset(
         "exchange-neuroscience-data",
         "exchange-astronomy-data",
         "exchange-bioimaging-data",
+        "preserve-sequence-and-ecology-context",
+        "exchange-mass-spectrometry-data",
+        "integrate-clinical-research-data",
     }
 )
 

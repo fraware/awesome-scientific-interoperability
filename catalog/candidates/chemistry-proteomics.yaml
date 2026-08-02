@@ -1,21 +1,5 @@
 theme: chemistry-proteomics
 candidates:
-- id: hupo-psi-mzml
-  name: HUPO-PSI mzML
-  official_url: https://www.psidev.info/mzML
-  candidate_section: Data and Digital Objects
-  coverage_family: mass-spectrometry-data-exchange
-  priority: P0
-  disposition: admission-pr
-  mechanism: Controlled-vocabulary-backed XML standard for exchanging mass-spectrometry spectra, chromatograms,
-    acquisition metadata, and instrument settings.
-  why_distinct: Adds a mature analytical-instrument data contract beyond generic AnIML and Allotrope representations.
-  primary_sources:
-  - https://www.psidev.info/mzML
-  - https://github.com/HUPO-PSI/mzML
-  - https://github.com/HUPO-PSI/psi-ms-CV
-  evidence_notes: HUPO Proteomics Standards Initiative standard with broad vendor, repository, and software support.
-  next_step: Admission PR with AnIML and Allotrope boundary; avoid listing every PSI standard in the same batch.
 - id: synthetic-biology-open-language-sbol
   name: Synthetic Biology Open Language (SBOL)
   official_url: https://sbolstandard.org/

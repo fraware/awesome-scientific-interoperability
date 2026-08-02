@@ -24,7 +24,14 @@ All notable editorial, schema, and maintenance changes for this repository are d
 - Proposed VRS, Phenopackets, htsget, and refget Sequences as representation, phenotype-exchange, regional-access, and content-identity mechanisms.
 - Added claim-specific references, implementation identities, typed relations, a decision guide, and integration problem 17.
 - Preserved Beacon v2, HTS formats, Crypt4GH, and RNAget as structured boundary candidates.
-- The stacked candidate tree contains 100 resources and 48 unresolved candidates; all three batches remain pending human maintainer approval.
+- The stacked Batch C candidate tree contains 100 resources and 48 unresolved candidates; Batches A through C remain pending human maintainer approval.
+
+### Batch D: ecology, analytical data, and clinical research
+
+- Proposed MIxS, EML, HUPO-PSI mzML, OMOP Common Data Model, and CDISC ODM as five distinct context, dataset, analytical-exchange, harmonization, and study-operation mechanisms.
+- Added claim-specific references, operator identities, direct validators, typed relations, three decision guides, and integration problems 18 through 20.
+- Preserved MIAPPE, BrAPI, mzIdentML, mzTab, nmrML, CML, Define-XML, and openEHR as structured boundary candidates.
+- Human maintainer approval remains required before merge.
 
 ## [1.1.0] — 2026-08-01
 
