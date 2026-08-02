@@ -1,0 +1,38 @@
+name: Current data snapshot
+
+on:
+  push:
+    branches: [audit/current-data-snapshot]
+
+permissions:
+  contents: read
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Package current structured-data layer
+        run: |
+          tar -czf current-data-snapshot.tgz \
+            catalog \
+            schema \
+            config \
+            scripts \
+            tests \
+            docs/reviews \
+            docs/candidate-reviews \
+            docs/decision-guides \
+            docs/source-notes.md \
+            docs/coverage-baseline.md \
+            docs/validation-report.md \
+            docs/human-review-log.md \
+            docs/integration-problems.md \
+            README.md \
+            MANIFEST.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: current-data-snapshot
+          path: current-data-snapshot.tgz
+          if-no-files-found: error
+          retention-days: 1
