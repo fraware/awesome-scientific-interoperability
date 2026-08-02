@@ -36,6 +36,8 @@ Only `relationship: independent-implementation` counts toward MI, and steward-op
 - Unknown implementation IDs are rejected via schema uniqueness of the registry document.
 - Unresolved `implements_resource_id`, `operator_steward_id`, or `evidence_ref_ids` fail validation.
 - Live `multiple-independent` claims that lack two qualifying independent operators fail validation.
+- Live `documented-tests` claims without a direct conformance artifact reference (validator / conformance-suite / interoperability-result with conformance or interoperability-testing role) fail validation.
+- Quality CI runs `audit_data_quality.py --fail-on warning` so depth-queue regressions cannot merge silently.
 
 ## Re-adjudication (2026-08-02)
 

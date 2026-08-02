@@ -22,7 +22,7 @@ jobs:
       - run: python scripts/validate_problem_index.py
       - run: python scripts/validate_watchlist.py
       - run: python scripts/check_review_freshness.py
-      - run: python scripts/audit_data_quality.py --as-of 2026-08-01 --json-report data-quality-audit.json --markdown-report data-quality-audit.md --check-baseline docs/data-quality-baseline.json
+      - run: python scripts/audit_data_quality.py --as-of 2026-08-01 --json-report data-quality-audit.json --markdown-report data-quality-audit.md --check-baseline docs/data-quality-baseline.json --fail-on warning
       - run: python scripts/check_links.py --offline --scope all
       - run: python -m unittest discover -s tests -v
       - name: Coverage audit
