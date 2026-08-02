@@ -7,6 +7,7 @@ This list selects standards, protocols, formats, schemas, APIs, ontologies, regi
 ## Contents
 
 - [Selection Standard](#selection-standard)
+- [How to use this list](#how-to-use-this-list)
 - [Foundations](#foundations)
 - [Identifiers and Discovery](#identifiers-and-discovery)
 - [Metadata and Semantics](#metadata-and-semantics)
@@ -22,6 +23,17 @@ This list selects standards, protocols, formats, schemas, APIs, ontologies, regi
 ## Selection Standard
 
 An entry must expose a reusable and publicly inspectable interoperability mechanism, demonstrate credible maintenance or stewardship, and add decision value beyond stronger resources already included. General scientific software, broad open-science guidance, private connectors, and projects whose interoperability contribution cannot be stated precisely are excluded. See the [editorial policy](docs/editorial-policy.md) for the complete standard.
+
+## How to use this list
+
+Start from the decision path that matches your question, then return to the curated entries below:
+
+- [Integration problem index](docs/integration-problems.md) — start from a concrete integration problem
+- [Decision guides](docs/decision-guides/README.md) — side-by-side comparisons (packaging, neuroscience, astronomy, and related families)
+- [Querying the catalog](docs/querying-the-catalog.md) — local filters over the structured catalog
+- [Watchlist](docs/watchlist.md) — promising resources that do not yet meet the main-list bar
+
+The manually edited README remains authoritative for inclusion. The machine-readable catalog validates and supports queries; it does not generate this list. See [Footnotes](#footnotes).
 
 ## Foundations
 

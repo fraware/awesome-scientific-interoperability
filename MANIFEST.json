@@ -59,13 +59,13 @@
     },
     {
       "path": "Makefile",
-      "sha256": "ae223b01d2f80e11bcfd4b268bef5c488be43d7d31352120194d76048658e436",
-      "bytes": 1307
+      "sha256": "de27e9673f50301f99c4487efa31494d12f24c8e2a7813f28a9031ae3ec175f7",
+      "bytes": 1413
     },
     {
       "path": "README.md",
-      "sha256": "9166b885848982206050d10db38f955df96f4cf65d7dfdf0eefc93a4e0d734c6",
-      "bytes": 27125
+      "sha256": "7875fc9c0cbc9277058d3672d382fcba4cbefe112cd2c9873df18b75aaa6cc20",
+      "bytes": 27929
     },
     {
       "path": "archive.md",
@@ -439,8 +439,8 @@
     },
     {
       "path": "docs/querying-the-catalog.md",
-      "sha256": "f15fea38243ba92a54c065f8ac2cf8c12e5be5863df3d7036213a984d8401d12",
-      "bytes": 5760
+      "sha256": "090a395d54e5bc003ca590dd2dcc34c2e0b501ce2897a38b22ee2e17b20adb0c",
+      "bytes": 7980
     },
     {
       "path": "docs/review-checklist.md",
