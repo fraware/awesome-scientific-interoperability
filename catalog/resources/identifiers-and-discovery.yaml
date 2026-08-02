@@ -22,7 +22,7 @@ resources:
   - normative-specification
   - institutional-adoption
   - independent-implementation
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: crossref
   domains:
@@ -34,6 +34,10 @@ resources:
     role: stewardship
   - ref_id: api-crossref-org-root
     role: technical-definition
+  - ref_id: github-com-crossref-rest-api-doc
+    role: implementation
+  - ref_id: github-com-datacite-datacite
+    role: adoption
   alternatives:
   - datacite-metadata-schema-and-rest-api
   related_resource_ids:
@@ -65,7 +69,7 @@ resources:
   - normative-specification
   - institutional-adoption
   - independent-implementation
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: datacite
   domains:
@@ -78,6 +82,10 @@ resources:
     role: stewardship
   - ref_id: schema-datacite-org-root
     role: technical-definition
+  - ref_id: github-com-datacite-datacite
+    role: implementation
+  - ref_id: github-com-crossref-rest-api-doc
+    role: adoption
   alternatives:
   - crossref-rest-api-and-metadata
   related_resource_ids:
@@ -151,8 +159,8 @@ resources:
   - normative-specification
   - independent-implementation
   - institutional-adoption
-  implementation_status: multiple-independent
-  conformance_status: documented-tests
+  implementation_status: reference-and-others
+  conformance_status: none-known
   steward_id: ga4gh
   domains:
   - genomics
@@ -163,6 +171,10 @@ resources:
     role: stewardship
   - ref_id: github-com-ga4gh-discovery-ga4gh-service-info
     role: implementation
+  - ref_id: github-com-ga4gh-service-info
+    role: implementation
+  - ref_id: github-com-dockstore-dockstore
+    role: adoption
   alternatives: []
   related_resource_ids:
   - ga4gh-service-registry
@@ -191,8 +203,8 @@ resources:
   - normative-specification
   - independent-implementation
   - institutional-adoption
-  implementation_status: multiple-independent
-  conformance_status: documented-tests
+  implementation_status: reference-and-others
+  conformance_status: none-known
   steward_id: ga4gh
   domains:
   - genomics
@@ -203,6 +215,10 @@ resources:
     role: stewardship
   - ref_id: github-com-ga4gh-discovery-ga4gh-service-registry
     role: implementation
+  - ref_id: github-com-ga4gh-service-registry
+    role: implementation
+  - ref_id: github-com-dockstore-dockstore
+    role: adoption
   alternatives: []
   related_resource_ids:
   - ga4gh-service-info
@@ -236,7 +252,7 @@ resources:
   - independent-implementation
   - institutional-adoption
   implementation_status: multiple-independent
-  conformance_status: documented-tests
+  conformance_status: none-known
   steward_id: ga4gh
   domains:
   - genomics
@@ -248,6 +264,10 @@ resources:
     role: stewardship
   - ref_id: github-com-ga4gh-tool-registry-service-schemas
     role: implementation
+  - ref_id: github-com-dockstore-dockstore
+    role: implementation
+  - ref_id: dockstore-org
+    role: adoption
   alternatives: []
   related_resource_ids:
   - ga4gh-service-registry
@@ -278,7 +298,7 @@ resources:
   - normative-specification
   - institutional-adoption
   - independent-implementation
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: embl-ebi-elixir-interoperability-platform
   domains:
@@ -290,6 +310,10 @@ resources:
     role: stewardship
   - ref_id: docs-identifiers-org-root
     role: technical-definition
+  - ref_id: github-com-identifiers-org-identifiers-org
+    role: implementation
+  - ref_id: github-com-edamontology-edamontology
+    role: adoption
   alternatives: []
   related_resource_ids:
   - datacite-metadata-schema-and-rest-api
@@ -319,7 +343,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: igsn-e-v
   domains:
@@ -332,6 +356,10 @@ resources:
     role: stewardship
   - ref_id: support-datacite-org-docs-igsn-ids
     role: technical-definition
+  - ref_id: github-com-igsn-igsn-json
+    role: implementation
+  - ref_id: github-com-datacite-datacite
+    role: adoption
   alternatives: []
   related_resource_ids:
   - datacite-metadata-schema-and-rest-api
@@ -374,6 +402,10 @@ resources:
     role: stewardship
   - ref_id: pub-orcid-org-v3-0
     role: technical-definition
+  - ref_id: github-com-orcid-orcid-source
+    role: implementation
+  - ref_id: github-com-ror-community-ror-api
+    role: adoption
   alternatives: []
   related_resource_ids:
   - research-organization-registry-ror
@@ -417,6 +449,8 @@ resources:
     role: stewardship
   - ref_id: github-com-ror-community-ror-api
     role: implementation
+  - ref_id: github-com-orcid-orcid-source
+    role: adoption
   alternatives: []
   related_resource_ids:
   - orcid
@@ -444,9 +478,8 @@ resources:
   evidence_types:
   - normative-specification
   - independent-implementation
-  - documented-tests
   implementation_status: multiple-independent
-  conformance_status: documented-tests
+  conformance_status: none-known
   steward_id: optimade-consortium-materials-consortia
   domains:
   - materials-science
@@ -456,6 +489,8 @@ resources:
   - ref_id: optimade-org-root
     role: stewardship
   - ref_id: github-com-materials-consortia-optimade
+    role: implementation
+  - ref_id: github-com-materials-consortia-optimade-python-tools
     role: implementation
   alternatives:
   - fairsharing

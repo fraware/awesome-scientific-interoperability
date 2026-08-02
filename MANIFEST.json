@@ -69,8 +69,8 @@
     },
     {
       "path": "catalog/references.yaml",
-      "sha256": "228d32c184cccbfa42bdc95a6d7ce8a9a87bcdc6933b650302711c93e423ac88",
-      "bytes": 46438
+      "sha256": "8ea7841ebd811fbfb9545feff4d8e06abde6a9119c29cea4e182a4db40838666",
+      "bytes": 59557
     },
     {
       "path": "catalog/resources.yaml",
@@ -94,8 +94,8 @@
     },
     {
       "path": "catalog/resources/identifiers-and-discovery.yaml",
-      "sha256": "e39a5aa7f8b48d9a8863533053605ee2511050ab4557245ed618cde69c40b6a0",
-      "bytes": 15638
+      "sha256": "0228e8282388ae6424a09c99a1ab8d838df536ce49f2da88b4cf0b3f62c221d4",
+      "bytes": 16781
     },
     {
       "path": "catalog/resources/instruments-and-laboratories.yaml",
@@ -214,8 +214,8 @@
     },
     {
       "path": "docs/data-quality-baseline.md",
-      "sha256": "c89d761b172409e0e6025954cdb9570e803f6fdc4b9835db896892cfc715fa7a",
-      "bytes": 2415
+      "sha256": "8c1dd68cb624857a031ac7bc62c5929a356be9b1f8aae817cbf73f90a84e25fb",
+      "bytes": 2346
     },
     {
       "path": "docs/decision-guides/README.md",
@@ -344,8 +344,8 @@
     },
     {
       "path": "docs/reviews/identifiers-and-discovery.md",
-      "sha256": "1cdc4b8ca29fbf76c3fcf65ffd2552f55cd75fb1e50586a8a9aac4446082afb2",
-      "bytes": 3045
+      "sha256": "1990700aab2c834fe64205c9d3e0464c4ee9bdd3c8d64ddd99ac1e562f9d03e1",
+      "bytes": 3377
     },
     {
       "path": "docs/reviews/instruments-and-laboratories.md",
