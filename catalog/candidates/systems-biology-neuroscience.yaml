@@ -1,37 +1,5 @@
 theme: systems-biology-neuroscience
 candidates:
-- id: neuroml
-  name: NeuroML
-  official_url: https://docs.neuroml.org/Userdocs/Specification.html
-  candidate_section: Data and Digital Objects
-  coverage_family: computational-neuroscience-model-exchange
-  priority: P1
-  disposition: boundary-review
-  mechanism: Schema and LEMS-based language for exchanging computational neuroscience cells, networks, channels,
-    and simulations.
-  why_distinct: Adds model interoperability for computational neuroscience distinct from NWB experimental data and
-    BIDS organization.
-  primary_sources:
-  - https://docs.neuroml.org/Userdocs/Specification.html
-  - https://github.com/NeuroML/NeuroML2
-  - https://github.com/NeuroML/pyNeuroML
-  evidence_notes: Current stable NeuroML 2.3 with validation and multiple simulator integrations.
-  next_step: Admission review in neuroscience batch.
-- id: sonata
-  name: SONATA
-  official_url: https://github.com/AllenInstitute/sonata
-  candidate_section: Data and Digital Objects
-  coverage_family: neural-network-model-exchange
-  priority: P1
-  disposition: boundary-review
-  mechanism: File formats and conventions for exchanging large-scale neuronal network models, configurations, inputs,
-    and simulation outputs.
-  why_distinct: Addresses scalable network-model exchange and cross-simulator workflows.
-  primary_sources:
-  - https://github.com/AllenInstitute/sonata
-  - https://github.com/AllenInstitute/sonata/blob/master/docs/SONATA_DEVELOPER_GUIDE.md
-  evidence_notes: Used by major neuroscience simulation ecosystems; governance and independence require assessment.
-  next_step: Compare with NeuroML and NWB before admission.
 - id: openminds
   name: openMINDS
   official_url: https://openminds.ebrains.eu/
@@ -39,7 +7,8 @@ candidates:
   coverage_family: neuroscience-metadata-knowledge-graph
   priority: P2
   disposition: watchlist
-  mechanism: Schema and controlled-term ecosystem for interoperable neuroscience metadata and knowledge graphs.
+  mechanism: Schema and controlled-term ecosystem for interoperable neuroscience metadata and knowledge
+    graphs.
   why_distinct: Potential complement to BIDS and NWB at the semantic metadata layer.
   primary_sources:
   - https://openminds.ebrains.eu/
@@ -54,8 +23,8 @@ candidates:
   priority: P2
   disposition: watchlist
   mechanism: Binary image and header format for volumetric neuroimaging data.
-  why_distinct: Underlying file exchange for many BIDS datasets, though BIDS may provide stronger North-Star decision
-    value.
+  why_distinct: Underlying file exchange for many BIDS datasets, though BIDS may provide stronger North-Star
+    decision value.
   primary_sources:
   - https://nifti.nimh.nih.gov/
   - https://github.com/NIFTI-Imaging/nifti_clib

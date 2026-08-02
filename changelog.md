@@ -41,6 +41,15 @@ All notable editorial, schema, and maintenance changes for this repository are d
 - Added a repository-preservation and data-packaging decision guide plus packaging problem-path updates.
 - Human maintainer approval remains required before merge.
 
+### Batch F: computational-neuroscience model exchange
+
+- Proposed NeuroML and SONATA as complementary declarative-semantic and performance-representation mechanisms.
+- Added conservative operator-normalized implementation identities for pyNeuroML, BMTK, and independently governed NetPyNE support.
+- Assigned NeuroML `public-validator` status through direct schema-validation evidence and retained SONATA at `none-known` public conformance status.
+- Added a computational-neuroscience decision guide, integration problem 21, typed relations, a coverage family, and adversarial batch tests.
+- Preserved openMINDS and NIfTI as structured watchlist candidates; human maintainer approval remains required before merge.
+- Replaced the obsolete fixed unresolved-candidate floor with conservation of the 61-record research program and a progression-safe 80% family-diversity invariant.
+
 ## [1.1.0] — 2026-08-01
 
 First decision-oriented release after catalog v2 migration, domain gap reviews, and maintainer governance formalization. Supersedes the v1.0.0 release candidate documented in `docs/validation-report.md` (initial public corpus: 75 main-list entries; no prior annotated tag).

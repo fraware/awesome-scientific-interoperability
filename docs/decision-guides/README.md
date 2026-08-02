@@ -7,7 +7,6 @@ Problem-oriented comparison documents for overlapping interoperability mechanism
 | Guide | Scope |
 |-------|-------|
 | [Research object packaging](research-object-packaging.md) | RO-Crate profiles, BagIt, COMBINE/OMEX, FAIR Signposting, OCFL, Data Package |
-| [Repository preservation and data packaging](repository-preservation-and-data-packaging.md) | OCFL, BagIt, RO-Crate, Data Package, Croissant, COMBINE/OMEX |
 | [Provenance and execution evidence](provenance-and-execution-evidence.md) | W3C PROV, P-Plan, CWLProv, Workflow Run RO-Crate, ISO 23494-2, runcrate |
 | [Workflows and execution](workflows-and-execution.md) | CWL, WDL, GA4GH TRS/WES/TES/DRS, WorkflowHub, Sapporo, backends |
 | [Workflow testing and conformance](workflow-testing-and-conformance.md) | CWL Conformance Tests, Workflow Testing RO-Crate, LifeMonitor |
@@ -21,6 +20,11 @@ Problem-oriented comparison documents for overlapping interoperability mechanism
 | [Astronomy data files, tables, and query services](astronomy-data-and-services.md) | FITS, VOTable, TAP, STAC; ObsCore/SAMP/ASDF boundaries |
 | [Bioimaging data exchange](bioimaging-data.md) | OME-NGFF, DICOMweb, NeXus, RO-Crate; OME-TIFF/Zarr boundaries |
 | [Genomic representation and access](genomic-representation-and-access.md) | VRS, Phenopackets, htsget, refget, DRS; Beacon/HTS/Crypt4GH/RNAget boundaries |
+| [Ecology and sequence-context metadata](ecology-and-sequence-context-metadata.md) | MIxS, EML, Darwin Core, IGSN, ISA-JSON |
+| [Mass-spectrometry data exchange](mass-spectrometry-data.md) | mzML, AnIML, Allotrope Data Format |
+| [Clinical research data models](clinical-research-data-models.md) | FHIR, CDISC ODM, OMOP CDM, Phenopackets |
+| [Repository preservation and data packaging](repository-preservation-and-data-packaging.md) | OCFL, BagIt, RO-Crate, Data Package, Croissant, COMBINE/OMEX |
+| [Computational-neuroscience model exchange](computational-neuroscience-model-exchange.md) | NeuroML, SONATA, NWB, BIDS; semantic-model and performance-representation boundaries |
 
 ## How to use these guides
 
@@ -38,6 +42,3 @@ Resource-ID markers are checked by `scripts/validate_decision_guides.py` in Qual
 - [Integration problems](../integration-problems.md) — problem-class index
 - [Catalog model v2](../catalog-model-v2.md)
 - [Querying the catalog](../querying-the-catalog.md)
-| [Ecology and sequence-context metadata](ecology-and-sequence-context-metadata.md) | MIxS, EML, Darwin Core, IGSN, ISA-JSON |
-| [Mass-spectrometry data exchange](mass-spectrometry-data.md) | mzML, AnIML, Allotrope Data Format |
-| [Clinical research data models](clinical-research-data-models.md) | FHIR, CDISC ODM, OMOP CDM, Phenopackets |

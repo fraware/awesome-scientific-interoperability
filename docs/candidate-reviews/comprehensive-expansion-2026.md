@@ -10,13 +10,13 @@ The expansion registry is machine-readable under `catalog/expansion-candidates.y
 
 The review contains:
 
-- **41 unresolved candidates**;
-- **41 distinct unresolved interoperability families**;
+- **39 unresolved candidates**;
+- **39 distinct unresolved interoperability families**;
 - **0 P0 admission candidates**;
-- **26 P1 boundary-review candidates**;
+- **24 P1 boundary-review candidates**;
 - **15 P2 candidates**;
 - **0 `admission-pr`**, **28 `boundary-review`**, and **13 `watchlist`** unresolved dispositions.
-- **20 completed candidate IDs** tracked against the original 61-resource research program.
+- **22 completed candidate IDs** tracked against the original 61-resource research program.
 
 Comprehensiveness here means systematic coverage of consequential interoperability mechanisms. It does not mean listing every scientific format, software package, ontology, or implementation.
 
@@ -286,3 +286,8 @@ The stacked Issue #44 Batch D candidate tree proposes admission of MIxS, EML, HU
 ## Batch E implementation status
 
 The stacked Issue #44 Batch E candidate tree proposes admission of Oxford Common File Layout (OCFL) and Data Package Standard v2. Both IDs are removed from the preservation-infrastructure candidate shard and recorded in `completed_candidate_ids`; the conservation invariant remains `unresolved candidates + completed candidate IDs = 61`. OCFL is promoted off the structured watchlist. Evidence remains AI-assisted author review pending human maintainer approval.
+
+
+## Batch F implementation status
+
+The stacked Issue #44 Batch F candidate tree proposes admission of NeuroML and SONATA as complementary computational-neuroscience model-exchange mechanisms. NeuroML is admitted as the declarative semantic model contract with public schema validation. SONATA is admitted as the performance-oriented representation for large instantiated networks, configurations, inputs, and simulation reports, with `none-known` public conformance status. Both IDs are removed from the systems-biology-neuroscience candidate shard and recorded in `completed_candidate_ids`; the conservation invariant remains `unresolved candidates + completed candidate IDs = 61`. Evidence remains AI-assisted author review pending human maintainer approval.

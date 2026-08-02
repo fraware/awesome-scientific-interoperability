@@ -111,3 +111,6 @@ standard_families:
   - ro-crate
   - croissant
   - combine-omex-archive
+  computational-neuroscience-model-exchange:
+  - neuroml
+  - sonata

@@ -28,3 +28,7 @@ Use [resource:brain-imaging-data-structure-bids] when the principal interoperabi
 ## Example architecture
 
 A neuroscience archive receives scanner studies through DICOMweb, converts deidentified acquisitions into BIDS with a separately operated converter, validates the dataset with BIDS Validator, and stores electrophysiology sessions as NWB files checked by NWB Inspector. Repository packaging and execution provenance remain separate layers.
+
+## Computational models are a separate integration layer
+
+Use [resource:neuroml] or [resource:sonata] when the exchanged object is a computational neural model. NeuroML is stronger for declarative cell, channel, network, and simulation semantics. SONATA is stronger for performance-oriented exchange of large instantiated circuits, configurations, inputs, and outputs. Neither replaces BIDS dataset organization or NWB experimental-data semantics. See the [computational-neuroscience model exchange guide](computational-neuroscience-model-exchange.md).
