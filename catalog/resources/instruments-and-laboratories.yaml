@@ -208,6 +208,8 @@ resources:
   relations:
   - type: complements
     resource_id: loinc
+  - type: complements
+    resource_id: ga4gh-phenopackets
   scientific_domains:
   - clinical-informatics
   - laboratory-medicine

@@ -1,12 +1,3 @@
-
-## 2026-08-02 — Issue #44 Batch B candidate tree
-
-- Proposed OME-NGFF, FITS, IVOA TAP, and IVOA VOTable admissions.
-- Added astronomy and bioimaging decision guides and integration-problem paths.
-- Added claim-specific references, steward and implementation identities, public validators, typed relations, and taxonomy dimensions.
-- Replaced the fixed P0 queue floor with a 61-resource research-program conservation invariant.
-- Human maintainer review remains required before merge.
-
 # Changelog
 
 All notable editorial, schema, and maintenance changes for this repository are documented here. The list does not claim completeness of the scientific interoperability landscape.
@@ -20,6 +11,20 @@ All notable editorial, schema, and maintenance changes for this repository are d
 - Added two decision guides and two integration-problem paths covering computational-model exchange and neuroscience data.
 - Removed admitted resources from the expansion-candidate registry; 56 researched candidates remain.
 - Human maintainer approval remains required before merge.
+
+### Batch B: astronomy and bioimaging
+
+- Proposed OME-NGFF, FITS, IVOA TAP, and IVOA VOTable as distinct bioimaging-file, astronomy-file, table-serialization, and query-service mechanisms.
+- Added astronomy and bioimaging decision guides and integration-problem paths.
+- Added claim-specific references, operator-normalized implementations, direct validators, typed relations, and role-sensitive coverage families.
+- Preserved OME-TIFF, ObsCore, SAMP, ASDF, and generic Zarr as structured boundary candidates.
+
+### Batch C: genomic representation and access
+
+- Proposed VRS, Phenopackets, htsget, and refget Sequences as representation, phenotype-exchange, regional-access, and content-identity mechanisms.
+- Added claim-specific references, implementation identities, typed relations, a decision guide, and integration problem 17.
+- Preserved Beacon v2, HTS formats, Crypt4GH, and RNAget as structured boundary candidates.
+- The stacked candidate tree contains 100 resources and 48 unresolved candidates; all three batches remain pending human maintainer approval.
 
 ## [1.1.0] — 2026-08-01
 

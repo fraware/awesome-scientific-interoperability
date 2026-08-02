@@ -78,3 +78,9 @@ standard_families:
     - ome-ngff
     - dicomweb
     - nexus
+  ga4gh-genomic-data:
+    - ga4gh-variation-representation-specification-vrs
+    - ga4gh-phenopackets
+    - ga4gh-htsget
+    - ga4gh-refget-sequences
+    - ga4gh-data-repository-service-drs

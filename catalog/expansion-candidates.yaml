@@ -15,6 +15,10 @@ completed_candidate_ids:
 - flexible-image-transport-system-fits
 - ivoa-table-access-protocol-tap
 - ivoa-votable
+- ga4gh-variation-representation-specification-vrs
+- ga4gh-phenopackets
+- ga4gh-htsget
+- ga4gh-refget-sequences
 candidate_files:
 - candidates/systems-biology-neuroscience.yaml
 - candidates/bioimaging-astronomy.yaml

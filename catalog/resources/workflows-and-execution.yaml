@@ -167,6 +167,8 @@ resources:
     resource_id: ga4gh-workflow-execution-service-wes
   - type: complements
     resource_id: ga4gh-task-execution-service-tes
+  - type: complements
+    resource_id: ga4gh-htsget
   scientific_domains:
   - genomics
   integration_functions:
@@ -644,3 +646,63 @@ resources:
     reviewed_on: '2026-08-01'
     conflict_disclosure: none
     decision_record: docs/reviews/
+- id: ga4gh-htsget
+  name: GA4GH htsget
+  url: https://www.ga4gh.org/product/htsget/
+  section: Workflows and Execution
+  resource_kind: api-standard
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  connects:
+  - Genomic data repositories
+  - analysis clients
+  - cloud storage systems
+  - workflow engines
+  mechanism: HTTP ticket API returning ordered URLs and headers for region-scoped read or variant data retrieval
+  summary: Standard API for retrieving genomic read and variation data by region without transferring complete source
+    files.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - independent-implementation
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  steward_id: ga4gh
+  scientific_domains:
+  - genomics
+  - bioinformatics
+  integration_functions:
+  - research-data
+  - computational-workflows
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
+  source_refs:
+  - ref_id: ga4gh-org-product-htsget
+    role: stewardship
+  - ref_id: github-com-samtools-hts-specs-htsget
+    role: technical-definition
+  - ref_id: github-com-ga4gh-htsget-refserver
+    role: implementation
+  - ref_id: github-com-samtools-htslib
+    role: implementation
+  relations:
+  - type: complements
+    resource_id: ga4gh-data-repository-service-drs
+  - type: complements
+    resource_id: ga4gh-refget-sequences
+  decision_basis: Concrete operational mechanism for efficient, region-scoped access to large genomic read and variant
+    datasets.
+  boundary_note: htsget streams genomic records by region; DRS resolves whole data objects, and refget identifies
+    and retrieves reference sequences.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-c

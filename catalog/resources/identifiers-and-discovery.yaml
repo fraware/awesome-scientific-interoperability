@@ -380,6 +380,8 @@ resources:
     resource_id: datacite-metadata-schema-and-rest-api
   - type: complements
     resource_id: orcid
+  - type: complements
+    resource_id: ga4gh-refget-sequences
   scientific_domains:
   - life-sciences
   integration_functions: []
@@ -672,3 +674,72 @@ resources:
     reviewed_on: '2026-08-02'
     conflict_disclosure: none identified; human maintainer approval required before merge
     decision_record: issue-44-batch-b
+- id: ga4gh-refget-sequences
+  name: GA4GH refget Sequences
+  url: https://ga4gh.github.io/refget/sequences/
+  section: Identifiers and Discovery
+  resource_kind: identifier-system
+  interoperability_layers:
+  - Semantic
+  - Operational
+  connects:
+  - Reference sequence providers
+  - genomic file readers
+  - analysis pipelines
+  - variant representation systems
+  mechanism: Content-derived sequence identifiers with HTTP metadata, full-sequence, and range-retrieval endpoints
+  summary: Checksum-addressed identification and retrieval protocol for unambiguous reference sequences across providers
+    and analysis systems.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  - conformance-suite
+  - interoperability-demonstration
+  implementation_status: multiple-independent
+  conformance_status: public-suite
+  steward_id: ga4gh
+  scientific_domains:
+  - genomics
+  - bioinformatics
+  integration_functions:
+  - research-data
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
+  source_refs:
+  - ref_id: ga4gh-github-io-refget
+    role: stewardship
+  - ref_id: ga4gh-github-io-refget-sequences
+    role: technical-definition
+  - ref_id: github-com-ga4gh-refget
+    role: conformance
+  - ref_id: ga4gh-github-io-refget-compliance
+    role: interoperability-testing
+  - ref_id: ga4gh-github-io-refget-compliance-ena-server
+    role: implementation
+  - ref_id: ga4gh-github-io-refget-compliance-refget-server-perl
+    role: implementation
+  - ref_id: github-com-andrewyatz-refget-server-perl
+    role: implementation
+  relations:
+  - type: complements
+    resource_id: ga4gh-variation-representation-specification-vrs
+  - type: complements
+    resource_id: ga4gh-htsget
+  - type: complements
+    resource_id: identifiers-org
+  decision_basis: Content-derived identity removes accession-name ambiguity while the retrieval API connects reference
+    providers and genomic tools.
+  boundary_note: refget identifies and retrieves reference sequences; it does not represent variants, stream read
+    datasets, or replace namespace registries.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-c

@@ -508,3 +508,18 @@ stewards:
   aliases:
   - STILTS
   - Starjava
+- id: phenopackets-community
+  name: Phenopackets community
+  type: community
+  url: https://github.com/phenopackets
+  aliases: []
+- id: samtools-community
+  name: SAMtools and HTSlib community
+  type: community
+  url: https://github.com/samtools
+  aliases: []
+- id: refget-reference-server-project
+  name: Refget reference server project
+  type: community
+  url: https://github.com/andrewyatz/refget-server-perl
+  aliases: []

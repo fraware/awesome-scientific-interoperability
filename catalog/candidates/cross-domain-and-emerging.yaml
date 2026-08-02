@@ -1,20 +1,5 @@
 theme: cross-domain-and-emerging
 candidates:
-- id: ga4gh-refget-sequences
-  name: GA4GH refget Sequences
-  official_url: https://www.ga4gh.org/product/refget/
-  candidate_section: Identifiers and Discovery
-  coverage_family: reference-sequence-identification
-  priority: P0
-  disposition: admission-pr
-  mechanism: Checksum-addressed API for unambiguous identification and retrieval of reference biological sequences.
-  why_distinct: Solves reference-sequence identity drift across databases, file formats, and genomic analysis systems.
-  primary_sources:
-  - https://www.ga4gh.org/product/refget/
-  - https://samtools.github.io/hts-specs/refget.html
-  - https://github.com/ga4gh/refget
-  evidence_notes: GA4GH API with content-derived identifiers and implementations in genomic infrastructure.
-  next_step: Admission PR related to VRS, htsget, SWHIDs, and Identifiers.org.
 - id: omop-common-data-model
   name: OMOP Common Data Model
   official_url: https://ohdsi.github.io/CommonDataModel/

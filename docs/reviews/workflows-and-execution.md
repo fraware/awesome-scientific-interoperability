@@ -50,3 +50,4 @@ None.
 - GA4GH WES: added Sapporo as second implementation evidence; conformance downgraded to `none-known` (no maintained official public suite cited).
 - openEO: added `openeo-test-suite` plus GeoPySpark and Python drivers; conformance upgraded to `public-suite`.
 - Sapporo and WorkflowHub: conformance downgraded to `none-known` (no direct public suite artifact for these entries).
+| GA4GH htsget | [GA4GH product page](https://www.ga4gh.org/product/htsget/); [protocol specification](https://github.com/samtools/hts-specs/blob/master/Htsget.md); [reference server](https://github.com/ga4gh/htsget-refserver) |

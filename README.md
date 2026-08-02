@@ -45,6 +45,8 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 - [ORCID](https://info.orcid.org/what-is-orcid/) - Persistent researcher identifiers and public/member APIs; connects researchers, publishers, funders, and repositories.
 - [Research Organization Registry (ROR)](https://ror.org/about/) - Open organization identifiers, metadata, and APIs; connects research organizations, publishers, funders, and repositories.
 
+- [GA4GH refget Sequences](https://ga4gh.github.io/refget/sequences/) - Checksum-addressed identification and retrieval protocol for unambiguous reference sequences across providers and analysis systems.
+
 ## Metadata and Semantics
 
 - [ISA-JSON](https://isa-specs.readthedocs.io/en/latest/isajson.html) - JSON serialization of the Investigation/Study/Assay model for experimental metadata; connects life-science studies, assays, repositories, and analysis pipelines.
@@ -63,6 +65,9 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 - [SpatioTemporal Asset Catalog (STAC)](https://stacspec.org/) - Common metadata model and APIs for spatiotemporal assets; connects geospatial assets, catalogs, clients, and cloud storage.
 - [Unified Code for Units of Measure (UCUM)](https://ucum.org/) - Machine-processable codes for unambiguous exchange and computation of measurement units.
 - [W3C Data Catalog Vocabulary (DCAT)](https://www.w3.org/TR/vocab-dcat-3/) - RDF vocabulary for exchanging catalog, dataset, distribution, and data-service descriptions across federated catalogs.
+
+- [GA4GH Variation Representation Specification (VRS)](https://vrs.ga4gh.org/en/stable/) - Versioned schemas and algorithms for representing, normalizing, identifying, and exchanging genomic variation across independent systems.
+- [GA4GH Phenopackets](https://www.ga4gh.org/product/phenopackets/) - Machine-readable schema for exchanging patient and sample phenotypes, diseases, biosamples, pedigrees, measurements, and genomic interpretations.
 
 ## Data and Digital Objects
 
@@ -108,6 +113,8 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 - [WfExS-backend](https://github.com/inab/WfExS-backend) - Workflow execution backend connecting multiple workflow engines with reproducible environments and RO-Crate evidence packages.
 - [Workflow Description Language (WDL)](https://openwdl.org/) - Workflow language implemented by multiple engines for executing scientific pipelines across cloud and high-performance computing backends.
 - [WorkflowHub](https://workflowhub.eu/) - FAIR workflow registry connecting RO-Crate packaging, Bioschemas metadata, GA4GH TRS discovery, and external execution services.
+
+- [GA4GH htsget](https://www.ga4gh.org/product/htsget/) - Standard API for retrieving genomic read and variation data by region without transferring complete source files.
 
 ## Provenance and Evidence
 

@@ -2215,3 +2215,135 @@ references:
   type: validator
   publisher: star.bris.ac.uk
   accessed_on: '2026-08-02'
+- id: vrs-ga4gh-org-stable
+  title: GA4GH Variation Representation Specification
+  url: https://vrs.ga4gh.org/en/stable/
+  type: specification
+  publisher: vrs.ga4gh.org
+  accessed_on: '2026-08-02'
+- id: vrs-ga4gh-org-releases-2-0
+  title: VRS 2.0 release notes
+  url: https://vrs.ga4gh.org/en/stable/releases/2.0.html
+  type: technical-documentation
+  publisher: vrs.ga4gh.org
+  accessed_on: '2026-08-02'
+- id: vrs-ga4gh-org-computed-identifiers
+  title: VRS computed identifiers
+  url: https://vrs.ga4gh.org/en/stable/conventions/computed_identifiers.html
+  type: technical-documentation
+  publisher: vrs.ga4gh.org
+  accessed_on: '2026-08-02'
+- id: github-com-ga4gh-vrs
+  title: GA4GH VRS specification repository
+  url: https://github.com/ga4gh/vrs
+  type: normative-schema
+  publisher: github.com/ga4gh
+  accessed_on: '2026-08-02'
+- id: github-com-ga4gh-vrs-python
+  title: GA4GH VRS Python implementation
+  url: https://github.com/ga4gh/vrs-python
+  type: implementation-repository
+  publisher: github.com/ga4gh
+  accessed_on: '2026-08-02'
+- id: github-com-ga4gh-vrs-python-tests-validation
+  title: VRS Python specification validation tests
+  url: https://github.com/ga4gh/vrs-python/tree/main/tests/validation
+  type: conformance-suite
+  publisher: github.com/ga4gh
+  accessed_on: '2026-08-02'
+- id: ga4gh-org-product-phenopackets
+  title: GA4GH Phenopackets
+  url: https://www.ga4gh.org/product/phenopackets/
+  type: governance-source
+  publisher: ga4gh.org
+  accessed_on: '2026-08-02'
+- id: phenopacket-schema-readthedocs-latest
+  title: Phenopacket Schema v2 documentation
+  url: https://phenopacket-schema.readthedocs.io/en/latest/
+  type: specification
+  publisher: phenopacket-schema.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: phenopacket-schema-readthedocs-requirements
+  title: Phenopacket requirement levels and validation
+  url: https://phenopacket-schema.readthedocs.io/en/latest/requirements.html
+  type: technical-documentation
+  publisher: phenopacket-schema.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: github-com-phenopackets-phenopacket-schema
+  title: Phenopacket Schema repository and language bindings
+  url: https://github.com/phenopackets/phenopacket-schema
+  type: implementation-repository
+  publisher: github.com/phenopackets
+  accessed_on: '2026-08-02'
+- id: github-com-phenopackets-phenopacket-tools
+  title: Phenopacket tools and validator
+  url: https://github.com/phenopackets/phenopacket-tools
+  type: validator
+  publisher: github.com/phenopackets
+  accessed_on: '2026-08-02'
+- id: ga4gh-org-product-htsget
+  title: GA4GH htsget
+  url: https://www.ga4gh.org/product/htsget/
+  type: governance-source
+  publisher: ga4gh.org
+  accessed_on: '2026-08-02'
+- id: github-com-samtools-hts-specs-htsget
+  title: htsget protocol specification
+  url: https://github.com/samtools/hts-specs/blob/master/Htsget.md
+  type: specification
+  publisher: github.com/samtools
+  accessed_on: '2026-08-02'
+- id: github-com-ga4gh-htsget-refserver
+  title: GA4GH htsget reference server
+  url: https://github.com/ga4gh/htsget-refserver
+  type: implementation-repository
+  publisher: github.com/ga4gh
+  accessed_on: '2026-08-02'
+- id: github-com-samtools-htslib
+  title: HTSlib htsget-capable client library
+  url: https://github.com/samtools/htslib
+  type: implementation-repository
+  publisher: github.com/samtools
+  accessed_on: '2026-08-02'
+- id: ga4gh-github-io-refget
+  title: GA4GH refget specifications
+  url: https://ga4gh.github.io/refget/
+  type: governance-source
+  publisher: ga4gh.github.io
+  accessed_on: '2026-08-02'
+- id: ga4gh-github-io-refget-sequences
+  title: Refget Sequences v2.0.0
+  url: https://ga4gh.github.io/refget/sequences/
+  type: specification
+  publisher: ga4gh.github.io
+  accessed_on: '2026-08-02'
+- id: github-com-ga4gh-refget
+  title: GA4GH refget specification and compliance tooling
+  url: https://github.com/ga4gh/refget
+  type: implementation-repository
+  publisher: github.com/ga4gh
+  accessed_on: '2026-08-02'
+- id: ga4gh-github-io-refget-compliance
+  title: Refget compliance report
+  url: https://ga4gh.github.io/refget-compliance/
+  type: interoperability-result
+  publisher: ga4gh.github.io
+  accessed_on: '2026-08-02'
+- id: ga4gh-github-io-refget-compliance-ena-server
+  title: ENA CRAM Reference Registry compliance report
+  url: https://ga4gh.github.io/refget-compliance/reports/ena-server.html
+  type: interoperability-result
+  publisher: ga4gh.github.io
+  accessed_on: '2026-08-02'
+- id: ga4gh-github-io-refget-compliance-refget-server-perl
+  title: Refget reference server compliance report
+  url: https://ga4gh.github.io/refget-compliance/reports/refget-server-perl.html
+  type: interoperability-result
+  publisher: ga4gh.github.io
+  accessed_on: '2026-08-02'
+- id: github-com-andrewyatz-refget-server-perl
+  title: Refget reference server Perl implementation
+  url: https://github.com/andrewyatz/refget-server-perl
+  type: implementation-repository
+  publisher: github.com/andrewyatz
+  accessed_on: '2026-08-02'
