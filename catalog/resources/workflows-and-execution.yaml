@@ -37,6 +37,10 @@ resources:
     role: implementation
   - ref_id: commonwl-org-v1-2-conformancetests-html
     role: conformance
+  - ref_id: github-com-common-workflow-language-cwltool
+    role: implementation
+  - ref_id: github-com-databiosphere-toil
+    role: implementation
   alternatives:
   - workflow-description-language-wdl
   related_resource_ids:
@@ -116,8 +120,9 @@ resources:
   - normative-specification
   - independent-implementation
   - institutional-adoption
+  - conformance-suite
   implementation_status: multiple-independent
-  conformance_status: documented-tests
+  conformance_status: public-suite
   steward_id: ga4gh
   domains:
   - genomics
@@ -128,6 +133,10 @@ resources:
   - ref_id: ga4gh-org-root
     role: stewardship
   - ref_id: github-com-ga4gh-data-repository-service-schemas
+    role: implementation
+  - ref_id: github-com-ga4gh-drs-compliance-suite
+    role: conformance
+  - ref_id: github-com-ga4gh-drs-filer
     role: implementation
   alternatives: []
   related_resource_ids:
@@ -158,8 +167,9 @@ resources:
   evidence_types:
   - normative-specification
   - independent-implementation
+  - conformance-suite
   implementation_status: multiple-independent
-  conformance_status: documented-tests
+  conformance_status: public-suite
   steward_id: ga4gh
   domains:
   - genomics
@@ -170,6 +180,10 @@ resources:
   - ref_id: ga4gh-org-root
     role: stewardship
   - ref_id: github-com-ga4gh-task-execution-schemas
+    role: implementation
+  - ref_id: github-com-ga4gh-openapi-test-runner
+    role: conformance
+  - ref_id: github-com-ohsu-comp-bio-funnel
     role: implementation
   alternatives: []
   related_resource_ids:
@@ -202,7 +216,7 @@ resources:
   - independent-implementation
   - institutional-adoption
   implementation_status: multiple-independent
-  conformance_status: documented-tests
+  conformance_status: none-known
   steward_id: ga4gh
   domains:
   - genomics
@@ -213,6 +227,8 @@ resources:
   - ref_id: ga4gh-org-root
     role: stewardship
   - ref_id: github-com-ga4gh-workflow-execution-service-schemas
+    role: implementation
+  - ref_id: github-com-sapporo-wes-sapporo
     role: implementation
   alternatives: []
   related_resource_ids:
@@ -288,7 +304,7 @@ resources:
   - reference-implementation
   - interoperability-demonstration
   implementation_status: single-known
-  conformance_status: documented-tests
+  conformance_status: none-known
   steward_id: sapporo-contributors
   domains:
   - computational-workflows
@@ -392,6 +408,10 @@ resources:
     role: stewardship
   - ref_id: github-com-openwdl-wdl
     role: implementation
+  - ref_id: github-com-broadinstitute-cromwell
+    role: implementation
+  - ref_id: github-com-openwdl-miniwdl
+    role: implementation
   alternatives:
   - common-workflow-language-cwl
   related_resource_ids:
@@ -427,7 +447,7 @@ resources:
   - institutional-adoption
   - interoperability-demonstration
   implementation_status: reference-and-others
-  conformance_status: documented-tests
+  conformance_status: none-known
   steward_id: workflowhub
   domains:
   - computational-workflows
@@ -471,8 +491,9 @@ resources:
   - normative-specification
   - independent-implementation
   - institutional-adoption
+  - conformance-suite
   implementation_status: multiple-independent
-  conformance_status: documented-tests
+  conformance_status: public-suite
   steward_id: openeo-consortium-ogc
   domains:
   - environmental-science
@@ -484,6 +505,12 @@ resources:
     role: stewardship
   - ref_id: docs-ogc-org-cs-24-059-24-059-html
     role: technical-definition
+  - ref_id: github-com-open-eo-openeo-test-suite
+    role: conformance
+  - ref_id: github-com-open-eo-openeo-geopyspark-driver
+    role: implementation
+  - ref_id: github-com-open-eo-openeo-python-driver
+    role: implementation
   alternatives:
   - spatiotemporal-asset-catalog-stac
   related_resource_ids:
