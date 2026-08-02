@@ -111,3 +111,10 @@ Initial public release candidate.
 
 [1.1.0]: https://github.com/fraware/awesome-scientific-interoperability/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/fraware/awesome-scientific-interoperability/releases/tag/v1.0.0
+
+## Issue #44 Batch G candidate tree — 2026-08-02
+
+- Add OME-TIFF, ObsCore/ObsTAP, SAMP, and ASDF with role-sensitive evidence and boundaries.
+- Expand astronomy and bioimaging decision guidance and integration-problem paths.
+- Preserve conservative conformance and implementation-independence claims.
+- Reduce the unresolved expansion registry from 39 to 35 candidates while conserving the 61-resource research program.

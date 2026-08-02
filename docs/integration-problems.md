@@ -545,77 +545,78 @@ A repository ingests scanner data through DICOMweb, converts deidentified acquis
 
 ---
 
-## 15. Exchange astronomy files, tables, and federated query results
+## 15. Exchange astronomy files, discovery metadata, query results, and application messages
 
 [problem:exchange-astronomy-data]
 
 ### Situation
 
-An astronomy program must preserve instrument or mission products, exchange richly annotated catalog tables, and let clients query holdings across independently operated data centers.
+An astronomy program must preserve instrument or mission products, expose uniform observation discovery, exchange annotated tables, query holdings across data centers, and compose specialized desktop or browser tools.
 
 ### Starting point
 
-Use [resource:flexible-image-transport-system-fits] for durable images, spectra, cubes, and table files. Use [resource:ivoa-votable] for table results with Virtual Observatory metadata and serializations. Use [resource:ivoa-table-access-protocol-tap] when clients need synchronous or asynchronous remote queries, ADQL, uploads, metadata discovery, or spatial cross-matching.
-
-The mechanisms compose. A TAP service commonly returns VOTable results whose rows identify FITS products. Record the role of each layer independently so file conformance, response serialization, and service behavior are not conflated.
+Use [resource:flexible-image-transport-system-fits] for installed-base durable files or [resource:advanced-scientific-data-format-asdf] for hierarchical schema-and-extension data models. Use [resource:ivoa-table-access-protocol-tap] for remote table queries, [resource:ivoa-observation-core-obscore] when multiple archives must expose one observation-discovery view, and [resource:ivoa-votable] for annotated table results. Use [resource:ivoa-simple-application-messaging-protocol-samp] to pass results, files, coordinates, selections, and commands among running applications.
 
 ### When an alternative is stronger
 
-- Earth-observation and general spatiotemporal asset catalogs: use [resource:spatiotemporal-asset-catalog-stac].
-- Generic catalog federation outside astronomy: use [resource:w3c-data-catalog-vocabulary-dcat].
-- Packaging files with software and provenance: use [resource:ro-crate].
+- Earth-observation asset catalogs: [resource:spatiotemporal-asset-catalog-stac].
+- Generic catalog federation: [resource:w3c-data-catalog-vocabulary-dcat].
+- Packaging files with software and provenance: [resource:ro-crate].
 
 ### Limitations and common category errors
 
-- Treating VOTable as a service protocol or TAP as a file format.
-- Treating FITS header validity as complete scientific metadata quality.
-- Adding ObsCore, SAMP, and every IVOA companion without a distinct integration decision.
-- Assuming every TAP validator stage covers every query language, profile, and registration behavior.
+- Treating ObsCore as a complete archive schema or a substitute for TAP.
+- Treating SAMP messages as durable data or workflow provenance.
+- Treating VOTable as a query protocol.
+- Treating ASDF as a universal FITS replacement or core validation as extension availability.
 
 ### Relevant catalog entries
 
-[resource:flexible-image-transport-system-fits] [resource:ivoa-votable] [resource:ivoa-table-access-protocol-tap] [resource:spatiotemporal-asset-catalog-stac] [resource:w3c-data-catalog-vocabulary-dcat] [resource:ro-crate]
+[resource:flexible-image-transport-system-fits] [resource:advanced-scientific-data-format-asdf] [resource:ivoa-votable] [resource:ivoa-table-access-protocol-tap] [resource:ivoa-observation-core-obscore] [resource:ivoa-simple-application-messaging-protocol-samp] [resource:ro-crate]
 
 ### Example architecture
 
-A mission archive stores calibrated products as FITS, exposes catalog and observation tables through TAP, serializes query results as VOTable, and packages release documentation, software, and provenance in RO-Crate. ObsCore is applied as a table profile where uniform observation discovery is required.
+A mission archive stores legacy products as FITS and complex calibrated models as ASDF, exposes tables through TAP, implements the ObsCore view for federated discovery, returns VOTable results, and lets scientists send selected rows and file references among analysis applications over SAMP. Release context and provenance are packaged separately in RO-Crate.
 
 ---
 
-## 16. Exchange cloud-native bioimaging data
+## 16. Exchange installed-base and cloud-native bioimaging data
 
 [problem:exchange-bioimaging-data]
 
 ### Situation
 
-A microscopy program must exchange multidimensional images, resolution pyramids, labels, plates, wells, axes, and coordinate metadata through object stores and distributed analysis tools.
+A microscopy program must exchange installed-base image files and cloud-native multidimensional arrays while retaining axes, channels, plates, wells, pyramids, labels, and acquisition metadata.
 
 ### Starting point
 
-Use [resource:ome-ngff] for cloud-native OME-Zarr bioimaging data. Declare the OME-Zarr metadata version, Zarr version, and optional features supported by each producer and consumer. Validate the resulting hierarchy and metadata, then test representative datasets across the actual readers and writers in the workflow.
+Use [resource:ome-data-model-and-ome-tiff] when broad TIFF-compatible installed-base exchange and portable files dominate. Use [resource:ome-ngff] for chunked cloud and object-store access, distributed pyramids, and versioned multidimensional metadata. Record the exact OME schema or OME-Zarr version and test representative datasets across production readers and writers.
 
-Use [resource:dicomweb] for clinical DICOM studies and service operations, [resource:nexus] for neutron, X-ray, or muon facility application definitions, and [resource:ro-crate] to package images with software, people, instruments, workflows, and provenance.
+Use [resource:dicomweb] for clinical DICOM service operations, [resource:nexus] for facility application definitions, and [resource:ro-crate] for contextual packaging.
 
 ### When an alternative is stronger
 
-- Mature single-file microscopy exchange and broad installed-base readers: OME-TIFF may remain stronger.
-- Clinical imaging identity, metadata, and regulated service workflows: use [resource:dicomweb].
-- Generic chunked arrays without bioimaging semantics: Zarr may be sufficient as a storage substrate, though it does not replace OME-NGFF.
+- Clinical imaging identity and regulated service workflows: [resource:dicomweb].
+- Generic chunked arrays without bioimaging semantics: Zarr as a substrate.
+- Broader research-object context: [resource:ro-crate].
 
 ### Limitations and common category errors
 
-- Treating generic Zarr readability as OME-Zarr conformance.
-- Assuming all readers support the same OME-Zarr versions and optional metadata.
-- Treating validation as proof of lossless conversion or scientifically correct coordinates.
-- Using RO-Crate as an image representation instead of a contextual package.
+- Treating TIFF readability as OME-TIFF support.
+- Treating generic Zarr readability as OME-NGFF conformance.
+- Treating XML or hierarchy validation as proof of pixel correctness or lossless conversion.
+- Assuming every reader supports every schema version and optional feature.
 
 ### Relevant catalog entries
 
-[resource:ome-ngff] [resource:dicomweb] [resource:nexus] [resource:ro-crate]
+[resource:ome-data-model-and-ome-tiff] [resource:ome-ngff] [resource:dicomweb] [resource:nexus] [resource:ro-crate]
 
 ### Example architecture
 
-A microscopy facility converts acquisition files to versioned OME-Zarr, validates the hierarchy, writes compatibility fixtures for its production viewers, and stores datasets in object storage. A RO-Crate layer connects each image collection to acquisition instruments, conversion software, analysis workflows, and provenance.
+A facility retains OME-TIFF for instrument export and desktop exchange, converts validated datasets to versioned OME-NGFF for object-store analysis, records conversion software and metadata losses, and publishes each collection with instrument and workflow context in RO-Crate.
+
+---
+
 ## 17. Represent genomic variation and exchange phenotype context while accessing distributed sequence data
 
 Use [resource:ga4gh-variation-representation-specification-vrs] for normalized variation concepts and computed identifiers, [resource:ga4gh-phenopackets] for phenotype and interpretation records, [resource:ga4gh-htsget] for region-scoped read or variant retrieval, and [resource:ga4gh-refget-sequences] for content-derived reference-sequence identity and retrieval. [resource:ga4gh-data-repository-service-drs] complements htsget when complete data objects must be resolved. See the [genomic representation and access guide](decision-guides/genomic-representation-and-access.md).

@@ -2701,3 +2701,123 @@ references:
   type: specification
   publisher: zitniklab.hms.harvard.edu
   accessed_on: '2026-08-01'
+- id: docs-openmicroscopy-ome-model-6-2-2-ome-tiff-specification
+  title: OME-TIFF specification 6.2.2
+  url: https://docs.openmicroscopy.org/ome-model/6.2.2/ome-tiff/specification.html
+  type: specification
+  publisher: docs.openmicroscopy.org
+  accessed_on: '2026-08-02'
+- id: docs-openmicroscopy-ome-model-6-2-2-root
+  title: OME Data Model and File Formats 6.2.2
+  url: https://docs.openmicroscopy.org/ome-model/6.2.2/
+  type: technical-documentation
+  publisher: docs.openmicroscopy.org
+  accessed_on: '2026-08-02'
+- id: docs-openmicroscopy-bio-formats-ome-tiff
+  title: Bio-Formats OME-TIFF reader and writer
+  url: https://docs.openmicroscopy.org/bio-formats/latest/formats/ome-tiff.html
+  type: technical-documentation
+  publisher: docs.openmicroscopy.org
+  accessed_on: '2026-08-02'
+- id: docs-openmicroscopy-bio-formats-xml-validation
+  title: Bio-Formats OME-XML validation
+  url: https://docs.openmicroscopy.org/bio-formats/latest/users/comlinetools/xml-validation.html
+  type: validator
+  publisher: docs.openmicroscopy.org
+  accessed_on: '2026-08-02'
+- id: github-com-ome-bioformats
+  title: OME Bio-Formats
+  url: https://github.com/ome/bioformats
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-bioio-devs-bioio-ome-tiff
+  title: BioIO OME-TIFF reader and writer
+  url: https://github.com/bioio-devs/bioio-ome-tiff
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: ivoa-net-documents-obscore
+  title: IVOA Observation Core 1.1
+  url: https://ivoa.net/documents/ObsCore/
+  type: specification
+  publisher: ivoa.net
+  accessed_on: '2026-08-02'
+- id: dachs-doc-readthedocs-io-obscore-tutorial
+  title: DaCHS ObsCore publishing tutorial
+  url: https://dachs-doc.readthedocs.io/tutorial.html
+  type: technical-documentation
+  publisher: dachs-doc.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: cadc-ccda-tap-obscore
+  title: CADC TAP and ObsCore query documentation
+  url: https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/doc/tap/
+  type: technical-documentation
+  publisher: cadc-ccda.hia-iha.nrc-cnrc.gc.ca
+  accessed_on: '2026-08-02'
+- id: star-bris-ac-uk-stilts-obstapstage
+  title: STILTS ObsTAP validation stage
+  url: https://www.star.bris.ac.uk/~mbt/stilts/sun256/ObsTapStage.html
+  type: validator
+  publisher: star.bris.ac.uk
+  accessed_on: '2026-08-02'
+- id: ivoa-net-documents-samp
+  title: IVOA Simple Application Messaging Protocol 1.3
+  url: https://www.ivoa.net/documents/SAMP/
+  type: specification
+  publisher: ivoa.net
+  accessed_on: '2026-08-02'
+- id: github-com-ivoa-std-samp
+  title: IVOA SAMP specification repository
+  url: https://github.com/ivoa-std/SAMP
+  type: governance-source
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: pyvo-readthedocs-io-samp
+  title: PyVO SAMP implementation
+  url: https://pyvo.readthedocs.io/en/latest/samp/index.html
+  type: technical-documentation
+  publisher: pyvo.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: star-bris-ac-uk-jsamp
+  title: JSAMP Java toolkit
+  url: https://www.star.bris.ac.uk/~mbt/jsamp/
+  type: implementation-repository
+  publisher: star.bris.ac.uk
+  accessed_on: '2026-08-02'
+- id: asdf-standard-readthedocs-io-latest
+  title: ASDF Standard 1.6.0
+  url: https://asdf-standard.readthedocs.io/en/latest/
+  type: specification
+  publisher: asdf-standard.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: github-com-asdf-format-asdf-standard
+  title: ASDF Standard repository
+  url: https://github.com/asdf-format/asdf-standard
+  type: governance-source
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-asdf-format-asdf
+  title: ASDF Python implementation
+  url: https://github.com/asdf-format/asdf
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: asdf-readthedocs-io-stable
+  title: ASDF Python documentation
+  url: https://asdf.readthedocs.io/en/stable/
+  type: technical-documentation
+  publisher: asdf.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: github-com-asdf-format-asdf-validate-command
+  title: ASDF validator command implementation
+  url: https://github.com/asdf-format/asdf/blob/main/asdf/commands/validate.py
+  type: validator
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: stdatamodels-readthedocs-io-schemas
+  title: JWST data-model ASDF schemas
+  url: https://stdatamodels.readthedocs.io/en/latest/jwst/datamodels/schemas.html
+  type: adoption-evidence
+  publisher: stdatamodels.readthedocs.io
+  accessed_on: '2026-08-02'

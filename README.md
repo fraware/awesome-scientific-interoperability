@@ -72,6 +72,7 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 - [Minimum Information about any (X) Sequence (MIxS)](https://genomicsstandardsconsortium.github.io/mixs/) - Versioned checklists and environmental extensions for exchanging contextual metadata about sequenced samples, collection environments, and processing methods.
 - [Ecological Metadata Language (EML)](https://eml.ecoinformatics.org/) - Community-maintained XML metadata standard for exchanging ecological dataset descriptions, methods, coverage, provenance, table structures, and distributions.
 - [OMOP Common Data Model](https://ohdsi.github.io/CommonDataModel/) - Shared relational model and vocabularies for harmonizing longitudinal observational health data across institutions and federated analytical studies.
+- [IVOA Observation Core (ObsCore/ObsTAP)](https://ivoa.net/documents/ObsCore/) - IVOA core observation metadata model and ObsTAP profile for issuing uniform discovery queries across independently operated astronomy archives.
 
 ## Data and Digital Objects
 
@@ -85,6 +86,8 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 - [Functional Mock-up Interface (FMI)](https://fmi-standard.org/docs/3.0/) - ZIP-packaged dynamic models with XML, C code, and co-simulation or model-exchange APIs; connects simulation tools, digital-twin platforms, and supplier models.
 - [FAIR Signposting](https://signposting.org/) - Typed HTTP Link relations that let machine clients discover identifiers, metadata, licenses, and files from repository landing pages.
 - [NeXus](https://www.nexusformat.org/) - HDF5-based application definitions and field dictionary for neutron, X-ray, and muon experimental data; connects beamlines, analysis software, and facility archives.
+- [OME Data Model and OME-TIFF](https://docs.openmicroscopy.org/ome-model/6.2.2/ome-tiff/specification.html) - Installed-base bioimaging exchange standard combining TIFF or BigTIFF pixels with embedded OME-XML metadata for multidimensional microscopy data.
+- [Advanced Scientific Data Format (ASDF)](https://asdf-standard.readthedocs.io/en/latest/) - Schema-aware scientific data format combining hierarchical YAML metadata, binary array blocks, references, and versioned extensions for complex astronomy data models.
 - [Flexible Image Transport System (FITS)](https://fits.gsfc.nasa.gov/fits_standard.html) - IAU-governed astronomical exchange standard for multidimensional arrays, images, spectra, tables, metadata, coordinates, and compressed scientific data across instruments, archives, and software.
 - [IVOA VOTable](https://www.ivoa.net/documents/VOTable/) - IVOA XML table standard for exchanging astronomical tabular data, arrays, field metadata, links, parameters, and multiple serializations across Virtual Observatory services and clients.
 - [OME-NGFF / OME-Zarr](https://ngff.openmicroscopy.org/0.5/) - Cloud-native OME-Zarr specification for exchanging chunked multidimensional bioimages, multiscales, labels, plates, wells, axes, and coordinate metadata across storage and analysis systems.
@@ -124,6 +127,7 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 - [WfExS-backend](https://github.com/inab/WfExS-backend) - Workflow execution backend connecting multiple workflow engines with reproducible environments and RO-Crate evidence packages.
 - [Workflow Description Language (WDL)](https://openwdl.org/) - Workflow language implemented by multiple engines for executing scientific pipelines across cloud and high-performance computing backends.
 - [WorkflowHub](https://workflowhub.eu/) - FAIR workflow registry connecting RO-Crate packaging, Bioschemas metadata, GA4GH TRS discovery, and external execution services.
+- [IVOA Simple Application Messaging Protocol (SAMP)](https://www.ivoa.net/documents/SAMP/) - IVOA hub-based messaging protocol that lets independent desktop and browser astronomy applications discover one another and exchange data references, selections, coordinates, and commands.
 
 - [GA4GH htsget](https://www.ga4gh.org/product/htsget/) - Standard API for retrieving genomic read and variation data by region without transferring complete source files.
 

@@ -643,3 +643,15 @@ stewards:
   type: institution
   url: https://zitniklab.hms.harvard.edu/
   aliases: []
+- id: asdf-format-project
+  name: ASDF Format Project
+  type: community
+  url: https://asdf-standard.readthedocs.io/
+  aliases:
+  - ASDF Developers
+- id: bioio-project
+  name: BioIO Project
+  type: community
+  url: https://bioio-devs.github.io/bioio/
+  aliases:
+  - BioIO developers

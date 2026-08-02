@@ -1,40 +1,38 @@
-# Astronomy data files, tables, and query services
+# Astronomy data files, discovery, queries, and application messaging
 
-**Decision question:** Which mechanism should an astronomy archive or client use for durable files, table serialization, or federated remote queries?
+**Decision question:** Which mechanism should an astronomy archive or application use for durable data, hierarchical models, observation discovery, tabular exchange, remote queries, or interactive tool composition?
 
-**Primary sources inspected:** [FITS Standard 4.0](https://fits.gsfc.nasa.gov/fits_standard.html), [IAU FITS Working Group rules](https://fits.gsfc.nasa.gov/iaufwg/iaufwg_rules.html), [IVOA VOTable 1.5](https://www.ivoa.net/documents/VOTable/), [IVOA TAP 1.1](https://ivoa.net/documents/TAP/), [CFITSIO](https://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html), [Astropy VOTable](https://docs.astropy.org/en/stable/io/votable/index.html), [STILTS taplint](https://www.star.bris.ac.uk/~mbt/stilts/sun256/taplint.html), and [STILTS votlint](https://www.star.bris.ac.uk/~mbt/stilts/sun256/votlint.html).
+**Primary sources inspected:** [FITS Standard 4.0](https://fits.gsfc.nasa.gov/fits_standard.html), [ASDF Standard](https://asdf-standard.readthedocs.io/en/latest/), [IVOA VOTable 1.5](https://www.ivoa.net/documents/VOTable/), [IVOA TAP 1.1](https://ivoa.net/documents/TAP/), [IVOA ObsCore 1.1](https://ivoa.net/documents/ObsCore/), [IVOA SAMP 1.3](https://www.ivoa.net/documents/SAMP/), [STILTS taplint](https://www.star.bris.ac.uk/~mbt/stilts/sun256/taplint.html), and [STILTS ObsTAP validation](https://www.star.bris.ac.uk/~mbt/stilts/sun256/ObsTapStage.html).
 
 ## Choose by integration job
 
-| Integration job | Strong starting point | Why |
-|---|---|---|
-| Preserve or exchange astronomical images, spectra, cubes, and binary tables as files | [resource:flexible-image-transport-system-fits] | FITS supplies the durable header-data-unit contract used across instruments, missions, archives, and analysis libraries. |
-| Exchange richly annotated table results between Virtual Observatory services and clients | [resource:ivoa-votable] | VOTable defines field metadata, arrays, links, parameters, and several table serializations. |
-| Query relational astronomy holdings across independently operated data centers | [resource:ivoa-table-access-protocol-tap] | TAP defines metadata endpoints, synchronous and asynchronous queries, ADQL, uploads, and spatial cross-matching. |
-| Discover geospatial or Earth-observation assets through object catalogs | [resource:spatiotemporal-asset-catalog-stac] | STAC addresses spatiotemporal asset catalogs rather than astronomy relational-table services. |
+| Integration job | Strong starting point | Why | Boundary |
+|---|---|---|---|
+| Preserve or exchange installed-base astronomical images, spectra, cubes, and tables | [resource:flexible-image-transport-system-fits] | Durable header-data-unit contract across instruments, missions, archives, and libraries | Header validity does not establish complete or scientifically adequate metadata |
+| Exchange complex hierarchical data with schemas, references, and versioned extensions | [resource:advanced-scientific-data-format-asdf] | YAML metadata trees, binary blocks, schema validation, and explicit extensions | Consumers need compatible extension manifests and schemas; adoption remains narrower than FITS |
+| Exchange richly annotated table results | [resource:ivoa-votable] | Field metadata, arrays, links, parameters, and multiple table serializations | Serialization is distinct from service behavior and archive discovery semantics |
+| Query relational holdings across independent data centers | [resource:ivoa-table-access-protocol-tap] | Synchronous and asynchronous queries, ADQL, uploads, metadata endpoints, and spatial operations | TAP does not impose one scientific table model |
+| Issue one observation-discovery query across archives | [resource:ivoa-observation-core-obscore] | Minimal common `ivoa.obscore` metadata profile implemented through TAP | Discovery view only; it does not replace complete archive metadata or data-access protocols |
+| Send data, selections, coordinates, and commands between running applications | [resource:ivoa-simple-application-messaging-protocol-samp] | Mature hub-mediated desktop and browser interoperability | Messaging does not provide persistence, provenance, authorization, or scientific validation |
 
 ## Composition pattern
 
-A TAP service usually exposes table and column metadata, accepts ADQL or another declared query language, and returns results in [resource:ivoa-votable]. The table rows may identify or link durable [resource:flexible-image-transport-system-fits] products. These are complementary layers: service behavior, response serialization, and file representation.
-
-ObsCore/ObsTAP may profile TAP tables for uniform observation discovery. It is a data-model profile, not a replacement for TAP. SAMP addresses application-to-application messaging and is outside the remote query decision. ASDF may be stronger than FITS for some hierarchical, schema-rich data models, but its archive adoption and family role require a separate decision.
+An archive may store products as FITS or ASDF, expose its relational holdings through TAP, implement ObsCore for uniform observation discovery, and serialize query results as VOTable. A scientist may then use SAMP to move a selected result, sky position, or file reference among TOPCAT, Aladin, DS9, and Python clients. Each layer has a separate conformance boundary.
 
 ## Evidence and conformance
 
-- FITS has independent CFITSIO and Astropy implementations. Astropy exposes direct standard-verification behavior.
-- TAP has separately operated OpenCADC and GAVO DaCHS service implementations. STILTS `taplint` checks protocol endpoints, metadata consistency, job behavior, and returned VOTables, but explicitly does not claim comprehensive coverage.
-- VOTable has independent Astropy and STILTS implementations. `votlint` checks XML validity and data-structure semantics beyond schema validation.
+FITS, VOTable, TAP, ObsCore, and SAMP have separately operated implementations. ASDF currently retains the narrower `single-known` classification because this catalog models one confidently verified full implementation. STILTS validates TAP, VOTable, and ObsCore-specific behaviors. ASDF validation checks core and installed extension schemas. SAMP has no public protocol-wide conformance suite recorded.
 
-A successful validator result establishes conformity for the checks performed. It does not prove scientific correctness, complete metadata quality, or semantic equivalence between every producer and consumer.
+Successful validation establishes only the checks performed. It does not prove scientific metadata completeness, archive calibration quality, cross-implementation numerical equivalence, or availability of every ASDF extension.
 
 ## Common category errors
 
-- Treating VOTable as a query protocol.
-- Treating TAP as a durable file format.
-- Treating FITS compliance as evidence that coordinate systems or scientific metadata are adequate for a particular analysis.
-- Adding ObsCore, SAMP, and every IVOA companion as separate top-level entries without a distinct user decision.
-- Treating ASDF as a universal replacement for the installed FITS ecosystem.
+- Treating VOTable as a query protocol or TAP as a durable file format.
+- Treating ObsCore as a complete archive schema or a substitute for TAP.
+- Treating SAMP messages as persistent workflow evidence.
+- Treating ASDF as a universal FITS replacement.
+- Inferring scientific validity from syntactic or schema conformance.
 
 ## Relevant catalog entries
 
-[resource:flexible-image-transport-system-fits] [resource:ivoa-votable] [resource:ivoa-table-access-protocol-tap] [resource:spatiotemporal-asset-catalog-stac]
+[resource:flexible-image-transport-system-fits] [resource:advanced-scientific-data-format-asdf] [resource:ivoa-votable] [resource:ivoa-table-access-protocol-tap] [resource:ivoa-observation-core-obscore] [resource:ivoa-simple-application-messaging-protocol-samp]

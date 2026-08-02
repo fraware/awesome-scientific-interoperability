@@ -10,8 +10,8 @@ The expansion registry is machine-readable under `catalog/expansion-candidates.y
 
 The review contains:
 
-- **39 unresolved candidates**;
-- **39 distinct unresolved interoperability families**;
+- **35 unresolved candidates**;
+- **35 distinct unresolved interoperability families**;
 - **0 P0 admission candidates**;
 - **24 P1 boundary-review candidates**;
 - **15 P2 candidates**;
@@ -52,7 +52,7 @@ NeuroML and SONATA require a separate model-exchange boundary review. NIfTI and 
 
 ### Bioimaging
 
-The stacked Batch B draft proposes OME-NGFF as the cloud-native bioimaging mechanism. It standardizes multidimensional array layout and metadata over Zarr for object stores and distributed analysis systems. OME-TIFF remains a major installed-base boundary candidate and should be adjudicated separately instead of being admitted reflexively as a second family entry.
+The stacked Batch B draft proposes OME-NGFF as the cloud-native bioimaging mechanism. It standardizes multidimensional array layout and metadata over Zarr for object stores and distributed analysis systems. Batch G admits OME-TIFF as the installed-base file representation, complementary to OME-NGFF rather than a duplicate family entry.
 
 ### Astronomy
 
@@ -65,7 +65,7 @@ The stacked Batch B draft proposes three astronomy mechanisms and preserves thre
 - **SAMP** — application messaging;
 - **ASDF** — modern hierarchical scientific data exchange.
 
-Batch B proposes FITS, VOTable, and TAP. ObsCore, SAMP, and ASDF retain family-granularity decisions so the list explains complementary roles without overrepresenting one standards body.
+Batch B proposes FITS, VOTable, and TAP. Batch G completes the role-sensitive boundary by admitting ObsCore for observation discovery, SAMP for application messaging, and ASDF for hierarchical schema-and-extension data exchange.
 
 ### Genomic representation, discovery, and access
 
@@ -291,3 +291,8 @@ The stacked Issue #44 Batch E candidate tree proposes admission of Oxford Common
 ## Batch F implementation status
 
 The stacked Issue #44 Batch F candidate tree proposes admission of NeuroML and SONATA as complementary computational-neuroscience model-exchange mechanisms. NeuroML is admitted as the declarative semantic model contract with public schema validation. SONATA is admitted as the performance-oriented representation for large instantiated networks, configurations, inputs, and simulation reports, with `none-known` public conformance status. Both IDs are removed from the systems-biology-neuroscience candidate shard and recorded in `completed_candidate_ids`; the conservation invariant remains `unresolved candidates + completed candidate IDs = 61`. Evidence remains AI-assisted author review pending human maintainer approval.
+
+
+## Batch G implementation status
+
+The stacked Issue #44 Batch G candidate tree proposes admission of OME Data Model and OME-TIFF, IVOA ObsCore/ObsTAP, IVOA SAMP, and ASDF. The four mechanisms retain separate decision roles: installed-base microscopy files, federated observation discovery, interactive astronomy application messaging, and hierarchical schema-aware scientific data. Their IDs are removed from the bioimaging-astronomy candidate shard and recorded in `completed_candidate_ids`; the conservation invariant remains `unresolved candidates + completed candidate IDs = 61`. Evidence remains AI-assisted author review pending human maintainer approval.

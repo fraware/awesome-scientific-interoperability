@@ -241,6 +241,8 @@ class IndependenceValidatorTests(unittest.TestCase):
                 "ga4gh-refget-sequences",
                 "ga4gh-tool-registry-service-trs",
                 "hupo-psi-mzml",
+                "ivoa-observation-core-obscore",
+                "ivoa-simple-application-messaging-protocol-samp",
                 "ivoa-table-access-protocol-tap",
                 "ivoa-votable",
                 "optimade",

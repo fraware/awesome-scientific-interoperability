@@ -1589,3 +1589,134 @@ resources:
     reviewed_on: '2026-08-02'
     conflict_disclosure: none identified; human maintainer approval required before merge
     decision_record: issue-44-batch-f
+- id: ome-data-model-and-ome-tiff
+  name: OME Data Model and OME-TIFF
+  url: https://docs.openmicroscopy.org/ome-model/6.2.2/ome-tiff/specification.html
+  section: Data and Digital Objects
+  resource_kind: exchange-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Microscopy acquisition systems
+  - image files
+  - analysis software
+  - bioimaging repositories
+  mechanism: OME-XML metadata model embedded in TIFF or BigTIFF image containers
+  summary: Installed-base bioimaging exchange standard combining TIFF or BigTIFF pixels with embedded
+    OME-XML metadata for multidimensional microscopy data.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - independent-implementation
+  - institutional-adoption
+  - public-validator
+  implementation_status: reference-and-others
+  conformance_status: public-validator
+  steward_id: open-microscopy-environment
+  scientific_domains:
+  - bioimaging
+  - life-sciences
+  integration_functions:
+  - research-data
+  - laboratory-data
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: docs-openmicroscopy-ome-model-6-2-2-ome-tiff-specification
+    role: technical-definition
+  - ref_id: docs-openmicroscopy-ome-model-6-2-2-root
+    role: stewardship
+  - ref_id: github-com-ome-bioformats
+    role: implementation
+  - ref_id: github-com-bioio-devs-bioio-ome-tiff
+    role: implementation
+  - ref_id: docs-openmicroscopy-bio-formats-xml-validation
+    role: conformance
+  relations:
+  - type: alternative-to
+    resource_id: ome-ngff
+  - type: complements
+    resource_id: ro-crate
+  decision_basis: Strongest broadly deployed single-file and multi-file OME exchange contract for microscopy
+    systems that require TIFF compatibility and rich OME metadata.
+  boundary_note: OME-TIFF is the installed-base file representation; OME-NGFF is stronger for cloud-native
+    chunked arrays and object stores. The public validator checks embedded OME-XML schema validity and
+    does not prove TIFF layout consistency, pixel correctness, lossless conversion, or complete scientific
+    metadata.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-02-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-g
+- id: advanced-scientific-data-format-asdf
+  name: Advanced Scientific Data Format (ASDF)
+  url: https://asdf-standard.readthedocs.io/en/latest/
+  section: Data and Digital Objects
+  resource_kind: exchange-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Evidentiary
+  connects:
+  - Astronomy missions
+  - scientific Python software
+  - archives
+  - schema and extension providers
+  mechanism: Versioned YAML metadata tree, binary blocks, schemas, references, and extension manifests
+  summary: Schema-aware scientific data format combining hierarchical YAML metadata, binary array blocks,
+    references, and versioned extensions for complex astronomy data models.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - institutional-adoption
+  - public-validator
+  implementation_status: single-known
+  conformance_status: public-validator
+  steward_id: asdf-format-project
+  scientific_domains:
+  - astronomy
+  - physics
+  integration_functions:
+  - research-data
+  - scientific-computing
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: asdf-standard-readthedocs-io-latest
+    role: technical-definition
+  - ref_id: github-com-asdf-format-asdf-standard
+    role: stewardship
+  - ref_id: github-com-asdf-format-asdf
+    role: implementation
+  - ref_id: github-com-asdf-format-asdf-validate-command
+    role: conformance
+  - ref_id: stdatamodels-readthedocs-io-schemas
+    role: adoption
+  relations:
+  - type: alternative-to
+    resource_id: flexible-image-transport-system-fits
+  - type: complements
+    resource_id: ro-crate
+  - type: complements
+    resource_id: ivoa-simple-application-messaging-protocol-samp
+  decision_basis: Strongest maintained schema-and-extension format for complex hierarchical astronomy
+    data that exceed conventional FITS table and header structures.
+  boundary_note: ASDF adoption is narrower than FITS and full interoperability depends on compatible extension
+    manifests and schemas. Core validation does not establish that every consumer has the required extensions
+    or interprets mission-specific scientific models equivalently.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-02-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-g
