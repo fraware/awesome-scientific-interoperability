@@ -94,13 +94,13 @@
     },
     {
       "path": "catalog/candidates/chemistry-proteomics.yaml",
-      "sha256": "cb33972d500078b589feb068c96950c606fbb5d6d3fc26ccfa709781b9a48f6e",
-      "bytes": 6140
+      "sha256": "59019015eeff31451e2ab8ddd2fe1e532e70ea89a04485a432484ef07998ae22",
+      "bytes": 6228
     },
     {
       "path": "catalog/candidates/cross-domain-and-emerging.yaml",
-      "sha256": "e9099d5b2f2fce2b416e09e42db3cf4b5901c80a4fbb267a7eaafc4f3c6b4f19",
-      "bytes": 5121
+      "sha256": "bfe76730451d8a31d788025fa99be594c68bca45ac428329c270855e60306c99",
+      "bytes": 5321
     },
     {
       "path": "catalog/candidates/ecology-agriculture.yaml",
@@ -109,13 +109,13 @@
     },
     {
       "path": "catalog/candidates/genomics-clinical.yaml",
-      "sha256": "5162820f7ae191eb15b8e85fa85b09327efc5c52338ad5623993506945e39447",
-      "bytes": 6276
+      "sha256": "c3bf211b41c9dd7b7646c7d374cfb872cbb21708bc7c089f0085d20a331aa5cd",
+      "bytes": 6438
     },
     {
       "path": "catalog/candidates/geospatial-environmental.yaml",
-      "sha256": "f5aa048161367ba4b3a173150a28b81ee6c6a6cd173c103c6a3a0b9f20905cc4",
-      "bytes": 6952
+      "sha256": "0d93d48fb7c6d0ce22a8dbc8f94c97f267471627fa248596ef88bc1160f5df56",
+      "bytes": 7034
     },
     {
       "path": "catalog/candidates/preservation-infrastructure.yaml",
@@ -124,8 +124,8 @@
     },
     {
       "path": "catalog/candidates/systems-biology-neuroscience.yaml",
-      "sha256": "0c2b747c9835fbf7743fe1e0fce045e77ea50b62ec2ee2a1423d6acce6322fa3",
-      "bytes": 2010
+      "sha256": "2677ada280e5025d2df34a3c34f44bc03b1100c5b52cd60defc48c6108c0e68d",
+      "bytes": 2141
     },
     {
       "path": "catalog/expansion-candidates.yaml",
@@ -139,8 +139,8 @@
     },
     {
       "path": "catalog/references.yaml",
-      "sha256": "cb3f269b16eda987532b5492d04403ab72c570a2084f14737a7756bfb095815d",
-      "bytes": 94802
+      "sha256": "c1808ec524654a926ad120ff077ab82c73ed8f66056b74a912d2379ec5783e33",
+      "bytes": 95558
     },
     {
       "path": "catalog/resources.yaml",
@@ -209,8 +209,8 @@
     },
     {
       "path": "catalog/watchlist.yaml",
-      "sha256": "b0d32040df47d7abeaac6769b8e03aa16356ac1773eb5fa6a86cdc5dc0b7b414",
-      "bytes": 15767
+      "sha256": "a6ef64bdd52aa53085656f35834b284455a3af5acfd52c77f58940ad9db19905",
+      "bytes": 18202
     },
     {
       "path": "changelog.md",
@@ -244,8 +244,8 @@
     },
     {
       "path": "docs/candidate-reviews/comprehensive-expansion-2026.md",
-      "sha256": "b67a9027a7c09f4456f03d28371f594c37f6fc84f0c46192d43d5f01350afc33",
-      "bytes": 16542
+      "sha256": "cb935414297388d86e45b18d3d04a7745ed143fd8112c57508d733074e54eade",
+      "bytes": 17141
     },
     {
       "path": "docs/candidate-reviews/experimental-and-biomedical.md",
@@ -349,8 +349,8 @@
     },
     {
       "path": "docs/decision-guides/genomic-representation-and-access.md",
-      "sha256": "dc08f59d91b17d7acea68ee1f994c2420ef9e2b05dfbf792c6c4d4332fddf527",
-      "bytes": 2883
+      "sha256": "9b0590827055bdfd36901493d95a9d6a4867556ff305ccbc4aa7fe49249820e9",
+      "bytes": 2912
     },
     {
       "path": "docs/decision-guides/identifiers-and-discovery.md",
@@ -569,8 +569,8 @@
     },
     {
       "path": "docs/watchlist.md",
-      "sha256": "677e0a2ec1884c100b565d6be566caede8fafea0ff3c8cd075e82fb304a08647",
-      "bytes": 2576
+      "sha256": "3f2e4110b6aecffa4babc9aef9af185510647f5717db78a0c6018512a324bcec",
+      "bytes": 2962
     },
     {
       "path": "examples/README.md",
@@ -929,7 +929,7 @@
     },
     {
       "path": "tests/test_watchlist.py",
-      "sha256": "906ce7c15883b00f793da7ad5c63f67e35c040a5cd879c5ca0e7f1ec0ba7007f",
+      "sha256": "da81859218b4de039056d2c2e7874c7d657a6bd0cf8179834e6f5e22be8e6596",
       "bytes": 3934
     }
   ]
