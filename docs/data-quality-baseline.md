@@ -20,8 +20,8 @@ Blocking integrity is green. Remaining work is evidence depth, not structural va
 
 | Queue | Count | Disposition rule |
 |---|---:|---|
-| Unsupported `multiple-independent` | 57 | Enrich with ≥2 direct implementation/adoption/registry/interop refs, or downgrade status |
-| Unsupported `documented-tests` | 27 | Enrich with a direct validator/suite/interop-result ref, or downgrade status |
+| Unsupported `multiple-independent` | 51 | Enrich with ≥2 direct implementation/adoption/registry/interop refs, or downgrade status |
+| Unsupported `documented-tests` | 21 | Enrich with a direct validator/suite/interop-result ref, or downgrade status |
 
 Exact resource IDs are exported by:
 
@@ -39,7 +39,6 @@ python scripts/audit_data_quality.py --as-of 2026-08-01 --json-report data-quali
 | Identifiers and Discovery | 10 |
 | Data and Digital Objects | 7 |
 | Instruments and Laboratories | 6 |
-| Workflows and Execution | 6 |
 | Research Software and Environments | 3 |
 | Knowledge Systems and Publications | 3 |
 | Provenance and Evidence | 2 |
@@ -52,7 +51,6 @@ python scripts/audit_data_quality.py --as-of 2026-08-01 --json-report data-quali
 | Section | Count |
 |---|---:|
 | Data and Digital Objects | 8 |
-| Workflows and Execution | 6 |
 | Metadata and Semantics | 4 |
 | Identifiers and Discovery | 4 |
 | Provenance and Evidence | 2 |

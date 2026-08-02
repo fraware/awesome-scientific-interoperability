@@ -40,3 +40,13 @@ None.
 
 - Migrated workflow records to claim-linked `source_refs`; retained CWL / cwltool `public-suite` via the ConformanceTests page artifact.
 - Relationship graph unchanged for non-isolates; evidence-depth queues for GA4GH WES/TES/DRS and openEO remain for issue #30 Batch 1.
+
+## Issue #30 Batch 1 evidence densification (2026-08-01)
+
+- CWL: added cwltool and Toil implementation repositories (cleared MI queue).
+- WDL: added Cromwell and miniwdl implementation repositories (cleared MI queue).
+- GA4GH DRS: added `drs-compliance-suite` and `drs-filer`; conformance upgraded to `public-suite`.
+- GA4GH TES: added `openapi-test-runner` compliance suite and Funnel implementation; conformance upgraded to `public-suite`.
+- GA4GH WES: added Sapporo as second implementation evidence; conformance downgraded to `none-known` (no maintained official public suite cited).
+- openEO: added `openeo-test-suite` plus GeoPySpark and Python drivers; conformance upgraded to `public-suite`.
+- Sapporo and WorkflowHub: conformance downgraded to `none-known` (no direct public suite artifact for these entries).

@@ -493,6 +493,18 @@ references:
   type: conformance-suite
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-broadinstitute-cromwell
+  title: Cromwell WDL engine
+  url: https://github.com/broadinstitute/cromwell
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-chrispat-miniwdl
+  title: miniwdl WDL runner
+  url: https://github.com/chrispat/miniwdl
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-citation-file-format-cffconvert
   title: Citation File Format (CITATION.cff)
   url: https://github.com/citation-file-format/cffconvert
@@ -521,6 +533,12 @@ references:
   title: RO-Crate
   url: https://github.com/crs4/rocrate-validator
   type: validator
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-databiosphere-toil
+  title: Toil CWL runner
+  url: https://github.com/DataBiosphere/toil
+  type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
 - id: github-com-ddi-cdi-ddi-cdi
@@ -571,10 +589,28 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-ga4gh-drs-compliance-suite
+  title: GA4GH DRS compliance suite
+  url: https://github.com/ga4gh/drs-compliance-suite
+  type: conformance-suite
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ga4gh-drs-filer
+  title: DRS Filer reference implementation
+  url: https://github.com/ga4gh/drs-filer
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
 - id: github-com-ga4gh-duri-ga4gh-passport-standard
   title: GA4GH Passports
   url: https://github.com/ga4gh-duri/ga4gh-passport-standard
   type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ga4gh-openapi-test-runner
+  title: GA4GH TES compliance suite (openapi-test-runner)
+  url: https://github.com/ga4gh/openapi-test-runner
+  type: conformance-suite
   publisher: github.com
   accessed_on: '2026-08-01'
 - id: github-com-ga4gh-task-execution-schemas
@@ -664,6 +700,36 @@ references:
 - id: github-com-obofoundry-obofoundry-github-io
   title: OBO Foundry
   url: https://github.com/OBOFoundry/OBOFoundry.github.io
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ohsu-comp-bio-funnel
+  title: Funnel TES implementation
+  url: https://github.com/ohsu-comp-bio/funnel
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-open-eo-openeo-geopyspark-driver
+  title: openEO GeoPySpark backend
+  url: https://github.com/Open-EO/openeo-geopyspark-driver
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-open-eo-openeo-python-driver
+  title: openEO Python driver
+  url: https://github.com/Open-EO/openeo-python-driver
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-open-eo-openeo-test-suite
+  title: openEO backend test suite
+  url: https://github.com/Open-EO/openeo-test-suite
+  type: conformance-suite
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-openwdl-miniwdl
+  title: miniwdl WDL runner
+  url: https://github.com/openwdl/miniwdl
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'

@@ -69,8 +69,8 @@
     },
     {
       "path": "catalog/references.yaml",
-      "sha256": "877921bb7f9c363b6272a010abb15778548bc4ca5e827b9e5f005a782c526cdf",
-      "bytes": 44152
+      "sha256": "228d32c184cccbfa42bdc95a6d7ce8a9a87bcdc6933b650302711c93e423ac88",
+      "bytes": 46438
     },
     {
       "path": "catalog/resources.yaml",
@@ -129,8 +129,8 @@
     },
     {
       "path": "catalog/resources/workflows-and-execution.yaml",
-      "sha256": "ce30b46d2e70d0628df34b0a0b6375c7db8a9fbf29f59ea23b96961baa2db3d8",
-      "bytes": 16882
+      "sha256": "94e6d912022561f3fbd7e197dd5476f5fc1e748ec64230bc55cbd0567ae37c5d",
+      "bytes": 17775
     },
     {
       "path": "catalog/stewards.yaml",
@@ -214,8 +214,8 @@
     },
     {
       "path": "docs/data-quality-baseline.md",
-      "sha256": "60a1013e1eb366221cd34c8021282581f3552d6cf36883172b6e7a4baaf07113",
-      "bytes": 2479
+      "sha256": "c89d761b172409e0e6025954cdb9570e803f6fdc4b9835db896892cfc715fa7a",
+      "bytes": 2415
     },
     {
       "path": "docs/decision-guides/README.md",
@@ -379,8 +379,8 @@
     },
     {
       "path": "docs/reviews/workflows-and-execution.md",
-      "sha256": "75fe542e7d003f4354b2b9e836b7f18f74c8e0296e87f79480f6d8f5838778a3",
-      "bytes": 2974
+      "sha256": "d706f01f108beab0fd761357a6f0a1ce12f8b6230563d5a68984fc3e9341df19",
+      "bytes": 3794
     },
     {
       "path": "docs/roadmap.md",
