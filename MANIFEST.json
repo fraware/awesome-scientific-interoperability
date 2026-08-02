@@ -109,8 +109,8 @@
     },
     {
       "path": "catalog/resources/metadata-and-semantics.yaml",
-      "sha256": "ea14ce9d4cd1d52d9d0ade2ed3b00941b602232eb39b2ab234abf34bd8f87e15",
-      "bytes": 22801
+      "sha256": "a7c2f61742d201bfcbb574e817e05bf5580762a739e350b279a5db3cdab67501",
+      "bytes": 23508
     },
     {
       "path": "catalog/resources/provenance-and-evidence.yaml",
@@ -359,8 +359,8 @@
     },
     {
       "path": "docs/reviews/metadata-and-semantics.md",
-      "sha256": "e34c97b0df59760c1ee16b22b240f0069b83ec33c7ec371c03f8b347fa49e39c",
-      "bytes": 3638
+      "sha256": "4f1c4bb6f3e113a135fa143949fa87773ea541a3787b684a50b4d9416e81c04b",
+      "bytes": 3844
     },
     {
       "path": "docs/reviews/provenance-and-evidence.md",

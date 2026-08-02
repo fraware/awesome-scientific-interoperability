@@ -44,3 +44,8 @@ None.
 ## v2.1 provenance migration (2026-08-01)
 
 - Closed isolates: Darwin Core, DDI Lifecycle, and SOSA/SSN via related links to Bioschemas/Schema.org, SDMX, and SensorThings respectively.
+
+## Issue #30 Batch 4a metadata evidence (2026-08-01)
+
+- Enriched Bioschemas, CF, Croissant, Darwin Core, DDI, EDAM, ISA-JSON, OBO Foundry; upgraded Croissant/ISA validators where primary artifacts exist.
+

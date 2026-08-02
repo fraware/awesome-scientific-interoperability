@@ -31,6 +31,10 @@ resources:
     role: stewardship
   - ref_id: github-com-bioschemas-bioschemas-github-io
     role: implementation
+  - ref_id: github-com-bioschemas-specifications
+    role: implementation
+  - ref_id: github-com-bioschemas-bioschemas-dde
+    role: implementation
   alternatives: []
   related_resource_ids:
   - schema-org
@@ -58,7 +62,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: cf-conventions-community
   domains:
@@ -71,6 +75,8 @@ resources:
     role: stewardship
   - ref_id: cfconventions-org-data-cf-conventions-cf-conventions-1-10-cf-conve
     role: technical-definition
+  - ref_id: github-com-cf-convention-cf-conventions
+    role: implementation
   alternatives: []
   related_resource_ids:
   - unified-code-for-units-of-measure-ucum
@@ -102,8 +108,9 @@ resources:
   - reference-implementation
   - independent-implementation
   - documented-tests
-  implementation_status: multiple-independent
-  conformance_status: documented-tests
+  - public-validator
+  implementation_status: reference-and-others
+  conformance_status: public-validator
   steward_id: mlcommons
   domains:
   - machine-learning
@@ -115,6 +122,8 @@ resources:
     role: stewardship
   - ref_id: github-com-mlcommons-croissant
     role: implementation
+  - ref_id: github-com-mlcommons-croissant
+    role: conformance
   alternatives: []
   related_resource_ids:
   - schema-org
@@ -142,7 +151,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: biodiversity-information-standards-tdwg
   domains:
@@ -184,7 +193,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: ddi-alliance
   domains:
@@ -195,6 +204,8 @@ resources:
   - ref_id: ddialliance-org-root
     role: stewardship
   - ref_id: github-com-ddialliance-specification-ddi-lifecycle
+    role: implementation
+  - ref_id: github-com-ddi-alliance-ddi-lifecycle
     role: implementation
   alternatives: []
   related_resource_ids:
@@ -240,6 +251,8 @@ resources:
     role: stewardship
   - ref_id: github-com-edamontology-edamontology
     role: implementation
+  - ref_id: github-com-obofoundry-obofoundry-github-io
+    role: adoption
   alternatives: []
   related_resource_ids:
   - obo-foundry
@@ -280,6 +293,8 @@ resources:
     role: stewardship
   - ref_id: github-com-obofoundry-obofoundry-github-io
     role: implementation
+  - ref_id: github-com-edamontology-edamontology
+    role: adoption
   alternatives: []
   related_resource_ids:
   - edam-ontology
@@ -651,8 +666,9 @@ resources:
   - reference-implementation
   - independent-implementation
   - documented-tests
+  - public-validator
   implementation_status: multiple-independent
-  conformance_status: documented-tests
+  conformance_status: public-validator
   steward_id: isa-tools-community
   domains:
   - life-sciences
@@ -663,6 +679,10 @@ resources:
     role: stewardship
   - ref_id: pmc-ncbi-nlm-nih-gov-articles-pmc8444265
     role: technical-definition
+  - ref_id: github-com-isa-tools-isa-api
+    role: implementation
+  - ref_id: github-com-isa-tools-isavalidator-isaconverter-biimanager
+    role: conformance
   alternatives:
   - ro-crate
   related_resource_ids:
