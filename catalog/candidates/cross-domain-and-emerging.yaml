@@ -1,0 +1,107 @@
+theme: cross-domain-and-emerging
+candidates:
+- id: ga4gh-refget-sequences
+  name: GA4GH refget Sequences
+  official_url: https://www.ga4gh.org/product/refget/
+  candidate_section: Identifiers and Discovery
+  coverage_family: reference-sequence-identification
+  priority: P0
+  disposition: admission-pr
+  mechanism: Checksum-addressed API for unambiguous identification and retrieval of reference biological sequences.
+  why_distinct: Solves reference-sequence identity drift across databases, file formats, and genomic analysis systems.
+  primary_sources:
+  - https://www.ga4gh.org/product/refget/
+  - https://samtools.github.io/hts-specs/refget.html
+  - https://github.com/ga4gh/refget
+  evidence_notes: GA4GH API with content-derived identifiers and implementations in genomic infrastructure.
+  next_step: Admission PR related to VRS, htsget, SWHIDs, and Identifiers.org.
+- id: omop-common-data-model
+  name: OMOP Common Data Model
+  official_url: https://ohdsi.github.io/CommonDataModel/
+  candidate_section: Metadata and Semantics
+  coverage_family: observational-health-data-harmonization
+  priority: P0
+  disposition: admission-pr
+  mechanism: Standardized relational data model and vocabularies for harmonizing longitudinal observational health
+    data across institutions.
+  why_distinct: Adds a mature common-data-model pattern for federated clinical research that FHIR exchange alone
+    does not provide.
+  primary_sources:
+  - https://ohdsi.github.io/CommonDataModel/
+  - https://github.com/OHDSI/CommonDataModel
+  - https://ohdsi.github.io/DataQualityDashboard/
+  evidence_notes: Current CDM v5.4 family, broad international adoption, generated DDLs, vocabularies, and data-quality
+    tooling.
+  next_step: Admission PR with FHIR and CDISC boundary analysis.
+- id: hupo-psi-mztab
+  name: HUPO-PSI mzTab
+  official_url: https://www.psidev.info/mztab
+  candidate_section: Data and Digital Objects
+  coverage_family: omics-result-exchange
+  priority: P1
+  disposition: boundary-review
+  mechanism: Tabular exchange format for proteomics and metabolomics identification and quantification results.
+  why_distinct: Provides a lightweight result-exchange layer across proteomics and metabolomics tools.
+  primary_sources:
+  - https://www.psidev.info/mztab
+  - https://github.com/HUPO-PSI/mzTab
+  evidence_notes: Established PSI format; family-level distinctiveness requires review.
+  next_step: Compare with mzIdentML and mzML.
+- id: system-structure-and-parameterization-ssp
+  name: System Structure and Parameterization (SSP)
+  official_url: https://ssp-standard.org/
+  candidate_section: Data and Digital Objects
+  coverage_family: system-simulation-composition
+  priority: P1
+  disposition: boundary-review
+  mechanism: Modelica Association standard for exchanging system structures, component connections, parameter sets,
+    and referenced simulation artifacts.
+  why_distinct: Complements FMI by standardizing composition and parameterization of multi-component simulation
+    systems.
+  primary_sources:
+  - https://ssp-standard.org/
+  - https://github.com/modelica/ssp-standard
+  evidence_notes: Formal standard and implementations in simulation-tool ecosystems.
+  next_step: Admission review with FMI; likely strongest engineering expansion candidate.
+- id: distributed-co-simulation-protocol-dcp
+  name: Distributed Co-Simulation Protocol (DCP)
+  official_url: https://dcp-standard.org/
+  candidate_section: Workflows and Execution
+  coverage_family: distributed-co-simulation
+  priority: P1
+  disposition: boundary-review
+  mechanism: Real-time communication and state-management protocol for distributed co-simulation across tools and
+    hardware.
+  why_distinct: Addresses operational interoperability among simulation components, complementing FMI model exchange.
+  primary_sources:
+  - https://dcp-standard.org/
+  - https://github.com/modelica/DCP-standard
+  evidence_notes: Formal Modelica Association project; adoption breadth requires review.
+  next_step: Consider watchlist unless multiple independent implementations are documented.
+- id: asam-measurement-data-format-mdf
+  name: ASAM Measurement Data Format (MDF)
+  official_url: https://www.asam.net/standards/detail/mdf/
+  candidate_section: Data and Digital Objects
+  coverage_family: engineering-measurement-data-exchange
+  priority: P2
+  disposition: watchlist
+  mechanism: Binary standard for time-series measurement data, channels, metadata, and high-volume test acquisition.
+  why_distinct: Potential engineering and experimental-measurement exemplar beyond laboratory formats.
+  primary_sources:
+  - https://www.asam.net/standards/detail/mdf/
+  evidence_notes: Industry standard; public inspectability and scientific decision value need review.
+  next_step: Assess accessibility and multi-vendor scientific use.
+- id: rda-pid-kernel-information
+  name: RDA PID Kernel Information
+  official_url: https://www.rd-alliance.org/groups/pid-kernel-information-wg
+  candidate_section: Identifiers and Discovery
+  coverage_family: persistent-identifier-metadata
+  priority: P2
+  disposition: watchlist
+  mechanism: Minimal machine-actionable metadata attached to persistent identifiers for discovery, type resolution,
+    and automation.
+  why_distinct: Potential operational complement to FAIR Digital Objects and identifier systems.
+  primary_sources:
+  - https://www.rd-alliance.org/groups/pid-kernel-information-wg
+  evidence_notes: Recommendation and pilots exist; implementation and stewardship evidence need review.
+  next_step: Monitor adoption in FAIR Digital Object infrastructure.

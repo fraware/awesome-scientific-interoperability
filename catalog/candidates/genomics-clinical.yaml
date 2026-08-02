@@ -1,0 +1,162 @@
+theme: genomics-clinical
+candidates:
+- id: ga4gh-variation-representation-specification-vrs
+  name: GA4GH Variation Representation Specification (VRS)
+  official_url: https://vrs.ga4gh.org/en/stable/
+  candidate_section: Metadata and Semantics
+  coverage_family: genomic-variation-representation
+  priority: P0
+  disposition: admission-pr
+  mechanism: JSON-schema information model, normalization conventions, and computed identifiers for interoperable
+    genomic variation.
+  why_distinct: Addresses semantic and identifier-level variation equivalence across clinical, laboratory, and research
+    systems.
+  primary_sources:
+  - https://vrs.ga4gh.org/en/stable/
+  - https://www.ga4gh.org/
+  - https://github.com/ga4gh/vrs
+  evidence_notes: GA4GH standard with schema, algorithms, reference implementation, and documented adopters.
+  next_step: Admission PR related to Phenopackets, refget, and existing GA4GH access standards.
+- id: ga4gh-phenopackets
+  name: GA4GH Phenopackets
+  official_url: https://www.ga4gh.org/product/phenopackets/
+  candidate_section: Metadata and Semantics
+  coverage_family: phenotype-clinical-exchange
+  priority: P0
+  disposition: admission-pr
+  mechanism: Machine-readable schema for exchanging individual-level phenotype, disease, biosample, pedigree, and
+    genomic interpretation data.
+  why_distinct: Bridges clinical phenotypes and genomic variation and is also published through ISO.
+  primary_sources:
+  - https://www.ga4gh.org/product/phenopackets/
+  - https://phenopacket-schema.readthedocs.io/
+  - https://github.com/phenopackets/phenopacket-schema
+  evidence_notes: GA4GH v2.0 standard, ISO adoption, multiple implementations and national or international programs.
+  next_step: Admission PR with FHIR and VRS interoperability boundaries.
+- id: ga4gh-htsget
+  name: GA4GH htsget
+  official_url: https://www.ga4gh.org/product/htsget/
+  candidate_section: Workflows and Execution
+  coverage_family: genomic-data-access
+  priority: P0
+  disposition: admission-pr
+  mechanism: HTTP API for retrieving genomic read and variation data by genomic region without transferring entire
+    files.
+  why_distinct: Adds a concrete federated access mechanism for large genomic datasets, distinct from DRS object
+    resolution.
+  primary_sources:
+  - https://www.ga4gh.org/product/htsget/
+  - https://github.com/ga4gh/htsget-refserver
+  - https://github.com/samtools/hts-specs
+  evidence_notes: Current GA4GH API with multiple production implementations documented across international genomic
+    platforms.
+  next_step: Admission PR comparing htsget with DRS and refget.
+- id: cdisc-operational-data-model-odm
+  name: CDISC Operational Data Model (ODM)
+  official_url: https://www.cdisc.org/standards/data-exchange/odm-xml/odm-v2-0
+  candidate_section: Data and Digital Objects
+  coverage_family: clinical-study-data-exchange
+  priority: P0
+  disposition: admission-pr
+  mechanism: Vendor-neutral model for exchanging and archiving clinical study data, metadata, administrative records,
+    references, and audit information.
+  why_distinct: Provides a formal cross-system study-operation and archival contract distinct from healthcare APIs
+    and observational common data models.
+  primary_sources:
+  - https://www.cdisc.org/standards/data-exchange/odm-xml/odm-v2-0
+  - https://www.cdisc.org/standards/data-exchange
+  - https://github.com/cdisc-org
+  evidence_notes: CDISC ODM v2.0 with XML schema and standard extensions used across clinical study systems.
+  next_step: Admission PR with OMOP and FHIR boundary analysis; note access constraints for some specification files.
+- id: ga4gh-beacon-v2
+  name: GA4GH Beacon v2
+  official_url: https://www.ga4gh.org/product/beacon-api/
+  candidate_section: Identifiers and Discovery
+  coverage_family: genomic-discovery
+  priority: P1
+  disposition: boundary-review
+  mechanism: Federated API for discovering genomic and phenotypic records through standardized query and response
+    models.
+  why_distinct: Provides privacy-aware distributed genomic discovery distinct from Service Registry and direct object
+    access APIs.
+  primary_sources:
+  - https://www.ga4gh.org/product/beacon-api/
+  - https://docs.genomebeacons.org/
+  - https://github.com/ga4gh-beacon/beacon-v2
+  evidence_notes: GA4GH standard with ELIXIR and other implementations.
+  next_step: Compare against Service Registry, htsget, and Phenopackets before admission.
+- id: ga4gh-hts-specifications
+  name: GA4GH HTS Specifications (SAM/BAM/CRAM and VCF/BCF)
+  official_url: https://samtools.github.io/hts-specs/
+  candidate_section: Data and Digital Objects
+  coverage_family: genomic-file-exchange
+  priority: P1
+  disposition: boundary-review
+  mechanism: Normative file-format specifications for aligned sequence reads and genomic variation records.
+  why_distinct: Foundational genomic file exchange used by htsget and analysis tooling, but the family is broad.
+  primary_sources:
+  - https://samtools.github.io/hts-specs/
+  - https://github.com/samtools/hts-specs
+  - https://github.com/samtools/htslib
+  evidence_notes: Extremely broad implementation and adoption; decide one family entry versus separate read and
+    variant entries.
+  next_step: Apply family-level editorial policy and avoid format proliferation.
+- id: ga4gh-crypt4gh
+  name: GA4GH Crypt4GH
+  official_url: https://www.ga4gh.org/product/crypt4gh/
+  candidate_section: Agents, Access, and Policy
+  coverage_family: genomic-data-encryption
+  priority: P2
+  disposition: watchlist
+  mechanism: File-container encryption format designed for genomic data and selective access to encrypted byte ranges.
+  why_distinct: Potential scientific security interoperability exemplar linked to htsget and controlled-data access.
+  primary_sources:
+  - https://www.ga4gh.org/product/crypt4gh/
+  - https://github.com/samtools/hts-specs/blob/master/crypt4gh.pdf
+  - https://github.com/EGA-archive/crypt4gh
+  evidence_notes: GA4GH standard with implementations; decide whether cryptographic container standards belong in
+    core scope.
+  next_step: Boundary review after htsget and Passports expansion.
+- id: ga4gh-rnaget
+  name: GA4GH RNAget
+  official_url: https://www.ga4gh.org/product/rnaget/
+  candidate_section: Workflows and Execution
+  coverage_family: transcriptomics-data-access
+  priority: P2
+  disposition: watchlist
+  mechanism: API for retrieving expression matrices and transcriptomic data across repositories.
+  why_distinct: Extends GA4GH access patterns to RNA expression data.
+  primary_sources:
+  - https://www.ga4gh.org/product/rnaget/
+  - https://github.com/ga4gh-rnaseq/schema
+  evidence_notes: Current product with implementations; adoption breadth should be compared with htsget.
+  next_step: Monitor production implementations and avoid GA4GH family overconcentration.
+- id: cdisc-define-xml
+  name: CDISC Define-XML
+  official_url: https://www.cdisc.org/standards/data-exchange/define-xml
+  candidate_section: Metadata and Semantics
+  coverage_family: clinical-submission-metadata
+  priority: P2
+  disposition: watchlist
+  mechanism: ODM-based metadata standard for describing the structure and controlled terminology of clinical submission
+    datasets.
+  why_distinct: Adds machine-readable dataset-definition metadata for regulatory clinical research.
+  primary_sources:
+  - https://www.cdisc.org/standards/data-exchange/define-xml
+  evidence_notes: Important CDISC extension; likely best represented as a related profile under ODM.
+  next_step: Do not add separately unless decision guides require submission-specific comparison.
+- id: openehr-archetype-model
+  name: openEHR Archetype Model
+  official_url: https://specifications.openehr.org/
+  candidate_section: Metadata and Semantics
+  coverage_family: clinical-knowledge-modeling
+  priority: P2
+  disposition: watchlist
+  mechanism: Reference model, archetype language, templates, and service specifications for interoperable longitudinal
+    health records.
+  why_distinct: Potential complement to FHIR and OMOP at the semantic clinical-model layer.
+  primary_sources:
+  - https://specifications.openehr.org/
+  - https://github.com/openEHR/specifications-ITS
+  evidence_notes: Substantial international adoption; breadth and healthcare focus require scope review.
+  next_step: Evaluate against FHIR and OMOP after clinical batch.

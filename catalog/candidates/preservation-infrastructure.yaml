@@ -1,0 +1,143 @@
+theme: preservation-infrastructure
+candidates:
+- id: oxford-common-file-layout-ocfl
+  name: Oxford Common File Layout (OCFL)
+  official_url: https://ocfl.io/
+  candidate_section: Data and Digital Objects
+  coverage_family: repository-preservation-layout
+  priority: P0
+  disposition: admission-pr
+  mechanism: Application-independent, versioned storage layout with inventories, fixity, and validation rules for
+    durable repository objects.
+  why_distinct: Provides repository-level storage interoperability and rebuildability, distinct from BagIt transfer
+    and RO-Crate semantic packaging.
+  primary_sources:
+  - https://ocfl.io/
+  - https://ocfl.io/1.1/spec/
+  - https://github.com/OCFL/spec
+  evidence_notes: Version 1.1.1, multi-institutional editors, validation codes, fixtures, and multiple repository
+    implementations.
+  next_step: Admission PR with explicit BagIt and RO-Crate comparison.
+  current_repository_state: watchlist
+- id: data-package-standard
+  name: Data Package Standard
+  official_url: https://datapackage.org/standard/data-package/
+  candidate_section: Data and Digital Objects
+  coverage_family: general-data-packaging
+  priority: P0
+  disposition: admission-pr
+  mechanism: JSON descriptor standard for packaging datasets, resources, schemas, dialects, licenses, and distribution
+    metadata.
+  why_distinct: Offers a lightweight, language-neutral data packaging contract complementary to semantically richer
+    RO-Crate.
+  primary_sources:
+  - https://datapackage.org/standard/data-package/
+  - https://datapackage.org/blog/2024-06-26-v2-release/
+  - https://github.com/frictionlessdata/datapackage-standard
+  evidence_notes: Version 2 standard with multiple language implementations and domain extensions.
+  next_step: Admission PR with RO-Crate, BagIt, and Croissant comparison.
+- id: zarr
+  name: Zarr
+  official_url: https://zarr-specs.readthedocs.io/en/latest/
+  candidate_section: Data and Digital Objects
+  coverage_family: chunked-array-storage
+  priority: P1
+  disposition: boundary-review
+  mechanism: Versioned chunked N-dimensional array storage specification for filesystems and object stores.
+  why_distinct: Underlying cross-language storage contract for OME-NGFF, climate, genomics, and large scientific
+    arrays.
+  primary_sources:
+  - https://zarr-specs.readthedocs.io/en/latest/
+  - https://github.com/zarr-developers/zarr-specs
+  - https://zarr.dev/
+  evidence_notes: Cross-language implementations and major scientific adoption; general-substrate policy applies.
+  next_step: Admit only if scientific profiles make the substrate indispensable to decision guidance.
+- id: premis-data-dictionary
+  name: PREMIS Data Dictionary
+  official_url: https://www.loc.gov/standards/premis/
+  candidate_section: Provenance and Evidence
+  coverage_family: digital-preservation-provenance
+  priority: P1
+  disposition: boundary-review
+  mechanism: Preservation metadata data dictionary and XML schema for objects, events, agents, rights, and fixity.
+  why_distinct: Adds long-term digital-preservation evidence semantics beyond repository layout and research provenance.
+  primary_sources:
+  - https://www.loc.gov/standards/premis/
+  - https://github.com/LibraryOfCongress/premis
+  evidence_notes: Institutionally stewarded and widely implemented in repositories.
+  next_step: Compare with W3C PROV and OCFL before admission.
+- id: shapes-constraint-language-shacl
+  name: Shapes Constraint Language (SHACL)
+  official_url: https://www.w3.org/TR/shacl/
+  candidate_section: Validation and Conformance
+  coverage_family: semantic-data-validation
+  priority: P1
+  disposition: boundary-review
+  mechanism: W3C language for expressing and validating structural and semantic constraints over RDF graphs.
+  why_distinct: Underpins profile-aware scientific validators such as RO-Crate validation and many ontology pipelines.
+  primary_sources:
+  - https://www.w3.org/TR/shacl/
+  - https://github.com/w3c/data-shapes
+  evidence_notes: W3C Recommendation with multiple implementations; general-substrate rule applies.
+  next_step: Admit only through documented scientific validator dependence and boundary against generic semantic-web
+    tooling.
+- id: netcdf
+  name: NetCDF
+  official_url: https://www.unidata.ucar.edu/software/netcdf/
+  candidate_section: Data and Digital Objects
+  coverage_family: multidimensional-array-storage
+  priority: P2
+  disposition: boundary-review
+  mechanism: Self-describing multidimensional array data model, APIs, and file formats used throughout earth and
+    climate sciences.
+  why_distinct: Foundational substrate for CF data, but the catalog currently prefers CF because it carries domain
+    semantics.
+  primary_sources:
+  - https://www.unidata.ucar.edu/software/netcdf/
+  - https://github.com/Unidata/netcdf-c
+  evidence_notes: Extremely mature and widely implemented; general-substrate and duplication rules apply.
+  next_step: Retain as explicit exclusion unless users need storage-layer comparison with Zarr.
+- id: hdf5
+  name: HDF5
+  official_url: https://www.hdfgroup.org/solutions/hdf5/
+  candidate_section: Data and Digital Objects
+  coverage_family: hierarchical-scientific-storage
+  priority: P2
+  disposition: boundary-review
+  mechanism: Hierarchical binary data model and file format for large, complex scientific datasets.
+  why_distinct: Underlying substrate for NeXus, NWB, and many domain formats, but domain profiles usually provide
+    stronger decision value.
+  primary_sources:
+  - https://www.hdfgroup.org/solutions/hdf5/
+  - https://github.com/HDFGroup/hdf5
+  evidence_notes: Foundational and broadly implemented; likely remain excluded under general-substrate policy.
+  next_step: Document exclusion unless a substrate comparison guide is added.
+- id: apache-arrow-columnar-format
+  name: Apache Arrow Columnar Format
+  official_url: https://arrow.apache.org/docs/format/
+  candidate_section: Data and Digital Objects
+  coverage_family: columnar-memory-interchange
+  priority: P2
+  disposition: watchlist
+  mechanism: Language-independent in-memory columnar format and IPC protocol for zero-copy analytics interoperability.
+  why_distinct: Increasingly important across scientific computing but currently general-purpose.
+  primary_sources:
+  - https://arrow.apache.org/docs/format/
+  - https://github.com/apache/arrow
+  evidence_notes: Strong implementations; scientific indispensability and scope boundary remain unresolved.
+  next_step: Monitor use as a scientific interchange contract rather than internal compute substrate.
+- id: apache-parquet
+  name: Apache Parquet
+  official_url: https://parquet.apache.org/docs/file-format/
+  candidate_section: Data and Digital Objects
+  coverage_family: columnar-file-exchange
+  priority: P2
+  disposition: watchlist
+  mechanism: Language-neutral columnar file format with schema, encodings, metadata, and nested data support.
+  why_distinct: Substrate for GeoParquet and scientific analytics, but domain profiles may carry stronger interoperability
+    semantics.
+  primary_sources:
+  - https://parquet.apache.org/docs/file-format/
+  - https://github.com/apache/parquet-format
+  evidence_notes: Broad implementations; general-purpose status limits direct admission.
+  next_step: Represent through GeoParquet unless a general analytical-data substrate guide is approved.
