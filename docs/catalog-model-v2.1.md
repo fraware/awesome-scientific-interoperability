@@ -46,7 +46,7 @@ Removed as live fields: `resource_type`, `stewardship`, `source_urls`.
 1. `multiple-independent` claims with fewer than two direct implementation/adoption/registry/interop references
 2. `documented-tests` claims without a direct conformance artifact reference
 
-These queues drive issue #30. Do not lower thresholds to clear them.
+These queues drive issue #30. Do not lower thresholds to clear them. After queues remain clear, maintainers may promote selected depth checks to fail-closed validator rules with fixtures — tracked in the maintenance protocol, not mixed into evidence edits.
 
 ## Migration notes (2026-08-01)
 

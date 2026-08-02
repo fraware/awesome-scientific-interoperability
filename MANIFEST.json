@@ -194,8 +194,8 @@
     },
     {
       "path": "docs/catalog-model-v2.1.md",
-      "sha256": "7005d7b6322fd76f4a26d07a945f8cb9e95206462004380816dcd5ff8f337b51",
-      "bytes": 3760
+      "sha256": "641e44ed720020f0a60f1b15129745c18fa57f488d7c6f368661e7bd4ae94428",
+      "bytes": 3950
     },
     {
       "path": "docs/catalog-model-v2.md",
@@ -214,8 +214,8 @@
     },
     {
       "path": "docs/data-quality-baseline.md",
-      "sha256": "655215534ec68457c754d36c342381a625548c7a4917047ad6ab62b3e747073f",
-      "bytes": 1892
+      "sha256": "c72c62c24d5b196ae4df9be6cb73bb6b2a60032558ef995195cc67d5ad8fdc21",
+      "bytes": 2321
     },
     {
       "path": "docs/decision-guides/README.md",
@@ -299,8 +299,8 @@
     },
     {
       "path": "docs/maintenance-protocol.md",
-      "sha256": "dc4cda4add9080dd5f74bfcd70a62b3cd01f85a9f24c2bb7bc08397015da9a72",
-      "bytes": 3701
+      "sha256": "d98ae026280ddf75b8a1b3b4ca9ed882219781c7ffb1eb1ded69549fa7f9353d",
+      "bytes": 4302
     },
     {
       "path": "docs/project-charter.md",
