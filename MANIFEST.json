@@ -424,8 +424,8 @@
     },
     {
       "path": "docs/link-audit-baseline.md",
-      "sha256": "c1ea368838f8a5959f2c001d67b04276503a9642f5578fb9a9b727d88939941f",
-      "bytes": 4111
+      "sha256": "caf1f7cebaf80053cedae22764f94e52023de4fa46188aac0ef8b03768743f34",
+      "bytes": 4943
     },
     {
       "path": "docs/maintainers/README.md",
