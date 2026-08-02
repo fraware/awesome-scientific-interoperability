@@ -1,6 +1,10 @@
 # Reviewer Roles and Approval Matrix
 
-This document formalizes maintainer responsibilities and the approvals required before merge. A small team may hold multiple roles, but the duties stay distinct. See also [conflicts of interest](conflicts-of-interest.md), [maintenance protocol](maintenance-protocol.md), and [decision records](decision-records.md).
+This document formalizes maintainer responsibilities and the approvals required before merge. A small team may hold multiple roles, but the duties stay distinct. See also [conflicts of interest](conflicts-of-interest.md), [maintenance protocol](maintenance-protocol.md), [community governance](community-governance.md), and [decision records](decision-records.md).
+
+## Single-maintainer limitation
+
+Until at least two non-lead humans accept named section-reviewer responsibility and are added to `.github/CODEOWNERS`, [@fraware](https://github.com/fraware) is the only CODEOWNER and fulfills every role below. Do not invent placeholder reviewers. Recruitment process: [community-governance.md](community-governance.md).
 
 ## Roles
 
@@ -28,7 +32,7 @@ Current holder: [@fraware](https://github.com/fraware) (repository owner).
 - Records review dates and limitations in `docs/reviews/`.
 - May request removal, deferral, or watchlist placement.
 
-Section reviewers will be named in `.github/CODEOWNERS` on their shard and matching `docs/reviews/` file as the team grows. Until then, the lead maintainer acts as section reviewer for every section.
+Section reviewers will be named in `.github/CODEOWNERS` on their shard and matching `docs/reviews/` file only after they explicitly accept. Until then, the lead maintainer acts as section reviewer for every section under the single-maintainer limitation above.
 
 ### Release reviewer
 

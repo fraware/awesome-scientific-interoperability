@@ -6,6 +6,8 @@ The public repository is:
 https://github.com/fraware/awesome-scientific-interoperability
 ```
 
+Community reviewer recruitment, the single-maintainer limitation, and CODEOWNERS expansion rules are documented in [community-governance.md](community-governance.md). Utility evaluation and non-vanity metrics live in [utility-evaluation.md](utility-evaluation.md) and [metrics.md](metrics.md).
+
 ## Operating mode: standalone Awesome list
 
 **Decision (2026-08-01):** This project operates as a **high-quality standalone Awesome list**. It follows Awesome list conventions (badge, `Contents` section, CC0 license, contribution guidelines, native `awesome-lint`) but is **not** submitted to the central [sindresorhus/awesome](https://github.com/sindresorhus/awesome) index at this time.

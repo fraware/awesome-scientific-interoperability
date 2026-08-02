@@ -1,0 +1,51 @@
+name: Challenge evidence or guide recommendation
+description: Challenge an evidence claim, conformance classification, or decision-guide recommendation.
+title: "Challenge: "
+labels: ["challenge"]
+body:
+  - type: dropdown
+    id: challenge_type
+    attributes:
+      label: Challenge type
+      options:
+        - Evidence type or conformance classification looks wrong
+        - Implementation independence claim looks wrong
+        - Decision-guide recommendation looks wrong or incomplete
+        - Boundary note misses a category error
+        - Other catalog claim
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: Target resource or guide
+      description: Catalog id (for example ro-crate) and/or decision-guide filename.
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: What claim are you challenging?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Primary sources that support the challenge
+      description: Prefer canonical specification, validator, or stewardship URLs.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed correction
+      description: Suggested evidence_types change, boundary note, guide edit, or removal/deferral.
+    validations:
+      required: true
+  - type: textarea
+    id: conflicts
+    attributes:
+      label: Conflict-of-interest disclosure
+      description: State affiliations with the resource, steward, or competing projects. Write "none" if none.
+    validations:
+      required: true
