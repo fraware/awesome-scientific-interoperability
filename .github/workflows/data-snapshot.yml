@@ -1,8 +1,9 @@
 name: Current data snapshot
 
 on:
-  push:
-    branches: [audit/current-data-snapshot]
+  pull_request:
+    paths:
+      - '.github/workflows/data-snapshot.yml'
 
 permissions:
   contents: read
