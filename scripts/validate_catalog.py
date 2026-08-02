@@ -30,6 +30,7 @@ from lib.catalog_model import (  # noqa: E402
     load_references,
     load_stewards,
     load_taxonomy,
+    relation_type_ids,
     resource_kind_ids,
 )
 from lib.independence import (  # noqa: E402
@@ -68,6 +69,8 @@ FORBIDDEN_LEGACY_FIELDS = frozenset(
         "resource_type",
         "stewardship",
         "source_urls",
+        "alternatives",
+        "related_resource_ids",
     }
 )
 GENERIC_PLACEHOLDER_URL_FRAGMENTS = (
@@ -297,19 +300,70 @@ def semantic_errors(
                         f"{reference_date.isoformat()}"
                     )
 
-        for field in ("alternatives", "related_resource_ids"):
-            for ref in resource.get(field, []):
-                if ref == resource_id:
-                    errors.append(f"{resource_id}: {field} must not self-reference")
-                elif ref not in known_ids:
-                    errors.append(f"{resource_id}: {field} unknown id {ref!r}")
+        relations = resource.get("relations") or []
+        seen_relations: set[tuple[str, str]] = set()
+        relation_types = relation_type_ids()
+        for item in relations:
+            if not isinstance(item, dict):
+                errors.append(f"{resource_id}: relations entries must be objects")
+                continue
+            rel_type = item.get("type")
+            target = item.get("resource_id")
+            if rel_type not in relation_types:
+                errors.append(f"{resource_id}: unknown relation type {rel_type!r}")
+            if target == resource_id:
+                errors.append(f"{resource_id}: relations must not self-reference")
+            elif isinstance(target, str) and target not in known_ids:
+                errors.append(f"{resource_id}: relations unknown id {target!r}")
+            pair = (str(rel_type), str(target))
+            if pair in seen_relations:
+                errors.append(f"{resource_id}: duplicate relation {pair}")
+            seen_relations.add(pair)
 
-        if not resource.get("alternatives") and not resource.get("related_resource_ids"):
-            errors.append(f"{resource_id}: isolate — require alternatives or related_resource_ids")
+        if not relations:
+            errors.append(f"{resource_id}: isolate — require at least one typed relation")
 
         kind = resource.get("resource_kind")
         if kind not in kinds:
             errors.append(f"{resource_id}: unknown resource_kind {kind!r}")
+
+        # Optional kind-compatibility for selected relation types.
+        if kind in kinds:
+            for item in relations:
+                if not isinstance(item, dict):
+                    continue
+                rel_type = item.get("type")
+                target = item.get("resource_id")
+                target_resource = next(
+                    (candidate for candidate in resources if candidate.get("id") == target),
+                    None,
+                )
+                if not target_resource:
+                    # May resolve via known_ids from live catalog during fixture checks.
+                    continue
+                target_kind = target_resource.get("resource_kind")
+                if rel_type == "validates" and target_kind not in {
+                    "specification",
+                    "api-standard",
+                    "metadata-standard",
+                    "packaging-format",
+                    "workflow-language",
+                    "exchange-standard",
+                    "provenance-model",
+                    "link-protocol",
+                    "ontology-vocabulary",
+                }:
+                    errors.append(
+                        f"{resource_id}: validates target {target!r} has incompatible kind {target_kind!r}"
+                    )
+                if rel_type == "implements" and kind not in {
+                    "implementation",
+                    "execution-service",
+                    "conformance-artifact",
+                }:
+                    errors.append(
+                        f"{resource_id}: implements relation requires an implementation-like source kind"
+                    )
 
         for domain in resource.get("domains", []):
             if domain not in domains:

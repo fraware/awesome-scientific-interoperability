@@ -34,14 +34,14 @@ resources:
     role: implementation
   - ref_id: github-com-libraryofcongress-bagit-java
     role: implementation
-  alternatives:
-  - ro-crate
-  related_resource_ids: []
   decision_basis: Simple, durable mechanism for exchanging content packages with integrity evidence.
   boundary_note: Lower semantic expressiveness than RO-Crate; complementary for transfer and fixity.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: ro-crate
 - id: combine-omex-archive
   name: COMBINE/OMEX Archive
   url: https://combinearchive.org/
@@ -77,16 +77,17 @@ resources:
     role: stewardship
   - ref_id: github-com-semsproject-combinearchive
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - ro-crate
-  - biocompute-objects
   decision_basis: Mature domain package enabling interoperable computational biology studies.
   boundary_note: Domain exemplar with strong relation to SED-ML and SBML; closest general alternative
     RO-Crate remains in group A migration.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: ro-crate
+  - type: complements
+    resource_id: biocompute-objects
 - id: fair-signposting
   name: FAIR Signposting
   url: https://signposting.org/
@@ -123,16 +124,17 @@ resources:
     role: technical-definition
   - ref_id: signposting-org-fair
     role: technical-definition
-  alternatives: []
-  related_resource_ids:
-  - ro-crate
-  - schema-org
   decision_basis: Lightweight operational bridge allowing machines to navigate research objects across
     repositories.
   boundary_note: Complements repository APIs and packaging formats; not a packaging or provenance standard.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: ro-crate
+  - type: complements
+    resource_id: schema-org
 - id: ro-crate
   name: RO-Crate
   url: https://www.researchobject.org/ro-crate/specification/1.3/
@@ -173,12 +175,6 @@ resources:
     role: implementation
   - ref_id: github-com-crs4-rocrate-validator
     role: implementation
-  alternatives:
-  - bagit
-  related_resource_ids:
-  - workflow-ro-crate
-  - workflow-run-ro-crate
-  - workflow-testing-ro-crate
   decision_basis: One of the strongest cross-domain mechanisms for packaging heterogeneous scientific
     objects and context.
   boundary_note: Use profiles to distinguish specialized use cases; packaging is distinct from execution
@@ -186,6 +182,15 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: bagit
+  - type: complements
+    resource_id: workflow-ro-crate
+  - type: complements
+    resource_id: workflow-run-ro-crate
+  - type: complements
+    resource_id: workflow-testing-ro-crate
 - id: workflow-ro-crate
   name: Workflow RO-Crate
   url: https://about.workflowhub.eu/Workflow-RO-Crate/
@@ -218,17 +223,19 @@ resources:
     role: technical-definition
   - ref_id: workflowhub-eu-root
     role: stewardship
-  alternatives: []
-  related_resource_ids:
-  - ro-crate
-  - workflow-run-ro-crate
-  - workflow-testing-ro-crate
   decision_basis: Connects workflow authors, registries, and downstream systems through a portable research
     object.
   boundary_note: Distinct from execution provenance, which belongs to Workflow Run RO-Crate.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: workflow-run-ro-crate
+  - type: complements
+    resource_id: workflow-testing-ro-crate
+  - type: profile-of
+    resource_id: ro-crate
 - id: workflow-run-ro-crate
   name: Workflow Run RO-Crate
   url: https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/
@@ -264,19 +271,23 @@ resources:
     role: stewardship
   - ref_id: github-com-researchobject-workflow-run-crate
     role: implementation
-  alternatives:
-  - cwlprov
-  related_resource_ids:
-  - ro-crate
-  - workflow-ro-crate
-  - cwlprov
-  - w3c-prov
   decision_basis: Direct cross-engine evidence format with multiple implementations and strong North-Star
     utility.
   boundary_note: Profile conformance does not alone prove semantic equivalence across implementations.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: cwlprov
+  - type: complements
+    resource_id: cwlprov
+  - type: complements
+    resource_id: w3c-prov
+  - type: profile-of
+    resource_id: ro-crate
+  - type: extends
+    resource_id: workflow-ro-crate
 - id: workflow-testing-ro-crate
   name: Workflow Testing RO-Crate
   url: https://w3id.org/ro/wftest
@@ -308,15 +319,18 @@ resources:
     role: stewardship
   - ref_id: lifemonitor-eu-root
     role: technical-definition
-  alternatives: []
-  related_resource_ids:
-  - workflow-ro-crate
-  - lifemonitor
   decision_basis: Makes workflow tests portable across registries and monitoring systems.
   boundary_note: Adoption should be reviewed alongside LifeMonitor and WorkflowHub.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: workflow-ro-crate
+  - type: complements
+    resource_id: lifemonitor
+  - type: profile-of
+    resource_id: ro-crate
 - id: crystallographic-information-framework-cif
   name: Crystallographic Information Framework (CIF)
   url: https://www.iucr.org/resources/cif
@@ -355,16 +369,17 @@ resources:
     role: conformance
   - ref_id: github-com-comcifs-cif-core
     role: implementation
-  alternatives:
-  - nexus
-  related_resource_ids:
-  - nexus
   decision_basis: Authoritative structural-science exchange contract with journal and database adoption
     plus public validation tooling.
   boundary_note: Crystallography and structural science scope; not a general materials-database API.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: nexus
+  - type: complements
+    resource_id: nexus
 - id: functional-mock-up-interface-fmi
   name: Functional Mock-up Interface (FMI)
   url: https://fmi-standard.org/docs/3.0/
@@ -402,15 +417,15 @@ resources:
     role: implementation
   - ref_id: github-com-modelica-fmi-cross-check
     role: conformance
-  alternatives:
-  - combine-omex-archive
-  related_resource_ids: []
   decision_basis: De facto contract for exchanging dynamic simulation models across independent CAE and
     systems-engineering tools.
   boundary_note: Model container and runtime API, not a general workflow or provenance standard.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: combine-omex-archive
 - id: nexus
   name: NeXus
   url: https://www.nexusformat.org/
@@ -451,15 +466,15 @@ resources:
     role: conformance
   - ref_id: github-com-nexusformat-definitions
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - climate-and-forecast-cf-metadata-conventions
   decision_basis: Strongest documented HDF5 scientific profile for scattering-facility data exchange with
     application definitions and validation.
   boundary_note: Scientific profile over HDF5, not generic HDF5; facility-scoped domain standard.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: climate-and-forecast-cf-metadata-conventions
 - id: ogc-api-coverages
   name: OGC API - Coverages
   url: https://ogcapi.ogc.org/coverages/
@@ -494,11 +509,6 @@ resources:
     role: technical-definition
   - ref_id: docs-ogc-org-is
     role: technical-definition
-  alternatives:
-  - spatiotemporal-asset-catalog-stac
-  related_resource_ids:
-  - spatiotemporal-asset-catalog-stac
-  - climate-and-forecast-cf-metadata-conventions
   decision_basis: Draft OGC coverage API with documented reference implementation support; strongest listed
     option for coverage retrieval where STAC catalogs assets only.
   boundary_note: Emerging draft; no public conformance suite cited at public-suite strength. Data access
@@ -506,6 +516,13 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: spatiotemporal-asset-catalog-stac
+  - type: complements
+    resource_id: spatiotemporal-asset-catalog-stac
+  - type: complements
+    resource_id: climate-and-forecast-cf-metadata-conventions
 - id: ogc-api-features
   name: OGC API - Features
   url: https://ogcapi.ogc.org/features/
@@ -540,9 +557,6 @@ resources:
     role: technical-definition
   - ref_id: github-com-opengeospatial-ets-ogcapi-features10
     role: conformance
-  alternatives: []
-  related_resource_ids:
-  - spatiotemporal-asset-catalog-stac
   decision_basis: Canonical REST replacement path for WFS-style vector feature exchange across independent
     servers.
   boundary_note: Feature geometry and properties access; not a catalog vocabulary or sensor semantics
@@ -550,3 +564,6 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: spatiotemporal-asset-catalog-stac

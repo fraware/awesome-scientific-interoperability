@@ -24,9 +24,6 @@ resources:
   domains:
   - cross-domain
   - ai-agents
-  alternatives: []
-  related_resource_ids:
-  - common-workflow-language-cwl
   decision_basis: Emerging agent-tool interface with a published specification.
   boundary_note: Tool invocation is not scientific authorization or provenance.
   reviewed_on: '2026-08-01'
@@ -37,3 +34,6 @@ resources:
   source_refs:
   - ref_id: fixture-ref-1
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: common-workflow-language-cwl

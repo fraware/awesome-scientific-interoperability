@@ -64,6 +64,31 @@
         }
       }
     },
+    "relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "resource_id"],
+      "properties": {
+        "type": {
+          "enum": [
+            "alternative-to",
+            "complements",
+            "profile-of",
+            "implements",
+            "validates",
+            "extends",
+            "supersedes",
+            "depends-on",
+            "serializes",
+            "registers",
+            "executes"
+          ]
+        },
+        "resource_id": {
+          "$ref": "#/$defs/resourceId"
+        }
+      }
+    },
     "resource": {
       "type": "object",
       "additionalProperties": false,
@@ -84,8 +109,7 @@
         "steward_id",
         "domains",
         "source_refs",
-        "alternatives",
-        "related_resource_ids",
+        "relations",
         "decision_basis",
         "boundary_note",
         "reviewed_on",
@@ -229,18 +253,10 @@
             "$ref": "#/$defs/sourceRef"
           }
         },
-        "alternatives": {
+        "relations": {
           "type": "array",
-          "uniqueItems": true,
           "items": {
-            "$ref": "#/$defs/resourceId"
-          }
-        },
-        "related_resource_ids": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/$defs/resourceId"
+            "$ref": "#/$defs/relation"
           }
         },
         "decision_basis": {

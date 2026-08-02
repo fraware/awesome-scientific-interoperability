@@ -35,9 +35,6 @@ resources:
     role: implementation
   - ref_id: github-com-ga4gh-data-use-ontology
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - ga4gh-passports
   decision_basis: Concrete semantic bridge between data governance decisions and computational access
     systems.
   boundary_note: Genomics-originated but broadly relevant to controlled scientific data; authorization
@@ -45,6 +42,9 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: ga4gh-passports
 - id: ga4gh-passports
   name: GA4GH Passports
   url: https://www.ga4gh.org/product/ga4gh-passports/
@@ -79,9 +79,6 @@ resources:
     role: stewardship
   - ref_id: github-com-ga4gh-duri-ga4gh-passport-standard
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - ga4gh-data-use-ontology-duo
   decision_basis: Strong scientific authorization profile connecting identity and controlled genomic data
     services.
   boundary_note: Domain exemplar; relies on underlying OAuth/OIDC infrastructure and complementary use-condition
@@ -89,6 +86,9 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: ga4gh-data-use-ontology-duo
 - id: model-context-protocol-mcp
   name: Model Context Protocol (MCP)
   url: https://modelcontextprotocol.io/specification/2026-07-28
@@ -124,9 +124,6 @@ resources:
     role: implementation
   - ref_id: github-com-modelcontextprotocol-servers
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - tooluniverse
   decision_basis: General agent-tool interface with a published 2026-07-28 specification and multiple
     SDK implementations.
   boundary_note: Scientific inclusion requires domain profiles that preserve semantics and evidence; tool
@@ -134,6 +131,9 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-01-31'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: tooluniverse
 - id: tooluniverse
   name: ToolUniverse
   url: https://zitniklab.hms.harvard.edu/ToolUniverse/en/
@@ -169,9 +169,6 @@ resources:
     role: stewardship
   - ref_id: github-com-mims-harvard-tooluniverse
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - model-context-protocol-mcp
   decision_basis: Directly addresses scientific-agent access to a large heterogeneous tool ecosystem with
     documented MCP integration.
   boundary_note: Platform-centered; openness of schemas and independent reuse of interfaces require periodic
@@ -179,3 +176,6 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-01-31'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: model-context-protocol-mcp

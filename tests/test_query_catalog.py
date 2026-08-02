@@ -126,11 +126,26 @@ class QueryCatalogTests(unittest.TestCase):
         )]
         self.assertEqual([item["id"] for item in payload], expected_ids)
 
-    def test_markdown_includes_boundary_and_alternatives(self) -> None:
+    def test_markdown_includes_boundary_and_relations(self) -> None:
         _, markdown = self.run_query("--id", "ro-crate", "--format", "markdown")
         self.assertIn("Boundary note:", markdown)
-        self.assertIn("Alternatives:", markdown)
+        self.assertIn("Relations:", markdown)
         self.assertIn("bagit", markdown)
+
+    def test_ro_crate_family_typed_edges(self) -> None:
+        by_id = {resource["id"]: resource for resource in self.resources}
+        profiles = {
+            item["resource_id"]
+            for item in by_id["workflow-ro-crate"].get("relations", [])
+            if item["type"] == "profile-of"
+        }
+        self.assertIn("ro-crate", profiles)
+        validates = {
+            item["resource_id"]
+            for item in by_id["ro-crate-validator"].get("relations", [])
+            if item["type"] == "validates"
+        }
+        self.assertIn("ro-crate", validates)
 
     def test_invalid_section(self) -> None:
         code, _ = self.run_query("--section", "Not A Section", "--format", "json")

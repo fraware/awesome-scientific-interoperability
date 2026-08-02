@@ -27,10 +27,6 @@ resources:
   conformance_status: none-known
   domains:
   - cross-domain
-  alternatives: []
-  related_resource_ids:
-  - eosc-interoperability-framework
-  - fair-principles
   decision_basis: Directly addresses cross-domain scientific data interoperability and provides a current
     specification suite.
   boundary_note: 'Overlap with EOSC is complementary: CDIF supplies concrete cross-domain information
@@ -45,6 +41,11 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: eosc-interoperability-framework
+  - type: complements
+    resource_id: fair-principles
 - id: eosc-interoperability-framework
   name: EOSC Interoperability Framework
   url: https://eosc.eu/eosc-interoperability-framework/
@@ -71,10 +72,6 @@ resources:
   domains:
   - cross-domain
   - european-research
-  alternatives: []
-  related_resource_ids:
-  - cross-domain-interoperability-framework-cdif
-  - fair-digital-object-framework
   decision_basis: Major cross-domain framework that organizes technical, semantic, organizational, and
     legal interoperability in a scientific federation.
   boundary_note: Distinct from service directories because it defines the interoperability architecture.
@@ -88,6 +85,11 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: cross-domain-interoperability-framework-cdif
+  - type: complements
+    resource_id: fair-digital-object-framework
 - id: fair-digital-object-framework
   name: FAIR Digital Object Framework
   url: https://fairdo.org/specifications/
@@ -112,9 +114,6 @@ resources:
   conformance_status: none-known
   domains:
   - cross-domain
-  alternatives: []
-  related_resource_ids:
-  - fair-principles
   decision_basis: Defines a reusable object model intended to support machine processing and cross-system
     exchange.
   boundary_note: Do not duplicate every FDO implementation; curate only field-defining specifications
@@ -129,6 +128,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: fair-principles
 - id: fair-principles
   name: FAIR Principles
   url: https://www.go-fair.org/fair-principles/
@@ -152,10 +154,6 @@ resources:
   conformance_status: none-known
   domains:
   - cross-domain
-  alternatives: []
-  related_resource_ids:
-  - fair-digital-object-framework
-  - fairsharing
   decision_basis: Field-defining foundation. The interoperability principle and machine-actionability
     framing are necessary to understand the category.
   boundary_note: Keep the entry focused on the principles; redirect implementation directories to FAIRsharing.
@@ -169,6 +167,11 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: fair-digital-object-framework
+  - type: complements
+    resource_id: fairsharing
 - id: crossref-rest-api-and-metadata
   name: Crossref REST API and Metadata
   url: https://www.crossref.org/documentation/retrieve-metadata/rest-api/
@@ -194,10 +197,6 @@ resources:
   conformance_status: none-known
   domains:
   - scholarly-communication
-  alternatives:
-  - datacite-metadata-schema-and-rest-api
-  related_resource_ids:
-  - scholix
   decision_basis: Foundational discovery interface for scholarly metadata and cross-system linking.
   boundary_note: Publication-centered; use DataCite and Scholix for broader research-object relations.
   reviewed_on: '2026-08-01'
@@ -210,6 +209,11 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: alternative-to
+    resource_id: datacite-metadata-schema-and-rest-api
+  - type: complements
+    resource_id: scholix
 - id: datacite-metadata-schema-and-rest-api
   name: DataCite Metadata Schema and REST API
   url: https://support.datacite.org/docs/api
@@ -236,10 +240,6 @@ resources:
   domains:
   - cross-domain
   - research-data
-  alternatives:
-  - crossref-rest-api-and-metadata
-  related_resource_ids:
-  - igsn-id
   decision_basis: Core interoperability infrastructure connecting research objects, repositories, and
     citation systems.
   boundary_note: Distinct from Crossref through its strong research-data and software coverage.
@@ -253,6 +253,11 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: alternative-to
+    resource_id: crossref-rest-api-and-metadata
+  - type: complements
+    resource_id: igsn-id
 - id: fairsharing
   name: FAIRsharing
   url: https://fairsharing.org/
@@ -277,9 +282,6 @@ resources:
   conformance_status: none-known
   domains:
   - cross-domain
-  alternatives: []
-  related_resource_ids:
-  - fair-principles
   decision_basis: Canonical discovery infrastructure for standards and their relationships across scientific
     domains.
   boundary_note: The list should point to FAIRsharing instead of reproducing its comprehensive registry
@@ -294,6 +296,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: fair-principles
 - id: ga4gh-service-info
   name: GA4GH Service Info
   url: https://www.ga4gh.org/product/service-info/
@@ -317,9 +322,6 @@ resources:
   conformance_status: documented-tests
   domains:
   - genomics
-  alternatives: []
-  related_resource_ids:
-  - ga4gh-service-registry
   decision_basis: A concise, reusable service-description contract supporting interoperable genomics infrastructure.
   boundary_note: Domain exemplar with broader service-discovery lessons.
   reviewed_on: '2026-08-01'
@@ -332,6 +334,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: ga4gh-service-registry
 - id: ga4gh-service-registry
   name: GA4GH Service Registry
   url: https://www.ga4gh.org/product/service-registry/
@@ -355,10 +360,6 @@ resources:
   conformance_status: documented-tests
   domains:
   - genomics
-  alternatives: []
-  related_resource_ids:
-  - ga4gh-service-info
-  - ga4gh-tool-registry-service-trs
   decision_basis: Directly connects distributed genomic services and clients through a shared discovery
     contract.
   boundary_note: Should be distinguished from the broader GA4GH Planet implementation registry.
@@ -372,6 +373,11 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: ga4gh-service-info
+  - type: complements
+    resource_id: ga4gh-tool-registry-service-trs
 - id: ga4gh-tool-registry-service-trs
   name: GA4GH Tool Registry Service (TRS)
   url: https://www.ga4gh.org/product/tool-registry-service-trs/
@@ -398,10 +404,6 @@ resources:
   domains:
   - genomics
   - computational-workflows
-  alternatives: []
-  related_resource_ids:
-  - ga4gh-service-registry
-  - common-workflow-language-cwl
   decision_basis: One of the clearest operational contracts linking workflow registries and execution
     ecosystems.
   boundary_note: Genomics-originated but used in broader workflow infrastructure.
@@ -415,6 +417,11 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: ga4gh-service-registry
+  - type: complements
+    resource_id: common-workflow-language-cwl
 - id: identifiers-org
   name: Identifiers.org
   url: https://identifiers.org/
@@ -438,9 +445,6 @@ resources:
   conformance_status: none-known
   domains:
   - life-sciences
-  alternatives: []
-  related_resource_ids:
-  - cross-domain-interoperability-framework-cdif
   decision_basis: Important operational bridge across heterogeneous life-science identifier schemes.
   boundary_note: Domain-centered, but the registry pattern is transferable.
   reviewed_on: '2026-08-01'
@@ -453,6 +457,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: cross-domain-interoperability-framework-cdif
 - id: igsn-id
   name: IGSN ID
   url: https://ev.igsn.org/about-igsns
@@ -477,9 +484,6 @@ resources:
   domains:
   - cross-domain
   - sample-curation
-  alternatives: []
-  related_resource_ids:
-  - datacite-metadata-schema-and-rest-api
   decision_basis: Connects physical scientific samples to digital records and downstream research outputs.
   boundary_note: Sample-focused; broader object identity remains outside its scope.
   reviewed_on: '2026-08-01'
@@ -492,6 +496,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: datacite-metadata-schema-and-rest-api
 - id: orcid
   name: ORCID
   url: https://info.orcid.org/what-is-orcid/
@@ -517,9 +524,6 @@ resources:
   domains:
   - cross-domain
   - scholarly-communication
-  alternatives: []
-  related_resource_ids:
-  - research-organization-registry-ror
   decision_basis: Canonical cross-system identity layer for researchers with broad scientific infrastructure
     integration.
   boundary_note: Personal identity only; organization and object identity require complementary systems.
@@ -533,6 +537,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: research-organization-registry-ror
 - id: research-organization-registry-ror
   name: Research Organization Registry (ROR)
   url: https://ror.org/about/
@@ -558,9 +565,6 @@ resources:
   domains:
   - cross-domain
   - scholarly-communication
-  alternatives: []
-  related_resource_ids:
-  - orcid
   decision_basis: Provides an open, shared organization identity layer across research systems.
   boundary_note: Complementary to ORCID and funder identifiers.
   reviewed_on: '2026-08-01'
@@ -573,6 +577,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: orcid
 - id: bioschemas
   name: Bioschemas
   url: https://bioschemas.org/profiles/
@@ -595,9 +602,6 @@ resources:
   conformance_status: none-known
   domains:
   - life-sciences
-  alternatives: []
-  related_resource_ids:
-  - schema-org
   decision_basis: Strong domain exemplar translating general web semantics into actionable scientific
     resource profiles.
   boundary_note: Life-science-centered; avoid listing every profile individually.
@@ -611,6 +615,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: profile-of
+    resource_id: schema-org
 - id: climate-and-forecast-cf-metadata-conventions
   name: Climate and Forecast (CF) Metadata Conventions
   url: https://cfconventions.org/
@@ -633,9 +640,6 @@ resources:
   domains:
   - climate-science
   - geosciences
-  alternatives: []
-  related_resource_ids:
-  - unified-code-for-units-of-measure-ucum
   decision_basis: The semantic layer that makes NetCDF climate data interpretable across tools.
   boundary_note: Prefer this over a generic NetCDF entry for the interoperability list.
   reviewed_on: '2026-08-01'
@@ -648,6 +652,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: unified-code-for-units-of-measure-ucum
 - id: croissant
   name: Croissant
   url: https://docs.mlcommons.org/croissant/docs/croissant-spec-1.1.html
@@ -674,9 +681,6 @@ resources:
   domains:
   - machine-learning
   - research-data
-  alternatives: []
-  related_resource_ids:
-  - schema-org
   decision_basis: Current, implementation-oriented bridge between dataset repositories and ML tooling.
   boundary_note: Include for AI-ready scientific datasets, while excluding generic AI datasets.
   reviewed_on: '2026-08-01'
@@ -689,6 +693,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: schema-org
 - id: darwin-core
   name: Darwin Core
   url: https://dwc.tdwg.org/
@@ -711,9 +718,6 @@ resources:
   conformance_status: none-known
   domains:
   - biodiversity
-  alternatives: []
-  related_resource_ids:
-  - cross-domain-interoperability-framework-cdif
   decision_basis: Mature domain standard enabling global biodiversity data exchange.
   boundary_note: Domain exemplar with broad institutional adoption.
   reviewed_on: '2026-08-01'
@@ -726,6 +730,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: cross-domain-interoperability-framework-cdif
 - id: ddi-lifecycle
   name: DDI Lifecycle
   url: https://ddialliance.org/Specification/DDI-Lifecycle/
@@ -750,9 +757,6 @@ resources:
   conformance_status: none-known
   domains:
   - social-science
-  alternatives: []
-  related_resource_ids:
-  - cross-domain-interoperability-framework-cdif
   decision_basis: Mature lifecycle metadata standard connecting social-science study design, collection,
     processing, archiving, and dissemination across independent institutions and systems.
   boundary_note: Include as a social-science domain standard; avoid expanding into a comprehensive survey-metadata
@@ -767,6 +771,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: cross-domain-interoperability-framework-cdif
 - id: edam-ontology
   name: EDAM Ontology
   url: https://edamontology.org/
@@ -791,10 +798,6 @@ resources:
   domains:
   - bioinformatics
   - life-sciences
-  alternatives: []
-  related_resource_ids:
-  - obo-foundry
-  - ga4gh-tool-registry-service-trs
   decision_basis: Operationally useful semantic bridge across tools, workflows, and registries.
   boundary_note: Life-science-focused but unusually clear in connecting operations to data and formats.
   reviewed_on: '2026-08-01'
@@ -807,6 +810,11 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: obo-foundry
+  - type: complements
+    resource_id: ga4gh-tool-registry-service-trs
 - id: obo-foundry
   name: OBO Foundry
   url: https://obofoundry.org/
@@ -829,9 +837,6 @@ resources:
   domains:
   - biomedical
   - life-sciences
-  alternatives: []
-  related_resource_ids:
-  - edam-ontology
   decision_basis: Field-defining governance and coordination mechanism for interoperable biomedical semantics.
   boundary_note: Curate the Foundry as the ecosystem entry, not every member ontology.
   reviewed_on: '2026-08-01'
@@ -844,6 +849,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: edam-ontology
 - id: qudt
   name: QUDT
   url: https://www.qudt.org/
@@ -866,9 +874,6 @@ resources:
   conformance_status: none-known
   domains:
   - cross-domain
-  alternatives:
-  - unified-code-for-units-of-measure-ucum
-  related_resource_ids: []
   decision_basis: Directly addresses a recurring source of semantic incompatibility in scientific systems.
   boundary_note: 'Compare with UCUM: QUDT emphasizes semantic models; UCUM emphasizes computable unit
     codes.'
@@ -882,6 +887,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: alternative-to
+    resource_id: unified-code-for-units-of-measure-ucum
 - id: schema-org
   name: Schema.org
   url: https://schema.org/
@@ -905,11 +913,6 @@ resources:
   conformance_status: none-known
   domains:
   - cross-domain
-  alternatives: []
-  related_resource_ids:
-  - bioschemas
-  - croissant
-  - w3c-data-catalog-vocabulary-dcat
   decision_basis: Foundational semantic substrate used by scientific profiles including Bioschemas and
     dataset descriptions.
   boundary_note: General-purpose; include because scientific profiles depend on it.
@@ -923,6 +926,13 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: bioschemas
+  - type: complements
+    resource_id: croissant
+  - type: complements
+    resource_id: w3c-data-catalog-vocabulary-dcat
 - id: simple-knowledge-organization-system-skos
   name: Simple Knowledge Organization System (SKOS)
   url: https://www.w3.org/TR/skos-reference/
@@ -945,9 +955,6 @@ resources:
   domains:
   - cross-domain
   - semantic-web
-  alternatives: []
-  related_resource_ids:
-  - w3c-data-catalog-vocabulary-dcat
   decision_basis: Foundational mechanism for cross-system vocabulary exchange and mapping.
   boundary_note: Generic standard justified by pervasive scientific semantic infrastructure use.
   reviewed_on: '2026-08-01'
@@ -960,6 +967,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: w3c-data-catalog-vocabulary-dcat
 - id: sosa-ssn
   name: SOSA/SSN
   url: https://www.w3.org/TR/vocab-ssn/
@@ -983,9 +993,6 @@ resources:
   domains:
   - environmental-science
   - sensor-networks
-  alternatives: []
-  related_resource_ids:
-  - cross-domain-interoperability-framework-cdif
   decision_basis: Core semantic contract for instrument, sensor, observation, and sample interoperability.
   boundary_note: Broad enough to connect environmental, laboratory, and IoT scientific systems.
   reviewed_on: '2026-08-01'
@@ -998,6 +1005,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: cross-domain-interoperability-framework-cdif
 - id: spatiotemporal-asset-catalog-stac
   name: SpatioTemporal Asset Catalog (STAC)
   url: https://stacspec.org/
@@ -1024,9 +1034,6 @@ resources:
   domains:
   - geospatial
   - earth-observation
-  alternatives: []
-  related_resource_ids:
-  - w3c-data-catalog-vocabulary-dcat
   decision_basis: Strong cross-provider interoperability standard for Earth-observation and geospatial
     scientific assets.
   boundary_note: Domain exemplar with mature implementation diversity.
@@ -1040,6 +1047,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: w3c-data-catalog-vocabulary-dcat
 - id: unified-code-for-units-of-measure-ucum
   name: Unified Code for Units of Measure (UCUM)
   url: https://ucum.org/
@@ -1063,9 +1073,6 @@ resources:
   domains:
   - cross-domain
   - clinical-informatics
-  alternatives:
-  - qudt
-  related_resource_ids: []
   decision_basis: Provides a compact operational unit contract used across clinical and scientific systems.
   boundary_note: Complementary to QUDT rather than redundant.
   reviewed_on: '2026-08-01'
@@ -1078,6 +1085,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: alternative-to
+    resource_id: qudt
 - id: w3c-data-catalog-vocabulary-dcat
   name: W3C Data Catalog Vocabulary (DCAT)
   url: https://www.w3.org/TR/vocab-dcat-3/
@@ -1102,10 +1112,6 @@ resources:
   domains:
   - cross-domain
   - research-data
-  alternatives: []
-  related_resource_ids:
-  - schema-org
-  - simple-knowledge-organization-system-skos
   decision_basis: Widely used contract for federating data catalogs and services.
   boundary_note: General-purpose, but central to scientific data-catalog interoperability.
   reviewed_on: '2026-08-01'
@@ -1118,3 +1124,8 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: schema-org
+  - type: complements
+    resource_id: simple-knowledge-organization-system-skos

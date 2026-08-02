@@ -38,15 +38,16 @@ resources:
     role: implementation
   - ref_id: github-com-datacite-datacite
     role: adoption
-  alternatives:
-  - datacite-metadata-schema-and-rest-api
-  related_resource_ids:
-  - scholix
   decision_basis: Foundational discovery interface for scholarly metadata and cross-system linking.
   boundary_note: Publication-centered; use DataCite and Scholix for broader research-object relations.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: datacite-metadata-schema-and-rest-api
+  - type: complements
+    resource_id: scholix
 - id: datacite-metadata-schema-and-rest-api
   name: DataCite Metadata Schema and REST API
   url: https://support.datacite.org/docs/api
@@ -86,16 +87,17 @@ resources:
     role: implementation
   - ref_id: github-com-crossref-rest-api-doc
     role: adoption
-  alternatives:
-  - crossref-rest-api-and-metadata
-  related_resource_ids:
-  - igsn-id
   decision_basis: Core interoperability infrastructure connecting research objects, repositories, and
     citation systems.
   boundary_note: Distinct from Crossref through its strong research-data and software coverage.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: crossref-rest-api-and-metadata
+  - type: complements
+    resource_id: igsn-id
 - id: fairsharing
   name: FAIRsharing
   url: https://fairsharing.org/
@@ -129,9 +131,6 @@ resources:
     role: stewardship
   - ref_id: fairsharing-github-io-fairsharing-api
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - fair-principles
   decision_basis: Canonical discovery infrastructure for standards and their relationships across scientific
     domains.
   boundary_note: The list should point to FAIRsharing instead of reproducing its comprehensive registry
@@ -139,6 +138,9 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: fair-principles
 - id: ga4gh-service-info
   name: GA4GH Service Info
   url: https://www.ga4gh.org/product/service-info/
@@ -175,14 +177,14 @@ resources:
     role: implementation
   - ref_id: github-com-dockstore-dockstore
     role: adoption
-  alternatives: []
-  related_resource_ids:
-  - ga4gh-service-registry
   decision_basis: A concise, reusable service-description contract supporting interoperable genomics infrastructure.
   boundary_note: Domain exemplar with broader service-discovery lessons.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: ga4gh-service-registry
 - id: ga4gh-service-registry
   name: GA4GH Service Registry
   url: https://www.ga4gh.org/product/service-registry/
@@ -219,16 +221,17 @@ resources:
     role: implementation
   - ref_id: github-com-dockstore-dockstore
     role: adoption
-  alternatives: []
-  related_resource_ids:
-  - ga4gh-service-info
-  - ga4gh-tool-registry-service-trs
   decision_basis: Directly connects distributed genomic services and clients through a shared discovery
     contract.
   boundary_note: Should be distinguished from the broader GA4GH Planet implementation registry.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: ga4gh-service-info
+  - type: complements
+    resource_id: ga4gh-tool-registry-service-trs
 - id: ga4gh-tool-registry-service-trs
   name: GA4GH Tool Registry Service (TRS)
   url: https://www.ga4gh.org/product/tool-registry-service-trs/
@@ -268,16 +271,17 @@ resources:
     role: implementation
   - ref_id: dockstore-org
     role: adoption
-  alternatives: []
-  related_resource_ids:
-  - ga4gh-service-registry
-  - common-workflow-language-cwl
   decision_basis: One of the clearest operational contracts linking workflow registries and execution
     ecosystems.
   boundary_note: Genomics-originated but used in broader workflow infrastructure.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: ga4gh-service-registry
+  - type: complements
+    resource_id: common-workflow-language-cwl
 - id: identifiers-org
   name: Identifiers.org
   url: https://identifiers.org/
@@ -314,15 +318,16 @@ resources:
     role: implementation
   - ref_id: github-com-edamontology-edamontology
     role: adoption
-  alternatives: []
-  related_resource_ids:
-  - datacite-metadata-schema-and-rest-api
-  - orcid
   decision_basis: Important operational bridge across heterogeneous life-science identifier schemes.
   boundary_note: Domain-centered, but the registry pattern is transferable.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: datacite-metadata-schema-and-rest-api
+  - type: complements
+    resource_id: orcid
 - id: igsn-id
   name: IGSN ID
   url: https://ev.igsn.org/about-igsns
@@ -360,14 +365,14 @@ resources:
     role: implementation
   - ref_id: github-com-datacite-datacite
     role: adoption
-  alternatives: []
-  related_resource_ids:
-  - datacite-metadata-schema-and-rest-api
   decision_basis: Connects physical scientific samples to digital records and downstream research outputs.
   boundary_note: Sample-focused; broader object identity remains outside its scope.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: datacite-metadata-schema-and-rest-api
 - id: orcid
   name: ORCID
   url: https://info.orcid.org/what-is-orcid/
@@ -406,15 +411,15 @@ resources:
     role: implementation
   - ref_id: github-com-ror-community-ror-api
     role: adoption
-  alternatives: []
-  related_resource_ids:
-  - research-organization-registry-ror
   decision_basis: Canonical cross-system identity layer for researchers with broad scientific infrastructure
     integration.
   boundary_note: Personal identity only; organization and object identity require complementary systems.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: research-organization-registry-ror
 - id: research-organization-registry-ror
   name: Research Organization Registry (ROR)
   url: https://ror.org/about/
@@ -451,14 +456,14 @@ resources:
     role: implementation
   - ref_id: github-com-orcid-orcid-source
     role: adoption
-  alternatives: []
-  related_resource_ids:
-  - orcid
   decision_basis: Provides an open, shared organization identity layer across research systems.
   boundary_note: Complementary to ORCID and funder identifiers.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: orcid
 - id: optimade
   name: OPTIMADE
   url: https://www.optimade.org/specification/latest/
@@ -492,13 +497,14 @@ resources:
     role: implementation
   - ref_id: github-com-materials-consortia-optimade-python-tools
     role: implementation
-  alternatives:
-  - fairsharing
-  related_resource_ids:
-  - fairsharing
   decision_basis: Strongest public contract for cross-database materials-structure discovery without bespoke
     per-provider APIs.
   boundary_note: Structure retrieval API, not a full materials simulation or workflow interchange standard.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: fairsharing
+  - type: complements
+    resource_id: fairsharing

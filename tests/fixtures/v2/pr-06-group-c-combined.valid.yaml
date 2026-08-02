@@ -26,9 +26,6 @@ resources:
   conformance_status: none-known
   domains:
   - scholarly-communication
-  alternatives: []
-  related_resource_ids:
-  - nanopublications
   decision_basis: Foundational scholarly-content interchange standard with broad publisher and repository
     adoption.
   boundary_note: Publication representation only; links to data and software require complementary standards
@@ -43,6 +40,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: nanopublications
 - id: nanopublications
   name: Nanopublications
   url: https://nanopub.net/
@@ -68,9 +68,6 @@ resources:
   domains:
   - semantic-web
   - knowledge-representation
-  alternatives: []
-  related_resource_ids:
-  - journal-article-tag-suite-jats
   decision_basis: Distinctive interoperable unit for machine-actionable scientific claims with bundled
     provenance.
   boundary_note: Best suited to fine-grained assertions rather than complete research objects or full-text
@@ -85,6 +82,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: journal-article-tag-suite-jats
 - id: open-research-knowledge-graph-orkg
   name: Open Research Knowledge Graph (ORKG)
   url: https://www.orkg.org/
@@ -109,9 +109,6 @@ resources:
   conformance_status: none-known
   domains:
   - scholarly-communication
-  alternatives: []
-  related_resource_ids:
-  - journal-article-tag-suite-jats
   decision_basis: Substantial machine-actionable publication and knowledge-system infrastructure with
     documented APIs.
   boundary_note: The entry should specify interoperable representations and interfaces, avoiding broad
@@ -126,6 +123,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: journal-article-tag-suite-jats
 - id: openaire-research-graph
   name: OpenAIRE Research Graph
   url: https://graph.openaire.eu/
@@ -153,9 +153,6 @@ resources:
   domains:
   - scholarly-communication
   - research-information
-  alternatives: []
-  related_resource_ids:
-  - journal-article-tag-suite-jats
   decision_basis: Major cross-object scientific knowledge infrastructure with open interfaces and broad
     source integration.
   boundary_note: Graph inclusion should emphasize exchange and relation integration, not scale alone.
@@ -169,6 +166,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: journal-article-tag-suite-jats
 - id: scholix
   name: Scholix
   url: https://github.com/scholix/schema
@@ -195,9 +195,6 @@ resources:
   domains:
   - scholarly-communication
   - research-data
-  alternatives: []
-  related_resource_ids:
-  - journal-article-tag-suite-jats
   decision_basis: Directly connects publications and research data across independent infrastructures.
   boundary_note: Focus the entry on link interoperability, not general scholarly graphs.
   reviewed_on: '2026-08-01'
@@ -210,6 +207,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: journal-article-tag-suite-jats
 - id: allotrope-data-format
   name: Allotrope Data Format
   url: https://docs.allotrope.org/
@@ -235,10 +235,6 @@ resources:
   domains:
   - analytical-chemistry
   - laboratory-data
-  alternatives:
-  - analytical-information-markup-language-animl
-  related_resource_ids:
-  - analytical-information-markup-language-animl
   decision_basis: Substantial cross-vendor analytical-data interoperability ecosystem with published ontologies
     and format specifications.
   boundary_note: Consortium membership and licensing govern some specification access; analytical-data
@@ -253,6 +249,11 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: alternative-to
+    resource_id: analytical-information-markup-language-animl
+  - type: complements
+    resource_id: analytical-information-markup-language-animl
 - id: analytical-information-markup-language-animl
   name: Analytical Information Markup Language (AnIML)
   url: https://www.animl.org/
@@ -274,10 +275,6 @@ resources:
   conformance_status: none-known
   domains:
   - analytical-chemistry
-  alternatives:
-  - allotrope-data-format
-  related_resource_ids:
-  - allotrope-data-format
   decision_basis: Direct laboratory analytical-data interoperability standard with explicit cross-vendor
     purpose.
   boundary_note: Domain-specific technique definitions may vary in maturity; device communication is out
@@ -292,6 +289,11 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: alternative-to
+    resource_id: allotrope-data-format
+  - type: complements
+    resource_id: allotrope-data-format
 - id: autoprotocol
   name: Autoprotocol
   url: https://github.com/autoprotocol/autoprotocol-python
@@ -314,9 +316,6 @@ resources:
   conformance_status: none-known
   domains:
   - laboratory-automation
-  alternatives: []
-  related_resource_ids:
-  - journal-article-tag-suite-jats
   decision_basis: Important operational contract for expressing executable wet-lab procedures independent
     of a single vendor platform.
   boundary_note: Procedure representation does not establish device compatibility; ecosystem breadth and
@@ -331,6 +330,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: journal-article-tag-suite-jats
 - id: hl7-fhir
   name: HL7 FHIR
   url: https://hl7.org/fhir/
@@ -357,9 +359,6 @@ resources:
   domains:
   - clinical-informatics
   - laboratory-medicine
-  alternatives: []
-  related_resource_ids:
-  - loinc
   decision_basis: Exceptional domain exemplar demonstrating a large modular clinical and laboratory exchange
     ecosystem.
   boundary_note: Included as a clinical-exchange exemplar, not as evidence that the list covers all healthcare
@@ -374,6 +373,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: loinc
 - id: loinc
   name: LOINC
   url: https://loinc.org/
@@ -396,9 +398,6 @@ resources:
   domains:
   - clinical-informatics
   - laboratory-medicine
-  alternatives: []
-  related_resource_ids:
-  - hl7-fhir
   decision_basis: Mature semantic interoperability mechanism for laboratory measurements and clinical
     observations.
   boundary_note: Clinical terminology orientation; pairs naturally with FHIR for exchange and UCUM for
@@ -413,6 +412,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: hl7-fhir
 - id: opc-ua-laboratory-and-analytical-device-standard-lads
   name: OPC UA Laboratory and Analytical Device Standard (LADS)
   url: https://opcfoundation.org/markets-collaboration/lads/
@@ -436,10 +438,6 @@ resources:
   domains:
   - laboratory-automation
   - analytical-instruments
-  alternatives:
-  - sila-2
-  related_resource_ids:
-  - sila-2
   decision_basis: Modern industrial-scientific bridge for interoperable device control, status, and data
     access.
   boundary_note: Device communication does not standardize experimental semantics or analytical file exchange.
@@ -453,6 +451,11 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: alternative-to
+    resource_id: sila-2
+  - type: complements
+    resource_id: sila-2
 - id: sila-2
   name: SiLA 2
   url: https://sila2.gitlab.io/sila_base/
@@ -475,10 +478,6 @@ resources:
   conformance_status: none-known
   domains:
   - laboratory-automation
-  alternatives:
-  - opc-ua-laboratory-and-analytical-device-standard-lads
-  related_resource_ids:
-  - opc-ua-laboratory-and-analytical-device-standard-lads
   decision_basis: Canonical open laboratory-device interoperability standard with multi-language implementations.
   boundary_note: Device communication does not by itself standardize experimental semantics or analytical
     data formats.
@@ -492,6 +491,11 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: alternative-to
+    resource_id: opc-ua-laboratory-and-analytical-device-standard-lads
+  - type: complements
+    resource_id: opc-ua-laboratory-and-analytical-device-standard-lads
 - id: ga4gh-data-use-ontology-duo
   name: GA4GH Data Use Ontology (DUO)
   url: https://www.ga4gh.org/product/data-use-ontology-duo/
@@ -516,9 +520,6 @@ resources:
   domains:
   - genomics
   - data-governance
-  alternatives: []
-  related_resource_ids:
-  - ga4gh-passports
   decision_basis: Concrete semantic bridge between data governance decisions and computational access
     systems.
   boundary_note: Genomics-originated but broadly relevant to controlled scientific data; authorization
@@ -533,6 +534,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: ga4gh-passports
 - id: ga4gh-passports
   name: GA4GH Passports
   url: https://www.ga4gh.org/product/ga4gh-passports/
@@ -558,9 +562,6 @@ resources:
   domains:
   - genomics
   - data-governance
-  alternatives: []
-  related_resource_ids:
-  - ga4gh-data-use-ontology-duo
   decision_basis: Strong scientific authorization profile connecting identity and controlled genomic data
     services.
   boundary_note: Domain exemplar; relies on underlying OAuth/OIDC infrastructure and complementary use-condition
@@ -575,6 +576,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: ga4gh-data-use-ontology-duo
 - id: model-context-protocol-mcp
   name: Model Context Protocol (MCP)
   url: https://modelcontextprotocol.io/specification/2026-07-28
@@ -599,9 +603,6 @@ resources:
   domains:
   - ai-agents
   - cross-domain
-  alternatives: []
-  related_resource_ids:
-  - tooluniverse
   decision_basis: General agent-tool interface with a published 2026-07-28 specification and multiple
     SDK implementations.
   boundary_note: Scientific inclusion requires domain profiles that preserve semantics and evidence; tool
@@ -616,6 +617,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: tooluniverse
 - id: tooluniverse
   name: ToolUniverse
   url: https://zitniklab.hms.harvard.edu/ToolUniverse/en/
@@ -642,9 +646,6 @@ resources:
   domains:
   - ai-agents
   - computational-biology
-  alternatives: []
-  related_resource_ids:
-  - model-context-protocol-mcp
   decision_basis: Directly addresses scientific-agent access to a large heterogeneous tool ecosystem with
     documented MCP integration.
   boundary_note: Platform-centered; openness of schemas and independent reuse of interfaces require periodic
@@ -659,6 +660,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: model-context-protocol-mcp
 - id: biosimulators-test-suite
   name: BioSimulators Test Suite
   url: https://docs.biosimulators.org/Biosimulators_test_suite/
@@ -683,9 +687,6 @@ resources:
   domains:
   - systems-biology
   - biosimulation
-  alternatives: []
-  related_resource_ids:
-  - sbml-test-suite
   decision_basis: Strong evidence-backed interoperability system combining standard interfaces, containers,
     and scientific assertions against documented simulator contracts.
   boundary_note: Domain-specific and complementary to the SBML Test Suite; tests execution behavior, not
@@ -700,6 +701,9 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: sbml-test-suite
 - id: cwl-conformance-tests
   name: CWL Conformance Tests
   url: https://github.com/common-workflow-language/cwl-v1.2
@@ -722,9 +726,6 @@ resources:
   conformance_status: public-suite
   domains:
   - computational-workflows
-  alternatives: []
-  related_resource_ids:
-  - journal-article-tag-suite-jats
   decision_basis: Mature implementation-level conformance infrastructure tied to a portable scientific
     workflow standard with versioned runner tests.
   boundary_note: Passing conformance does not establish full scientific-stack interoperability; CWL language
@@ -739,6 +740,11 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: journal-article-tag-suite-jats
+  - type: validates
+    resource_id: common-workflow-language-cwl
 - id: ro-crate-validator
   name: RO-Crate Validator
   url: https://github.com/crs4/rocrate-validator
@@ -763,9 +769,6 @@ resources:
   conformance_status: public-validator
   domains:
   - research-objects
-  alternatives: []
-  related_resource_ids:
-  - journal-article-tag-suite-jats
   decision_basis: Maintained validator covering several core and workflow-oriented RO-Crate profiles against
     documented SHACL shapes.
   boundary_note: Validation establishes profile conformance, not cross-system interoperability; RO-Crate
@@ -780,6 +783,11 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: journal-article-tag-suite-jats
+  - type: validates
+    resource_id: ro-crate
 - id: sbml-test-suite
   name: SBML Test Suite
   url: https://sbml.org/software/sbml-test-suite/
@@ -803,9 +811,6 @@ resources:
   conformance_status: public-suite
   domains:
   - systems-biology
-  alternatives: []
-  related_resource_ids:
-  - biosimulators-test-suite
   decision_basis: Exceptional precedent for testing scientific semantic behavior across independent implementations
     against the SBML contract.
   boundary_note: Domain-specific but highly transferable as a conformance architecture; not a general
@@ -820,3 +825,6 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations:
+  - type: complements
+    resource_id: biosimulators-test-suite

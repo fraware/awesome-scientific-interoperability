@@ -120,6 +120,7 @@ def sort_resources(resources: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 
 def resource_record(resource: dict[str, Any]) -> dict[str, Any]:
+    relations = list(resource.get("relations") or [])
     return {
         "id": resource["id"],
         "name": resource["name"],
@@ -132,7 +133,21 @@ def resource_record(resource: dict[str, Any]) -> dict[str, Any]:
         "summary": resource["summary"],
         "evidence_types": list(resource.get("evidence_types", [])),
         "domains": list(resource.get("domains", [])),
-        "alternatives": list(resource.get("alternatives", [])),
+        "relations": relations,
+        "alternatives": [
+            item["resource_id"]
+            for item in relations
+            if item.get("type") == "alternative-to"
+        ],
+        "profiles_of": [
+            item["resource_id"] for item in relations if item.get("type") == "profile-of"
+        ],
+        "implements": [
+            item["resource_id"] for item in relations if item.get("type") == "implements"
+        ],
+        "validates": [
+            item["resource_id"] for item in relations if item.get("type") == "validates"
+        ],
         "boundary_note": resource["boundary_note"],
     }
 
@@ -163,11 +178,14 @@ def format_markdown(resources: list[dict[str, Any]]) -> str:
         lines.append(f"- **Mechanism:** {resource['mechanism']}")
         connects = ", ".join(resource.get("connects", []))
         lines.append(f"- **Connects:** {connects}")
-        alternatives = resource.get("alternatives") or []
-        if alternatives:
-            lines.append(f"- **Alternatives:** {', '.join(alternatives)}")
+        relations = resource.get("relations") or []
+        if relations:
+            rendered = ", ".join(
+                f"{item.get('type')}→{item.get('resource_id')}" for item in relations
+            )
+            lines.append(f"- **Relations:** {rendered}")
         else:
-            lines.append("- **Alternatives:** none recorded")
+            lines.append("- **Relations:** none recorded")
         lines.append(f"- **Boundary note:** {resource['boundary_note']}")
         lines.append("")
 

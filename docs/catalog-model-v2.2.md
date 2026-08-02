@@ -39,6 +39,12 @@ Only `relationship: independent-implementation` counts toward MI, and steward-op
 - Live `documented-tests` claims without a direct conformance artifact reference (validator / conformance-suite / interoperability-result with conformance or interoperability-testing role) fail validation.
 - Quality CI runs `audit_data_quality.py --fail-on warning` so depth-queue regressions cannot merge silently.
 
+## Typed relations
+
+Resources use a `relations` array of `{type, resource_id}` edges. Controlled types live in `config/catalog-taxonomy.yaml` under `relation_types`. Legacy `alternatives` and `related_resource_ids` arrays are removed; `alternative-to` replaces alternatives sugar.
+
+Unknown relation types, self-edges, and empty relation sets (isolates) fail validation.
+
 ## Re-adjudication (2026-08-02)
 
 All 28 former MI claims were re-reviewed. Six retained MI with registry evidence; twenty-two were downgraded to `reference-and-others`, including mandatory MCP same-steward failure. Decision record: [reviews/implementation-independence-pr38.md](reviews/implementation-independence-pr38.md).

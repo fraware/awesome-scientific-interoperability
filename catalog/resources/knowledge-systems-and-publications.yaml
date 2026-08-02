@@ -36,10 +36,6 @@ resources:
     role: implementation
   - ref_id: github-com-ncbi-jats-xslt
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - scholix
-  - citation-file-format-citation-cff
   decision_basis: Foundational scholarly-content interchange standard with broad publisher and repository
     adoption.
   boundary_note: Publication representation only; links to data and software require complementary standards
@@ -47,6 +43,11 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: scholix
+  - type: complements
+    resource_id: citation-file-format-citation-cff
 - id: nanopublications
   name: Nanopublications
   url: https://nanopub.net/
@@ -84,10 +85,6 @@ resources:
     role: implementation
   - ref_id: github-com-nanopublication-nanopub-python
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - open-research-knowledge-graph-orkg
-  - schema-org
   decision_basis: Distinctive interoperable unit for machine-actionable scientific claims with bundled
     provenance.
   boundary_note: Best suited to fine-grained assertions rather than complete research objects or full-text
@@ -95,6 +92,11 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: open-research-knowledge-graph-orkg
+  - type: complements
+    resource_id: schema-org
 - id: open-research-knowledge-graph-orkg
   name: Open Research Knowledge Graph (ORKG)
   url: https://www.orkg.org/
@@ -128,10 +130,6 @@ resources:
     role: stewardship
   - ref_id: academic-oup-com-bioinformatics-article-36-2-555-5680463
     role: technical-definition
-  alternatives: []
-  related_resource_ids:
-  - nanopublications
-  - openaire-research-graph
   decision_basis: Substantial machine-actionable publication and knowledge-system infrastructure with
     documented APIs.
   boundary_note: The entry should specify interoperable representations and interfaces, avoiding broad
@@ -139,6 +137,11 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: nanopublications
+  - type: complements
+    resource_id: openaire-research-graph
 - id: openaire-research-graph
   name: OpenAIRE Research Graph
   url: https://graph.openaire.eu/
@@ -175,16 +178,17 @@ resources:
     role: stewardship
   - ref_id: graph-openaire-eu-docs
     role: technical-definition
-  alternatives: []
-  related_resource_ids:
-  - open-research-knowledge-graph-orkg
-  - scholix
   decision_basis: Major cross-object scientific knowledge infrastructure with open interfaces and broad
     source integration.
   boundary_note: Graph inclusion should emphasize exchange and relation integration, not scale alone.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: open-research-knowledge-graph-orkg
+  - type: complements
+    resource_id: scholix
 - id: scholix
   name: Scholix
   url: https://github.com/scholix/schema
@@ -226,12 +230,13 @@ resources:
     role: implementation
   - ref_id: github-com-openaire-scholexplorer
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - openaire-research-graph
-  - journal-article-tag-suite-jats
   decision_basis: Directly connects publications and research data across independent infrastructures.
   boundary_note: Focus the entry on link interoperability, not general scholarly graphs.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: openaire-research-graph
+  - type: complements
+    resource_id: journal-article-tag-suite-jats

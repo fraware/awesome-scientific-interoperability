@@ -35,15 +35,15 @@ resources:
     role: implementation
   - ref_id: github-com-bioschemas-bioschemas-dde
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - schema-org
   decision_basis: Strong domain exemplar translating general web semantics into actionable scientific
     resource profiles.
   boundary_note: Life-science-centered; avoid listing every profile individually.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: profile-of
+    resource_id: schema-org
 - id: climate-and-forecast-cf-metadata-conventions
   name: Climate and Forecast (CF) Metadata Conventions
   url: https://cfconventions.org/
@@ -77,14 +77,14 @@ resources:
     role: technical-definition
   - ref_id: github-com-cf-convention-cf-conventions
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - unified-code-for-units-of-measure-ucum
   decision_basis: The semantic layer that makes NetCDF climate data interpretable across tools.
   boundary_note: Prefer this over a generic NetCDF entry for the interoperability list.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: unified-code-for-units-of-measure-ucum
 - id: croissant
   name: Croissant
   url: https://docs.mlcommons.org/croissant/docs/croissant-spec-1.1.html
@@ -124,14 +124,14 @@ resources:
     role: implementation
   - ref_id: github-com-mlcommons-croissant
     role: conformance
-  alternatives: []
-  related_resource_ids:
-  - schema-org
   decision_basis: Current, implementation-oriented bridge between dataset repositories and ML tooling.
   boundary_note: Include for AI-ready scientific datasets, while excluding generic AI datasets.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: schema-org
 - id: darwin-core
   name: Darwin Core
   url: https://dwc.tdwg.org/
@@ -163,15 +163,16 @@ resources:
     role: stewardship
   - ref_id: github-com-tdwg-dwc
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - bioschemas
-  - schema-org
   decision_basis: Mature domain standard enabling global biodiversity data exchange.
   boundary_note: Domain exemplar with broad institutional adoption.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: bioschemas
+  - type: complements
+    resource_id: schema-org
 - id: ddi-lifecycle
   name: DDI Lifecycle
   url: https://ddialliance.org/Specification/DDI-Lifecycle/
@@ -207,10 +208,6 @@ resources:
     role: implementation
   - ref_id: github-com-ddi-alliance-ddi-lifecycle
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - sdmx
-  - schema-org
   decision_basis: Mature lifecycle metadata standard connecting social-science study design, collection,
     processing, archiving, and dissemination across independent institutions and systems.
   boundary_note: Include as a social-science domain standard; avoid expanding into a comprehensive survey-metadata
@@ -218,6 +215,11 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: sdmx
+  - type: complements
+    resource_id: schema-org
 - id: edam-ontology
   name: EDAM Ontology
   url: https://edamontology.org/
@@ -253,15 +255,16 @@ resources:
     role: implementation
   - ref_id: github-com-obofoundry-obofoundry-github-io
     role: adoption
-  alternatives: []
-  related_resource_ids:
-  - obo-foundry
-  - ga4gh-tool-registry-service-trs
   decision_basis: Operationally useful semantic bridge across tools, workflows, and registries.
   boundary_note: Life-science-focused but unusually clear in connecting operations to data and formats.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: obo-foundry
+  - type: complements
+    resource_id: ga4gh-tool-registry-service-trs
 - id: obo-foundry
   name: OBO Foundry
   url: https://obofoundry.org/
@@ -295,14 +298,14 @@ resources:
     role: implementation
   - ref_id: github-com-edamontology-edamontology
     role: adoption
-  alternatives: []
-  related_resource_ids:
-  - edam-ontology
   decision_basis: Field-defining governance and coordination mechanism for interoperable biomedical semantics.
   boundary_note: Curate the Foundry as the ecosystem entry, not every member ontology.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: edam-ontology
 - id: qudt
   name: QUDT
   url: https://www.qudt.org/
@@ -334,15 +337,15 @@ resources:
     role: stewardship
   - ref_id: github-com-qudt-qudt-public-repo
     role: implementation
-  alternatives:
-  - unified-code-for-units-of-measure-ucum
-  related_resource_ids: []
   decision_basis: Directly addresses a recurring source of semantic incompatibility in scientific systems.
   boundary_note: 'Compare with UCUM: QUDT emphasizes semantic models; UCUM emphasizes computable unit
     codes.'
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: unified-code-for-units-of-measure-ucum
 - id: schema-org
   name: Schema.org
   url: https://schema.org/
@@ -377,17 +380,19 @@ resources:
     role: implementation
   - ref_id: github-com-bioschemas-specifications
     role: adoption
-  alternatives: []
-  related_resource_ids:
-  - bioschemas
-  - croissant
-  - w3c-data-catalog-vocabulary-dcat
   decision_basis: Foundational semantic substrate used by scientific profiles including Bioschemas and
     dataset descriptions.
   boundary_note: General-purpose; include because scientific profiles depend on it.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: bioschemas
+  - type: complements
+    resource_id: croissant
+  - type: complements
+    resource_id: w3c-data-catalog-vocabulary-dcat
 - id: sdmx
   name: SDMX
   url: https://sdmx.org/standards-2/
@@ -428,13 +433,6 @@ resources:
     role: technical-definition
   - ref_id: github-com-sdmx-twg-sdmx-ml
     role: implementation
-  alternatives:
-  - ddi-lifecycle
-  - w3c-data-catalog-vocabulary-dcat
-  related_resource_ids:
-  - ddi-lifecycle
-  - w3c-data-catalog-vocabulary-dcat
-  - simple-knowledge-organization-system-skos
   decision_basis: Strongest documented contract for operational exchange of official statistics and macroeconomic
     indicators where producers and consumers must share Data Structure Definitions and payload formats.
   boundary_note: Addresses statistical structure and payload exchange, not survey wave lifecycle documentation;
@@ -442,6 +440,17 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: ddi-lifecycle
+  - type: alternative-to
+    resource_id: w3c-data-catalog-vocabulary-dcat
+  - type: complements
+    resource_id: ddi-lifecycle
+  - type: complements
+    resource_id: w3c-data-catalog-vocabulary-dcat
+  - type: complements
+    resource_id: simple-knowledge-organization-system-skos
 - id: simple-knowledge-organization-system-skos
   name: Simple Knowledge Organization System (SKOS)
   url: https://www.w3.org/TR/skos-reference/
@@ -475,14 +484,14 @@ resources:
     role: technical-definition
   - ref_id: github-com-w3c-dxwg
     role: adoption
-  alternatives: []
-  related_resource_ids:
-  - w3c-data-catalog-vocabulary-dcat
   decision_basis: Foundational mechanism for cross-system vocabulary exchange and mapping.
   boundary_note: Generic standard justified by pervasive scientific semantic infrastructure use.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: w3c-data-catalog-vocabulary-dcat
 - id: sosa-ssn
   name: SOSA/SSN
   url: https://www.w3.org/TR/vocab-ssn/
@@ -517,15 +526,16 @@ resources:
     role: technical-definition
   - ref_id: github-com-w3c-sdw
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - ogc-sensorthings-api
-  - schema-org
   decision_basis: Core semantic contract for instrument, sensor, observation, and sample interoperability.
   boundary_note: Broad enough to connect environmental, laboratory, and IoT scientific systems.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: ogc-sensorthings-api
+  - type: complements
+    resource_id: schema-org
 - id: spatiotemporal-asset-catalog-stac
   name: SpatioTemporal Asset Catalog (STAC)
   url: https://stacspec.org/
@@ -566,15 +576,15 @@ resources:
     role: conformance
   - ref_id: github-com-stac-utils-stac-api-validator
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - w3c-data-catalog-vocabulary-dcat
   decision_basis: Strong cross-provider interoperability standard for Earth-observation and geospatial
     scientific assets.
   boundary_note: Domain exemplar with mature implementation diversity.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: w3c-data-catalog-vocabulary-dcat
 - id: unified-code-for-units-of-measure-ucum
   name: Unified Code for Units of Measure (UCUM)
   url: https://ucum.org/
@@ -611,14 +621,14 @@ resources:
     role: implementation
   - ref_id: loinc-org-root
     role: adoption
-  alternatives:
-  - qudt
-  related_resource_ids: []
   decision_basis: Provides a compact operational unit contract used across clinical and scientific systems.
   boundary_note: Complementary to QUDT rather than redundant.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: qudt
 - id: w3c-data-catalog-vocabulary-dcat
   name: W3C Data Catalog Vocabulary (DCAT)
   url: https://www.w3.org/TR/vocab-dcat-3/
@@ -654,15 +664,16 @@ resources:
     role: implementation
   - ref_id: github-com-ckan-ckan
     role: adoption
-  alternatives: []
-  related_resource_ids:
-  - schema-org
-  - simple-knowledge-organization-system-skos
   decision_basis: Widely used contract for federating data catalogs and services.
   boundary_note: General-purpose, but central to scientific data-catalog interoperability.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: schema-org
+  - type: complements
+    resource_id: simple-knowledge-organization-system-skos
 - id: isa-json
   name: ISA-JSON
   url: https://isa-specs.readthedocs.io/en/latest/isajson.html
@@ -702,13 +713,14 @@ resources:
     role: implementation
   - ref_id: github-com-isa-tools-isavalidator-isaconverter-biimanager
     role: conformance
-  alternatives:
-  - ro-crate
-  related_resource_ids:
-  - bioschemas
   decision_basis: Strongest open contract for machine-readable multi-assay experimental metadata beyond
     ad hoc JSON-LD packaging alone.
   boundary_note: Experimental metadata model, not an instrument control or clinical exchange standard.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: ro-crate
+  - type: complements
+    resource_id: bioschemas

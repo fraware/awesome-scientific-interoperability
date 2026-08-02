@@ -74,9 +74,17 @@ class ProvenanceV21Tests(unittest.TestCase):
         isolates = [
             resource["id"]
             for resource in catalog_model.load_catalog_resources()
-            if not resource.get("alternatives") and not resource.get("related_resource_ids")
+            if not resource.get("relations")
         ]
         self.assertEqual(isolates, [])
+
+    def test_relation_types_controlled(self) -> None:
+        allowed = catalog_model.relation_type_ids()
+        self.assertIn("profile-of", allowed)
+        self.assertIn("validates", allowed)
+        for resource in catalog_model.load_catalog_resources():
+            for item in resource.get("relations") or []:
+                self.assertIn(item["type"], allowed)
 
     def test_public_conformance_requires_artifact_class(self) -> None:
         references = catalog_model.load_references()

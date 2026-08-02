@@ -33,7 +33,7 @@ make query-json LAYER=Operational
 | `--id` | Exact resource identifier |
 | `--format` | `markdown` (default) or `json` |
 
-Results are ordered by section (README order), then canonical name. Markdown output includes **boundary notes** and **alternatives** so you can see scope limits and recorded substitutes.
+Results are ordered by section (README order), then canonical name. Markdown output includes **boundary notes** and typed **relations** (`alternative-to`, `profile-of`, `implements`, `validates`, and related edge types).
 
 ## Integration query examples
 

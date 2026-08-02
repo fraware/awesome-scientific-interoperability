@@ -36,20 +36,25 @@ resources:
     role: implementation
   - ref_id: github-com-common-workflow-language-cwlprov-py
     role: implementation
-  alternatives:
-  - workflow-run-ro-crate
-  related_resource_ids:
-  - common-workflow-language-cwl
-  - cwltool
-  - w3c-prov
-  - workflow-run-ro-crate
-  - runcrate
   decision_basis: Concrete bridge between a workflow language, execution provenance, and portable evidence.
   boundary_note: Related to Workflow Run RO-Crate; descriptions must clarify their distinct profiles and
     evolution.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: workflow-run-ro-crate
+  - type: complements
+    resource_id: cwltool
+  - type: complements
+    resource_id: workflow-run-ro-crate
+  - type: complements
+    resource_id: runcrate
+  - type: extends
+    resource_id: w3c-prov
+  - type: depends-on
+    resource_id: common-workflow-language-cwl
 - id: iso-23494-2-2026-common-provenance-model
   name: ISO 23494-2:2026 Common Provenance Model
   url: https://www.iso.org/standard/87714.html
@@ -81,9 +86,6 @@ resources:
     role: technical-definition
   - ref_id: iso-org-root
     role: stewardship
-  alternatives: []
-  related_resource_ids:
-  - w3c-prov
   decision_basis: Newly published international scientific provenance standard with explicit interoperability
     requirements.
   boundary_note: Biotechnology-focused; include as a current domain standard and monitor implementation
@@ -91,6 +93,9 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: w3c-prov
 - id: p-plan
   name: P-Plan
   url: https://www.opmw.org/model/p-plan/
@@ -123,14 +128,14 @@ resources:
     role: stewardship
   - ref_id: w3-org-tr-prov-o
     role: technical-definition
-  alternatives: []
-  related_resource_ids:
-  - w3c-prov
   decision_basis: Addresses the important bridge between intended scientific procedures and observed execution.
   boundary_note: Assess current implementation adoption during double review.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: w3c-prov
 - id: runcrate
   name: runcrate
   url: https://www.researchobject.org/runcrate/
@@ -165,16 +170,20 @@ resources:
     role: stewardship
   - ref_id: github-com-researchobject-runcrate
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - workflow-run-ro-crate
-  - cwlprov
-  - w3c-prov
   decision_basis: Makes a portable provenance profile operationally usable and inspectable.
   boundary_note: Implementation maturity and supported profiles should be recorded.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: cwlprov
+  - type: complements
+    resource_id: w3c-prov
+  - type: implements
+    resource_id: ro-crate
+  - type: implements
+    resource_id: workflow-run-ro-crate
 - id: w3c-prov
   name: W3C PROV
   url: https://www.w3.org/TR/prov-o/
@@ -212,18 +221,21 @@ resources:
     role: implementation
   - ref_id: github-com-common-workflow-language-cwlprov
     role: adoption
-  alternatives: []
-  related_resource_ids:
-  - cwlprov
-  - p-plan
-  - workflow-run-ro-crate
-  - runcrate
   decision_basis: Foundational cross-domain provenance contract used by many scientific profiles.
   boundary_note: General standard justified by extensive scientific reuse; profiles such as CWLProv and
     Workflow Run RO-Crate specialize it.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: cwlprov
+  - type: complements
+    resource_id: p-plan
+  - type: complements
+    resource_id: workflow-run-ro-crate
+  - type: complements
+    resource_id: runcrate
 - id: biocompute-objects
   name: BioCompute Objects
   url: https://docs.biocomputeobject.org/
@@ -260,12 +272,6 @@ resources:
     role: implementation
   - ref_id: github-com-biocompute-objects-bco-editor
     role: implementation
-  alternatives:
-  - workflow-run-ro-crate
-  - cwlprov
-  related_resource_ids:
-  - workflow-run-ro-crate
-  - cwlprov
   decision_basis: Distinct regulated HTS pipeline record where RO-Crate profiles alone do not capture
     FDA-facing execution domains.
   boundary_note: HTS and bioinformatics pipeline documentation; not a general workflow language or wet-lab
@@ -273,3 +279,12 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: workflow-run-ro-crate
+  - type: alternative-to
+    resource_id: cwlprov
+  - type: complements
+    resource_id: workflow-run-ro-crate
+  - type: complements
+    resource_id: cwlprov

@@ -35,10 +35,6 @@ resources:
     role: implementation
   - ref_id: github-com-sylabs-singularity
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - reprozip
-  - software-hash-identifiers-swhids
   decision_basis: High-value operational interoperability layer across scientific computing environments
     where OCI workflows alone may be insufficient.
   boundary_note: The entry should emphasize image/runtime portability across HPC infrastructure; OCI containers
@@ -46,6 +42,11 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: reprozip
+  - type: complements
+    resource_id: software-hash-identifiers-swhids
 - id: citation-file-format-citation-cff
   name: Citation File Format (CITATION.cff)
   url: https://citation-file-format.github.io/
@@ -86,16 +87,17 @@ resources:
     role: implementation
   - ref_id: github-com-citation-file-format-cff-converter-python
     role: implementation
-  alternatives:
-  - codemeta
-  related_resource_ids:
-  - codemeta
   decision_basis: Practical interoperability mechanism connecting source repositories with citation and
     archival systems.
   boundary_note: Narrower than CodeMeta but exceptionally deployable.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: codemeta
+  - type: complements
+    resource_id: codemeta
 - id: codemeta
   name: CodeMeta
   url: https://codemeta.github.io/
@@ -130,15 +132,16 @@ resources:
     role: implementation
   - ref_id: github-com-codemeta-codemeta
     role: implementation
-  alternatives:
-  - citation-file-format-citation-cff
-  related_resource_ids:
-  - citation-file-format-citation-cff
   decision_basis: Core cross-system metadata bridge for research software discovery and exchange.
   boundary_note: Complementary to CITATION.cff, which emphasizes repository-local citation metadata.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: citation-file-format-citation-cff
+  - type: complements
+    resource_id: citation-file-format-citation-cff
 - id: reprozip
   name: ReproZip
   url: https://www.reprozip.org/
@@ -171,16 +174,17 @@ resources:
     role: stewardship
   - ref_id: github-com-vida-nyu-reprozip
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - apptainer-singularity-image-format
-  - ro-crate
   decision_basis: Strong executable-environment bridge supporting transfer and reproduction across systems.
   boundary_note: Interoperability depends on unpacker support and environment compatibility; packaging
     not provenance.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: apptainer-singularity-image-format
+  - type: complements
+    resource_id: ro-crate
 - id: software-hash-identifiers-swhids
   name: Software Hash Identifiers (SWHIDs)
   url: https://www.swhid.org/
@@ -214,12 +218,13 @@ resources:
     role: stewardship
   - ref_id: github-com-softwareheritage-swh-model
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - citation-file-format-citation-cff
-  - codemeta
   decision_basis: Connects exact software artifacts to scholarly records and reproducibility evidence.
   boundary_note: Complement DOI-level software records with content-addressed identity.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: citation-file-format-citation-cff
+  - type: complements
+    resource_id: codemeta
