@@ -1,4 +1,4 @@
-name: Current data snapshot
+name: Current full repository snapshot
 
 on:
   pull_request:
@@ -13,27 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - name: Package current structured-data layer
+      - name: Package full tracked repository
         run: |
-          tar -czf current-data-snapshot.tgz \
-            catalog \
-            schema \
-            config \
-            scripts \
-            tests \
-            docs/reviews \
-            docs/candidate-reviews \
-            docs/decision-guides \
-            docs/source-notes.md \
-            docs/coverage-baseline.md \
-            docs/validation-report.md \
-            docs/human-review-log.md \
-            docs/integration-problems.md \
-            README.md \
-            MANIFEST.json
+          git ls-files -z | tar --null -czf current-full-repository.tgz --files-from=-
       - uses: actions/upload-artifact@v4
         with:
-          name: current-data-snapshot
-          path: current-data-snapshot.tgz
+          name: current-full-repository
+          path: current-full-repository.tgz
           if-no-files-found: error
           retention-days: 1
