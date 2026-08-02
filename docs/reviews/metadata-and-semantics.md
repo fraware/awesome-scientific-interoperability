@@ -49,3 +49,8 @@ None.
 
 - Enriched Bioschemas, CF, Croissant, Darwin Core, DDI, EDAM, ISA-JSON, OBO Foundry; upgraded Croissant/ISA validators where primary artifacts exist.
 
+
+## Issue #30 Batch 4b/5 metadata residual (2026-08-01)
+
+- Completed Schema.org, SDMX, SKOS, SOSA/SSN, STAC, UCUM, DCAT evidence dispositions; STAC upgraded to public-validator then MI claim adjusted to reference-and-others where independence evidence remained thin.
+

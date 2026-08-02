@@ -152,7 +152,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: not-applicable
   conformance_status: none-known
   steward_id: go-fair-foundation
   domains:
@@ -164,6 +164,8 @@ resources:
     role: stewardship
   - ref_id: nature-com-articles-sdata201618
     role: technical-definition
+  - ref_id: force11-org-info-the-fair-data-principles
+    role: adoption
   alternatives: []
   related_resource_ids:
   - fair-digital-object-framework

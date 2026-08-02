@@ -35,25 +35,13 @@ python scripts/audit_data_quality.py --as-of 2026-08-01 --json-report data-quali
 
 | Section | Count |
 |---|---:|
-| Metadata and Semantics | 15 |
-| Data and Digital Objects | 7 |
-| Instruments and Laboratories | 6 |
-| Research Software and Environments | 3 |
-| Knowledge Systems and Publications | 3 |
-| Provenance and Evidence | 2 |
-| Validation and Conformance | 2 |
-| Agents, Access, and Policy | 2 |
-| Foundations | 1 |
+| — | 0 |
 
 **Documented-tests**
 
 | Section | Count |
 |---|---:|
-| Data and Digital Objects | 8 |
-| Metadata and Semantics | 4 |
-| Provenance and Evidence | 2 |
-| Instruments and Laboratories | 2 |
-| Agents, Access, and Policy | 1 |
+| — | 0 |
 
 ## Honest residuals after v2.1 landing
 

@@ -48,3 +48,8 @@ None.
 ## v2.1 provenance migration (2026-08-01)
 
 - Closed isolate: `autoprotocol` alternatives/related to SiLA 2.
+
+## Issue #30 Batch 6 instruments evidence (2026-08-01)
+
+- Enriched FHIR, DICOMweb, SensorThings ETS, SiLA 2, AnIML, LOINC; SensorThings restored to public-suite via ETS; DICOMweb conformance set to none-known.
+

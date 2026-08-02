@@ -34,3 +34,8 @@
 ## Conflicts
 
 None.
+
+## Issue #30 Batch 8 agents evidence (2026-08-01)
+
+- Enriched DUO and MCP repositories; MCP conformance set to none-known.
+

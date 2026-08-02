@@ -33,6 +33,8 @@ resources:
     role: stewardship
   - ref_id: github-com-ebispot-duo
     role: implementation
+  - ref_id: github-com-ga4gh-data-use-ontology
+    role: implementation
   alternatives: []
   related_resource_ids:
   - ga4gh-passports
@@ -108,7 +110,7 @@ resources:
   - normative-specification
   - independent-implementation
   implementation_status: multiple-independent
-  conformance_status: documented-tests
+  conformance_status: none-known
   steward_id: model-context-protocol-project
   domains:
   - ai-agents
@@ -119,6 +121,8 @@ resources:
   - ref_id: modelcontextprotocol-io-root
     role: stewardship
   - ref_id: github-com-modelcontextprotocol-specification
+    role: implementation
+  - ref_id: github-com-modelcontextprotocol-servers
     role: implementation
   alternatives: []
   related_resource_ids:

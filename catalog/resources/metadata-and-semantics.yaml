@@ -375,6 +375,8 @@ resources:
     role: stewardship
   - ref_id: github-com-schemaorg-schemaorg
     role: implementation
+  - ref_id: github-com-bioschemas-specifications
+    role: adoption
   alternatives: []
   related_resource_ids:
   - bioschemas
@@ -409,8 +411,8 @@ resources:
   - normative-specification
   - institutional-adoption
   - interoperability-demonstration
-  implementation_status: multiple-independent
-  conformance_status: documented-tests
+  implementation_status: reference-and-others
+  conformance_status: none-known
   steward_id: sdmx-initiative-seven-sponsor-organizations
   domains:
   - social-science
@@ -424,6 +426,8 @@ resources:
     role: technical-definition
   - ref_id: sdmx-org-wp-content-uploads-sdmx-mes-og-termsofreference
     role: technical-definition
+  - ref_id: github-com-sdmx-twg-sdmx-ml
+    role: implementation
   alternatives:
   - ddi-lifecycle
   - w3c-data-catalog-vocabulary-dcat
@@ -456,7 +460,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: w3c
   domains:
@@ -469,6 +473,8 @@ resources:
     role: stewardship
   - ref_id: w3-org-2009-08-skos-reference-skos-html
     role: technical-definition
+  - ref_id: github-com-w3c-dxwg
+    role: adoption
   alternatives: []
   related_resource_ids:
   - w3c-data-catalog-vocabulary-dcat
@@ -496,7 +502,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: world-wide-web-consortium-w3c-and-open-geospatial-consortium
   domains:
@@ -509,6 +515,8 @@ resources:
     role: stewardship
   - ref_id: ogc-org-standards-ssn
     role: technical-definition
+  - ref_id: github-com-w3c-sdw
+    role: implementation
   alternatives: []
   related_resource_ids:
   - ogc-sensorthings-api
@@ -540,8 +548,9 @@ resources:
   - normative-specification
   - independent-implementation
   - institutional-adoption
-  implementation_status: multiple-independent
-  conformance_status: documented-tests
+  - public-validator
+  implementation_status: reference-and-others
+  conformance_status: public-validator
   steward_id: stac-community
   domains:
   - geospatial
@@ -552,6 +561,10 @@ resources:
   - ref_id: stacspec-org-root
     role: stewardship
   - ref_id: github-com-radiantearth-stac-spec
+    role: implementation
+  - ref_id: github-com-radiantearth-stac-validator
+    role: conformance
+  - ref_id: github-com-stac-utils-stac-api-validator
     role: implementation
   alternatives: []
   related_resource_ids:
@@ -594,6 +607,10 @@ resources:
     role: stewardship
   - ref_id: github-com-unifiedcodeunits4unitsofmeasure-ucum
     role: implementation
+  - ref_id: github-com-ucum-org-ucum
+    role: implementation
+  - ref_id: loinc-org-root
+    role: adoption
   alternatives:
   - qudt
   related_resource_ids: []
@@ -635,6 +652,8 @@ resources:
     role: stewardship
   - ref_id: github-com-w3c-dxwg
     role: implementation
+  - ref_id: github-com-ckan-ckan
+    role: adoption
   alternatives: []
   related_resource_ids:
   - schema-org
@@ -667,7 +686,7 @@ resources:
   - independent-implementation
   - documented-tests
   - public-validator
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: public-validator
   steward_id: isa-tools-community
   domains:

@@ -33,6 +33,8 @@ resources:
     role: stewardship
   - ref_id: github-com-apptainer-apptainer
     role: implementation
+  - ref_id: github-com-sylabs-singularity
+    role: implementation
   alternatives: []
   related_resource_ids:
   - reprozip
@@ -80,6 +82,10 @@ resources:
     role: implementation
   - ref_id: github-com-citation-file-format-cffconvert
     role: conformance
+  - ref_id: github-com-citation-file-format-citation-file-format
+    role: implementation
+  - ref_id: github-com-citation-file-format-cff-converter-python
+    role: implementation
   alternatives:
   - codemeta
   related_resource_ids:
@@ -195,7 +201,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: software-heritage
   domains:
@@ -206,6 +212,8 @@ resources:
     role: technical-definition
   - ref_id: softwareheritage-org-root
     role: stewardship
+  - ref_id: github-com-softwareheritage-swh-model
+    role: implementation
   alternatives: []
   related_resource_ids:
   - citation-file-format-citation-cff

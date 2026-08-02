@@ -32,6 +32,10 @@ resources:
     role: stewardship
   - ref_id: github-com-jats-tml-jats-tag-library
     role: implementation
+  - ref_id: github-com-ncbi-jats
+    role: implementation
+  - ref_id: github-com-ncbi-jats-xslt
+    role: implementation
   alternatives: []
   related_resource_ids:
   - scholix
@@ -76,6 +80,10 @@ resources:
   - ref_id: nanopub-net-root
     role: stewardship
   - ref_id: github-com-nanopub-nanopub-java
+    role: implementation
+  - ref_id: github-com-nanopublication-nanopub-java
+    role: implementation
+  - ref_id: github-com-nanopublication-nanopub-python
     role: implementation
   alternatives: []
   related_resource_ids:
@@ -200,7 +208,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: rda-scholix-working-group
   domains:
@@ -215,6 +223,10 @@ resources:
     role: implementation
   - ref_id: doi-org-10-1162-99608f92-aa3103a5
     role: technical-definition
+  - ref_id: github-com-scholix-scholix
+    role: implementation
+  - ref_id: github-com-openaire-scholexplorer
+    role: implementation
   alternatives: []
   related_resource_ids:
   - openaire-research-graph

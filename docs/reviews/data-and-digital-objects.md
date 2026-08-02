@@ -43,3 +43,8 @@ None.
 
 ## Issue #30 Batch 3 data objects evidence (2026-08-01): enriched BagIt/CIF/FMI/NeXus/OGC Features/RO-Crate; downgraded FAIR Signposting and workflow RO-Crate profile conformance where no suite artifact.
 
+
+## Issue #30 residual data-object MI adjustments (2026-08-01)
+
+- FMI and RO-Crate multiple-independent claims adjusted to reference-and-others where typed independence evidence remained below threshold after enrichment.
+
