@@ -769,3 +769,71 @@ resources:
     reviewed_on: '2026-08-02'
     conflict_disclosure: none identified; human maintainer approval required before merge
     decision_record: issue-44-batch-g
+- id: breeding-api-brapi
+  name: Breeding API (BrAPI)
+  url: https://brapi.org/specification
+  section: Workflows and Execution
+  resource_kind: api-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Plant breeding databases
+  - germplasm systems
+  - phenotyping platforms
+  - genotyping services
+  mechanism: Modular REST API modules for exchanging germplasm, trials, studies, phenotypes, genotypes,
+    and related breeding entities
+  summary: Community REST API specification for exchanging plant-breeding germplasm, trial, phenotype,
+    and genotype data across independently operated agricultural databases.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  steward_id: brapi-community
+  scientific_domains:
+  - life-sciences
+  - biotechnology
+  - genomics
+  integration_functions:
+  - research-data
+  - computational-workflows
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
+  source_refs:
+  - ref_id: brapi-org-specification
+    role: technical-definition
+  - ref_id: brapi-org-root
+    role: stewardship
+  - ref_id: github-com-plantbreeding-api
+    role: technical-definition
+  - ref_id: cassavabase-org-brapi-v2
+    role: implementation
+  - ref_id: ipk-gatersleben-brapi-v1
+    role: implementation
+  - ref_id: brapi-org-servers
+    role: adoption
+  relations:
+  - type: complements
+    resource_id: minimum-information-about-plant-phenotyping-experiments-miappe
+  - type: complements
+    resource_id: isa-json
+  decision_basis: Strongest operational API contract for cross-database plant breeding data exchange with
+    separately operated production servers.
+  boundary_note: BrAPI moves breeding entities over HTTP; MIAPPE supplies phenotyping metadata completeness
+    expectations. No cataloged public BrAPI conformance suite is claimed. Cassavabase and IPK provide
+    distinct operator identities for independence.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-deferred-family-admissions

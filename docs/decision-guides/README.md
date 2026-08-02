@@ -15,12 +15,12 @@ Problem-oriented comparison documents for overlapping interoperability mechanism
 | [Laboratory interoperability](laboratory-interoperability.md) | SiLA 2, OPC UA LADS, Autoprotocol, AnIML, ADF, FHIR, LOINC |
 | [Scientific agents and tool interfaces](scientific-agents-and-tool-interfaces.md) | MCP, ToolUniverse, emerging watchlist protocols |
 | [Controlled data access](controlled-data-access.md) | GA4GH Passports, DUO, emerging policy packaging |
-| [Computational models and simulation experiments](systems-biology-models.md) | SBML, CellML, SED-ML, COMBINE Archive, conformance suites |
+| [Computational models and simulation experiments](systems-biology-models.md) | SBOL, SBML, CellML, SED-ML, COMBINE Archive, conformance suites |
 | [Neuroscience dataset and neurophysiology exchange](neuroscience-data-standards.md) | BIDS, NWB, DICOMweb, NeXus |
 | [Astronomy data files, tables, and query services](astronomy-data-and-services.md) | FITS, VOTable, TAP, STAC; ObsCore/SAMP/ASDF boundaries |
 | [Bioimaging data exchange](bioimaging-data.md) | OME-NGFF, DICOMweb, NeXus, RO-Crate; OME-TIFF/Zarr boundaries |
 | [Genomic representation and access](genomic-representation-and-access.md) | VRS, Phenopackets, htsget, refget, DRS; Beacon/HTS/Crypt4GH/RNAget boundaries |
-| [Ecology and sequence-context metadata](ecology-and-sequence-context-metadata.md) | MIxS, EML, Darwin Core, IGSN, ISA-JSON |
+| [Ecology and sequence-context metadata](ecology-and-sequence-context-metadata.md) | MIxS, EML, Darwin Core, IGSN, ISA-JSON, MIAPPE, BrAPI |
 | [Mass-spectrometry data exchange](mass-spectrometry-data.md) | mzML, AnIML, Allotrope Data Format |
 | [Clinical research data models](clinical-research-data-models.md) | FHIR, CDISC ODM, OMOP CDM, Phenopackets |
 | [Repository preservation and data packaging](repository-preservation-and-data-packaging.md) | OCFL, BagIt, RO-Crate, Data Package, Croissant, COMBINE/OMEX |

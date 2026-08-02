@@ -92,6 +92,7 @@ General scientific software, broad open-science guidance, private connectors, an
 
 - [Minimum Information about any (X) Sequence (MIxS)](https://genomicsstandardsconsortium.github.io/mixs/) - Versioned checklists and environmental extensions for exchanging contextual metadata about sequenced samples, collection environments, and processing methods.
 - [Ecological Metadata Language (EML)](https://eml.ecoinformatics.org/) - Community-maintained XML metadata standard for exchanging ecological dataset descriptions, methods, coverage, provenance, table structures, and distributions.
+- [MIAPPE](https://www.miappe.org/) - Community minimum-information standard and data model for describing plant phenotyping experiments, environments, treatments, observation units, and phenotype measurements.
 - [OMOP Common Data Model](https://ohdsi.github.io/CommonDataModel/) - Shared relational model and vocabularies for harmonizing longitudinal observational health data across institutions and federated analytical studies.
 - [IVOA Observation Core (ObsCore/ObsTAP)](https://ivoa.net/documents/ObsCore/) - IVOA core observation metadata model and ObsTAP profile for issuing uniform discovery queries across independently operated astronomy archives.
 
@@ -117,6 +118,7 @@ General scientific software, broad open-science guidance, private connectors, an
 - [Workflow Run RO-Crate](https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/) - RO-Crate profile for exchanging workflow-run inputs, outputs, software, execution records, and provenance across workflow systems.
 - [Workflow Testing RO-Crate](https://w3id.org/ro/wftest) - Portable research-object profile for exchanging workflow test suites, inputs, expected outputs, and test services.
 
+- [Synthetic Biology Open Language (SBOL)](https://sbolstandard.org/datamodel-specification/version-3.1.0/) - Community data model for exchanging synthetic-biology designs, including components, sequences, interactions, constraints, combinatorial derivation, and provenance.
 - [Systems Biology Markup Language (SBML)](https://sbml.org/documents/specifications/level-3/version-2/core/release-2/) - XML-based standard for exchanging quantitative systems-biology models, including species, reactions, mathematical rules, events, units, and extensible Level 3 packages.
 - [CellML](https://www.cellml.org/specifications/cellml_2.0/) - XML and MathML-based standard for exchanging modular mathematical models with explicit components, variables, units, imports, resets, and reusable model composition.
 - [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/en/stable/) - Community specification for organizing and describing neuroimaging, electrophysiology, microscopy, behavioral, and derivative datasets through standardized paths and sidecar metadata.
@@ -137,6 +139,7 @@ General scientific software, broad open-science guidance, private connectors, an
 
 ## Workflows and Execution
 
+- [Breeding API (BrAPI)](https://brapi.org/specification) - Community REST API specification for exchanging plant-breeding germplasm, trial, phenotype, and genotype data across independently operated agricultural databases.
 - [openEO API](https://www.ogc.org/standards/openeo/) - OGC Community Standard REST API for interoperable Earth-observation data processing across cloud backends; connects EO clients, datacube services, and STAC-compatible catalogs.
 - [Common Workflow Language (CWL)](https://www.commonwl.org/) - Portable declarative standard for describing command-line tools and workflows across independent runners and computing environments.
 - [cwltool](https://github.com/common-workflow-language/cwltool) - Reference CWL runner connecting specification validation, conformance testing, workflow execution, and provenance capture.

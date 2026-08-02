@@ -69,6 +69,20 @@ stewards:
   type: community
   url: https://biosimulators.org/
   aliases: []
+- id: boyce-thompson-institute
+  name: Boyce Thompson Institute
+  type: institution
+  url: https://cassavabase.org/
+  aliases:
+  - BTI
+  - Cassavabase operator
+- id: brapi-community
+  name: BrAPI Community
+  type: community
+  url: https://brapi.org/
+  aliases:
+  - Breeding API Project
+  - plantbreeding
 - id: broad-institute
   name: Broad Institute of MIT and Harvard
   type: institution
@@ -310,6 +324,12 @@ stewards:
   type: standards-body
   url: https://www.ietf.org/
   aliases: []
+- id: ipk-gatersleben
+  name: Leibniz Institute of Plant Genetics and Crop Plant Research (IPK)
+  type: institution
+  url: https://www.ipk-gatersleben.de/
+  aliases:
+  - IPK Gatersleben
 - id: isa-tools-community
   name: ISA-Tools community
   type: community
@@ -330,6 +350,12 @@ stewards:
   type: institution
   url: https://materialsproject.org/
   aliases: []
+- id: miappe-community
+  name: MIAPPE Community
+  type: community
+  url: https://www.miappe.org/
+  aliases:
+  - Minimum Information About Plant Phenotyping Experiments
 - id: mlcommons
   name: MLCommons
   type: consortium
@@ -563,6 +589,13 @@ stewards:
   type: community
   url: https://sbml.org/
   aliases: []
+- id: sbol-community
+  name: SBOL Community
+  type: community
+  url: https://sbolstandard.org/
+  aliases:
+  - SynBioDex
+  - Synthetic Biology Open Language
 - id: schema-org-community
   name: Schema.org community
   type: community

@@ -8,6 +8,7 @@ Choose among model languages, simulation-experiment descriptions, archive packag
 
 | Integration problem | Strongest starting point | Why | Boundary |
 |---|---|---|---|
+| Exchange synthetic-biology genetic designs | [resource:synthetic-biology-open-language-sbol] | RDF design model with components, sequences, interactions, constraints, and validation rules | Design exchange is not executable systems-biology model semantics |
 | Exchange biochemical reaction-network models | [resource:systems-biology-markup-language-sbml] | Normative mathematical semantics, Level 3 package system, independent simulators, and public conformance tests | Does not describe a complete simulation experiment or bundle external files |
 | Exchange modular equation-based physiological models | [resource:cellml] | Explicit components, variables, units, imports, resets, and model composition | Biochemical pathway packages and broad reaction-network semantics are stronger in SBML |
 | Exchange what simulation to run and what outputs to produce | [resource:simulation-experiment-description-markup-language-sed-ml] | Software-independent models, changes, simulations, tasks, data generators, and outputs | Prospective experiment description is distinct from execution traces and workflow provenance |

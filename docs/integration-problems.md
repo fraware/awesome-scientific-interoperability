@@ -481,7 +481,7 @@ Independent modeling tools must exchange a quantitative model, describe the simu
 
 ### Starting point
 
-Use [resource:systems-biology-markup-language-sbml] for biochemical and systems-biology reaction-network models and [resource:cellml] for modular equation-based physiological models with explicit units and imports. Describe model changes, simulations, repeated tasks, data processing, and requested outputs with [resource:simulation-experiment-description-markup-language-sed-ml]. Package the complete study with [resource:combine-omex-archive].
+Use [resource:synthetic-biology-open-language-sbol] for genetic design exchange, [resource:systems-biology-markup-language-sbml] for biochemical and systems-biology reaction-network models, and [resource:cellml] for modular equation-based physiological models with explicit units and imports. Describe model changes, simulations, repeated tasks, data processing, and requested outputs with [resource:simulation-experiment-description-markup-language-sed-ml]. Package the complete study with [resource:combine-omex-archive].
 
 Validate implementation behavior separately with [resource:sbml-test-suite] and [resource:biosimulators-test-suite]. These suites test documented contracts; they do not establish scientific correctness of a model or equivalence for untested optional features.
 
@@ -625,7 +625,7 @@ Use [resource:ga4gh-variation-representation-specification-vrs] for normalized v
 
 [problem:preserve-sequence-and-ecology-context]
 
-Use [resource:minimum-information-about-any-sequence-mixs] for sequence-associated sample and environmental metadata, [resource:ecological-metadata-language-eml] for complete ecological dataset descriptions, [resource:igsn-id] for persistent sample identity, [resource:darwin-core] for biodiversity records, and [resource:isa-json] for investigation, study, and assay structure. See the [ecology and sequence-context guide](decision-guides/ecology-and-sequence-context-metadata.md).
+Use [resource:minimum-information-about-any-sequence-mixs] for sequence-associated sample and environmental metadata, [resource:ecological-metadata-language-eml] for complete ecological dataset descriptions, [resource:igsn-id] for persistent sample identity, [resource:darwin-core] for biodiversity records, and [resource:isa-json] for investigation, study, and assay structure. For plant phenotyping metadata use [resource:minimum-information-about-plant-phenotyping-experiments-miappe], and for breeding-database exchange use [resource:breeding-api-brapi]. See the [ecology and sequence-context guide](decision-guides/ecology-and-sequence-context-metadata.md).
 
 ## 19. Exchange mass-spectrometry primary data
 

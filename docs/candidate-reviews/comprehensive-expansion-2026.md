@@ -307,3 +307,13 @@ Seven deferred-family-review records received durable outcomes without main-list
 - openMINDS closed as represented by BIDS and NWB.
 
 MIAPPE, BrAPI, and SBOL remain deferred only for a focused admission PR in the same review cycle. Evidence remains AI-assisted author review pending human maintainer approval.
+
+## Plant/agriculture and SBOL admissions (2026-08-02)
+
+Focused admission of MIAPPE, BrAPI, and SBOL closes the remaining deferred plant/agriculture and biological-design family reviews:
+
+- MIAPPE supplies the plant-phenotyping metadata exemplar complementary to EML, MIxS, and ISA-JSON.
+- BrAPI supplies the breeding-database API exemplar with separately operated Cassavabase and IPK implementations.
+- SBOL supplies synthetic-biology design exchange complementary to SBML/CellML executable models.
+
+Evidence remains AI-assisted author review pending human maintainer approval. No `multiple-independent` claim is made for MIAPPE or SBOL; BrAPI independence is limited to distinct server operators documented in the BrAPI servers directory.
