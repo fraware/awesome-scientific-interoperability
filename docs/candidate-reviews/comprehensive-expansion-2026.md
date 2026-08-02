@@ -296,3 +296,14 @@ The stacked Issue #44 Batch F candidate tree proposes admission of NeuroML and S
 ## Batch G implementation status
 
 The stacked Issue #44 Batch G candidate tree proposes admission of OME Data Model and OME-TIFF, IVOA ObsCore/ObsTAP, IVOA SAMP, and ASDF. The four mechanisms retain separate decision roles: installed-base microscopy files, federated observation discovery, interactive astronomy application messaging, and hierarchical schema-aware scientific data. Their IDs are removed from the bioimaging-astronomy candidate shard and recorded in `completed_candidate_ids`; the conservation invariant remains `unresolved candidates + completed candidate IDs = 61`. Evidence remains AI-assisted author review pending human maintainer approval.
+
+## Deferred family adjudication (2026-08-02)
+
+Seven deferred-family-review records received durable outcomes without main-list admission:
+
+- GA4GH Beacon v2 and OGC GeoPackage moved to the structured watchlist with concrete promotion and rejection conditions.
+- BioPAX and GeoParquet closed as rejected-out-of-scope.
+- SSP and DCP closed as rejected-represented-by FMI.
+- openMINDS closed as represented by BIDS and NWB.
+
+MIAPPE, BrAPI, and SBOL remain deferred only for a focused admission PR in the same review cycle. Evidence remains AI-assisted author review pending human maintainer approval.

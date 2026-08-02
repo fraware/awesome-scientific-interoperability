@@ -6,20 +6,21 @@ candidates:
   candidate_section: Metadata and Semantics
   coverage_family: neuroscience-metadata-knowledge-graph
   priority: P2
-  disposition: deferred-family-review
+  disposition: rejected-represented-by
+  represented_by_resource_ids:
+  - brain-imaging-data-structure-bids
+  - neurodata-without-borders-nwb
   mechanism: Schema and controlled-term ecosystem for interoperable neuroscience metadata and knowledge
     graphs.
   why_distinct: Potential complement to BIDS and NWB at the semantic metadata layer.
   primary_sources:
   - https://openminds.ebrains.eu/
   - https://github.com/HumanBrainProject/openMINDS
-  evidence_notes: openMINDS is a substantial EBRAINS metadata ecosystem, but BIDS and NWB already cover
-    neuroimaging/neurophysiology exchange. Broader independent reuse should be reviewed as a family before
-    admission.
-  next_step: Closed as deferred under neuroscience-metadata-after-bids-nwb; monitor independent deployments
-    outside originating infrastructure until the scheduled review.
-  deferred_family_id: neuroscience-metadata-after-bids-nwb
-  scheduled_review: '2027-02-02'
+  evidence_notes: openMINDS is a substantial EBRAINS metadata ecosystem, but BIDS and NWB already provide
+    the neuroimaging and neurophysiology exchange decisions for this corpus. Broader independent reuse
+    outside originating infrastructure is insufficient for a third neuroscience metadata main-list entry.
+  next_step: Closed as represented by brain-imaging-data-structure-bids and neurodata-without-borders-nwb;
+    reopen only with independent multi-operator deployments and an approved metadata-layer guide.
 - id: nifti
   name: NIfTI
   official_url: https://nifti.nimh.nih.gov/

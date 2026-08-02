@@ -433,6 +433,12 @@ references:
   type: conformance-suite
   publisher: docs.biosimulators.org
   accessed_on: '2026-08-01'
+- id: docs-genomebeacons-org-root
+  title: Beacon Protocol Documentation
+  url: https://docs.genomebeacons.org/
+  type: specification
+  publisher: docs.genomebeacons.org
+  accessed_on: '2026-08-02'
 - id: docs-identifiers-org-root
   title: Identifiers.org
   url: https://docs.identifiers.org/
@@ -709,6 +715,12 @@ references:
   type: specification
   publisher: ga4gh.github.io
   accessed_on: '2026-08-02'
+- id: ga4gh-org-product-beacon-api
+  title: GA4GH Beacon API product page
+  url: https://www.ga4gh.org/product/beacon-api/
+  type: governance-source
+  publisher: ga4gh.org
+  accessed_on: '2026-08-02'
 - id: ga4gh-org-product-data-repository-service-drs
   title: GA4GH Data Repository Service (DRS)
   url: https://www.ga4gh.org/product/data-repository-service-drs/
@@ -792,6 +804,12 @@ references:
   url: https://www.gensc.org/
   type: governance-source
   publisher: Genomic Standards Consortium
+  accessed_on: '2026-08-02'
+- id: geopackage-org-root
+  title: OGC GeoPackage
+  url: https://www.geopackage.org/
+  type: specification
+  publisher: geopackage.org
   accessed_on: '2026-08-02'
 - id: github-com-alleninstitute-bmtk
   title: Brain Modeling Toolkit
@@ -2101,6 +2119,12 @@ references:
   type: governance-source
   publisher: ogc.org
   accessed_on: '2026-08-01'
+- id: ogc-org-standard-geopackage
+  title: OGC GeoPackage Encoding Standard
+  url: https://www.ogc.org/standard/geopackage/
+  type: specification
+  publisher: ogc.org
+  accessed_on: '2026-08-02'
 - id: ogc-org-standards-openeo
   title: openEO API
   url: https://www.ogc.org/standards/openeo/

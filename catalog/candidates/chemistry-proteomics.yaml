@@ -27,19 +27,18 @@ candidates:
   candidate_section: Metadata and Semantics
   coverage_family: biological-pathway-knowledge-exchange
   priority: P1
-  disposition: deferred-family-review
-  deferred_family_id: biological-design-and-pathway-semantics
-  scheduled_review: '2027-02-02'
+  disposition: rejected-out-of-scope
   mechanism: OWL ontology for exchanging pathways, molecular interactions, entities, evidence, provenance, and cross-references.
   why_distinct: Adds pathway knowledge exchange across databases and analysis tools.
   primary_sources:
   - https://www.biopax.org/
   - https://www.biopax.org/release/
   - https://github.com/BioPAX/Paxtools
-  evidence_notes: Stable pathway-knowledge ontology, but current maintenance cadence and overlap with SBML/knowledge
-    systems require a joint family decision with SBOL rather than immediate admission.
-  next_step: Closed as deferred under biological-design-and-pathway-semantics with SBOL until the scheduled family
-    review.
+  evidence_notes: BioPAX remains a historically important pathway-knowledge ontology, but maintenance cadence and
+    decision value are weaker than executable model exchange already covered by SBML and broader knowledge-system
+    entries. Pathway knowledge exchange does not clear the North-Star bar for a separate main-list exemplar here.
+  next_step: Closed as out of scope; reopen only if a dedicated pathway-knowledge decision guide is approved with
+    renewed stewardship and independent exchange evidence.
 - id: systems-biology-graphical-notation-sbgn
   name: Systems Biology Graphical Notation (SBGN)
   official_url: https://sbgn.github.io/

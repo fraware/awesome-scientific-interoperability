@@ -6,7 +6,9 @@ candidates:
   candidate_section: Data and Digital Objects
   coverage_family: geospatial-data-exchange
   priority: P1
-  disposition: deferred-family-review
+  disposition: watchlist
+  current_repository_state: watchlist
+  review_due_on: '2027-02-02'
   mechanism: SQLite-based standard for portable vector features, tile matrices, attributes, extensions,
     and metadata.
   why_distinct: Adds an offline and embedded geospatial exchange contract complementary to OGC APIs and
@@ -15,30 +17,28 @@ candidates:
   - https://www.geopackage.org/
   - https://www.ogc.org/standard/geopackage/
   - https://github.com/opengeospatial/geopackage
-  evidence_notes: Credible OGC portable geospatial package, but the catalog already admits OGC API Features/Coverages
-    and STAC. Further OGC exchange formats need a family budget rather than piecemeal admission.
-  next_step: Closed as deferred under ogc-geospatial-exchange-concentration until a scheduled family review
-    compares GeoPackage, GeoParquet, and API-centric entries.
-  deferred_family_id: ogc-geospatial-exchange-concentration
-  scheduled_review: '2027-02-02'
+  evidence_notes: GeoPackage is a mature OGC portable geospatial package, but the catalog already admits OGC
+    API Features, OGC API Coverages, and STAC. Further OGC file-package entries require an explicit family
+    budget rather than piecemeal admission.
+  next_step: Monitor under catalog/watchlist.yaml; promote only after an OGC exchange-family policy budgets
+    a portable file-package role distinct from API and STAC discovery surfaces.
 - id: geoparquet
   name: GeoParquet
   official_url: https://geoparquet.org/
   candidate_section: Data and Digital Objects
   coverage_family: cloud-geospatial-data-exchange
   priority: P1
-  disposition: deferred-family-review
+  disposition: rejected-out-of-scope
   mechanism: Open metadata and encoding specification for storing geospatial vector data in Apache Parquet.
   why_distinct: Adds cloud-analytics geospatial interoperability not provided by feature-service APIs.
   primary_sources:
   - https://geoparquet.org/
   - https://github.com/opengeospatial/geoparquet
-  evidence_notes: Promising cloud-native geospatial encoding, but governance maturity and OGC-family concentration
-    require a joint review with GeoPackage rather than solo admission.
-  next_step: Closed as deferred under ogc-geospatial-exchange-concentration; keep independent of bare
-    Parquet substrate discussions.
-  deferred_family_id: ogc-geospatial-exchange-concentration
-  scheduled_review: '2027-02-02'
+  evidence_notes: GeoParquet is a promising cloud-native geospatial encoding, but governance maturity and
+    OGC-family concentration relative to already admitted OGC APIs and STAC do not justify main-list admission.
+    Bare Parquet remains a generic substrate outside scope.
+  next_step: Closed as out of scope for the current corpus; reopen only if GeoPackage or an approved
+    cloud-geospatial package role is admitted and GeoParquet still offers a distinct decision.
 - id: ogc-sensorml
   name: OGC SensorML
   official_url: https://www.ogc.org/standard/sensorml/

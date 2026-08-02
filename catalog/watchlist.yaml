@@ -1,5 +1,5 @@
 watchlist_version: 1.1.0
-reviewed_on: '2026-08-01'
+reviewed_on: '2026-08-02'
 items:
 - id: agent2agent-a2a-protocol
   name: Agent2Agent (A2A) Protocol
@@ -62,6 +62,30 @@ items:
   - Absorbed into a broader RO-Crate or policy standard without a distinct mechanism.
   source_refs:
   - ref_id: zenodo-org-records-10376350
+    role: technical-definition
+- id: ga4gh-beacon-v2
+  name: GA4GH Beacon v2
+  url: https://www.ga4gh.org/product/beacon-api/
+  candidate_section: Identifiers and Discovery
+  status: needs-boundary-decision
+  reason: Federated genomic discovery is distinct, but GA4GH family concentration after VRS, Phenopackets,
+    htsget, and refget blocks immediate admission.
+  missing_evidence:
+  - An explicit GA4GH discovery-family policy that budgets another discovery role beyond Service Registry
+    and Phenopackets.
+  - At least two independently operated Beacon v2 federation deployments with public technical artifacts.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-02-02'
+  promotion_conditions:
+  - Family policy documents a distinct federated discovery decision not covered by existing GA4GH entries.
+  - Two or more independent Beacon v2 networks publish inspectable deployment and query-contract evidence.
+  rejection_conditions:
+  - Remains redundant with Service Registry, Phenopackets, or other admitted discovery surfaces.
+  - GA4GH concentration policy continues to exclude further discovery products.
+  source_refs:
+  - ref_id: ga4gh-org-product-beacon-api
+    role: stewardship
+  - ref_id: docs-genomebeacons-org-root
     role: technical-definition
 - id: galaxy
   name: Galaxy
@@ -165,6 +189,31 @@ items:
   source_refs:
   - ref_id: modelcontextprotocol-io-registry-about
     role: technical-definition
+- id: ogc-geopackage
+  name: OGC GeoPackage
+  url: https://www.geopackage.org/
+  candidate_section: Data and Digital Objects
+  status: needs-boundary-decision
+  reason: Mature portable geospatial package, deferred pending OGC file-package family budget against API
+    Features, Coverages, and STAC.
+  missing_evidence:
+  - An OGC exchange-family policy that budgets a portable file-package exemplar distinct from APIs and STAC.
+  - Decision-guide comparison showing GeoPackage answers a North-Star problem not covered by admitted
+    geospatial entries.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-02-02'
+  promotion_conditions:
+  - Family policy selects GeoPackage as the portable geospatial package role with explicit API/STAC boundaries.
+  - Primary-source evidence supports at least reference-and-others implementation status without substrate
+    inflation.
+  rejection_conditions:
+  - OGC concentration policy keeps file packages out of the main list.
+  - STAC and OGC API Features remain sufficient for the catalog's geospatial decision surface.
+  source_refs:
+  - ref_id: geopackage-org-root
+    role: technical-definition
+  - ref_id: ogc-org-standard-geopackage
+    role: stewardship
 - id: open-digital-rights-language-odrl
   name: Open Digital Rights Language (ODRL)
   url: https://www.w3.org/TR/odrl-model/

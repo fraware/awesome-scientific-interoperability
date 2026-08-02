@@ -31,8 +31,8 @@ class WatchlistTests(unittest.TestCase):
     def test_seed_size(self) -> None:
         watchlist = module.load_watchlist()
         prose = module.prose_entries(PROSE_PATH.read_text(encoding="utf-8"))
-        self.assertEqual(len(watchlist["items"]), 16)
-        self.assertEqual(len(prose), 16)
+        self.assertEqual(len(watchlist["items"]), 18)
+        self.assertEqual(len(prose), 18)
 
     def test_watchlist_does_not_count_toward_main_list(self) -> None:
         import validate_catalog
