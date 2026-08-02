@@ -48,6 +48,12 @@ resources:
   - data-governance
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: ga4gh-passports
   name: GA4GH Passports
   url: https://www.ga4gh.org/product/ga4gh-passports/
@@ -95,6 +101,12 @@ resources:
   - data-governance
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: model-context-protocol-mcp
   name: Model Context Protocol (MCP)
   url: https://modelcontextprotocol.io/specification/2026-07-28
@@ -143,6 +155,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: tooluniverse
   name: ToolUniverse
   url: https://zitniklab.hms.harvard.edu/ToolUniverse/en/
@@ -191,3 +209,9 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/

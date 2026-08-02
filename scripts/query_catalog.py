@@ -77,6 +77,7 @@ def apply_filters(
     connects: str | None,
     evidence: str | None,
     resource_id: str | None,
+    review_type: str | None = None,
 ) -> list[dict[str, Any]]:
     results = resources
 
@@ -115,6 +116,12 @@ def apply_filters(
         ]
     if resource_id is not None:
         results = [resource for resource in results if resource.get("id") == resource_id]
+    if review_type is not None:
+        results = [
+            resource
+            for resource in results
+            if (resource.get("review") or {}).get("review_type") == review_type
+        ]
 
     return sort_resources(results)
 
@@ -161,6 +168,7 @@ def resource_record(resource: dict[str, Any]) -> dict[str, Any]:
         "validates": [
             item["resource_id"] for item in relations if item.get("type") == "validates"
         ],
+        "review_type": (resource.get("review") or {}).get("review_type"),
         "boundary_note": resource["boundary_note"],
     }
 
@@ -224,6 +232,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     )
     parser.add_argument("--id", dest="resource_id", help="Exact resource identifier")
     parser.add_argument(
+        "--review-type",
+        choices=("author", "maintainer", "independent"),
+        help="Filter by review provenance type",
+    )
+    parser.add_argument(
         "--format",
         choices=("markdown", "json"),
         default="markdown",
@@ -261,6 +274,7 @@ def main(argv: list[str] | None = None) -> int:
         connects=args.connects,
         evidence=args.evidence,
         resource_id=args.resource_id,
+        review_type=args.review_type,
     )
 
     if args.format == "json":

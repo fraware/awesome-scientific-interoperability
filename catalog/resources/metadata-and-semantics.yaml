@@ -47,6 +47,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: climate-and-forecast-cf-metadata-conventions
   name: Climate and Forecast (CF) Metadata Conventions
   url: https://cfconventions.org/
@@ -91,6 +97,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: croissant
   name: Croissant
   url: https://docs.mlcommons.org/croissant/docs/croissant-spec-1.1.html
@@ -141,6 +153,12 @@ resources:
   - research-data
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: darwin-core
   name: Darwin Core
   url: https://dwc.tdwg.org/
@@ -185,6 +203,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: ddi-lifecycle
   name: DDI Lifecycle
   url: https://ddialliance.org/Specification/DDI-Lifecycle/
@@ -235,6 +259,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: edam-ontology
   name: EDAM Ontology
   url: https://edamontology.org/
@@ -283,6 +313,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: obo-foundry
   name: OBO Foundry
   url: https://obofoundry.org/
@@ -327,6 +363,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: qudt
   name: QUDT
   url: https://www.qudt.org/
@@ -370,6 +412,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: schema-org
   name: Schema.org
   url: https://schema.org/
@@ -420,6 +468,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: sdmx
   name: SDMX
   url: https://sdmx.org/standards-2/
@@ -481,6 +535,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: simple-knowledge-organization-system-skos
   name: Simple Knowledge Organization System (SKOS)
   url: https://www.w3.org/TR/skos-reference/
@@ -525,6 +585,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: sosa-ssn
   name: SOSA/SSN
   url: https://www.w3.org/TR/vocab-ssn/
@@ -572,6 +638,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: spatiotemporal-asset-catalog-stac
   name: SpatioTemporal Asset Catalog (STAC)
   url: https://stacspec.org/
@@ -624,6 +696,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: unified-code-for-units-of-measure-ucum
   name: Unified Code for Units of Measure (UCUM)
   url: https://ucum.org/
@@ -671,6 +749,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: w3c-data-catalog-vocabulary-dcat
   name: W3C Data Catalog Vocabulary (DCAT)
   url: https://www.w3.org/TR/vocab-dcat-3/
@@ -719,6 +803,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: isa-json
   name: ISA-JSON
   url: https://isa-specs.readthedocs.io/en/latest/isajson.html
@@ -772,3 +862,9 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/

@@ -49,6 +49,12 @@ resources:
   - laboratory-data
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: analytical-information-markup-language-animl
   name: Analytical Information Markup Language (AnIML)
   url: https://www.animl.org/
@@ -96,6 +102,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: autoprotocol
   name: Autoprotocol
   url: https://github.com/autoprotocol/autoprotocol-python
@@ -144,6 +156,12 @@ resources:
   - laboratory-automation
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: hl7-fhir
   name: HL7 FHIR
   url: https://hl7.org/fhir/
@@ -196,6 +214,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: loinc
   name: LOINC
   url: https://loinc.org/
@@ -244,6 +268,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: opc-ua-laboratory-and-analytical-device-standard-lads
   name: OPC UA Laboratory and Analytical Device Standard (LADS)
   url: https://opcfoundation.org/markets-collaboration/lads/
@@ -290,6 +320,12 @@ resources:
   infrastructure_contexts:
   - analytical-instruments
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: sila-2
   name: SiLA 2
   url: https://sila2.gitlab.io/sila_base/
@@ -339,6 +375,12 @@ resources:
   - laboratory-automation
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: ogc-sensorthings-api
   name: OGC SensorThings API
   url: https://www.ogc.org/standards/sensorthings/
@@ -390,6 +432,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: dicomweb
   name: DICOMweb
   url: https://www.dicomstandard.org/using/dicomweb
@@ -438,3 +486,9 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/

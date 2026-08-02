@@ -4,6 +4,7 @@ thresholds:
   max_single_domain_share: 0.30
   max_general_purpose_substrate_share: 0.10
   max_implementations_per_family: 2
+  max_per_family_role_bucket: 2
 general_purpose_substrate_ids:
   - bagit
   - p-plan
@@ -17,6 +18,16 @@ implementation_resource_kinds:
   - implementation
   - execution-service
   - conformance-artifact
+family_role_buckets:
+  runner:
+    resource_kinds:
+      - implementation
+  conformance:
+    resource_kinds:
+      - conformance-artifact
+  multi-engine-service:
+    resource_kinds:
+      - execution-service
 standard_families:
   cwl:
     - common-workflow-language-cwl

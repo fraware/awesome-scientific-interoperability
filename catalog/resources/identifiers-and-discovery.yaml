@@ -51,6 +51,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: datacite-metadata-schema-and-rest-api
   name: DataCite Metadata Schema and REST API
   url: https://support.datacite.org/docs/api
@@ -104,6 +110,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: fairsharing
   name: FAIRsharing
   url: https://fairsharing.org/
@@ -150,6 +162,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: ga4gh-service-info
   name: GA4GH Service Info
   url: https://www.ga4gh.org/product/service-info/
@@ -197,6 +215,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: ga4gh-service-registry
   name: GA4GH Service Registry
   url: https://www.ga4gh.org/product/service-registry/
@@ -247,6 +271,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: ga4gh-tool-registry-service-trs
   name: GA4GH Tool Registry Service (TRS)
   url: https://www.ga4gh.org/product/tool-registry-service-trs/
@@ -300,6 +330,12 @@ resources:
   - computational-workflows
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: identifiers-org
   name: Identifiers.org
   url: https://identifiers.org/
@@ -349,6 +385,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: igsn-id
   name: IGSN ID
   url: https://ev.igsn.org/about-igsns
@@ -397,6 +439,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: orcid
   name: ORCID
   url: https://info.orcid.org/what-is-orcid/
@@ -447,6 +495,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: research-organization-registry-ror
   name: Research Organization Registry (ROR)
   url: https://ror.org/about/
@@ -494,6 +548,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: optimade
   name: OPTIMADE
   url: https://www.optimade.org/specification/latest/
@@ -541,3 +601,9 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/

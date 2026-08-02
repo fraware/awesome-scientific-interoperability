@@ -51,6 +51,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: nanopublications
   name: Nanopublications
   url: https://nanopub.net/
@@ -103,6 +109,12 @@ resources:
   - knowledge-representation
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: open-research-knowledge-graph-orkg
   name: Open Research Knowledge Graph (ORKG)
   url: https://www.orkg.org/
@@ -151,6 +163,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: openaire-research-graph
   name: OpenAIRE Research Graph
   url: https://graph.openaire.eu/
@@ -201,6 +219,12 @@ resources:
   - research-information
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: scholix
   name: Scholix
   url: https://github.com/scholix/schema
@@ -255,3 +279,9 @@ resources:
   - research-data
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/

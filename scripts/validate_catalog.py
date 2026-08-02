@@ -303,6 +303,17 @@ def semantic_errors(
                         f"{reference_date.isoformat()}"
                     )
 
+        review = resource.get("review")
+        if isinstance(review, dict):
+            review_on = review.get("reviewed_on")
+            if isinstance(reviewed_on, str) and isinstance(review_on, str) and reviewed_on != review_on:
+                errors.append(
+                    f"{resource_id}: review.reviewed_on {review_on!r} must match reviewed_on {reviewed_on!r}"
+                )
+            review_type = review.get("review_type")
+            if review_type not in {"author", "maintainer", "independent"}:
+                errors.append(f"{resource_id}: unknown review_type {review_type!r}")
+
         relations = resource.get("relations") or []
         seen_relations: set[tuple[str, str]] = set()
         relation_types = relation_type_ids()

@@ -89,6 +89,36 @@
         }
       }
     },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reviewed_by", "review_type", "reviewed_on", "conflict_disclosure"],
+      "properties": {
+        "reviewed_by": {
+          "type": "string",
+          "minLength": 2
+        },
+        "review_type": {
+          "enum": ["author", "maintainer", "independent"]
+        },
+        "reviewed_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "reviewed_commit": {
+          "type": "string",
+          "minLength": 7
+        },
+        "conflict_disclosure": {
+          "type": "string",
+          "minLength": 4
+        },
+        "decision_record": {
+          "type": "string",
+          "minLength": 4
+        }
+      }
+    },
     "resource": {
       "type": "object",
       "additionalProperties": false,
@@ -117,7 +147,8 @@
         "boundary_note",
         "reviewed_on",
         "review_due_on",
-        "primary_source_inspected"
+        "primary_source_inspected",
+        "review"
       ],
       "properties": {
         "id": {
@@ -303,6 +334,9 @@
         },
         "primary_source_inspected": {
           "const": true
+        },
+        "review": {
+          "$ref": "#/$defs/review"
         }
       },
       "allOf": [

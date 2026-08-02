@@ -48,6 +48,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: eosc-interoperability-framework
   name: EOSC Interoperability Framework
   url: https://eosc.eu/eosc-interoperability-framework/
@@ -97,6 +103,12 @@ resources:
   - cross-domain
   - european-research
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: fair-digital-object-framework
   name: FAIR Digital Object Framework
   url: https://fairdo.org/specifications/
@@ -143,6 +155,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: fair-principles
   name: FAIR Principles
   url: https://www.go-fair.org/fair-principles/
@@ -191,3 +209,9 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/

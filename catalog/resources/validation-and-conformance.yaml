@@ -48,6 +48,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: cwl-conformance-tests
   name: CWL Conformance Tests
   url: https://github.com/common-workflow-language/cwl-v1.2
@@ -98,6 +104,12 @@ resources:
   - computational-workflows
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: ro-crate-validator
   name: RO-Crate Validator
   url: https://github.com/crs4/rocrate-validator
@@ -148,6 +160,12 @@ resources:
   infrastructure_contexts: []
   artifact_classes:
   - research-objects
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: sbml-test-suite
   name: SBML Test Suite
   url: https://sbml.org/software/sbml-test-suite/
@@ -199,3 +217,9 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
