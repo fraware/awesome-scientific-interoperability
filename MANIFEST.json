@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-02",
-  "file_count": 142,
+  "file_count": 156,
   "files": [
     {
       "path": ".github/CODEOWNERS",
@@ -31,6 +31,11 @@
       "path": ".github/pull_request_template.md",
       "sha256": "e278921e2bd9becede1db38c2db324bdd89568f98e38f9e069f85e61a93b9eaf",
       "bytes": 2215
+    },
+    {
+      "path": ".github/workflows/expansion-candidates.yml",
+      "sha256": "8516ce42bd7b77f65d4be717eb51b61e8b902b77fec85d166f7ecf5927190944",
+      "bytes": 1062
     },
     {
       "path": ".github/workflows/links.yml",
@@ -66,6 +71,51 @@
       "path": "archive.md",
       "sha256": "7b4a1f0c9a8b2a437e17d407df816d4b7a3daac6669221f09aa26c29c56bd29e",
       "bytes": 306
+    },
+    {
+      "path": "catalog/candidates/bioimaging-astronomy.yaml",
+      "sha256": "0cec306f08219a4b7a3b6e6aac87f09e317c777fee719d67b4ac4a254731ebe3",
+      "bytes": 6901
+    },
+    {
+      "path": "catalog/candidates/chemistry-proteomics.yaml",
+      "sha256": "5201f9d86e35fd78932dfdc99f373d0960f0c9ae438fe1018821e6f7c7559f9a",
+      "bytes": 5708
+    },
+    {
+      "path": "catalog/candidates/cross-domain-and-emerging.yaml",
+      "sha256": "021160cb7f821d759bf844e9816a42571de63b9d0a260ed54557c467e250525b",
+      "bytes": 5575
+    },
+    {
+      "path": "catalog/candidates/ecology-agriculture.yaml",
+      "sha256": "1c77ba45c4e3c667c828633627cbc472f14ec45f30e3a494ec4f67b7889d78b5",
+      "bytes": 3273
+    },
+    {
+      "path": "catalog/candidates/genomics-clinical.yaml",
+      "sha256": "9567f8a13d32435faa3552d3bf9f48cecb4df87fa47f0fc923622e9ee8445480",
+      "bytes": 8323
+    },
+    {
+      "path": "catalog/candidates/geospatial-environmental.yaml",
+      "sha256": "e3e94ba51b62cd49cfc5547731e1af01e70c65758656d98b89f3044179a6888e",
+      "bytes": 5194
+    },
+    {
+      "path": "catalog/candidates/preservation-infrastructure.yaml",
+      "sha256": "4977249f14c7e59a29b489221e7862a497b0cb07a91cc8d041d6e76ff7e676a5",
+      "bytes": 7321
+    },
+    {
+      "path": "catalog/candidates/systems-biology-neuroscience.yaml",
+      "sha256": "e2090a90ee22e993aa45d342b3fe3d44538198a031593abea989e0da625f83a2",
+      "bytes": 7878
+    },
+    {
+      "path": "catalog/expansion-candidates.yaml",
+      "sha256": "d8976d183d10446c5a1d77e7975b2aeeeaae28e0400deaa1a2ec02979cf96880",
+      "bytes": 728
     },
     {
       "path": "catalog/implementations.yaml",
@@ -176,6 +226,11 @@
       "path": "contributing.md",
       "sha256": "1d996c55c585dc2c2c26b2c1e62603da138d42f2c1d4802fde208b74cba4780f",
       "bytes": 3885
+    },
+    {
+      "path": "docs/candidate-reviews/comprehensive-expansion-2026.md",
+      "sha256": "1178c9cb39845502fb101d57972718ff774e1741f7393c9b930690bbda3f5b1e",
+      "bytes": 13303
     },
     {
       "path": "docs/candidate-reviews/experimental-and-biomedical.md",
@@ -448,6 +503,11 @@
       "bytes": 9478
     },
     {
+      "path": "schema/expansion-candidates.schema.json",
+      "sha256": "3fe58fa907248b71909ec28252101d35b86defefb967db3c57ac2aac1595df0b",
+      "bytes": 3136
+    },
+    {
       "path": "schema/implementations.schema.json",
       "sha256": "2dde2422cbc645e3b76c51c74e5dfe1c44619f78e99326322ea40699a3cb06b2",
       "bytes": 2320
@@ -521,6 +581,11 @@
       "path": "scripts/validate_decision_guides.py",
       "sha256": "b0fcc44f782da3c49326709c95dac498743b445026a5c7bafc2f1f3a8c3283fa",
       "bytes": 2655
+    },
+    {
+      "path": "scripts/validate_expansion_candidates.py",
+      "sha256": "3ae99022d8c88176f6ace3cef232020d20cfa151fa85c97dfa06d1571b2f5ae3",
+      "bytes": 6130
     },
     {
       "path": "scripts/validate_problem_index.py",
@@ -666,6 +731,11 @@
       "path": "tests/test_decision_guides.py",
       "sha256": "b8f8ef1c1098270278ebb05b9de9934622ae085c8828b97c8d3cf58c616cc3ee",
       "bytes": 2473
+    },
+    {
+      "path": "tests/test_expansion_candidates.py",
+      "sha256": "f93f8c9c69604f4767ed7d1ad068b9c7b389b0a6c7739468ce711d41aaa7168e",
+      "bytes": 1628
     },
     {
       "path": "tests/test_fail_closed_depth.py",
