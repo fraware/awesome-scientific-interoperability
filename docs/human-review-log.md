@@ -87,7 +87,7 @@ Exclusions and watchlist placements are recorded in the candidate review files a
 
 ## Current corpus status (2026-08-02)
 
-- **Main-list entries:** 105 on the stacked Issue #44 Batch D candidate tree (README and catalog parity enforced by CI).
+- **Main-list entries:** 107 on the stacked Issue #44 Batch E candidate tree (README and catalog parity enforced by CI).
 - **Section review files:** 11 under `docs/reviews/`.
 - **Gap review files:** 4 under `docs/candidate-reviews/`.
 - **Review freshness:** Enforced by `scripts/check_review_freshness.py` in CI.
@@ -169,3 +169,15 @@ Review artifacts:
 - [Ecology and sequence-context guide](decision-guides/ecology-and-sequence-context-metadata.md)
 - [Mass-spectrometry guide](decision-guides/mass-spectrometry-data.md)
 - [Clinical research data models guide](decision-guides/clinical-research-data-models.md)
+
+## Issue #44 Batch E — pending human maintainer review (2026-08-02)
+
+**Scope:** Proposed admission of Oxford Common File Layout (OCFL) and Data Package Standard v2 on top of Batches A through D.
+
+Evidence was classified through AI-assisted primary-source review. The records remain `review_type: author`; no independent human review is claimed. Human review must check OCFL versus BagIt/RO-Crate boundaries, Data Package versus Croissant/RO-Crate boundaries, operator separation for the single modeled independent OCFL implementation, descriptor-scoped validator claims, typed relations, and the preservation/packaging decision guide.
+
+Review artifacts:
+
+- [Data and Digital Objects](reviews/data-and-digital-objects.md)
+- [Repository preservation and data packaging guide](decision-guides/repository-preservation-and-data-packaging.md)
+- [Research object packaging guide](decision-guides/research-object-packaging.md)

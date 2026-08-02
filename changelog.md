@@ -33,6 +33,14 @@ All notable editorial, schema, and maintenance changes for this repository are d
 - Preserved MIAPPE, BrAPI, mzIdentML, mzTab, nmrML, CML, Define-XML, and openEHR as structured boundary candidates.
 - Human maintainer approval remains required before merge.
 
+### Batch E: preservation and packaging
+
+- Proposed Oxford Common File Layout (OCFL) and Data Package Standard v2 as distinct repository-layout and lightweight dataset-descriptor mechanisms.
+- Retained OCFL as `reference-and-others` with one separately operated implementation identity and direct validation-code evidence.
+- Encoded Data Package v2's uneven software migration and descriptor-scoped validator boundary explicitly.
+- Added a repository-preservation and data-packaging decision guide plus packaging problem-path updates.
+- Human maintainer approval remains required before merge.
+
 ## [1.1.0] — 2026-08-01
 
 First decision-oriented release after catalog v2 migration, domain gap reviews, and maintainer governance formalization. Supersedes the v1.0.0 release candidate documented in `docs/validation-report.md` (initial public corpus: 75 main-list entries; no prior annotated tag).

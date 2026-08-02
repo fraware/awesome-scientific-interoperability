@@ -6,7 +6,8 @@ Problem-oriented comparison documents for overlapping interoperability mechanism
 
 | Guide | Scope |
 |-------|-------|
-| [Research object packaging](research-object-packaging.md) | RO-Crate profiles, BagIt, COMBINE/OMEX, FAIR Signposting |
+| [Research object packaging](research-object-packaging.md) | RO-Crate profiles, BagIt, COMBINE/OMEX, FAIR Signposting, OCFL, Data Package |
+| [Repository preservation and data packaging](repository-preservation-and-data-packaging.md) | OCFL, BagIt, RO-Crate, Data Package, Croissant, COMBINE/OMEX |
 | [Provenance and execution evidence](provenance-and-execution-evidence.md) | W3C PROV, P-Plan, CWLProv, Workflow Run RO-Crate, ISO 23494-2, runcrate |
 | [Workflows and execution](workflows-and-execution.md) | CWL, WDL, GA4GH TRS/WES/TES/DRS, WorkflowHub, Sapporo, backends |
 | [Workflow testing and conformance](workflow-testing-and-conformance.md) | CWL Conformance Tests, Workflow Testing RO-Crate, LifeMonitor |

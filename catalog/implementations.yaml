@@ -1,284 +1,6 @@
 implementations_version: 1.0.0
 reviewed_on: '2026-08-02'
 implementations:
-- id: loc-bagit-python
-  name: bagit-python
-  url: https://github.com/LibraryOfCongress/bagit-python
-  implements_resource_id: bagit
-  operator_steward_id: library-of-congress
-  relationship: independent-implementation
-  evidence_ref_ids:
-  - github-com-libraryofcongress-bagit-python
-  - datatracker-ietf-org-doc-html-rfc8493
-- id: archivematica-bagit
-  name: Archivematica
-  url: https://github.com/artefactual/archivematica
-  implements_resource_id: bagit
-  operator_steward_id: artefactual-systems
-  relationship: independent-implementation
-  evidence_ref_ids:
-  - github-com-artefactual-archivematica
-  - archivematica-adr-0006-bagit
-- id: toil-cwl-runner
-  name: Toil
-  url: https://github.com/DataBiosphere/toil
-  implements_resource_id: common-workflow-language-cwl
-  operator_steward_id: databiosphere
-  relationship: independent-implementation
-  evidence_ref_ids:
-  - github-com-databiosphere-toil
-  - commonwl-org-v1-2-conformancetests-html
-- id: arvados-cwl-runner
-  name: Arvados
-  url: https://github.com/arvados/arvados
-  implements_resource_id: common-workflow-language-cwl
-  operator_steward_id: arvados-foundation
-  relationship: independent-implementation
-  evidence_ref_ids:
-  - github-com-arvados-arvados
-  - arvados-org-cwl
-- id: dcm4che-dicomweb
-  name: dcm4che
-  url: https://github.com/dcm4che/dcm4che
-  implements_resource_id: dicomweb
-  operator_steward_id: dcm4che
-  relationship: independent-implementation
-  evidence_ref_ids:
-  - github-com-dcm4che-dcm4che
-  - dicomstandard-org-using-dicomweb
-- id: ohif-dicomweb-viewer
-  name: OHIF Viewer
-  url: https://github.com/OHIF/Viewers
-  implements_resource_id: dicomweb
-  operator_steward_id: ohif
-  relationship: independent-implementation
-  evidence_ref_ids:
-  - github-com-ohif-viewers
-  - dicomstandard-org-using-dicomweb
-- id: dockstore-trs
-  name: Dockstore
-  url: https://github.com/dockstore/dockstore
-  implements_resource_id: ga4gh-tool-registry-service-trs
-  operator_steward_id: dockstore-consortium
-  relationship: independent-implementation
-  evidence_ref_ids:
-  - github-com-dockstore-dockstore
-  - dockstore-org
-- id: workflowhub-trs
-  name: WorkflowHub TRS
-  url: https://workflowhub.eu/ga4gh/trs/v2/
-  implements_resource_id: ga4gh-tool-registry-service-trs
-  operator_steward_id: workflowhub
-  relationship: independent-implementation
-  evidence_ref_ids:
-  - workflowhub-eu-developer-trs
-  - ga4gh-org-product-tool-registry-service-trs
-- id: nomad-optimade-server
-  name: NOMAD OPTIMADE
-  url: https://nomad-lab.eu/prod/rae/optimade/
-  implements_resource_id: optimade
-  operator_steward_id: fairmat-nomad
-  relationship: independent-implementation
-  evidence_ref_ids:
-  - nomad-lab-optimade-info
-  - optimade-providers-dashboard-nmd
-- id: materials-project-optimade-server
-  name: Materials Project OPTIMADE
-  url: https://optimade.materialsproject.org/
-  implements_resource_id: optimade
-  operator_steward_id: materials-project
-  relationship: independent-implementation
-  evidence_ref_ids:
-  - optimade-materialsproject-base
-  - optimade-providers-dashboard-mp
-- id: cromwell-wdl-engine
-  name: Cromwell
-  url: https://github.com/broadinstitute/cromwell
-  implements_resource_id: workflow-description-language-wdl
-  operator_steward_id: broad-institute
-  relationship: independent-implementation
-  evidence_ref_ids:
-  - github-com-broadinstitute-cromwell
-  - openwdl-org-root
-- id: miniwdl-wdl-engine
-  name: miniwdl
-  url: https://github.com/openwdl/miniwdl
-  implements_resource_id: workflow-description-language-wdl
-  operator_steward_id: chanzuckerberg-initiative
-  relationship: independent-implementation
-  notes: CZI-originated WDL runner; repository is hosted under the OpenWDL GitHub org but operated
-    independently of OpenWDL language stewardship.
-  evidence_ref_ids:
-  - github-com-openwdl-miniwdl
-  - miniwdl-readthedocs-getting-started
-- id: mcp-specification-repo
-  name: MCP specification repository
-  url: https://github.com/modelcontextprotocol/specification
-  implements_resource_id: model-context-protocol-mcp
-  operator_steward_id: model-context-protocol-project
-  relationship: official-implementation
-  evidence_ref_ids:
-  - github-com-modelcontextprotocol-specification
-- id: mcp-servers-official
-  name: MCP servers (official monorepo)
-  url: https://github.com/modelcontextprotocol/servers
-  implements_resource_id: model-context-protocol-mcp
-  operator_steward_id: model-context-protocol-project
-  relationship: official-implementation
-  evidence_ref_ids:
-  - github-com-modelcontextprotocol-servers
-- id: copasi-sbml
-  name: COPASI
-  url: https://github.com/copasi/COPASI
-  implements_resource_id: systems-biology-markup-language-sbml
-  operator_steward_id: copasi-project
-  relationship: independent-implementation
-  supported_versions:
-  - SBML Levels 1-3
-  evidence_ref_ids:
-  - github-com-copasi-copasi
-  - copasi-org-sbml-import-export
-  - sbml-org-level-3-version-2-core-release-2
-  notes: Imports and exports SBML through a separately governed simulation environment.
-- id: tellurium-sbml
-  name: Tellurium
-  url: https://github.com/sys-bio/tellurium
-  implements_resource_id: systems-biology-markup-language-sbml
-  operator_steward_id: tellurium-project
-  relationship: independent-implementation
-  supported_versions:
-  - SBML through libRoadRunner and libSBML
-  evidence_ref_ids:
-  - github-com-sys-bio-tellurium
-  - tellurium-readthedocs-quickstart
-  - sbml-org-level-3-version-2-core-release-2
-  notes: Loads and simulates SBML through an independently operated Python modeling environment.
-- id: libsedml
-  name: libSEDML
-  url: https://github.com/fbergmann/libSEDML
-  implements_resource_id: simulation-experiment-description-markup-language-sed-ml
-  operator_steward_id: sed-ml-community
-  relationship: reference-implementation
-  supported_versions:
-  - SED-ML L1V1-L1V5
-  evidence_ref_ids:
-  - github-com-fbergmann-libsedml
-  - sed-ml-org-showcase
-  - sed-ml-org-specifications
-  notes: Reference multi-language library for reading and writing SED-ML.
-- id: copasi-sedml
-  name: COPASI
-  url: https://copasi.org/Support/User_Manual/Importing_and_Exporting/Importing_and_Exporting_SEDML_Files/
-  implements_resource_id: simulation-experiment-description-markup-language-sed-ml
-  operator_steward_id: copasi-project
-  relationship: independent-implementation
-  supported_versions:
-  - SED-ML subset; L1V1-L1V5 listed by SED-ML showcase
-  evidence_ref_ids:
-  - github-com-copasi-copasi
-  - copasi-org-sedml-import-export
-  - sed-ml-org-showcase
-  notes: Imports and exports a documented subset of SED-ML simulation experiments.
-- id: tellurium-sedml
-  name: Tellurium
-  url: https://tellurium.readthedocs.io/en/latest/
-  implements_resource_id: simulation-experiment-description-markup-language-sed-ml
-  operator_steward_id: tellurium-project
-  relationship: independent-implementation
-  supported_versions:
-  - SED-ML L1V3 documented
-  evidence_ref_ids:
-  - github-com-sys-bio-tellurium
-  - sed-ml-org-showcase
-  notes: Executes documented SED-ML examples through an independently operated modeling environment.
-- id: libcellml
-  name: libCellML
-  url: https://github.com/cellml/libcellml
-  implements_resource_id: cellml
-  operator_steward_id: cellml-community
-  relationship: reference-implementation
-  supported_versions:
-  - CellML 2.0
-  evidence_ref_ids:
-  - github-com-cellml-libcellml
-  - libcellml-org-root
-  - cellml-org-specifications-cellml-2-0
-  notes: Primary C++ and Python library targeting full CellML 2.0 support.
-- id: opencor-cellml
-  name: OpenCOR
-  url: https://opencor.ws/
-  implements_resource_id: cellml
-  operator_steward_id: opencor-project
-  relationship: official-implementation
-  supported_versions:
-  - CellML 1.1 and 2.0 workflows
-  evidence_ref_ids:
-  - opencor-ws-simulation-experiment-view
-  - cellml-org-specifications-cellml-2-0
-  notes: CellML modeling and simulation environment with SED-ML and COMBINE Archive support.
-- id: mne-bids
-  name: MNE-BIDS
-  url: https://github.com/mne-tools/mne-bids
-  implements_resource_id: brain-imaging-data-structure-bids
-  operator_steward_id: mne-project
-  relationship: independent-implementation
-  supported_versions:
-  - BIDS 1.x; electrophysiology and neuroimaging scopes
-  evidence_ref_ids:
-  - github-com-mne-tools-mne-bids
-  - mne-tools-mne-bids-stable
-  - bids-specification-readthedocs-stable
-  notes: Creates and reads BIDS-compatible datasets through the separately governed MNE project.
-- id: heudiconv-bids
-  name: HeuDiConv
-  url: https://github.com/nipy/heudiconv
-  implements_resource_id: brain-imaging-data-structure-bids
-  operator_steward_id: nipy-community
-  relationship: independent-implementation
-  supported_versions:
-  - BIDS 1.x; DICOM conversion scope
-  evidence_ref_ids:
-  - github-com-nipy-heudiconv
-  - heudiconv-readthedocs-root
-  - bids-specification-readthedocs-stable
-  notes: Converts DICOM acquisitions into BIDS layouts through the independent NiPy ecosystem.
-- id: bids-validator
-  name: BIDS Validator
-  url: https://github.com/bids-standard/bids-validator
-  implements_resource_id: brain-imaging-data-structure-bids
-  operator_steward_id: bids-community
-  relationship: validator
-  supported_versions:
-  - Current BIDS schema and selectable stable schemas
-  evidence_ref_ids:
-  - github-com-bids-standard-bids-validator
-  - bids-validator-readthedocs-web
-  - bids-specification-readthedocs-stable
-  notes: Official schema-driven web, command-line, and library validator for BIDS datasets.
-- id: pynwb
-  name: PyNWB
-  url: https://github.com/NeurodataWithoutBorders/pynwb
-  implements_resource_id: neurodata-without-borders-nwb
-  operator_steward_id: neurodata-without-borders
-  relationship: reference-implementation
-  supported_versions:
-  - NWB 2.x
-  evidence_ref_ids:
-  - github-com-neurodatawithoutborders-pynwb
-  - nwb-org-nwb-schema
-  notes: Official Python API for reading, writing, and validating NWB files.
-- id: matnwb
-  name: MatNWB
-  url: https://github.com/NeurodataWithoutBorders/matnwb
-  implements_resource_id: neurodata-without-borders-nwb
-  operator_steward_id: neurodata-without-borders
-  relationship: official-implementation
-  supported_versions:
-  - NWB 2.x
-  evidence_ref_ids:
-  - github-com-neurodatawithoutborders-matnwb
-  - nwb-org-nwb-schema
-  notes: Official MATLAB API generated from NWB schemas for cross-language file exchange.
 - id: aqnwb
   name: AqNWB
   url: https://github.com/NeurodataWithoutBorders/aqnwb
@@ -292,67 +14,24 @@ implementations:
   - nwb-org-aqnwb
   - nwb-org-nwb-schema
   notes: C++ acquisition API with cross-API and NWB Inspector validation tests.
-- id: nwb-inspector
-  name: NWB Inspector
-  url: https://github.com/NeurodataWithoutBorders/nwbinspector
-  implements_resource_id: neurodata-without-borders-nwb
-  operator_steward_id: neurodata-without-borders
-  relationship: validator
-  supported_versions:
-  - NWB 2.x
-  evidence_ref_ids:
-  - github-com-neurodatawithoutborders-nwbinspector
-  - nwb-org-nwbinspector
-  - nwb-org-nwb-schema
-  notes: Official schema and best-practice validator that invokes PyNWB validation by default.
-- id: ome-zarr-py
-  name: ome-zarr-py
-  url: https://github.com/ome/ome-zarr-py
-  implements_resource_id: ome-ngff
-  operator_steward_id: open-microscopy-environment
-  relationship: reference-implementation
-  supported_versions:
-  - OME-Zarr 0.4 and evolving 0.5 support
-  evidence_ref_ids:
-  - github-com-ome-ome-zarr-py
-  - ngff-openmicroscopy-org-0-5
-  notes: Official Python reader, writer, and utility library in the OME ecosystem.
-- id: bioformats2raw-ome-ngff
-  name: bioformats2raw
-  url: https://github.com/glencoesoftware/bioformats2raw
-  implements_resource_id: ome-ngff
-  operator_steward_id: glencoe-software
+- id: archivematica-bagit
+  name: Archivematica
+  url: https://github.com/artefactual/archivematica
+  implements_resource_id: bagit
+  operator_steward_id: artefactual-systems
   relationship: independent-implementation
-  supported_versions:
-  - OME-Zarr 0.4 and 0.5 output
   evidence_ref_ids:
-  - github-com-glencoesoftware-bioformats2raw
-  - ngff-openmicroscopy-org-0-5
-  notes: Separately operated converter that writes OME-Zarr from microscopy formats.
-- id: ome-ngff-validator
-  name: OME-NGFF Validator
-  url: https://ome.github.io/ome-ngff-validator/
-  implements_resource_id: ome-ngff
-  operator_steward_id: open-microscopy-environment
-  relationship: validator
-  supported_versions:
-  - OME-Zarr 0.4 and 0.5 examples
-  evidence_ref_ids:
-  - ome-github-io-ome-ngff-validator
-  - ngff-openmicroscopy-org-0-5
-  notes: Public browser validator for OME-Zarr metadata and hierarchy examples.
-- id: cfitsio-fits
-  name: CFITSIO
-  url: https://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html
-  implements_resource_id: flexible-image-transport-system-fits
-  operator_steward_id: heasarc-nasa-goddard
+  - github-com-artefactual-archivematica
+  - archivematica-adr-0006-bagit
+- id: arvados-cwl-runner
+  name: Arvados
+  url: https://github.com/arvados/arvados
+  implements_resource_id: common-workflow-language-cwl
+  operator_steward_id: arvados-foundation
   relationship: independent-implementation
-  supported_versions:
-  - FITS Standard 4.0 and registered conventions
   evidence_ref_ids:
-  - heasarc-gsfc-nasa-gov-cfitsio
-  - fits-gsfc-nasa-gov-fits-standard
-  notes: NASA-maintained C and Fortran library for reading and writing FITS.
+  - github-com-arvados-arvados
+  - arvados-org-cwl
 - id: astropy-fits
   name: Astropy FITS
   url: https://docs.astropy.org/en/stable/io/fits/
@@ -377,42 +56,6 @@ implementations:
   - docs-astropy-org-fits-verification
   - fits-gsfc-nasa-gov-fits-standard
   notes: Public verification interface for reporting or rejecting FITS standard violations.
-- id: opencadc-tap
-  name: OpenCADC TAP
-  url: https://github.com/opencadc/tap
-  implements_resource_id: ivoa-table-access-protocol-tap
-  operator_steward_id: canadian-astronomy-data-centre
-  relationship: independent-implementation
-  supported_versions:
-  - TAP 1.1
-  evidence_ref_ids:
-  - github-com-opencadc-tap
-  - ivoa-net-documents-tap
-  notes: Independent client and server implementation of TAP 1.1.
-- id: dachs-tap
-  name: GAVO DaCHS
-  url: https://dachs-doc.readthedocs.io/
-  implements_resource_id: ivoa-table-access-protocol-tap
-  operator_steward_id: german-astrophysical-virtual-observatory
-  relationship: independent-implementation
-  supported_versions:
-  - TAP publishing and ADQL services
-  evidence_ref_ids:
-  - dachs-doc-readthedocs-io
-  - ivoa-net-documents-tap
-  notes: Separately operated Virtual Observatory publishing stack with TAP services.
-- id: stilts-taplint
-  name: STILTS taplint
-  url: https://www.star.bris.ac.uk/~mbt/stilts/sun256/taplint.html
-  implements_resource_id: ivoa-table-access-protocol-tap
-  operator_steward_id: starlink-java-project
-  relationship: validator
-  supported_versions:
-  - TAP 1.0 and 1.1 interfaces plus related VO standards
-  evidence_ref_ids:
-  - star-bris-ac-uk-stilts-taplint
-  - ivoa-net-documents-tap
-  notes: Public staged TAP service validator; its documentation explicitly limits comprehensiveness.
 - id: astropy-votable
   name: Astropy VOTable
   url: https://docs.astropy.org/en/stable/io/votable/index.html
@@ -425,6 +68,597 @@ implementations:
   - docs-astropy-org-votable
   - ivoa-net-documents-votable
   notes: Independent Python reader, writer, and validation-capable VOTable implementation.
+- id: bids-validator
+  name: BIDS Validator
+  url: https://github.com/bids-standard/bids-validator
+  implements_resource_id: brain-imaging-data-structure-bids
+  operator_steward_id: bids-community
+  relationship: validator
+  supported_versions:
+  - Current BIDS schema and selectable stable schemas
+  evidence_ref_ids:
+  - github-com-bids-standard-bids-validator
+  - bids-validator-readthedocs-web
+  - bids-specification-readthedocs-stable
+  notes: Official schema-driven web, command-line, and library validator for BIDS datasets.
+- id: bioformats2raw-ome-ngff
+  name: bioformats2raw
+  url: https://github.com/glencoesoftware/bioformats2raw
+  implements_resource_id: ome-ngff
+  operator_steward_id: glencoe-software
+  relationship: independent-implementation
+  supported_versions:
+  - OME-Zarr 0.4 and 0.5 output
+  evidence_ref_ids:
+  - github-com-glencoesoftware-bioformats2raw
+  - ngff-openmicroscopy-org-0-5
+  notes: Separately operated converter that writes OME-Zarr from microscopy formats.
+- id: cdisc-odm-linkml-model
+  name: CDISC ODM v2.0 LinkML model
+  url: https://cdisc-org.github.io/DataExchange-ODM-LinkML/
+  implements_resource_id: cdisc-operational-data-model-odm
+  operator_steward_id: cdisc
+  relationship: official-implementation
+  supported_versions:
+  - '2.0'
+  evidence_ref_ids:
+  - cdisc-odm-linkml
+  - cdisc-odm-v2-0
+- id: cfitsio-fits
+  name: CFITSIO
+  url: https://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html
+  implements_resource_id: flexible-image-transport-system-fits
+  operator_steward_id: heasarc-nasa-goddard
+  relationship: independent-implementation
+  supported_versions:
+  - FITS Standard 4.0 and registered conventions
+  evidence_ref_ids:
+  - heasarc-gsfc-nasa-gov-cfitsio
+  - fits-gsfc-nasa-gov-fits-standard
+  notes: NASA-maintained C and Fortran library for reading and writing FITS.
+- id: copasi-sbml
+  name: COPASI
+  url: https://github.com/copasi/COPASI
+  implements_resource_id: systems-biology-markup-language-sbml
+  operator_steward_id: copasi-project
+  relationship: independent-implementation
+  supported_versions:
+  - SBML Levels 1-3
+  evidence_ref_ids:
+  - github-com-copasi-copasi
+  - copasi-org-sbml-import-export
+  - sbml-org-level-3-version-2-core-release-2
+  notes: Imports and exports SBML through a separately governed simulation environment.
+- id: copasi-sedml
+  name: COPASI
+  url: 
+    https://copasi.org/Support/User_Manual/Importing_and_Exporting/Importing_and_Exporting_SEDML_Files/
+  implements_resource_id: simulation-experiment-description-markup-language-sed-ml
+  operator_steward_id: copasi-project
+  relationship: independent-implementation
+  supported_versions:
+  - SED-ML subset; L1V1-L1V5 listed by SED-ML showcase
+  evidence_ref_ids:
+  - github-com-copasi-copasi
+  - copasi-org-sedml-import-export
+  - sed-ml-org-showcase
+  notes: Imports and exports a documented subset of SED-ML simulation experiments.
+- id: cromwell-wdl-engine
+  name: Cromwell
+  url: https://github.com/broadinstitute/cromwell
+  implements_resource_id: workflow-description-language-wdl
+  operator_steward_id: broad-institute
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-broadinstitute-cromwell
+  - openwdl-org-root
+- id: dachs-tap
+  name: GAVO DaCHS
+  url: https://dachs-doc.readthedocs.io/
+  implements_resource_id: ivoa-table-access-protocol-tap
+  operator_steward_id: german-astrophysical-virtual-observatory
+  relationship: independent-implementation
+  supported_versions:
+  - TAP publishing and ADQL services
+  evidence_ref_ids:
+  - dachs-doc-readthedocs-io
+  - ivoa-net-documents-tap
+  notes: Separately operated Virtual Observatory publishing stack with TAP services.
+- id: datapackage-standard-repo
+  name: Data Package standard repository
+  url: https://github.com/frictionlessdata/datapackage
+  implements_resource_id: data-package-standard
+  operator_steward_id: data-package-working-group
+  relationship: official-implementation
+  supported_versions:
+  - '2.0'
+  evidence_ref_ids:
+  - github-com-frictionlessdata-datapackage
+  - datapackage-org-profiles-2-0-datapackage
+- id: dcm4che-dicomweb
+  name: dcm4che
+  url: https://github.com/dcm4che/dcm4che
+  implements_resource_id: dicomweb
+  operator_steward_id: dcm4che
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-dcm4che-dcm4che
+  - dicomstandard-org-using-dicomweb
+- id: dockstore-trs
+  name: Dockstore
+  url: https://github.com/dockstore/dockstore
+  implements_resource_id: ga4gh-tool-registry-service-trs
+  operator_steward_id: dockstore-consortium
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-dockstore-dockstore
+  - dockstore-org
+- id: eml-release-validator
+  name: EML release validator
+  url: https://eml.ecoinformatics.org/validation-and-content-references
+  implements_resource_id: ecological-metadata-language-eml
+  operator_steward_id: ecological-metadata-language-community
+  relationship: validator
+  supported_versions:
+  - 2.2.0
+  evidence_ref_ids:
+  - eml-ecoinformatics-org-validation
+  - github-com-nceas-eml
+- id: ena-refget-service
+  name: ENA CRAM Reference Registry
+  url: https://www.ebi.ac.uk/ena/cram/
+  implements_resource_id: ga4gh-refget-sequences
+  operator_steward_id: embl-ebi-elixir-interoperability-platform
+  relationship: independent-implementation
+  supported_versions:
+  - Refget Sequences 1.x compliance report
+  evidence_ref_ids:
+  - ga4gh-github-io-refget-compliance-ena-server
+  - ga4gh-github-io-refget-sequences
+  notes: EMBL-EBI-operated reference sequence service independently tested by the public compliance 
+    suite.
+- id: frictionless-js
+  name: frictionless-js
+  url: https://github.com/frictionlessdata/frictionless-js
+  implements_resource_id: data-package-standard
+  operator_steward_id: frictionless-js-project
+  relationship: independent-implementation
+  notes: JavaScript ecosystem support exists, but Data Package v2 migration remains uneven relative 
+    to the Python framework.
+  evidence_ref_ids:
+  - github-com-frictionlessdata-frictionless-js
+  - datapackage-org-blog-2024-06-26-v2-release
+- id: frictionless-py
+  name: Frictionless Framework (Python)
+  url: https://github.com/frictionlessdata/frictionless-py
+  implements_resource_id: data-package-standard
+  operator_steward_id: frictionlessdata
+  relationship: reference-implementation
+  supported_versions:
+  - 2.x
+  evidence_ref_ids:
+  - github-com-frictionlessdata-frictionless-py
+  - datapackage-org-standard-data-package
+- id: frictionless-py-validator
+  name: Frictionless Framework validate
+  url: https://framework.frictionlessdata.io/docs/guides/validating-data.html
+  implements_resource_id: data-package-standard
+  operator_steward_id: frictionlessdata
+  relationship: validator
+  evidence_ref_ids:
+  - framework-frictionlessdata-io-validating-data
+  - github-com-frictionlessdata-frictionless-py
+- id: heudiconv-bids
+  name: HeuDiConv
+  url: https://github.com/nipy/heudiconv
+  implements_resource_id: brain-imaging-data-structure-bids
+  operator_steward_id: nipy-community
+  relationship: independent-implementation
+  supported_versions:
+  - BIDS 1.x; DICOM conversion scope
+  evidence_ref_ids:
+  - github-com-nipy-heudiconv
+  - heudiconv-readthedocs-root
+  - bids-specification-readthedocs-stable
+  notes: Converts DICOM acquisitions into BIDS layouts through the independent NiPy ecosystem.
+- id: htsget-refserver
+  name: htsget reference server
+  url: https://github.com/ga4gh/htsget-refserver
+  implements_resource_id: ga4gh-htsget
+  operator_steward_id: ga4gh
+  relationship: reference-implementation
+  evidence_ref_ids:
+  - github-com-ga4gh-htsget-refserver
+  - github-com-samtools-hts-specs-htsget
+  notes: GA4GH reference server for the htsget protocol.
+- id: htslib-htsget-client
+  name: HTSlib
+  url: https://github.com/samtools/htslib
+  implements_resource_id: ga4gh-htsget
+  operator_steward_id: samtools-community
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-samtools-htslib
+  - github-com-samtools-hts-specs-htsget
+  notes: Separately operated genomic data library with htsget client support.
+- id: libcellml
+  name: libCellML
+  url: https://github.com/cellml/libcellml
+  implements_resource_id: cellml
+  operator_steward_id: cellml-community
+  relationship: reference-implementation
+  supported_versions:
+  - CellML 2.0
+  evidence_ref_ids:
+  - github-com-cellml-libcellml
+  - libcellml-org-root
+  - cellml-org-specifications-cellml-2-0
+  notes: Primary C++ and Python library targeting full CellML 2.0 support.
+- id: libsedml
+  name: libSEDML
+  url: https://github.com/fbergmann/libSEDML
+  implements_resource_id: simulation-experiment-description-markup-language-sed-ml
+  operator_steward_id: sed-ml-community
+  relationship: reference-implementation
+  supported_versions:
+  - SED-ML L1V1-L1V5
+  evidence_ref_ids:
+  - github-com-fbergmann-libsedml
+  - sed-ml-org-showcase
+  - sed-ml-org-specifications
+  notes: Reference multi-language library for reading and writing SED-ML.
+- id: loc-bagit-python
+  name: bagit-python
+  url: https://github.com/LibraryOfCongress/bagit-python
+  implements_resource_id: bagit
+  operator_steward_id: library-of-congress
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-libraryofcongress-bagit-python
+  - datatracker-ietf-org-doc-html-rfc8493
+- id: materials-project-optimade-server
+  name: Materials Project OPTIMADE
+  url: https://optimade.materialsproject.org/
+  implements_resource_id: optimade
+  operator_steward_id: materials-project
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - optimade-materialsproject-base
+  - optimade-providers-dashboard-mp
+- id: matnwb
+  name: MatNWB
+  url: https://github.com/NeurodataWithoutBorders/matnwb
+  implements_resource_id: neurodata-without-borders-nwb
+  operator_steward_id: neurodata-without-borders
+  relationship: official-implementation
+  supported_versions:
+  - NWB 2.x
+  evidence_ref_ids:
+  - github-com-neurodatawithoutborders-matnwb
+  - nwb-org-nwb-schema
+  notes: Official MATLAB API generated from NWB schemas for cross-language file exchange.
+- id: mcp-servers-official
+  name: MCP servers (official monorepo)
+  url: https://github.com/modelcontextprotocol/servers
+  implements_resource_id: model-context-protocol-mcp
+  operator_steward_id: model-context-protocol-project
+  relationship: official-implementation
+  evidence_ref_ids:
+  - github-com-modelcontextprotocol-servers
+- id: mcp-specification-repo
+  name: MCP specification repository
+  url: https://github.com/modelcontextprotocol/specification
+  implements_resource_id: model-context-protocol-mcp
+  operator_steward_id: model-context-protocol-project
+  relationship: official-implementation
+  evidence_ref_ids:
+  - github-com-modelcontextprotocol-specification
+- id: miniwdl-wdl-engine
+  name: miniwdl
+  url: https://github.com/openwdl/miniwdl
+  implements_resource_id: workflow-description-language-wdl
+  operator_steward_id: chanzuckerberg-initiative
+  relationship: independent-implementation
+  notes: CZI-originated WDL runner; repository is hosted under the OpenWDL GitHub org but operated 
+    independently of OpenWDL language stewardship.
+  evidence_ref_ids:
+  - github-com-openwdl-miniwdl
+  - miniwdl-readthedocs-getting-started
+- id: mixs-example-test-suite
+  name: MIxS valid and invalid example suite
+  url: https://github.com/GenomicsStandardsConsortium/mixs/tree/main/tests
+  implements_resource_id: minimum-information-about-any-sequence-mixs
+  operator_steward_id: genomic-standards-consortium
+  relationship: conformance-suite
+  evidence_ref_ids:
+  - github-com-genomicsstandardsconsortium-mixs-tests
+- id: mixs-linkml-schema
+  name: MIxS LinkML schema and generated artifacts
+  url: https://github.com/GenomicsStandardsConsortium/mixs
+  implements_resource_id: minimum-information-about-any-sequence-mixs
+  operator_steward_id: genomic-standards-consortium
+  relationship: official-implementation
+  supported_versions:
+  - 6.x
+  evidence_ref_ids:
+  - github-com-genomicsstandardsconsortium-mixs
+  - genomicsstandardsconsortium-github-mixs-docs
+- id: mne-bids
+  name: MNE-BIDS
+  url: https://github.com/mne-tools/mne-bids
+  implements_resource_id: brain-imaging-data-structure-bids
+  operator_steward_id: mne-project
+  relationship: independent-implementation
+  supported_versions:
+  - BIDS 1.x; electrophysiology and neuroimaging scopes
+  evidence_ref_ids:
+  - github-com-mne-tools-mne-bids
+  - mne-tools-mne-bids-stable
+  - bids-specification-readthedocs-stable
+  notes: Creates and reads BIDS-compatible datasets through the separately governed MNE project.
+- id: nomad-optimade-server
+  name: NOMAD OPTIMADE
+  url: https://nomad-lab.eu/prod/rae/optimade/
+  implements_resource_id: optimade
+  operator_steward_id: fairmat-nomad
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - nomad-lab-optimade-info
+  - optimade-providers-dashboard-nmd
+- id: nwb-inspector
+  name: NWB Inspector
+  url: https://github.com/NeurodataWithoutBorders/nwbinspector
+  implements_resource_id: neurodata-without-borders-nwb
+  operator_steward_id: neurodata-without-borders
+  relationship: validator
+  supported_versions:
+  - NWB 2.x
+  evidence_ref_ids:
+  - github-com-neurodatawithoutborders-nwbinspector
+  - nwb-org-nwbinspector
+  - nwb-org-nwb-schema
+  notes: Official schema and best-practice validator that invokes PyNWB validation by default.
+- id: ocfl-java
+  name: ocfl-java
+  url: https://github.com/OCFL/ocfl-java
+  implements_resource_id: oxford-common-file-layout-ocfl
+  operator_steward_id: ocfl-java-project
+  relationship: independent-implementation
+  supported_versions:
+  - '1.1'
+  evidence_ref_ids:
+  - github-com-ocfl-ocfl-java
+  - ocfl-io-1-1-spec
+  - ocfl-io-implementations-wiki
+- id: ocfl-py
+  name: ocfl-py
+  url: https://github.com/zimeon/ocfl-py
+  implements_resource_id: oxford-common-file-layout-ocfl
+  operator_steward_id: ocfl-py-project
+  relationship: reference-implementation
+  supported_versions:
+  - '1.1'
+  evidence_ref_ids:
+  - github-com-zimeon-ocfl-py
+  - ocfl-io-1-1-spec
+- id: ocfl-py-validator
+  name: ocfl-py validator
+  url: https://oclf-py.readthedocs.io/en/latest/
+  implements_resource_id: oxford-common-file-layout-ocfl
+  operator_steward_id: ocfl-py-project
+  relationship: validator
+  supported_versions:
+  - '1.1'
+  evidence_ref_ids:
+  - github-com-zimeon-ocfl-py
+  - ocfl-io-1-1-validation-codes
+- id: ohif-dicomweb-viewer
+  name: OHIF Viewer
+  url: https://github.com/OHIF/Viewers
+  implements_resource_id: dicomweb
+  operator_steward_id: ohif
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-ohif-viewers
+  - dicomstandard-org-using-dicomweb
+- id: ome-ngff-validator
+  name: OME-NGFF Validator
+  url: https://ome.github.io/ome-ngff-validator/
+  implements_resource_id: ome-ngff
+  operator_steward_id: open-microscopy-environment
+  relationship: validator
+  supported_versions:
+  - OME-Zarr 0.4 and 0.5 examples
+  evidence_ref_ids:
+  - ome-github-io-ome-ngff-validator
+  - ngff-openmicroscopy-org-0-5
+  notes: Public browser validator for OME-Zarr metadata and hierarchy examples.
+- id: ome-zarr-py
+  name: ome-zarr-py
+  url: https://github.com/ome/ome-zarr-py
+  implements_resource_id: ome-ngff
+  operator_steward_id: open-microscopy-environment
+  relationship: reference-implementation
+  supported_versions:
+  - OME-Zarr 0.4 and evolving 0.5 support
+  evidence_ref_ids:
+  - github-com-ome-ome-zarr-py
+  - ngff-openmicroscopy-org-0-5
+  notes: Official Python reader, writer, and utility library in the OME ecosystem.
+- id: omop-cdm-r-package
+  name: OMOP CommonDataModel package
+  url: https://github.com/OHDSI/CommonDataModel
+  implements_resource_id: omop-common-data-model
+  operator_steward_id: ohdsi
+  relationship: official-implementation
+  supported_versions:
+  - 5.4.2
+  evidence_ref_ids:
+  - github-com-ohdsi-common-data-model
+  - ohdsi-common-data-model
+- id: omop-data-quality-dashboard
+  name: OMOP DataQualityDashboard
+  url: https://ohdsi.github.io/DataQualityDashboard/
+  implements_resource_id: omop-common-data-model
+  operator_steward_id: ohdsi
+  relationship: validator
+  supported_versions:
+  - '5.4'
+  evidence_ref_ids:
+  - ohdsi-data-quality-dashboard
+  - ohdsi-data-quality-dashboard-cdmfield
+- id: opencadc-tap
+  name: OpenCADC TAP
+  url: https://github.com/opencadc/tap
+  implements_resource_id: ivoa-table-access-protocol-tap
+  operator_steward_id: canadian-astronomy-data-centre
+  relationship: independent-implementation
+  supported_versions:
+  - TAP 1.1
+  evidence_ref_ids:
+  - github-com-opencadc-tap
+  - ivoa-net-documents-tap
+  notes: Independent client and server implementation of TAP 1.1.
+- id: opencor-cellml
+  name: OpenCOR
+  url: https://opencor.ws/
+  implements_resource_id: cellml
+  operator_steward_id: opencor-project
+  relationship: official-implementation
+  supported_versions:
+  - CellML 1.1 and 2.0 workflows
+  evidence_ref_ids:
+  - opencor-ws-simulation-experiment-view
+  - cellml-org-specifications-cellml-2-0
+  notes: CellML modeling and simulation environment with SED-ML and COMBINE Archive support.
+- id: openms-mzml
+  name: OpenMS mzML support
+  url: https://openms.de/documentation/classOpenMS_1_1MzMLFile.html
+  implements_resource_id: hupo-psi-mzml
+  operator_steward_id: openms-project
+  relationship: independent-implementation
+  supported_versions:
+  - '1.1'
+  evidence_ref_ids:
+  - openms-mzmlfile
+  - psidev-info-mzml
+- id: openms-mzml-validator
+  name: OpenMS MzMLValidator
+  url: https://openms.de/current_doxygen/html/classOpenMS_1_1Internal_1_1MzMLValidator.html
+  implements_resource_id: hupo-psi-mzml
+  operator_steward_id: openms-project
+  relationship: validator
+  evidence_ref_ids:
+  - openms-mzmlvalidator
+- id: phenopacket-schema-bindings
+  name: Phenopacket Schema language bindings
+  url: https://github.com/phenopackets/phenopacket-schema
+  implements_resource_id: ga4gh-phenopackets
+  operator_steward_id: phenopackets-community
+  relationship: reference-implementation
+  supported_versions:
+  - Phenopacket Schema 2.x
+  evidence_ref_ids:
+  - github-com-phenopackets-phenopacket-schema
+  - phenopacket-schema-readthedocs-latest
+  notes: Generated Java, Python, and C++ bindings from the canonical Protocol Buffer schema.
+- id: phenopacket-tools-validator
+  name: Phenopacket tools validator
+  url: https://github.com/phenopackets/phenopacket-tools
+  implements_resource_id: ga4gh-phenopackets
+  operator_steward_id: phenopackets-community
+  relationship: validator
+  evidence_ref_ids:
+  - github-com-phenopackets-phenopacket-tools
+  - phenopacket-schema-readthedocs-requirements
+  notes: Command-line and library validation of required and recommended Phenopacket constraints.
+- id: proteowizard-mzml
+  name: ProteoWizard
+  url: https://proteowizard.sourceforge.io/formats/mzml.html
+  implements_resource_id: hupo-psi-mzml
+  operator_steward_id: proteowizard-project
+  relationship: reference-implementation
+  supported_versions:
+  - '1.1'
+  evidence_ref_ids:
+  - proteowizard-sourceforge-mzml
+  - psidev-info-mzml
+- id: pymzml-reader
+  name: pymzML
+  url: https://pymzml.readthedocs.io/en/latest/
+  implements_resource_id: hupo-psi-mzml
+  operator_steward_id: pymzml-project
+  relationship: independent-implementation
+  supported_versions:
+  - '1.1'
+  evidence_ref_ids:
+  - pymzml-readthedocs
+  - psidev-info-mzml
+- id: pynwb
+  name: PyNWB
+  url: https://github.com/NeurodataWithoutBorders/pynwb
+  implements_resource_id: neurodata-without-borders-nwb
+  operator_steward_id: neurodata-without-borders
+  relationship: reference-implementation
+  supported_versions:
+  - NWB 2.x
+  evidence_ref_ids:
+  - github-com-neurodatawithoutborders-pynwb
+  - nwb-org-nwb-schema
+  notes: Official Python API for reading, writing, and validating NWB files.
+- id: refget-compliance-suite
+  name: Refget compliance suite
+  url: https://github.com/ga4gh/refget
+  implements_resource_id: ga4gh-refget-sequences
+  operator_steward_id: ga4gh
+  relationship: conformance-suite
+  evidence_ref_ids:
+  - github-com-ga4gh-refget
+  - ga4gh-github-io-refget-compliance
+  notes: Public compliance tooling and report aggregation for refget sequence services.
+- id: refget-server-perl
+  name: Refget reference server
+  url: https://github.com/andrewyatz/refget-server-perl
+  implements_resource_id: ga4gh-refget-sequences
+  operator_steward_id: refget-reference-server-project
+  relationship: independent-implementation
+  supported_versions:
+  - Refget Sequences 1.x compliance report
+  evidence_ref_ids:
+  - github-com-andrewyatz-refget-server-perl
+  - ga4gh-github-io-refget-compliance-refget-server-perl
+  notes: Separately operated Perl server with a published compliance report.
+- id: ropensci-eml
+  name: rOpenSci EML package
+  url: https://docs.ropensci.org/EML/
+  implements_resource_id: ecological-metadata-language-eml
+  operator_steward_id: ropensci
+  relationship: independent-implementation
+  supported_versions:
+  - 2.2.0
+  evidence_ref_ids:
+  - docs-ropensci-org-eml
+  - eml-ecoinformatics-org-root
+- id: ropensci-emld-validator
+  name: rOpenSci emld validator
+  url: https://docs.ropensci.org/emld/reference/eml_validate.html
+  implements_resource_id: ecological-metadata-language-eml
+  operator_steward_id: ropensci
+  relationship: validator
+  evidence_ref_ids:
+  - docs-ropensci-org-emld-eml-validate
+- id: stilts-taplint
+  name: STILTS taplint
+  url: https://www.star.bris.ac.uk/~mbt/stilts/sun256/taplint.html
+  implements_resource_id: ivoa-table-access-protocol-tap
+  operator_steward_id: starlink-java-project
+  relationship: validator
+  supported_versions:
+  - TAP 1.0 and 1.1 interfaces plus related VO standards
+  evidence_ref_ids:
+  - star-bris-ac-uk-stilts-taplint
+  - ivoa-net-documents-tap
+  notes: Public staged TAP service validator; its documentation explicitly limits comprehensiveness.
 - id: stilts-votable
   name: STILTS VOTable
   url: https://www.star.bris.ac.uk/mbt/stilts/
@@ -449,6 +683,40 @@ implementations:
   - star-bris-ac-uk-stilts-votlint
   - ivoa-net-documents-votable
   notes: Public validator for schema, data structure, datatypes, arrays, and semantic consistency.
+- id: tellurium-sbml
+  name: Tellurium
+  url: https://github.com/sys-bio/tellurium
+  implements_resource_id: systems-biology-markup-language-sbml
+  operator_steward_id: tellurium-project
+  relationship: independent-implementation
+  supported_versions:
+  - SBML through libRoadRunner and libSBML
+  evidence_ref_ids:
+  - github-com-sys-bio-tellurium
+  - tellurium-readthedocs-quickstart
+  - sbml-org-level-3-version-2-core-release-2
+  notes: Loads and simulates SBML through an independently operated Python modeling environment.
+- id: tellurium-sedml
+  name: Tellurium
+  url: https://tellurium.readthedocs.io/en/latest/
+  implements_resource_id: simulation-experiment-description-markup-language-sed-ml
+  operator_steward_id: tellurium-project
+  relationship: independent-implementation
+  supported_versions:
+  - SED-ML L1V3 documented
+  evidence_ref_ids:
+  - github-com-sys-bio-tellurium
+  - sed-ml-org-showcase
+  notes: Executes documented SED-ML examples through an independently operated modeling environment.
+- id: toil-cwl-runner
+  name: Toil
+  url: https://github.com/DataBiosphere/toil
+  implements_resource_id: common-workflow-language-cwl
+  operator_steward_id: databiosphere
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-databiosphere-toil
+  - commonwl-org-v1-2-conformancetests-html
 - id: vrs-python
   name: VRS-Python
   url: https://github.com/ga4gh/vrs-python
@@ -460,7 +728,8 @@ implementations:
   evidence_ref_ids:
   - github-com-ga4gh-vrs-python
   - vrs-ga4gh-org-stable
-  notes: Reference Python implementation for VRS models, normalization, translation, and computed identifiers.
+  notes: Reference Python implementation for VRS models, normalization, translation, and computed 
+    identifiers.
 - id: vrs-python-validation
   name: VRS-Python validation tests
   url: https://github.com/ga4gh/vrs-python/tree/main/tests/validation
@@ -470,203 +739,14 @@ implementations:
   evidence_ref_ids:
   - github-com-ga4gh-vrs-python-tests-validation
   - github-com-ga4gh-vrs-python
-  notes: Specification-derived tests embedded in the reference implementation; not independent certification.
-- id: phenopacket-schema-bindings
-  name: Phenopacket Schema language bindings
-  url: https://github.com/phenopackets/phenopacket-schema
-  implements_resource_id: ga4gh-phenopackets
-  operator_steward_id: phenopackets-community
-  relationship: reference-implementation
-  supported_versions:
-  - Phenopacket Schema 2.x
-  evidence_ref_ids:
-  - github-com-phenopackets-phenopacket-schema
-  - phenopacket-schema-readthedocs-latest
-  notes: Generated Java, Python, and C++ bindings from the canonical Protocol Buffer schema.
-- id: phenopacket-tools-validator
-  name: Phenopacket tools validator
-  url: https://github.com/phenopackets/phenopacket-tools
-  implements_resource_id: ga4gh-phenopackets
-  operator_steward_id: phenopackets-community
-  relationship: validator
-  evidence_ref_ids:
-  - github-com-phenopackets-phenopacket-tools
-  - phenopacket-schema-readthedocs-requirements
-  notes: Command-line and library validation of required and recommended Phenopacket constraints.
-- id: htsget-refserver
-  name: htsget reference server
-  url: https://github.com/ga4gh/htsget-refserver
-  implements_resource_id: ga4gh-htsget
-  operator_steward_id: ga4gh
-  relationship: reference-implementation
-  evidence_ref_ids:
-  - github-com-ga4gh-htsget-refserver
-  - github-com-samtools-hts-specs-htsget
-  notes: GA4GH reference server for the htsget protocol.
-- id: htslib-htsget-client
-  name: HTSlib
-  url: https://github.com/samtools/htslib
-  implements_resource_id: ga4gh-htsget
-  operator_steward_id: samtools-community
+  notes: Specification-derived tests embedded in the reference implementation; not independent 
+    certification.
+- id: workflowhub-trs
+  name: WorkflowHub TRS
+  url: https://workflowhub.eu/ga4gh/trs/v2/
+  implements_resource_id: ga4gh-tool-registry-service-trs
+  operator_steward_id: workflowhub
   relationship: independent-implementation
   evidence_ref_ids:
-  - github-com-samtools-htslib
-  - github-com-samtools-hts-specs-htsget
-  notes: Separately operated genomic data library with htsget client support.
-- id: ena-refget-service
-  name: ENA CRAM Reference Registry
-  url: https://www.ebi.ac.uk/ena/cram/
-  implements_resource_id: ga4gh-refget-sequences
-  operator_steward_id: embl-ebi-elixir-interoperability-platform
-  relationship: independent-implementation
-  supported_versions:
-  - Refget Sequences 1.x compliance report
-  evidence_ref_ids:
-  - ga4gh-github-io-refget-compliance-ena-server
-  - ga4gh-github-io-refget-sequences
-  notes: EMBL-EBI-operated reference sequence service independently tested by the public compliance suite.
-- id: refget-server-perl
-  name: Refget reference server
-  url: https://github.com/andrewyatz/refget-server-perl
-  implements_resource_id: ga4gh-refget-sequences
-  operator_steward_id: refget-reference-server-project
-  relationship: independent-implementation
-  supported_versions:
-  - Refget Sequences 1.x compliance report
-  evidence_ref_ids:
-  - github-com-andrewyatz-refget-server-perl
-  - ga4gh-github-io-refget-compliance-refget-server-perl
-  notes: Separately operated Perl server with a published compliance report.
-- id: refget-compliance-suite
-  name: Refget compliance suite
-  url: https://github.com/ga4gh/refget
-  implements_resource_id: ga4gh-refget-sequences
-  operator_steward_id: ga4gh
-  relationship: conformance-suite
-  evidence_ref_ids:
-  - github-com-ga4gh-refget
-  - ga4gh-github-io-refget-compliance
-  notes: Public compliance tooling and report aggregation for refget sequence services.
-- id: mixs-linkml-schema
-  name: MIxS LinkML schema and generated artifacts
-  url: https://github.com/GenomicsStandardsConsortium/mixs
-  implements_resource_id: minimum-information-about-any-sequence-mixs
-  operator_steward_id: genomic-standards-consortium
-  relationship: official-implementation
-  supported_versions:
-  - 6.x
-  evidence_ref_ids:
-  - github-com-genomicsstandardsconsortium-mixs
-  - genomicsstandardsconsortium-github-mixs-docs
-- id: mixs-example-test-suite
-  name: MIxS valid and invalid example suite
-  url: https://github.com/GenomicsStandardsConsortium/mixs/tree/main/tests
-  implements_resource_id: minimum-information-about-any-sequence-mixs
-  operator_steward_id: genomic-standards-consortium
-  relationship: conformance-suite
-  evidence_ref_ids:
-  - github-com-genomicsstandardsconsortium-mixs-tests
-- id: eml-release-validator
-  name: EML release validator
-  url: https://eml.ecoinformatics.org/validation-and-content-references
-  implements_resource_id: ecological-metadata-language-eml
-  operator_steward_id: ecological-metadata-language-community
-  relationship: validator
-  supported_versions:
-  - 2.2.0
-  evidence_ref_ids:
-  - eml-ecoinformatics-org-validation
-  - github-com-nceas-eml
-- id: ropensci-eml
-  name: rOpenSci EML package
-  url: https://docs.ropensci.org/EML/
-  implements_resource_id: ecological-metadata-language-eml
-  operator_steward_id: ropensci
-  relationship: independent-implementation
-  supported_versions:
-  - 2.2.0
-  evidence_ref_ids:
-  - docs-ropensci-org-eml
-  - eml-ecoinformatics-org-root
-- id: ropensci-emld-validator
-  name: rOpenSci emld validator
-  url: https://docs.ropensci.org/emld/reference/eml_validate.html
-  implements_resource_id: ecological-metadata-language-eml
-  operator_steward_id: ropensci
-  relationship: validator
-  evidence_ref_ids:
-  - docs-ropensci-org-emld-eml-validate
-- id: proteowizard-mzml
-  name: ProteoWizard
-  url: https://proteowizard.sourceforge.io/formats/mzml.html
-  implements_resource_id: hupo-psi-mzml
-  operator_steward_id: proteowizard-project
-  relationship: reference-implementation
-  supported_versions:
-  - '1.1'
-  evidence_ref_ids:
-  - proteowizard-sourceforge-mzml
-  - psidev-info-mzml
-- id: openms-mzml
-  name: OpenMS mzML support
-  url: https://openms.de/documentation/classOpenMS_1_1MzMLFile.html
-  implements_resource_id: hupo-psi-mzml
-  operator_steward_id: openms-project
-  relationship: independent-implementation
-  supported_versions:
-  - '1.1'
-  evidence_ref_ids:
-  - openms-mzmlfile
-  - psidev-info-mzml
-- id: pymzml-reader
-  name: pymzML
-  url: https://pymzml.readthedocs.io/en/latest/
-  implements_resource_id: hupo-psi-mzml
-  operator_steward_id: pymzml-project
-  relationship: independent-implementation
-  supported_versions:
-  - '1.1'
-  evidence_ref_ids:
-  - pymzml-readthedocs
-  - psidev-info-mzml
-- id: openms-mzml-validator
-  name: OpenMS MzMLValidator
-  url: https://openms.de/current_doxygen/html/classOpenMS_1_1Internal_1_1MzMLValidator.html
-  implements_resource_id: hupo-psi-mzml
-  operator_steward_id: openms-project
-  relationship: validator
-  evidence_ref_ids:
-  - openms-mzmlvalidator
-- id: omop-cdm-r-package
-  name: OMOP CommonDataModel package
-  url: https://github.com/OHDSI/CommonDataModel
-  implements_resource_id: omop-common-data-model
-  operator_steward_id: ohdsi
-  relationship: official-implementation
-  supported_versions:
-  - 5.4.2
-  evidence_ref_ids:
-  - github-com-ohdsi-common-data-model
-  - ohdsi-common-data-model
-- id: omop-data-quality-dashboard
-  name: OMOP DataQualityDashboard
-  url: https://ohdsi.github.io/DataQualityDashboard/
-  implements_resource_id: omop-common-data-model
-  operator_steward_id: ohdsi
-  relationship: validator
-  supported_versions:
-  - '5.4'
-  evidence_ref_ids:
-  - ohdsi-data-quality-dashboard
-  - ohdsi-data-quality-dashboard-cdmfield
-- id: cdisc-odm-linkml-model
-  name: CDISC ODM v2.0 LinkML model
-  url: https://cdisc-org.github.io/DataExchange-ODM-LinkML/
-  implements_resource_id: cdisc-operational-data-model-odm
-  operator_steward_id: cdisc
-  relationship: official-implementation
-  supported_versions:
-  - '2.0'
-  evidence_ref_ids:
-  - cdisc-odm-linkml
-  - cdisc-odm-v2-0
+  - workflowhub-eu-developer-trs
+  - ga4gh-org-product-tool-registry-service-trs

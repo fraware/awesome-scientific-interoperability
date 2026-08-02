@@ -2,10 +2,10 @@
   "as_of": "2026-08-01",
   "catalog_version": "2.2.0",
   "counts": {
-    "resources": 105,
-    "references": 419,
-    "stewards": 110,
-    "implementations": 61,
+    "resources": 107,
+    "references": 435,
+    "stewards": 117,
+    "implementations": 68,
     "integrity_errors": 0,
     "multiple_independent_queue": 0,
     "documented_tests_queue": 0

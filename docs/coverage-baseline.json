@@ -1,9 +1,9 @@
 {
   "metrics": {
     "generated_on": "2026-08-02",
-    "total_entries": 105,
+    "total_entries": 107,
     "entries_per_section": {
-      "Data and Digital Objects": 21,
+      "Data and Digital Objects": 23,
       "Metadata and Semantics": 21,
       "Identifiers and Discovery": 13,
       "Workflows and Execution": 12,
@@ -17,15 +17,15 @@
     },
     "domains_per_entry": {
       "1": 28,
-      "2": 60,
-      "3": 2,
+      "2": 61,
+      "3": 3,
       "4": 3,
       "5": 8,
       "6": 4
     },
     "entries_per_domain": {
-      "cross-domain": 27,
-      "research-data": 21,
+      "cross-domain": 29,
+      "research-data": 23,
       "computational-workflows": 19,
       "genomics": 16,
       "life-sciences": 13,
@@ -37,12 +37,12 @@
       "systems-biology": 6,
       "bioinformatics": 5,
       "computational-biology": 5,
+      "digital-preservation": 5,
       "geospatial": 5,
       "knowledge-representation": 5,
       "biosimulation": 4,
       "computational-science": 4,
       "data-governance": 4,
-      "digital-preservation": 4,
       "laboratory-data": 4,
       "analytical-chemistry": 3,
       "astronomy": 3,
@@ -77,8 +77,8 @@
     },
     "domain_concentration": {
       "entries_per_domain": {
-        "cross-domain": 27,
-        "research-data": 21,
+        "cross-domain": 29,
+        "research-data": 23,
         "computational-workflows": 19,
         "genomics": 16,
         "life-sciences": 13,
@@ -90,12 +90,12 @@
         "systems-biology": 6,
         "bioinformatics": 5,
         "computational-biology": 5,
+        "digital-preservation": 5,
         "geospatial": 5,
         "knowledge-representation": 5,
         "biosimulation": 4,
         "computational-science": 4,
         "data-governance": 4,
-        "digital-preservation": 4,
         "laboratory-data": 4,
         "analytical-chemistry": 3,
         "astronomy": 3,
@@ -129,7 +129,7 @@
         "sensor-networks": 1
       },
       "scientific_domain_counts": {
-        "research-data": 21,
+        "research-data": 23,
         "computational-workflows": 19,
         "genomics": 16,
         "life-sciences": 13,
@@ -141,12 +141,12 @@
         "systems-biology": 6,
         "bioinformatics": 5,
         "computational-biology": 5,
+        "digital-preservation": 5,
         "geospatial": 5,
         "knowledge-representation": 5,
         "biosimulation": 4,
         "computational-science": 4,
         "data-governance": 4,
-        "digital-preservation": 4,
         "laboratory-data": 4,
         "analytical-chemistry": 3,
         "astronomy": 3,
@@ -179,17 +179,17 @@
         "scientific-computing": 1,
         "sensor-networks": 1
       },
-      "cross_domain_tagged_entries": 27,
+      "cross_domain_tagged_entries": 29,
       "largest_scientific_domain": "research-data",
-      "largest_scientific_domain_count": 21,
-      "largest_scientific_domain_share": 0.2,
-      "largest_scientific_domain_share_percent": 20.0
+      "largest_scientific_domain_count": 23,
+      "largest_scientific_domain_share": 0.215,
+      "largest_scientific_domain_share_percent": 21.5
     },
     "interoperability_layers": {
-      "Semantic": 75,
-      "Syntactic": 74,
-      "Operational": 55,
-      "Evidentiary": 30,
+      "Semantic": 76,
+      "Syntactic": 76,
+      "Operational": 57,
+      "Evidentiary": 31,
       "Organizational": 11
     },
     "resource_kinds": {
@@ -197,7 +197,7 @@
       "api-standard": 16,
       "metadata-standard": 14,
       "ontology-vocabulary": 12,
-      "packaging-format": 8,
+      "packaging-format": 10,
       "identifier-system": 6,
       "specification": 6,
       "conformance-artifact": 4,
@@ -209,22 +209,22 @@
       "workflow-language": 2
     },
     "maturity_states": {
-      "established": 63,
-      "maintained": 38,
+      "established": 64,
+      "maintained": 39,
       "emerging": 4
     },
     "evidence_types": {
-      "normative-specification": 94,
-      "institutional-adoption": 62,
-      "reference-implementation": 43,
-      "independent-implementation": 33,
-      "public-validator": 17,
+      "normative-specification": 96,
+      "institutional-adoption": 63,
+      "reference-implementation": 45,
+      "independent-implementation": 34,
+      "public-validator": 19,
       "interoperability-demonstration": 14,
       "conformance-suite": 13,
-      "documented-tests": 10
+      "documented-tests": 11
     },
     "implementation_status": {
-      "reference-and-others": 82,
+      "reference-and-others": 84,
       "multiple-independent": 13,
       "single-known": 7,
       "unknown": 2,
@@ -232,12 +232,12 @@
     },
     "conformance_status": {
       "none-known": 70,
-      "public-validator": 18,
+      "public-validator": 20,
       "public-suite": 14,
       "documented-tests": 3
     },
     "stewardship_types": {
-      "community": 40,
+      "community": 42,
       "consortium": 31,
       "standards-body": 20,
       "institution": 9,
@@ -246,7 +246,7 @@
     "review_schedule": {
       "reviewed_on": {
         "2026-08-01": 87,
-        "2026-08-02": 18
+        "2026-08-02": 20
       },
       "review_due_on_values": [
         "2027-01-31",
@@ -658,6 +658,32 @@
         },
         "unknown_member_ids": []
       },
+      "general-data-packaging": {
+        "member_count": 4,
+        "member_ids": [
+          "data-package-standard",
+          "ro-crate",
+          "croissant",
+          "combine-omex-archive"
+        ],
+        "implementation_count": 0,
+        "implementations": [],
+        "role_buckets": {
+          "conformance": {
+            "count": 0,
+            "members": []
+          },
+          "multi-engine-service": {
+            "count": 0,
+            "members": []
+          },
+          "runner": {
+            "count": 0,
+            "members": []
+          }
+        },
+        "unknown_member_ids": []
+      },
       "mass-spectrometry-data": {
         "member_count": 3,
         "member_ids": [
@@ -690,6 +716,31 @@
           "neurodata-without-borders-nwb",
           "dicomweb",
           "nexus"
+        ],
+        "implementation_count": 0,
+        "implementations": [],
+        "role_buckets": {
+          "conformance": {
+            "count": 0,
+            "members": []
+          },
+          "multi-engine-service": {
+            "count": 0,
+            "members": []
+          },
+          "runner": {
+            "count": 0,
+            "members": []
+          }
+        },
+        "unknown_member_ids": []
+      },
+      "repository-preservation-layout": {
+        "member_count": 3,
+        "member_ids": [
+          "oxford-common-file-layout-ocfl",
+          "bagit",
+          "fair-signposting"
         ],
         "implementation_count": 0,
         "implementations": [],
@@ -872,9 +923,9 @@
       ],
       "missing_configured_ids": [],
       "count": 8,
-      "total_entries": 105,
-      "share": 0.0762,
-      "share_percent": 7.62
+      "total_entries": 107,
+      "share": 0.0748,
+      "share_percent": 7.48
     },
     "isolated_entries": [],
     "evidence_without_source": []

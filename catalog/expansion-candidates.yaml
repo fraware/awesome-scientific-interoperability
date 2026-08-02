@@ -1,9 +1,9 @@
 expansion_version: 1.0.0
 reviewed_on: '2026-08-02'
-north_star: A technically competent user can identify the strongest available interoperability mechanism for a concrete
-  scientific integration problem without conducting a new landscape search.
-scope: Evidence-backed candidates missing from the main list, prioritized for admission, boundary review, or watchlist
-  treatment.
+north_star: A technically competent user can identify the strongest available interoperability 
+  mechanism for a concrete scientific integration problem without conducting a new landscape search.
+scope: Evidence-backed candidates missing from the main list, prioritized for admission, boundary 
+  review, or watchlist treatment.
 research_program_size: 61
 completed_candidate_ids:
 - systems-biology-markup-language-sbml
@@ -24,6 +24,8 @@ completed_candidate_ids:
 - hupo-psi-mzml
 - omop-common-data-model
 - cdisc-operational-data-model-odm
+- oxford-common-file-layout-ocfl
+- data-package-standard
 candidate_files:
 - candidates/systems-biology-neuroscience.yaml
 - candidates/bioimaging-astronomy.yaml

@@ -1,8 +1,10 @@
 # Research object packaging
 
-Compare mechanisms for bundling data, software, workflows, and contextual metadata into exchangeable units. Catalog entries: [resource:ro-crate], [resource:workflow-ro-crate], [resource:workflow-run-ro-crate], [resource:workflow-testing-ro-crate], [resource:bagit], [resource:combine-omex-archive], [resource:fair-signposting].
+Compare mechanisms for bundling data, software, workflows, and contextual metadata into exchangeable units. Catalog entries: [resource:ro-crate], [resource:workflow-ro-crate], [resource:workflow-run-ro-crate], [resource:workflow-testing-ro-crate], [resource:bagit], [resource:combine-omex-archive], [resource:fair-signposting], [resource:oxford-common-file-layout-ocfl], [resource:data-package-standard].
 
-**Primary sources inspected:** [RO-Crate 1.3](https://www.researchobject.org/ro-crate/specification/1.3/), [Workflow RO-Crate](https://about.workflowhub.eu/Workflow-RO-Crate/), [Workflow Run RO-Crate profile](https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/), [Workflow Testing RO-Crate](https://w3id.org/ro/wftest), [RFC 8493 (BagIt)](https://datatracker.ietf.org/doc/html/rfc8493), [COMBINE Archive](https://combinearchive.org/), [FAIR Signposting](https://signposting.org/).
+For durable repository storage layouts versus lightweight dataset descriptors, see also [Repository preservation and data packaging](repository-preservation-and-data-packaging.md).
+
+**Primary sources inspected:** [RO-Crate 1.3](https://www.researchobject.org/ro-crate/specification/1.3/), [Workflow RO-Crate](https://about.workflowhub.eu/Workflow-RO-Crate/), [Workflow Run RO-Crate profile](https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/), [Workflow Testing RO-Crate](https://w3id.org/ro/wftest), [RFC 8493 (BagIt)](https://datatracker.ietf.org/doc/html/rfc8493), [COMBINE Archive](https://combinearchive.org/), [FAIR Signposting](https://signposting.org/), [OCFL Specification v1.1](https://ocfl.io/1.1/spec/), [Data Package Standard](https://datapackage.org/standard/data-package/).
 
 ## Scope boundary
 
@@ -32,7 +34,11 @@ Start with [resource:ro-crate]. Add [resource:workflow-ro-crate] when the primar
 
 ### Transfer files with integrity checks only
 
-Prefer [resource:bagit]. Combine with [resource:ro-crate] when semantic context must travel with the bits.
+Prefer [resource:bagit]. Combine with [resource:ro-crate] when semantic context must travel with the bits. Prefer [resource:oxford-common-file-layout-ocfl] when the destination must remain a durable, rebuildable repository store rather than a transfer package.
+
+### Describe lightweight datasets for portals and analytics
+
+Prefer [resource:data-package-standard] when consumers need resource, schema, dialect, and license descriptors without a full research-object graph. See [Repository preservation and data packaging](repository-preservation-and-data-packaging.md).
 
 ### Publish a systems-biology model archive
 
