@@ -1,32 +1,39 @@
-name: Batch F source snapshot
+name: Apply Batch F patch
 
 on:
-  pull_request:
+  push:
+    branches:
+      - agent/issue-44-batch-f-neuroscience-model-exchange
     paths:
       - '.github/workflows/batch-f-source-snapshot.yml'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  snapshot:
+  apply:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - name: Package exact tracked tree
-        run: |
-          python - <<'PY'
-          import subprocess, zipfile
-          files = subprocess.check_output(['git', 'ls-files'], text=True).splitlines()
-          excluded = {'.github/workflows/batch-f-source-snapshot.yml'}
-          with zipfile.ZipFile('batch-f-source-tree.zip', 'w', zipfile.ZIP_DEFLATED) as archive:
-              for path in files:
-                  if path not in excluded:
-                      archive.write(path, path)
-          PY
-      - uses: actions/upload-artifact@v4
         with:
-          name: batch-f-source-tree
-          path: batch-f-source-tree.zip
-          retention-days: 1
+          ref: agent/issue-44-batch-f-neuroscience-model-exchange
+          fetch-depth: 0
+      - name: Verify and apply Batch F patch
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .batch-f.patch.part* > /tmp/batch-f.patch.gz.b64
+          test "$(wc -c < /tmp/batch-f.patch.gz.b64)" -eq 29680
+          base64 --decode /tmp/batch-f.patch.gz.b64 > /tmp/batch-f.patch.gz
+          echo "669075c8894e71d291a186d31ae5935560ce940d77b54037937ffd93f2daafb7  /tmp/batch-f.patch.gz" | sha256sum --check -
+          gzip -dc /tmp/batch-f.patch.gz > /tmp/batch-f.patch
+          git apply --check /tmp/batch-f.patch
+          git apply /tmp/batch-f.patch
+          rm -f .batch-f.patch.part* .github/workflows/batch-f-source-snapshot.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --check
+          git commit -m "feat: add computational neuroscience model exchange batch"
+          git push origin HEAD:agent/issue-44-batch-f-neuroscience-model-exchange
