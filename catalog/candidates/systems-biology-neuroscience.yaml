@@ -1,0 +1,151 @@
+theme: systems-biology-neuroscience
+candidates:
+- id: systems-biology-markup-language-sbml
+  name: Systems Biology Markup Language (SBML)
+  official_url: https://sbml.org/documents/specifications/level-3/version-2/
+  candidate_section: Data and Digital Objects
+  coverage_family: computational-model-exchange
+  priority: P0
+  disposition: admission-pr
+  mechanism: XML-based model exchange language with extensible Level 3 packages for quantitative systems-biology
+    models.
+  why_distinct: The catalog already includes the SBML Test Suite but omits the standard it validates; SBML is the
+    central model-exchange contract behind that conformance infrastructure.
+  primary_sources:
+  - https://sbml.org/documents/specifications/level-3/version-2/
+  - https://sbml.org/software/sbml-test-suite/
+  - https://github.com/sbmlteam/libsbml
+  evidence_notes: Stable Level 3 Version 2 Core specification, public conformance suite, and multiple independent
+    simulators and libraries.
+  next_step: Admission PR with direct links to the existing SBML Test Suite and BioSimulators Test Suite.
+- id: simulation-experiment-description-markup-language-sed-ml
+  name: Simulation Experiment Description Markup Language (SED-ML)
+  official_url: https://sed-ml.org/specifications.html
+  candidate_section: Provenance and Evidence
+  coverage_family: simulation-experiment-exchange
+  priority: P0
+  disposition: admission-pr
+  mechanism: XML-based exchange format for simulation setups, model changes, tasks, outputs, and reproducible computational
+    experiments.
+  why_distinct: Separates simulation-experiment intent from model structure and complements SBML, CellML, COMBINE/OMEX,
+    and execution evidence.
+  primary_sources:
+  - https://sed-ml.org/specifications.html
+  - https://sed-ml.org/
+  - https://github.com/SED-ML/sed-ml
+  evidence_notes: Current Level 1 Version 5 specification with implementations across modeling and simulation tools.
+  next_step: Admission PR paired with SBML and CellML; document its boundary against workflow-run provenance.
+- id: cellml
+  name: CellML
+  official_url: https://www.cellml.org/specifications/cellml_2.0/
+  candidate_section: Data and Digital Objects
+  coverage_family: computational-model-exchange
+  priority: P0
+  disposition: admission-pr
+  mechanism: XML and MathML-based language for exchanging modular mathematical models, variables, units, imports,
+    and component relationships.
+  why_distinct: Provides modular mathematical-model exchange with explicit units and imports, complementing reaction-network-oriented
+    SBML.
+  primary_sources:
+  - https://www.cellml.org/specifications/cellml_2.0/
+  - https://github.com/cellml/libcellml
+  - https://opencor.ws/
+  evidence_notes: Normative CellML 2.0 specification, maintained library, model repository ecosystem, and independent
+    tools.
+  next_step: Admission PR with explicit SBML comparison and no inflated conformance claim.
+- id: brain-imaging-data-structure-bids
+  name: Brain Imaging Data Structure (BIDS)
+  official_url: https://bids-specification.readthedocs.io/en/stable/
+  candidate_section: Data and Digital Objects
+  coverage_family: neuroscience-data-organization
+  priority: P0
+  disposition: admission-pr
+  mechanism: Community specification for organizing neuroscience datasets, filenames, sidecar metadata, modalities,
+    and derivatives.
+  why_distinct: Defines a highly adopted cross-tool dataset contract for neuroimaging and adjacent neuroscience
+    modalities, a major current domain gap.
+  primary_sources:
+  - https://bids-specification.readthedocs.io/en/stable/
+  - https://bids.neuroimaging.io/standards/bids_specification/index.html
+  - https://github.com/bids-standard/bids-specification
+  evidence_notes: Versioned specification, public schema and validator ecosystem, broad archive and pipeline adoption.
+  next_step: Admission PR with BIDS Validator evidence and relationships to DICOMweb, NWB, and provenance packaging.
+- id: neurodata-without-borders-nwb
+  name: Neurodata Without Borders (NWB)
+  official_url: https://nwb.org/tools/core/nwb-schema/
+  candidate_section: Data and Digital Objects
+  coverage_family: neuroscience-data-exchange
+  priority: P0
+  disposition: admission-pr
+  mechanism: Extensible schema and HDF5-based container for neurophysiology acquisition, processing, analysis, and
+    experimental metadata.
+  why_distinct: Adds a mature neurophysiology exchange standard and extension system not represented by BIDS or
+    generic HDF5.
+  primary_sources:
+  - https://nwb.org/tools/core/nwb-schema/
+  - https://nwb-schema.readthedocs.io/
+  - https://github.com/NeurodataWithoutBorders/pynwb
+  evidence_notes: Living format specification, extension catalog, reference libraries, validation, and multi-laboratory
+    adoption.
+  next_step: Admission PR with boundary against BIDS and generic HDF5.
+- id: neuroml
+  name: NeuroML
+  official_url: https://docs.neuroml.org/Userdocs/Specification.html
+  candidate_section: Data and Digital Objects
+  coverage_family: computational-neuroscience-model-exchange
+  priority: P1
+  disposition: boundary-review
+  mechanism: Schema and LEMS-based language for exchanging computational neuroscience cells, networks, channels,
+    and simulations.
+  why_distinct: Adds model interoperability for computational neuroscience distinct from NWB experimental data and
+    BIDS organization.
+  primary_sources:
+  - https://docs.neuroml.org/Userdocs/Specification.html
+  - https://github.com/NeuroML/NeuroML2
+  - https://github.com/NeuroML/pyNeuroML
+  evidence_notes: Current stable NeuroML 2.3 with validation and multiple simulator integrations.
+  next_step: Admission review in neuroscience batch.
+- id: sonata
+  name: SONATA
+  official_url: https://github.com/AllenInstitute/sonata
+  candidate_section: Data and Digital Objects
+  coverage_family: neural-network-model-exchange
+  priority: P1
+  disposition: boundary-review
+  mechanism: File formats and conventions for exchanging large-scale neuronal network models, configurations, inputs,
+    and simulation outputs.
+  why_distinct: Addresses scalable network-model exchange and cross-simulator workflows.
+  primary_sources:
+  - https://github.com/AllenInstitute/sonata
+  - https://github.com/AllenInstitute/sonata/blob/master/docs/SONATA_DEVELOPER_GUIDE.md
+  evidence_notes: Used by major neuroscience simulation ecosystems; governance and independence require assessment.
+  next_step: Compare with NeuroML and NWB before admission.
+- id: openminds
+  name: openMINDS
+  official_url: https://openminds.ebrains.eu/
+  candidate_section: Metadata and Semantics
+  coverage_family: neuroscience-metadata-knowledge-graph
+  priority: P2
+  disposition: watchlist
+  mechanism: Schema and controlled-term ecosystem for interoperable neuroscience metadata and knowledge graphs.
+  why_distinct: Potential complement to BIDS and NWB at the semantic metadata layer.
+  primary_sources:
+  - https://openminds.ebrains.eu/
+  - https://github.com/HumanBrainProject/openMINDS
+  evidence_notes: Substantial EBRAINS adoption; independent governance and broader reuse require review.
+  next_step: Monitor independent deployments outside originating infrastructure.
+- id: nifti
+  name: NIfTI
+  official_url: https://nifti.nimh.nih.gov/
+  candidate_section: Data and Digital Objects
+  coverage_family: neuroimaging-file-exchange
+  priority: P2
+  disposition: watchlist
+  mechanism: Binary image and header format for volumetric neuroimaging data.
+  why_distinct: Underlying file exchange for many BIDS datasets, though BIDS may provide stronger North-Star decision
+    value.
+  primary_sources:
+  - https://nifti.nimh.nih.gov/
+  - https://github.com/NIFTI-Imaging/nifti_clib
+  evidence_notes: Broad installed base; stewardship and current specification maintenance need assessment.
+  next_step: Represent under BIDS unless a separate format decision is necessary.

@@ -1,0 +1,108 @@
+theme: geospatial-environmental
+candidates:
+- id: ogc-geopackage
+  name: OGC GeoPackage
+  official_url: https://www.geopackage.org/
+  candidate_section: Data and Digital Objects
+  coverage_family: geospatial-data-exchange
+  priority: P1
+  disposition: boundary-review
+  mechanism: SQLite-based standard for portable vector features, tile matrices, attributes, extensions, and metadata.
+  why_distinct: Adds an offline and embedded geospatial exchange contract complementary to OGC APIs and STAC.
+  primary_sources:
+  - https://www.geopackage.org/
+  - https://www.ogc.org/standard/geopackage/
+  - https://github.com/opengeospatial/geopackage
+  evidence_notes: OGC standard with broad independent implementation.
+  next_step: Admission review with GeoParquet and OGC API Features.
+- id: geoparquet
+  name: GeoParquet
+  official_url: https://geoparquet.org/
+  candidate_section: Data and Digital Objects
+  coverage_family: cloud-geospatial-data-exchange
+  priority: P1
+  disposition: boundary-review
+  mechanism: Open metadata and encoding specification for storing geospatial vector data in Apache Parquet.
+  why_distinct: Adds cloud-analytics geospatial interoperability not provided by feature-service APIs.
+  primary_sources:
+  - https://geoparquet.org/
+  - https://github.com/opengeospatial/geoparquet
+  evidence_notes: Rapidly adopted specification; governance maturity and standard status require review.
+  next_step: Track independently from general Parquet and OGC APIs.
+- id: ogc-sensorml
+  name: OGC SensorML
+  official_url: https://www.ogc.org/standard/sensorml/
+  candidate_section: Metadata and Semantics
+  coverage_family: sensor-description
+  priority: P1
+  disposition: boundary-review
+  mechanism: Model and encodings for describing sensors, processes, observation procedures, positions, inputs, outputs,
+    and capabilities.
+  why_distinct: Complements SensorThings and SOSA/SSN with executable process and system descriptions.
+  primary_sources:
+  - https://www.ogc.org/standard/sensorml/
+  - https://schemas.opengis.net/sensorML/
+  evidence_notes: OGC standard with implementations; determine whether existing sensor entries already provide sufficient
+    coverage.
+  next_step: Review as typed complement to SensorThings and SOSA/SSN.
+- id: ogc-waterml-2
+  name: OGC WaterML 2.0
+  official_url: https://www.ogc.org/standard/waterml/
+  candidate_section: Data and Digital Objects
+  coverage_family: hydrology-observation-exchange
+  priority: P1
+  disposition: boundary-review
+  mechanism: GML-based standard for exchanging hydrological time series, monitoring points, procedures, and observation
+    metadata.
+  why_distinct: Adds a mature hydrology domain exemplar for observational data exchange.
+  primary_sources:
+  - https://www.ogc.org/standard/waterml/
+  - https://schemas.opengis.net/waterml/2.0/
+  evidence_notes: OGC standard with water-agency implementations.
+  next_step: Assess domain-exemplar value against SensorThings and generic observation models.
+- id: ogc-api-records
+  name: OGC API - Records
+  official_url: https://ogcapi.ogc.org/records/
+  candidate_section: Identifiers and Discovery
+  coverage_family: geospatial-record-discovery
+  priority: P2
+  disposition: watchlist
+  mechanism: Web API for searching, filtering, and retrieving metadata records and collections.
+  why_distinct: Potential modern replacement or complement to catalog discovery patterns in geospatial systems.
+  primary_sources:
+  - https://ogcapi.ogc.org/records/
+  - https://github.com/opengeospatial/ogcapi-records
+  evidence_notes: Specification maturity and independent implementations require review.
+  next_step: Monitor finalization and compare with DCAT/STAC.
+- id: ogc-api-environmental-data-retrieval
+  name: OGC API - Environmental Data Retrieval (EDR)
+  official_url: https://ogcapi.ogc.org/edr/
+  candidate_section: Workflows and Execution
+  coverage_family: environmental-data-access
+  priority: P2
+  disposition: watchlist
+  mechanism: Web API for querying environmental data by position, area, trajectory, corridor, cube, and temporal
+    constraints.
+  why_distinct: Provides domain-specific spatiotemporal retrieval patterns beyond generic Features and Coverages
+    APIs.
+  primary_sources:
+  - https://ogcapi.ogc.org/edr/
+  - https://github.com/opengeospatial/ogcapi-environmental-data-retrieval
+  evidence_notes: OGC standard family candidate; family concentration and implementation evidence need review.
+  next_step: Monitor independent operational services.
+- id: geosciml
+  name: GeoSciML
+  official_url: https://geosciml.org/
+  candidate_section: Metadata and Semantics
+  coverage_family: geoscience-data-exchange
+  priority: P2
+  disposition: watchlist
+  mechanism: Conceptual model and encodings for geological units, structures, timescales, boreholes, and geologic
+    observations.
+  why_distinct: Potential geoscience semantic exemplar beyond generic geospatial APIs.
+  primary_sources:
+  - https://geosciml.org/
+  - https://schemas.opengis.net/gsml/
+  evidence_notes: International geological-survey adoption; current stewardship and public specification status
+    need review.
+  next_step: Assess exceptional quality and overlap with OGC family.

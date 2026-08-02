@@ -1,0 +1,66 @@
+theme: ecology-agriculture
+candidates:
+- id: minimum-information-about-any-sequence-mixs
+  name: Minimum Information about any (X) Sequence (MIxS)
+  official_url: https://genomicsstandardsconsortium.github.io/mixs/
+  candidate_section: Metadata and Semantics
+  coverage_family: sequence-sample-metadata
+  priority: P0
+  disposition: admission-pr
+  mechanism: Versioned checklists, environmental packages, and controlled terms for describing sequenced samples
+    and processing context.
+  why_distinct: Adds the dominant contextual-metadata contract for genomic and metagenomic sample exchange.
+  primary_sources:
+  - https://genomicsstandardsconsortium.github.io/mixs/
+  - https://github.com/GenomicsStandardsConsortium/mixs
+  - https://www.gensc.org/
+  evidence_notes: Maintained by the Genomic Standards Consortium with LinkML schemas and archive adoption.
+  next_step: Admission PR related to IGSN, ISA-JSON, Darwin Core, and Phenopackets.
+- id: ecological-metadata-language-eml
+  name: Ecological Metadata Language (EML)
+  official_url: https://eml.ecoinformatics.org/
+  candidate_section: Metadata and Semantics
+  coverage_family: ecology-dataset-metadata
+  priority: P0
+  disposition: admission-pr
+  mechanism: XML schema for describing ecological datasets, methods, coverage, provenance, tables, and distribution
+    information.
+  why_distinct: Ecology dataset metadata is a major domain gap not covered by Darwin Core occurrence terms or generic
+    DCAT.
+  primary_sources:
+  - https://eml.ecoinformatics.org/
+  - https://github.com/NCEAS/eml
+  - https://knb.ecoinformatics.org/
+  evidence_notes: Long-lived specification with major ecological repository and network adoption.
+  next_step: Admission PR with Darwin Core and DCAT boundary analysis.
+- id: minimum-information-about-plant-phenotyping-experiments-miappe
+  name: MIAPPE
+  official_url: https://www.miappe.org/
+  candidate_section: Metadata and Semantics
+  coverage_family: plant-phenotyping-metadata
+  priority: P1
+  disposition: boundary-review
+  mechanism: Minimum-information standard and data model for describing plant phenotyping experiments and environmental
+    conditions.
+  why_distinct: Adds an agricultural and plant-science metadata exemplar to a life-science-heavy catalog.
+  primary_sources:
+  - https://www.miappe.org/
+  - https://github.com/MIAPPE/MIAPPE
+  - https://github.com/MIAPPE/MIAPPE-ontology
+  evidence_notes: Multi-institutional specification with repository and API mappings.
+  next_step: Review adoption and relationship to BrAPI, ISA-JSON, and MIxS.
+- id: breeding-api-brapi
+  name: Breeding API (BrAPI)
+  official_url: https://brapi.org/
+  candidate_section: Workflows and Execution
+  coverage_family: plant-breeding-api
+  priority: P1
+  disposition: boundary-review
+  mechanism: REST and GraphQL APIs for exchanging plant-breeding germplasm, phenotypes, trials, genotypes, and observations.
+  why_distinct: A mature agricultural research API pattern absent from the current corpus.
+  primary_sources:
+  - https://brapi.org/
+  - https://github.com/plantbreeding/API
+  - https://brapi.org/specification
+  evidence_notes: International community specification with multiple databases and breeding platforms.
+  next_step: Admission review with MIAPPE and IGSN boundaries.

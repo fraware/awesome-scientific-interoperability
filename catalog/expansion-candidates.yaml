@@ -1,0 +1,15 @@
+expansion_version: 1.0.0
+reviewed_on: '2026-08-02'
+north_star: A technically competent user can identify the strongest available interoperability mechanism for a concrete
+  scientific integration problem without conducting a new landscape search.
+scope: Evidence-backed candidates missing from the main list, prioritized for admission, boundary review, or watchlist
+  treatment.
+candidate_files:
+- candidates/systems-biology-neuroscience.yaml
+- candidates/bioimaging-astronomy.yaml
+- candidates/genomics-clinical.yaml
+- candidates/ecology-agriculture.yaml
+- candidates/chemistry-proteomics.yaml
+- candidates/geospatial-environmental.yaml
+- candidates/preservation-infrastructure.yaml
+- candidates/cross-domain-and-emerging.yaml
