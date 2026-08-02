@@ -25,9 +25,11 @@ from lib.catalog_model import (  # noqa: E402
     clear_caches,
     conformance_artifact_types,
     load_catalog_resources,
+    load_implementation_list,
     load_references,
     load_stewards,
 )
+from lib.independence import independent_operator_stewards  # noqa: E402
 from validate_catalog import validate as validate_catalog_live  # noqa: E402
 
 IMPLEMENTATION_REF_TYPES = frozenset(
@@ -81,20 +83,26 @@ def build_report(*, as_of: date) -> dict[str, Any]:
     resources = load_catalog_resources()
     references = load_references()
     stewards = load_stewards()
+    implementations = load_implementation_list()
 
     mi_queue: list[dict[str, Any]] = []
     dt_queue: list[dict[str, Any]] = []
     for resource in sorted(resources, key=lambda item: item["id"]):
         if resource.get("implementation_status") == "multiple-independent":
-            count = implementation_evidence_count(resource, references)
-            if count < 2:
+            operators = independent_operator_stewards(resource, implementations)
+            typed_refs = implementation_evidence_count(resource, references)
+            if len(operators) < 2:
                 mi_queue.append(
                     {
                         "id": resource["id"],
                         "section": resource["section"],
                         "implementation_status": resource["implementation_status"],
-                        "direct_implementation_refs": count,
-                        "reason": "fewer than two direct implementation/adoption/registry/interop references",
+                        "independent_operators": operators,
+                        "direct_implementation_refs": typed_refs,
+                        "reason": (
+                            "fewer than two distinct independent-implementation operators "
+                            "outside the resource steward"
+                        ),
                     }
                 )
         if resource.get("conformance_status") == "documented-tests":
@@ -121,6 +129,7 @@ def build_report(*, as_of: date) -> dict[str, Any]:
             "resources": len(resources),
             "references": len(references),
             "stewards": len(stewards),
+            "implementations": len(implementations),
             "integrity_errors": len(integrity_errors),
             "multiple_independent_queue": len(mi_queue),
             "documented_tests_queue": len(dt_queue),
@@ -151,6 +160,7 @@ def baseline_snapshot(report: dict[str, Any]) -> dict[str, Any]:
             "resources": report["counts"]["resources"],
             "references": report["counts"]["references"],
             "stewards": report["counts"]["stewards"],
+            "implementations": report["counts"].get("implementations", 0),
             "integrity_errors": report["counts"]["integrity_errors"],
             "multiple_independent_queue": report["counts"]["multiple_independent_queue"],
             "documented_tests_queue": report["counts"]["documented_tests_queue"],
@@ -171,6 +181,7 @@ def render_markdown(report: dict[str, Any]) -> str:
         f"- Resources: {counts['resources']}",
         f"- References: {counts['references']}",
         f"- Stewards: {counts['stewards']}",
+        f"- Implementations: {counts.get('implementations', 0)}",
         f"- Integrity errors: {counts['integrity_errors']}",
         f"- Unsupported `multiple-independent` queue: {counts['multiple_independent_queue']}",
         f"- Unsupported `documented-tests` queue: {counts['documented_tests_queue']}",
@@ -186,8 +197,10 @@ def render_markdown(report: dict[str, Any]) -> str:
     lines.extend(["", "## Multiple-independent queue", ""])
     if report["queues"]["multiple_independent"]:
         for item in report["queues"]["multiple_independent"]:
+            operators = item.get("independent_operators") or []
             lines.append(
-                f"- `{item['id']}` ({item['section']}): {item['direct_implementation_refs']} direct refs — {item['reason']}"
+                f"- `{item['id']}` ({item['section']}): {len(operators)} independent operators "
+                f"{operators} — {item['reason']}"
             )
     else:
         lines.append("- none")
@@ -230,7 +243,7 @@ def render_baseline_markdown(report: dict[str, Any]) -> str:
         "|---|---|",
         f"| Catalog resources | {counts['resources']} |",
         f"| Unresolved integrity errors | {counts['integrity_errors']} |",
-        f"| Registry sizes | {counts['references']} references, {counts['stewards']} stewards |",
+        f"| Registry sizes | {counts['references']} references, {counts['stewards']} stewards, {counts.get('implementations', 0)} implementations |",
         "",
     ]
     if integrity_ok:
@@ -248,7 +261,7 @@ def render_baseline_markdown(report: dict[str, Any]) -> str:
             "",
             "| Queue | Count | Disposition rule |",
             "|---|---:|---|",
-            f"| Unsupported `multiple-independent` | {counts['multiple_independent_queue']} | Enrich with ≥2 direct implementation/adoption/registry/interop refs, or downgrade status |",
+            f"| Unsupported `multiple-independent` | {counts['multiple_independent_queue']} | Enrich with ≥2 distinct independent-implementation operators outside the resource steward, or downgrade status |",
             f"| Unsupported `documented-tests` | {counts['documented_tests_queue']} | Enrich with a direct validator/suite/interop-result ref, or downgrade status |",
             "",
             "Exact resource IDs are exported by:",

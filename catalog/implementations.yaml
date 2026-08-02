@@ -1,0 +1,129 @@
+implementations_version: 1.0.0
+reviewed_on: '2026-08-02'
+implementations:
+- id: loc-bagit-python
+  name: bagit-python
+  url: https://github.com/LibraryOfCongress/bagit-python
+  implements_resource_id: bagit
+  operator_steward_id: library-of-congress
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-libraryofcongress-bagit-python
+  - datatracker-ietf-org-doc-html-rfc8493
+- id: archivematica-bagit
+  name: Archivematica
+  url: https://github.com/artefactual/archivematica
+  implements_resource_id: bagit
+  operator_steward_id: artefactual-systems
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-artefactual-archivematica
+  - archivematica-adr-0006-bagit
+- id: toil-cwl-runner
+  name: Toil
+  url: https://github.com/DataBiosphere/toil
+  implements_resource_id: common-workflow-language-cwl
+  operator_steward_id: databiosphere
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-databiosphere-toil
+  - commonwl-org-v1-2-conformancetests-html
+- id: arvados-cwl-runner
+  name: Arvados
+  url: https://github.com/arvados/arvados
+  implements_resource_id: common-workflow-language-cwl
+  operator_steward_id: arvados-foundation
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-arvados-arvados
+  - arvados-org-cwl
+- id: dcm4che-dicomweb
+  name: dcm4che
+  url: https://github.com/dcm4che/dcm4che
+  implements_resource_id: dicomweb
+  operator_steward_id: dcm4che
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-dcm4che-dcm4che
+  - dicomstandard-org-using-dicomweb
+- id: ohif-dicomweb-viewer
+  name: OHIF Viewer
+  url: https://github.com/OHIF/Viewers
+  implements_resource_id: dicomweb
+  operator_steward_id: ohif
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-ohif-viewers
+  - dicomstandard-org-using-dicomweb
+- id: dockstore-trs
+  name: Dockstore
+  url: https://github.com/dockstore/dockstore
+  implements_resource_id: ga4gh-tool-registry-service-trs
+  operator_steward_id: dockstore-consortium
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-dockstore-dockstore
+  - dockstore-org
+- id: workflowhub-trs
+  name: WorkflowHub TRS
+  url: https://workflowhub.eu/ga4gh/trs/v2/
+  implements_resource_id: ga4gh-tool-registry-service-trs
+  operator_steward_id: workflowhub
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - workflowhub-eu-developer-trs
+  - ga4gh-org-product-tool-registry-service-trs
+- id: nomad-optimade-server
+  name: NOMAD OPTIMADE
+  url: https://nomad-lab.eu/prod/rae/optimade/
+  implements_resource_id: optimade
+  operator_steward_id: fairmat-nomad
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - nomad-lab-optimade-info
+  - optimade-providers-dashboard-nmd
+- id: materials-project-optimade-server
+  name: Materials Project OPTIMADE
+  url: https://optimade.materialsproject.org/
+  implements_resource_id: optimade
+  operator_steward_id: materials-project
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - optimade-materialsproject-base
+  - optimade-providers-dashboard-mp
+- id: cromwell-wdl-engine
+  name: Cromwell
+  url: https://github.com/broadinstitute/cromwell
+  implements_resource_id: workflow-description-language-wdl
+  operator_steward_id: broad-institute
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-broadinstitute-cromwell
+  - openwdl-org-root
+- id: miniwdl-wdl-engine
+  name: miniwdl
+  url: https://github.com/openwdl/miniwdl
+  implements_resource_id: workflow-description-language-wdl
+  operator_steward_id: chanzuckerberg-initiative
+  relationship: independent-implementation
+  notes: CZI-originated WDL runner; repository is hosted under the OpenWDL GitHub org but operated
+    independently of OpenWDL language stewardship.
+  evidence_ref_ids:
+  - github-com-openwdl-miniwdl
+  - miniwdl-readthedocs-getting-started
+- id: mcp-specification-repo
+  name: MCP specification repository
+  url: https://github.com/modelcontextprotocol/specification
+  implements_resource_id: model-context-protocol-mcp
+  operator_steward_id: model-context-protocol-project
+  relationship: official-implementation
+  evidence_ref_ids:
+  - github-com-modelcontextprotocol-specification
+- id: mcp-servers-official
+  name: MCP servers (official monorepo)
+  url: https://github.com/modelcontextprotocol/servers
+  implements_resource_id: model-context-protocol-mcp
+  operator_steward_id: model-context-protocol-project
+  relationship: official-implementation
+  evidence_ref_ids:
+  - github-com-modelcontextprotocol-servers

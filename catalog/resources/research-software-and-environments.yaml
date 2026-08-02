@@ -18,9 +18,9 @@ resources:
   maturity: maintained
   evidence_types:
   - normative-specification
-  - independent-implementation
+  - reference-implementation
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: apptainer-project
   domains:
@@ -65,9 +65,9 @@ resources:
   maturity: maintained
   evidence_types:
   - normative-specification
-  - independent-implementation
+  - reference-implementation
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: public-validator
   steward_id: citation-file-format-project
   domains:
@@ -115,8 +115,8 @@ resources:
   maturity: maintained
   evidence_types:
   - normative-specification
-  - independent-implementation
-  implementation_status: multiple-independent
+  - reference-implementation
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: codemeta-project
   domains:

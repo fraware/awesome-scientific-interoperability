@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-02",
-  "file_count": 132,
+  "file_count": 138,
   "files": [
     {
       "path": ".github/CODEOWNERS",
@@ -68,19 +68,24 @@
       "bytes": 306
     },
     {
+      "path": "catalog/implementations.yaml",
+      "sha256": "a932003de3efcdba33d69ebc70d8ebddfed8440ef6d9f10b92f4c6d1e62f86dd",
+      "bytes": 4601
+    },
+    {
       "path": "catalog/references.yaml",
-      "sha256": "8ea7841ebd811fbfb9545feff4d8e06abde6a9119c29cea4e182a4db40838666",
-      "bytes": 59557
+      "sha256": "53d58904e3f42db28b5d95125c9099e42b14537b649cc8da081f87cd8f25fb17",
+      "bytes": 61872
     },
     {
       "path": "catalog/resources.yaml",
-      "sha256": "824e85b4b23be603881a9f9492a1ddb9561a03886b64f04b6130ae1c88aed1d3",
+      "sha256": "29e937f632e0fbd70d498268fa1fe7c33ad58afe9fe19313ca50b9bb949de1e3",
       "bytes": 733
     },
     {
       "path": "catalog/resources/agents-access-and-policy.yaml",
-      "sha256": "a18afdba2997851eb97435e6e43e726885ad07ac19a67388b69f4301cd92cf68",
-      "bytes": 6193
+      "sha256": "89e33c6fdf8184dc84ff510603fdd67b6bb4b535a833f9c779b686bcd2c51568",
+      "bytes": 6191
     },
     {
       "path": "catalog/resources/data-and-digital-objects.yaml",
@@ -94,48 +99,48 @@
     },
     {
       "path": "catalog/resources/identifiers-and-discovery.yaml",
-      "sha256": "0228e8282388ae6424a09c99a1ab8d838df536ce49f2da88b4cf0b3f62c221d4",
-      "bytes": 16781
+      "sha256": "ad74ded68f12efb3bcb8e50de8918de598444ec3e74d7c28319fd0fe10b93835",
+      "bytes": 16777
     },
     {
       "path": "catalog/resources/instruments-and-laboratories.yaml",
-      "sha256": "f1dfb6e1ac704af490c7616f5a4b3b886bb1ce9bcb97c2b752feaca97d91e576",
-      "bytes": 13746
+      "sha256": "08d618771a8a1b6825a70210cf008c413eccd10fb18be9d36af85b1a255efd77",
+      "bytes": 13744
     },
     {
       "path": "catalog/resources/knowledge-systems-and-publications.yaml",
-      "sha256": "3d11c658f762d8a3825abb54205e846ffded674c5f2f678b4f304caa767fa098",
-      "bytes": 7897
+      "sha256": "02f97a8e1af5f560ceebbba7c3e3ba4cd5378af6818fa787569863769267c656",
+      "bytes": 7866
     },
     {
       "path": "catalog/resources/metadata-and-semantics.yaml",
-      "sha256": "df2040c4aaa7667e755485e2e02cd92fb9fb28dcd2da011dd8626ce45fc10fe2",
-      "bytes": 24074
+      "sha256": "982249e5099a6eb59173a7c49e0f3fe5c98212085ba4c2dd6b8a2ae0ffb8e1c7",
+      "bytes": 24072
     },
     {
       "path": "catalog/resources/provenance-and-evidence.yaml",
-      "sha256": "73843e3af91218cd0038dd17607d52b81ca77370749f12f950264812432fd0fe",
+      "sha256": "353c6f56d7fbb8361304f8b82d9e701239ee6a46d44eec25f1eacdfab139546f",
       "bytes": 8943
     },
     {
       "path": "catalog/resources/research-software-and-environments.yaml",
-      "sha256": "cad981532fb9a06413736c1ac5a1f51426bda75f05906f026d1021e34199337e",
-      "bytes": 7835
+      "sha256": "c98daafcfb702e1186e6e1591893976afcf3dfb1ddd00ab7189ec79d09aa1b66",
+      "bytes": 7829
     },
     {
       "path": "catalog/resources/validation-and-conformance.yaml",
-      "sha256": "359d471fd1d39adf9d0269849d92b1a6e7c5618bed6dfaa0064f6a7bab587ecb",
+      "sha256": "d1046904f1c7c3e0cce988c2737db8ea20e3c1265ee55663d677c1b4f8dd7c36",
       "bytes": 6589
     },
     {
       "path": "catalog/resources/workflows-and-execution.yaml",
-      "sha256": "94e6d912022561f3fbd7e197dd5476f5fc1e748ec64230bc55cbd0567ae37c5d",
-      "bytes": 17775
+      "sha256": "2a2c4e1e6f833373f0a75675ef1817d98c416efdd735a960e5c8c9a5af0291c6",
+      "bytes": 17767
     },
     {
       "path": "catalog/stewards.yaml",
-      "sha256": "fed19d5857c651771d67fbe6725ab34c1142a518d9140824a9b4b5473d3d3793",
-      "bytes": 9426
+      "sha256": "2210559128a85d35f64b873e43ffe7ab75c14e926a1bef612cfeeae347308014",
+      "bytes": 10681
     },
     {
       "path": "catalog/watchlist.yaml",
@@ -194,8 +199,13 @@
     },
     {
       "path": "docs/catalog-model-v2.1.md",
-      "sha256": "641e44ed720020f0a60f1b15129745c18fa57f488d7c6f368661e7bd4ae94428",
-      "bytes": 3950
+      "sha256": "9251155759afe3e62e411783a7c477051a9a9aa715a62e4ab4c6b50cdffa8dd3",
+      "bytes": 4018
+    },
+    {
+      "path": "docs/catalog-model-v2.2.md",
+      "sha256": "271aed4f9a9b01b082d75d903ce6c3b2a29d8c479adb3685aca43b13aa3e2cb8",
+      "bytes": 2474
     },
     {
       "path": "docs/catalog-model-v2.md",
@@ -214,13 +224,13 @@
     },
     {
       "path": "docs/data-quality-baseline.json",
-      "sha256": "fb7a5b329a5db8828dc8c6bf08a90bbdf1811dc9c04609942bdece9472c3a07e",
-      "bytes": 237
+      "sha256": "a24b71b10d860c4b233198c62fe359388ce1d7de0bbea5adb1b43e6fe063cb47",
+      "bytes": 264
     },
     {
       "path": "docs/data-quality-baseline.md",
-      "sha256": "366e3d1356bd6304359e301d037535933754ff48f3611ace746164da9f968ef5",
-      "bytes": 2161
+      "sha256": "20f23ed655917e4d1092fe2de153a4e9cc0e3a67fa60f4a426677f546c9b6140",
+      "bytes": 2203
     },
     {
       "path": "docs/decision-guides/README.md",
@@ -353,6 +363,11 @@
       "bytes": 3377
     },
     {
+      "path": "docs/reviews/implementation-independence-pr38.md",
+      "sha256": "8689ea2c4f5dee9b85e0215dce25b35387501c253becf860feccc73be976c43d",
+      "bytes": 3315
+    },
+    {
       "path": "docs/reviews/instruments-and-laboratories.md",
       "sha256": "2046ec25fdae3698bcde59b68145cffa5ff7b3c5c79b9c87efdbd497d4ce1981",
       "bytes": 2313
@@ -428,6 +443,11 @@
       "bytes": 7560
     },
     {
+      "path": "schema/implementations.schema.json",
+      "sha256": "2dde2422cbc645e3b76c51c74e5dfe1c44619f78e99326322ea40699a3cb06b2",
+      "bytes": 2320
+    },
+    {
       "path": "schema/references.schema.json",
       "sha256": "37a4b6031cb220b55cbb9702d2af5cd0ff1d5b3a35ba2fd1d0b6def9d86e2563",
       "bytes": 1658
@@ -449,8 +469,8 @@
     },
     {
       "path": "scripts/audit_data_quality.py",
-      "sha256": "48104d33fc0bfa42e427c512f9c883bc3f780ed43367c66cc326b630159e02c8",
-      "bytes": 15509
+      "sha256": "e38cc79959d203903ded778e070496813358a3a76afb905a8b544b4a74a3f9bd",
+      "bytes": 16278
     },
     {
       "path": "scripts/check_links.py",
@@ -474,8 +494,13 @@
     },
     {
       "path": "scripts/lib/catalog_model.py",
-      "sha256": "1165602b6d4bd4d456a3cafe0f8d8650574f713c97e13b775add6f0f1f0bf2ee",
-      "bytes": 2569
+      "sha256": "c6c2b6d3cecdeb644ae2f503456794148bae7d9e7fc414881317183659a05fa1",
+      "bytes": 3241
+    },
+    {
+      "path": "scripts/lib/independence.py",
+      "sha256": "ea7c54baf9c6c195ec606b101a2bb5d41d055260dacf66aaf4f299526fee39c3",
+      "bytes": 1316
     },
     {
       "path": "scripts/query_catalog.py",
@@ -484,8 +509,8 @@
     },
     {
       "path": "scripts/validate_catalog.py",
-      "sha256": "212530a4a7e604fd9c07690605619772ca7ce09631de26a584f278ebac53d796",
-      "bytes": 19798
+      "sha256": "0862f10e9a7ce9a24af3dfcc99b0f76918c97811db104c949d563305a46fac04",
+      "bytes": 22237
     },
     {
       "path": "scripts/validate_decision_guides.py",
@@ -619,7 +644,7 @@
     },
     {
       "path": "tests/test_catalog.py",
-      "sha256": "962045911535f03c23976a66fe2bec55bc793beae7284a1e5ce395b3d6b841cc",
+      "sha256": "ec4d9857ac58c3a5dc9738c6015a88a865d3ac64e4a3375a3456fdb4997bf230",
       "bytes": 5989
     },
     {
@@ -629,13 +654,18 @@
     },
     {
       "path": "tests/test_data_quality_baseline.py",
-      "sha256": "eaab2a59a7335fbd6ef31d274e043f30ce643ecb45f663d532c0f6aafdafe745",
-      "bytes": 3376
+      "sha256": "6c1579e40029d85ebf21804fc5e2e1a28b2a4faffa75f57bb94b79428c21c4fb",
+      "bytes": 3459
     },
     {
       "path": "tests/test_decision_guides.py",
       "sha256": "b8f8ef1c1098270278ebb05b9de9934622ae085c8828b97c8d3cf58c616cc3ee",
       "bytes": 2473
+    },
+    {
+      "path": "tests/test_independence.py",
+      "sha256": "4e925d0eca67c81982afc8f7621fde6531c7716325236732b7e6367942f0fc61",
+      "bytes": 8693
     },
     {
       "path": "tests/test_links.py",
@@ -649,8 +679,8 @@
     },
     {
       "path": "tests/test_provenance_v21.py",
-      "sha256": "cf6e584a5407ab5e5d57e791868bf90d2e18ed5335695a593db07331bb68577a",
-      "bytes": 7012
+      "sha256": "72f08a3fe7064cd11b0327ea120f8a88cab5b80c17fcb029cab19ef4c2bcef10",
+      "bytes": 7167
     },
     {
       "path": "tests/test_query_catalog.py",

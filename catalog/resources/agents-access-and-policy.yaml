@@ -20,7 +20,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: ga4gh
   domains:
@@ -108,8 +108,8 @@ resources:
   maturity: emerging
   evidence_types:
   - normative-specification
-  - independent-implementation
-  implementation_status: multiple-independent
+  - reference-implementation
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: model-context-protocol-project
   domains:

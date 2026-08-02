@@ -118,10 +118,10 @@ resources:
   maturity: established
   evidence_types:
   - normative-specification
-  - independent-implementation
+  - reference-implementation
   - institutional-adoption
   - conformance-suite
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: ga4gh
   domains:
@@ -166,9 +166,9 @@ resources:
   maturity: established
   evidence_types:
   - normative-specification
-  - independent-implementation
+  - reference-implementation
   - conformance-suite
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: ga4gh
   domains:
@@ -213,9 +213,9 @@ resources:
   maturity: established
   evidence_types:
   - normative-specification
-  - independent-implementation
+  - reference-implementation
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: ga4gh
   domains:
@@ -489,10 +489,10 @@ resources:
   maturity: maintained
   evidence_types:
   - normative-specification
-  - independent-implementation
+  - reference-implementation
   - institutional-adoption
   - conformance-suite
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: openeo-consortium-ogc
   domains:

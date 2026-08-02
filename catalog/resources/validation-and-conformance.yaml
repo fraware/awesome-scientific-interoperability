@@ -64,7 +64,7 @@ resources:
   evidence_types:
   - conformance-suite
   - normative-specification
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: common-workflow-language-project
   domains:

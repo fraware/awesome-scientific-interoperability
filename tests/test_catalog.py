@@ -39,9 +39,9 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(len(catalog["resources"]), 87)
         self.assertEqual(len(module.readme_entries(readme)), 87)
 
-    def test_catalog_version_is_v21(self) -> None:
+    def test_catalog_version_is_v22(self) -> None:
         catalog, _, _ = module.load()
-        self.assertEqual(catalog["catalog_version"], "2.1.0")
+        self.assertEqual(catalog["catalog_version"], "2.2.0")
 
     def test_every_section_has_resources(self) -> None:
         catalog, _, _ = module.load()

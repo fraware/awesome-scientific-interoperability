@@ -1,6 +1,6 @@
 # Catalog Model v2.1
 
-**Status:** Live catalog model (`catalog_version: 2.1.0`).  
+**Status:** Historical model notes for `catalog_version: 2.1.0`. Live model is [catalog-model-v2.2.md](catalog-model-v2.2.md).  
 **Authority:** `docs/engineering-takeover-specification.md` supersedes this document on conflict.
 
 ## Why v2.1

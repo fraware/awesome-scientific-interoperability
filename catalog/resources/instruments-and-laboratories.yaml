@@ -286,8 +286,8 @@ resources:
   maturity: established
   evidence_types:
   - normative-specification
-  - independent-implementation
-  implementation_status: multiple-independent
+  - reference-implementation
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: sila-consortium
   domains:

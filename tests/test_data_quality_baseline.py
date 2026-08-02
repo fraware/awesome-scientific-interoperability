@@ -41,6 +41,7 @@ class DataQualityBaselineTests(unittest.TestCase):
         counts = snapshot["counts"]
         self.assertIn(f"{counts['references']} references", text)
         self.assertIn(f"{counts['stewards']} stewards", text)
+        self.assertIn(f"{counts.get('implementations', 0)} implementations", text)
         self.assertIn(
             f"| Unsupported `multiple-independent` | {counts['multiple_independent_queue']} |",
             text,
