@@ -43,3 +43,8 @@ None.
 ## v2.1 provenance migration (2026-08-01)
 
 - Closed isolates: `cwl-conformance-tests` related to CWL and cwltool; `ro-crate-validator` related to RO-Crate and Workflow Run RO-Crate.
+
+## Issue #30 Batch 7 validation evidence (2026-08-01)
+
+- Enriched CWL conformance tests and SBML test suite adoption/implementation links; SBML MI claim adjusted to reference-and-others.
+

@@ -29,3 +29,8 @@
 ## Conflicts
 
 None.
+
+## Issue #30 Batch 8 provenance evidence (2026-08-01)
+
+- Enriched BioCompute and W3C PROV/CWLProv links; downgraded thin documented-tests claims to none-known where no suite artifact existed.
+

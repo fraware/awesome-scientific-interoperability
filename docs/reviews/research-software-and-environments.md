@@ -34,3 +34,8 @@ None.
 ## v2.1 provenance migration (2026-08-01)
 
 - Closed isolates: Apptainer, ReproZip, and SoftWare Hash Identifiers (SWHIDs) via related_resource_ids.
+
+## Issue #30 Batch 7 research-software evidence (2026-08-01)
+
+- Enriched CFF, Apptainer/Singularity, SWHID references.
+

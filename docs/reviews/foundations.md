@@ -29,3 +29,8 @@
 ## Conflicts
 
 None.
+
+## Issue #30 Batch 8 foundations evidence (2026-08-01)
+
+- FAIR Principles implementation_status set to not-applicable with FORCE11 adoption evidence.
+

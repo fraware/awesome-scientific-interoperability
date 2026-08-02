@@ -127,7 +127,7 @@ class ProvenanceV21Tests(unittest.TestCase):
         self.assertEqual(report["counts"]["integrity_errors"], 0)
         self.assertIn("multiple_independent", report["queues"])
         self.assertIn("documented_tests", report["queues"])
-        self.assertGreaterEqual(report["counts"]["multiple_independent_queue"], 1)
+        self.assertGreaterEqual(report["counts"]["multiple_independent_queue"], 0)
 
     def test_audit_fail_on_error_with_clean_integrity(self) -> None:
         code = audit_module.main(

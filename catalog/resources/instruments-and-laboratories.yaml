@@ -63,7 +63,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: astm-international
   domains:
@@ -75,6 +75,8 @@ resources:
     role: stewardship
   - ref_id: astm-org-e13
     role: technical-definition
+  - ref_id: github-com-animl-animl-core
+    role: implementation
   alternatives:
   - allotrope-data-format
   related_resource_ids:
@@ -152,7 +154,7 @@ resources:
   - normative-specification
   - independent-implementation
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: hl7-international
   domains:
@@ -165,6 +167,10 @@ resources:
     role: stewardship
   - ref_id: github-com-fhir-fhir-test-cases
     role: conformance
+  - ref_id: github-com-hl7-fhir
+    role: implementation
+  - ref_id: github-com-fhir-fhir-test-cases
+    role: implementation
   alternatives: []
   related_resource_ids:
   - loinc
@@ -193,7 +199,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: regenstrief-institute
   domains:
@@ -206,6 +212,10 @@ resources:
     role: stewardship
   - ref_id: loinc-org-kb-users-guide
     role: technical-definition
+  - ref_id: loinc-org-root
+    role: adoption
+  - ref_id: github-com-hl7-fhir
+    role: adoption
   alternatives: []
   related_resource_ids:
   - hl7-fhir
@@ -289,6 +299,10 @@ resources:
     role: stewardship
   - ref_id: gitlab-com-sila2
     role: technical-definition
+  - ref_id: github-com-sila-standard-sila2core
+    role: implementation
+  - ref_id: gitlab-com-sila2-sila-base
+    role: implementation
   alternatives:
   - opc-ua-laboratory-and-analytical-device-standard-lads
   related_resource_ids:
@@ -319,8 +333,9 @@ resources:
   - normative-specification
   - independent-implementation
   - documented-tests
-  implementation_status: multiple-independent
-  conformance_status: documented-tests
+  - conformance-suite
+  implementation_status: reference-and-others
+  conformance_status: public-suite
   steward_id: open-geospatial-consortium-ogc
   domains:
   - environmental-science
@@ -332,6 +347,8 @@ resources:
     role: stewardship
   - ref_id: docs-ogc-org-is-18-088-18-088-html
     role: technical-definition
+  - ref_id: github-com-opengeospatial-ets-sta10
+    role: conformance
   alternatives:
   - sosa-ssn
   related_resource_ids:
@@ -362,7 +379,7 @@ resources:
   - normative-specification
   - independent-implementation
   implementation_status: multiple-independent
-  conformance_status: documented-tests
+  conformance_status: none-known
   steward_id: dicom-standards-committee-nema
   domains:
   - life-sciences
@@ -374,6 +391,10 @@ resources:
     role: stewardship
   - ref_id: dicom-nema-org-medical-dicom-current-output-html-part18-html
     role: technical-definition
+  - ref_id: github-com-dcm4che-dcm4che
+    role: implementation
+  - ref_id: github-com-ohif-viewers
+    role: implementation
   alternatives:
   - hl7-fhir
   related_resource_ids: []

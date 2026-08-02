@@ -157,7 +157,7 @@ resources:
   - normative-specification
   - public-validator
   - independent-implementation
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: public-validator
   steward_id: research-object-community
   domains:
@@ -387,7 +387,7 @@ resources:
   - institutional-adoption
   - documented-tests
   - conformance-suite
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: modelica-association-project-fmi
   domains:

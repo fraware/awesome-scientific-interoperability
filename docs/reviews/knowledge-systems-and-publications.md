@@ -34,3 +34,8 @@ None.
 ## v2.1 provenance migration (2026-08-01)
 
 - Closed isolates among JATS, Nanopublications, ORKG, OpenAIRE Research Graph, and Scholix via related_resource_ids.
+
+## Issue #30 Batch 7 knowledge evidence (2026-08-01)
+
+- Enriched JATS, Nanopublications, Scholix implementation repositories.
+

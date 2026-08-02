@@ -78,6 +78,8 @@ resources:
     role: implementation
   - ref_id: commonwl-org-v1-2-conformancetests-html
     role: conformance
+  - ref_id: github-com-common-workflow-language-cwltool
+    role: adoption
   alternatives: []
   related_resource_ids:
   - common-workflow-language-cwl
@@ -155,7 +157,7 @@ resources:
   evidence_types:
   - conformance-suite
   - interoperability-demonstration
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: sbml-community
   domains:
@@ -169,6 +171,10 @@ resources:
     role: conformance
   - ref_id: github-com-sbmlteam-sbml-test-suite
     role: conformance
+  - ref_id: github-com-sbmlteam-sbml-test-suite
+    role: implementation
+  - ref_id: github-com-sbmlteam-libsbml
+    role: adoption
   alternatives: []
   related_resource_ids:
   - biosimulators-test-suite
