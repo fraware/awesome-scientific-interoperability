@@ -1,39 +1,13 @@
 name: Apply catalog v2.1 payload
 
 on:
-  pull_request:
-    branches: [main]
-    types: [synchronize, reopened]
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  apply:
-    if: github.head_ref == 'data/catalog-provenance-v21' && github.actor != 'github-actions[bot]'
+  disabled:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-        with:
-          ref: data/catalog-provenance-v21
-          fetch-depth: 0
-      - name: Verify, decode, and apply validated payload
-        shell: bash
-        run: |
-          set -euo pipefail
-          test "$(find .tmp -maxdepth 1 -name 'catalog-v21.part*' -type f | wc -l)" -eq 3
-          cat .tmp/catalog-v21.part* | base64 --decode > /tmp/catalog-v21.tar.xz
-          echo "eaeeb6f9ec60f0ad4af96fd640cf99fd96e155198a34ea2c86857ac109c28e32  /tmp/catalog-v21.tar.xz" | sha256sum --check --strict
-          tar -xJf /tmp/catalog-v21.tar.xz -C .
-          rm -rf .tmp
-          rm -f .github/workflows/apply-catalog-v21.yml
-      - name: Commit applied migration
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git diff --cached --check
-          git commit -m "Advance catalog provenance and data quality to v2.1"
-          git push origin HEAD:data/catalog-provenance-v21
+      - run: echo "Uploading checksum-verifiable small fragments."
