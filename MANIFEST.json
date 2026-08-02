@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-02",
-  "file_count": 138,
+  "file_count": 139,
   "files": [
     {
       "path": ".github/CODEOWNERS",
@@ -39,8 +39,8 @@
     },
     {
       "path": ".github/workflows/quality.yml",
-      "sha256": "3dbd02783e8f6467cbb0d937d2962c5427a3a15253d91e44fec3a6fe3239cf98",
-      "bytes": 1726
+      "sha256": "7eb5381036fc134c5a2614c2657fb75dc86dd4127f03605105d674853e8cc316",
+      "bytes": 1744
     },
     {
       "path": ".gitignore",
@@ -204,8 +204,8 @@
     },
     {
       "path": "docs/catalog-model-v2.2.md",
-      "sha256": "271aed4f9a9b01b082d75d903ce6c3b2a29d8c479adb3685aca43b13aa3e2cb8",
-      "bytes": 2474
+      "sha256": "5b104b183c8c02f962a8ffcf20277068c1e710ccf1c3dcee17bbc8d01c0efb87",
+      "bytes": 2790
     },
     {
       "path": "docs/catalog-model-v2.md",
@@ -229,8 +229,8 @@
     },
     {
       "path": "docs/data-quality-baseline.md",
-      "sha256": "20f23ed655917e4d1092fe2de153a4e9cc0e3a67fa60f4a426677f546c9b6140",
-      "bytes": 2203
+      "sha256": "3e793a61a419c93d95f263e15c9e0cec8963a6f57f27394d178864b6e98ff034",
+      "bytes": 2295
     },
     {
       "path": "docs/decision-guides/README.md",
@@ -314,8 +314,8 @@
     },
     {
       "path": "docs/maintenance-protocol.md",
-      "sha256": "d98ae026280ddf75b8a1b3b4ca9ed882219781c7ffb1eb1ded69549fa7f9353d",
-      "bytes": 4302
+      "sha256": "163d848459a6a62ae5107222878e919bd6d29212e0aa7bb82b258f68b2e59c75",
+      "bytes": 4488
     },
     {
       "path": "docs/project-charter.md",
@@ -469,8 +469,8 @@
     },
     {
       "path": "scripts/audit_data_quality.py",
-      "sha256": "e38cc79959d203903ded778e070496813358a3a76afb905a8b544b4a74a3f9bd",
-      "bytes": 16278
+      "sha256": "a6e45e919cdffd5d9de24cb4d6dc94ae1845a710089558c0308506099c591b32",
+      "bytes": 16464
     },
     {
       "path": "scripts/check_links.py",
@@ -509,8 +509,8 @@
     },
     {
       "path": "scripts/validate_catalog.py",
-      "sha256": "0862f10e9a7ce9a24af3dfcc99b0f76918c97811db104c949d563305a46fac04",
-      "bytes": 22237
+      "sha256": "669f5752e3697c318aa04f2d3899722d15147083f4436faf198ae025994ecd3f",
+      "bytes": 23173
     },
     {
       "path": "scripts/validate_decision_guides.py",
@@ -661,6 +661,11 @@
       "path": "tests/test_decision_guides.py",
       "sha256": "b8f8ef1c1098270278ebb05b9de9934622ae085c8828b97c8d3cf58c616cc3ee",
       "bytes": 2473
+    },
+    {
+      "path": "tests/test_fail_closed_depth.py",
+      "sha256": "db57d6acff8262a8c917cb49f623f9e457c3ff5660e8578f70eb8ccd7fe03743",
+      "bytes": 5526
     },
     {
       "path": "tests/test_independence.py",

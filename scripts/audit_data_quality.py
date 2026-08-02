@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Deterministic data-quality audit for catalog provenance depth.
 
-Blocking integrity errors exit non-zero under --fail-on error.
-Evidence-depth queues (multiple-independent / documented-tests) are warnings by default.
+Integrity errors and unsupported MI/DT depth claims exit non-zero under --fail-on error
+once depth rules are fail-closed in validate_catalog. --fail-on warning remains available
+for any residual audit-only warnings.
 """
 
 from __future__ import annotations
@@ -248,7 +249,9 @@ def render_baseline_markdown(report: dict[str, Any]) -> str:
     ]
     if integrity_ok:
         lines.append(
-            "Blocking integrity is green. Remaining work is evidence depth semantics, not structural validity."
+            "Blocking integrity is green. Unsupported `multiple-independent` and "
+            "`documented-tests` depth claims are fail-closed in the validator and Quality "
+            "(`audit_data_quality.py --fail-on warning`)."
         )
     else:
         lines.append(

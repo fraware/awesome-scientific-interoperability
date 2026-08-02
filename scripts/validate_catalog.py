@@ -370,6 +370,27 @@ def semantic_errors(
                     "reference with conformance or interoperability-testing role"
                 )
 
+        if resource.get("conformance_status") == "documented-tests" and check_registries:
+            artifact_ok = False
+            for item in source_refs:
+                if not isinstance(item, dict):
+                    continue
+                ref = references.get(item.get("ref_id", ""))
+                if not ref:
+                    continue
+                if (
+                    ref.get("type") in artifacts
+                    and item.get("role") in {"conformance", "interoperability-testing"}
+                ):
+                    artifact_ok = True
+                    break
+            if not artifact_ok:
+                errors.append(
+                    f"{resource_id}: documented-tests requires a direct conformance artifact "
+                    "reference (validator, conformance-suite, or interoperability-result) "
+                    "with conformance or interoperability-testing role"
+                )
+
         present_legacy = sorted(FORBIDDEN_LEGACY_FIELDS & set(resource))
         if present_legacy:
             errors.append(f"{resource_id}: legacy fields present: {present_legacy}")

@@ -26,11 +26,11 @@ Maintainer roles, the approval matrix, and recurring editorial decisions are doc
 
 - Run the network link workflow and download the JSON/Markdown artifacts.
 - Remediate unresolved `permanent-failure`, `invalid-url`, and `tls-or-dns-failure` classifications before the next release.
-- Run a full-scope offline reference audit (`python scripts/check_links.py --offline --scope all`) and refresh `docs/data-quality-baseline.md` from `python scripts/audit_data_quality.py --as-of <review-date>`.
+- Run a full-scope offline reference audit (`python scripts/check_links.py --offline --scope all`) and refresh `docs/data-quality-baseline.md` / `docs/data-quality-baseline.json` from `python scripts/audit_data_quality.py --as-of <review-date> --write-baseline docs/data-quality-baseline.json`.
 - Review section balance and duplicate functionality.
 - Reassess fast-moving laboratory and agent interoperability resources.
 - Confirm that validators and conformance suites still reflect current specifications.
-- Consider whether selected evidence-depth warnings from `audit_data_quality.py` should be promoted to fail-closed validator rules (with fixtures) after a clean baseline quarter.
+- Treat unsupported `multiple-independent` and `documented-tests` depth regressions as merge-blocking: Quality runs `audit_data_quality.py --fail-on warning`, and `validate_catalog.py` enforces the same depth rules as integrity failures. Do not weaken thresholds to clear queues.
 
 ## Link Remediation Rules
 
