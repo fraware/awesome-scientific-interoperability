@@ -112,14 +112,25 @@ def validate() -> list[str]:
         if not watch_overlap and "current_repository_state" in item:
             errors.append(f"{cid}: current_repository_state is set but no watchlist overlap exists")
 
-    if len(candidates) < 50:
-        errors.append("candidate registry must retain at least 50 researched candidates")
-    p0_count = sum(item.get("priority") == "P0" for item in candidates)
-    if p0_count < 15:
-        errors.append("candidate registry must retain at least 15 P0 admission candidates")
+    completed = payload.get("completed_candidate_ids", [])
+    completed_set = set(completed)
+    candidate_ids = {item.get("id") for item in candidates}
+    overlap = sorted(completed_set & candidate_ids)
+    if overlap:
+        errors.append(f"completed candidates still present in registry: {overlap}")
+    unknown_completed = sorted(completed_set - live_ids)
+    if unknown_completed:
+        errors.append(f"completed candidate IDs missing from main catalog: {unknown_completed}")
+    program_size = payload.get("research_program_size")
+    if isinstance(program_size, int) and len(candidates) + len(completed) != program_size:
+        errors.append(
+            "candidate registry plus completed outcomes must equal research_program_size"
+        )
+    if len(candidates) < 40:
+        errors.append("candidate registry must retain at least 40 unresolved researched candidates")
     families = {item.get("coverage_family") for item in candidates}
     if len(families) < 35:
-        errors.append("candidate registry must cover at least 35 distinct interoperability families")
+        errors.append("candidate registry must cover at least 35 distinct unresolved interoperability families")
 
     return errors
 

@@ -7,9 +7,9 @@
 
 | Check | Result |
 |---|---|
-| Catalog resources | 92 |
+| Catalog resources | 96 |
 | Unresolved integrity errors | 0 |
-| Registry sizes | 346 references, 89 stewards, 28 implementations |
+| Registry sizes | 369 references, 98 stewards, 40 implementations |
 
 Blocking integrity is green. Unsupported `multiple-independent` and `documented-tests` depth claims are fail-closed in the validator and Quality (`audit_data_quality.py --fail-on warning`).
 

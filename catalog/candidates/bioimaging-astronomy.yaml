@@ -1,73 +1,5 @@
 theme: bioimaging-astronomy
 candidates:
-- id: ome-ngff
-  name: OME-NGFF
-  official_url: https://ngff.openmicroscopy.org/0.5/
-  candidate_section: Data and Digital Objects
-  coverage_family: bioimaging-data-exchange
-  priority: P0
-  disposition: admission-pr
-  mechanism: Versioned metadata and layout specification for cloud-native multidimensional bioimaging data stored
-    with Zarr.
-  why_distinct: Covers cloud and object-store bioimaging interoperability, which DICOMweb and existing laboratory
-    entries do not address.
-  primary_sources:
-  - https://ngff.openmicroscopy.org/0.5/
-  - https://ngff.openmicroscopy.org/latest/
-  - https://github.com/ome/ngff
-  evidence_notes: Released 0.5 community specification with multiple readers, writers, converters, viewers, and
-    repository deployments.
-  next_step: Admission PR marked maintained or emerging, with explicit OME-TIFF and Zarr boundaries.
-- id: flexible-image-transport-system-fits
-  name: Flexible Image Transport System (FITS)
-  official_url: https://fits.gsfc.nasa.gov/fits_standard.html
-  candidate_section: Data and Digital Objects
-  coverage_family: astronomy-data-exchange
-  priority: P0
-  disposition: admission-pr
-  mechanism: IAU-governed file standard for exchanging astronomical images, binary tables, metadata, coordinates,
-    and compressed data.
-  why_distinct: Astronomy is absent from the current corpus despite FITS being a foundational, cross-tool scientific
-    data contract.
-  primary_sources:
-  - https://fits.gsfc.nasa.gov/fits_standard.html
-  - https://fits.gsfc.nasa.gov/fits_registry.html
-  - https://github.com/HEASARC/cfitsio
-  evidence_notes: Stable Version 4.0 standard, formal governance, registered conventions, and many independent libraries
-    and archives.
-  next_step: Admission PR as the astronomy file-format anchor, linked to IVOA standards.
-- id: ivoa-table-access-protocol-tap
-  name: IVOA Table Access Protocol (TAP)
-  official_url: https://ivoa.net/documents/TAP/
-  candidate_section: Identifiers and Discovery
-  coverage_family: astronomy-service-discovery
-  priority: P0
-  disposition: admission-pr
-  mechanism: Service protocol for synchronous and asynchronous metadata and table queries, including ADQL and spatial
-    cross-matching.
-  why_distinct: Provides a mature federated scientific query contract across independent astronomy data centers.
-  primary_sources:
-  - https://ivoa.net/documents/TAP/
-  - https://www.ivoa.net/
-  - https://github.com/ivoa-std/TAP
-  evidence_notes: IVOA Recommendation with widespread Virtual Observatory service implementations.
-  next_step: Admission PR with VOTable and ObsCore relationships and a discovery-versus-file-format boundary.
-- id: ivoa-votable
-  name: IVOA VOTable
-  official_url: https://www.ivoa.net/documents/VOTable/
-  candidate_section: Data and Digital Objects
-  coverage_family: astronomy-tabular-exchange
-  priority: P0
-  disposition: admission-pr
-  mechanism: Versioned XML standard for exchanging tabular data, metadata, arrays, links, and binary serializations
-    in astronomy.
-  why_distinct: Supplies the common table serialization used by Virtual Observatory protocols and tools.
-  primary_sources:
-  - https://www.ivoa.net/documents/VOTable/
-  - https://www.ivoa.net/
-  - https://github.com/ivoa-std/VOTable
-  evidence_notes: IVOA Recommendation 1.5 with many independent producers and consumers.
-  next_step: Admission PR alongside TAP; link to FITS and ObsCore.
 - id: ome-data-model-and-ome-tiff
   name: OME Data Model and OME-TIFF
   official_url: https://ome-model.readthedocs.io/en/latest/
@@ -75,7 +7,8 @@ candidates:
   coverage_family: bioimaging-data-exchange
   priority: P1
   disposition: boundary-review
-  mechanism: OME-XML metadata model embedded in TIFF or exchanged separately for multidimensional biological imaging.
+  mechanism: OME-XML metadata model embedded in TIFF or exchanged separately for multidimensional biological
+    imaging.
   why_distinct: Mature installed-base format for bioimaging exchange, complementary to cloud-native OME-NGFF.
   primary_sources:
   - https://ome-model.readthedocs.io/en/latest/
@@ -91,8 +24,8 @@ candidates:
   coverage_family: astronomy-application-messaging
   priority: P1
   disposition: boundary-review
-  mechanism: Messaging protocol for desktop and browser astronomy applications to discover one another and exchange
-    data and commands.
+  mechanism: Messaging protocol for desktop and browser astronomy applications to discover one another and
+    exchange data and commands.
   why_distinct: A rare mature scientific application-interoperability protocol with many independent tools.
   primary_sources:
   - https://www.ivoa.net/documents/SAMP/
@@ -123,8 +56,8 @@ candidates:
   coverage_family: astronomy-data-exchange
   priority: P1
   disposition: boundary-review
-  mechanism: Self-describing YAML and binary-block format with schemas, extensions, references, and versioned scientific
-    data models.
+  mechanism: Self-describing YAML and binary-block format with schemas, extensions, references, and versioned
+    scientific data models.
   why_distinct: Modern astronomy-oriented alternative to FITS for complex hierarchical scientific data.
   primary_sources:
   - https://asdf-standard.readthedocs.io/en/latest/

@@ -2077,3 +2077,141 @@ references:
   type: validator
   publisher: github.com
   accessed_on: '2026-08-02'
+- id: ngff-openmicroscopy-org-0-5
+  title: OME-Zarr specification 0.5
+  url: https://ngff.openmicroscopy.org/0.5/
+  type: specification
+  publisher: ngff.openmicroscopy.org
+  accessed_on: '2026-08-02'
+- id: ngff-openmicroscopy-org-tools
+  title: OME-Zarr tools and implementations
+  url: https://ngff.openmicroscopy.org/tools/
+  type: registry-record
+  publisher: ngff.openmicroscopy.org
+  accessed_on: '2026-08-02'
+- id: github-com-ome-ngff
+  title: OME-NGFF specification repository
+  url: https://github.com/ome/ngff
+  type: governance-source
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-ome-ome-zarr-py
+  title: ome-zarr-py
+  url: https://github.com/ome/ome-zarr-py
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-glencoesoftware-bioformats2raw
+  title: bioformats2raw
+  url: https://github.com/glencoesoftware/bioformats2raw
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: ome-github-io-ome-ngff-validator
+  title: OME-NGFF Validator
+  url: https://ome.github.io/ome-ngff-validator/
+  type: validator
+  publisher: ome.github.io
+  accessed_on: '2026-08-02'
+- id: fits-gsfc-nasa-gov-fits-standard
+  title: FITS Standard 4.0
+  url: https://fits.gsfc.nasa.gov/fits_standard.html
+  type: specification
+  publisher: fits.gsfc.nasa.gov
+  accessed_on: '2026-08-02'
+- id: fits-gsfc-nasa-gov-iau-fwg-rules
+  title: IAU FITS Working Group rules
+  url: https://fits.gsfc.nasa.gov/iaufwg/iaufwg_rules.html
+  type: governance-source
+  publisher: fits.gsfc.nasa.gov
+  accessed_on: '2026-08-02'
+- id: fits-gsfc-nasa-gov-registry
+  title: Registry of FITS Conventions
+  url: https://fits.gsfc.nasa.gov/fits_registry.html
+  type: registry-record
+  publisher: fits.gsfc.nasa.gov
+  accessed_on: '2026-08-02'
+- id: heasarc-gsfc-nasa-gov-cfitsio
+  title: CFITSIO 4.6.4
+  url: https://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html
+  type: implementation-repository
+  publisher: heasarc.gsfc.nasa.gov
+  accessed_on: '2026-08-02'
+- id: docs-astropy-org-fits
+  title: Astropy FITS file handling
+  url: https://docs.astropy.org/en/stable/io/fits/
+  type: technical-documentation
+  publisher: docs.astropy.org
+  accessed_on: '2026-08-02'
+- id: docs-astropy-org-fits-verification
+  title: Astropy FITS verification
+  url: https://docs.astropy.org/en/stable/io/fits/usage/verification.html
+  type: validator
+  publisher: docs.astropy.org
+  accessed_on: '2026-08-02'
+- id: ivoa-net-documents-tap
+  title: IVOA Table Access Protocol 1.1
+  url: https://ivoa.net/documents/TAP/
+  type: specification
+  publisher: ivoa.net
+  accessed_on: '2026-08-02'
+- id: ivoa-net-about
+  title: International Virtual Observatory Alliance
+  url: https://www.ivoa.net/about/what-is-ivoa.html
+  type: governance-source
+  publisher: ivoa.net
+  accessed_on: '2026-08-02'
+- id: github-com-ivoa-std-tap
+  title: IVOA TAP specification repository
+  url: https://github.com/ivoa-std/TAP
+  type: governance-source
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-opencadc-tap
+  title: OpenCADC TAP
+  url: https://github.com/opencadc/tap
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: dachs-doc-readthedocs-io
+  title: GAVO DaCHS 2.9 documentation
+  url: https://dachs-doc.readthedocs.io/
+  type: technical-documentation
+  publisher: dachs-doc.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: star-bris-ac-uk-stilts-taplint
+  title: STILTS taplint
+  url: https://www.star.bris.ac.uk/~mbt/stilts/sun256/taplint.html
+  type: validator
+  publisher: star.bris.ac.uk
+  accessed_on: '2026-08-02'
+- id: ivoa-net-documents-votable
+  title: IVOA VOTable 1.5
+  url: https://www.ivoa.net/documents/VOTable/
+  type: specification
+  publisher: ivoa.net
+  accessed_on: '2026-08-02'
+- id: github-com-ivoa-std-votable
+  title: IVOA VOTable specification repository
+  url: https://github.com/ivoa-std/VOTable
+  type: governance-source
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: docs-astropy-org-votable
+  title: Astropy VOTable handling
+  url: https://docs.astropy.org/en/stable/io/votable/index.html
+  type: technical-documentation
+  publisher: docs.astropy.org
+  accessed_on: '2026-08-02'
+- id: star-bris-ac-uk-stilts
+  title: STILTS 3.5-5
+  url: https://www.star.bris.ac.uk/mbt/stilts/
+  type: technical-documentation
+  publisher: star.bris.ac.uk
+  accessed_on: '2026-08-02'
+- id: star-bris-ac-uk-stilts-votlint
+  title: STILTS votlint
+  url: https://www.star.bris.ac.uk/~mbt/stilts/sun256/votlint.html
+  type: validator
+  publisher: star.bris.ac.uk
+  accessed_on: '2026-08-02'

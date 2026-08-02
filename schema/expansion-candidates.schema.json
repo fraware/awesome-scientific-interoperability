@@ -8,7 +8,9 @@
     "reviewed_on",
     "north_star",
     "scope",
-    "candidates"
+    "candidates",
+    "research_program_size",
+    "completed_candidate_ids"
   ],
   "properties": {
     "expansion_version": {
@@ -32,6 +34,17 @@
       "minItems": 1,
       "items": {
         "$ref": "#/$defs/candidate"
+      }
+    },
+    "research_program_size": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "completed_candidate_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/slug"
       }
     }
   },

@@ -33,6 +33,8 @@ REQUIRED_PROBLEMS = frozenset(
         "validate-conformance",
         "exchange-computational-models",
         "exchange-neuroscience-data",
+        "exchange-astronomy-data",
+        "exchange-bioimaging-data",
     }
 )
 

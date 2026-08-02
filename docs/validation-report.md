@@ -1,6 +1,6 @@
 # Validation Report
 
-**State:** Issue #44 Batch A candidate tree
+**State:** Stacked Issue #44 Batch B candidate tree
 **Validation date:** 2026-08-02
 **Catalog version:** 2.2.0
 **Human review status:** Pending maintainer approval before merge
@@ -9,44 +9,48 @@
 
 | Item | Count |
 |---|---:|
-| Main-list catalog entries | 92 |
-| README list entries (parity) | 92 |
+| Main-list catalog entries | 96 |
+| README list entries (parity) | 96 |
 | Section-scoped resource shards | 11 |
-| Technical references | 346 |
-| Steward identities | 89 |
-| Implementation/validator identities | 28 |
+| Technical references | 369 |
+| Steward identities | 98 |
+| Implementation/validator identities | 40 |
 | Watchlist items | 17 |
-| Expansion candidates remaining | 56 |
-| Decision guides (excluding index) | 11 |
-| Integration problems | 14 |
-| Deterministic unit tests | 108 |
+| Expansion candidates remaining | 52 |
+| Decision guides (excluding index) | 13 |
+| Integration problems | 16 |
+| Deterministic unit tests | 109 |
 
-## Batch A additions
+## Batch A and Batch B additions
 
 - Systems Biology Markup Language (SBML)
 - Simulation Experiment Description Markup Language (SED-ML)
 - CellML
 - Brain Imaging Data Structure (BIDS)
 - Neurodata Without Borders (NWB)
+- OME-NGFF / OME-Zarr
+- Flexible Image Transport System (FITS)
+- IVOA Table Access Protocol (TAP)
+- IVOA VOTable
 
 The records include claim-specific references, normalized stewards, implementation identities, typed relations, four-dimensional taxonomy, review provenance, and two new decision paths. SBML and BIDS retain `multiple-independent` only through distinct independently operated implementations. SED-ML, CellML, and NWB use narrower implementation claims where the evidence does not justify stronger independence.
 
 ## Completed local checks
 
-- JSON Schema and semantic validation passed for all 92 resources.
-- README/catalog name, URL, section, and summary parity passed at 92/92.
+- JSON Schema and semantic validation passed for all 96 resources.
+- README/catalog name, URL, section, and summary parity passed at 96/96.
 - Reference, steward, and implementation registries resolved without unknown IDs.
 - Independent-implementation checks passed using distinct operator identities outside the specification steward.
 - Public-suite, public-validator, and documented-tests claims resolve to direct artifact-class evidence.
 - Typed relations resolve without isolates or self-links.
-- Four taxonomy dimensions accept all live values, including the new `neuroscience` scientific domain.
+- Four taxonomy dimensions accept all live values, including the `neuroscience`, `astronomy`, and `bioimaging` scientific domains.
 - Decision-guide and integration-problem resource markers resolve.
 - Watchlist validation and expansion-candidate validation pass.
 - Review freshness passes as of 2026-08-02.
 - Data-quality audit reports zero integrity errors and zero evidence-depth queues.
 - Coverage audit reports no concentration or integrity warnings.
-- Offline syntax validation covers 362 unique HTTPS URLs across canonical, watchlist, steward, implementation, and evidence references.
-- All 108 deterministic unit tests pass.
+- Offline syntax validation covers 393 unique HTTPS URLs across canonical, watchlist, steward, implementation, and evidence references.
+- All 109 deterministic unit tests pass.
 - Manifest generation and verification are required on the exact final PR head.
 
 ## Network link audit status
@@ -77,7 +81,7 @@ Batch A adds new URLs. This report does not claim that those URLs have passed a 
 
 ## Review constraint
 
-The five Batch A records were prepared through AI-assisted primary-source review and carry author-level review provenance. They must not be represented as independently reviewed. A human maintainer must inspect the primary sources, accept or revise each admission decision, and record approval before merge.
+The nine Batch A and Batch B records were prepared through AI-assisted primary-source review and carry author-level review provenance. They must not be represented as independently reviewed. A human maintainer must inspect the primary sources, accept or revise each admission decision, and record approval before merge.
 
 ## Release constraints
 

@@ -17,6 +17,8 @@ Problem-oriented comparison documents for overlapping interoperability mechanism
 | [Controlled data access](controlled-data-access.md) | GA4GH Passports, DUO, emerging policy packaging |
 | [Computational models and simulation experiments](systems-biology-models.md) | SBML, CellML, SED-ML, COMBINE Archive, conformance suites |
 | [Neuroscience dataset and neurophysiology exchange](neuroscience-data-standards.md) | BIDS, NWB, DICOMweb, NeXus |
+| [Astronomy data files, tables, and query services](astronomy-data-and-services.md) | FITS, VOTable, TAP, STAC; ObsCore/SAMP/ASDF boundaries |
+| [Bioimaging data exchange](bioimaging-data.md) | OME-NGFF, DICOMweb, NeXus, RO-Crate; OME-TIFF/Zarr boundaries |
 
 ## How to use these guides
 
