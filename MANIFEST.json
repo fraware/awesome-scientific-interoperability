@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-02",
-  "file_count": 180,
+  "file_count": 186,
   "files": [
     {
       "path": ".github/CODEOWNERS",
@@ -11,6 +11,11 @@
       "path": ".github/ISSUE_TEMPLATE/add-resource.yml",
       "sha256": "70298086bc0ccb3160764a1b9b3072729f895f77c457cc2b07013b8cad4cd779",
       "bytes": 2516
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/challenge-evidence-or-guide.yml",
+      "sha256": "12f0da857c24c2dd3d45aae53c413e03f3672d775cdea2631bfae6e73d829e5b",
+      "bytes": 1645
     },
     {
       "path": ".github/ISSUE_TEMPLATE/correction.yml",
@@ -278,6 +283,11 @@
       "bytes": 3202
     },
     {
+      "path": "docs/community-governance.md",
+      "sha256": "43b2ba6c248ef9b6a446d462fde91d1ff8ed318173d4ca89bbbd803eebd44166",
+      "bytes": 2817
+    },
+    {
       "path": "docs/conflicts-of-interest.md",
       "sha256": "3084706dc8180be5976c9f4583cb1a219a6d961ac38f20b3c3ee5d0da17fa1c2",
       "bytes": 2532
@@ -438,14 +448,19 @@
       "bytes": 4488
     },
     {
+      "path": "docs/metrics.md",
+      "sha256": "c343feef34995781c5f16b4628a6ff239a21b285dc455e8341e4a6721f8c7093",
+      "bytes": 2030
+    },
+    {
       "path": "docs/project-charter.md",
       "sha256": "33d7832b37c14ce3c8ce10964505f994dca24a63f9504151edc2ebc894c9702c",
       "bytes": 2378
     },
     {
       "path": "docs/publishing.md",
-      "sha256": "518582dc6246b7c697e237eedee2306d5807eee3ceaf99874e212bc873cec840",
-      "bytes": 7511
+      "sha256": "8dcfe39bfc89bf1d574a2ddfadeb6a989018ff75b3f2b4f22c0dd5b699f37c46",
+      "bytes": 7806
     },
     {
       "path": "docs/querying-the-catalog.md",
@@ -459,8 +474,8 @@
     },
     {
       "path": "docs/reviewer-roles.md",
-      "sha256": "16bdfea758ec89fa21fed1cc24251ce2a7eab64aaf6afa760ae00bfe09bd12fa",
-      "bytes": 4056
+      "sha256": "a2c96b01a6b15f48ac3a0cd7321b10b4f2b60cce92e67b1c8ae6cfcd465660d7",
+      "bytes": 4521
     },
     {
       "path": "docs/reviews/agents-access-and-policy.md",
@@ -543,6 +558,11 @@
       "bytes": 6392
     },
     {
+      "path": "docs/utility-evaluation.md",
+      "sha256": "7d1e483f72a67406ae40ee1a71674aa74a1320e82e732581371ffdf4e3f4b319",
+      "bytes": 3539
+    },
+    {
       "path": "docs/validation-report.md",
       "sha256": "bdc29434d4730d2270a769a360a1077a5940d35f112b9ca44e58cf4c4e39d762",
       "bytes": 5413
@@ -551,6 +571,16 @@
       "path": "docs/watchlist.md",
       "sha256": "677e0a2ec1884c100b565d6be566caede8fafea0ff3c8cd075e82fb304a08647",
       "bytes": 2576
+    },
+    {
+      "path": "examples/README.md",
+      "sha256": "fc70437807fac0aa9756de22c5df4c646a8bb456b8adc6f1b958859ed0106eb2",
+      "bytes": 459
+    },
+    {
+      "path": "examples/catalog_json_consumer.py",
+      "sha256": "8d481ae92dbcf8b1c9fbd8f4f601d2797d710f9c01385b7dd2aec5c3f9acf67c",
+      "bytes": 2057
     },
     {
       "path": "license",
