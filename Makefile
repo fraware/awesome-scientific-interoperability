@@ -1,4 +1,4 @@
-.PHONY: validate test manifest refresh-manifest links lint all query query-json coverage-audit export
+.PHONY: validate test manifest refresh-manifest links lint all query query-json coverage-audit export site
 
 validate:
 	python scripts/validate_catalog.py
@@ -29,6 +29,9 @@ lint:
 
 export:
 	python scripts/export_catalog.py
+
+site:
+	python scripts/build_site.py
 
 query:
 	python scripts/query_catalog.py $(if $(SECTION),--section "$(SECTION)",) $(if $(LAYER),--layer "$(LAYER)",) $(if $(DOMAIN),--domain "$(DOMAIN)",) $(if $(CONNECTS),--connects "$(CONNECTS)",) $(if $(EVIDENCE),--evidence "$(EVIDENCE)",) $(if $(REVIEW_TYPE),--review-type "$(REVIEW_TYPE)",) $(if $(ID),--id "$(ID)",)

@@ -26,7 +26,7 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 
 ## How to use this list
 
-Start from the decision path that matches your question, then return to the curated entries below. Begin with a concrete [integration problem](docs/integration-problems.md), compare options in the [decision guides](docs/decision-guides/README.md), run [local catalog queries](docs/querying-the-catalog.md), or inspect the [watchlist](docs/watchlist.md) for near-miss resources.
+Start from the decision path that matches your question, then return to the curated entries below. Begin with a concrete [integration problem](docs/integration-problems.md), compare options in the [decision guides](docs/decision-guides/README.md), run [local catalog queries](docs/querying-the-catalog.md), or inspect the [watchlist](docs/watchlist.md) for near-miss resources. A read-only browser explorer is published at [fraware.github.io/awesome-scientific-interoperability](https://fraware.github.io/awesome-scientific-interoperability/).
 
 The manually edited README remains authoritative for inclusion. The machine-readable catalog validates and supports queries; it does not generate this list. See [Footnotes](#footnotes).
 
