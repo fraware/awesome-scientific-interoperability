@@ -83,6 +83,10 @@ def claim_role_ids() -> set[str]:
     return set(load_taxonomy()["claim_roles"])
 
 
+def relation_type_ids() -> set[str]:
+    return {item["id"] for item in load_taxonomy()["relation_types"]}
+
+
 def reference_type_ids() -> set[str]:
     return set(load_taxonomy()["reference_types"])
 

@@ -20,7 +20,7 @@ Problem-oriented comparison documents for overlapping interoperability mechanism
 
 1. Start from the integration situation (packaging for transfer, execution evidence, discovery, and so on).
 2. Read the comparison dimensions in the relevant guide; no single resource wins every dimension.
-3. Follow catalog IDs to boundary notes, alternatives, and evidence statuses in the README and YAML shards.
+3. Follow catalog IDs to boundary notes, typed relations (`profile-of`, `implements`, `validates`, `alternative-to`, …), and evidence statuses in the README and YAML shards.
 4. Treat packaging or profile conformance as necessary but not sufficient for reproducibility, semantic equivalence, or scientific validity.
 
 ## Validation

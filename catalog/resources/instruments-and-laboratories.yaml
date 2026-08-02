@@ -34,10 +34,6 @@ resources:
     role: stewardship
   - ref_id: allotrope-org-adf
     role: technical-definition
-  alternatives:
-  - analytical-information-markup-language-animl
-  related_resource_ids:
-  - analytical-information-markup-language-animl
   decision_basis: Substantial cross-vendor analytical-data interoperability ecosystem with published ontologies
     and format specifications.
   boundary_note: Consortium membership and licensing govern some specification access; analytical-data
@@ -45,6 +41,11 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: analytical-information-markup-language-animl
+  - type: complements
+    resource_id: analytical-information-markup-language-animl
 - id: analytical-information-markup-language-animl
   name: Analytical Information Markup Language (AnIML)
   url: https://www.animl.org/
@@ -77,10 +78,6 @@ resources:
     role: technical-definition
   - ref_id: github-com-animl-animl-core
     role: implementation
-  alternatives:
-  - allotrope-data-format
-  related_resource_ids:
-  - allotrope-data-format
   decision_basis: Direct laboratory analytical-data interoperability standard with explicit cross-vendor
     purpose.
   boundary_note: Domain-specific technique definitions may vary in maturity; device communication is out
@@ -88,6 +85,11 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: allotrope-data-format
+  - type: complements
+    resource_id: allotrope-data-format
 - id: autoprotocol
   name: Autoprotocol
   url: https://github.com/autoprotocol/autoprotocol-python
@@ -121,10 +123,6 @@ resources:
     role: implementation
   - ref_id: autoprotocol-org-root
     role: technical-definition
-  alternatives:
-  - sila-2
-  related_resource_ids:
-  - sila-2
   decision_basis: Important operational contract for expressing executable wet-lab procedures independent
     of a single vendor platform.
   boundary_note: Procedure representation does not establish device compatibility; ecosystem breadth and
@@ -132,6 +130,11 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-01-31'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: sila-2
+  - type: complements
+    resource_id: sila-2
 - id: hl7-fhir
   name: HL7 FHIR
   url: https://hl7.org/fhir/
@@ -171,9 +174,6 @@ resources:
     role: implementation
   - ref_id: github-com-fhir-fhir-test-cases
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - loinc
   decision_basis: Exceptional domain exemplar demonstrating a large modular clinical and laboratory exchange
     ecosystem.
   boundary_note: Included as a clinical-exchange exemplar, not as evidence that the list covers all healthcare
@@ -181,6 +181,9 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: loinc
 - id: loinc
   name: LOINC
   url: https://loinc.org/
@@ -216,9 +219,6 @@ resources:
     role: adoption
   - ref_id: github-com-hl7-fhir
     role: adoption
-  alternatives: []
-  related_resource_ids:
-  - hl7-fhir
   decision_basis: Mature semantic interoperability mechanism for laboratory measurements and clinical
     observations.
   boundary_note: Clinical terminology orientation; pairs naturally with FHIR for exchange and UCUM for
@@ -226,6 +226,9 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: hl7-fhir
 - id: opc-ua-laboratory-and-analytical-device-standard-lads
   name: OPC UA Laboratory and Analytical Device Standard (LADS)
   url: https://opcfoundation.org/markets-collaboration/lads/
@@ -258,16 +261,17 @@ resources:
     role: stewardship
   - ref_id: reference-opcfoundation-org-root
     role: technical-definition
-  alternatives:
-  - sila-2
-  related_resource_ids:
-  - sila-2
   decision_basis: Modern industrial-scientific bridge for interoperable device control, status, and data
     access.
   boundary_note: Device communication does not standardize experimental semantics or analytical file exchange.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: sila-2
+  - type: complements
+    resource_id: sila-2
 - id: sila-2
   name: SiLA 2
   url: https://sila2.gitlab.io/sila_base/
@@ -303,16 +307,17 @@ resources:
     role: implementation
   - ref_id: gitlab-com-sila2-sila-base
     role: implementation
-  alternatives:
-  - opc-ua-laboratory-and-analytical-device-standard-lads
-  related_resource_ids:
-  - opc-ua-laboratory-and-analytical-device-standard-lads
   decision_basis: Canonical open laboratory-device interoperability standard with multi-language implementations.
   boundary_note: Device communication does not by itself standardize experimental semantics or analytical
     data formats.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: opc-ua-laboratory-and-analytical-device-standard-lads
+  - type: complements
+    resource_id: opc-ua-laboratory-and-analytical-device-standard-lads
 - id: ogc-sensorthings-api
   name: OGC SensorThings API
   url: https://www.ogc.org/standards/sensorthings/
@@ -349,10 +354,6 @@ resources:
     role: technical-definition
   - ref_id: github-com-opengeospatial-ets-sta10
     role: conformance
-  alternatives:
-  - sosa-ssn
-  related_resource_ids:
-  - sosa-ssn
   decision_basis: Operational sensor-ingest and tasking API where SOSA/SSN supplies semantic observation
     models but not live exchange.
   boundary_note: IoT/sensor platform API; does not replace laboratory device protocols such as SiLA or
@@ -360,6 +361,11 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: sosa-ssn
+  - type: complements
+    resource_id: sosa-ssn
 - id: dicomweb
   name: DICOMweb
   url: https://www.dicomstandard.org/using/dicomweb
@@ -395,9 +401,6 @@ resources:
     role: implementation
   - ref_id: github-com-ohif-viewers
     role: implementation
-  alternatives:
-  - hl7-fhir
-  related_resource_ids: []
   decision_basis: Narrower web imaging contract than full DICOM; enables scientific pipelines to retrieve
     and store imaging objects over HTTPS.
   boundary_note: Imaging transport and metadata access; clinical semantics remain in FHIR/LOINC where
@@ -405,3 +408,6 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: hl7-fhir

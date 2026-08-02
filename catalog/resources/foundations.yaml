@@ -33,10 +33,6 @@ resources:
     role: stewardship
   - ref_id: doi-org-10-5281-zenodo-11236871
     role: technical-definition
-  alternatives: []
-  related_resource_ids:
-  - eosc-interoperability-framework
-  - fair-principles
   decision_basis: Directly addresses cross-domain scientific data interoperability and provides a current
     specification suite.
   boundary_note: 'Overlap with EOSC is complementary: CDIF supplies concrete cross-domain information
@@ -44,6 +40,11 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: eosc-interoperability-framework
+  - type: complements
+    resource_id: fair-principles
 - id: eosc-interoperability-framework
   name: EOSC Interoperability Framework
   url: https://eosc.eu/eosc-interoperability-framework/
@@ -79,16 +80,17 @@ resources:
     role: stewardship
   - ref_id: doi-org-10-5281-zenodo-10843882
     role: technical-definition
-  alternatives: []
-  related_resource_ids:
-  - cross-domain-interoperability-framework-cdif
-  - fair-digital-object-framework
   decision_basis: Major cross-domain framework that organizes technical, semantic, organizational, and
     legal interoperability in a scientific federation.
   boundary_note: Distinct from service directories because it defines the interoperability architecture.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: cross-domain-interoperability-framework-cdif
+  - type: complements
+    resource_id: fair-digital-object-framework
 - id: fair-digital-object-framework
   name: FAIR Digital Object Framework
   url: https://fairdo.org/specifications/
@@ -122,9 +124,6 @@ resources:
     role: stewardship
   - ref_id: doi-org-10-5281-zenodo-7781925
     role: technical-definition
-  alternatives: []
-  related_resource_ids:
-  - fair-principles
   decision_basis: Defines a reusable object model intended to support machine processing and cross-system
     exchange.
   boundary_note: Do not duplicate every FDO implementation; curate only field-defining specifications
@@ -132,6 +131,9 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: fair-principles
 - id: fair-principles
   name: FAIR Principles
   url: https://www.go-fair.org/fair-principles/
@@ -166,13 +168,14 @@ resources:
     role: technical-definition
   - ref_id: force11-org-info-the-fair-data-principles
     role: adoption
-  alternatives: []
-  related_resource_ids:
-  - fair-digital-object-framework
-  - fairsharing
   decision_basis: Field-defining foundation. The interoperability principle and machine-actionability
     framing are necessary to understand the category.
   boundary_note: Keep the entry focused on the principles; redirect implementation directories to FAIRsharing.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: fair-digital-object-framework
+  - type: complements
+    resource_id: fairsharing

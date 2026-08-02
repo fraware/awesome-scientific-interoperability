@@ -41,17 +41,19 @@ resources:
     role: implementation
   - ref_id: github-com-databiosphere-toil
     role: implementation
-  alternatives:
-  - workflow-description-language-wdl
-  related_resource_ids:
-  - cwltool
-  - cwlprov
   decision_basis: Canonical cross-engine workflow portability standard with a mature conformance ecosystem.
   boundary_note: Execution portability still depends on supported features and environments; distinct
     from WES/TES execution APIs.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: workflow-description-language-wdl
+  - type: complements
+    resource_id: cwltool
+  - type: complements
+    resource_id: cwlprov
 - id: cwltool
   name: cwltool
   url: https://github.com/common-workflow-language/cwltool
@@ -89,16 +91,17 @@ resources:
     role: implementation
   - ref_id: commonwl-org-v1-2-conformancetests-html
     role: conformance
-  alternatives: []
-  related_resource_ids:
-  - common-workflow-language-cwl
-  - cwlprov
   decision_basis: Canonical implementation linking the CWL specification, conformance suite, execution,
     and provenance.
   boundary_note: Avoid treating it as evidence that every CWL runner is equivalent.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: cwlprov
+  - type: implements
+    resource_id: common-workflow-language-cwl
 - id: ga4gh-data-repository-service-drs
   name: GA4GH Data Repository Service (DRS)
   url: https://www.ga4gh.org/product/data-repository-service-drs/
@@ -138,16 +141,17 @@ resources:
     role: conformance
   - ref_id: github-com-ga4gh-drs-filer
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - ga4gh-workflow-execution-service-wes
-  - ga4gh-task-execution-service-tes
   decision_basis: Critical data-access bridge in federated scientific workflow stacks.
   boundary_note: Access authorization remains a separate interoperability layer; DRS is data access not
     workflow language.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: ga4gh-workflow-execution-service-wes
+  - type: complements
+    resource_id: ga4gh-task-execution-service-tes
 - id: ga4gh-task-execution-service-tes
   name: GA4GH Task Execution Service (TES)
   url: https://www.ga4gh.org/product/task-execution-service-tes/
@@ -185,16 +189,17 @@ resources:
     role: conformance
   - ref_id: github-com-ohsu-comp-bio-funnel
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - ga4gh-workflow-execution-service-wes
-  - ga4gh-data-repository-service-drs
   decision_basis: Separates workflow orchestration from interoperable task execution across backends.
   boundary_note: Genomics origin, but broadly useful cloud-compute contract; distinct from WES workflow-run
     API.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: ga4gh-workflow-execution-service-wes
+  - type: complements
+    resource_id: ga4gh-data-repository-service-drs
 - id: ga4gh-workflow-execution-service-wes
   name: GA4GH Workflow Execution Service (WES)
   url: https://www.ga4gh.org/product/workflow-execution-service-wes/
@@ -230,11 +235,6 @@ resources:
     role: implementation
   - ref_id: github-com-sapporo-wes-sapporo
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - ga4gh-task-execution-service-tes
-  - ga4gh-data-repository-service-drs
-  - sapporo
   decision_basis: Direct operational interoperability contract between clients and workflow-execution
     services.
   boundary_note: Implementation listings do not guarantee conformance; test evidence should be noted.
@@ -242,6 +242,13 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: ga4gh-task-execution-service-tes
+  - type: complements
+    resource_id: ga4gh-data-repository-service-drs
+  - type: complements
+    resource_id: sapporo
 - id: lifemonitor
   name: LifeMonitor
   url: https://lifemonitor.eu/
@@ -274,10 +281,6 @@ resources:
     role: stewardship
   - ref_id: github-com-life-monitor-life-monitor
     role: implementation
-  alternatives: []
-  related_resource_ids:
-  - workflow-testing-ro-crate
-  - workflowhub
   decision_basis: Unusually direct bridge between portable workflow-test descriptions and external execution
     services.
   boundary_note: Narrower than a general interoperability observatory; distinct from WorkflowHub registry
@@ -285,6 +288,13 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: workflowhub
+  - type: validates
+    resource_id: common-workflow-language-cwl
+  - type: complements
+    resource_id: workflow-testing-ro-crate
 - id: sapporo
   name: Sapporo
   url: https://github.com/sapporo-wes/sapporo
@@ -318,11 +328,6 @@ resources:
     role: implementation
   - ref_id: ga4gh-org-product-workflow-execution-service-wes
     role: technical-definition
-  alternatives: []
-  related_resource_ids:
-  - ga4gh-workflow-execution-service-wes
-  - common-workflow-language-cwl
-  - workflow-description-language-wdl
   decision_basis: Concrete cross-language WES implementation and useful reference point for testing client-service
     interoperability.
   boundary_note: Implementation inclusion should be tied to reference value and multi-language support;
@@ -330,6 +335,13 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: workflow-description-language-wdl
+  - type: implements
+    resource_id: ga4gh-workflow-execution-service-wes
+  - type: executes
+    resource_id: common-workflow-language-cwl
 - id: wfexs-backend
   name: WfExS-backend
   url: https://github.com/inab/WfExS-backend
@@ -365,17 +377,21 @@ resources:
     role: implementation
   - ref_id: researchobject-org-workflow-run-crate
     role: technical-definition
-  alternatives: []
-  related_resource_ids:
-  - workflow-run-ro-crate
-  - ro-crate
-  - common-workflow-language-cwl
   decision_basis: Strong reference implementation connecting heterogeneous workflows with reproducible
     execution and evidence packaging.
   boundary_note: Independent review should confirm current supported engines and profiles.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: workflow-run-ro-crate
+  - type: complements
+    resource_id: ro-crate
+  - type: executes
+    resource_id: workflow-description-language-wdl
+  - type: executes
+    resource_id: common-workflow-language-cwl
 - id: workflow-description-language-wdl
   name: Workflow Description Language (WDL)
   url: https://openwdl.org/
@@ -412,17 +428,19 @@ resources:
     role: implementation
   - ref_id: github-com-openwdl-miniwdl
     role: implementation
-  alternatives:
-  - common-workflow-language-cwl
-  related_resource_ids:
-  - sapporo
-  - common-workflow-language-cwl
   decision_basis: Major scientific workflow language with meaningful implementation diversity.
   boundary_note: Governance and conformance maturity should be compared with CWL; language not execution
     API.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: common-workflow-language-cwl
+  - type: complements
+    resource_id: sapporo
+  - type: complements
+    resource_id: common-workflow-language-cwl
 - id: workflowhub
   name: WorkflowHub
   url: https://workflowhub.eu/
@@ -459,12 +477,6 @@ resources:
     role: stewardship
   - ref_id: about-workflowhub-eu-workflow-ro-crate
     role: technical-definition
-  alternatives: []
-  related_resource_ids:
-  - workflow-ro-crate
-  - workflow-testing-ro-crate
-  - lifemonitor
-  - ga4gh-workflow-execution-service-wes
   decision_basis: Exemplary multi-standard infrastructure connecting workflow publication, discovery,
     packaging, and execution systems.
   boundary_note: Registry role is distinct from LifeMonitor's test monitoring; GA4GH TRS cross-ref deferred
@@ -472,6 +484,15 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: complements
+    resource_id: workflow-ro-crate
+  - type: complements
+    resource_id: workflow-testing-ro-crate
+  - type: complements
+    resource_id: lifemonitor
+  - type: complements
+    resource_id: ga4gh-workflow-execution-service-wes
 - id: openeo-api
   name: openEO API
   url: https://www.ogc.org/standards/openeo/
@@ -511,14 +532,16 @@ resources:
     role: implementation
   - ref_id: github-com-open-eo-openeo-python-driver
     role: implementation
-  alternatives:
-  - spatiotemporal-asset-catalog-stac
-  related_resource_ids:
-  - spatiotemporal-asset-catalog-stac
-  - ogc-api-coverages
   decision_basis: Strongest EO-specific processing contract for cloud datacube backends where generic
     OGC API - Processes is too broad.
   boundary_note: EO cloud processing API; not a general workflow language or provenance packaging standard.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  relations:
+  - type: alternative-to
+    resource_id: spatiotemporal-asset-catalog-stac
+  - type: complements
+    resource_id: spatiotemporal-asset-catalog-stac
+  - type: complements
+    resource_id: ogc-api-coverages

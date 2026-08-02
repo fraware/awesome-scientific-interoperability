@@ -21,8 +21,6 @@ resources:
   conformance_status: public-validator
   domains:
   - cross-domain
-  alternatives: []
-  related_resource_ids: []
   decision_basis: Widely used packaging contract for research objects with public validators.
   boundary_note: Packaging conformance does not prove reproducibility.
   reviewed_on: '2026-08-01'
@@ -35,3 +33,4 @@ resources:
     role: technical-definition
   - ref_id: fixture-ref-2
     role: technical-definition
+  relations: []

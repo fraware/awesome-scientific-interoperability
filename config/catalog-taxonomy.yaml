@@ -137,3 +137,38 @@ steward_types:
   - institution
   - community
   - vendor-led
+
+relation_types:
+  - id: alternative-to
+    label: Alternative to
+    description: Competing or overlapping mechanism for a similar integration job.
+  - id: complements
+    label: Complements
+    description: Useful together without a stronger typed dependency.
+  - id: profile-of
+    label: Profile of
+    description: Constrains or profiles a base standard.
+  - id: implements
+    label: Implements
+    description: Software or service that implements a standard or profile.
+  - id: validates
+    label: Validates
+    description: Validator, suite, or testbed that checks conformance.
+  - id: extends
+    label: Extends
+    description: Extends or specializes another catalog resource.
+  - id: supersedes
+    label: Supersedes
+    description: Replaces an older mechanism for the same job.
+  - id: depends-on
+    label: Depends on
+    description: Requires another resource to function as specified.
+  - id: serializes
+    label: Serializes
+    description: Serialization or packaging binding for another model.
+  - id: registers
+    label: Registers
+    description: Registry or catalog that indexes another resource class.
+  - id: executes
+    label: Executes
+    description: Runner or service that executes workflows or tools.

@@ -250,7 +250,7 @@ def isolated_entries(resources: list[dict[str, Any]]) -> list[dict[str, str]]:
     return [
         {"id": resource["id"], "name": resource["name"], "section": resource["section"]}
         for resource in resources
-        if not resource.get("alternatives") and not resource.get("related_resource_ids")
+        if not resource.get("relations")
     ]
 
 
@@ -387,7 +387,7 @@ def build_warnings(
             Warning(
                 code="isolated-entries",
                 message=(
-                    f"{len(isolated)} entries have neither alternatives nor related_resource_ids"
+                    f"{len(isolated)} entries have no typed relations"
                 ),
                 details={"entries": isolated},
             )
