@@ -4,7 +4,7 @@ resources:
   name: BagIt
   url: https://datatracker.ietf.org/doc/html/rfc8493
   section: Data and Digital Objects
-  resource_type: Packaging Standard
+  resource_kind: packaging-format
   interoperability_layers:
   - Syntactic
   - Evidentiary
@@ -13,23 +13,25 @@ resources:
   - repositories
   - transfer systems
   mechanism: Manifest-based packaging and fixity verification for reliable transfer
-  summary: Manifest-based packaging format for transferring digital content with fixity and completeness checks.
+  summary: Manifest-based packaging format for transferring digital content with fixity and completeness
+    checks.
   maturity: established
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: Internet Engineering Task Force (IETF)
-    type: standards-body
-    url: https://www.ietf.org/
+  steward_id: internet-engineering-task-force-ietf
   domains:
   - cross-domain
   - digital-preservation
-  source_urls:
-  - https://datatracker.ietf.org/doc/html/rfc8493
-  - https://github.com/LibraryOfCongress/bagit-python
+  source_refs:
+  - ref_id: datatracker-ietf-org-doc-html-rfc8493
+    role: technical-definition
+  - ref_id: ietf-org-root
+    role: stewardship
+  - ref_id: github-com-libraryofcongress-bagit-python
+    role: implementation
   alternatives:
   - ro-crate
   related_resource_ids: []
@@ -42,7 +44,7 @@ resources:
   name: COMBINE/OMEX Archive
   url: https://combinearchive.org/
   section: Data and Digital Objects
-  resource_type: Packaging Standard
+  resource_kind: packaging-format
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -53,8 +55,8 @@ resources:
   - data
   - metadata
   mechanism: Archive format bundling models, simulations, metadata, and related files
-  summary: Archive format bundling models, simulations, metadata, and related files; connects computational models,
-    simulation descriptions, data, and metadata.
+  summary: Archive format bundling models, simulations, metadata, and related files; connects computational
+    models, simulation descriptions, data, and metadata.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -62,20 +64,24 @@ resources:
   - institutional-adoption
   implementation_status: reference-and-others
   conformance_status: none-known
-  stewardship:
-    name: COMBINE Archive community
-    type: community
-    url: https://combinearchive.org/
+  steward_id: combine-archive-community
   domains:
   - computational-biology
   - systems-biology
-  source_urls:
-  - https://combinearchive.org/
-  - https://github.com/SemsProject/CombineArchive
+  source_refs:
+  - ref_id: combinearchive-org-root
+    role: technical-definition
+  - ref_id: combinearchive-org-root
+    role: stewardship
+  - ref_id: github-com-semsproject-combinearchive
+    role: implementation
   alternatives: []
-  related_resource_ids: []
+  related_resource_ids:
+  - ro-crate
+  - biocompute-objects
   decision_basis: Mature domain package enabling interoperable computational biology studies.
-  boundary_note: Domain exemplar with strong relation to SED-ML and SBML; closest general alternative RO-Crate remains in group A migration.
+  boundary_note: Domain exemplar with strong relation to SED-ML and SBML; closest general alternative
+    RO-Crate remains in group A migration.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -83,7 +89,7 @@ resources:
   name: FAIR Signposting
   url: https://signposting.org/
   section: Data and Digital Objects
-  resource_type: Web Link Convention
+  resource_kind: link-protocol
   interoperability_layers:
   - Syntactic
   - Operational
@@ -93,8 +99,8 @@ resources:
   - landing pages
   - metadata and content resources
   mechanism: Typed HTTP Link relations exposing identifiers, metadata, licenses, and files
-  summary: Typed HTTP Link relations that let machine clients discover identifiers, metadata, licenses, and files
-    from repository landing pages.
+  summary: Typed HTTP Link relations that let machine clients discover identifiers, metadata, licenses,
+    and files from repository landing pages.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -102,19 +108,23 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: documented-tests
-  stewardship:
-    name: Signposting community
-    type: community
-    url: https://signposting.org/
+  steward_id: signposting-community
   domains:
   - cross-domain
   - scholarly-communication
-  source_urls:
-  - https://signposting.org/
-  - https://doi.org/10.5281/zenodo.10490289
+  source_refs:
+  - ref_id: signposting-org-root
+    role: technical-definition
+  - ref_id: signposting-org-root
+    role: stewardship
+  - ref_id: doi-org-10-5281-zenodo-10490289
+    role: technical-definition
   alternatives: []
-  related_resource_ids: []
-  decision_basis: Lightweight operational bridge allowing machines to navigate research objects across repositories.
+  related_resource_ids:
+  - ro-crate
+  - schema-org
+  decision_basis: Lightweight operational bridge allowing machines to navigate research objects across
+    repositories.
   boundary_note: Complements repository APIs and packaging formats; not a packaging or provenance standard.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -123,7 +133,7 @@ resources:
   name: RO-Crate
   url: https://www.researchobject.org/ro-crate/specification/1.3/
   section: Data and Digital Objects
-  resource_type: Packaging Specification
+  resource_kind: packaging-format
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -136,8 +146,8 @@ resources:
   - instruments
   - publications
   mechanism: JSON-LD research-object packaging with profiles and contextual entities
-  summary: JSON-LD packaging for exchanging data, software, workflows, people, instruments, and provenance as
-    a coherent research object.
+  summary: JSON-LD packaging for exchanging data, software, workflows, people, instruments, and provenance
+    as a coherent research object.
   maturity: established
   evidence_types:
   - normative-specification
@@ -145,24 +155,26 @@ resources:
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: public-validator
-  stewardship:
-    name: Research Object community
-    type: community
-    url: https://www.researchobject.org/
+  steward_id: research-object-community
   domains:
   - cross-domain
-  source_urls:
-  - https://www.researchobject.org/ro-crate/specification/1.3/
-  - https://github.com/crs4/rocrate-validator
+  source_refs:
+  - ref_id: researchobject-org-ro-crate-specification-1-3
+    role: technical-definition
+  - ref_id: researchobject-org-root
+    role: stewardship
+  - ref_id: github-com-crs4-rocrate-validator
+    role: conformance
   alternatives:
   - bagit
   related_resource_ids:
   - workflow-ro-crate
   - workflow-run-ro-crate
   - workflow-testing-ro-crate
-  decision_basis: One of the strongest cross-domain mechanisms for packaging heterogeneous scientific objects and
-    context.
-  boundary_note: Use profiles to distinguish specialized use cases; packaging is distinct from execution provenance profiles.
+  decision_basis: One of the strongest cross-domain mechanisms for packaging heterogeneous scientific
+    objects and context.
+  boundary_note: Use profiles to distinguish specialized use cases; packaging is distinct from execution
+    provenance profiles.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -170,7 +182,7 @@ resources:
   name: Workflow RO-Crate
   url: https://about.workflowhub.eu/Workflow-RO-Crate/
   section: Data and Digital Objects
-  resource_type: RO-Crate Profile
+  resource_kind: packaging-format
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -180,7 +192,8 @@ resources:
   - registries
   - metadata consumers
   mechanism: RO-Crate profile for packaging computational workflows and their metadata
-  summary: RO-Crate profile for publishing portable workflow definitions, metadata, diagrams, examples, and tests.
+  summary: RO-Crate profile for publishing portable workflow definitions, metadata, diagrams, examples,
+    and tests.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -188,22 +201,22 @@ resources:
   - institutional-adoption
   implementation_status: reference-and-others
   conformance_status: documented-tests
-  stewardship:
-    name: WorkflowHub / ELIXIR
-    type: consortium
-    url: https://workflowhub.eu/
+  steward_id: workflowhub
   domains:
   - computational-workflows
   - cross-domain
-  source_urls:
-  - https://about.workflowhub.eu/Workflow-RO-Crate/
-  - https://workflowhub.eu/
+  source_refs:
+  - ref_id: about-workflowhub-eu-workflow-ro-crate
+    role: technical-definition
+  - ref_id: workflowhub-eu-root
+    role: stewardship
   alternatives: []
   related_resource_ids:
   - ro-crate
   - workflow-run-ro-crate
   - workflow-testing-ro-crate
-  decision_basis: Connects workflow authors, registries, and downstream systems through a portable research object.
+  decision_basis: Connects workflow authors, registries, and downstream systems through a portable research
+    object.
   boundary_note: Distinct from execution provenance, which belongs to Workflow Run RO-Crate.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -212,7 +225,7 @@ resources:
   name: Workflow Run RO-Crate
   url: https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/
   section: Data and Digital Objects
-  resource_type: RO-Crate Profile
+  resource_kind: packaging-format
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -223,8 +236,8 @@ resources:
   - archives
   - result consumers
   mechanism: Portable representation of workflow execution provenance and outputs
-  summary: RO-Crate profile for exchanging workflow-run inputs, outputs, software, execution records, and provenance
-    across workflow systems.
+  summary: RO-Crate profile for exchanging workflow-run inputs, outputs, software, execution records,
+    and provenance across workflow systems.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -232,16 +245,17 @@ resources:
   - independent-implementation
   implementation_status: reference-and-others
   conformance_status: documented-tests
-  stewardship:
-    name: Research Object community
-    type: community
-    url: https://www.researchobject.org/
+  steward_id: research-object-community
   domains:
   - computational-workflows
   - provenance
-  source_urls:
-  - https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/
-  - https://github.com/ResearchObject/workflow-run-crate
+  source_refs:
+  - ref_id: researchobject-org-workflow-run-crate-profiles-workflow-run-crate
+    role: technical-definition
+  - ref_id: researchobject-org-root
+    role: stewardship
+  - ref_id: github-com-researchobject-workflow-run-crate
+    role: implementation
   alternatives:
   - cwlprov
   related_resource_ids:
@@ -249,7 +263,8 @@ resources:
   - workflow-ro-crate
   - cwlprov
   - w3c-prov
-  decision_basis: Direct cross-engine evidence format with multiple implementations and strong North-Star utility.
+  decision_basis: Direct cross-engine evidence format with multiple implementations and strong North-Star
+    utility.
   boundary_note: Profile conformance does not alone prove semantic equivalence across implementations.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -258,7 +273,7 @@ resources:
   name: Workflow Testing RO-Crate
   url: https://w3id.org/ro/wftest
   section: Data and Digital Objects
-  resource_type: RO-Crate Profile
+  resource_kind: packaging-format
   interoperability_layers:
   - Syntactic
   - Evidentiary
@@ -267,23 +282,24 @@ resources:
   - monitoring services
   - CI systems
   mechanism: Research-object profile for packaging workflow tests, inputs, expected outputs, and services
-  summary: Portable research-object profile for exchanging workflow test suites, inputs, expected outputs, and
-    test services.
+  summary: Portable research-object profile for exchanging workflow test suites, inputs, expected outputs,
+    and test services.
   maturity: maintained
   evidence_types:
   - normative-specification
   - reference-implementation
   implementation_status: reference-and-others
   conformance_status: documented-tests
-  stewardship:
-    name: Research Object community
-    type: community
-    url: https://www.researchobject.org/
+  steward_id: research-object-community
   domains:
   - computational-workflows
-  source_urls:
-  - https://w3id.org/ro/wftest
-  - https://lifemonitor.eu/
+  source_refs:
+  - ref_id: w3id-org-ro-wftest
+    role: technical-definition
+  - ref_id: researchobject-org-root
+    role: stewardship
+  - ref_id: lifemonitor-eu-root
+    role: technical-definition
   alternatives: []
   related_resource_ids:
   - workflow-ro-crate
@@ -297,7 +313,7 @@ resources:
   name: Crystallographic Information Framework (CIF)
   url: https://www.iucr.org/resources/cif
   section: Data and Digital Objects
-  resource_type: Domain Data Exchange Standard
+  resource_kind: exchange-standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -312,22 +328,26 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  - public-validator
+  - documented-tests
   implementation_status: multiple-independent
-  conformance_status: public-validator
-  stewardship:
-    name: International Union of Crystallography (IUCr)
-    type: standards-body
-    url: https://www.iucr.org/resources/cif/comcifs/policy
+  conformance_status: documented-tests
+  steward_id: international-union-of-crystallography-iucr
   domains:
   - materials-science
   - chemistry
-  source_urls:
-  - https://www.iucr.org/resources/cif
-  - https://www.iucr.org/resources/cif/spec
-  alternatives: []
-  related_resource_ids: []
-  decision_basis: Authoritative structural-science exchange contract with journal and database adoption plus public validation tooling.
+  source_refs:
+  - ref_id: iucr-org-resources-cif
+    role: technical-definition
+  - ref_id: iucr-org-resources-cif-comcifs-policy
+    role: stewardship
+  - ref_id: iucr-org-resources-cif-spec
+    role: technical-definition
+  alternatives:
+  - nexus
+  related_resource_ids:
+  - nexus
+  decision_basis: Authoritative structural-science exchange contract with journal and database adoption
+    plus public validation tooling.
   boundary_note: Crystallography and structural science scope; not a general materials-database API.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -336,7 +356,7 @@ resources:
   name: Functional Mock-up Interface (FMI)
   url: https://fmi-standard.org/docs/3.0/
   section: Data and Digital Objects
-  resource_type: Model Exchange Standard
+  resource_kind: exchange-standard
   interoperability_layers:
   - Syntactic
   - Operational
@@ -352,22 +372,25 @@ resources:
   - normative-specification
   - independent-implementation
   - institutional-adoption
+  - documented-tests
   implementation_status: multiple-independent
-  conformance_status: public-validator
-  stewardship:
-    name: Modelica Association Project FMI
-    type: consortium
-    url: https://fmi-standard.org/about/
+  conformance_status: documented-tests
+  steward_id: modelica-association-project-fmi
   domains:
   - engineering
   - cross-domain
-  source_urls:
-  - https://fmi-standard.org/docs/3.0/
-  - https://github.com/modelica/fmi-standard
+  source_refs:
+  - ref_id: fmi-standard-org-docs-3-0
+    role: technical-definition
+  - ref_id: fmi-standard-org-about
+    role: stewardship
+  - ref_id: github-com-modelica-fmi-standard
+    role: implementation
   alternatives:
   - combine-omex-archive
   related_resource_ids: []
-  decision_basis: De facto contract for exchanging dynamic simulation models across independent CAE and systems-engineering tools.
+  decision_basis: De facto contract for exchanging dynamic simulation models across independent CAE and
+    systems-engineering tools.
   boundary_note: Model container and runtime API, not a general workflow or provenance standard.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -376,7 +399,7 @@ resources:
   name: NeXus
   url: https://www.nexusformat.org/
   section: Data and Digital Objects
-  resource_type: Scientific Data Profile
+  resource_kind: exchange-standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -391,34 +414,36 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  - conformance-suite
+  - documented-tests
   implementation_status: multiple-independent
-  conformance_status: public-validator
-  stewardship:
-    name: NeXus International Advisory Committee (NIAC)
-    type: community
-    url: https://www.nexusformat.org/
+  conformance_status: documented-tests
+  steward_id: nexus-international-advisory-committee-niac
   domains:
   - physics
   - materials-science
-  source_urls:
-  - https://www.nexusformat.org/
-  - https://manual.nexusformat.org/impatient/
-  - https://journals.iucr.org/j/issues/2015/01/00/po5029/po5029.pdf
+  source_refs:
+  - ref_id: nexusformat-org-root
+    role: technical-definition
+  - ref_id: nexusformat-org-root
+    role: stewardship
+  - ref_id: manual-nexusformat-org-impatient
+    role: technical-definition
+  - ref_id: journals-iucr-org-j-issues-2015-01-00-po5029-po5029-pdf
+    role: technical-definition
   alternatives: []
   related_resource_ids:
   - climate-and-forecast-cf-metadata-conventions
-  decision_basis: Strongest documented HDF5 scientific profile for scattering-facility data exchange with application definitions and validation.
+  decision_basis: Strongest documented HDF5 scientific profile for scattering-facility data exchange with
+    application definitions and validation.
   boundary_note: Scientific profile over HDF5, not generic HDF5; facility-scoped domain standard.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
-
 - id: ogc-api-coverages
   name: OGC API - Coverages
   url: https://ogcapi.ogc.org/coverages/
   section: Data and Digital Objects
-  resource_type: Geospatial Data API
+  resource_kind: api-standard
   interoperability_layers:
   - Syntactic
   - Operational
@@ -427,30 +452,36 @@ resources:
   - clients
   - analysis pipelines
   mechanism: OGC API - Common REST resources for coverage collections, schemas, and retrieval
-  summary: REST API for discovering, querying, and retrieving raster coverages and data cubes; connects geospatial services, clients, and analysis pipelines.
-  maturity: maintained
+  summary: REST API for discovering, querying, and retrieving raster coverages and data cubes; connects
+    geospatial services, clients, and analysis pipelines.
+  maturity: emerging
   evidence_types:
   - normative-specification
-  - conformance-suite
-  implementation_status: multiple-independent
-  conformance_status: public-suite
-  stewardship:
-    name: Open Geospatial Consortium (OGC)
-    type: standards-body
-    url: https://www.ogc.org/
+  - reference-implementation
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  steward_id: open-geospatial-consortium-ogc
   domains:
   - geospatial
   - environmental-science
-  source_urls:
-  - https://ogcapi.ogc.org/coverages/overview.html
-  - https://docs.ogc.org/is/
+  source_refs:
+  - ref_id: ogcapi-ogc-org-coverages
+    role: technical-definition
+  - ref_id: ogc-org-root
+    role: stewardship
+  - ref_id: ogcapi-ogc-org-coverages-overview-html
+    role: technical-definition
+  - ref_id: docs-ogc-org-is
+    role: technical-definition
   alternatives:
   - spatiotemporal-asset-catalog-stac
   related_resource_ids:
   - spatiotemporal-asset-catalog-stac
   - climate-and-forecast-cf-metadata-conventions
-  decision_basis: Strongest operational API for querying raster stacks and coverages where STAC alone only catalogs assets.
-  boundary_note: Data access API, not a file-format or semantic observation model; pair with STAC for discovery.
+  decision_basis: Draft OGC coverage API with documented reference implementation support; strongest listed
+    option for coverage retrieval where STAC catalogs assets only.
+  boundary_note: Emerging draft; no public conformance suite cited at public-suite strength. Data access
+    API, not a file-format or semantic observation model.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -458,7 +489,7 @@ resources:
   name: OGC API - Features
   url: https://ogcapi.ogc.org/features/
   section: Data and Digital Objects
-  resource_type: Geospatial Data API
+  resource_kind: api-standard
   interoperability_layers:
   - Syntactic
   - Operational
@@ -467,27 +498,31 @@ resources:
   - web services
   - geospatial databases
   mechanism: OGC API - Common REST endpoints for feature collections, items, and queryables
-  summary: REST API for creating, modifying, and querying vector feature collections; connects GIS clients, web services, and geospatial databases.
+  summary: REST API for creating, modifying, and querying vector feature collections; connects GIS clients,
+    web services, and geospatial databases.
   maturity: established
   evidence_types:
   - normative-specification
-  - conformance-suite
+  - documented-tests
   implementation_status: multiple-independent
-  conformance_status: public-suite
-  stewardship:
-    name: Open Geospatial Consortium (OGC)
-    type: standards-body
-    url: https://www.ogc.org/
+  conformance_status: documented-tests
+  steward_id: open-geospatial-consortium-ogc
   domains:
   - geospatial
-  source_urls:
-  - https://ogcapi.ogc.org/features/
-  - https://docs.ogc.org/is/17-069r4/17-069r4.html
+  source_refs:
+  - ref_id: ogcapi-ogc-org-features
+    role: technical-definition
+  - ref_id: ogc-org-root
+    role: stewardship
+  - ref_id: docs-ogc-org-is-17-069r4-17-069r4-html
+    role: technical-definition
   alternatives: []
   related_resource_ids:
   - spatiotemporal-asset-catalog-stac
-  decision_basis: Canonical REST replacement path for WFS-style vector feature exchange across independent servers.
-  boundary_note: Feature geometry and properties access; not a catalog vocabulary or sensor semantics layer.
+  decision_basis: Canonical REST replacement path for WFS-style vector feature exchange across independent
+    servers.
+  boundary_note: Feature geometry and properties access; not a catalog vocabulary or sensor semantics
+    layer.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true

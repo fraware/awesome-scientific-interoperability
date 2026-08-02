@@ -4,7 +4,7 @@ resources:
   name: Cross-Domain Interoperability Framework (CDIF)
   url: https://cdif.codata.org/
   section: Foundations
-  resource_type: Framework / Specification
+  resource_kind: specification
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -14,33 +14,33 @@ resources:
   - metadata systems
   - domain repositories
   - cross-domain consumers
-  mechanism: Common discovery, integration, provenance, and semantic profiles for
-    cross-domain data use
-  summary: Discovery, integration, provenance, and semantic profiles for reusing research
-    data across scientific domains.
+  mechanism: Common discovery, integration, provenance, and semantic profiles for cross-domain data use
+  summary: Discovery, integration, provenance, and semantic profiles for reusing research data across
+    scientific domains.
   maturity: maintained
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: reference-and-others
   conformance_status: none-known
-  stewardship:
-    name: CODATA (Committee on Data of the International Science Council)
-    type: consortium
-    url: https://codata.org/
+  steward_id: codata-codata
   domains:
   - cross-domain
-  source_urls:
-  - https://cdif.codata.org/
-  - https://doi.org/10.5281/zenodo.11236871
+  source_refs:
+  - ref_id: cdif-codata-org-root
+    role: technical-definition
+  - ref_id: codata-org-root
+    role: stewardship
+  - ref_id: doi-org-10-5281-zenodo-11236871
+    role: technical-definition
   alternatives: []
   related_resource_ids:
   - eosc-interoperability-framework
   - fair-principles
-  decision_basis: Directly addresses cross-domain scientific data interoperability
-    and provides a current specification suite.
-  boundary_note: 'Overlap with EOSC is complementary: CDIF supplies concrete cross-domain
-    information profiles.'
+  decision_basis: Directly addresses cross-domain scientific data interoperability and provides a current
+    specification suite.
+  boundary_note: 'Overlap with EOSC is complementary: CDIF supplies concrete cross-domain information
+    profiles.'
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -48,7 +48,7 @@ resources:
   name: EOSC Interoperability Framework
   url: https://eosc.eu/eosc-interoperability-framework/
   section: Foundations
-  resource_type: Framework
+  resource_kind: specification
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -59,34 +59,33 @@ resources:
   - services
   - data
   - users
-  mechanism: Common interoperability architecture, guidelines, and governance for
-    federated research services
-  summary: Technical, semantic, organizational, and legal guidance for federating
-    European research data and services.
+  mechanism: Common interoperability architecture, guidelines, and governance for federated research services
+  summary: Technical, semantic, organizational, and legal guidance for federating European research data
+    and services.
   maturity: maintained
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: reference-and-others
   conformance_status: none-known
-  stewardship:
-    name: EOSC Association
-    type: consortium
-    url: https://eosc.eu/
+  steward_id: eosc-association
   domains:
   - cross-domain
   - european-research
-  source_urls:
-  - https://eosc.eu/eosc-interoperability-framework/
-  - https://doi.org/10.5281/zenodo.10843882
+  source_refs:
+  - ref_id: eosc-eu-eosc-interoperability-framework
+    role: technical-definition
+  - ref_id: eosc-eu-root
+    role: stewardship
+  - ref_id: doi-org-10-5281-zenodo-10843882
+    role: technical-definition
   alternatives: []
   related_resource_ids:
   - cross-domain-interoperability-framework-cdif
   - fair-digital-object-framework
-  decision_basis: Major cross-domain framework that organizes technical, semantic,
-    organizational, and legal interoperability in a scientific federation.
-  boundary_note: Distinct from service directories because it defines the interoperability
-    architecture.
+  decision_basis: Major cross-domain framework that organizes technical, semantic, organizational, and
+    legal interoperability in a scientific federation.
+  boundary_note: Distinct from service directories because it defines the interoperability architecture.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -94,7 +93,7 @@ resources:
   name: FAIR Digital Object Framework
   url: https://fairdo.org/specifications/
   section: Foundations
-  resource_type: Framework / Specification
+  resource_kind: specification
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -104,32 +103,32 @@ resources:
   - Digital objects
   - repositories
   - automated services
-  mechanism: Typed, identified, machine-actionable digital objects with kernel information
-    and operations
-  summary: Typed and persistently identified digital objects designed for machine
-    action across repositories and automated services.
+  mechanism: Typed, identified, machine-actionable digital objects with kernel information and operations
+  summary: Typed and persistently identified digital objects designed for machine action across repositories
+    and automated services.
   maturity: maintained
   evidence_types:
   - normative-specification
   - reference-implementation
   implementation_status: reference-and-others
   conformance_status: none-known
-  stewardship:
-    name: FAIR Digital Object Forum (FDO Forum)
-    type: community
-    url: https://fairdo.org/
+  steward_id: fair-digital-object-forum-fdo-forum
   domains:
   - cross-domain
-  source_urls:
-  - https://fairdo.org/specifications/
-  - https://doi.org/10.5281/zenodo.7781925
+  source_refs:
+  - ref_id: fairdo-org-specifications
+    role: technical-definition
+  - ref_id: fairdo-org-root
+    role: stewardship
+  - ref_id: doi-org-10-5281-zenodo-7781925
+    role: technical-definition
   alternatives: []
   related_resource_ids:
   - fair-principles
-  decision_basis: Defines a reusable object model intended to support machine processing
-    and cross-system exchange.
-  boundary_note: Do not duplicate every FDO implementation; curate only field-defining
-    specifications and test systems.
+  decision_basis: Defines a reusable object model intended to support machine processing and cross-system
+    exchange.
+  boundary_note: Do not duplicate every FDO implementation; curate only field-defining specifications
+    and test systems.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -137,7 +136,7 @@ resources:
   name: FAIR Principles
   url: https://www.go-fair.org/fair-principles/
   section: Foundations
-  resource_type: Principles
+  resource_kind: specification
   interoperability_layers:
   - Semantic
   - Organizational
@@ -145,33 +144,33 @@ resources:
   - Digital research objects
   - repositories
   - research communities
-  mechanism: Four principles defining machine-actionable findability, accessibility,
-    interoperability, and reuse
-  summary: Principles for machine-actionable findability, accessibility, interoperability,
-    and reuse across digital research objects and services.
+  mechanism: Four principles defining machine-actionable findability, accessibility, interoperability,
+    and reuse
+  summary: Principles for machine-actionable findability, accessibility, interoperability, and reuse across
+    digital research objects and services.
   maturity: established
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: GO FAIR Foundation
-    type: foundation
-    url: https://www.go-fair.org/
+  steward_id: go-fair-foundation
   domains:
   - cross-domain
-  source_urls:
-  - https://www.go-fair.org/fair-principles/
-  - https://www.nature.com/articles/sdata201618
+  source_refs:
+  - ref_id: go-fair-org-fair-principles
+    role: technical-definition
+  - ref_id: go-fair-org-root
+    role: stewardship
+  - ref_id: nature-com-articles-sdata201618
+    role: technical-definition
   alternatives: []
   related_resource_ids:
   - fair-digital-object-framework
   - fairsharing
   decision_basis: Field-defining foundation. The interoperability principle and machine-actionability
     framing are necessary to understand the category.
-  boundary_note: Keep the entry focused on the principles; redirect implementation
-    directories to FAIRsharing.
+  boundary_note: Keep the entry focused on the principles; redirect implementation directories to FAIRsharing.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true

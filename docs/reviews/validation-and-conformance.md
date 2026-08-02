@@ -39,3 +39,7 @@ Each resource tests a documented interoperability contract rather than general F
 ## Conflicts
 
 None.
+
+## v2.1 provenance migration (2026-08-01)
+
+- Closed isolates: `cwl-conformance-tests` related to CWL and cwltool; `ro-crate-validator` related to RO-Crate and Workflow Run RO-Crate.

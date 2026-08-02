@@ -242,6 +242,12 @@ def main() -> int:
     parser.add_argument("--timeout", type=float, default=20.0)
     parser.add_argument("--workers", type=int, default=12)
     parser.add_argument("--offline", action="store_true", help="Validate URL syntax without network access")
+    parser.add_argument(
+        "--scope",
+        choices=("canonical", "all"),
+        default="canonical",
+        help="canonical: main-list resource URLs; all: canonical + watchlist + steward + reference URLs",
+    )
     parser.add_argument("--policy", type=Path, default=POLICY_PATH)
     parser.add_argument("--json-report", type=Path)
     parser.add_argument("--markdown-report", type=Path)
@@ -249,10 +255,29 @@ def main() -> int:
 
     policy = load_policy(args.policy)
     catalog, _, _ = load()
-    urls = sorted(resource["url"] for resource in catalog["resources"])
+    urls = {resource["url"] for resource in catalog["resources"]}
+    if args.scope == "all":
+        watchlist_path = ROOT / "catalog" / "watchlist.yaml"
+        if watchlist_path.exists():
+            watchlist = yaml.safe_load(watchlist_path.read_text(encoding="utf-8"))
+            for item in watchlist.get("items", []):
+                urls.add(item["url"])
+                for source_ref in item.get("source_refs") or []:
+                    pass
+        references_path = ROOT / "catalog" / "references.yaml"
+        if references_path.exists():
+            references = yaml.safe_load(references_path.read_text(encoding="utf-8"))
+            for item in references.get("references", []):
+                urls.add(item["url"])
+        stewards_path = ROOT / "catalog" / "stewards.yaml"
+        if stewards_path.exists():
+            stewards = yaml.safe_load(stewards_path.read_text(encoding="utf-8"))
+            for item in stewards.get("stewards", []):
+                urls.add(item["url"])
+    urls_list = sorted(urls)
 
     if args.offline:
-        results = [offline_validate(url) or LinkResult(url=url, classification="ok") for url in urls]
+        results = [offline_validate(url) or LinkResult(url=url, classification="ok") for url in urls_list]
         invalid = [item for item in results if item.classification == "invalid-url"]
         if args.json_report:
             write_json_report(args.json_report, results, policy)
@@ -262,12 +287,12 @@ def main() -> int:
             for item in invalid:
                 print(f"INVALID {item.url}")
             return 1
-        print(f"Validated syntax for {len(urls)} HTTPS URLs.")
+        print(f"Validated syntax for {len(urls_list)} HTTPS URLs (scope={args.scope}).")
         return 0
 
     results: list[LinkResult] = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
-        futures = {pool.submit(check_url, url, policy, args.timeout): url for url in urls}
+        futures = {pool.submit(check_url, url, policy, args.timeout): url for url in urls_list}
         for future in concurrent.futures.as_completed(futures):
             result = future.result()
             results.append(result)
@@ -287,7 +312,10 @@ def main() -> int:
     if blocking:
         print(f"{len(blocking)} unresolved blocking failure(s).")
         return 1
-    print(f"Checked {len(urls)} links with no unresolved permanent, invalid, or TLS/DNS failures.")
+    print(
+        f"Checked {len(urls_list)} links (scope={args.scope}) with no unresolved permanent, "
+        "invalid, or TLS/DNS failures."
+    )
     return 0
 
 

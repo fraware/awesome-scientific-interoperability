@@ -28,7 +28,7 @@ A proposal must state:
 - Write one concise, objective sentence ending with a period.
 - Avoid taglines, marketing adjectives, star counts, funding claims, and unsupported adoption claims.
 - Update the relevant catalog shard with the same name, URL, section, and `summary` (README parity).
-- Populate v2 catalog fields: `maturity`, `evidence_types`, `implementation_status`, `conformance_status`, `stewardship`, `domains`, `source_urls`, `alternatives`, `related_resource_ids`, `reviewed_on`, and `review_due_on`.
+- Populate v2.1 catalog fields: `maturity`, `evidence_types`, `implementation_status`, `conformance_status`, `steward_id`, `domains`, `source_refs`, `alternatives`, `related_resource_ids`, `reviewed_on`, and `review_due_on`. Add new technical evidence to `catalog/references.yaml` and stewards to `catalog/stewards.yaml` before citing them.
 - For watchlist placement instead of main-list inclusion, update `catalog/watchlist.yaml` and `docs/watchlist.md` together with `candidate_section`, `status`, `reason`, review dates, promotion conditions, and rejection conditions.
 - Run the repository checks before submitting.
 

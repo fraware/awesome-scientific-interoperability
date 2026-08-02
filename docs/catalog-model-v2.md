@@ -1,7 +1,9 @@
 # Catalog Model v2
 
-**Status:** Live catalog model (cutover PR-07, `catalog_version: 2.0.0`).  
+**Status:** Superseded for live fields by [catalog model v2.1](catalog-model-v2.1.md) (`catalog_version: 2.1.0`).  
 **Authority:** `docs/engineering-takeover-specification.md` supersedes this document on conflict.
+
+This page remains as the v2.0 field history. Use v2.1 for `resource_kind`, `steward_id`, `source_refs`, and registry rules.
 
 ## Why v2
 

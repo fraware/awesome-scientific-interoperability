@@ -57,20 +57,27 @@ class WatchlistTests(unittest.TestCase):
         for path in sorted(FIXTURES.glob("*.valid.yaml")):
             with self.subTest(path=path.name):
                 watchlist = module.load_watchlist(path)
-                self.assertEqual(module.validate_watchlist(watchlist, schema), [])
+                self.assertEqual(
+                    module.validate_watchlist(watchlist, schema, check_references=False),
+                    [],
+                )
 
     def test_invalid_fixtures_fail(self) -> None:
         schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
         for path in sorted(FIXTURES.glob("*.invalid.yaml")):
             with self.subTest(path=path.name):
                 watchlist = module.load_watchlist(path)
-                self.assertTrue(module.validate_watchlist(watchlist, schema))
+                self.assertTrue(
+                    module.validate_watchlist(watchlist, schema, check_references=False)
+                )
 
     def test_expired_review_fixture_fails_with_as_of(self) -> None:
         path = FIXTURES / "02-expired-review.invalid.yaml"
         watchlist = module.load_watchlist(path)
         schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
-        errors = module.validate_watchlist(watchlist, schema, as_of=date(2026, 8, 1))
+        errors = module.validate_watchlist(
+            watchlist, schema, as_of=date(2026, 8, 1), check_references=False
+        )
         self.assertTrue(any("review_due_on" in error for error in errors))
 
     def test_unknown_section_fixture_fails(self) -> None:

@@ -4,7 +4,7 @@ resources:
   name: Apptainer / Singularity Image Format
   url: https://apptainer.org/docs/user/latest/introduction.html
   section: Research Software and Environments
-  resource_type: Container Standard / Runtime
+  resource_kind: packaging-format
   interoperability_layers:
   - Syntactic
   - Operational
@@ -13,8 +13,8 @@ resources:
   - HPC systems
   - container registries
   mechanism: Portable container images and runtime designed for scientific and HPC environments
-  summary: Portable container images and runtime designed for scientific and HPC environments; connects scientific
-    software environments, HPC systems, and container registries.
+  summary: Portable container images and runtime designed for scientific and HPC environments; connects
+    scientific software environments, HPC systems, and container registries.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -22,21 +22,25 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: Apptainer Project
-    type: foundation
-    url: https://apptainer.org/
+  steward_id: apptainer-project
   domains:
   - scientific-computing
   - hpc
-  source_urls:
-  - https://apptainer.org/docs/user/latest/introduction.html
-  - https://github.com/apptainer/apptainer
+  source_refs:
+  - ref_id: apptainer-org-docs-user-latest-introduction-html
+    role: technical-definition
+  - ref_id: apptainer-org-root
+    role: stewardship
+  - ref_id: github-com-apptainer-apptainer
+    role: implementation
   alternatives: []
-  related_resource_ids: []
-  decision_basis: High-value operational interoperability layer across scientific computing environments where OCI
-    workflows alone may be insufficient.
-  boundary_note: The entry should emphasize image/runtime portability across HPC infrastructure; OCI containers are a separate operational layer.
+  related_resource_ids:
+  - reprozip
+  - software-hash-identifiers-swhids
+  decision_basis: High-value operational interoperability layer across scientific computing environments
+    where OCI workflows alone may be insufficient.
+  boundary_note: The entry should emphasize image/runtime portability across HPC infrastructure; OCI containers
+    are a separate operational layer.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -44,7 +48,7 @@ resources:
   name: Citation File Format (CITATION.cff)
   url: https://citation-file-format.github.io/
   section: Research Software and Environments
-  resource_type: Metadata Format
+  resource_kind: metadata-standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -54,8 +58,8 @@ resources:
   - archives
   - publishers
   mechanism: Human- and machine-readable software citation metadata
-  summary: Repository-local YAML metadata that connects software projects with citation, archival, and publishing
-    systems.
+  summary: Repository-local YAML metadata that connects software projects with citation, archival, and
+    publishing systems.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -63,22 +67,25 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: public-validator
-  stewardship:
-    name: Citation File Format project
-    type: community
-    url: https://citation-file-format.github.io/
+  steward_id: citation-file-format-project
   domains:
   - research-software
   - scholarly-communication
-  source_urls:
-  - https://citation-file-format.github.io/
-  - https://github.com/citation-file-format/cffconvert
+  source_refs:
+  - ref_id: citation-file-format-github-io-root
+    role: technical-definition
+  - ref_id: citation-file-format-github-io-root
+    role: stewardship
+  - ref_id: citation-file-format-github-io-root
+    role: implementation
+  - ref_id: github-com-citation-file-format-cffconvert
+    role: conformance
   alternatives:
   - codemeta
   related_resource_ids:
   - codemeta
-  decision_basis: Practical interoperability mechanism connecting source repositories with citation and archival
-    systems.
+  decision_basis: Practical interoperability mechanism connecting source repositories with citation and
+    archival systems.
   boundary_note: Narrower than CodeMeta but exceptionally deployable.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -87,7 +94,7 @@ resources:
   name: CodeMeta
   url: https://codemeta.github.io/
   section: Research Software and Environments
-  resource_type: Metadata Vocabulary / Crosswalk
+  resource_kind: metadata-standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -97,23 +104,26 @@ resources:
   - registries
   - citation systems
   mechanism: Shared software metadata vocabulary and crosswalks among metadata standards
-  summary: Shared research-software metadata vocabulary and crosswalks connecting repositories, registries, and
-    citation systems.
+  summary: Shared research-software metadata vocabulary and crosswalks connecting repositories, registries,
+    and citation systems.
   maturity: maintained
   evidence_types:
   - normative-specification
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: CodeMeta project
-    type: community
-    url: https://codemeta.github.io/
+  steward_id: codemeta-project
   domains:
   - research-software
-  source_urls:
-  - https://codemeta.github.io/
-  - https://github.com/codemeta/codemeta
+  source_refs:
+  - ref_id: codemeta-github-io-root
+    role: technical-definition
+  - ref_id: codemeta-github-io-root
+    role: stewardship
+  - ref_id: codemeta-github-io-root
+    role: implementation
+  - ref_id: github-com-codemeta-codemeta
+    role: implementation
   alternatives:
   - citation-file-format-citation-cff
   related_resource_ids:
@@ -127,7 +137,7 @@ resources:
   name: ReproZip
   url: https://www.reprozip.org/
   section: Research Software and Environments
-  resource_type: Packaging / Capture Tool
+  resource_kind: packaging-format
   interoperability_layers:
   - Operational
   - Evidentiary
@@ -136,28 +146,32 @@ resources:
   - execution environments
   - reproduction tools
   mechanism: Captures files, dependencies, and execution traces into portable experiment packages
-  summary: Captures files, dependencies, and execution traces into portable experiment packages; connects computational
-    experiments, execution environments, and reproduction tools.
+  summary: Captures files, dependencies, and execution traces into portable experiment packages; connects
+    computational experiments, execution environments, and reproduction tools.
   maturity: maintained
   evidence_types:
   - reference-implementation
   - interoperability-demonstration
   implementation_status: reference-and-others
   conformance_status: none-known
-  stewardship:
-    name: ReproZip project (NYU Tandon School of Engineering)
-    type: institution
-    url: https://www.reprozip.org/
+  steward_id: reprozip-project-nyu-tandon-school-of-engineering
   domains:
   - reproducibility
   - computational-science
-  source_urls:
-  - https://www.reprozip.org/
-  - https://github.com/ViDA-NYU/reprozip
+  source_refs:
+  - ref_id: reprozip-org-root
+    role: technical-definition
+  - ref_id: reprozip-org-root
+    role: stewardship
+  - ref_id: github-com-vida-nyu-reprozip
+    role: implementation
   alternatives: []
-  related_resource_ids: []
+  related_resource_ids:
+  - apptainer-singularity-image-format
+  - ro-crate
   decision_basis: Strong executable-environment bridge supporting transfer and reproduction across systems.
-  boundary_note: Interoperability depends on unpacker support and environment compatibility; packaging not provenance.
+  boundary_note: Interoperability depends on unpacker support and environment compatibility; packaging
+    not provenance.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -165,7 +179,7 @@ resources:
   name: Software Hash Identifiers (SWHIDs)
   url: https://www.swhid.org/
   section: Research Software and Environments
-  resource_type: Identifier System
+  resource_kind: identifier-system
   interoperability_layers:
   - Semantic
   - Evidentiary
@@ -183,18 +197,19 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: Software Heritage
-    type: institution
-    url: https://www.softwareheritage.org/
+  steward_id: software-heritage
   domains:
   - research-software
   - digital-preservation
-  source_urls:
-  - https://www.swhid.org/
-  - https://www.softwareheritage.org/
+  source_refs:
+  - ref_id: swhid-org-root
+    role: technical-definition
+  - ref_id: softwareheritage-org-root
+    role: stewardship
   alternatives: []
-  related_resource_ids: []
+  related_resource_ids:
+  - citation-file-format-citation-cff
+  - codemeta
   decision_basis: Connects exact software artifacts to scholarly records and reproducibility evidence.
   boundary_note: Complement DOI-level software records with content-addressed identity.
   reviewed_on: '2026-08-01'

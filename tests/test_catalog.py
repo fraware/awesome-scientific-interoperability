@@ -39,9 +39,9 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(len(catalog["resources"]), 87)
         self.assertEqual(len(module.readme_entries(readme)), 87)
 
-    def test_catalog_version_is_v2(self) -> None:
+    def test_catalog_version_is_v21(self) -> None:
         catalog, _, _ = module.load()
-        self.assertEqual(catalog["catalog_version"], "2.0.0")
+        self.assertEqual(catalog["catalog_version"], "2.1.0")
 
     def test_every_section_has_resources(self) -> None:
         catalog, _, _ = module.load()
@@ -82,7 +82,12 @@ class CatalogTests(unittest.TestCase):
             with self.subTest(path=path.name):
                 catalog = module.load_catalog_document(path)
                 self.assertEqual(
-                    module.validate_catalog(catalog, schema, known_ids=known_ids_for(catalog)),
+                    module.validate_catalog(
+                        catalog,
+                        schema,
+                        known_ids=known_ids_for(catalog),
+                        check_registries=False,
+                    ),
                     [],
                 )
 
@@ -94,7 +99,12 @@ class CatalogTests(unittest.TestCase):
             with self.subTest(path=path.name):
                 catalog = module.load_catalog_document(path)
                 self.assertTrue(
-                    module.validate_catalog(catalog, schema, known_ids=known_ids_for(catalog))
+                    module.validate_catalog(
+                        catalog,
+                        schema,
+                        known_ids=known_ids_for(catalog),
+                        check_registries=False,
+                    )
                 )
 
     def test_expired_review_fixture_fails_with_as_of(self) -> None:
@@ -108,6 +118,7 @@ class CatalogTests(unittest.TestCase):
             schema,
             known_ids=known_ids_for(catalog),
             as_of=date(2026, 8, 1),
+            check_registries=False,
         )
         self.assertTrue(any("review_due_on" in error for error in errors))
 

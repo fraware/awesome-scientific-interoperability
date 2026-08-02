@@ -16,8 +16,27 @@ import yaml
 from jsonschema import Draft202012Validator, FormatChecker
 
 ROOT = Path(__file__).resolve().parents[1]
+SCRIPTS = Path(__file__).resolve().parent
+if str(SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS))
+
+from lib.catalog_model import (  # noqa: E402
+    claim_role_ids,
+    clear_caches,
+    conformance_artifact_types,
+    domain_ids,
+    load_references,
+    load_stewards,
+    load_taxonomy,
+    resource_kind_ids,
+)
+
 CATALOG_PATH = ROOT / "catalog" / "resources.yaml"
 SCHEMA_PATH = ROOT / "schema" / "catalog.schema.json"
+REFERENCES_SCHEMA_PATH = ROOT / "schema" / "references.schema.json"
+STEWARDS_SCHEMA_PATH = ROOT / "schema" / "stewards.schema.json"
+REFERENCES_PATH = ROOT / "catalog" / "references.yaml"
+STEWARDS_PATH = ROOT / "catalog" / "stewards.yaml"
 README_PATH = ROOT / "README.md"
 ENTRY_RE = re.compile(r"^- \[([^\]]+)\]\((https://[^)]+)\) - (.+)$")
 BANNED_MARKETING = (
@@ -33,7 +52,21 @@ EMERGING_SHORT_SECTIONS = {
     "Agents, Access, and Policy",
 }
 FORBIDDEN_LEGACY_FIELDS = frozenset(
-    {"evidence_level", "maintenance_signal", "north_star_utility", "description"}
+    {
+        "evidence_level",
+        "maintenance_signal",
+        "north_star_utility",
+        "description",
+        "resource_type",
+        "stewardship",
+        "source_urls",
+    }
+)
+GENERIC_PLACEHOLDER_URL_FRAGMENTS = (
+    "example.com",
+    "example.org",
+    "localhost",
+    "127.0.0.1",
 )
 
 
@@ -42,6 +75,7 @@ def parse_date(value: str) -> date:
 
 
 def load() -> tuple[dict[str, Any], dict[str, Any], str]:
+    clear_caches()
     with CATALOG_PATH.open(encoding="utf-8") as handle:
         index = yaml.safe_load(handle)
 
@@ -105,7 +139,7 @@ def load_catalog_document(path: Path) -> dict[str, Any]:
         return payload
     if "resources" in payload and "section" in payload:
         return {
-            "catalog_version": "2.0.0",
+            "catalog_version": "2.1.0",
             "reviewed_on": date.today().isoformat(),
             "north_star": "A technically competent user should identify the strongest interoperability mechanism.",
             "resources": payload["resources"],
@@ -134,11 +168,50 @@ def readme_entries(readme: str) -> list[dict[str, str]]:
     return entries
 
 
+def validate_registry_documents() -> list[str]:
+    errors: list[str] = []
+    for path, schema_path in (
+        (REFERENCES_PATH, REFERENCES_SCHEMA_PATH),
+        (STEWARDS_PATH, STEWARDS_SCHEMA_PATH),
+    ):
+        if not path.exists():
+            errors.append(f"missing registry file: {path}")
+            continue
+        payload = yaml.safe_load(path.read_text(encoding="utf-8"))
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+        validator = Draft202012Validator(schema, format_checker=FormatChecker())
+        for error in sorted(validator.iter_errors(payload), key=lambda item: list(item.absolute_path)):
+            loc = ".".join(str(part) for part in error.absolute_path) or path.name
+            errors.append(f"schema:{path.name}:{loc}: {error.message}")
+
+    references = load_references()
+    stewards = load_stewards()
+    ref_urls = [item["url"] for item in references.values()]
+    duplicates = sorted(url for url, count in Counter(ref_urls).items() if count > 1)
+    if duplicates:
+        errors.append(f"duplicate reference urls: {duplicates}")
+    steward_urls = [(item["name"], item["url"]) for item in stewards.values()]
+    dup_stewards = sorted(key for key, count in Counter(steward_urls).items() if count > 1)
+    if dup_stewards:
+        errors.append(f"duplicate steward name/url pairs: {dup_stewards}")
+
+    allowed_types = set(load_taxonomy()["reference_types"])
+    for ref_id, ref in references.items():
+        if ref.get("type") not in allowed_types:
+            errors.append(f"reference {ref_id}: unknown type {ref.get('type')!r}")
+        url = str(ref.get("url", "")).casefold()
+        if any(fragment in url for fragment in GENERIC_PLACEHOLDER_URL_FRAGMENTS):
+            errors.append(f"reference {ref_id}: generic placeholder URL")
+
+    return errors
+
+
 def semantic_errors(
     catalog: dict[str, Any],
     *,
     known_ids: set[str] | None = None,
     as_of: date | None = None,
+    check_registries: bool = True,
 ) -> list[str]:
     errors: list[str] = []
     resources = catalog.get("resources", [])
@@ -151,6 +224,13 @@ def semantic_errors(
 
     if known_ids is None:
         known_ids = {resource_id for resource_id in ids if isinstance(resource_id, str)}
+
+    references = load_references() if check_registries and REFERENCES_PATH.exists() else {}
+    stewards = load_stewards() if check_registries and STEWARDS_PATH.exists() else {}
+    kinds = resource_kind_ids()
+    domains = domain_ids()
+    roles = claim_role_ids()
+    artifacts = conformance_artifact_types()
 
     reference_date = as_of or date.today()
     for resource in resources:
@@ -187,16 +267,62 @@ def semantic_errors(
                 elif ref not in known_ids:
                     errors.append(f"{resource_id}: {field} unknown id {ref!r}")
 
+        if not resource.get("alternatives") and not resource.get("related_resource_ids"):
+            errors.append(f"{resource_id}: isolate — require alternatives or related_resource_ids")
+
+        kind = resource.get("resource_kind")
+        if kind not in kinds:
+            errors.append(f"{resource_id}: unknown resource_kind {kind!r}")
+
+        for domain in resource.get("domains", []):
+            if domain not in domains:
+                errors.append(f"{resource_id}: unknown domain {domain!r}")
+
+        steward_id = resource.get("steward_id")
+        if check_registries and steward_id not in stewards:
+            errors.append(f"{resource_id}: unresolved steward_id {steward_id!r}")
+
+        source_refs = resource.get("source_refs") or []
+        seen_pairs: set[tuple[str, str]] = set()
+        for item in source_refs:
+            if not isinstance(item, dict):
+                errors.append(f"{resource_id}: source_refs entries must be objects")
+                continue
+            ref_id = item.get("ref_id")
+            role = item.get("role")
+            if role not in roles:
+                errors.append(f"{resource_id}: unknown claim role {role!r}")
+            if check_registries and ref_id not in references:
+                errors.append(f"{resource_id}: unresolved ref_id {ref_id!r}")
+            pair = (str(ref_id), str(role))
+            if pair in seen_pairs:
+                errors.append(f"{resource_id}: duplicate source_ref {pair}")
+            seen_pairs.add(pair)
+
         if resource.get("implementation_status") == "multiple-independent":
-            if len(resource.get("source_urls", [])) < 2:
+            if len(source_refs) < 2:
                 errors.append(
-                    f"{resource_id}: multiple-independent requires at least two source_urls"
+                    f"{resource_id}: multiple-independent requires at least two source_refs"
                 )
 
         if resource.get("conformance_status") in {"public-suite", "public-validator"}:
-            if not resource.get("source_urls"):
+            artifact_ok = False
+            for item in source_refs:
+                if not isinstance(item, dict):
+                    continue
+                ref = references.get(item.get("ref_id", ""))
+                if not ref:
+                    continue
+                if (
+                    ref.get("type") in artifacts
+                    and item.get("role") in {"conformance", "interoperability-testing"}
+                ):
+                    artifact_ok = True
+                    break
+            if check_registries and not artifact_ok:
                 errors.append(
-                    f"{resource_id}: public conformance evidence requires source_urls"
+                    f"{resource_id}: public conformance requires a direct artifact-class "
+                    "reference with conformance or interoperability-testing role"
                 )
 
         present_legacy = sorted(FORBIDDEN_LEGACY_FIELDS & set(resource))
@@ -212,19 +338,28 @@ def validate_catalog(
     *,
     known_ids: set[str] | None = None,
     as_of: date | None = None,
+    check_registries: bool = True,
 ) -> list[str]:
     errors: list[str] = []
     validator = Draft202012Validator(schema, format_checker=FormatChecker())
     for error in sorted(validator.iter_errors(catalog), key=lambda item: list(item.absolute_path)):
         path = ".".join(str(part) for part in error.absolute_path) or "catalog"
         errors.append(f"schema:{path}: {error.message}")
-    errors.extend(semantic_errors(catalog, known_ids=known_ids, as_of=as_of))
+    errors.extend(
+        semantic_errors(
+            catalog,
+            known_ids=known_ids,
+            as_of=as_of,
+            check_registries=check_registries,
+        )
+    )
     return errors
 
 
 def validate(*, as_of: date | None = None) -> list[str]:
     catalog, schema, readme = load()
-    errors = validate_catalog(catalog, schema, as_of=as_of)
+    errors = validate_registry_documents()
+    errors.extend(validate_catalog(catalog, schema, as_of=as_of))
 
     resources = catalog.get("resources", [])
     for resource in resources:
@@ -289,7 +424,14 @@ def run_fixture_suite(fixtures_dir: Path, *, as_of: date | None = None) -> int:
         catalog_ids = {resource_id for resource in catalog["resources"] if (resource_id := resource.get("id"))}
         with SCHEMA_PATH.open(encoding="utf-8") as handle:
             schema = json.load(handle)
-        errors = validate_catalog(catalog, schema, known_ids=live_ids | catalog_ids, as_of=as_of)
+        # Fixtures may use synthetic steward/ref ids; skip live registry resolution.
+        errors = validate_catalog(
+            catalog,
+            schema,
+            known_ids=live_ids | catalog_ids,
+            as_of=as_of,
+            check_registries=False,
+        )
         expect_invalid = path.name.endswith(".invalid.yaml")
         if expect_invalid and not errors:
             print(f"ERROR: fixture {path.name} expected to be invalid but passed", file=sys.stderr)
@@ -347,7 +489,11 @@ def main() -> int:
         return 1
 
     catalog, _, readme = load()
-    print(f"Validated {len(catalog['resources'])} catalog entries and {len(readme_entries(readme))} README entries.")
+    print(
+        f"Validated {len(catalog['resources'])} catalog entries, "
+        f"{len(load_references())} references, {len(load_stewards())} stewards, "
+        f"and {len(readme_entries(readme))} README entries."
+    )
     return 0
 
 

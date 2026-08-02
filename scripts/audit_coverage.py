@@ -99,9 +99,27 @@ def flatten_values(resources: list[dict[str, Any]], field_name: str) -> dict[str
 
 
 def stewardship_types(resources: list[dict[str, Any]]) -> dict[str, int]:
-    return count_by(
-        str(resource.get("stewardship", {}).get("type", "unknown")) for resource in resources
-    )
+    stewards: dict[str, dict[str, Any]] = {}
+    stewards_path = ROOT / "catalog" / "stewards.yaml"
+    if stewards_path.exists():
+        payload = yaml.safe_load(stewards_path.read_text(encoding="utf-8")) or {}
+        for item in payload.get("stewards", []):
+            if item.get("id"):
+                stewards[item["id"]] = item
+    values: list[str] = []
+    for resource in resources:
+        if resource.get("steward_type"):
+            values.append(str(resource["steward_type"]))
+            continue
+        if resource.get("stewardship", {}).get("type"):
+            values.append(str(resource["stewardship"]["type"]))
+            continue
+        steward_id = resource.get("steward_id")
+        if steward_id in stewards:
+            values.append(str(stewards[steward_id].get("type", "unknown")))
+        else:
+            values.append("unknown")
+    return count_by(values)
 
 
 def review_schedule(resources: list[dict[str, Any]], *, as_of: date) -> dict[str, Any]:
@@ -138,7 +156,10 @@ def implementations_per_family(
     resources: list[dict[str, Any]], policy: dict[str, Any]
 ) -> dict[str, Any]:
     by_id = {resource["id"]: resource for resource in resources}
-    implementation_types = set(policy.get("implementation_resource_types", []))
+    implementation_kinds = set(policy.get("implementation_resource_kinds", []))
+    if not implementation_kinds:
+        # Backward-compatible alias used by older fixture policies.
+        implementation_kinds = set(policy.get("implementation_resource_types", []))
     families: dict[str, Any] = {}
     for family_name, member_ids in sorted(policy.get("standard_families", {}).items()):
         members: list[str] = []
@@ -148,12 +169,13 @@ def implementations_per_family(
             if resource is None:
                 continue
             members.append(member_id)
-            if resource.get("resource_type") in implementation_types:
+            kind = resource.get("resource_kind") or resource.get("resource_type")
+            if kind in implementation_kinds:
                 implementations.append(
                     {
                         "id": member_id,
                         "name": resource["name"],
-                        "resource_type": resource["resource_type"],
+                        "resource_kind": str(kind),
                     }
                 )
         families[family_name] = {
@@ -208,12 +230,12 @@ def evidence_without_source(resources: list[dict[str, Any]]) -> list[dict[str, s
     flagged: list[dict[str, str]] = []
     for resource in resources:
         evidence_types = set(resource.get("evidence_types", []))
-        source_urls = resource.get("source_urls") or []
+        source_refs = resource.get("source_refs") or resource.get("source_urls") or []
         conformance = resource.get("conformance_status")
         needs_source = bool(evidence_types & EVIDENCE_REQUIRING_SOURCE) or (
             conformance in CONFORMANCE_REQUIRING_SOURCE
         )
-        if needs_source and not source_urls:
+        if needs_source and not source_refs:
             flagged.append(
                 {
                     "id": resource["id"],
@@ -378,7 +400,7 @@ def build_warnings(
                 code="evidence-without-source",
                 message=(
                     f"{len(evidence_gaps)} entries claim implementation or conformance "
-                    "evidence but record no source_urls"
+                    "evidence but record no source_refs"
                 ),
                 details={"entries": evidence_gaps},
             )
@@ -400,7 +422,9 @@ def compute_metrics(
             resources, exclude_domains=frozenset({"cross-domain"})
         ),
         "interoperability_layers": flatten_values(resources, "interoperability_layers"),
-        "resource_types": count_by(resource["resource_type"] for resource in resources),
+        "resource_kinds": count_by(
+            resource.get("resource_kind") or resource.get("resource_type") for resource in resources
+        ),
         "maturity_states": count_by(resource["maturity"] for resource in resources),
         "evidence_types": flatten_values(resources, "evidence_types"),
         "implementation_status": count_by(

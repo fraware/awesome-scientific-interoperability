@@ -1,13 +1,12 @@
-catalog_version: 2.0.0
+catalog_version: 2.1.0
 reviewed_on: '2026-08-01'
-north_star: A technically competent user should identify the strongest available interoperability
-  mechanism for a concrete scientific integration problem.
+north_star: A technically competent user should identify the strongest available interoperability mechanism
+  for a concrete scientific integration problem.
 resources:
 - id: bagit
   name: BagIt
   url: https://datatracker.ietf.org/doc/html/rfc8493
   section: Data and Digital Objects
-  resource_type: Packaging Standard
   interoperability_layers:
   - Syntactic
   - Evidentiary
@@ -16,39 +15,36 @@ resources:
   - repositories
   - transfer systems
   mechanism: Manifest-based packaging and fixity verification for reliable transfer
-  summary: Manifest-based packaging format for transferring digital content with fixity
-    and completeness checks.
+  summary: Manifest-based packaging format for transferring digital content with fixity and completeness
+    checks.
   maturity: established
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: Internet Engineering Task Force (IETF)
-    type: standards-body
-    url: https://www.ietf.org/
   domains:
   - cross-domain
   - digital-preservation
-  source_urls:
-  - https://datatracker.ietf.org/doc/html/rfc8493
-  - https://github.com/LibraryOfCongress/bagit-python
   alternatives:
   - ro-crate
   related_resource_ids: []
-  decision_basis: Simple, durable mechanism for exchanging content packages with integrity
-    evidence.
-  boundary_note: Lower semantic expressiveness than RO-Crate; complementary for transfer
-    and fixity.
+  decision_basis: Simple, durable mechanism for exchanging content packages with integrity evidence.
+  boundary_note: Lower semantic expressiveness than RO-Crate; complementary for transfer and fixity.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: packaging-format
+  steward_id: fixture-internet-engineering-task-force-ietf
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: combine-omex-archive
   name: COMBINE/OMEX Archive
   url: https://combinearchive.org/
   section: Data and Digital Objects
-  resource_type: Packaging Standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -59,8 +55,8 @@ resources:
   - data
   - metadata
   mechanism: Archive format bundling models, simulations, metadata, and related files
-  summary: Archive format bundling models, simulations, metadata, and related files;
-    connects computational models, simulation descriptions, data, and metadata.
+  summary: Archive format bundling models, simulations, metadata, and related files; connects computational
+    models, simulation descriptions, data, and metadata.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -68,30 +64,29 @@ resources:
   - institutional-adoption
   implementation_status: reference-and-others
   conformance_status: none-known
-  stewardship:
-    name: COMBINE Archive community
-    type: community
-    url: https://combinearchive.org/
   domains:
   - computational-biology
   - systems-biology
-  source_urls:
-  - https://combinearchive.org/
-  - https://github.com/SemsProject/CombineArchive
   alternatives: []
-  related_resource_ids: []
-  decision_basis: Mature domain package enabling interoperable computational biology
-    studies.
-  boundary_note: Domain exemplar with strong relation to SED-ML and SBML; closest
-    general alternative RO-Crate remains in group A migration.
+  related_resource_ids:
+  - bagit
+  decision_basis: Mature domain package enabling interoperable computational biology studies.
+  boundary_note: Domain exemplar with strong relation to SED-ML and SBML; closest general alternative
+    RO-Crate remains in group A migration.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: packaging-format
+  steward_id: fixture-combine-archive-community
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: fair-signposting
   name: FAIR Signposting
   url: https://signposting.org/
   section: Data and Digital Objects
-  resource_type: Web Link Convention
   interoperability_layers:
   - Syntactic
   - Operational
@@ -100,10 +95,9 @@ resources:
   - machine clients
   - landing pages
   - metadata and content resources
-  mechanism: Typed HTTP Link relations exposing identifiers, metadata, licenses, and
-    files
-  summary: Typed HTTP Link relations that let machine clients discover identifiers,
-    metadata, licenses, and files from repository landing pages.
+  mechanism: Typed HTTP Link relations exposing identifiers, metadata, licenses, and files
+  summary: Typed HTTP Link relations that let machine clients discover identifiers, metadata, licenses,
+    and files from repository landing pages.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -111,30 +105,29 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: documented-tests
-  stewardship:
-    name: Signposting community
-    type: community
-    url: https://signposting.org/
   domains:
   - cross-domain
   - scholarly-communication
-  source_urls:
-  - https://signposting.org/
-  - https://doi.org/10.5281/zenodo.10490289
   alternatives: []
-  related_resource_ids: []
-  decision_basis: Lightweight operational bridge allowing machines to navigate research
-    objects across repositories.
-  boundary_note: Complements repository APIs and packaging formats; not a packaging
-    or provenance standard.
+  related_resource_ids:
+  - bagit
+  decision_basis: Lightweight operational bridge allowing machines to navigate research objects across
+    repositories.
+  boundary_note: Complements repository APIs and packaging formats; not a packaging or provenance standard.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: link-protocol
+  steward_id: fixture-signposting-community
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: ro-crate
   name: RO-Crate
   url: https://www.researchobject.org/ro-crate/specification/1.3/
   section: Data and Digital Objects
-  resource_type: Packaging Specification
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -147,8 +140,8 @@ resources:
   - instruments
   - publications
   mechanism: JSON-LD research-object packaging with profiles and contextual entities
-  summary: JSON-LD packaging for exchanging data, software, workflows, people, instruments,
-    and provenance as a coherent research object.
+  summary: JSON-LD packaging for exchanging data, software, workflows, people, instruments, and provenance
+    as a coherent research object.
   maturity: established
   evidence_types:
   - normative-specification
@@ -156,33 +149,32 @@ resources:
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: public-validator
-  stewardship:
-    name: Research Object community
-    type: community
-    url: https://www.researchobject.org/
   domains:
   - cross-domain
-  source_urls:
-  - https://www.researchobject.org/ro-crate/specification/1.3/
-  - https://github.com/crs4/rocrate-validator
   alternatives:
   - bagit
   related_resource_ids:
   - workflow-ro-crate
   - workflow-run-ro-crate
   - workflow-testing-ro-crate
-  decision_basis: One of the strongest cross-domain mechanisms for packaging heterogeneous
-    scientific objects and context.
-  boundary_note: Use profiles to distinguish specialized use cases; packaging is distinct
-    from execution provenance profiles.
+  decision_basis: One of the strongest cross-domain mechanisms for packaging heterogeneous scientific
+    objects and context.
+  boundary_note: Use profiles to distinguish specialized use cases; packaging is distinct from execution
+    provenance profiles.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: packaging-format
+  steward_id: fixture-research-object-community
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: workflow-ro-crate
   name: Workflow RO-Crate
   url: https://about.workflowhub.eu/Workflow-RO-Crate/
   section: Data and Digital Objects
-  resource_type: RO-Crate Profile
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -192,8 +184,8 @@ resources:
   - registries
   - metadata consumers
   mechanism: RO-Crate profile for packaging computational workflows and their metadata
-  summary: RO-Crate profile for publishing portable workflow definitions, metadata,
-    diagrams, examples, and tests.
+  summary: RO-Crate profile for publishing portable workflow definitions, metadata, diagrams, examples,
+    and tests.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -201,33 +193,31 @@ resources:
   - institutional-adoption
   implementation_status: reference-and-others
   conformance_status: documented-tests
-  stewardship:
-    name: WorkflowHub / ELIXIR
-    type: consortium
-    url: https://workflowhub.eu/
   domains:
   - computational-workflows
   - cross-domain
-  source_urls:
-  - https://about.workflowhub.eu/Workflow-RO-Crate/
-  - https://workflowhub.eu/
   alternatives: []
   related_resource_ids:
   - ro-crate
   - workflow-run-ro-crate
   - workflow-testing-ro-crate
-  decision_basis: Connects workflow authors, registries, and downstream systems through
-    a portable research object.
-  boundary_note: Distinct from execution provenance, which belongs to Workflow Run
-    RO-Crate.
+  decision_basis: Connects workflow authors, registries, and downstream systems through a portable research
+    object.
+  boundary_note: Distinct from execution provenance, which belongs to Workflow Run RO-Crate.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: packaging-format
+  steward_id: fixture-workflowhub-elixir
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: workflow-run-ro-crate
   name: Workflow Run RO-Crate
   url: https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/
   section: Data and Digital Objects
-  resource_type: RO-Crate Profile
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -238,8 +228,8 @@ resources:
   - archives
   - result consumers
   mechanism: Portable representation of workflow execution provenance and outputs
-  summary: RO-Crate profile for exchanging workflow-run inputs, outputs, software,
-    execution records, and provenance across workflow systems.
+  summary: RO-Crate profile for exchanging workflow-run inputs, outputs, software, execution records,
+    and provenance across workflow systems.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -247,16 +237,9 @@ resources:
   - independent-implementation
   implementation_status: reference-and-others
   conformance_status: documented-tests
-  stewardship:
-    name: Research Object community
-    type: community
-    url: https://www.researchobject.org/
   domains:
   - computational-workflows
   - provenance
-  source_urls:
-  - https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/
-  - https://github.com/ResearchObject/workflow-run-crate
   alternatives:
   - cwlprov
   related_resource_ids:
@@ -264,18 +247,23 @@ resources:
   - workflow-ro-crate
   - cwlprov
   - w3c-prov
-  decision_basis: Direct cross-engine evidence format with multiple implementations
-    and strong North-Star utility.
-  boundary_note: Profile conformance does not alone prove semantic equivalence across
-    implementations.
+  decision_basis: Direct cross-engine evidence format with multiple implementations and strong North-Star
+    utility.
+  boundary_note: Profile conformance does not alone prove semantic equivalence across implementations.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: packaging-format
+  steward_id: fixture-research-object-community
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: workflow-testing-ro-crate
   name: Workflow Testing RO-Crate
   url: https://w3id.org/ro/wftest
   section: Data and Digital Objects
-  resource_type: RO-Crate Profile
   interoperability_layers:
   - Syntactic
   - Evidentiary
@@ -283,25 +271,17 @@ resources:
   - Workflow test definitions
   - monitoring services
   - CI systems
-  mechanism: Research-object profile for packaging workflow tests, inputs, expected
-    outputs, and services
-  summary: Portable research-object profile for exchanging workflow test suites, inputs,
-    expected outputs, and test services.
+  mechanism: Research-object profile for packaging workflow tests, inputs, expected outputs, and services
+  summary: Portable research-object profile for exchanging workflow test suites, inputs, expected outputs,
+    and test services.
   maturity: maintained
   evidence_types:
   - normative-specification
   - reference-implementation
   implementation_status: reference-and-others
   conformance_status: documented-tests
-  stewardship:
-    name: Research Object community
-    type: community
-    url: https://www.researchobject.org/
   domains:
   - computational-workflows
-  source_urls:
-  - https://w3id.org/ro/wftest
-  - https://lifemonitor.eu/
   alternatives: []
   related_resource_ids:
   - workflow-ro-crate
@@ -311,11 +291,17 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: packaging-format
+  steward_id: fixture-research-object-community
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: apptainer-singularity-image-format
   name: Apptainer / Singularity Image Format
   url: https://apptainer.org/docs/user/latest/introduction.html
   section: Research Software and Environments
-  resource_type: Container Standard / Runtime
   interoperability_layers:
   - Syntactic
   - Operational
@@ -323,10 +309,9 @@ resources:
   - Scientific software environments
   - HPC systems
   - container registries
-  mechanism: Portable container images and runtime designed for scientific and HPC
-    environments
-  summary: Portable container images and runtime designed for scientific and HPC environments;
-    connects scientific software environments, HPC systems, and container registries.
+  mechanism: Portable container images and runtime designed for scientific and HPC environments
+  summary: Portable container images and runtime designed for scientific and HPC environments; connects
+    scientific software environments, HPC systems, and container registries.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -334,30 +319,30 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: Apptainer Project
-    type: foundation
-    url: https://apptainer.org/
   domains:
   - scientific-computing
   - hpc
-  source_urls:
-  - https://apptainer.org/docs/user/latest/introduction.html
-  - https://github.com/apptainer/apptainer
   alternatives: []
-  related_resource_ids: []
-  decision_basis: High-value operational interoperability layer across scientific
-    computing environments where OCI workflows alone may be insufficient.
-  boundary_note: The entry should emphasize image/runtime portability across HPC infrastructure;
-    OCI containers are a separate operational layer.
+  related_resource_ids:
+  - bagit
+  decision_basis: High-value operational interoperability layer across scientific computing environments
+    where OCI workflows alone may be insufficient.
+  boundary_note: The entry should emphasize image/runtime portability across HPC infrastructure; OCI containers
+    are a separate operational layer.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: packaging-format
+  steward_id: fixture-apptainer-project
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: citation-file-format-citation-cff
   name: Citation File Format (CITATION.cff)
   url: https://citation-file-format.github.io/
   section: Research Software and Environments
-  resource_type: Metadata Format
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -367,8 +352,8 @@ resources:
   - archives
   - publishers
   mechanism: Human- and machine-readable software citation metadata
-  summary: Repository-local YAML metadata that connects software projects with citation,
-    archival, and publishing systems.
+  summary: Repository-local YAML metadata that connects software projects with citation, archival, and
+    publishing systems.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -376,31 +361,30 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: public-validator
-  stewardship:
-    name: Citation File Format project
-    type: community
-    url: https://citation-file-format.github.io/
   domains:
   - research-software
   - scholarly-communication
-  source_urls:
-  - https://citation-file-format.github.io/
-  - https://github.com/citation-file-format/cffconvert
   alternatives:
   - codemeta
   related_resource_ids:
   - codemeta
-  decision_basis: Practical interoperability mechanism connecting source repositories
-    with citation and archival systems.
+  decision_basis: Practical interoperability mechanism connecting source repositories with citation and
+    archival systems.
   boundary_note: Narrower than CodeMeta but exceptionally deployable.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: metadata-standard
+  steward_id: fixture-citation-file-format-project
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: codemeta
   name: CodeMeta
   url: https://codemeta.github.io/
   section: Research Software and Environments
-  resource_type: Metadata Vocabulary / Crosswalk
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -410,39 +394,36 @@ resources:
   - registries
   - citation systems
   mechanism: Shared software metadata vocabulary and crosswalks among metadata standards
-  summary: Shared research-software metadata vocabulary and crosswalks connecting
-    repositories, registries, and citation systems.
+  summary: Shared research-software metadata vocabulary and crosswalks connecting repositories, registries,
+    and citation systems.
   maturity: maintained
   evidence_types:
   - normative-specification
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: CodeMeta project
-    type: community
-    url: https://codemeta.github.io/
   domains:
   - research-software
-  source_urls:
-  - https://codemeta.github.io/
-  - https://github.com/codemeta/codemeta
   alternatives:
   - citation-file-format-citation-cff
   related_resource_ids:
   - citation-file-format-citation-cff
-  decision_basis: Core cross-system metadata bridge for research software discovery
-    and exchange.
-  boundary_note: Complementary to CITATION.cff, which emphasizes repository-local
-    citation metadata.
+  decision_basis: Core cross-system metadata bridge for research software discovery and exchange.
+  boundary_note: Complementary to CITATION.cff, which emphasizes repository-local citation metadata.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: metadata-standard
+  steward_id: fixture-codemeta-project
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: reprozip
   name: ReproZip
   url: https://www.reprozip.org/
   section: Research Software and Environments
-  resource_type: Packaging / Capture Tool
   interoperability_layers:
   - Operational
   - Evidentiary
@@ -450,41 +431,38 @@ resources:
   - Computational experiments
   - execution environments
   - reproduction tools
-  mechanism: Captures files, dependencies, and execution traces into portable experiment
-    packages
-  summary: Captures files, dependencies, and execution traces into portable experiment
-    packages; connects computational experiments, execution environments, and reproduction
-    tools.
+  mechanism: Captures files, dependencies, and execution traces into portable experiment packages
+  summary: Captures files, dependencies, and execution traces into portable experiment packages; connects
+    computational experiments, execution environments, and reproduction tools.
   maturity: maintained
   evidence_types:
   - reference-implementation
   - interoperability-demonstration
   implementation_status: reference-and-others
   conformance_status: none-known
-  stewardship:
-    name: ReproZip project (NYU Tandon School of Engineering)
-    type: institution
-    url: https://www.reprozip.org/
   domains:
   - reproducibility
   - computational-science
-  source_urls:
-  - https://www.reprozip.org/
-  - https://github.com/ViDA-NYU/reprozip
   alternatives: []
-  related_resource_ids: []
-  decision_basis: Strong executable-environment bridge supporting transfer and reproduction
-    across systems.
-  boundary_note: Interoperability depends on unpacker support and environment compatibility;
-    packaging not provenance.
+  related_resource_ids:
+  - bagit
+  decision_basis: Strong executable-environment bridge supporting transfer and reproduction across systems.
+  boundary_note: Interoperability depends on unpacker support and environment compatibility; packaging
+    not provenance.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: packaging-format
+  steward_id: fixture-reprozip-project-nyu-tandon-school-of-engineerin
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: software-hash-identifiers-swhids
   name: Software Hash Identifiers (SWHIDs)
   url: https://www.swhid.org/
   section: Research Software and Environments
-  resource_type: Identifier System
   interoperability_layers:
   - Semantic
   - Evidentiary
@@ -493,39 +471,37 @@ resources:
   - archives
   - publications
   - research records
-  mechanism: Intrinsic persistent identifiers derived from software artifact content
-    and structure
-  summary: Intrinsic persistent identifiers that connect exact source-code artifacts
-    with archives, publications, and research records.
+  mechanism: Intrinsic persistent identifiers derived from software artifact content and structure
+  summary: Intrinsic persistent identifiers that connect exact source-code artifacts with archives, publications,
+    and research records.
   maturity: established
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: Software Heritage
-    type: institution
-    url: https://www.softwareheritage.org/
   domains:
   - research-software
   - digital-preservation
-  source_urls:
-  - https://www.swhid.org/
-  - https://www.softwareheritage.org/
   alternatives: []
-  related_resource_ids: []
-  decision_basis: Connects exact software artifacts to scholarly records and reproducibility
-    evidence.
+  related_resource_ids:
+  - bagit
+  decision_basis: Connects exact software artifacts to scholarly records and reproducibility evidence.
   boundary_note: Complement DOI-level software records with content-addressed identity.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: identifier-system
+  steward_id: fixture-software-heritage
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: common-workflow-language-cwl
   name: Common Workflow Language (CWL)
   url: https://www.commonwl.org/
   section: Workflows and Execution
-  resource_type: Workflow Language / Standard
   interoperability_layers:
   - Syntactic
   - Operational
@@ -535,10 +511,9 @@ resources:
   - runners
   - registries
   - execution systems
-  mechanism: Portable declarative workflow and tool descriptions with conformance
-    tests
-  summary: Portable declarative standard for describing command-line tools and workflows
-    across independent runners and computing environments.
+  mechanism: Portable declarative workflow and tool descriptions with conformance tests
+  summary: Portable declarative standard for describing command-line tools and workflows across independent
+    runners and computing environments.
   maturity: established
   evidence_types:
   - normative-specification
@@ -546,33 +521,31 @@ resources:
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: public-suite
-  stewardship:
-    name: Common Workflow Language project
-    type: community
-    url: https://www.commonwl.org/
   domains:
   - computational-workflows
   - cross-domain
-  source_urls:
-  - https://www.commonwl.org/
-  - https://github.com/common-workflow-language/cwl-v1.2
   alternatives:
   - workflow-description-language-wdl
   related_resource_ids:
   - cwltool
   - cwlprov
-  decision_basis: Canonical cross-engine workflow portability standard with a mature
-    conformance ecosystem.
-  boundary_note: Execution portability still depends on supported features and environments;
-    distinct from WES/TES execution APIs.
+  decision_basis: Canonical cross-engine workflow portability standard with a mature conformance ecosystem.
+  boundary_note: Execution portability still depends on supported features and environments; distinct
+    from WES/TES execution APIs.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: workflow-language
+  steward_id: fixture-common-workflow-language-project
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: cwltool
   name: cwltool
   url: https://github.com/common-workflow-language/cwltool
   section: Workflows and Execution
-  resource_type: Reference Implementation
   interoperability_layers:
   - Syntactic
   - Operational
@@ -583,38 +556,37 @@ resources:
   - conformance tests
   - provenance consumers
   mechanism: Reference CWL runner with validation and provenance support
-  summary: Reference CWL runner connecting specification validation, conformance testing,
-    workflow execution, and provenance capture.
+  summary: Reference CWL runner connecting specification validation, conformance testing, workflow execution,
+    and provenance capture.
   maturity: maintained
   evidence_types:
   - reference-implementation
   - conformance-suite
   implementation_status: reference-and-others
   conformance_status: public-suite
-  stewardship:
-    name: Common Workflow Language project
-    type: community
-    url: https://www.commonwl.org/
   domains:
   - computational-workflows
-  source_urls:
-  - https://github.com/common-workflow-language/cwltool
-  - https://github.com/common-workflow-language/cwl-v1.2
   alternatives: []
   related_resource_ids:
   - common-workflow-language-cwl
   - cwlprov
-  decision_basis: Canonical implementation linking the CWL specification, conformance
-    suite, execution, and provenance.
+  decision_basis: Canonical implementation linking the CWL specification, conformance suite, execution,
+    and provenance.
   boundary_note: Avoid treating it as evidence that every CWL runner is equivalent.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: implementation
+  steward_id: fixture-common-workflow-language-project
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: ga4gh-data-repository-service-drs
   name: GA4GH Data Repository Service (DRS)
   url: https://www.ga4gh.org/product/data-repository-service-drs/
   section: Workflows and Execution
-  resource_type: API Standard
   interoperability_layers:
   - Syntactic
   - Operational
@@ -624,8 +596,8 @@ resources:
   - clients
   - cloud systems
   mechanism: Common API for resolving and accessing data objects across repositories
-  summary: Standard API for resolving and accessing data objects across repositories,
-    clouds, and workflow systems.
+  summary: Standard API for resolving and accessing data objects across repositories, clouds, and workflow
+    systems.
   maturity: established
   evidence_types:
   - normative-specification
@@ -633,31 +605,30 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: documented-tests
-  stewardship:
-    name: Global Alliance for Genomics and Health (GA4GH)
-    type: consortium
-    url: https://www.ga4gh.org/
   domains:
   - genomics
   - computational-workflows
-  source_urls:
-  - https://www.ga4gh.org/product/data-repository-service-drs/
-  - https://github.com/ga4gh/data-repository-service-schemas
   alternatives: []
   related_resource_ids:
   - ga4gh-workflow-execution-service-wes
   - ga4gh-task-execution-service-tes
   decision_basis: Critical data-access bridge in federated scientific workflow stacks.
-  boundary_note: Access authorization remains a separate interoperability layer; DRS
-    is data access not workflow language.
+  boundary_note: Access authorization remains a separate interoperability layer; DRS is data access not
+    workflow language.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: api-standard
+  steward_id: fixture-global-alliance-for-genomics-and-health-ga4gh
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: ga4gh-task-execution-service-tes
   name: GA4GH Task Execution Service (TES)
   url: https://www.ga4gh.org/product/task-execution-service-tes/
   section: Workflows and Execution
-  resource_type: API Standard
   interoperability_layers:
   - Syntactic
   - Operational
@@ -666,40 +637,38 @@ resources:
   - task executors
   - cloud and HPC resources
   mechanism: Common API for executing individual computational tasks
-  summary: Standard API that separates workflow orchestration from individual task
-    execution across compute backends.
+  summary: Standard API that separates workflow orchestration from individual task execution across compute
+    backends.
   maturity: established
   evidence_types:
   - normative-specification
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: documented-tests
-  stewardship:
-    name: Global Alliance for Genomics and Health (GA4GH)
-    type: consortium
-    url: https://www.ga4gh.org/
   domains:
   - genomics
   - computational-workflows
-  source_urls:
-  - https://www.ga4gh.org/product/task-execution-service-tes/
-  - https://github.com/ga4gh/task-execution-schemas
   alternatives: []
   related_resource_ids:
   - ga4gh-workflow-execution-service-wes
   - ga4gh-data-repository-service-drs
-  decision_basis: Separates workflow orchestration from interoperable task execution
-    across backends.
-  boundary_note: Genomics origin, but broadly useful cloud-compute contract; distinct
-    from WES workflow-run API.
+  decision_basis: Separates workflow orchestration from interoperable task execution across backends.
+  boundary_note: Genomics origin, but broadly useful cloud-compute contract; distinct from WES workflow-run
+    API.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: api-standard
+  steward_id: fixture-global-alliance-for-genomics-and-health-ga4gh
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: ga4gh-workflow-execution-service-wes
   name: GA4GH Workflow Execution Service (WES)
   url: https://www.ga4gh.org/product/workflow-execution-service-wes/
   section: Workflows and Execution
-  resource_type: API Standard
   interoperability_layers:
   - Syntactic
   - Operational
@@ -708,8 +677,8 @@ resources:
   - execution services
   - heterogeneous workflow engines
   mechanism: Common API for submitting, monitoring, and retrieving workflow runs
-  summary: Standard API for submitting, monitoring, and retrieving workflow runs from
-    heterogeneous execution services.
+  summary: Standard API for submitting, monitoring, and retrieving workflow runs from heterogeneous execution
+    services.
   maturity: established
   evidence_types:
   - normative-specification
@@ -717,33 +686,32 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: documented-tests
-  stewardship:
-    name: Global Alliance for Genomics and Health (GA4GH)
-    type: consortium
-    url: https://www.ga4gh.org/
   domains:
   - genomics
   - computational-workflows
-  source_urls:
-  - https://www.ga4gh.org/product/workflow-execution-service-wes/
-  - https://github.com/ga4gh/workflow-execution-service-schemas
   alternatives: []
   related_resource_ids:
   - ga4gh-task-execution-service-tes
   - ga4gh-data-repository-service-drs
   - sapporo
-  decision_basis: Direct operational interoperability contract between clients and
-    workflow-execution services.
-  boundary_note: Implementation listings do not guarantee conformance; test evidence
-    should be noted. WES is an execution API, not a workflow language.
+  decision_basis: Direct operational interoperability contract between clients and workflow-execution
+    services.
+  boundary_note: Implementation listings do not guarantee conformance; test evidence should be noted.
+    WES is an execution API, not a workflow language.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: api-standard
+  steward_id: fixture-global-alliance-for-genomics-and-health-ga4gh
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: lifemonitor
   name: LifeMonitor
   url: https://lifemonitor.eu/
   section: Workflows and Execution
-  resource_type: Testing / Monitoring Service
   interoperability_layers:
   - Operational
   - Evidentiary
@@ -753,83 +721,79 @@ resources:
   - test definitions
   - users
   mechanism: Monitoring of workflow tests described through Workflow Testing RO-Crate
-  summary: Monitoring service that executes portable workflow tests described with
-    Workflow Testing RO-Crate.
+  summary: Monitoring service that executes portable workflow tests described with Workflow Testing RO-Crate.
   maturity: maintained
   evidence_types:
   - reference-implementation
   - interoperability-demonstration
   implementation_status: single-known
   conformance_status: none-known
-  stewardship:
-    name: LifeMonitor project (ELIXIR)
-    type: consortium
-    url: https://lifemonitor.eu/
   domains:
   - computational-workflows
   - life-sciences
-  source_urls:
-  - https://lifemonitor.eu/
-  - https://github.com/life-monitor/life-monitor
   alternatives: []
   related_resource_ids:
   - workflow-testing-ro-crate
   - workflowhub
-  decision_basis: Unusually direct bridge between portable workflow-test descriptions
-    and external execution services.
-  boundary_note: Narrower than a general interoperability observatory; distinct from
-    WorkflowHub registry role.
+  decision_basis: Unusually direct bridge between portable workflow-test descriptions and external execution
+    services.
+  boundary_note: Narrower than a general interoperability observatory; distinct from WorkflowHub registry
+    role.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: execution-service
+  steward_id: fixture-lifemonitor-project-elixir
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: sapporo
   name: Sapporo
   url: https://github.com/sapporo-wes/sapporo
   section: Workflows and Execution
-  resource_type: Reference Implementation
   interoperability_layers:
   - Syntactic
   - Operational
   connects:
   - GA4GH WES clients
   - CWL, WDL, Nextflow and Snakemake runners
-  mechanism: Workflow-execution service implementing WES across multiple workflow
-    languages
-  summary: Reference WES implementation that exposes CWL, WDL, Nextflow, and Snakemake
-    runners through one execution API.
+  mechanism: Workflow-execution service implementing WES across multiple workflow languages
+  summary: Reference WES implementation that exposes CWL, WDL, Nextflow, and Snakemake runners through
+    one execution API.
   maturity: maintained
   evidence_types:
   - reference-implementation
   - interoperability-demonstration
   implementation_status: single-known
   conformance_status: documented-tests
-  stewardship:
-    name: Sapporo contributors
-    type: community
-    url: https://github.com/sapporo-wes/sapporo
   domains:
   - computational-workflows
   - genomics
-  source_urls:
-  - https://github.com/sapporo-wes/sapporo
-  - https://www.ga4gh.org/product/workflow-execution-service-wes/
   alternatives: []
   related_resource_ids:
   - ga4gh-workflow-execution-service-wes
   - common-workflow-language-cwl
   - workflow-description-language-wdl
-  decision_basis: Concrete cross-language WES implementation and useful reference
-    point for testing client-service interoperability.
-  boundary_note: Implementation inclusion should be tied to reference value and multi-language
-    support; not evidence all WES services are equivalent.
+  decision_basis: Concrete cross-language WES implementation and useful reference point for testing client-service
+    interoperability.
+  boundary_note: Implementation inclusion should be tied to reference value and multi-language support;
+    not evidence all WES services are equivalent.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: implementation
+  steward_id: fixture-sapporo-contributors
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: wfexs-backend
   name: WfExS-backend
   url: https://github.com/inab/WfExS-backend
   section: Workflows and Execution
-  resource_type: Workflow Execution Backend
   interoperability_layers:
   - Operational
   - Evidentiary
@@ -839,40 +803,39 @@ resources:
   - execution environments
   - provenance consumers
   mechanism: Workflow execution backend supporting multiple engines and RO-Crate packaging
-  summary: Workflow execution backend connecting multiple workflow engines with reproducible
-    environments and RO-Crate evidence packages.
+  summary: Workflow execution backend connecting multiple workflow engines with reproducible environments
+    and RO-Crate evidence packages.
   maturity: maintained
   evidence_types:
   - reference-implementation
   - interoperability-demonstration
   implementation_status: single-known
   conformance_status: none-known
-  stewardship:
-    name: Barcelona Supercomputing Center (INB)
-    type: institution
-    url: https://www.bsc.es/
   domains:
   - computational-workflows
   - life-sciences
-  source_urls:
-  - https://github.com/inab/WfExS-backend
-  - https://www.researchobject.org/workflow-run-crate/
   alternatives: []
   related_resource_ids:
   - workflow-run-ro-crate
   - ro-crate
   - common-workflow-language-cwl
-  decision_basis: Strong reference implementation connecting heterogeneous workflows
-    with reproducible execution and evidence packaging.
+  decision_basis: Strong reference implementation connecting heterogeneous workflows with reproducible
+    execution and evidence packaging.
   boundary_note: Independent review should confirm current supported engines and profiles.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: execution-service
+  steward_id: fixture-barcelona-supercomputing-center-inb
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: workflow-description-language-wdl
   name: Workflow Description Language (WDL)
   url: https://openwdl.org/
   section: Workflows and Execution
-  resource_type: Workflow Language
   interoperability_layers:
   - Syntactic
   - Operational
@@ -881,41 +844,39 @@ resources:
   - workflow engines
   - cloud and HPC backends
   mechanism: Portable workflow language with multiple execution implementations
-  summary: Workflow language implemented by multiple engines for executing scientific
-    pipelines across cloud and high-performance computing backends.
+  summary: Workflow language implemented by multiple engines for executing scientific pipelines across
+    cloud and high-performance computing backends.
   maturity: maintained
   evidence_types:
   - normative-specification
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: OpenWDL
-    type: community
-    url: https://openwdl.org/
   domains:
   - computational-workflows
   - genomics
-  source_urls:
-  - https://openwdl.org/
-  - https://github.com/openwdl/wdl
   alternatives:
   - common-workflow-language-cwl
   related_resource_ids:
   - sapporo
   - common-workflow-language-cwl
-  decision_basis: Major scientific workflow language with meaningful implementation
-    diversity.
-  boundary_note: Governance and conformance maturity should be compared with CWL;
-    language not execution API.
+  decision_basis: Major scientific workflow language with meaningful implementation diversity.
+  boundary_note: Governance and conformance maturity should be compared with CWL; language not execution
+    API.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: workflow-language
+  steward_id: fixture-openwdl
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: workflowhub
   name: WorkflowHub
   url: https://workflowhub.eu/
   section: Workflows and Execution
-  resource_type: Workflow Registry
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -927,8 +888,8 @@ resources:
   - workflow engines
   - repositories
   mechanism: FAIR workflow registry using RO-Crate, Bioschemas, and GA4GH TRS
-  summary: FAIR workflow registry connecting RO-Crate packaging, Bioschemas metadata,
-    GA4GH TRS discovery, and external execution services.
+  summary: FAIR workflow registry connecting RO-Crate packaging, Bioschemas metadata, GA4GH TRS discovery,
+    and external execution services.
   maturity: maintained
   evidence_types:
   - reference-implementation
@@ -936,34 +897,33 @@ resources:
   - interoperability-demonstration
   implementation_status: reference-and-others
   conformance_status: documented-tests
-  stewardship:
-    name: WorkflowHub (University of Manchester and HITS gGmbH)
-    type: institution
-    url: https://workflowhub.eu/
   domains:
   - computational-workflows
   - life-sciences
-  source_urls:
-  - https://workflowhub.eu/
-  - https://about.workflowhub.eu/Workflow-RO-Crate/
   alternatives: []
   related_resource_ids:
   - workflow-ro-crate
   - workflow-testing-ro-crate
   - lifemonitor
   - ga4gh-workflow-execution-service-wes
-  decision_basis: Exemplary multi-standard infrastructure connecting workflow publication,
-    discovery, packaging, and execution systems.
-  boundary_note: Registry role is distinct from LifeMonitor's test monitoring; GA4GH
-    TRS cross-ref deferred until group A migration.
+  decision_basis: Exemplary multi-standard infrastructure connecting workflow publication, discovery,
+    packaging, and execution systems.
+  boundary_note: Registry role is distinct from LifeMonitor's test monitoring; GA4GH TRS cross-ref deferred
+    until group A migration.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: execution-service
+  steward_id: fixture-workflowhub-university-of-manchester-and-hits-gg
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: cwlprov
   name: CWLProv
   url: https://cwltool.readthedocs.io/en/latest/CWLProv.html
   section: Provenance and Evidence
-  resource_type: Provenance Profile
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -972,26 +932,17 @@ resources:
   - CWL runners
   - provenance consumers
   - research-object systems
-  mechanism: PROV-based representation of CWL workflow execution packaged in research
-    objects
-  summary: PROV-based profile that packages CWL workflow execution records as portable
-    research objects.
+  mechanism: PROV-based representation of CWL workflow execution packaged in research objects
+  summary: PROV-based profile that packages CWL workflow execution records as portable research objects.
   maturity: maintained
   evidence_types:
   - normative-specification
   - reference-implementation
   implementation_status: reference-and-others
   conformance_status: documented-tests
-  stewardship:
-    name: Common Workflow Language project
-    type: community
-    url: https://www.commonwl.org/
   domains:
   - computational-workflows
   - provenance
-  source_urls:
-  - https://cwltool.readthedocs.io/en/latest/CWLProv.html
-  - https://github.com/common-workflow-language/cwltool
   alternatives:
   - workflow-run-ro-crate
   related_resource_ids:
@@ -1000,18 +951,23 @@ resources:
   - w3c-prov
   - workflow-run-ro-crate
   - runcrate
-  decision_basis: Concrete bridge between a workflow language, execution provenance,
-    and portable evidence.
-  boundary_note: Related to Workflow Run RO-Crate; descriptions must clarify their
-    distinct profiles and evolution.
+  decision_basis: Concrete bridge between a workflow language, execution provenance, and portable evidence.
+  boundary_note: Related to Workflow Run RO-Crate; descriptions must clarify their distinct profiles and
+    evolution.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: provenance-model
+  steward_id: fixture-common-workflow-language-project
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: iso-23494-2-2026-common-provenance-model
   name: ISO 23494-2:2026 Common Provenance Model
   url: https://www.iso.org/standard/87714.html
   section: Provenance and Evidence
-  resource_type: International Standard
   interoperability_layers:
   - Semantic
   - Evidentiary
@@ -1021,39 +977,36 @@ resources:
   - laboratories
   - biobanks
   - software
-  mechanism: Common provenance model and serialization requirements for traceability
-    and interoperability
-  summary: International provenance standard for tracing biological materials and
-    derived data across laboratories, biobanks, and software systems.
+  mechanism: Common provenance model and serialization requirements for traceability and interoperability
+  summary: International provenance standard for tracing biological materials and derived data across
+    laboratories, biobanks, and software systems.
   maturity: established
   evidence_types:
   - normative-specification
   implementation_status: unknown
   conformance_status: none-known
-  stewardship:
-    name: International Organization for Standardization (ISO)
-    type: standards-body
-    url: https://www.iso.org/
   domains:
   - biotechnology
   - provenance
-  source_urls:
-  - https://www.iso.org/standard/87714.html
   alternatives: []
   related_resource_ids:
   - w3c-prov
-  decision_basis: Newly published international scientific provenance standard with
-    explicit interoperability requirements.
-  boundary_note: Biotechnology-focused; include as a current domain standard and monitor
-    implementation uptake.
+  decision_basis: Newly published international scientific provenance standard with explicit interoperability
+    requirements.
+  boundary_note: Biotechnology-focused; include as a current domain standard and monitor implementation
+    uptake.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: specification
+  steward_id: fixture-international-organization-for-standardization-i
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
 - id: p-plan
   name: P-Plan
   url: https://www.opmw.org/model/p-plan/
   section: Provenance and Evidence
-  resource_type: Ontology
   interoperability_layers:
   - Semantic
   - Evidentiary
@@ -1063,37 +1016,35 @@ resources:
   - variables
   - execution provenance
   mechanism: PROV extension linking plans and workflow structures to executions
-  summary: W3C PROV extension linking prospective plans, workflow structures, variables,
-    and execution provenance.
+  summary: W3C PROV extension linking prospective plans, workflow structures, variables, and execution
+    provenance.
   maturity: established
   evidence_types:
   - normative-specification
   implementation_status: unknown
   conformance_status: none-known
-  stewardship:
-    name: Open Provenance Model for Workflows (OPMW)
-    type: community
-    url: https://www.opmw.org/
   domains:
   - provenance
   - computational-workflows
-  source_urls:
-  - https://www.opmw.org/model/p-plan/
-  - https://www.w3.org/TR/prov-o/
   alternatives: []
   related_resource_ids:
   - w3c-prov
-  decision_basis: Addresses the important bridge between intended scientific procedures
-    and observed execution.
+  decision_basis: Addresses the important bridge between intended scientific procedures and observed execution.
   boundary_note: Assess current implementation adoption during double review.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: ontology-vocabulary
+  steward_id: fixture-open-provenance-model-for-workflows-opmw
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: runcrate
   name: runcrate
   url: https://www.researchobject.org/runcrate/
   section: Provenance and Evidence
-  resource_type: Implementation / Toolkit
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -1103,26 +1054,18 @@ resources:
   - command-line users
   - notebooks
   - provenance consumers
-  mechanism: Tools for inspecting, replaying, and converting workflow-run research
-    objects
-  summary: Tools for inspecting, replaying, and converting Workflow Run RO-Crate and
-    CWLProv execution records.
+  mechanism: Tools for inspecting, replaying, and converting workflow-run research objects
+  summary: Tools for inspecting, replaying, and converting Workflow Run RO-Crate and CWLProv execution
+    records.
   maturity: maintained
   evidence_types:
   - reference-implementation
   - interoperability-demonstration
   implementation_status: reference-and-others
   conformance_status: none-known
-  stewardship:
-    name: Research Object community
-    type: community
-    url: https://www.researchobject.org/
   domains:
   - computational-workflows
   - provenance
-  source_urls:
-  - https://www.researchobject.org/runcrate/
-  - https://github.com/ResearchObject/runcrate
   alternatives: []
   related_resource_ids:
   - workflow-run-ro-crate
@@ -1133,11 +1076,17 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: implementation
+  steward_id: fixture-research-object-community
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: w3c-prov
   name: W3C PROV
   url: https://www.w3.org/TR/prov-o/
   section: Provenance and Evidence
-  resource_type: Provenance Standard
   interoperability_layers:
   - Semantic
   - Evidentiary
@@ -1147,34 +1096,33 @@ resources:
   - agents
   - provenance producers and consumers
   mechanism: Shared data model, ontology, and serializations for provenance exchange
-  summary: Cross-domain data model, ontology, and serializations for exchanging provenance
-    among independent producers and consumers.
+  summary: Cross-domain data model, ontology, and serializations for exchanging provenance among independent
+    producers and consumers.
   maturity: established
   evidence_types:
   - normative-specification
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: World Wide Web Consortium (W3C)
-    type: standards-body
-    url: https://www.w3.org/
   domains:
   - cross-domain
   - provenance
-  source_urls:
-  - https://www.w3.org/TR/prov-o/
-  - https://www.w3.org/TR/prov-dm/
   alternatives: []
   related_resource_ids:
   - cwlprov
   - p-plan
   - workflow-run-ro-crate
   - runcrate
-  decision_basis: Foundational cross-domain provenance contract used by many scientific
-    profiles.
-  boundary_note: General standard justified by extensive scientific reuse; profiles
-    such as CWLProv and Workflow Run RO-Crate specialize it.
+  decision_basis: Foundational cross-domain provenance contract used by many scientific profiles.
+  boundary_note: General standard justified by extensive scientific reuse; profiles such as CWLProv and
+    Workflow Run RO-Crate specialize it.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: provenance-model
+  steward_id: fixture-world-wide-web-consortium-w3c
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition

@@ -60,7 +60,7 @@ class CoverageAuditTests(unittest.TestCase):
             "domains_per_entry",
             "entries_per_domain",
             "interoperability_layers",
-            "resource_types",
+            "resource_kinds",
             "maturity_states",
             "evidence_types",
             "implementation_status",

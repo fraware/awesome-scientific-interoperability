@@ -22,7 +22,8 @@ jobs:
       - run: python scripts/validate_problem_index.py
       - run: python scripts/validate_watchlist.py
       - run: python scripts/check_review_freshness.py
-      - run: python scripts/check_links.py --offline
+      - run: python scripts/audit_data_quality.py --as-of 2026-08-01 --json-report data-quality-audit.json --markdown-report data-quality-audit.md
+      - run: python scripts/check_links.py --offline --scope all
       - run: python -m unittest discover -s tests -v
       - name: Coverage audit
         run: python scripts/audit_coverage.py --json-report coverage-audit.json --markdown-report coverage-audit.md
@@ -33,6 +34,13 @@ jobs:
           path: |
             coverage-audit.json
             coverage-audit.md
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: data-quality-audit
+          path: |
+            data-quality-audit.json
+            data-quality-audit.md
       - run: python scripts/verify_manifest.py
 
   awesome-lint:

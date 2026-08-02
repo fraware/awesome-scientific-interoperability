@@ -35,3 +35,8 @@
 ## Conflicts
 
 None.
+
+## v2.1 provenance migration (2026-08-01)
+
+- Migrated workflow records to claim-linked `source_refs`; retained CWL / cwltool `public-suite` via the ConformanceTests page artifact.
+- Relationship graph unchanged for non-isolates; evidence-depth queues for GA4GH WES/TES/DRS and openEO remain for issue #30 Batch 1.

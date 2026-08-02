@@ -36,7 +36,7 @@ List the roles that must approve before merge (maintainer, section reviewer, cat
 - [ ] I inspected primary technical sources.
 - [ ] The README and catalog contain the same name, URL, section, and `summary`.
 - [ ] The `summary` is objective, specific, and ends with a period.
-- [ ] v2 catalog fields are complete (`stewardship`, `review_due_on`, `source_urls`, evidence statuses, and cross-references).
+- [ ] v2.1 catalog fields are complete (`steward_id`, `review_due_on`, `source_refs`, evidence statuses, and cross-references).
 - [ ] I recorded limitations and the closest alternative in the catalog.
 - [ ] I ran `python scripts/validate_catalog.py`.
 - [ ] I ran `python scripts/validate_watchlist.py` when watchlist records changed.

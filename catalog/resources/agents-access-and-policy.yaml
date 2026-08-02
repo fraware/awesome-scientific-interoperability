@@ -4,7 +4,7 @@ resources:
   name: GA4GH Data Use Ontology (DUO)
   url: https://www.ga4gh.org/product/data-use-ontology-duo/
   section: Agents, Access, and Policy
-  resource_type: Ontology
+  resource_kind: ontology-vocabulary
   interoperability_layers:
   - Semantic
   - Organizational
@@ -22,22 +22,24 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: Global Alliance for Genomics and Health
-    type: consortium
-    url: https://www.ga4gh.org/
+  steward_id: ga4gh
   domains:
   - genomics
   - data-governance
-  source_urls:
-  - https://www.ga4gh.org/product/data-use-ontology-duo/
-  - https://github.com/EBISPOT/DUO
+  source_refs:
+  - ref_id: ga4gh-org-product-data-use-ontology-duo
+    role: technical-definition
+  - ref_id: ga4gh-org-root
+    role: stewardship
+  - ref_id: github-com-ebispot-duo
+    role: implementation
   alternatives: []
   related_resource_ids:
   - ga4gh-passports
-  decision_basis: Concrete semantic bridge between data governance decisions and computational access systems.
-  boundary_note: Genomics-originated but broadly relevant to controlled scientific data; authorization transport is
-    separate from DUO terms.
+  decision_basis: Concrete semantic bridge between data governance decisions and computational access
+    systems.
+  boundary_note: Genomics-originated but broadly relevant to controlled scientific data; authorization
+    transport is separate from DUO terms.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -45,7 +47,7 @@ resources:
   name: GA4GH Passports
   url: https://www.ga4gh.org/product/ga4gh-passports/
   section: Agents, Access, and Policy
-  resource_type: Authorization Standard
+  resource_kind: ontology-vocabulary
   interoperability_layers:
   - Semantic
   - Operational
@@ -64,20 +66,22 @@ resources:
   - interoperability-demonstration
   implementation_status: reference-and-others
   conformance_status: none-known
-  stewardship:
-    name: Global Alliance for Genomics and Health
-    type: consortium
-    url: https://www.ga4gh.org/
+  steward_id: ga4gh
   domains:
   - genomics
   - data-governance
-  source_urls:
-  - https://www.ga4gh.org/product/ga4gh-passports/
-  - https://github.com/ga4gh-duri/ga4gh-passport-standard
+  source_refs:
+  - ref_id: ga4gh-org-product-ga4gh-passports
+    role: technical-definition
+  - ref_id: ga4gh-org-root
+    role: stewardship
+  - ref_id: github-com-ga4gh-duri-ga4gh-passport-standard
+    role: implementation
   alternatives: []
   related_resource_ids:
   - ga4gh-data-use-ontology-duo
-  decision_basis: Strong scientific authorization profile connecting identity and controlled genomic data services.
+  decision_basis: Strong scientific authorization profile connecting identity and controlled genomic data
+    services.
   boundary_note: Domain exemplar; relies on underlying OAuth/OIDC infrastructure and complementary use-condition
     vocabularies such as DUO.
   reviewed_on: '2026-08-01'
@@ -87,7 +91,7 @@ resources:
   name: Model Context Protocol (MCP)
   url: https://modelcontextprotocol.io/specification/2026-07-28
   section: Agents, Access, and Policy
-  resource_type: Agent-Tool Protocol
+  resource_kind: link-protocol
   interoperability_layers:
   - Syntactic
   - Operational
@@ -105,23 +109,24 @@ resources:
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: documented-tests
-  stewardship:
-    name: Model Context Protocol project
-    type: community
-    url: https://modelcontextprotocol.io/
+  steward_id: model-context-protocol-project
   domains:
   - ai-agents
   - cross-domain
-  source_urls:
-  - https://modelcontextprotocol.io/specification/2026-07-28
-  - https://github.com/modelcontextprotocol/specification
+  source_refs:
+  - ref_id: modelcontextprotocol-io-specification-2026-07-28
+    role: technical-definition
+  - ref_id: modelcontextprotocol-io-root
+    role: stewardship
+  - ref_id: github-com-modelcontextprotocol-specification
+    role: implementation
   alternatives: []
   related_resource_ids:
   - tooluniverse
-  decision_basis: General agent-tool interface with a published 2026-07-28 specification and multiple SDK
-    implementations.
-  boundary_note: Scientific inclusion requires domain profiles that preserve semantics and evidence; tool invocation
-    is not authorization or provenance.
+  decision_basis: General agent-tool interface with a published 2026-07-28 specification and multiple
+    SDK implementations.
+  boundary_note: Scientific inclusion requires domain profiles that preserve semantics and evidence; tool
+    invocation is not authorization or provenance.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-01-31'
   primary_source_inspected: true
@@ -129,7 +134,7 @@ resources:
   name: ToolUniverse
   url: https://zitniklab.hms.harvard.edu/ToolUniverse/en/
   section: Agents, Access, and Policy
-  resource_type: Scientific Tool Platform / Registry
+  resource_kind: implementation
   interoperability_layers:
   - Semantic
   - Operational
@@ -139,31 +144,34 @@ resources:
   - models
   - APIs
   - datasets
-  mechanism: Standardized tool descriptions, invocation, composition, and monitoring across scientific resources
-  summary: Scientific tool platform that standardizes discovery, invocation, composition, and monitoring across
-    heterogeneous tools, models, APIs, and datasets.
+  mechanism: Standardized tool descriptions, invocation, composition, and monitoring across scientific
+    resources
+  summary: Scientific tool platform that standardizes discovery, invocation, composition, and monitoring
+    across heterogeneous tools, models, APIs, and datasets.
   maturity: emerging
   evidence_types:
   - reference-implementation
   - interoperability-demonstration
   implementation_status: single-known
   conformance_status: none-known
-  stewardship:
-    name: Zitnik Lab, Harvard Medical School
-    type: institution
-    url: https://zitniklab.hms.harvard.edu/
+  steward_id: zitnik-lab-harvard-medical-school
   domains:
   - ai-agents
   - computational-biology
-  source_urls:
-  - https://zitniklab.hms.harvard.edu/ToolUniverse/en/
-  - https://github.com/mims-harvard/ToolUniverse
+  source_refs:
+  - ref_id: zitniklab-hms-harvard-edu-tooluniverse-en
+    role: technical-definition
+  - ref_id: zitniklab-hms-harvard-edu-root
+    role: stewardship
+  - ref_id: github-com-mims-harvard-tooluniverse
+    role: implementation
   alternatives: []
   related_resource_ids:
   - model-context-protocol-mcp
-  decision_basis: Directly addresses scientific-agent access to a large heterogeneous tool ecosystem with documented
-    MCP integration.
-  boundary_note: Platform-centered; openness of schemas and independent reuse of interfaces require periodic review.
+  decision_basis: Directly addresses scientific-agent access to a large heterogeneous tool ecosystem with
+    documented MCP integration.
+  boundary_note: Platform-centered; openness of schemas and independent reuse of interfaces require periodic
+    review.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-01-31'
   primary_source_inspected: true

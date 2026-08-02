@@ -25,13 +25,33 @@
     "status": {
       "enum": ["monitor", "needs-evidence", "needs-boundary-decision", "superseded", "rejected"]
     },
+    "sourceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ref_id", "role"],
+      "properties": {
+        "ref_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "role": {
+          "enum": [
+            "technical-definition",
+            "stewardship",
+            "implementation",
+            "adoption",
+            "conformance",
+            "interoperability-testing",
+            "maintenance",
+            "limitations"
+          ]
+        }
+      }
+    },
     "item": {
       "type": "object",
       "additionalProperties": false,
       "required": [
         "id", "name", "url", "candidate_section", "status", "reason",
         "missing_evidence", "reviewed_on", "review_due_on",
-        "promotion_conditions", "rejection_conditions", "source_urls"
+        "promotion_conditions", "rejection_conditions", "source_refs"
       ],
       "properties": {
         "id": {"$ref": "#/$defs/itemId"},
@@ -45,7 +65,7 @@
         "review_due_on": {"type": "string", "format": "date"},
         "promotion_conditions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 5}},
         "rejection_conditions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 5}},
-        "source_urls": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/httpsUrl"}}
+        "source_refs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/sourceRef"}}
       }
     }
   }

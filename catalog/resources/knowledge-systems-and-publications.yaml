@@ -4,7 +4,7 @@ resources:
   name: Journal Article Tag Suite (JATS)
   url: https://jats.nlm.nih.gov/
   section: Knowledge Systems and Publications
-  resource_type: Markup Standard
+  resource_kind: exchange-standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -22,20 +22,24 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: National Library of Medicine
-    type: standards-body
-    url: https://jats.nlm.nih.gov/
+  steward_id: national-library-of-medicine
   domains:
-  - scholarly-publishing
-  source_urls:
-  - https://jats.nlm.nih.gov/
-  - https://github.com/JATS-TML/JATS-Tag-Library
+  - scholarly-communication
+  source_refs:
+  - ref_id: jats-nlm-nih-gov-root
+    role: technical-definition
+  - ref_id: jats-nlm-nih-gov-root
+    role: stewardship
+  - ref_id: github-com-jats-tml-jats-tag-library
+    role: implementation
   alternatives: []
-  related_resource_ids: []
-  decision_basis: Foundational scholarly-content interchange standard with broad publisher and repository adoption.
-  boundary_note: Publication representation only; links to data and software require complementary standards outside
-    this section.
+  related_resource_ids:
+  - scholix
+  - citation-file-format-citation-cff
+  decision_basis: Foundational scholarly-content interchange standard with broad publisher and repository
+    adoption.
+  boundary_note: Publication representation only; links to data and software require complementary standards
+    outside this section.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -43,7 +47,7 @@ resources:
   name: Nanopublications
   url: https://nanopub.net/
   section: Knowledge Systems and Publications
-  resource_type: Publication Model / Protocol
+  resource_kind: link-protocol
   interoperability_layers:
   - Semantic
   - Evidentiary
@@ -53,7 +57,8 @@ resources:
   - publication networks
   - knowledge graphs
   mechanism: Small immutable RDF publications combining assertion, provenance, and publication information
-  summary: Immutable RDF publications that combine a scientific assertion with provenance and publication information.
+  summary: Immutable RDF publications that combine a scientific assertion with provenance and publication
+    information.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -61,20 +66,25 @@ resources:
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: Nanopublications community
-    type: community
-    url: https://nanopub.net/
+  steward_id: nanopublications-community
   domains:
   - semantic-web
   - knowledge-representation
-  source_urls:
-  - https://nanopub.net/
-  - https://github.com/nanopub/nanopub-java
+  source_refs:
+  - ref_id: nanopub-net-root
+    role: technical-definition
+  - ref_id: nanopub-net-root
+    role: stewardship
+  - ref_id: github-com-nanopub-nanopub-java
+    role: implementation
   alternatives: []
-  related_resource_ids: []
-  decision_basis: Distinctive interoperable unit for machine-actionable scientific claims with bundled provenance.
-  boundary_note: Best suited to fine-grained assertions rather than complete research objects or full-text articles.
+  related_resource_ids:
+  - open-research-knowledge-graph-orkg
+  - schema-org
+  decision_basis: Distinctive interoperable unit for machine-actionable scientific claims with bundled
+    provenance.
+  boundary_note: Best suited to fine-grained assertions rather than complete research objects or full-text
+    articles.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -82,7 +92,7 @@ resources:
   name: Open Research Knowledge Graph (ORKG)
   url: https://www.orkg.org/
   section: Knowledge Systems and Publications
-  resource_type: Knowledge Infrastructure
+  resource_kind: registry-catalog
   interoperability_layers:
   - Semantic
   - Operational
@@ -92,8 +102,8 @@ resources:
   - comparisons
   - machine consumers
   mechanism: Structured scholarly knowledge representations and APIs
-  summary: Structured scholarly representations and APIs for exchanging scientific claims, comparisons, and
-    research contributions.
+  summary: Structured scholarly representations and APIs for exchanging scientific claims, comparisons,
+    and research contributions.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -101,20 +111,24 @@ resources:
   - institutional-adoption
   implementation_status: reference-and-others
   conformance_status: none-known
-  stewardship:
-    name: TIB Leibniz Information Centre for Science and Technology
-    type: institution
-    url: https://www.tib.eu/
+  steward_id: tib-leibniz-information-centre-for-science-and-technology
   domains:
   - scholarly-communication
-  source_urls:
-  - https://www.orkg.org/
-  - https://academic.oup.com/bioinformatics/article/36/2/555/5680463
+  source_refs:
+  - ref_id: orkg-org-root
+    role: technical-definition
+  - ref_id: tib-eu-root
+    role: stewardship
+  - ref_id: academic-oup-com-bioinformatics-article-36-2-555-5680463
+    role: technical-definition
   alternatives: []
-  related_resource_ids: []
-  decision_basis: Substantial machine-actionable publication and knowledge-system infrastructure with documented APIs.
-  boundary_note: The entry should specify interoperable representations and interfaces, avoiding broad platform
-    claims.
+  related_resource_ids:
+  - nanopublications
+  - openaire-research-graph
+  decision_basis: Substantial machine-actionable publication and knowledge-system infrastructure with
+    documented APIs.
+  boundary_note: The entry should specify interoperable representations and interfaces, avoiding broad
+    platform claims.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -122,7 +136,7 @@ resources:
   name: OpenAIRE Research Graph
   url: https://graph.openaire.eu/
   section: Knowledge Systems and Publications
-  resource_type: Research Graph / APIs
+  resource_kind: registry-catalog
   interoperability_layers:
   - Semantic
   - Operational
@@ -134,8 +148,8 @@ resources:
   - organizations
   - services
   mechanism: Open scholarly graph integrating heterogeneous research metadata and relationships
-  summary: Open scholarly graph integrating publications, datasets, software, projects, organizations, and services
-    through shared metadata and APIs.
+  summary: Open scholarly graph integrating publications, datasets, software, projects, organizations,
+    and services through shared metadata and APIs.
   maturity: established
   evidence_types:
   - normative-specification
@@ -143,19 +157,23 @@ resources:
   - interoperability-demonstration
   implementation_status: reference-and-others
   conformance_status: none-known
-  stewardship:
-    name: OpenAIRE
-    type: consortium
-    url: https://www.openaire.eu/
+  steward_id: openaire
   domains:
   - scholarly-communication
   - research-information
-  source_urls:
-  - https://graph.openaire.eu/
-  - https://graph.openaire.eu/docs/
+  source_refs:
+  - ref_id: graph-openaire-eu-root
+    role: technical-definition
+  - ref_id: openaire-eu-root
+    role: stewardship
+  - ref_id: graph-openaire-eu-docs
+    role: technical-definition
   alternatives: []
-  related_resource_ids: []
-  decision_basis: Major cross-object scientific knowledge infrastructure with open interfaces and broad source integration.
+  related_resource_ids:
+  - open-research-knowledge-graph-orkg
+  - scholix
+  decision_basis: Major cross-object scientific knowledge infrastructure with open interfaces and broad
+    source integration.
   boundary_note: Graph inclusion should emphasize exchange and relation integration, not scale alone.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -164,7 +182,7 @@ resources:
   name: Scholix
   url: https://github.com/scholix/schema
   section: Knowledge Systems and Publications
-  resource_type: Link Exchange Framework
+  resource_kind: link-protocol
   interoperability_layers:
   - Semantic
   - Operational
@@ -174,27 +192,33 @@ resources:
   - repositories
   - publishers
   - link aggregators
-  mechanism: Common information model and exchange framework for links between scholarly literature and data
-  summary: Common information model and exchange framework for links between scholarly literature and research
-    data.
+  mechanism: Common information model and exchange framework for links between scholarly literature and
+    data
+  summary: Common information model and exchange framework for links between scholarly literature and
+    research data.
   maturity: established
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: RDA Scholix working group
-    type: community
-    url: https://www.rd-alliance.org/groups/scholarly-link-exchange-wg
+  steward_id: rda-scholix-working-group
   domains:
   - scholarly-communication
   - research-data
-  source_urls:
-  - https://github.com/scholix/schema
-  - https://doi.org/10.1162/99608f92.aa3103a5
+  source_refs:
+  - ref_id: github-com-scholix-schema
+    role: technical-definition
+  - ref_id: rd-alliance-org-groups-scholarly-link-exchange-wg
+    role: stewardship
+  - ref_id: github-com-scholix-schema
+    role: implementation
+  - ref_id: doi-org-10-1162-99608f92-aa3103a5
+    role: technical-definition
   alternatives: []
-  related_resource_ids: []
+  related_resource_ids:
+  - openaire-research-graph
+  - journal-article-tag-suite-jats
   decision_basis: Directly connects publications and research data across independent infrastructures.
   boundary_note: Focus the entry on link interoperability, not general scholarly graphs.
   reviewed_on: '2026-08-01'
