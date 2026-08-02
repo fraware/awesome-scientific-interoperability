@@ -177,10 +177,12 @@ def implementations_per_family(
     if not implementation_kinds:
         # Backward-compatible alias used by older fixture policies.
         implementation_kinds = set(policy.get("implementation_resource_types", []))
+    role_buckets = policy.get("family_role_buckets") or {}
     families: dict[str, Any] = {}
     for family_name, member_ids in sorted(policy.get("standard_families", {}).items()):
         members: list[str] = []
         implementations: list[dict[str, str]] = []
+        roles: dict[str, list[dict[str, str]]] = {name: [] for name in role_buckets}
         for member_id in member_ids:
             resource = by_id.get(member_id)
             if resource is None:
@@ -188,18 +190,25 @@ def implementations_per_family(
             members.append(member_id)
             kind = resource.get("resource_kind") or resource.get("resource_type")
             if kind in implementation_kinds:
-                implementations.append(
-                    {
-                        "id": member_id,
-                        "name": resource["name"],
-                        "resource_kind": str(kind),
-                    }
-                )
+                entry = {
+                    "id": member_id,
+                    "name": resource["name"],
+                    "resource_kind": str(kind),
+                }
+                implementations.append(entry)
+                for role_name, role_policy in role_buckets.items():
+                    if kind in set(role_policy.get("resource_kinds") or []):
+                        roles[role_name].append(entry)
+        role_counts = {name: len(items) for name, items in roles.items()}
         families[family_name] = {
             "member_count": len(members),
             "member_ids": members,
             "implementation_count": len(implementations),
             "implementations": implementations,
+            "role_buckets": {
+                name: {"count": role_counts.get(name, 0), "members": roles.get(name, [])}
+                for name in sorted(roles)
+            },
             "unknown_member_ids": sorted(set(member_ids) - set(members)),
         }
     return families
@@ -384,8 +393,29 @@ def build_warnings(
             )
         )
 
+    role_threshold = thresholds.get(
+        "max_per_family_role_bucket", thresholds["max_implementations_per_family"]
+    )
     for family_name, family_info in metrics["implementations_per_family"].items():
-        if family_info["implementation_count"] > thresholds["max_implementations_per_family"]:
+        role_buckets = family_info.get("role_buckets") or {}
+        if role_buckets:
+            for role_name, role_info in role_buckets.items():
+                if role_info.get("count", 0) > role_threshold:
+                    warnings.append(
+                        Warning(
+                            code="implementation-family-role-concentration",
+                            message=(
+                                f"standard family {family_name!r} role bucket {role_name!r} has "
+                                f"{role_info['count']} entries (threshold {role_threshold})"
+                            ),
+                            details={
+                                "family": family_name,
+                                "role": role_name,
+                                **family_info,
+                            },
+                        )
+                    )
+        elif family_info["implementation_count"] > thresholds["max_implementations_per_family"]:
             warnings.append(
                 Warning(
                     code="implementation-family-concentration",

@@ -37,3 +37,9 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-01-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/

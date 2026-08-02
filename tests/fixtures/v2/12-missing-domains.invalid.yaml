@@ -34,3 +34,9 @@ resources:
   - ref_id: fixture-ref-2
     role: technical-definition
   relations: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/

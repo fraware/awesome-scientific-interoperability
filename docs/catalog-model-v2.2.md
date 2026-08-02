@@ -39,6 +39,18 @@ Only `relationship: independent-implementation` counts toward MI, and steward-op
 - Live `documented-tests` claims without a direct conformance artifact reference (validator / conformance-suite / interoperability-result with conformance or interoperability-testing role) fail validation.
 - Quality CI runs `audit_data_quality.py --fail-on warning` so depth-queue regressions cannot merge silently.
 
+## Review provenance
+
+Each resource includes a `review` object:
+
+- `reviewed_by`
+- `review_type`: `author` | `maintainer` | `independent`
+- `reviewed_on` (must match top-level `reviewed_on`)
+- `conflict_disclosure`
+- optional `reviewed_commit`, `decision_record`
+
+Migration-era reviews use `review_type: author` and do not invent independent reviews. Query with `python scripts/query_catalog.py --review-type author`.
+
 ## Taxonomy dimensions
 
 Flat `domains` tags are split into four controlled dimensions in `config/catalog-taxonomy.yaml`:

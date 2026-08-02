@@ -58,6 +58,12 @@ def _resource(**overrides):
         "reviewed_on": "2026-08-01",
         "review_due_on": "2027-08-01",
         "primary_source_inspected": True,
+        "review": {
+            "reviewed_by": "catalog-maintainers",
+            "review_type": "author",
+            "reviewed_on": "2026-08-01",
+            "conflict_disclosure": "none",
+        },
     }
     base.update(overrides)
     return base

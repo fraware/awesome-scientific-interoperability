@@ -45,6 +45,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: combine-omex-archive
   name: COMBINE/OMEX Archive
   url: https://combinearchive.org/
@@ -94,6 +100,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: fair-signposting
   name: FAIR Signposting
   url: https://signposting.org/
@@ -144,6 +156,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: ro-crate
   name: RO-Crate
   url: https://www.researchobject.org/ro-crate/specification/1.3/
@@ -203,6 +221,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: workflow-ro-crate
   name: Workflow RO-Crate
   url: https://about.workflowhub.eu/Workflow-RO-Crate/
@@ -251,6 +275,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: workflow-run-ro-crate
   name: Workflow Run RO-Crate
   url: https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/
@@ -306,6 +336,12 @@ resources:
   - provenance
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: workflow-testing-ro-crate
   name: Workflow Testing RO-Crate
   url: https://w3id.org/ro/wftest
@@ -352,6 +388,12 @@ resources:
   - computational-workflows
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: crystallographic-information-framework-cif
   name: Crystallographic Information Framework (CIF)
   url: https://www.iucr.org/resources/cif
@@ -404,6 +446,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: functional-mock-up-interface-fmi
   name: Functional Mock-up Interface (FMI)
   url: https://fmi-standard.org/docs/3.0/
@@ -453,6 +501,12 @@ resources:
   - engineering
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: nexus
   name: NeXus
   url: https://www.nexusformat.org/
@@ -505,6 +559,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: ogc-api-coverages
   name: OGC API - Coverages
   url: https://ogcapi.ogc.org/coverages/
@@ -556,6 +616,12 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: ogc-api-features
   name: OGC API - Features
   url: https://ogcapi.ogc.org/features/
@@ -603,3 +669,9 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/

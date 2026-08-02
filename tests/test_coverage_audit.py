@@ -77,6 +77,16 @@ class CoverageAuditTests(unittest.TestCase):
         code = module.main(["--as-of", "2026-08-01"])
         self.assertEqual(code, 0)
 
+    def test_live_cwl_role_buckets_within_threshold(self) -> None:
+        report = module.build_report(as_of=date(2026, 8, 1), policy_path=POLICY_PATH)
+        warning_codes = {item["code"] for item in report["warnings"]}
+        self.assertNotIn("implementation-family-concentration", warning_codes)
+        self.assertNotIn("implementation-family-role-concentration", warning_codes)
+        cwl = report["metrics"]["implementations_per_family"]["cwl"]
+        self.assertEqual(cwl["role_buckets"]["runner"]["count"], 2)
+        self.assertEqual(cwl["role_buckets"]["conformance"]["count"], 1)
+        self.assertEqual(cwl["role_buckets"]["multi-engine-service"]["count"], 1)
+
     def test_invalid_review_date_is_blocking(self) -> None:
         policy = module.load_policy(POLICY_PATH)
         broken = dict(self.resources[0])

@@ -1,7 +1,7 @@
 # Coverage Baseline
 
 **Baseline date:** 2026-08-01  
-**Catalog version:** 2.0.0  
+**Catalog version:** 2.2.0  
 **Main-list entries:** 87  
 **Audit command:** `python scripts/audit_coverage.py --as-of 2026-08-01`
 
@@ -9,7 +9,7 @@ This document records reproducible corpus-balance metrics from the structured ca
 
 ## Policy
 
-Classification thresholds and explicit substrate and standard-family mappings live in `config/coverage-policy.yaml`. The audit exits nonzero only for hard data-integrity failures. Editorial concentration warnings are reported but do not fail CI.
+Classification thresholds and explicit substrate and standard-family mappings live in `config/coverage-policy.yaml`. Family concentration is evaluated per role-sensitive bucket (`runner`, `conformance`, `multi-engine-service`) rather than one undifferentiated implementation pile. The audit exits nonzero only for hard data-integrity failures. Editorial concentration warnings are reported but do not fail CI.
 
 ## Summary metrics
 
@@ -17,18 +17,17 @@ Classification thresholds and explicit substrate and standard-family mappings li
 |--------|------:|
 | Total main-list entries | 87 |
 | Sections represented | 11 |
-| Distinct domain tags | 48 |
+| Distinct taxonomy tags | 47 |
 | Entries tagged `cross-domain` | 23 (26.4%) |
-| Largest scientific domain tag | `computational-workflows` (17 entries, 19.54%) |
+| Largest scientific/integration tag (excl. cross-domain) | `computational-workflows` (18 entries, 20.69%) |
 | General-purpose substrate share | 8 entries (9.2%) |
-| Entries with neither alternatives nor related links | 18 |
+| Entries with no typed relations | 0 |
 | Overdue reviews (as of baseline date) | 0 |
 | Evidence entries without source URLs | 0 |
 
 ## Active concentration warnings
 
-1. **implementation-family-concentration** — CWL family has three implementation entries (threshold 2).
-2. **isolated-entries** — 18 entries record neither alternatives nor related resource links.
+None. CWL family role buckets are within `max_per_family_role_bucket` (2). Adjudication: [reviews/cwl-family-concentration.md](reviews/cwl-family-concentration.md).
 
 ## Domain gap reviews (PR-16A–D, merged)
 
@@ -38,9 +37,3 @@ Classification thresholds and explicit substrate and standard-family mappings li
 - **PR-16D:** ISA-JSON, BioCompute Objects, DICOMweb added.
 
 Remaining thin areas and watchlist candidates are documented under `docs/candidate-reviews/` and `docs/watchlist.md`.
-
-## Regeneration
-
-```bash
-python scripts/audit_coverage.py --as-of YYYY-MM-DD --json-report coverage-audit.json --markdown-report coverage-audit.md
-```

@@ -58,6 +58,12 @@ resources:
   - provenance
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: iso-23494-2-2026-common-provenance-model
   name: ISO 23494-2:2026 Common Provenance Model
   url: https://www.iso.org/standard/87714.html
@@ -102,6 +108,12 @@ resources:
   - provenance
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: p-plan
   name: P-Plan
   url: https://www.opmw.org/model/p-plan/
@@ -145,6 +157,12 @@ resources:
   - computational-workflows
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: runcrate
   name: runcrate
   url: https://www.researchobject.org/runcrate/
@@ -196,6 +214,12 @@ resources:
   - provenance
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: w3c-prov
   name: W3C PROV
   url: https://www.w3.org/TR/prov-o/
@@ -251,6 +275,12 @@ resources:
   infrastructure_contexts:
   - cross-domain
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: biocompute-objects
   name: BioCompute Objects
   url: https://docs.biocomputeobject.org/
@@ -306,3 +336,9 @@ resources:
   integration_functions: []
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/

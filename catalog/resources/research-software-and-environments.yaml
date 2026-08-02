@@ -50,6 +50,12 @@ resources:
   infrastructure_contexts:
   - hpc
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: citation-file-format-citation-cff
   name: Citation File Format (CITATION.cff)
   url: https://citation-file-format.github.io/
@@ -104,6 +110,12 @@ resources:
   infrastructure_contexts: []
   artifact_classes:
   - research-software
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: codemeta
   name: CodeMeta
   url: https://codemeta.github.io/
@@ -151,6 +163,12 @@ resources:
   infrastructure_contexts: []
   artifact_classes:
   - research-software
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: reprozip
   name: ReproZip
   url: https://www.reprozip.org/
@@ -197,6 +215,12 @@ resources:
   - computational-science
   infrastructure_contexts: []
   artifact_classes: []
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
 - id: software-hash-identifiers-swhids
   name: Software Hash Identifiers (SWHIDs)
   url: https://www.swhid.org/
@@ -243,3 +267,9 @@ resources:
   infrastructure_contexts: []
   artifact_classes:
   - research-software
+  review:
+    reviewed_by: catalog-maintainers
+    review_type: author
+    reviewed_on: '2026-08-01'
+    conflict_disclosure: none
+    decision_record: docs/reviews/
