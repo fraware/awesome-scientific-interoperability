@@ -27,6 +27,15 @@ No 404/410 responses were observed for main-list URLs in the baseline run.
 - **Rationale:** The ISO store/catalogue URL remains the canonical public identifier for the standard. A 403 from automated fetching is an access-policy response, not evidence that the standard or URL is gone. Do not replace with a secondary summary page solely to obtain HTTP 200 for bots.
 - **Review:** Revisit if ISO publishes a freely reachable normative HTML landing page that is more appropriate as the technical entry URL.
 
+
+
+### ORKG homepage TLS instability in GitHub Actions (	ls-or-dns-failure)
+
+- **URL:** https://www.orkg.org/
+- **Classification:** 	ls-or-dns-failure observed in the Issue #44 final Links workflow on Actions (Connection reset by peer), while the same URL continues to resolve outside Actions and historically redirected successfully in the v1.1.0 audit.
+- **Rationale:** The ORKG homepage remains the canonical stewardship/product entry already present in the catalog. Replacing it with a secondary DOI or article landing page solely to obtain a bot HTTP 200 would weaken the catalog URL. Treat this as an accepted environment-specific exception until ORKG or Actions networking stabilizes.
+- **Review:** Revisit on the next full Links workflow run; replace only if the homepage becomes permanently unreachable outside CI as well.
+
 ## Remediation rules applied
 
 1. Inspect official site, specification repository, and redirect destination before changing a URL.
