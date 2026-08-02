@@ -46,7 +46,7 @@ Valid `--evidence` values: `normative-specification`, `reference-implementation`
 
 ## Typed relations
 
-Catalog records store edges in a `relations` array of `{type, resource_id}` objects (see [catalog model v2.2](catalog-model-v2.2.md)). Legacy `alternatives` and `related_resource_ids` fields are retired.
+Catalog records store edges in a `relations` array of `{type, resource_id}` objects (see [catalog model](catalog-model.md)). Legacy `alternatives` and `related_resource_ids` fields are retired.
 
 JSON query output includes:
 

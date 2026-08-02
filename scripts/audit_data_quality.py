@@ -310,7 +310,7 @@ def render_baseline_markdown(report: dict[str, Any]) -> str:
             "",
             "1. Consider promoting selected depth rules from audit warning to validator fail-closed checks, only with fixtures and an explicit decision record.",
             "2. Keep any domain hierarchy work as a separate taxonomy PR.",
-            "3. Continue the quarterly full-scope offline reference audit cadence in [maintenance-protocol.md](maintenance-protocol.md).",
+            "3. Continue the quarterly full-scope offline reference audit cadence in [maintenance.md](maintenance.md).",
             "",
         ]
     )

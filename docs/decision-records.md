@@ -23,7 +23,7 @@ Maintainer decisions that are likely to recur. Each record states the decision, 
 - [NeXus](https://www.nexusformat.org/) — HDF5 application definitions and nxvalidate for scattering-facility data (`catalog/resources/data-and-digital-objects.yaml`).
 - [Climate and Forecast (CF) Metadata Conventions](https://cfconventions.org/) — semantic layer for NetCDF climate and forecast arrays (`catalog/resources/metadata-and-semantics.yaml`).
 
-**Excluded:** Generic HDF5 (recorded in [source notes](source-notes.md)). Generic NetCDF without a profile that supplies cross-system semantics.
+**Excluded:** Generic HDF5 (see [notable exclusions](#notable-exclusions)). Generic NetCDF without a profile that supplies cross-system semantics.
 
 **Reassess when:** A new scientific profile over HDF5 or NetCDF passes the admission tests, is maintained by multiple institutions, and is not subsumed by an existing entry.
 
@@ -51,7 +51,7 @@ Maintainer decisions that are likely to recur. Each record states the decision, 
 
 **Watchlist:** Agent2Agent, IEEE P3971, Science Context Protocol, SciToolAgent.
 
-**Reassess when:** A draft protocol publishes a stable normative specification with multiple independent scientific implementations, or taxonomy reassessment (PR-17 rule) supports splitting agent and access sections.
+**Reassess when:** A draft protocol publishes a stable normative specification with multiple independent scientific implementations, or [taxonomy reassessment](taxonomy.md) supports splitting agent and access sections.
 
 ---
 
@@ -78,3 +78,20 @@ Maintainer decisions that are likely to recur. Each record states the decision, 
 **Current status (2026-08-01):** No main-list entry is classified as a reference architecture. Galaxy, SciToolAgent, Cromwell, and related candidates remain on the watchlist.
 
 **Reassess when:** At least three watchlist or new candidates pass promotion conditions with explicit comparison to existing main-list entries, or taxonomy reassessment documents a new section threshold met.
+
+---
+
+## Notable exclusions
+
+These exclusions prevent repeated re-evaluation of candidates already decided against the North Star. Full gap reviews remain under [`candidate-reviews/`](candidate-reviews/).
+
+| Resource | Decision | Rationale |
+| --- | --- | --- |
+| RDF Data Cube Vocabulary | Excluded | Compatible with SDMX; for operational statistical exchange SDMX is the stronger entry. RDF-native portals are partly covered by DCAT and SKOS. |
+| Generic HDF5 | Excluded | Container format without a domain interoperability contract. NeXus is the included HDF5 scientific profile for scattering data. |
+| OGC API - Records | Excluded | Federated catalog discovery is already addressed by DCAT and STAC. |
+| OGC API - Processes | Excluded for this corpus | Generic geoprocessing is less decision-critical than openEO for Earth-observation cloud processing. |
+| Full DICOM | Excluded | DICOMweb is the included web integration profile. |
+| Additional RO/provenance profiles | Excluded | Existing RO-Crate, Workflow Run RO-Crate, CWLProv, ISO 23494-2, and P-Plan entries already cover the packaging and provenance problems for this corpus. |
+
+Re-evaluate an exclusion only when a distinct scientific profile or contract appears that is not subsumed by an existing main-list entry.

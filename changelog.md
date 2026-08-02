@@ -52,7 +52,7 @@ All notable editorial, schema, and maintenance changes for this repository are d
 
 ## [1.1.0] — 2026-08-01
 
-First decision-oriented release after catalog v2 migration, domain gap reviews, and maintainer governance formalization. Supersedes the v1.0.0 release candidate documented in `docs/validation-report.md` (initial public corpus: 75 main-list entries; no prior annotated tag).
+First decision-oriented release after catalog v2 migration, domain gap reviews, and maintainer governance formalization. Supersedes the v1.0.0 release candidate (initial public corpus: 75 main-list entries; no prior annotated tag).
 
 ### Editorial and corpus
 
@@ -83,13 +83,13 @@ First decision-oriented release after catalog v2 migration, domain gap reviews, 
 
 ### Governance (PR-18)
 
-- `docs/reviewer-roles.md`, `docs/decision-records.md`, `docs/human-review-log.md`.
+- Governance, decision records, and human-review documentation (later consolidated under `docs/governance.md` and `docs/maintainers/`).
 - `.github/CODEOWNERS`, remove-resource and taxonomy-change issue templates.
-- Extended contributing, conflicts-of-interest, maintenance-protocol, and publishing documentation.
+- Extended contributing, conflicts-of-interest, maintenance, and publishing documentation.
 
 ### Validation and CI
 
-- **64** deterministic unit tests across seven modules (see `docs/validation-report.md` for §12 coverage notes).
+- **64** deterministic unit tests across seven modules.
 - Quality workflow: catalog validation, offline links, problem-index and decision-guide checks, watchlist, review freshness, coverage audit, manifest verification, and native Awesome lint.
 - **Network link audit** (Links workflow run `30723706703`, 2026-08-01): 87 URLs checked; **0** unresolved blocking failures (78 ok, 7 redirected, 2 access-policy).
 
@@ -98,7 +98,7 @@ First decision-oriented release after catalog v2 migration, domain gap reviews, 
 - 18 main-list entries record neither alternatives nor related resource links (concentration warning only).
 - CWL standard family has three implementation entries (above configured threshold of two).
 - Emerging entries (Autoprotocol, MCP, ToolUniverse) carry shorter review intervals.
-- Central Awesome submission is not yet eligible; see `docs/publishing.md`.
+- Central Awesome submission is not yet eligible; see `docs/maintainers/publishing.md`.
 - This release does not certify completeness, certification, or exhaustive landscape coverage.
 
 ## [1.0.0] — 2026-08-01

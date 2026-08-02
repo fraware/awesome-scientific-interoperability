@@ -1,6 +1,6 @@
 ## Change type
 
-Select one (see [reviewer roles](docs/reviewer-roles.md) for required approvals):
+Select one (see [governance](docs/governance.md) for required approvals):
 
 - [ ] Typographic correction (one maintainer)
 - [ ] Canonical URL correction, no identity change (one maintainer + green CI)
@@ -32,11 +32,11 @@ List the roles that must approve before merge (maintainer, section reviewer, cat
 
 ## Checklist
 
-- [ ] I read `contributing.md`, `docs/editorial-policy.md`, and `docs/reviewer-roles.md`.
+- [ ] I read `contributing.md`, `docs/editorial-policy.md`, and `docs/governance.md`.
 - [ ] I inspected primary technical sources.
 - [ ] The README and catalog contain the same name, URL, section, and `summary`.
 - [ ] The `summary` is objective, specific, and ends with a period.
-- [ ] v2.1 catalog fields are complete (`steward_id`, `review_due_on`, `source_refs`, evidence statuses, and cross-references).
+- [ ] Current catalog fields are complete (`steward_id`, `review_due_on`, `source_refs`, evidence statuses, taxonomy dimensions, and typed relations).
 - [ ] I recorded limitations and the closest alternative in the catalog.
 - [ ] I ran `python scripts/validate_catalog.py`.
 - [ ] I ran `python scripts/validate_watchlist.py` when watchlist records changed.
