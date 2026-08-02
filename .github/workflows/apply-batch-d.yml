@@ -1,0 +1,42 @@
+name: Apply issue 44 Batch D
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/apply-batch-d.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.head_ref == 'agent/issue-44-batch-d-ecology-proteomics-clinical'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: agent/issue-44-batch-d-ecology-proteomics-clinical
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Verify and apply exact validated patch
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .batch-d/part-* > /tmp/issue-44-batch-d.patch.gz.b64
+          echo 'a083fe576fea5c5bac9eb956ec871c0c6ebb9c377ec44e6a04eff583d3497f29  /tmp/issue-44-batch-d.patch.gz.b64' | sha256sum -c -
+          base64 --decode /tmp/issue-44-batch-d.patch.gz.b64 > /tmp/issue-44-batch-d.patch.gz
+          echo '433f088f12b2ed3a9c890149ca4da5ed825f9793498da33688dbefbe9b432469  /tmp/issue-44-batch-d.patch.gz' | sha256sum -c -
+          gzip --decompress --stdout /tmp/issue-44-batch-d.patch.gz > /tmp/issue-44-batch-d.patch
+          echo '911b8f96a9bfdaba5edfc39f0bc598d2564fa02c8b50d99fb7b40e9ccc535504  /tmp/issue-44-batch-d.patch' | sha256sum -c -
+          git apply --check /tmp/issue-44-batch-d.patch
+          git apply /tmp/issue-44-batch-d.patch
+          git rm -r .batch-d .github/workflows/apply-batch-d.yml
+          git add -A
+          git diff --cached --check
+          python scripts/verify_manifest.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Implement issue 44 Batch D ecology analytical data and clinical research'
+          git push origin HEAD:agent/issue-44-batch-d-ecology-proteomics-clinical
