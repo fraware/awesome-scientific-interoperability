@@ -160,9 +160,34 @@ Returns six resources including Workflow Run RO-Crate, CWLProv, P-Plan, RunCrate
 
 JSON output is deterministic: resources appear in section/name order with stable field ordering. Pipe to `jq` or other tools for further filtering. The command exits `0` even when no resources match (empty array). Invalid section, evidence, or review-type values exit `2`.
 
+## Downloads
+
+Published catalog dumps are built by `python scripts/export_catalog.py` (or `make export`) into a local `dist/` directory (gitignored). Quality CI runs the same export on every pull request and every push to `main`, then uploads the `catalog-exports` workflow artifact containing:
+
+| Artifact | Purpose |
+|----------|---------|
+| `catalog.json` | Full joined resources with resolved steward and implementation summaries |
+| `catalog.csv` | Flat spreadsheet table |
+| `relations.json` | Typed relation edge list for graph tools |
+| `catalog.jsonld` | Minimal JSON-LD context over resources and edges |
+| `problems.json` | Navigation index parsed from `docs/integration-problems.md` |
+| `guides-index.json` | Index parsed from `docs/decision-guides/` |
+
+**Browser / curl path (tagged releases):** after a GitHub Release is published, the same files are attached as release assets. Download without cloning:
+
+```bash
+curl -fsSL -O https://github.com/fraware/awesome-scientific-interoperability/releases/latest/download/catalog.json
+```
+
+Replace `catalog.json` with any artifact name above. On GitHub, open the latest release page and use the Assets list.
+
+**CI artifact path (every main/PR run):** open the Quality workflow run → Artifacts → `catalog-exports`.
+
+Exports are deterministic for a fixed catalog snapshot (`export_generated_on` appears once under `meta`). They never decide catalog inclusion; the manually curated README and catalog remain authoritative.
+
 ## Limitations
 
 - Queries reflect catalog editorial scope only; absence from results does not mean no external tool exists.
 - `--connects` is token substring matching, not full-text search ranking.
 - The tool does not resolve typed `relations` targets to full records; use `--id` for follow-up lookups.
-- Published downloadable dumps (JSON/CSV/JSON-LD) are planned; until then, clone and query locally or wait for CI-published artifacts.
+- For offline bulk use without the query CLI, download the published dumps described under Downloads above.

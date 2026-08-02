@@ -1,0 +1,32 @@
+name: Release catalog exports
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  upload-exports:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - run: python -m pip install -r requirements-dev.txt
+      - name: Export catalog dumps
+        run: python scripts/export_catalog.py
+      - name: Upload release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload "${{ github.event.release.tag_name }}" \
+            dist/catalog.json \
+            dist/catalog.csv \
+            dist/relations.json \
+            dist/catalog.jsonld \
+            dist/problems.json \
+            dist/guides-index.json \
+            --clobber
