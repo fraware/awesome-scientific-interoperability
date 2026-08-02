@@ -449,3 +449,101 @@ implementations:
   - star-bris-ac-uk-stilts-votlint
   - ivoa-net-documents-votable
   notes: Public validator for schema, data structure, datatypes, arrays, and semantic consistency.
+- id: vrs-python
+  name: VRS-Python
+  url: https://github.com/ga4gh/vrs-python
+  implements_resource_id: ga4gh-variation-representation-specification-vrs
+  operator_steward_id: ga4gh
+  relationship: reference-implementation
+  supported_versions:
+  - VRS 2.x
+  evidence_ref_ids:
+  - github-com-ga4gh-vrs-python
+  - vrs-ga4gh-org-stable
+  notes: Reference Python implementation for VRS models, normalization, translation, and computed identifiers.
+- id: vrs-python-validation
+  name: VRS-Python validation tests
+  url: https://github.com/ga4gh/vrs-python/tree/main/tests/validation
+  implements_resource_id: ga4gh-variation-representation-specification-vrs
+  operator_steward_id: ga4gh
+  relationship: conformance-suite
+  evidence_ref_ids:
+  - github-com-ga4gh-vrs-python-tests-validation
+  - github-com-ga4gh-vrs-python
+  notes: Specification-derived tests embedded in the reference implementation; not independent certification.
+- id: phenopacket-schema-bindings
+  name: Phenopacket Schema language bindings
+  url: https://github.com/phenopackets/phenopacket-schema
+  implements_resource_id: ga4gh-phenopackets
+  operator_steward_id: phenopackets-community
+  relationship: reference-implementation
+  supported_versions:
+  - Phenopacket Schema 2.x
+  evidence_ref_ids:
+  - github-com-phenopackets-phenopacket-schema
+  - phenopacket-schema-readthedocs-latest
+  notes: Generated Java, Python, and C++ bindings from the canonical Protocol Buffer schema.
+- id: phenopacket-tools-validator
+  name: Phenopacket tools validator
+  url: https://github.com/phenopackets/phenopacket-tools
+  implements_resource_id: ga4gh-phenopackets
+  operator_steward_id: phenopackets-community
+  relationship: validator
+  evidence_ref_ids:
+  - github-com-phenopackets-phenopacket-tools
+  - phenopacket-schema-readthedocs-requirements
+  notes: Command-line and library validation of required and recommended Phenopacket constraints.
+- id: htsget-refserver
+  name: htsget reference server
+  url: https://github.com/ga4gh/htsget-refserver
+  implements_resource_id: ga4gh-htsget
+  operator_steward_id: ga4gh
+  relationship: reference-implementation
+  evidence_ref_ids:
+  - github-com-ga4gh-htsget-refserver
+  - github-com-samtools-hts-specs-htsget
+  notes: GA4GH reference server for the htsget protocol.
+- id: htslib-htsget-client
+  name: HTSlib
+  url: https://github.com/samtools/htslib
+  implements_resource_id: ga4gh-htsget
+  operator_steward_id: samtools-community
+  relationship: independent-implementation
+  evidence_ref_ids:
+  - github-com-samtools-htslib
+  - github-com-samtools-hts-specs-htsget
+  notes: Separately operated genomic data library with htsget client support.
+- id: ena-refget-service
+  name: ENA CRAM Reference Registry
+  url: https://www.ebi.ac.uk/ena/cram/
+  implements_resource_id: ga4gh-refget-sequences
+  operator_steward_id: embl-ebi-elixir-interoperability-platform
+  relationship: independent-implementation
+  supported_versions:
+  - Refget Sequences 1.x compliance report
+  evidence_ref_ids:
+  - ga4gh-github-io-refget-compliance-ena-server
+  - ga4gh-github-io-refget-sequences
+  notes: EMBL-EBI-operated reference sequence service independently tested by the public compliance suite.
+- id: refget-server-perl
+  name: Refget reference server
+  url: https://github.com/andrewyatz/refget-server-perl
+  implements_resource_id: ga4gh-refget-sequences
+  operator_steward_id: refget-reference-server-project
+  relationship: independent-implementation
+  supported_versions:
+  - Refget Sequences 1.x compliance report
+  evidence_ref_ids:
+  - github-com-andrewyatz-refget-server-perl
+  - ga4gh-github-io-refget-compliance-refget-server-perl
+  notes: Separately operated Perl server with a published compliance report.
+- id: refget-compliance-suite
+  name: Refget compliance suite
+  url: https://github.com/ga4gh/refget
+  implements_resource_id: ga4gh-refget-sequences
+  operator_steward_id: ga4gh
+  relationship: conformance-suite
+  evidence_ref_ids:
+  - github-com-ga4gh-refget
+  - ga4gh-github-io-refget-compliance
+  notes: Public compliance tooling and report aggregation for refget sequence services.

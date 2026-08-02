@@ -615,3 +615,6 @@ Use [resource:dicomweb] for clinical DICOM studies and service operations, [reso
 ### Example architecture
 
 A microscopy facility converts acquisition files to versioned OME-Zarr, validates the hierarchy, writes compatibility fixtures for its production viewers, and stores datasets in object storage. A RO-Crate layer connects each image collection to acquisition instruments, conversion software, analysis workflows, and provenance.
+## 17. Represent genomic variation and exchange phenotype context while accessing distributed sequence data
+
+Use [resource:ga4gh-variation-representation-specification-vrs] for normalized variation concepts and computed identifiers, [resource:ga4gh-phenopackets] for phenotype and interpretation records, [resource:ga4gh-htsget] for region-scoped read or variant retrieval, and [resource:ga4gh-refget-sequences] for content-derived reference-sequence identity and retrieval. [resource:ga4gh-data-repository-service-drs] complements htsget when complete data objects must be resolved. See the [genomic representation and access guide](decision-guides/genomic-representation-and-access.md).

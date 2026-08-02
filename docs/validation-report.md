@@ -1,6 +1,6 @@
 # Validation Report
 
-**State:** Stacked Issue #44 Batch B candidate tree
+**State:** Stacked Issue #44 Batch C candidate tree
 **Validation date:** 2026-08-02
 **Catalog version:** 2.2.0
 **Human review status:** Pending maintainer approval before merge
@@ -9,48 +9,59 @@
 
 | Item | Count |
 |---|---:|
-| Main-list catalog entries | 96 |
-| README list entries (parity) | 96 |
+| Main-list catalog entries | 100 |
+| README list entries (parity) | 100 |
 | Section-scoped resource shards | 11 |
-| Technical references | 369 |
-| Steward identities | 98 |
-| Implementation/validator identities | 40 |
+| Technical references | 391 |
+| Steward identities | 101 |
+| Implementation/validator identities | 49 |
 | Watchlist items | 17 |
-| Expansion candidates remaining | 52 |
-| Decision guides (excluding index) | 13 |
-| Integration problems | 16 |
-| Deterministic unit tests | 109 |
+| Expansion candidates remaining | 48 |
+| Decision guides (excluding index) | 14 |
+| Integration problems | 17 |
+| Deterministic unit tests | 114 |
 
-## Batch A and Batch B additions
+## Proposed Batch A through Batch C additions
+
+### Batch A — systems biology and neuroscience
 
 - Systems Biology Markup Language (SBML)
 - Simulation Experiment Description Markup Language (SED-ML)
 - CellML
 - Brain Imaging Data Structure (BIDS)
 - Neurodata Without Borders (NWB)
+
+### Batch B — astronomy and bioimaging
+
 - OME-NGFF / OME-Zarr
 - Flexible Image Transport System (FITS)
 - IVOA Table Access Protocol (TAP)
 - IVOA VOTable
 
-The records include claim-specific references, normalized stewards, implementation identities, typed relations, four-dimensional taxonomy, review provenance, and two new decision paths. SBML and BIDS retain `multiple-independent` only through distinct independently operated implementations. SED-ML, CellML, and NWB use narrower implementation claims where the evidence does not justify stronger independence.
+### Batch C — genomic representation and access
+
+- GA4GH Variation Representation Specification (VRS)
+- GA4GH Phenopackets
+- GA4GH htsget
+- GA4GH refget Sequences
+
+The records include claim-specific references, normalized stewards, implementation identities, typed relations, controlled taxonomy, review provenance, direct decision paths, and conservative conformance classifications. Strong implementation-independence claims require separately operated implementation identities. Public-suite, public-validator, and documented-test claims require direct artifacts.
 
 ## Completed local checks
 
-- JSON Schema and semantic validation passed for all 96 resources.
-- README/catalog name, URL, section, and summary parity passed at 96/96.
-- Reference, steward, and implementation registries resolved without unknown IDs.
-- Independent-implementation checks passed using distinct operator identities outside the specification steward.
+- JSON Schema and semantic validation passed for all 100 resources.
+- README/catalog name, URL, section, and summary parity passed at 100/100.
+- All 391 references, 101 stewards, and 49 implementation identities resolve without unknown IDs.
+- Independent-implementation checks passed using distinct operator identities outside each specification steward.
 - Public-suite, public-validator, and documented-tests claims resolve to direct artifact-class evidence.
 - Typed relations resolve without isolates or self-links.
-- Four taxonomy dimensions accept all live values, including the `neuroscience`, `astronomy`, and `bioimaging` scientific domains.
 - Decision-guide and integration-problem resource markers resolve.
-- Watchlist validation and expansion-candidate validation pass.
+- Watchlist validation and expansion-candidate conservation validation pass.
 - Review freshness passes as of 2026-08-02.
 - Data-quality audit reports zero integrity errors and zero evidence-depth queues.
 - Coverage audit reports no concentration or integrity warnings.
-- Offline syntax validation covers 393 unique HTTPS URLs across canonical, watchlist, steward, implementation, and evidence references.
-- All 109 deterministic unit tests pass.
+- Offline syntax validation covers 417 unique HTTPS URLs across canonical, watchlist, steward, implementation, and evidence references.
+- All 114 deterministic unit tests pass.
 - Manifest generation and verification are required on the exact final PR head.
 
 ## Network link audit status
@@ -63,7 +74,7 @@ The last completed network audit remains the historical v1.1.0 run:
 - **Blocking failures:** 0
 - **Classifications:** 78 ok, 7 redirected, 2 access-policy
 
-Batch A adds new URLs. This report does not claim that those URLs have passed a network audit. The Links workflow must be run on the merged or exact PR head, and its JSON/Markdown artifacts must be retained before the next release.
+Batches A through C add new URLs. This report does not claim that those URLs have passed a live network audit. The Links workflow must run on the exact final mergeable head, and its JSON and Markdown artifacts must be retained before the next release.
 
 ## Quality workflow alignment
 
@@ -81,7 +92,7 @@ Batch A adds new URLs. This report does not claim that those URLs have passed a 
 
 ## Review constraint
 
-The nine Batch A and Batch B records were prepared through AI-assisted primary-source review and carry author-level review provenance. They must not be represented as independently reviewed. A human maintainer must inspect the primary sources, accept or revise each admission decision, and record approval before merge.
+The thirteen proposed Batch A through Batch C records were prepared through AI-assisted primary-source review and carry author-level review provenance. They must not be represented as independently reviewed. Human maintainers must inspect the primary sources, implementation operators, evidence classifications, family boundaries, typed relations, and decision-guide recommendations before approval.
 
 ## Release constraints
 

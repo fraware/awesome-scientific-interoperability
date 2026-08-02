@@ -1,12 +1,12 @@
 {
   "metrics": {
     "generated_on": "2026-08-02",
-    "total_entries": 96,
+    "total_entries": 100,
     "entries_per_section": {
       "Data and Digital Objects": 19,
-      "Metadata and Semantics": 16,
-      "Identifiers and Discovery": 12,
-      "Workflows and Execution": 11,
+      "Metadata and Semantics": 18,
+      "Identifiers and Discovery": 13,
+      "Workflows and Execution": 12,
       "Instruments and Laboratories": 9,
       "Provenance and Evidence": 7,
       "Knowledge Systems and Publications": 5,
@@ -19,27 +19,29 @@
       "1": 28,
       "2": 60,
       "3": 2,
-      "4": 1,
-      "5": 4,
+      "4": 3,
+      "5": 6,
       "6": 1
     },
     "entries_per_domain": {
-      "cross-domain": 24,
-      "computational-workflows": 18,
+      "cross-domain": 26,
+      "computational-workflows": 19,
+      "research-data": 16,
+      "genomics": 15,
       "life-sciences": 12,
-      "research-data": 12,
-      "genomics": 11,
       "scholarly-communication": 9,
       "provenance": 7,
       "systems-biology": 6,
+      "clinical-informatics": 5,
       "computational-biology": 5,
       "geospatial": 5,
+      "biomedical": 4,
       "biosimulation": 4,
       "computational-science": 4,
       "environmental-science": 4,
       "astronomy": 3,
-      "biomedical": 3,
-      "clinical-informatics": 3,
+      "bioinformatics": 3,
+      "knowledge-representation": 3,
       "laboratory-automation": 3,
       "laboratory-data": 3,
       "materials-science": 3,
@@ -58,7 +60,6 @@
       "analytical-instruments": 1,
       "biodiversity": 1,
       "bioimaging": 1,
-      "bioinformatics": 1,
       "biotechnology": 1,
       "chemistry": 1,
       "climate-science": 1,
@@ -68,7 +69,6 @@
       "european-research": 1,
       "geosciences": 1,
       "hpc": 1,
-      "knowledge-representation": 1,
       "machine-learning": 1,
       "research-objects": 1,
       "sample-curation": 1,
@@ -77,22 +77,24 @@
     },
     "domain_concentration": {
       "entries_per_domain": {
-        "cross-domain": 24,
-        "computational-workflows": 18,
+        "cross-domain": 26,
+        "computational-workflows": 19,
+        "research-data": 16,
+        "genomics": 15,
         "life-sciences": 12,
-        "research-data": 12,
-        "genomics": 11,
         "scholarly-communication": 9,
         "provenance": 7,
         "systems-biology": 6,
+        "clinical-informatics": 5,
         "computational-biology": 5,
         "geospatial": 5,
+        "biomedical": 4,
         "biosimulation": 4,
         "computational-science": 4,
         "environmental-science": 4,
         "astronomy": 3,
-        "biomedical": 3,
-        "clinical-informatics": 3,
+        "bioinformatics": 3,
+        "knowledge-representation": 3,
         "laboratory-automation": 3,
         "laboratory-data": 3,
         "materials-science": 3,
@@ -111,7 +113,6 @@
         "analytical-instruments": 1,
         "biodiversity": 1,
         "bioimaging": 1,
-        "bioinformatics": 1,
         "biotechnology": 1,
         "chemistry": 1,
         "climate-science": 1,
@@ -121,7 +122,6 @@
         "european-research": 1,
         "geosciences": 1,
         "hpc": 1,
-        "knowledge-representation": 1,
         "machine-learning": 1,
         "research-objects": 1,
         "sample-curation": 1,
@@ -129,21 +129,23 @@
         "sensor-networks": 1
       },
       "scientific_domain_counts": {
-        "computational-workflows": 18,
+        "computational-workflows": 19,
+        "research-data": 16,
+        "genomics": 15,
         "life-sciences": 12,
-        "research-data": 12,
-        "genomics": 11,
         "scholarly-communication": 9,
         "provenance": 7,
         "systems-biology": 6,
+        "clinical-informatics": 5,
         "computational-biology": 5,
         "geospatial": 5,
+        "biomedical": 4,
         "biosimulation": 4,
         "computational-science": 4,
         "environmental-science": 4,
         "astronomy": 3,
-        "biomedical": 3,
-        "clinical-informatics": 3,
+        "bioinformatics": 3,
+        "knowledge-representation": 3,
         "laboratory-automation": 3,
         "laboratory-data": 3,
         "materials-science": 3,
@@ -162,7 +164,6 @@
         "analytical-instruments": 1,
         "biodiversity": 1,
         "bioimaging": 1,
-        "bioinformatics": 1,
         "biotechnology": 1,
         "chemistry": 1,
         "climate-science": 1,
@@ -172,34 +173,33 @@
         "european-research": 1,
         "geosciences": 1,
         "hpc": 1,
-        "knowledge-representation": 1,
         "machine-learning": 1,
         "research-objects": 1,
         "sample-curation": 1,
         "scientific-computing": 1,
         "sensor-networks": 1
       },
-      "cross_domain_tagged_entries": 24,
+      "cross_domain_tagged_entries": 26,
       "largest_scientific_domain": "computational-workflows",
-      "largest_scientific_domain_count": 18,
-      "largest_scientific_domain_share": 0.1875,
-      "largest_scientific_domain_share_percent": 18.75
+      "largest_scientific_domain_count": 19,
+      "largest_scientific_domain_share": 0.19,
+      "largest_scientific_domain_share_percent": 19.0
     },
     "interoperability_layers": {
-      "Semantic": 67,
-      "Syntactic": 66,
-      "Operational": 53,
+      "Semantic": 70,
+      "Syntactic": 69,
+      "Operational": 55,
       "Evidentiary": 27,
-      "Organizational": 7
+      "Organizational": 8
     },
     "resource_kinds": {
       "exchange-standard": 17,
-      "api-standard": 15,
+      "api-standard": 16,
       "ontology-vocabulary": 12,
-      "metadata-standard": 9,
+      "metadata-standard": 11,
       "packaging-format": 8,
+      "identifier-system": 6,
       "specification": 6,
-      "identifier-system": 5,
       "conformance-artifact": 4,
       "implementation": 4,
       "link-protocol": 4,
@@ -209,36 +209,36 @@
       "workflow-language": 2
     },
     "maturity_states": {
-      "established": 58,
-      "maintained": 34,
+      "established": 60,
+      "maintained": 36,
       "emerging": 4
     },
     "evidence_types": {
-      "normative-specification": 85,
-      "institutional-adoption": 58,
-      "reference-implementation": 37,
-      "independent-implementation": 29,
-      "interoperability-demonstration": 13,
-      "public-validator": 13,
-      "conformance-suite": 12,
-      "documented-tests": 8
+      "normative-specification": 89,
+      "institutional-adoption": 59,
+      "reference-implementation": 40,
+      "independent-implementation": 31,
+      "interoperability-demonstration": 14,
+      "public-validator": 14,
+      "conformance-suite": 13,
+      "documented-tests": 9
     },
     "implementation_status": {
-      "reference-and-others": 78,
-      "multiple-independent": 11,
-      "single-known": 4,
+      "reference-and-others": 80,
+      "multiple-independent": 12,
+      "single-known": 5,
       "unknown": 2,
       "not-applicable": 1
     },
     "conformance_status": {
-      "none-known": 68,
-      "public-validator": 14,
-      "public-suite": 13,
-      "documented-tests": 1
+      "none-known": 69,
+      "public-validator": 15,
+      "public-suite": 14,
+      "documented-tests": 2
     },
     "stewardship_types": {
       "community": 39,
-      "consortium": 24,
+      "consortium": 28,
       "standards-body": 19,
       "institution": 9,
       "foundation": 5
@@ -246,7 +246,7 @@
     "review_schedule": {
       "reviewed_on": {
         "2026-08-01": 87,
-        "2026-08-02": 9
+        "2026-08-02": 13
       },
       "review_due_on_values": [
         "2027-01-31",
@@ -580,6 +580,33 @@
         },
         "unknown_member_ids": []
       },
+      "ga4gh-genomic-data": {
+        "member_count": 5,
+        "member_ids": [
+          "ga4gh-variation-representation-specification-vrs",
+          "ga4gh-phenopackets",
+          "ga4gh-htsget",
+          "ga4gh-refget-sequences",
+          "ga4gh-data-repository-service-drs"
+        ],
+        "implementation_count": 0,
+        "implementations": [],
+        "role_buckets": {
+          "conformance": {
+            "count": 0,
+            "members": []
+          },
+          "multi-engine-service": {
+            "count": 0,
+            "members": []
+          },
+          "runner": {
+            "count": 0,
+            "members": []
+          }
+        },
+        "unknown_member_ids": []
+      },
       "neuroscience-data": {
         "member_count": 4,
         "member_ids": [
@@ -743,9 +770,9 @@
       ],
       "missing_configured_ids": [],
       "count": 8,
-      "total_entries": 96,
-      "share": 0.0833,
-      "share_percent": 8.33
+      "total_entries": 100,
+      "share": 0.08,
+      "share_percent": 8.0
     },
     "isolated_entries": [],
     "evidence_without_source": []

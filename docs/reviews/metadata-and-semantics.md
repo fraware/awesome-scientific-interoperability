@@ -53,4 +53,5 @@ None.
 ## Issue #30 Batch 4b/5 metadata residual (2026-08-01)
 
 - Completed Schema.org, SDMX, SKOS, SOSA/SSN, STAC, UCUM, DCAT evidence dispositions; STAC upgraded to public-validator then MI claim adjusted to reference-and-others where independence evidence remained thin.
-
+| GA4GH Variation Representation Specification (VRS) | [VRS specification](https://vrs.ga4gh.org/en/stable/); [VRS-Python](https://github.com/ga4gh/vrs-python); [validation tests](https://github.com/ga4gh/vrs-python/tree/main/tests/validation) |
+| GA4GH Phenopackets | [GA4GH product page](https://www.ga4gh.org/product/phenopackets/); [schema documentation](https://phenopacket-schema.readthedocs.io/en/latest/); [validator tools](https://github.com/phenopackets/phenopacket-tools) |

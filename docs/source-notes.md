@@ -37,3 +37,7 @@ A listed version or maintenance signal should be rechecked whenever an entry is 
 - IVOA TAP 1.1, OpenCADC TAP, GAVO DaCHS, and STILTS taplint.
 - IVOA VOTable 1.5, Astropy VOTable, STILTS, and votlint.
 - Boundary sources for OME-TIFF, ObsCore, SAMP, and ASDF remain in the structured candidate registry.
+
+## Issue #44 Batch C — genomic representation and access
+
+Primary sources were inspected for VRS, Phenopackets, htsget, and refget Sequences. Claims were bounded to direct artifacts: VRS uses reference-implementation tests rather than independent certification; Phenopackets cites its requirements and validator tooling; htsget retains no public-suite claim; refget cites the public compliance suite and separately operated service reports.

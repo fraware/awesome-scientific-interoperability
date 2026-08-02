@@ -868,3 +868,133 @@ resources:
     reviewed_on: '2026-08-01'
     conflict_disclosure: none
     decision_record: docs/reviews/
+- id: ga4gh-variation-representation-specification-vrs
+  name: GA4GH Variation Representation Specification (VRS)
+  url: https://vrs.ga4gh.org/en/stable/
+  section: Metadata and Semantics
+  resource_kind: metadata-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  connects:
+  - Variant producers
+  - clinical knowledgebases
+  - genomic analysis pipelines
+  - identifier consumers
+  mechanism: Versioned information model, normalization rules, digest serialization, and computed identifiers for
+    genomic variation
+  summary: Versioned schemas and algorithms for representing, normalizing, identifying, and exchanging genomic variation
+    across independent systems.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - documented-tests
+  implementation_status: single-known
+  conformance_status: documented-tests
+  steward_id: ga4gh
+  scientific_domains:
+  - genomics
+  - clinical-informatics
+  integration_functions:
+  - knowledge-representation
+  - research-data
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: vrs-ga4gh-org-stable
+    role: technical-definition
+  - ref_id: vrs-ga4gh-org-releases-2-0
+    role: maintenance
+  - ref_id: vrs-ga4gh-org-computed-identifiers
+    role: technical-definition
+  - ref_id: github-com-ga4gh-vrs
+    role: technical-definition
+  - ref_id: github-com-ga4gh-vrs-python
+    role: implementation
+  - ref_id: github-com-ga4gh-vrs-python-tests-validation
+    role: conformance
+  - ref_id: ga4gh-org-root
+    role: stewardship
+  relations:
+  - type: complements
+    resource_id: ga4gh-phenopackets
+  - type: complements
+    resource_id: ga4gh-refget-sequences
+  decision_basis: Strong semantic and identifier-level contract for equivalent variation representation across distributed
+    genomic systems.
+  boundary_note: Represents variation concepts and identifiers; it does not replace VCF serialization, clinical
+    phenotype exchange, or sequence retrieval.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-c
+- id: ga4gh-phenopackets
+  name: GA4GH Phenopackets
+  url: https://www.ga4gh.org/product/phenopackets/
+  section: Metadata and Semantics
+  resource_kind: metadata-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Organizational
+  connects:
+  - Clinical genetics systems
+  - rare-disease registries
+  - diagnostic laboratories
+  - research cohorts
+  mechanism: Protocol Buffer schema and semantic requirements for individual, phenotype, disease, biosample, pedigree,
+    and genomic interpretation data
+  summary: Machine-readable schema for exchanging patient and sample phenotypes, diseases, biosamples, pedigrees,
+    measurements, and genomic interpretations.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - public-validator
+  implementation_status: reference-and-others
+  conformance_status: public-validator
+  steward_id: ga4gh
+  scientific_domains:
+  - genomics
+  - clinical-informatics
+  - biomedical
+  integration_functions:
+  - knowledge-representation
+  - research-data
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: ga4gh-org-product-phenopackets
+    role: stewardship
+  - ref_id: phenopacket-schema-readthedocs-latest
+    role: technical-definition
+  - ref_id: phenopacket-schema-readthedocs-requirements
+    role: conformance
+  - ref_id: github-com-phenopackets-phenopacket-schema
+    role: implementation
+  - ref_id: github-com-phenopackets-phenopacket-tools
+    role: conformance
+  relations:
+  - type: complements
+    resource_id: ga4gh-variation-representation-specification-vrs
+  - type: complements
+    resource_id: hl7-fhir
+  decision_basis: Direct exchange contract for phenotypic and genomic interpretation data across clinical and research
+    environments.
+  boundary_note: Phenopackets structures phenotype-centered records; FHIR provides broader healthcare exchange and
+    is conceptually related without direct equivalence.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-c

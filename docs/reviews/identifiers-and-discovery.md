@@ -56,4 +56,4 @@ None.
 **Boundary decisions:** VOTable carries table responses; ObsCore profiles observation tables over TAP; SAMP handles application messaging. These roles remain separate.
 
 **Conflict disclosure:** None identified. Human maintainer approval is recorded as a merge prerequisite.
-
+| GA4GH refget Sequences | [Refget specification](https://ga4gh.github.io/refget/sequences/); [compliance report](https://ga4gh.github.io/refget-compliance/); [ENA report](https://ga4gh.github.io/refget-compliance/reports/ena-server.html) |

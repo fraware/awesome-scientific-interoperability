@@ -87,7 +87,7 @@ Exclusions and watchlist placements are recorded in the candidate review files a
 
 ## Current corpus status (2026-08-02)
 
-- **Main-list entries:** 96 on the stacked Issue #44 Batch B candidate tree (README and catalog parity enforced by CI).
+- **Main-list entries:** 100 on the stacked Issue #44 Batch C candidate tree (README and catalog parity enforced by CI).
 - **Section review files:** 11 under `docs/reviews/`.
 - **Gap review files:** 4 under `docs/candidate-reviews/`.
 - **Review freshness:** Enforced by `scripts/check_review_freshness.py` in CI.
@@ -129,6 +129,7 @@ Review artifacts:
 - [Provenance and Evidence](reviews/provenance-and-evidence.md)
 - [Computational models decision guide](decision-guides/systems-biology-models.md)
 - [Neuroscience data decision guide](decision-guides/neuroscience-data-standards.md)
+
 ## Issue #44 Batch B — pending human maintainer review (2026-08-02)
 
 **Scope:** Proposed admission of OME-NGFF, FITS, IVOA TAP, and IVOA VOTable on top of Batch A.
@@ -141,3 +142,16 @@ Review artifacts:
 - [Identifiers and Discovery](reviews/identifiers-and-discovery.md)
 - [Astronomy decision guide](decision-guides/astronomy-data-and-services.md)
 - [Bioimaging decision guide](decision-guides/bioimaging-data.md)
+
+## Issue #44 Batch C — pending human maintainer review (2026-08-02)
+
+**Scope:** Proposed admission of VRS, Phenopackets, htsget, and refget Sequences on top of Batches A and B.
+
+Evidence was classified through AI-assisted primary-source review. The records remain `review_type: author`; no independent human review is claimed. Human review must check specification versions, implementation-operator separation, validator and compliance-suite scope, GA4GH family boundaries, typed relations, and decision-guide recommendations.
+
+Review artifacts:
+
+- [Identifiers and Discovery](reviews/identifiers-and-discovery.md)
+- [Metadata and Semantics](reviews/metadata-and-semantics.md)
+- [Workflows and Execution](reviews/workflows-and-execution.md)
+- [Genomic representation and access decision guide](decision-guides/genomic-representation-and-access.md)

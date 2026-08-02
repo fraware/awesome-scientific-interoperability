@@ -10,13 +10,13 @@ The expansion registry is machine-readable under `catalog/expansion-candidates.y
 
 The review contains:
 
-- **52 unresolved candidates**;
-- **52 distinct unresolved interoperability families**;
-- **11 P0 admission candidates**;
+- **48 unresolved candidates**;
+- **48 distinct unresolved interoperability families**;
+- **7 P0 admission candidates**;
 - **26 P1 boundary-review candidates**;
 - **15 P2 candidates**;
-- **11 `admission-pr`**, **28 `boundary-review`**, and **13 `watchlist`** unresolved dispositions.
-- **9 completed candidate IDs** tracked against the original 61-resource research program.
+- **7 `admission-pr`**, **28 `boundary-review`**, and **13 `watchlist`** unresolved dispositions.
+- **13 completed candidate IDs** tracked against the original 61-resource research program.
 
 Comprehensiveness here means systematic coverage of consequential interoperability mechanisms. It does not mean listing every scientific format, software package, ontology, or implementation.
 
@@ -52,11 +52,11 @@ NeuroML and SONATA require a separate model-exchange boundary review. NIfTI and 
 
 ### Bioimaging
 
-OME-NGFF is the strongest missing cloud-native bioimaging mechanism. It standardizes multidimensional array layout and metadata over Zarr for object stores and distributed analysis systems. OME-TIFF remains a major installed-base format and should be adjudicated against OME-NGFF rather than admitted reflexively as a second family entry.
+The stacked Batch B draft proposes OME-NGFF as the cloud-native bioimaging mechanism. It standardizes multidimensional array layout and metadata over Zarr for object stores and distributed analysis systems. OME-TIFF remains a major installed-base boundary candidate and should be adjudicated separately instead of being admitted reflexively as a second family entry.
 
 ### Astronomy
 
-Astronomy is absent despite operating one of the most mature scientific interoperability ecosystems. The review separates functional roles:
+The stacked Batch B draft proposes three astronomy mechanisms and preserves three adjacent boundary decisions. The review separates functional roles:
 
 - **FITS** — file and metadata exchange;
 - **VOTable** — tabular serialization;
@@ -65,11 +65,11 @@ Astronomy is absent despite operating one of the most mature scientific interope
 - **SAMP** — application messaging;
 - **ASDF** — modern hierarchical scientific data exchange.
 
-The first admission batch should contain FITS, VOTable, and TAP. ObsCore, SAMP, and ASDF require a family-granularity decision so the list explains complementary roles without overrepresenting one standards body.
+Batch B proposes FITS, VOTable, and TAP. ObsCore, SAMP, and ASDF retain family-granularity decisions so the list explains complementary roles without overrepresenting one standards body.
 
 ### Genomic representation, discovery, and access
 
-The existing GA4GH entries cover service discovery, workflow execution, object resolution, authorization, and data-use semantics. They do not cover several central genomic interoperability layers:
+The stacked Batch C draft proposes four additional GA4GH mechanisms that cover central genomic interoperability layers:
 
 - **VRS** — normalized variation representation and computed identifiers;
 - **Phenopackets** — phenotype, disease, biosample, pedigree, and genomic interpretation exchange;
@@ -113,9 +113,9 @@ OCFL and Data Package address gaps left by BagIt and RO-Crate:
 
 OCFL is already on the structured watchlist; the expansion registry records that overlap explicitly. PREMIS, SHACL, Zarr, NetCDF, HDF5, Arrow, and Parquet require substrate or preservation-boundary decisions and should not enter the main list solely because they are widely used.
 
-## Batch A admitted (2026-08-02)
+## Batch A proposed in draft (2026-08-02)
 
-The first five P0 candidates have moved from the expansion registry into the canonical catalog:
+The first five P0 candidates are represented in the stacked candidate tree and removed from its unresolved registry:
 
 1. Systems Biology Markup Language (SBML)
 2. Simulation Experiment Description Markup Language (SED-ML)
@@ -123,7 +123,7 @@ The first five P0 candidates have moved from the expansion registry into the can
 4. Brain Imaging Data Structure (BIDS)
 5. Neurodata Without Borders (NWB)
 
-Their admission records include claim-specific references, implementation identities, typed relations, four-dimensional taxonomy, review provenance, and direct decision paths. The remaining P0 admission queue contains 15 resources.
+Their proposed records include claim-specific references, implementation identities, typed relations, controlled taxonomy, review provenance, and direct decision paths. Human maintainer approval remains required.
 
 ## Recommended PR sequence
 
@@ -144,7 +144,7 @@ Required comparisons:
 - BIDS versus NWB;
 - domain profiles versus HDF5 and NIfTI substrates.
 
-### Batch B — astronomy and bioimaging
+### Batch B — astronomy and bioimaging — proposed in stacked draft
 
 Candidate set:
 
@@ -160,7 +160,9 @@ Required comparisons:
 - VOTable serialization versus TAP query services;
 - TAP versus ObsCore profiles and SAMP messaging.
 
-### Batch C — genomic representation and access
+### Batch C — genomic representation and access — proposed in stacked draft
+
+**Batch C implementation status:** represented in the stacked Issue #44 Batch C candidate tree; human review remains required.
 
 Candidate set:
 
@@ -267,3 +269,17 @@ Boundary outcomes retained for later adjudication:
 - ASDF remains a modern hierarchical astronomy-format candidate requiring archive-adoption review.
 
 The Batch B records remain AI-assisted author review pending human maintainer approval.
+
+
+## Batch C outcome — genomic representation and access
+
+The stacked Batch C candidate tree proposes admission of VRS, Phenopackets, htsget, and refget Sequences. The four IDs are removed from unresolved candidate shards and recorded in `completed_candidate_ids`; the conservation invariant remains `unresolved candidates + completed candidate IDs = 61`.
+
+Boundary outcomes retained for later adjudication:
+
+- Beacon v2 remains a federated discovery decision.
+- SAM/BAM/CRAM and VCF/BCF remain a file-family granularity decision.
+- Crypt4GH remains a controlled-access encryption-container decision.
+- RNAget remains a transcriptomics-access adoption decision.
+
+The Batch C records remain AI-assisted author review pending human maintainer approval.

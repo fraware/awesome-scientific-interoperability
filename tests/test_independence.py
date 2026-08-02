@@ -238,6 +238,7 @@ class IndependenceValidatorTests(unittest.TestCase):
                 "common-workflow-language-cwl",
                 "dicomweb",
                 "flexible-image-transport-system-fits",
+                "ga4gh-refget-sequences",
                 "ga4gh-tool-registry-service-trs",
                 "ivoa-table-access-protocol-tap",
                 "ivoa-votable",

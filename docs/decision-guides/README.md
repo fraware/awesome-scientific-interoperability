@@ -19,6 +19,7 @@ Problem-oriented comparison documents for overlapping interoperability mechanism
 | [Neuroscience dataset and neurophysiology exchange](neuroscience-data-standards.md) | BIDS, NWB, DICOMweb, NeXus |
 | [Astronomy data files, tables, and query services](astronomy-data-and-services.md) | FITS, VOTable, TAP, STAC; ObsCore/SAMP/ASDF boundaries |
 | [Bioimaging data exchange](bioimaging-data.md) | OME-NGFF, DICOMweb, NeXus, RO-Crate; OME-TIFF/Zarr boundaries |
+| [Genomic representation and access](genomic-representation-and-access.md) | VRS, Phenopackets, htsget, refget, DRS; Beacon/HTS/Crypt4GH/RNAget boundaries |
 
 ## How to use these guides
 
