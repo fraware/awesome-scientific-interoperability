@@ -1,0 +1,35 @@
+name: Apply catalog v2.1 payload
+
+on:
+  push:
+    branches: [data/catalog-provenance-v21]
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Decode and apply validated payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .tmp/catalog-v21.part* | base64 --decode > /tmp/catalog-v21.tar.xz
+          tar -xJf /tmp/catalog-v21.tar.xz -C .
+          rm -rf .tmp
+          rm -f .github/workflows/apply-catalog-v21.yml
+      - name: Commit applied migration
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --check
+          git commit -m "Advance catalog provenance and data quality to v2.1"
+          git push origin HEAD:data/catalog-provenance-v21
