@@ -26,11 +26,15 @@ Every accepted entry completes one sentence test: the resource enables **X** to 
 
 Choose the path that matches your question, then return to the curated entries below.
 
-- **Integration problems:** Start from a concrete situation in the [integration problem index](docs/integration-problems.md).
-- **Decision guides:** Compare overlapping options in the [decision guides](docs/decision-guides/README.md).
-- **Catalog explorer:** Browse the read-only [GitHub Pages explorer](https://fraware.github.io/awesome-scientific-interoperability/).
-- **Local queries:** Run structured lookups via [querying the catalog](docs/querying-the-catalog.md).
-- **Watchlist:** Inspect near-miss and emerging resources in the [watchlist](docs/watchlist.md).
+**Integration problems.** Start from a concrete situation in the [integration problem index](docs/integration-problems.md).
+
+**Decision guides.** Compare overlapping options in the [decision guides](docs/decision-guides/README.md).
+
+**Catalog explorer.** Browse the read-only [GitHub Pages explorer](https://fraware.github.io/awesome-scientific-interoperability/).
+
+**Local queries.** Run structured lookups via [querying the catalog](docs/querying-the-catalog.md).
+
+**Watchlist.** Inspect near-miss and emerging resources in the [watchlist](docs/watchlist.md).
 
 This README is manually curated and remains authoritative for inclusion. The machine-readable catalog validates consistency and supports queries; it does not generate this list.
 
