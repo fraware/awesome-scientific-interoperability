@@ -111,7 +111,9 @@ relation_types:
 scientific_domains:
 - ai-agents
 - analytical-chemistry
+- astronomy
 - biodiversity
+- bioimaging
 - bioinformatics
 - biomedical
 - biosimulation
@@ -208,3 +210,5 @@ domain_dimension_aliases:
   sensor-networks: scientific_domains
   social-science: scientific_domains
   systems-biology: scientific_domains
+  astronomy: scientific_domains
+  bioimaging: scientific_domains

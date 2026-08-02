@@ -97,3 +97,7 @@ No main-list entry is classified as a reference architecture. Broad platforms un
 ## Batch A domain addition (2026-08-02)
 
 - Added `neuroscience` as a controlled scientific domain for BIDS and NWB. Storage substrates remain represented through domain standards rather than standalone HDF5 or NIfTI entries.
+
+## Batch B scientific domains
+
+`astronomy` classifies FITS, TAP, and VOTable. `bioimaging` classifies OME-NGFF. These are scientific-domain dimensions; remote query, research-data, laboratory-data, and cross-domain deployment remain separate integration or infrastructure dimensions.

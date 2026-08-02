@@ -1,3 +1,12 @@
+
+## 2026-08-02 — Issue #44 Batch B candidate tree
+
+- Proposed OME-NGFF, FITS, IVOA TAP, and IVOA VOTable admissions.
+- Added astronomy and bioimaging decision guides and integration-problem paths.
+- Added claim-specific references, steward and implementation identities, public validators, typed relations, and taxonomy dimensions.
+- Replaced the fixed P0 queue floor with a 61-resource research-program conservation invariant.
+- Human maintainer review remains required before merge.
+
 # Changelog
 
 All notable editorial, schema, and maintenance changes for this repository are documented here. The list does not claim completeness of the scientific interoperability landscape.

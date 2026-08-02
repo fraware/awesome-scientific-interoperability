@@ -63,3 +63,16 @@ None.
 **Boundary decisions:** SBML versus CellML is model-class dependent; BIDS and NWB are complementary; generic HDF5 and NIfTI remain excluded under DR-001.
 
 **Conflict disclosure:** None identified. The records explicitly retain pending human maintainer approval in their review provenance.
+## Issue #44 Batch B admissions (2026-08-02)
+
+**Status:** AI-assisted author review complete; human maintainer approval required before merge.
+
+| Resource | Primary evidence | Decision |
+|---|---|---|
+| OME-NGFF / OME-Zarr | OME-Zarr 0.5; tools registry; ome-zarr-py; bioformats2raw; OME-NGFF Validator | Admit as maintained cloud-native bioimaging exchange; retain `reference-and-others` because only one separately operated implementation is modeled |
+| FITS | FITS Standard 4.0; IAU-FWG governance; CFITSIO; Astropy FITS verification | Admit as established astronomy file standard with two independent implementations and public validation |
+| IVOA VOTable | VOTable 1.5; Astropy VOTable; STILTS; votlint | Admit as established astronomy table serialization with two independent implementations and public validation |
+
+**Boundary decisions:** OME-TIFF remains the mature single-file bioimaging alternative; Zarr alone is a substrate. ASDF remains a separate astronomy-format candidate. FITS and VOTable are complementary rather than interchangeable.
+
+**Conflict disclosure:** None identified. Human maintainer approval is recorded as a merge prerequisite.

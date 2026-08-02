@@ -45,4 +45,15 @@ None.
 
 - Enriched ORCID/ROR/DataCite/Crossref/Identifiers.org/IGSN/OPTIMADE/TRS/service-info/registry with primary implementation or adoption repositories.
 - Downgraded GA4GH service-info/registry/TRS and OPTIMADE conformance to none-known where no public suite artifact is cited.
+## Issue #44 Batch B admission (2026-08-02)
+
+**Status:** AI-assisted author review complete; human maintainer approval required before merge.
+
+| Resource | Primary evidence | Decision |
+|---|---|---|
+| IVOA Table Access Protocol (TAP) | TAP 1.1 Recommendation; OpenCADC TAP; GAVO DaCHS; STILTS taplint | Admit as established federated astronomy table-query protocol with two independent implementations and public validation |
+
+**Boundary decisions:** VOTable carries table responses; ObsCore profiles observation tables over TAP; SAMP handles application messaging. These roles remain separate.
+
+**Conflict disclosure:** None identified. Human maintainer approval is recorded as a merge prerequisite.
 

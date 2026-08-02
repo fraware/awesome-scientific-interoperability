@@ -30,3 +30,10 @@ A listed version or maintenance signal should be rechecked whenever an entry is 
 **Full DICOM** — excluded; **DICOMweb** is the included web integration profile.
 
 **Additional RO/provenance profiles** — excluded; existing entries ([resource:ro-crate], Workflow Run RO-Crate, CWLProv, ISO 23494-2, P-Plan) already cover the packaging and provenance integration problems for this corpus.
+## Issue #44 Batch B primary-source review (2026-08-02)
+
+- OME-Zarr 0.5 final specification, tools registry, public NGFF validator, ome-zarr-py, and bioformats2raw.
+- FITS Standard 4.0, IAU FITS Working Group governance, CFITSIO, and Astropy FITS verification.
+- IVOA TAP 1.1, OpenCADC TAP, GAVO DaCHS, and STILTS taplint.
+- IVOA VOTable 1.5, Astropy VOTable, STILTS, and votlint.
+- Boundary sources for OME-TIFF, ObsCore, SAMP, and ASDF remain in the structured candidate registry.

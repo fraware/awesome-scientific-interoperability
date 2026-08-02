@@ -73,7 +73,7 @@ Rechecked against the live [sindresorhus/awesome pull-request template](https://
 | Not a duplicate | **Recheck before submit** | Search central repo and GitHub |
 | Only awesome items; no unmaintained main-list entries | Ongoing | Editorial policy + review dates |
 | Logo/illustration when possible | **Optional / undecided** | Document decision before submit |
-| Entries have descriptions | Ready | 92 entries with dash descriptions |
+| Entries have descriptions | Ready | 96 entries with dash descriptions |
 | Awesome badge on heading | Ready | Links to awesome.re |
 | `Contents` first section; no Contributing/Footnotes inside | Ready | Verified in validation report |
 | CC0 or Creative Commons license file | Ready | CC0 in `license` |

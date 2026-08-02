@@ -541,3 +541,77 @@ BIDS and NWB solve different layers and may be composed. BIDS is generally stron
 ### Example architecture
 
 A repository ingests scanner data through DICOMweb, converts deidentified acquisitions into a BIDS dataset, validates the resulting layout, and stores electrophysiology sessions in NWB. A RO-Crate publication layer links datasets, software, investigators, and provenance without replacing either domain standard.
+
+---
+
+## 15. Exchange astronomy files, tables, and federated query results
+
+[problem:exchange-astronomy-data]
+
+### Situation
+
+An astronomy program must preserve instrument or mission products, exchange richly annotated catalog tables, and let clients query holdings across independently operated data centers.
+
+### Starting point
+
+Use [resource:flexible-image-transport-system-fits] for durable images, spectra, cubes, and table files. Use [resource:ivoa-votable] for table results with Virtual Observatory metadata and serializations. Use [resource:ivoa-table-access-protocol-tap] when clients need synchronous or asynchronous remote queries, ADQL, uploads, metadata discovery, or spatial cross-matching.
+
+The mechanisms compose. A TAP service commonly returns VOTable results whose rows identify FITS products. Record the role of each layer independently so file conformance, response serialization, and service behavior are not conflated.
+
+### When an alternative is stronger
+
+- Earth-observation and general spatiotemporal asset catalogs: use [resource:spatiotemporal-asset-catalog-stac].
+- Generic catalog federation outside astronomy: use [resource:w3c-data-catalog-vocabulary-dcat].
+- Packaging files with software and provenance: use [resource:ro-crate].
+
+### Limitations and common category errors
+
+- Treating VOTable as a service protocol or TAP as a file format.
+- Treating FITS header validity as complete scientific metadata quality.
+- Adding ObsCore, SAMP, and every IVOA companion without a distinct integration decision.
+- Assuming every TAP validator stage covers every query language, profile, and registration behavior.
+
+### Relevant catalog entries
+
+[resource:flexible-image-transport-system-fits] [resource:ivoa-votable] [resource:ivoa-table-access-protocol-tap] [resource:spatiotemporal-asset-catalog-stac] [resource:w3c-data-catalog-vocabulary-dcat] [resource:ro-crate]
+
+### Example architecture
+
+A mission archive stores calibrated products as FITS, exposes catalog and observation tables through TAP, serializes query results as VOTable, and packages release documentation, software, and provenance in RO-Crate. ObsCore is applied as a table profile where uniform observation discovery is required.
+
+---
+
+## 16. Exchange cloud-native bioimaging data
+
+[problem:exchange-bioimaging-data]
+
+### Situation
+
+A microscopy program must exchange multidimensional images, resolution pyramids, labels, plates, wells, axes, and coordinate metadata through object stores and distributed analysis tools.
+
+### Starting point
+
+Use [resource:ome-ngff] for cloud-native OME-Zarr bioimaging data. Declare the OME-Zarr metadata version, Zarr version, and optional features supported by each producer and consumer. Validate the resulting hierarchy and metadata, then test representative datasets across the actual readers and writers in the workflow.
+
+Use [resource:dicomweb] for clinical DICOM studies and service operations, [resource:nexus] for neutron, X-ray, or muon facility application definitions, and [resource:ro-crate] to package images with software, people, instruments, workflows, and provenance.
+
+### When an alternative is stronger
+
+- Mature single-file microscopy exchange and broad installed-base readers: OME-TIFF may remain stronger.
+- Clinical imaging identity, metadata, and regulated service workflows: use [resource:dicomweb].
+- Generic chunked arrays without bioimaging semantics: Zarr may be sufficient as a storage substrate, though it does not replace OME-NGFF.
+
+### Limitations and common category errors
+
+- Treating generic Zarr readability as OME-Zarr conformance.
+- Assuming all readers support the same OME-Zarr versions and optional metadata.
+- Treating validation as proof of lossless conversion or scientifically correct coordinates.
+- Using RO-Crate as an image representation instead of a contextual package.
+
+### Relevant catalog entries
+
+[resource:ome-ngff] [resource:dicomweb] [resource:nexus] [resource:ro-crate]
+
+### Example architecture
+
+A microscopy facility converts acquisition files to versioned OME-Zarr, validates the hierarchy, writes compatibility fixtures for its production viewers, and stores datasets in object storage. A RO-Crate layer connects each image collection to acquisition instruments, conversion software, analysis workflows, and provenance.
