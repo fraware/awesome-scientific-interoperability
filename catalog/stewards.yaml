@@ -1,5 +1,5 @@
 stewards_version: 1.0.0
-reviewed_on: '2026-08-01'
+reviewed_on: '2026-08-02'
 stewards:
 - id: allotrope-foundation
   name: Allotrope Foundation
@@ -347,4 +347,59 @@ stewards:
   name: Zitnik Lab, Harvard Medical School
   type: institution
   url: https://zitniklab.hms.harvard.edu/
+  aliases: []
+- id: artefactual-systems
+  name: Artefactual Systems
+  type: institution
+  url: https://www.artefactual.com/
+  aliases: []
+- id: arvados-foundation
+  name: Arvados Foundation
+  type: foundation
+  url: https://arvados.org/
+  aliases: []
+- id: broad-institute
+  name: Broad Institute of MIT and Harvard
+  type: institution
+  url: https://www.broadinstitute.org/
+  aliases: []
+- id: chanzuckerberg-initiative
+  name: Chan Zuckerberg Initiative
+  type: foundation
+  url: https://chanzuckerberg.com/
+  aliases: []
+- id: databiosphere
+  name: Data Biosphere
+  type: consortium
+  url: https://www.databio.org/
+  aliases: []
+- id: dcm4che
+  name: dcm4che
+  type: community
+  url: https://www.dcm4che.org/
+  aliases: []
+- id: dockstore-consortium
+  name: Dockstore Consortium
+  type: consortium
+  url: https://dockstore.org/
+  aliases: []
+- id: fairmat-nomad
+  name: FAIRmat / NOMAD
+  type: consortium
+  url: https://nomad-lab.eu/
+  aliases: []
+- id: library-of-congress
+  name: Library of Congress
+  type: institution
+  url: https://www.loc.gov/
+  aliases: []
+- id: materials-project
+  name: Materials Project
+  type: institution
+  url: https://materialsproject.org/
+  aliases: []
+- id: ohif
+  name: OHIF
+  type: community
+  url: https://ohif.org/
   aliases: []

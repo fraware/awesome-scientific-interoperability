@@ -388,8 +388,8 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  - independent-implementation
-  implementation_status: multiple-independent
+  - reference-implementation
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: orcid
   domains:
@@ -435,8 +435,8 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  - independent-implementation
-  implementation_status: multiple-independent
+  - reference-implementation
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: ror-research-organization-registry
   domains:

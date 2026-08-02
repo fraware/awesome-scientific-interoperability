@@ -25,18 +25,26 @@ from lib.catalog_model import (  # noqa: E402
     clear_caches,
     conformance_artifact_types,
     domain_ids,
+    load_implementations,
+    load_implementation_list,
     load_references,
     load_stewards,
     load_taxonomy,
     resource_kind_ids,
+)
+from lib.independence import (  # noqa: E402
+    independent_operator_stewards,
+    multiple_independent_satisfied,
 )
 
 CATALOG_PATH = ROOT / "catalog" / "resources.yaml"
 SCHEMA_PATH = ROOT / "schema" / "catalog.schema.json"
 REFERENCES_SCHEMA_PATH = ROOT / "schema" / "references.schema.json"
 STEWARDS_SCHEMA_PATH = ROOT / "schema" / "stewards.schema.json"
+IMPLEMENTATIONS_SCHEMA_PATH = ROOT / "schema" / "implementations.schema.json"
 REFERENCES_PATH = ROOT / "catalog" / "references.yaml"
 STEWARDS_PATH = ROOT / "catalog" / "stewards.yaml"
+IMPLEMENTATIONS_PATH = ROOT / "catalog" / "implementations.yaml"
 README_PATH = ROOT / "README.md"
 ENTRY_RE = re.compile(r"^- \[([^\]]+)\]\((https://[^)]+)\) - (.+)$")
 BANNED_MARKETING = (
@@ -173,6 +181,7 @@ def validate_registry_documents() -> list[str]:
     for path, schema_path in (
         (REFERENCES_PATH, REFERENCES_SCHEMA_PATH),
         (STEWARDS_PATH, STEWARDS_SCHEMA_PATH),
+        (IMPLEMENTATIONS_PATH, IMPLEMENTATIONS_SCHEMA_PATH),
     ):
         if not path.exists():
             errors.append(f"missing registry file: {path}")
@@ -186,6 +195,8 @@ def validate_registry_documents() -> list[str]:
 
     references = load_references()
     stewards = load_stewards()
+    implementations = load_implementations()
+    resource_ids = load_all_live_ids()
     ref_urls = [item["url"] for item in references.values()]
     duplicates = sorted(url for url, count in Counter(ref_urls).items() if count > 1)
     if duplicates:
@@ -203,6 +214,25 @@ def validate_registry_documents() -> list[str]:
         if any(fragment in url for fragment in GENERIC_PLACEHOLDER_URL_FRAGMENTS):
             errors.append(f"reference {ref_id}: generic placeholder URL")
 
+    impl_urls = [item["url"] for item in implementations.values()]
+    dup_impl_urls = sorted(url for url, count in Counter(impl_urls).items() if count > 1)
+    if dup_impl_urls:
+        errors.append(f"duplicate implementation urls: {dup_impl_urls}")
+
+    for impl_id, impl in implementations.items():
+        target = impl.get("implements_resource_id")
+        if target not in resource_ids:
+            errors.append(f"implementation {impl_id}: unknown implements_resource_id {target!r}")
+        operator = impl.get("operator_steward_id")
+        if operator not in stewards:
+            errors.append(f"implementation {impl_id}: unresolved operator_steward_id {operator!r}")
+        evidence_ids = impl.get("evidence_ref_ids") or []
+        if not evidence_ids:
+            errors.append(f"implementation {impl_id}: evidence_ref_ids must be non-empty")
+        for ref_id in evidence_ids:
+            if ref_id not in references:
+                errors.append(f"implementation {impl_id}: unresolved evidence_ref_id {ref_id!r}")
+
     return errors
 
 
@@ -212,6 +242,7 @@ def semantic_errors(
     known_ids: set[str] | None = None,
     as_of: date | None = None,
     check_registries: bool = True,
+    implementations: list[dict[str, Any]] | None = None,
 ) -> list[str]:
     errors: list[str] = []
     resources = catalog.get("resources", [])
@@ -227,6 +258,12 @@ def semantic_errors(
 
     references = load_references() if check_registries and REFERENCES_PATH.exists() else {}
     stewards = load_stewards() if check_registries and STEWARDS_PATH.exists() else {}
+    if implementations is None:
+        implementations = (
+            load_implementation_list()
+            if check_registries and IMPLEMENTATIONS_PATH.exists()
+            else []
+        )
     kinds = resource_kind_ids()
     domains = domain_ids()
     roles = claim_role_ids()
@@ -304,6 +341,14 @@ def semantic_errors(
                 errors.append(
                     f"{resource_id}: multiple-independent requires at least two source_refs"
                 )
+            if check_registries or implementations:
+                if not multiple_independent_satisfied(resource, implementations):
+                    operators = independent_operator_stewards(resource, implementations)
+                    errors.append(
+                        f"{resource_id}: multiple-independent requires ≥2 distinct "
+                        "independent-implementation operators that are not the resource "
+                        f"steward (found {len(operators)}: {operators})"
+                    )
 
         if resource.get("conformance_status") in {"public-suite", "public-validator"}:
             artifact_ok = False
@@ -339,6 +384,7 @@ def validate_catalog(
     known_ids: set[str] | None = None,
     as_of: date | None = None,
     check_registries: bool = True,
+    implementations: list[dict[str, Any]] | None = None,
 ) -> list[str]:
     errors: list[str] = []
     validator = Draft202012Validator(schema, format_checker=FormatChecker())
@@ -351,6 +397,7 @@ def validate_catalog(
             known_ids=known_ids,
             as_of=as_of,
             check_registries=check_registries,
+            implementations=implementations,
         )
     )
     return errors
@@ -492,6 +539,7 @@ def main() -> int:
     print(
         f"Validated {len(catalog['resources'])} catalog entries, "
         f"{len(load_references())} references, {len(load_stewards())} stewards, "
+        f"{len(load_implementations())} implementations, "
         f"and {len(readme_entries(readme))} README entries."
     )
     return 0

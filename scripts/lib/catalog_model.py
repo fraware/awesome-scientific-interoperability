@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[2]
 TAXONOMY_PATH = ROOT / "config" / "catalog-taxonomy.yaml"
 REFERENCES_PATH = ROOT / "catalog" / "references.yaml"
 STEWARDS_PATH = ROOT / "catalog" / "stewards.yaml"
+IMPLEMENTATIONS_PATH = ROOT / "catalog" / "implementations.yaml"
 CATALOG_INDEX_PATH = ROOT / "catalog" / "resources.yaml"
 
 
@@ -52,6 +53,24 @@ def load_stewards() -> dict[str, dict[str, Any]]:
     return result
 
 
+@lru_cache(maxsize=1)
+def load_implementations() -> dict[str, dict[str, Any]]:
+    if not IMPLEMENTATIONS_PATH.exists():
+        return {}
+    payload = _load_yaml(IMPLEMENTATIONS_PATH)
+    items = payload.get("implementations", []) if isinstance(payload, dict) else []
+    result: dict[str, dict[str, Any]] = {}
+    for item in items:
+        impl_id = item.get("id")
+        if isinstance(impl_id, str):
+            result[impl_id] = item
+    return result
+
+
+def load_implementation_list() -> list[dict[str, Any]]:
+    return list(load_implementations().values())
+
+
 def resource_kind_ids() -> set[str]:
     return {item["id"] for item in load_taxonomy()["resource_kinds"]}
 
@@ -76,6 +95,7 @@ def clear_caches() -> None:
     load_taxonomy.cache_clear()
     load_references.cache_clear()
     load_stewards.cache_clear()
+    load_implementations.cache_clear()
 
 
 def load_catalog_resources(index_path: Path = CATALOG_INDEX_PATH) -> list[dict[str, Any]]:

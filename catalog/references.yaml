@@ -1,5 +1,5 @@
 references_version: 1.0.0
-reviewed_on: '2026-08-01'
+reviewed_on: '2026-08-02'
 references:
 - id: a2a-protocol-org-v1-0-0
   title: Agent2Agent (A2A) Protocol
@@ -1825,3 +1825,63 @@ references:
   type: specification
   publisher: zitniklab.hms.harvard.edu
   accessed_on: '2026-08-01'
+- id: archivematica-adr-0006-bagit
+  title: Archivematica ADR 0006 — Use BagIt to package transfers
+  url: https://github.com/archivematica/archivematica-architectural-decisions/blob/main/0006-use-bagit-to-package-transfers.md
+  type: technical-documentation
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: arvados-org-cwl
+  title: Arvados — Running CWL workflows
+  url: https://doc.arvados.org/user/cwl/index.html
+  type: technical-documentation
+  publisher: arvados.org
+  accessed_on: '2026-08-02'
+- id: github-com-artefactual-archivematica
+  title: Archivematica digital preservation system
+  url: https://github.com/artefactual/archivematica
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-arvados-arvados
+  title: Arvados platform (CWL runner)
+  url: https://github.com/arvados/arvados
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: miniwdl-readthedocs-getting-started
+  title: miniwdl documentation — Getting started
+  url: https://miniwdl.readthedocs.io/en/latest/getting_started.html
+  type: technical-documentation
+  publisher: readthedocs.io
+  accessed_on: '2026-08-02'
+- id: nomad-lab-optimade-info
+  title: NOMAD OPTIMADE API info endpoint
+  url: https://nomad-lab.eu/prod/rae/optimade/v1/info
+  type: api-documentation
+  publisher: nomad-lab.eu
+  accessed_on: '2026-08-02'
+- id: optimade-materialsproject-base
+  title: Materials Project OPTIMADE base URL
+  url: https://optimade.materialsproject.org/
+  type: api-documentation
+  publisher: materialsproject.org
+  accessed_on: '2026-08-02'
+- id: optimade-providers-dashboard-mp
+  title: OPTIMADE provider dashboard — Materials Project
+  url: https://www.optimade.org/providers-dashboard/providers/mp.html
+  type: registry-record
+  publisher: optimade.org
+  accessed_on: '2026-08-02'
+- id: optimade-providers-dashboard-nmd
+  title: OPTIMADE provider dashboard — NOMAD
+  url: https://www.optimade.org/providers-dashboard/providers/nmd.html
+  type: registry-record
+  publisher: optimade.org
+  accessed_on: '2026-08-02'
+- id: workflowhub-eu-developer-trs
+  title: WorkflowHub TRS API documentation
+  url: https://about.workflowhub.eu/developer/trs/
+  type: api-documentation
+  publisher: about.workflowhub.eu
+  accessed_on: '2026-08-02'

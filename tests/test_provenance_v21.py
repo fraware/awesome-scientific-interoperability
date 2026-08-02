@@ -44,8 +44,10 @@ class ProvenanceV21Tests(unittest.TestCase):
     def test_registries_load(self) -> None:
         references = catalog_model.load_references()
         stewards = catalog_model.load_stewards()
+        implementations = catalog_model.load_implementations()
         self.assertGreaterEqual(len(references), 200)
         self.assertGreaterEqual(len(stewards), 60)
+        self.assertGreaterEqual(len(implementations), 12)
 
     def test_live_resources_use_controlled_kinds_and_domains(self) -> None:
         kinds = catalog_model.resource_kind_ids()
@@ -110,10 +112,10 @@ class ProvenanceV21Tests(unittest.TestCase):
             self.assertNotIn("example.com", url)
             self.assertNotIn("example.org", url)
 
-    def test_reference_and_steward_schemas(self) -> None:
+    def test_reference_steward_and_implementation_schemas(self) -> None:
         from jsonschema import Draft202012Validator, FormatChecker
 
-        for name in ("references", "stewards"):
+        for name in ("references", "stewards", "implementations"):
             payload = yaml.safe_load((ROOT / "catalog" / f"{name}.yaml").read_text(encoding="utf-8"))
             schema = json.loads((ROOT / "schema" / f"{name}.schema.json").read_text(encoding="utf-8"))
             errors = sorted(

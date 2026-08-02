@@ -19,7 +19,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: bioschemas-community
   domains:
@@ -238,7 +238,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: edam-ontology-maintainers-elixir-norway-embl-ebi
   domains:
@@ -280,7 +280,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: obo-foundry
   domains:
@@ -362,8 +362,8 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  - independent-implementation
-  implementation_status: multiple-independent
+  - reference-implementation
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: schema-org-community
   domains:
@@ -594,7 +594,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: regenstrief-institute-ucum
   domains:
@@ -639,7 +639,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: w3c
   domains:

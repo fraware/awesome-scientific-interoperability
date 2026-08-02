@@ -20,7 +20,7 @@ resources:
   evidence_types:
   - normative-specification
   - institutional-adoption
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: national-library-of-medicine
   domains:
@@ -67,8 +67,7 @@ resources:
   evidence_types:
   - normative-specification
   - reference-implementation
-  - independent-implementation
-  implementation_status: multiple-independent
+  implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: nanopublications-community
   domains:
