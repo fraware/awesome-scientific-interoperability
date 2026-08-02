@@ -29,6 +29,6 @@ Resource-ID markers are checked by `scripts/validate_decision_guides.py` in Qual
 
 ## Related navigation
 
-- [Integration problems](../integration-problems.md) — problem-class index (when published)
+- [Integration problems](../integration-problems.md) — problem-class index
 - [Catalog model v2](../catalog-model-v2.md)
 - [Querying the catalog](../querying-the-catalog.md)

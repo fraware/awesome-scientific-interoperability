@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-02",
-  "file_count": 130,
+  "file_count": 132,
   "files": [
     {
       "path": ".github/CODEOWNERS",
@@ -39,8 +39,8 @@
     },
     {
       "path": ".github/workflows/quality.yml",
-      "sha256": "5d0f78d69fa4e6bfb9636c063ce28110f5282eaff98f7d5ecbc08e341767ccb2",
-      "bytes": 1677
+      "sha256": "3dbd02783e8f6467cbb0d937d2962c5427a3a15253d91e44fec3a6fe3239cf98",
+      "bytes": 1726
     },
     {
       "path": ".gitignore",
@@ -213,14 +213,19 @@
       "bytes": 1933
     },
     {
+      "path": "docs/data-quality-baseline.json",
+      "sha256": "fb7a5b329a5db8828dc8c6bf08a90bbdf1811dc9c04609942bdece9472c3a07e",
+      "bytes": 237
+    },
+    {
       "path": "docs/data-quality-baseline.md",
-      "sha256": "c72c62c24d5b196ae4df9be6cb73bb6b2a60032558ef995195cc67d5ad8fdc21",
-      "bytes": 2321
+      "sha256": "366e3d1356bd6304359e301d037535933754ff48f3611ace746164da9f968ef5",
+      "bytes": 2161
     },
     {
       "path": "docs/decision-guides/README.md",
-      "sha256": "5978d6fa5c996220f60dcfebafea0169b28f9d85186c6d56e90fa0376a3832eb",
-      "bytes": 2378
+      "sha256": "6860eb75eca746df45429b50bae3f33543a7b41239bacd24380919413bbcc004",
+      "bytes": 2361
     },
     {
       "path": "docs/decision-guides/controlled-data-access.md",
@@ -444,8 +449,8 @@
     },
     {
       "path": "scripts/audit_data_quality.py",
-      "sha256": "459c3621a3e0c9de0f24737d787d19a43b9e44eec4d7dc79460519a544a1c96e",
-      "bytes": 7829
+      "sha256": "48104d33fc0bfa42e427c512f9c883bc3f780ed43367c66cc326b630159e02c8",
+      "bytes": 15509
     },
     {
       "path": "scripts/check_links.py",
@@ -621,6 +626,11 @@
       "path": "tests/test_coverage_audit.py",
       "sha256": "0be991e0dcf1bcbcaae1f5ad52aed4c2f529e82b1371b79a5322a753322be3ee",
       "bytes": 5387
+    },
+    {
+      "path": "tests/test_data_quality_baseline.py",
+      "sha256": "eaab2a59a7335fbd6ef31d274e043f30ce643ecb45f663d532c0f6aafdafe745",
+      "bytes": 3376
     },
     {
       "path": "tests/test_decision_guides.py",
