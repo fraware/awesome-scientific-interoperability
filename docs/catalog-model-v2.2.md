@@ -39,6 +39,17 @@ Only `relationship: independent-implementation` counts toward MI, and steward-op
 - Live `documented-tests` claims without a direct conformance artifact reference (validator / conformance-suite / interoperability-result with conformance or interoperability-testing role) fail validation.
 - Quality CI runs `audit_data_quality.py --fail-on warning` so depth-queue regressions cannot merge silently.
 
+## Taxonomy dimensions
+
+Flat `domains` tags are split into four controlled dimensions in `config/catalog-taxonomy.yaml`:
+
+- `scientific_domains`
+- `integration_functions`
+- `infrastructure_contexts`
+- `artifact_classes`
+
+Every legacy domain tag maps to exactly one dimension via `domain_dimension_aliases`. Resources carry the four arrays (no legacy `domains` field). Unknown values fail per dimension; each resource needs at least one tag across the four fields.
+
 ## Typed relations
 
 Resources use a `relations` array of `{type, resource_id}` edges. Controlled types live in `config/catalog-taxonomy.yaml` under `relation_types`. Legacy `alternatives` and `related_resource_ids` arrays are removed; `alternative-to` replaces alternatives sugar.

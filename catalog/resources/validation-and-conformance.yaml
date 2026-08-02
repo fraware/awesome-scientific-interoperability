@@ -23,9 +23,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: biosimulators-community
-  domains:
-  - systems-biology
-  - biosimulation
   source_refs:
   - ref_id: docs-biosimulators-org-biosimulators-test-suite
     role: technical-definition
@@ -45,6 +42,12 @@ resources:
   relations:
   - type: complements
     resource_id: sbml-test-suite
+  scientific_domains:
+  - systems-biology
+  - biosimulation
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: cwl-conformance-tests
   name: CWL Conformance Tests
   url: https://github.com/common-workflow-language/cwl-v1.2
@@ -67,8 +70,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: common-workflow-language-project
-  domains:
-  - computational-workflows
   source_refs:
   - ref_id: github-com-common-workflow-language-cwl-v1-2
     role: technical-definition
@@ -92,6 +93,11 @@ resources:
     resource_id: cwltool
   - type: validates
     resource_id: common-workflow-language-cwl
+  scientific_domains: []
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ro-crate-validator
   name: RO-Crate Validator
   url: https://github.com/crs4/rocrate-validator
@@ -116,8 +122,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-validator
   steward_id: crs4-ro-crate-community
-  domains:
-  - research-objects
   source_refs:
   - ref_id: github-com-crs4-rocrate-validator
     role: technical-definition
@@ -139,6 +143,11 @@ resources:
     resource_id: workflow-run-ro-crate
   - type: validates
     resource_id: ro-crate
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes:
+  - research-objects
 - id: sbml-test-suite
   name: SBML Test Suite
   url: https://sbml.org/software/sbml-test-suite/
@@ -162,8 +171,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: sbml-community
-  domains:
-  - systems-biology
   source_refs:
   - ref_id: sbml-org-software-sbml-test-suite
     role: technical-definition
@@ -187,3 +194,8 @@ resources:
   relations:
   - type: complements
     resource_id: biosimulators-test-suite
+  scientific_domains:
+  - systems-biology
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []

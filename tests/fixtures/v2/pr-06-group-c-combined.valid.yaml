@@ -24,8 +24,6 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  domains:
-  - scholarly-communication
   decision_basis: Foundational scholarly-content interchange standard with broad publisher and repository
     adoption.
   boundary_note: Publication representation only; links to data and software require complementary standards
@@ -43,6 +41,11 @@ resources:
   relations:
   - type: complements
     resource_id: nanopublications
+  scientific_domains:
+  - scholarly-communication
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: nanopublications
   name: Nanopublications
   url: https://nanopub.net/
@@ -65,9 +68,6 @@ resources:
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: none-known
-  domains:
-  - semantic-web
-  - knowledge-representation
   decision_basis: Distinctive interoperable unit for machine-actionable scientific claims with bundled
     provenance.
   boundary_note: Best suited to fine-grained assertions rather than complete research objects or full-text
@@ -85,6 +85,12 @@ resources:
   relations:
   - type: complements
     resource_id: journal-article-tag-suite-jats
+  scientific_domains: []
+  integration_functions:
+  - semantic-web
+  - knowledge-representation
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: open-research-knowledge-graph-orkg
   name: Open Research Knowledge Graph (ORKG)
   url: https://www.orkg.org/
@@ -107,8 +113,6 @@ resources:
   - institutional-adoption
   implementation_status: reference-and-others
   conformance_status: none-known
-  domains:
-  - scholarly-communication
   decision_basis: Substantial machine-actionable publication and knowledge-system infrastructure with
     documented APIs.
   boundary_note: The entry should specify interoperable representations and interfaces, avoiding broad
@@ -126,6 +130,11 @@ resources:
   relations:
   - type: complements
     resource_id: journal-article-tag-suite-jats
+  scientific_domains:
+  - scholarly-communication
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: openaire-research-graph
   name: OpenAIRE Research Graph
   url: https://graph.openaire.eu/
@@ -150,9 +159,6 @@ resources:
   - interoperability-demonstration
   implementation_status: reference-and-others
   conformance_status: none-known
-  domains:
-  - scholarly-communication
-  - research-information
   decision_basis: Major cross-object scientific knowledge infrastructure with open interfaces and broad
     source integration.
   boundary_note: Graph inclusion should emphasize exchange and relation integration, not scale alone.
@@ -169,6 +175,12 @@ resources:
   relations:
   - type: complements
     resource_id: journal-article-tag-suite-jats
+  scientific_domains:
+  - scholarly-communication
+  integration_functions:
+  - research-information
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: scholix
   name: Scholix
   url: https://github.com/scholix/schema
@@ -192,9 +204,6 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  domains:
-  - scholarly-communication
-  - research-data
   decision_basis: Directly connects publications and research data across independent infrastructures.
   boundary_note: Focus the entry on link interoperability, not general scholarly graphs.
   reviewed_on: '2026-08-01'
@@ -210,6 +219,12 @@ resources:
   relations:
   - type: complements
     resource_id: journal-article-tag-suite-jats
+  scientific_domains:
+  - scholarly-communication
+  integration_functions:
+  - research-data
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: allotrope-data-format
   name: Allotrope Data Format
   url: https://docs.allotrope.org/
@@ -232,9 +247,6 @@ resources:
   - reference-implementation
   implementation_status: reference-and-others
   conformance_status: none-known
-  domains:
-  - analytical-chemistry
-  - laboratory-data
   decision_basis: Substantial cross-vendor analytical-data interoperability ecosystem with published ontologies
     and format specifications.
   boundary_note: Consortium membership and licensing govern some specification access; analytical-data
@@ -254,6 +266,12 @@ resources:
     resource_id: analytical-information-markup-language-animl
   - type: complements
     resource_id: analytical-information-markup-language-animl
+  scientific_domains:
+  - analytical-chemistry
+  integration_functions:
+  - laboratory-data
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: analytical-information-markup-language-animl
   name: Analytical Information Markup Language (AnIML)
   url: https://www.animl.org/
@@ -273,8 +291,6 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  domains:
-  - analytical-chemistry
   decision_basis: Direct laboratory analytical-data interoperability standard with explicit cross-vendor
     purpose.
   boundary_note: Domain-specific technique definitions may vary in maturity; device communication is out
@@ -294,6 +310,11 @@ resources:
     resource_id: allotrope-data-format
   - type: complements
     resource_id: allotrope-data-format
+  scientific_domains:
+  - analytical-chemistry
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: autoprotocol
   name: Autoprotocol
   url: https://github.com/autoprotocol/autoprotocol-python
@@ -314,8 +335,6 @@ resources:
   - reference-implementation
   implementation_status: reference-and-others
   conformance_status: none-known
-  domains:
-  - laboratory-automation
   decision_basis: Important operational contract for expressing executable wet-lab procedures independent
     of a single vendor platform.
   boundary_note: Procedure representation does not establish device compatibility; ecosystem breadth and
@@ -333,6 +352,11 @@ resources:
   relations:
   - type: complements
     resource_id: journal-article-tag-suite-jats
+  scientific_domains: []
+  integration_functions:
+  - laboratory-automation
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: hl7-fhir
   name: HL7 FHIR
   url: https://hl7.org/fhir/
@@ -356,9 +380,6 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: public-suite
-  domains:
-  - clinical-informatics
-  - laboratory-medicine
   decision_basis: Exceptional domain exemplar demonstrating a large modular clinical and laboratory exchange
     ecosystem.
   boundary_note: Included as a clinical-exchange exemplar, not as evidence that the list covers all healthcare
@@ -376,6 +397,12 @@ resources:
   relations:
   - type: complements
     resource_id: loinc
+  scientific_domains:
+  - clinical-informatics
+  - laboratory-medicine
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: loinc
   name: LOINC
   url: https://loinc.org/
@@ -395,9 +422,6 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  domains:
-  - clinical-informatics
-  - laboratory-medicine
   decision_basis: Mature semantic interoperability mechanism for laboratory measurements and clinical
     observations.
   boundary_note: Clinical terminology orientation; pairs naturally with FHIR for exchange and UCUM for
@@ -415,6 +439,12 @@ resources:
   relations:
   - type: complements
     resource_id: hl7-fhir
+  scientific_domains:
+  - clinical-informatics
+  - laboratory-medicine
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: opc-ua-laboratory-and-analytical-device-standard-lads
   name: OPC UA Laboratory and Analytical Device Standard (LADS)
   url: https://opcfoundation.org/markets-collaboration/lads/
@@ -435,9 +465,6 @@ resources:
   - reference-implementation
   implementation_status: reference-and-others
   conformance_status: none-known
-  domains:
-  - laboratory-automation
-  - analytical-instruments
   decision_basis: Modern industrial-scientific bridge for interoperable device control, status, and data
     access.
   boundary_note: Device communication does not standardize experimental semantics or analytical file exchange.
@@ -456,6 +483,12 @@ resources:
     resource_id: sila-2
   - type: complements
     resource_id: sila-2
+  scientific_domains: []
+  integration_functions:
+  - laboratory-automation
+  infrastructure_contexts:
+  - analytical-instruments
+  artifact_classes: []
 - id: sila-2
   name: SiLA 2
   url: https://sila2.gitlab.io/sila_base/
@@ -476,8 +509,6 @@ resources:
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: none-known
-  domains:
-  - laboratory-automation
   decision_basis: Canonical open laboratory-device interoperability standard with multi-language implementations.
   boundary_note: Device communication does not by itself standardize experimental semantics or analytical
     data formats.
@@ -496,6 +527,11 @@ resources:
     resource_id: opc-ua-laboratory-and-analytical-device-standard-lads
   - type: complements
     resource_id: opc-ua-laboratory-and-analytical-device-standard-lads
+  scientific_domains: []
+  integration_functions:
+  - laboratory-automation
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ga4gh-data-use-ontology-duo
   name: GA4GH Data Use Ontology (DUO)
   url: https://www.ga4gh.org/product/data-use-ontology-duo/
@@ -517,9 +553,6 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  domains:
-  - genomics
-  - data-governance
   decision_basis: Concrete semantic bridge between data governance decisions and computational access
     systems.
   boundary_note: Genomics-originated but broadly relevant to controlled scientific data; authorization
@@ -537,6 +570,12 @@ resources:
   relations:
   - type: complements
     resource_id: ga4gh-passports
+  scientific_domains:
+  - genomics
+  integration_functions:
+  - data-governance
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ga4gh-passports
   name: GA4GH Passports
   url: https://www.ga4gh.org/product/ga4gh-passports/
@@ -559,9 +598,6 @@ resources:
   - interoperability-demonstration
   implementation_status: reference-and-others
   conformance_status: none-known
-  domains:
-  - genomics
-  - data-governance
   decision_basis: Strong scientific authorization profile connecting identity and controlled genomic data
     services.
   boundary_note: Domain exemplar; relies on underlying OAuth/OIDC infrastructure and complementary use-condition
@@ -579,6 +615,12 @@ resources:
   relations:
   - type: complements
     resource_id: ga4gh-data-use-ontology-duo
+  scientific_domains:
+  - genomics
+  integration_functions:
+  - data-governance
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: model-context-protocol-mcp
   name: Model Context Protocol (MCP)
   url: https://modelcontextprotocol.io/specification/2026-07-28
@@ -600,9 +642,6 @@ resources:
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: documented-tests
-  domains:
-  - ai-agents
-  - cross-domain
   decision_basis: General agent-tool interface with a published 2026-07-28 specification and multiple
     SDK implementations.
   boundary_note: Scientific inclusion requires domain profiles that preserve semantics and evidence; tool
@@ -620,6 +659,12 @@ resources:
   relations:
   - type: complements
     resource_id: tooluniverse
+  scientific_domains:
+  - ai-agents
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: tooluniverse
   name: ToolUniverse
   url: https://zitniklab.hms.harvard.edu/ToolUniverse/en/
@@ -643,9 +688,6 @@ resources:
   - interoperability-demonstration
   implementation_status: single-known
   conformance_status: none-known
-  domains:
-  - ai-agents
-  - computational-biology
   decision_basis: Directly addresses scientific-agent access to a large heterogeneous tool ecosystem with
     documented MCP integration.
   boundary_note: Platform-centered; openness of schemas and independent reuse of interfaces require periodic
@@ -663,6 +705,12 @@ resources:
   relations:
   - type: complements
     resource_id: model-context-protocol-mcp
+  scientific_domains:
+  - ai-agents
+  - computational-biology
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: biosimulators-test-suite
   name: BioSimulators Test Suite
   url: https://docs.biosimulators.org/Biosimulators_test_suite/
@@ -684,9 +732,6 @@ resources:
   - interoperability-demonstration
   implementation_status: reference-and-others
   conformance_status: public-suite
-  domains:
-  - systems-biology
-  - biosimulation
   decision_basis: Strong evidence-backed interoperability system combining standard interfaces, containers,
     and scientific assertions against documented simulator contracts.
   boundary_note: Domain-specific and complementary to the SBML Test Suite; tests execution behavior, not
@@ -704,6 +749,12 @@ resources:
   relations:
   - type: complements
     resource_id: sbml-test-suite
+  scientific_domains:
+  - systems-biology
+  - biosimulation
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: cwl-conformance-tests
   name: CWL Conformance Tests
   url: https://github.com/common-workflow-language/cwl-v1.2
@@ -724,8 +775,6 @@ resources:
   - normative-specification
   implementation_status: multiple-independent
   conformance_status: public-suite
-  domains:
-  - computational-workflows
   decision_basis: Mature implementation-level conformance infrastructure tied to a portable scientific
     workflow standard with versioned runner tests.
   boundary_note: Passing conformance does not establish full scientific-stack interoperability; CWL language
@@ -745,6 +794,11 @@ resources:
     resource_id: journal-article-tag-suite-jats
   - type: validates
     resource_id: common-workflow-language-cwl
+  scientific_domains: []
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ro-crate-validator
   name: RO-Crate Validator
   url: https://github.com/crs4/rocrate-validator
@@ -767,8 +821,6 @@ resources:
   - normative-specification
   implementation_status: reference-and-others
   conformance_status: public-validator
-  domains:
-  - research-objects
   decision_basis: Maintained validator covering several core and workflow-oriented RO-Crate profiles against
     documented SHACL shapes.
   boundary_note: Validation establishes profile conformance, not cross-system interoperability; RO-Crate
@@ -788,6 +840,11 @@ resources:
     resource_id: journal-article-tag-suite-jats
   - type: validates
     resource_id: ro-crate
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes:
+  - research-objects
 - id: sbml-test-suite
   name: SBML Test Suite
   url: https://sbml.org/software/sbml-test-suite/
@@ -809,8 +866,6 @@ resources:
   - interoperability-demonstration
   implementation_status: multiple-independent
   conformance_status: public-suite
-  domains:
-  - systems-biology
   decision_basis: Exceptional precedent for testing scientific semantic behavior across independent implementations
     against the SBML contract.
   boundary_note: Domain-specific but highly transferable as a conformance architecture; not a general
@@ -828,3 +883,8 @@ resources:
   relations:
   - type: complements
     resource_id: biosimulators-test-suite
+  scientific_domains:
+  - systems-biology
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []

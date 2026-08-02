@@ -21,9 +21,6 @@ resources:
   - public-validator
   implementation_status: reference-and-others
   conformance_status: documented-tests
-  domains:
-  - cross-domain
-  - ai-agents
   decision_basis: Emerging agent-tool interface with a published specification.
   boundary_note: Tool invocation is not scientific authorization or provenance.
   reviewed_on: '2026-08-01'
@@ -37,3 +34,9 @@ resources:
   relations:
   - type: complements
     resource_id: common-workflow-language-cwl
+  scientific_domains:
+  - ai-agents
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []

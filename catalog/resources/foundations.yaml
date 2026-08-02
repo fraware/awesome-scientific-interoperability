@@ -24,8 +24,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: codata-codata
-  domains:
-  - cross-domain
   source_refs:
   - ref_id: cdif-codata-org-root
     role: technical-definition
@@ -45,6 +43,11 @@ resources:
     resource_id: eosc-interoperability-framework
   - type: complements
     resource_id: fair-principles
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: eosc-interoperability-framework
   name: EOSC Interoperability Framework
   url: https://eosc.eu/eosc-interoperability-framework/
@@ -70,9 +73,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: eosc-association
-  domains:
-  - cross-domain
-  - european-research
   source_refs:
   - ref_id: eosc-eu-eosc-interoperability-framework
     role: technical-definition
@@ -91,6 +91,12 @@ resources:
     resource_id: cross-domain-interoperability-framework-cdif
   - type: complements
     resource_id: fair-digital-object-framework
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  - european-research
+  artifact_classes: []
 - id: fair-digital-object-framework
   name: FAIR Digital Object Framework
   url: https://fairdo.org/specifications/
@@ -115,8 +121,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: fair-digital-object-forum-fdo-forum
-  domains:
-  - cross-domain
   source_refs:
   - ref_id: fairdo-org-specifications
     role: technical-definition
@@ -134,6 +138,11 @@ resources:
   relations:
   - type: complements
     resource_id: fair-principles
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: fair-principles
   name: FAIR Principles
   url: https://www.go-fair.org/fair-principles/
@@ -157,8 +166,6 @@ resources:
   implementation_status: not-applicable
   conformance_status: none-known
   steward_id: go-fair-foundation
-  domains:
-  - cross-domain
   source_refs:
   - ref_id: go-fair-org-fair-principles
     role: technical-definition
@@ -179,3 +186,8 @@ resources:
     resource_id: fair-digital-object-framework
   - type: complements
     resource_id: fairsharing
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []

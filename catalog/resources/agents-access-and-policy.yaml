@@ -23,9 +23,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: ga4gh
-  domains:
-  - genomics
-  - data-governance
   source_refs:
   - ref_id: ga4gh-org-product-data-use-ontology-duo
     role: technical-definition
@@ -45,6 +42,12 @@ resources:
   relations:
   - type: complements
     resource_id: ga4gh-passports
+  scientific_domains:
+  - genomics
+  integration_functions:
+  - data-governance
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ga4gh-passports
   name: GA4GH Passports
   url: https://www.ga4gh.org/product/ga4gh-passports/
@@ -69,9 +72,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: ga4gh
-  domains:
-  - genomics
-  - data-governance
   source_refs:
   - ref_id: ga4gh-org-product-ga4gh-passports
     role: technical-definition
@@ -89,6 +89,12 @@ resources:
   relations:
   - type: complements
     resource_id: ga4gh-data-use-ontology-duo
+  scientific_domains:
+  - genomics
+  integration_functions:
+  - data-governance
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: model-context-protocol-mcp
   name: Model Context Protocol (MCP)
   url: https://modelcontextprotocol.io/specification/2026-07-28
@@ -112,9 +118,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: model-context-protocol-project
-  domains:
-  - ai-agents
-  - cross-domain
   source_refs:
   - ref_id: modelcontextprotocol-io-specification-2026-07-28
     role: technical-definition
@@ -134,6 +137,12 @@ resources:
   relations:
   - type: complements
     resource_id: tooluniverse
+  scientific_domains:
+  - ai-agents
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: tooluniverse
   name: ToolUniverse
   url: https://zitniklab.hms.harvard.edu/ToolUniverse/en/
@@ -159,9 +168,6 @@ resources:
   implementation_status: single-known
   conformance_status: none-known
   steward_id: zitnik-lab-harvard-medical-school
-  domains:
-  - ai-agents
-  - computational-biology
   source_refs:
   - ref_id: zitniklab-hms-harvard-edu-tooluniverse-en
     role: technical-definition
@@ -179,3 +185,9 @@ resources:
   relations:
   - type: complements
     resource_id: model-context-protocol-mcp
+  scientific_domains:
+  - ai-agents
+  - computational-biology
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []

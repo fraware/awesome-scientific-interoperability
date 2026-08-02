@@ -76,7 +76,42 @@ def resource_kind_ids() -> set[str]:
 
 
 def domain_ids() -> set[str]:
-    return set(load_taxonomy()["domains"])
+    """Union of all taxonomy dimension tags (compat helper)."""
+    taxonomy = load_taxonomy()
+    tags: set[str] = set()
+    for field in (
+        "scientific_domains",
+        "integration_functions",
+        "infrastructure_contexts",
+        "artifact_classes",
+    ):
+        tags.update(taxonomy.get(field) or [])
+    return tags
+
+
+def taxonomy_dimension_ids() -> dict[str, set[str]]:
+    taxonomy = load_taxonomy()
+    return {
+        field: set(taxonomy.get(field) or [])
+        for field in (
+            "scientific_domains",
+            "integration_functions",
+            "infrastructure_contexts",
+            "artifact_classes",
+        )
+    }
+
+
+def resource_dimension_tags(resource: dict[str, Any]) -> list[str]:
+    tags: list[str] = []
+    for field in (
+        "scientific_domains",
+        "integration_functions",
+        "infrastructure_contexts",
+        "artifact_classes",
+    ):
+        tags.extend(resource.get(field) or [])
+    return tags
 
 
 def claim_role_ids() -> set[str]:

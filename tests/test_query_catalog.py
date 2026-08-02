@@ -57,7 +57,17 @@ class QueryCatalogTests(unittest.TestCase):
         ids = self.resource_ids(output)
         self.assertIn("ga4gh-data-repository-service-drs", ids)
         for resource in json.loads(output):
-            self.assertIn("genomics", [domain.casefold() for domain in resource["domains"]])
+            tags = [
+                tag.casefold()
+                for field in (
+                    "scientific_domains",
+                    "integration_functions",
+                    "infrastructure_contexts",
+                    "artifact_classes",
+                )
+                for tag in resource.get(field) or []
+            ]
+            self.assertIn("genomics", tags)
 
     def test_connects_filter(self) -> None:
         code, output = self.run_query("--connects", "workflow registry", "--format", "json")
@@ -105,7 +115,17 @@ class QueryCatalogTests(unittest.TestCase):
         for resource in payload:
             self.assertEqual(resource["section"], "Workflows and Execution")
             self.assertIn("Operational", resource["interoperability_layers"])
-            self.assertIn("genomics", [domain.casefold() for domain in resource["domains"]])
+            tags = [
+                tag.casefold()
+                for field in (
+                    "scientific_domains",
+                    "integration_functions",
+                    "infrastructure_contexts",
+                    "artifact_classes",
+                )
+                for tag in resource.get(field) or []
+            ]
+            self.assertIn("genomics", tags)
 
     def test_no_results(self) -> None:
         code, markdown = self.run_query("--id", "does-not-exist", "--format", "markdown")

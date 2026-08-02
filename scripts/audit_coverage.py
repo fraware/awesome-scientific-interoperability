@@ -75,16 +75,33 @@ def count_by(values: list[str]) -> dict[str, int]:
 
 
 def domains_per_entry(resources: list[dict[str, Any]]) -> dict[str, int]:
-    counts = Counter(len(resource.get("domains", [])) for resource in resources)
-    return {str(key): value for key, value in sorted(counts.items())}
+    counts = Counter(
+        sum(
+            len(resource.get(field) or [])
+            for field in (
+                "scientific_domains",
+                "integration_functions",
+                "infrastructure_contexts",
+                "artifact_classes",
+            )
+        )
+        for resource in resources
+    )
+    return {str(key): counts[key] for key in sorted(counts)}
 
 
 def entries_per_domain(resources: list[dict[str, Any]]) -> dict[str, int]:
-    domain_counts: Counter[str] = Counter()
+    counts: Counter[str] = Counter()
     for resource in resources:
-        for domain in resource.get("domains", []):
-            domain_counts[str(domain)] += 1
-    return dict(sorted(domain_counts.items(), key=lambda item: (-item[1], item[0])))
+        for field in (
+            "scientific_domains",
+            "integration_functions",
+            "infrastructure_contexts",
+            "artifact_classes",
+        ):
+            for domain in resource.get(field) or []:
+                counts[str(domain)] += 1
+    return dict(sorted(counts.items(), key=lambda item: (-item[1], item[0])))
 
 
 def flatten_values(resources: list[dict[str, Any]], field_name: str) -> dict[str, int]:

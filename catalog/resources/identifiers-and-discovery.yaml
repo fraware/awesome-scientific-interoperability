@@ -25,8 +25,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: crossref
-  domains:
-  - scholarly-communication
   source_refs:
   - ref_id: crossref-org-documentation-retrieve-metadata-rest-api
     role: technical-definition
@@ -48,6 +46,11 @@ resources:
     resource_id: datacite-metadata-schema-and-rest-api
   - type: complements
     resource_id: scholix
+  scientific_domains:
+  - scholarly-communication
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: datacite-metadata-schema-and-rest-api
   name: DataCite Metadata Schema and REST API
   url: https://support.datacite.org/docs/api
@@ -73,9 +76,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: datacite
-  domains:
-  - cross-domain
-  - research-data
   source_refs:
   - ref_id: support-datacite-org-docs-api
     role: technical-definition
@@ -98,6 +98,12 @@ resources:
     resource_id: crossref-rest-api-and-metadata
   - type: complements
     resource_id: igsn-id
+  scientific_domains: []
+  integration_functions:
+  - research-data
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: fairsharing
   name: FAIRsharing
   url: https://fairsharing.org/
@@ -122,8 +128,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: fairsharing-oxford-data-readiness-group
-  domains:
-  - cross-domain
   source_refs:
   - ref_id: fairsharing-org-root
     role: technical-definition
@@ -141,6 +145,11 @@ resources:
   relations:
   - type: complements
     resource_id: fair-principles
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: ga4gh-service-info
   name: GA4GH Service Info
   url: https://www.ga4gh.org/product/service-info/
@@ -164,8 +173,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: ga4gh
-  domains:
-  - genomics
   source_refs:
   - ref_id: ga4gh-org-product-service-info
     role: technical-definition
@@ -185,6 +192,11 @@ resources:
   relations:
   - type: complements
     resource_id: ga4gh-service-registry
+  scientific_domains:
+  - genomics
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ga4gh-service-registry
   name: GA4GH Service Registry
   url: https://www.ga4gh.org/product/service-registry/
@@ -208,8 +220,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: ga4gh
-  domains:
-  - genomics
   source_refs:
   - ref_id: ga4gh-org-product-service-registry
     role: technical-definition
@@ -232,6 +242,11 @@ resources:
     resource_id: ga4gh-service-info
   - type: complements
     resource_id: ga4gh-tool-registry-service-trs
+  scientific_domains:
+  - genomics
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ga4gh-tool-registry-service-trs
   name: GA4GH Tool Registry Service (TRS)
   url: https://www.ga4gh.org/product/tool-registry-service-trs/
@@ -257,9 +272,6 @@ resources:
   implementation_status: multiple-independent
   conformance_status: none-known
   steward_id: ga4gh
-  domains:
-  - genomics
-  - computational-workflows
   source_refs:
   - ref_id: ga4gh-org-product-tool-registry-service-trs
     role: technical-definition
@@ -282,6 +294,12 @@ resources:
     resource_id: ga4gh-service-registry
   - type: complements
     resource_id: common-workflow-language-cwl
+  scientific_domains:
+  - genomics
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: identifiers-org
   name: Identifiers.org
   url: https://identifiers.org/
@@ -305,8 +323,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: embl-ebi-elixir-interoperability-platform
-  domains:
-  - life-sciences
   source_refs:
   - ref_id: identifiers-org-root
     role: technical-definition
@@ -328,6 +344,11 @@ resources:
     resource_id: datacite-metadata-schema-and-rest-api
   - type: complements
     resource_id: orcid
+  scientific_domains:
+  - life-sciences
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: igsn-id
   name: IGSN ID
   url: https://ev.igsn.org/about-igsns
@@ -351,9 +372,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: igsn-e-v
-  domains:
-  - cross-domain
-  - sample-curation
   source_refs:
   - ref_id: ev-igsn-org-about-igsns
     role: technical-definition
@@ -373,6 +391,12 @@ resources:
   relations:
   - type: complements
     resource_id: datacite-metadata-schema-and-rest-api
+  scientific_domains: []
+  integration_functions:
+  - sample-curation
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: orcid
   name: ORCID
   url: https://info.orcid.org/what-is-orcid/
@@ -397,9 +421,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: orcid
-  domains:
-  - cross-domain
-  - scholarly-communication
   source_refs:
   - ref_id: info-orcid-org-what-is-orcid
     role: technical-definition
@@ -420,6 +441,12 @@ resources:
   relations:
   - type: complements
     resource_id: research-organization-registry-ror
+  scientific_domains:
+  - scholarly-communication
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: research-organization-registry-ror
   name: Research Organization Registry (ROR)
   url: https://ror.org/about/
@@ -444,9 +471,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: ror-research-organization-registry
-  domains:
-  - cross-domain
-  - scholarly-communication
   source_refs:
   - ref_id: ror-org-about
     role: technical-definition
@@ -464,6 +488,12 @@ resources:
   relations:
   - type: complements
     resource_id: orcid
+  scientific_domains:
+  - scholarly-communication
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: optimade
   name: OPTIMADE
   url: https://www.optimade.org/specification/latest/
@@ -486,8 +516,6 @@ resources:
   implementation_status: multiple-independent
   conformance_status: none-known
   steward_id: optimade-consortium-materials-consortia
-  domains:
-  - materials-science
   source_refs:
   - ref_id: optimade-org-specification-latest
     role: technical-definition
@@ -508,3 +536,8 @@ resources:
     resource_id: fairsharing
   - type: complements
     resource_id: fairsharing
+  scientific_domains:
+  - materials-science
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []

@@ -23,9 +23,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: apptainer-project
-  domains:
-  - scientific-computing
-  - hpc
   source_refs:
   - ref_id: apptainer-org-docs-user-latest-introduction-html
     role: technical-definition
@@ -47,6 +44,12 @@ resources:
     resource_id: reprozip
   - type: complements
     resource_id: software-hash-identifiers-swhids
+  scientific_domains: []
+  integration_functions:
+  - scientific-computing
+  infrastructure_contexts:
+  - hpc
+  artifact_classes: []
 - id: citation-file-format-citation-cff
   name: Citation File Format (CITATION.cff)
   url: https://citation-file-format.github.io/
@@ -71,9 +74,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-validator
   steward_id: citation-file-format-project
-  domains:
-  - research-software
-  - scholarly-communication
   source_refs:
   - ref_id: citation-file-format-github-io-root
     role: technical-definition
@@ -98,6 +98,12 @@ resources:
     resource_id: codemeta
   - type: complements
     resource_id: codemeta
+  scientific_domains:
+  - scholarly-communication
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes:
+  - research-software
 - id: codemeta
   name: CodeMeta
   url: https://codemeta.github.io/
@@ -121,8 +127,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: codemeta-project
-  domains:
-  - research-software
   source_refs:
   - ref_id: codemeta-github-io-root
     role: technical-definition
@@ -142,6 +146,11 @@ resources:
     resource_id: citation-file-format-citation-cff
   - type: complements
     resource_id: citation-file-format-citation-cff
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes:
+  - research-software
 - id: reprozip
   name: ReproZip
   url: https://www.reprozip.org/
@@ -164,9 +173,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: reprozip-project-nyu-tandon-school-of-engineering
-  domains:
-  - reproducibility
-  - computational-science
   source_refs:
   - ref_id: reprozip-org-root
     role: technical-definition
@@ -185,6 +191,12 @@ resources:
     resource_id: apptainer-singularity-image-format
   - type: complements
     resource_id: ro-crate
+  scientific_domains: []
+  integration_functions:
+  - reproducibility
+  - computational-science
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: software-hash-identifiers-swhids
   name: Software Hash Identifiers (SWHIDs)
   url: https://www.swhid.org/
@@ -208,9 +220,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: software-heritage
-  domains:
-  - research-software
-  - digital-preservation
   source_refs:
   - ref_id: swhid-org-root
     role: technical-definition
@@ -228,3 +237,9 @@ resources:
     resource_id: citation-file-format-citation-cff
   - type: complements
     resource_id: codemeta
+  scientific_domains: []
+  integration_functions:
+  - digital-preservation
+  infrastructure_contexts: []
+  artifact_classes:
+  - research-software

@@ -93,7 +93,17 @@ def apply_filters(
         results = [
             resource
             for resource in results
-            if normalized_domain in {item.casefold() for item in resource.get("domains", [])}
+            if normalized_domain
+            in {
+                item.casefold()
+                for field in (
+                    "scientific_domains",
+                    "integration_functions",
+                    "infrastructure_contexts",
+                    "artifact_classes",
+                )
+                for item in resource.get(field) or []
+            }
         ]
     if connects is not None:
         results = [resource for resource in results if matches_connects(resource, connects)]
@@ -132,7 +142,10 @@ def resource_record(resource: dict[str, Any]) -> dict[str, Any]:
         "mechanism": resource["mechanism"],
         "summary": resource["summary"],
         "evidence_types": list(resource.get("evidence_types", [])),
-        "domains": list(resource.get("domains", [])),
+        "scientific_domains": list(resource.get("scientific_domains") or []),
+        "integration_functions": list(resource.get("integration_functions") or []),
+        "infrastructure_contexts": list(resource.get("infrastructure_contexts") or []),
+        "artifact_classes": list(resource.get("artifact_classes") or []),
         "relations": relations,
         "alternatives": [
             item["resource_id"]

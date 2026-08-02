@@ -22,9 +22,6 @@ resources:
   implementation_status: multiple-independent
   conformance_status: none-known
   steward_id: internet-engineering-task-force-ietf
-  domains:
-  - cross-domain
-  - digital-preservation
   source_refs:
   - ref_id: datatracker-ietf-org-doc-html-rfc8493
     role: technical-definition
@@ -42,6 +39,12 @@ resources:
   relations:
   - type: alternative-to
     resource_id: ro-crate
+  scientific_domains: []
+  integration_functions:
+  - digital-preservation
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: combine-omex-archive
   name: COMBINE/OMEX Archive
   url: https://combinearchive.org/
@@ -67,9 +70,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: combine-archive-community
-  domains:
-  - computational-biology
-  - systems-biology
   source_refs:
   - ref_id: combinearchive-org-root
     role: technical-definition
@@ -88,6 +88,12 @@ resources:
     resource_id: ro-crate
   - type: complements
     resource_id: biocompute-objects
+  scientific_domains:
+  - computational-biology
+  - systems-biology
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: fair-signposting
   name: FAIR Signposting
   url: https://signposting.org/
@@ -112,9 +118,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: signposting-community
-  domains:
-  - cross-domain
-  - scholarly-communication
   source_refs:
   - ref_id: signposting-org-root
     role: technical-definition
@@ -135,6 +138,12 @@ resources:
     resource_id: ro-crate
   - type: complements
     resource_id: schema-org
+  scientific_domains:
+  - scholarly-communication
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: ro-crate
   name: RO-Crate
   url: https://www.researchobject.org/ro-crate/specification/1.3/
@@ -162,8 +171,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-validator
   steward_id: research-object-community
-  domains:
-  - cross-domain
   source_refs:
   - ref_id: researchobject-org-ro-crate-specification-1-3
     role: technical-definition
@@ -191,6 +198,11 @@ resources:
     resource_id: workflow-run-ro-crate
   - type: complements
     resource_id: workflow-testing-ro-crate
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: workflow-ro-crate
   name: Workflow RO-Crate
   url: https://about.workflowhub.eu/Workflow-RO-Crate/
@@ -215,9 +227,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: workflowhub
-  domains:
-  - computational-workflows
-  - cross-domain
   source_refs:
   - ref_id: about-workflowhub-eu-workflow-ro-crate
     role: technical-definition
@@ -236,6 +245,12 @@ resources:
     resource_id: workflow-testing-ro-crate
   - type: profile-of
     resource_id: ro-crate
+  scientific_domains: []
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: workflow-run-ro-crate
   name: Workflow Run RO-Crate
   url: https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/
@@ -261,9 +276,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: research-object-community
-  domains:
-  - computational-workflows
-  - provenance
   source_refs:
   - ref_id: researchobject-org-workflow-run-crate-profiles-workflow-run-crate
     role: technical-definition
@@ -288,6 +300,12 @@ resources:
     resource_id: ro-crate
   - type: extends
     resource_id: workflow-ro-crate
+  scientific_domains: []
+  integration_functions:
+  - computational-workflows
+  - provenance
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: workflow-testing-ro-crate
   name: Workflow Testing RO-Crate
   url: https://w3id.org/ro/wftest
@@ -310,8 +328,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: research-object-community
-  domains:
-  - computational-workflows
   source_refs:
   - ref_id: w3id-org-ro-wftest
     role: technical-definition
@@ -331,6 +347,11 @@ resources:
     resource_id: lifemonitor
   - type: profile-of
     resource_id: ro-crate
+  scientific_domains: []
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: crystallographic-information-framework-cif
   name: Crystallographic Information Framework (CIF)
   url: https://www.iucr.org/resources/cif
@@ -355,9 +376,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-validator
   steward_id: international-union-of-crystallography-iucr
-  domains:
-  - materials-science
-  - chemistry
   source_refs:
   - ref_id: iucr-org-resources-cif
     role: technical-definition
@@ -380,6 +398,12 @@ resources:
     resource_id: nexus
   - type: complements
     resource_id: nexus
+  scientific_domains:
+  - materials-science
+  - chemistry
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: functional-mock-up-interface-fmi
   name: Functional Mock-up Interface (FMI)
   url: https://fmi-standard.org/docs/3.0/
@@ -405,9 +429,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: modelica-association-project-fmi
-  domains:
-  - engineering
-  - cross-domain
   source_refs:
   - ref_id: fmi-standard-org-docs-3-0
     role: technical-definition
@@ -426,6 +447,12 @@ resources:
   relations:
   - type: alternative-to
     resource_id: combine-omex-archive
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts:
+  - engineering
+  - cross-domain
+  artifact_classes: []
 - id: nexus
   name: NeXus
   url: https://www.nexusformat.org/
@@ -450,9 +477,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-validator
   steward_id: nexus-international-advisory-committee-niac
-  domains:
-  - physics
-  - materials-science
   source_refs:
   - ref_id: nexusformat-org-root
     role: technical-definition
@@ -475,6 +499,12 @@ resources:
   relations:
   - type: complements
     resource_id: climate-and-forecast-cf-metadata-conventions
+  scientific_domains:
+  - physics
+  - materials-science
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ogc-api-coverages
   name: OGC API - Coverages
   url: https://ogcapi.ogc.org/coverages/
@@ -497,9 +527,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: open-geospatial-consortium-ogc
-  domains:
-  - geospatial
-  - environmental-science
   source_refs:
   - ref_id: ogcapi-ogc-org-coverages
     role: technical-definition
@@ -523,6 +550,12 @@ resources:
     resource_id: spatiotemporal-asset-catalog-stac
   - type: complements
     resource_id: climate-and-forecast-cf-metadata-conventions
+  scientific_domains:
+  - geospatial
+  - environmental-science
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ogc-api-features
   name: OGC API - Features
   url: https://ogcapi.ogc.org/features/
@@ -546,8 +579,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: open-geospatial-consortium-ogc
-  domains:
-  - geospatial
   source_refs:
   - ref_id: ogcapi-ogc-org-features
     role: technical-definition
@@ -567,3 +598,8 @@ resources:
   relations:
   - type: complements
     resource_id: spatiotemporal-asset-catalog-stac
+  scientific_domains:
+  - geospatial
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []

@@ -44,7 +44,10 @@ def _resource(**overrides):
         "implementation_status": "multiple-independent",
         "conformance_status": "none-known",
         "steward_id": "example-steward",
-        "domains": ["cross-domain"],
+        "scientific_domains": [],
+        "integration_functions": [],
+        "infrastructure_contexts": ["cross-domain"],
+        "artifact_classes": [],
         "source_refs": [
             {"ref_id": "fixture-ref-1", "role": "technical-definition"},
             {"ref_id": "fixture-ref-2", "role": "implementation"},

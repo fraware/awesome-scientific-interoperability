@@ -19,8 +19,6 @@ resources:
   evidence_types: []
   implementation_status: multiple-independent
   conformance_status: public-validator
-  domains:
-  - cross-domain
   decision_basis: Widely used packaging contract for research objects with public validators.
   boundary_note: Packaging conformance does not prove reproducibility.
   reviewed_on: '2026-08-01'
@@ -34,3 +32,8 @@ resources:
   - ref_id: fixture-ref-2
     role: technical-definition
   relations: []
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
