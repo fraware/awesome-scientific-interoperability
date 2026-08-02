@@ -85,9 +85,9 @@ Structured candidate reviews evaluated whether additional main-list entries were
 
 Exclusions and watchlist placements are recorded in the candidate review files and [source-notes.md](source-notes.md).
 
-## Current corpus status (2026-08-01)
+## Current corpus status (2026-08-02)
 
-- **Main-list entries:** 87 (README and catalog parity enforced by CI).
+- **Main-list entries:** 92 on the Issue #44 Batch A candidate tree (README and catalog parity enforced by CI).
 - **Section review files:** 11 under `docs/reviews/`.
 - **Gap review files:** 4 under `docs/candidate-reviews/`.
 - **Review freshness:** Enforced by `scripts/check_review_freshness.py` in CI.
@@ -116,3 +116,16 @@ The following remain open as of 2026-08-01:
 - [Publishing and repository operations](publishing.md)
 - [Validation report](validation-report.md)
 - [Engineering takeover specification](engineering-takeover-specification.md) — PR-20, PR-21
+
+## Issue #44 Batch A — pending human maintainer review (2026-08-02)
+
+**Scope:** Proposed admission of SBML, SED-ML, CellML, BIDS, and NWB.
+
+The records were prepared through AI-assisted primary-source review and remain marked `review_type: author` with a conflict disclosure stating that human maintainer approval is required before merge. The PR must not be represented as independently reviewed until a maintainer records that approval.
+
+Review artifacts:
+
+- [Data and Digital Objects](reviews/data-and-digital-objects.md)
+- [Provenance and Evidence](reviews/provenance-and-evidence.md)
+- [Computational models decision guide](decision-guides/systems-biology-models.md)
+- [Neuroscience data decision guide](decision-guides/neuroscience-data-standards.md)

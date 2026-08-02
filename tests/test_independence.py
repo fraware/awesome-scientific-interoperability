@@ -234,10 +234,12 @@ class IndependenceValidatorTests(unittest.TestCase):
             sorted(mi),
             [
                 "bagit",
+                "brain-imaging-data-structure-bids",
                 "common-workflow-language-cwl",
                 "dicomweb",
                 "ga4gh-tool-registry-service-trs",
                 "optimade",
+                "systems-biology-markup-language-sbml",
                 "workflow-description-language-wdl",
             ],
         )

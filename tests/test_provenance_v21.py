@@ -38,12 +38,12 @@ class ProvenanceV21Tests(unittest.TestCase):
     def test_taxonomy_counts(self) -> None:
         taxonomy = catalog_model.load_taxonomy()
         self.assertEqual(len(taxonomy["resource_kinds"]), 14)
-        self.assertEqual(len(taxonomy["scientific_domains"]), 26)
+        self.assertEqual(len(taxonomy["scientific_domains"]), 27)
         self.assertEqual(len(taxonomy["integration_functions"]), 14)
         self.assertEqual(len(taxonomy["infrastructure_contexts"]), 5)
         self.assertEqual(len(taxonomy["artifact_classes"]), 2)
         self.assertEqual(len(taxonomy["claim_roles"]), 8)
-        self.assertEqual(len(catalog_model.domain_ids()), 47)
+        self.assertEqual(len(catalog_model.domain_ids()), 48)
 
     def test_registries_load(self) -> None:
         references = catalog_model.load_references()

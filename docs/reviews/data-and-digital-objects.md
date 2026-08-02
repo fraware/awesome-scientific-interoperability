@@ -1,7 +1,7 @@
 # Review notes: Data and Digital Objects
 
-**Review date:** 2026-08-01  
-**Reviewer role:** Section reviewer (PR-05 catalog migration B)  
+**Review date:** 2026-08-01
+**Reviewer role:** Section reviewer (PR-05 catalog migration B)
 **Records migrated:** 7
 
 ## Sources inspected
@@ -48,3 +48,18 @@ None.
 
 - FMI and RO-Crate multiple-independent claims adjusted to reference-and-others where typed independence evidence remained below threshold after enrichment.
 
+
+## Issue #44 Batch A admissions (2026-08-02)
+
+**Status:** AI-assisted author review complete; human maintainer approval required before merge.
+
+| Resource | Primary evidence | Decision |
+|---|---|---|
+| SBML | Level 3 Version 2 Core Release 2; libSBML; COPASI; Tellurium; SBML Test Suite | Admit as established exchange standard with two separately operated implementations and public suite |
+| CellML | CellML 2.0; libCellML; OpenCOR | Admit as established modular model standard; retain `reference-and-others` and `none-known` conformance |
+| BIDS | BIDS 1.11.1; MNE-BIDS; HeuDiConv; BIDS Validator | Admit as established dataset and metadata standard with two independent operator identities and public validator |
+| NWB | NWB Schema; PyNWB; MatNWB; AqNWB; NWB Inspector | Admit as established neurophysiology exchange standard; retain `reference-and-others` because core APIs share NWB stewardship |
+
+**Boundary decisions:** SBML versus CellML is model-class dependent; BIDS and NWB are complementary; generic HDF5 and NIfTI remain excluded under DR-001.
+
+**Conflict disclosure:** None identified. The records explicitly retain pending human maintainer approval in their review provenance.

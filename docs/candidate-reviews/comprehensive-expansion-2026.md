@@ -10,12 +10,12 @@ The expansion registry is machine-readable under `catalog/expansion-candidates.y
 
 The review contains:
 
-- **61 candidates**;
-- **58 distinct interoperability families**;
-- **20 P0 admission candidates**;
+- **56 candidates**;
+- **54 distinct interoperability families**;
+- **15 P0 admission candidates**;
 - **26 P1 boundary-review candidates**;
 - **15 P2 candidates**;
-- **20 `admission-pr`**, **28 `boundary-review`**, and **13 `watchlist`** dispositions.
+- **15 `admission-pr`**, **28 `boundary-review`**, and **13 `watchlist`** dispositions.
 
 Comprehensiveness here means systematic coverage of consequential interoperability mechanisms. It does not mean listing every scientific format, software package, ontology, or implementation.
 
@@ -25,7 +25,7 @@ A P0 candidate must satisfy all of the following before a focused admission PR i
 
 1. It exposes a public, inspectable contract such as a specification, schema, API, exchange format, or conformance mechanism.
 2. The connected scientific objects or systems and the mechanism joining them can be stated precisely.
-3. It fills a material integration problem that the present 87-resource corpus does not answer adequately.
+3. It fills a material integration problem that the current main-list corpus does not answer adequately.
 4. It has credible stewardship and implementation or institutional-adoption evidence.
 5. It adds decision value beyond an existing resource or a more appropriate family-level representative.
 6. At least three primary technical sources are recorded in the candidate registry.
@@ -36,19 +36,13 @@ P1 resources have credible technical value but need an explicit decision about f
 
 ### Systems biology and computational model exchange
 
-The list contains the SBML Test Suite but omits SBML itself. It also lacks SED-ML and CellML, leaving no direct representation of the core model and simulation-experiment exchange contracts used across systems biology and physiological modeling.
-
-P0 candidates:
-
-- Systems Biology Markup Language (SBML);
-- Simulation Experiment Description Markup Language (SED-ML);
-- CellML.
+Batch A admits SBML, SED-ML, and CellML, adding direct representation of model structure, simulation-experiment description, and modular mathematical-model exchange across systems biology and physiological modeling.
 
 Boundary candidates include NeuroML, SBOL, BioPAX, SBGN, SSP, and DCP. These should be assessed by distinct role: model structure, experiment description, design exchange, pathway knowledge, visual notation, system composition, and distributed co-simulation.
 
 ### Neuroscience
 
-The current corpus has no principal neuroscience data standard. BIDS and NWB answer different integration problems and both merit focused admission review:
+Batch A admits two principal neuroscience data standards that answer different integration problems:
 
 - **BIDS** standardizes dataset organization, filenames, sidecar metadata, modalities, and derivatives.
 - **NWB** standardizes neurophysiology acquisition, processing, analysis, and experimental metadata through an extensible schema and container.
@@ -118,36 +112,21 @@ OCFL and Data Package address gaps left by BagIt and RO-Crate:
 
 OCFL is already on the structured watchlist; the expansion registry records that overlap explicitly. PREMIS, SHACL, Zarr, NetCDF, HDF5, Arrow, and Parquet require substrate or preservation-boundary decisions and should not enter the main list solely because they are widely used.
 
-## P0 admission queue
+## Batch A admitted (2026-08-02)
 
-The complete first-order queue is:
+The first five P0 candidates have moved from the expansion registry into the canonical catalog:
 
 1. Systems Biology Markup Language (SBML)
 2. Simulation Experiment Description Markup Language (SED-ML)
 3. CellML
 4. Brain Imaging Data Structure (BIDS)
 5. Neurodata Without Borders (NWB)
-6. OME-NGFF
-7. Flexible Image Transport System (FITS)
-8. IVOA Table Access Protocol (TAP)
-9. IVOA VOTable
-10. GA4GH Variation Representation Specification (VRS)
-11. GA4GH Phenopackets
-12. GA4GH htsget
-13. GA4GH refget Sequences
-14. Minimum Information about any (X) Sequence (MIxS)
-15. Ecological Metadata Language (EML)
-16. HUPO-PSI mzML
-17. Oxford Common File Layout (OCFL)
-18. Data Package Standard
-19. OMOP Common Data Model
-20. CDISC Operational Data Model (ODM)
 
-This queue is a research conclusion, not an instruction to merge twenty entries at once. Each resource must be migrated into the live catalog model used by the engineering work, connected through typed relationships when available, and validated against the exact main head.
+Their admission records include claim-specific references, implementation identities, typed relations, four-dimensional taxonomy, review provenance, and direct decision paths. The remaining P0 admission queue contains 15 resources.
 
 ## Recommended PR sequence
 
-### Batch A — systems biology and neuroscience anchors
+### Batch A — systems biology and neuroscience anchors — completed
 
 Candidate set:
 

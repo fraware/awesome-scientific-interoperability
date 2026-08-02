@@ -1,7 +1,7 @@
 # Review notes: Provenance and Evidence
 
-**Review date:** 2026-08-01  
-**Reviewer role:** Section reviewer (PR-05 catalog migration B)  
+**Review date:** 2026-08-01
+**Reviewer role:** Section reviewer (PR-05 catalog migration B)
 **Records migrated:** 5
 
 ## Sources inspected
@@ -34,3 +34,15 @@ None.
 
 - Enriched BioCompute and W3C PROV/CWLProv links; downgraded thin documented-tests claims to none-known where no suite artifact existed.
 
+
+## Issue #44 Batch A admission: SED-ML (2026-08-02)
+
+**Status:** AI-assisted author review complete; human maintainer approval required before merge.
+
+- Inspected SED-ML Level 1 Version 5, community governance, the official software showcase, libSEDML, COPASI support, and BioSimulators Test Suite evidence.
+- Admitted SED-ML as a software-independent simulation-experiment specification.
+- Recorded `reference-and-others` rather than `multiple-independent` because implementation feature and version coverage differs across tools.
+- Recorded `documented-tests` rather than universal public conformance because the public BioSimulators suite concentrates on established feature subsets.
+- Typed SED-ML as complementary to SBML, CellML, COMBINE Archive, and BioSimulators Test Suite; distinguished prospective experiment intent from execution provenance.
+
+**Conflict disclosure:** None identified. Human maintainer approval remains required before merge.

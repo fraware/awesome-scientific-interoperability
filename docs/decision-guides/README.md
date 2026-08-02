@@ -15,6 +15,8 @@ Problem-oriented comparison documents for overlapping interoperability mechanism
 | [Laboratory interoperability](laboratory-interoperability.md) | SiLA 2, OPC UA LADS, Autoprotocol, AnIML, ADF, FHIR, LOINC |
 | [Scientific agents and tool interfaces](scientific-agents-and-tool-interfaces.md) | MCP, ToolUniverse, emerging watchlist protocols |
 | [Controlled data access](controlled-data-access.md) | GA4GH Passports, DUO, emerging policy packaging |
+| [Computational models and simulation experiments](systems-biology-models.md) | SBML, CellML, SED-ML, COMBINE Archive, conformance suites |
+| [Neuroscience dataset and neurophysiology exchange](neuroscience-data-standards.md) | BIDS, NWB, DICOMweb, NeXus |
 
 ## How to use these guides
 

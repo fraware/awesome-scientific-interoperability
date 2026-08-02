@@ -94,6 +94,12 @@ resources:
     resource_id: ro-crate
   - type: complements
     resource_id: biocompute-objects
+  - type: complements
+    resource_id: systems-biology-markup-language-sbml
+  - type: complements
+    resource_id: simulation-experiment-description-markup-language-sed-ml
+  - type: complements
+    resource_id: cellml
   scientific_domains:
   - computational-biology
   - systems-biology
@@ -553,6 +559,8 @@ resources:
   relations:
   - type: complements
     resource_id: climate-and-forecast-cf-metadata-conventions
+  - type: complements
+    resource_id: neurodata-without-borders-nwb
   scientific_domains:
   - physics
   - materials-science
@@ -675,3 +683,271 @@ resources:
     reviewed_on: '2026-08-01'
     conflict_disclosure: none
     decision_record: docs/reviews/
+- id: systems-biology-markup-language-sbml
+  name: Systems Biology Markup Language (SBML)
+  url: https://sbml.org/documents/specifications/level-3/version-2/core/release-2/
+  section: Data and Digital Objects
+  resource_kind: exchange-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Systems-biology models
+  - simulation tools
+  - model repositories
+  - analysis platforms
+  mechanism: Versioned XML model language with normative mathematical semantics and extensible Level 3
+    packages
+  summary: XML-based standard for exchanging quantitative systems-biology models, including species, reactions,
+    mathematical rules, events, units, and extensible Level 3 packages.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - conformance-suite
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: public-suite
+  steward_id: sbml-community
+  scientific_domains:
+  - systems-biology
+  - biosimulation
+  - computational-biology
+  integration_functions:
+  - computational-science
+  - research-data
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: sbml-org-level-3-version-2-core-release-2
+    role: technical-definition
+  - ref_id: sbml-org-root
+    role: stewardship
+  - ref_id: github-com-sbmlteam-libsbml
+    role: implementation
+  - ref_id: github-com-copasi-copasi
+    role: implementation
+  - ref_id: github-com-sys-bio-tellurium
+    role: implementation
+  - ref_id: github-com-sbmlteam-sbml-test-suite
+    role: conformance
+  relations:
+  - type: alternative-to
+    resource_id: cellml
+  - type: complements
+    resource_id: simulation-experiment-description-markup-language-sed-ml
+  - type: complements
+    resource_id: combine-omex-archive
+  - type: complements
+    resource_id: sbml-test-suite
+  decision_basis: Canonical systems-biology model exchange language with public conformance tests and
+    separately operated simulation tools.
+  boundary_note: Encodes models and mathematical semantics; simulation procedures belong in SED-ML, and
+    multi-file packaging belongs in COMBINE/OMEX.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-a
+- id: cellml
+  name: CellML
+  url: https://www.cellml.org/specifications/cellml_2.0/
+  section: Data and Digital Objects
+  resource_kind: exchange-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Mathematical models
+  - physiological modeling tools
+  - model repositories
+  - simulation environments
+  mechanism: XML and MathML language for modular components, variables, units, imports, resets, and mathematical
+    relationships
+  summary: XML and MathML-based standard for exchanging modular mathematical models with explicit components,
+    variables, units, imports, resets, and reusable model composition.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - institutional-adoption
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  steward_id: cellml-community
+  scientific_domains:
+  - biosimulation
+  - systems-biology
+  - computational-biology
+  integration_functions:
+  - computational-science
+  - research-data
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: cellml-org-specifications-cellml-2-0
+    role: technical-definition
+  - ref_id: cellml-org-root
+    role: stewardship
+  - ref_id: github-com-cellml-libcellml
+    role: implementation
+  - ref_id: opencor-ws-simulation-experiment-view
+    role: implementation
+  relations:
+  - type: alternative-to
+    resource_id: systems-biology-markup-language-sbml
+  - type: complements
+    resource_id: simulation-experiment-description-markup-language-sed-ml
+  - type: complements
+    resource_id: combine-omex-archive
+  decision_basis: Strongest maintained exchange standard for modular physiological and mathematical models
+    with explicit units and imports.
+  boundary_note: Optimized for modular equation-based models; reaction-network packages and broad biochemical
+    semantics are generally stronger in SBML.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-a
+- id: brain-imaging-data-structure-bids
+  name: Brain Imaging Data Structure (BIDS)
+  url: https://bids-specification.readthedocs.io/en/stable/
+  section: Data and Digital Objects
+  resource_kind: metadata-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Organizational
+  connects:
+  - Neuroscience acquisition systems
+  - research datasets
+  - data archives
+  - analysis pipelines
+  mechanism: Standardized directory hierarchy, filenames, JSON and TSV sidecars, modality rules, derivatives,
+    and schema validation
+  summary: Community specification for organizing and describing neuroimaging, electrophysiology, microscopy,
+    behavioral, and derivative datasets through standardized paths and sidecar metadata.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - public-validator
+  - institutional-adoption
+  implementation_status: multiple-independent
+  conformance_status: public-validator
+  steward_id: bids-community
+  scientific_domains:
+  - neuroscience
+  - biomedical
+  integration_functions:
+  - research-data
+  - reproducibility
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: bids-specification-readthedocs-stable
+    role: technical-definition
+  - ref_id: bids-neuroimaging-io-root
+    role: stewardship
+  - ref_id: github-com-mne-tools-mne-bids
+    role: implementation
+  - ref_id: github-com-nipy-heudiconv
+    role: implementation
+  - ref_id: github-com-bids-standard-bids-validator
+    role: conformance
+  relations:
+  - type: complements
+    resource_id: neurodata-without-borders-nwb
+  - type: complements
+    resource_id: dicomweb
+  decision_basis: Dominant cross-tool dataset organization and metadata contract for multimodal neuroscience,
+    with independent writers and a public validator.
+  boundary_note: Organizes datasets and metadata while retaining modality file formats; continuous neurophysiology
+    acquisition and rich internal data structures are stronger in NWB.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-02-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-a
+- id: neurodata-without-borders-nwb
+  name: Neurodata Without Borders (NWB)
+  url: https://nwb.org/tools/core/nwb-schema/
+  section: Data and Digital Objects
+  resource_kind: exchange-standard
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Neurophysiology acquisition systems
+  - experimental datasets
+  - analysis tools
+  - data archives
+  mechanism: Extensible schema over HDF5 with typed neurodata objects, cross-language APIs, extensions,
+    and validation
+  summary: Extensible schema and HDF5-based standard for exchanging neurophysiology acquisition, processing,
+    analysis, behavioral, and experimental metadata across tools and archives.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - public-validator
+  - institutional-adoption
+  implementation_status: reference-and-others
+  conformance_status: public-validator
+  steward_id: neurodata-without-borders
+  scientific_domains:
+  - neuroscience
+  - life-sciences
+  - biomedical
+  integration_functions:
+  - research-data
+  - laboratory-data
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: nwb-org-nwb-schema
+    role: technical-definition
+  - ref_id: nwb-schema-readthedocs-root
+    role: technical-definition
+  - ref_id: nwb-org-about
+    role: stewardship
+  - ref_id: github-com-neurodatawithoutborders-pynwb
+    role: implementation
+  - ref_id: github-com-neurodatawithoutborders-matnwb
+    role: implementation
+  - ref_id: github-com-neurodatawithoutborders-aqnwb
+    role: implementation
+  - ref_id: github-com-neurodatawithoutborders-nwbinspector
+    role: conformance
+  relations:
+  - type: complements
+    resource_id: brain-imaging-data-structure-bids
+  - type: complements
+    resource_id: nexus
+  decision_basis: Strongest maintained standard for rich neurophysiology data exchange, cross-language
+    access, extensions, and schema-aware validation.
+  boundary_note: Defines internal neurophysiology data structures; BIDS is stronger for cross-dataset
+    organization, and NWB does not replace repository packaging or provenance records.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-02-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-a

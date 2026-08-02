@@ -403,3 +403,53 @@ stewards:
   type: community
   url: https://ohif.org/
   aliases: []
+- id: bids-community
+  name: BIDS community
+  type: community
+  url: https://bids.neuroimaging.io/
+  aliases:
+  - Brain Imaging Data Structure community
+- id: cellml-community
+  name: CellML community
+  type: community
+  url: https://www.cellml.org/
+  aliases: []
+- id: copasi-project
+  name: COPASI project
+  type: community
+  url: https://copasi.org/
+  aliases: []
+- id: mne-project
+  name: MNE project
+  type: community
+  url: https://mne.tools/
+  aliases:
+  - MNE-Python project
+- id: neurodata-without-borders
+  name: Neurodata Without Borders
+  type: community
+  url: https://nwb.org/
+  aliases:
+  - NWB
+- id: nipy-community
+  name: Neuroimaging in Python community
+  type: community
+  url: https://nipy.org/
+  aliases:
+  - NiPy
+- id: opencor-project
+  name: OpenCOR project
+  type: community
+  url: https://opencor.ws/
+  aliases: []
+- id: sed-ml-community
+  name: SED-ML community
+  type: community
+  url: https://sed-ml.org/
+  aliases:
+  - Simulation Experiment Description Markup Language community
+- id: tellurium-project
+  name: Tellurium project
+  type: community
+  url: https://tellurium.readthedocs.io/
+  aliases: []

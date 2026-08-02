@@ -342,3 +342,75 @@ resources:
     reviewed_on: '2026-08-01'
     conflict_disclosure: none
     decision_record: docs/reviews/
+- id: simulation-experiment-description-markup-language-sed-ml
+  name: Simulation Experiment Description Markup Language (SED-ML)
+  url: https://sed-ml.org/specifications.html
+  section: Provenance and Evidence
+  resource_kind: specification
+  interoperability_layers:
+  - Syntactic
+  - Operational
+  - Evidentiary
+  connects:
+  - Computational models
+  - simulation procedures
+  - simulation tools
+  - result generators
+  mechanism: XML specification for model references, changes, simulations, tasks, repeated tasks, data
+    generators, and outputs
+  summary: Software-independent XML standard for exchanging reproducible simulation experiments, including
+    model changes, simulation procedures, tasks, result processing, and requested outputs.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - independent-implementation
+  - documented-tests
+  - interoperability-demonstration
+  implementation_status: reference-and-others
+  conformance_status: documented-tests
+  steward_id: sed-ml-community
+  scientific_domains:
+  - biosimulation
+  - systems-biology
+  - computational-biology
+  integration_functions:
+  - reproducibility
+  - computational-science
+  - provenance
+  infrastructure_contexts: []
+  artifact_classes: []
+  source_refs:
+  - ref_id: sed-ml-org-specifications
+    role: technical-definition
+  - ref_id: sed-ml-org-root
+    role: stewardship
+  - ref_id: github-com-fbergmann-libsedml
+    role: implementation
+  - ref_id: copasi-org-sedml-import-export
+    role: implementation
+  - ref_id: sed-ml-org-showcase
+    role: adoption
+  - ref_id: github-com-biosimulators-biosimulators-test-suite
+    role: conformance
+  relations:
+  - type: complements
+    resource_id: systems-biology-markup-language-sbml
+  - type: complements
+    resource_id: cellml
+  - type: complements
+    resource_id: combine-omex-archive
+  - type: complements
+    resource_id: biosimulators-test-suite
+  decision_basis: Canonical software-independent contract for moving simulation experiment intent and
+    requested outputs across modeling tools.
+  boundary_note: Describes prospective simulation experiments rather than model semantics or execution
+    traces; current public test coverage concentrates on established SED-ML feature subsets.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-a

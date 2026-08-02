@@ -480,6 +480,8 @@ resources:
   relations:
   - type: alternative-to
     resource_id: hl7-fhir
+  - type: complements
+    resource_id: brain-imaging-data-structure-bids
   scientific_domains:
   - life-sciences
   - clinical-laboratory

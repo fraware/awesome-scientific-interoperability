@@ -78,6 +78,11 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 - [Workflow Run RO-Crate](https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/) - RO-Crate profile for exchanging workflow-run inputs, outputs, software, execution records, and provenance across workflow systems.
 - [Workflow Testing RO-Crate](https://w3id.org/ro/wftest) - Portable research-object profile for exchanging workflow test suites, inputs, expected outputs, and test services.
 
+- [Systems Biology Markup Language (SBML)](https://sbml.org/documents/specifications/level-3/version-2/core/release-2/) - XML-based standard for exchanging quantitative systems-biology models, including species, reactions, mathematical rules, events, units, and extensible Level 3 packages.
+- [CellML](https://www.cellml.org/specifications/cellml_2.0/) - XML and MathML-based standard for exchanging modular mathematical models with explicit components, variables, units, imports, resets, and reusable model composition.
+- [Brain Imaging Data Structure (BIDS)](https://bids-specification.readthedocs.io/en/stable/) - Community specification for organizing and describing neuroimaging, electrophysiology, microscopy, behavioral, and derivative datasets through standardized paths and sidecar metadata.
+- [Neurodata Without Borders (NWB)](https://nwb.org/tools/core/nwb-schema/) - Extensible schema and HDF5-based standard for exchanging neurophysiology acquisition, processing, analysis, behavioral, and experimental metadata across tools and archives.
+
 ## Research Software and Environments
 
 - [Apptainer / Singularity Image Format](https://apptainer.org/docs/user/latest/introduction.html) - Portable container images and runtime designed for scientific and HPC environments; connects scientific software environments, HPC systems, and container registries.
@@ -108,6 +113,8 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 - [P-Plan](https://www.opmw.org/model/p-plan/) - W3C PROV extension linking prospective plans, workflow structures, variables, and execution provenance.
 - [runcrate](https://www.researchobject.org/runcrate/) - Tools for inspecting, replaying, and converting Workflow Run RO-Crate and CWLProv execution records.
 - [W3C PROV](https://www.w3.org/TR/prov-o/) - Cross-domain data model, ontology, and serializations for exchanging provenance among independent producers and consumers.
+
+- [Simulation Experiment Description Markup Language (SED-ML)](https://sed-ml.org/specifications.html) - Software-independent XML standard for exchanging reproducible simulation experiments, including model changes, simulation procedures, tasks, result processing, and requested outputs.
 
 ## Knowledge Systems and Publications
 
