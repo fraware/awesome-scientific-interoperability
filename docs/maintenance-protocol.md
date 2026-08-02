@@ -26,9 +26,11 @@ Maintainer roles, the approval matrix, and recurring editorial decisions are doc
 
 - Run the network link workflow and download the JSON/Markdown artifacts.
 - Remediate unresolved `permanent-failure`, `invalid-url`, and `tls-or-dns-failure` classifications before the next release.
+- Run a full-scope offline reference audit (`python scripts/check_links.py --offline --scope all`) and refresh `docs/data-quality-baseline.md` from `python scripts/audit_data_quality.py --as-of <review-date>`.
 - Review section balance and duplicate functionality.
 - Reassess fast-moving laboratory and agent interoperability resources.
 - Confirm that validators and conformance suites still reflect current specifications.
+- Consider whether selected evidence-depth warnings from `audit_data_quality.py` should be promoted to fail-closed validator rules (with fixtures) after a clean baseline quarter.
 
 ## Link Remediation Rules
 
@@ -46,6 +48,7 @@ Network audits classify each main-list URL as one of: `ok`, `redirected`, `acces
 - Move obsolete resources to `archive.md` with the date and reason.
 - Recheck the taxonomy and admission rules against the North Star.
 - Confirm that the catalog schema and contribution templates still support the editorial process.
+- Reassess whether `config/catalog-taxonomy.yaml` domains should gain an optional hierarchy (discipline vs infrastructure function) as a separate taxonomy PR — do not mix ontology redesign with evidence edits.
 
 ## Release Invariant
 

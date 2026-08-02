@@ -56,3 +56,11 @@ After each evidence batch merges:
 1. Re-run the audit with the batch review date.
 2. Replace the counts in this file from that exact run.
 3. Keep Quality CI artifacts for the JSON/Markdown audit reports.
+
+## Post-queue hardening (tracked)
+
+After both queues remain at zero for a maintenance quarter:
+
+1. Consider promoting selected depth rules from audit warning to validator fail-closed checks, only with fixtures and an explicit decision record.
+2. Keep any domain hierarchy work as a separate taxonomy PR.
+3. Continue the quarterly full-scope offline reference audit cadence in [maintenance-protocol.md](maintenance-protocol.md).
