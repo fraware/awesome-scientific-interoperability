@@ -1,19 +1,21 @@
 name: Apply catalog v2.1 payload
 
 on:
-  push:
-    branches: [data/catalog-provenance-v21]
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
 
 permissions:
   contents: write
 
 jobs:
   apply:
-    if: github.actor != 'github-actions[bot]'
+    if: github.head_ref == 'data/catalog-provenance-v21' && github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
         with:
+          ref: data/catalog-provenance-v21
           fetch-depth: 0
       - name: Decode and apply validated payload
         shell: bash
