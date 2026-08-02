@@ -243,7 +243,7 @@ def build_jsonld_payload(
         "@context": {
             "asi": (
                 "https://github.com/fraware/awesome-scientific-interoperability/"
-                "blob/main/docs/catalog-model-v2.2.md#"
+                "blob/main/docs/catalog-model.md#"
             ),
             "schema": "https://schema.org/",
             "id": "@id",

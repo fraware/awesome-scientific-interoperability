@@ -6,7 +6,7 @@ labels:
 body:
   - type: markdown
     attributes:
-      value: Read `docs/taxonomy.md`, `docs/reviewer-roles.md`, and `docs/decision-records.md` before submitting. Taxonomy changes require lead maintainer approval plus two section reviewers and must include a reasoned decision record—not a cosmetic reorganization. Validators and CI do not authorize taxonomy changes.
+      value: Read `docs/taxonomy.md`, `docs/governance.md`, and `docs/decision-records.md` before submitting. Taxonomy changes require lead maintainer approval plus two section reviewers and must include a reasoned decision record—not a cosmetic reorganization. Validators and CI do not authorize taxonomy changes.
   - type: dropdown
     id: change_type
     attributes:

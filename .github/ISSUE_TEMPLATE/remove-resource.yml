@@ -6,7 +6,7 @@ labels:
 body:
   - type: markdown
     attributes:
-      value: Read `docs/editorial-policy.md`, `docs/reviewer-roles.md`, and `docs/decision-records.md` before submitting. Removal requires two maintainer approvals, including one section reviewer for the affected section. Update `README.md`, the catalog shard, `archive.md`, and `docs/reviews/` in the same pull request.
+      value: Read `docs/editorial-policy.md`, `docs/governance.md`, and `docs/decision-records.md` before submitting. Removal requires two maintainer approvals, including one section reviewer for the affected section. Update `README.md`, the catalog shard, `archive.md`, and `docs/reviews/` in the same pull request.
   - type: input
     id: resource
     attributes:

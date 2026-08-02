@@ -212,5 +212,5 @@ Read [contributing.md](contributing.md) before proposing a resource. A proposal 
 
 - The manually edited README is authoritative. The [machine-readable catalog](catalog/resources.yaml) exists for validation, maintenance, and downstream analysis; it does not generate this list.
 - Decision paths for problems, guides, the explorer, local queries, and the watchlist appear under How to use this list.
-- Editorial decisions follow the [project charter](docs/project-charter.md), [taxonomy](docs/taxonomy.md), and [conflict-of-interest policy](docs/conflicts-of-interest.md).
-- Release checks and publication instructions are recorded in the [validation report](docs/validation-report.md) and [publishing guide](docs/publishing.md).
+- Editorial decisions follow the [project charter](docs/project-charter.md), [taxonomy](docs/taxonomy.md), [governance](docs/governance.md), and [conflict-of-interest policy](docs/conflicts-of-interest.md).
+- Documentation index: [docs/README.md](docs/README.md). Release operations for maintainers: [docs/maintainers/publishing.md](docs/maintainers/publishing.md).

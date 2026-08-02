@@ -435,7 +435,7 @@ def build_about(out_dir: Path) -> None:
     <div class="panel">
       <p><strong>North Star:</strong> a technically competent user can identify the strongest available interoperability mechanism for a concrete scientific integration problem without conducting a new landscape search.</p>
       <p><strong>Canonical list:</strong> the <a href="{README_URL}">README on GitHub</a> is manually authored and authoritative for inclusion.</p>
-      <p><strong>Governance limitation:</strong> until named domain section reviewers accept CODEOWNERS responsibility, this project remains under a single-maintainer limitation. See <a href="{REPO_URL}/blob/main/docs/community-governance.md">community governance</a> and <a href="{REPO_URL}/blob/main/docs/reviewer-roles.md">reviewer roles</a>.</p>
+      <p><strong>Governance limitation:</strong> until named domain section reviewers accept CODEOWNERS responsibility, this project remains under a single-maintainer limitation. See <a href="{REPO_URL}/blob/main/docs/governance.md">governance</a>.</p>
       <p><strong>Corrections:</strong> use repository issue forms to propose corrections or challenge evidence and guide recommendations.</p>
       <p><strong>Conflicts of interest:</strong> affiliated contributors do not sole-approve their own resources.</p>
     </div>

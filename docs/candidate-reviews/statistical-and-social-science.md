@@ -1,7 +1,7 @@
 # Candidate review: statistical and social-science interoperability gaps
 
 **Review date:** 2026-08-01  
-**Specification:** PR-16A (`docs/engineering-takeover-specification.md`)  
+**Review scope:** Statistical and social-science domain gap review  
 **Reviewer scope:** Mandatory candidates for statistical and social-science data exchange  
 **Inclusion cap:** 3 main-list additions
 
@@ -87,7 +87,7 @@ For each candidate the review applied the sentence test (*Resource enables X to 
 - [W3C RDF Data Cube Recommendation](https://www.w3.org/TR/vocab-data-cube/) — cube model compatible with SDMX
 - [Data Cube use cases](https://www.w3.org/TR/vocab-data-cube-use-cases/)
 
-**Rationale:** The vocabulary publishes multidimensional statistical observations as Linked Data. For the integration problems this list prioritizes—operational exchange among statistical producers and consumers—SDMX provides the stronger, ISO-backed contract including REST APIs and global DSD governance. RDF Data Cube remains valuable for RDF-native open-data portals but does not add a decision the corpus lacks once SDMX is present alongside [resource:w3c-data-catalog-vocabulary-dcat] and [resource:simple-knowledge-organization-system-skos]. Recorded in `docs/source-notes.md` to prevent repeated evaluation.
+**Rationale:** The vocabulary publishes multidimensional statistical observations as Linked Data. For the integration problems this list prioritizes—operational exchange among statistical producers and consumers—SDMX provides the stronger, ISO-backed contract including REST APIs and global DSD governance. RDF Data Cube remains valuable for RDF-native open-data portals but does not add a decision the corpus lacks once SDMX is present alongside [resource:w3c-data-catalog-vocabulary-dcat] and [resource:simple-knowledge-organization-system-skos]. Recorded in [decision records](../decision-records.md#notable-exclusions) to prevent repeated evaluation.
 
 ---
 

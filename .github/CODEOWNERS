@@ -3,7 +3,7 @@
 # The repository owner (@fraware) is the lead maintainer and currently owns all
 # paths. Section reviewers, catalog engineers, and release reviewers will be
 # added to the relevant paths as the maintainer team grows. Until then,
-# @fraware fulfills every role described in docs/reviewer-roles.md.
+# @fraware fulfills every role described in docs/governance.md.
 #
 # Automated tools and CI never gain CODEOWNERS authority. Validators enforce
 # consistency; humans decide inclusion, removal, and taxonomy.
@@ -38,10 +38,11 @@
 /docs/taxonomy.md @fraware
 /docs/editorial-policy.md @fraware
 /docs/conflicts-of-interest.md @fraware
-/docs/reviewer-roles.md @fraware
+/docs/governance.md @fraware
 /docs/decision-records.md @fraware
-/docs/maintenance-protocol.md @fraware
+/docs/maintenance.md @fraware
 /docs/project-charter.md @fraware
+/docs/maintainers/ @fraware
 
 # Schema, validators, and integrity tooling — catalog engineer plus lead maintainer
 /schema/ @fraware

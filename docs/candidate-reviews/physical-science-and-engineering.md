@@ -1,7 +1,7 @@
 # Candidate review: physical-science and engineering interoperability gaps
 
 **Review date:** 2026-08-01  
-**Specification:** PR-16B  
+**Review scope:** Physical-science and engineering domain gap review  
 **Inclusion cap:** 4 main-list additions
 
 ## Candidate outcomes
@@ -41,7 +41,7 @@
 
 ## Generic HDF5 — exclude
 
-Recorded in `docs/source-notes.md`. HDF5 alone does not supply scientific semantics; NeXus is the included HDF5 profile for this domain gap.
+Recorded in [decision records](../decision-records.md#notable-exclusions). HDF5 alone does not supply scientific semantics; NeXus is the included HDF5 profile for this domain gap.
 
 ## Conflict disclosure
 

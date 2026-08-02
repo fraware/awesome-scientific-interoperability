@@ -23,7 +23,7 @@ Commercial status, institutional reputation, funding, citation count, and GitHub
 | Affiliated resource removal or downgrade | Two approvals; at least one section reviewer for the affected section |
 | Affiliated correction (URL, typo, maintenance date) with no scope change | One non-affiliated maintainer plus green CI |
 
-See the full matrix in [reviewer roles](reviewer-roles.md).
+See the full matrix in [governance](governance.md).
 
 ## Tools and automation
 
