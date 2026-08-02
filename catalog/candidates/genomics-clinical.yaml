@@ -6,7 +6,9 @@ candidates:
   candidate_section: Identifiers and Discovery
   coverage_family: genomic-discovery
   priority: P1
-  disposition: boundary-review
+  disposition: deferred-family-review
+  deferred_family_id: ga4gh-discovery-and-access-concentration
+  scheduled_review: '2027-02-02'
   mechanism: Federated API for discovering genomic and phenotypic records through standardized query and response
     models.
   why_distinct: Provides privacy-aware distributed genomic discovery distinct from Service Registry and direct object
@@ -15,80 +17,96 @@ candidates:
   - https://www.ga4gh.org/product/beacon-api/
   - https://docs.genomebeacons.org/
   - https://github.com/ga4gh-beacon/beacon-v2
-  evidence_notes: GA4GH standard with ELIXIR and other implementations.
-  next_step: Compare against Service Registry, htsget, and Phenopackets before admission.
+  evidence_notes: Credible GA4GH discovery standard, but Batch C already admitted VRS, Phenopackets, htsget, and
+    refget. Further GA4GH discovery entries need an explicit family-concentration revisit rather than piecemeal admission.
+  next_step: Closed as deferred under ga4gh-discovery-and-access-concentration until a scheduled family review
+    reopens Beacon against Service Registry and Phenopackets roles.
 - id: ga4gh-hts-specifications
   name: GA4GH HTS Specifications (SAM/BAM/CRAM and VCF/BCF)
   official_url: https://samtools.github.io/hts-specs/
   candidate_section: Data and Digital Objects
   coverage_family: genomic-file-exchange
   priority: P1
-  disposition: boundary-review
+  disposition: rejected-represented-by
+  represented_by_resource_ids:
+  - ga4gh-htsget
   mechanism: Normative file-format specifications for aligned sequence reads and genomic variation records.
   why_distinct: Foundational genomic file exchange used by htsget and analysis tooling, but the family is broad.
   primary_sources:
   - https://samtools.github.io/hts-specs/
   - https://github.com/samtools/hts-specs
   - https://github.com/samtools/htslib
-  evidence_notes: Extremely broad implementation and adoption; decide one family entry versus separate read and
-    variant entries.
-  next_step: Apply family-level editorial policy and avoid format proliferation.
+  evidence_notes: Foundational formats remain essential infrastructure, but the catalog already surfaces regional
+    genomic retrieval through htsget. Admitting the entire SAM/BAM/CRAM and VCF/BCF family would proliferate formats
+    without adding a sharper North-Star decision than the access API already provides.
+  next_step: Closed as represented by ga4gh-htsget; reopen only if a decision guide requires file-format comparison
+    independent of retrieval APIs.
 - id: ga4gh-crypt4gh
   name: GA4GH Crypt4GH
   official_url: https://www.ga4gh.org/product/crypt4gh/
   candidate_section: Agents, Access, and Policy
   coverage_family: genomic-data-encryption
   priority: P2
-  disposition: watchlist
+  disposition: rejected-out-of-scope
   mechanism: File-container encryption format designed for genomic data and selective access to encrypted byte ranges.
   why_distinct: Potential scientific security interoperability exemplar linked to htsget and controlled-data access.
   primary_sources:
   - https://www.ga4gh.org/product/crypt4gh/
   - https://github.com/samtools/hts-specs/blob/master/crypt4gh.pdf
   - https://github.com/EGA-archive/crypt4gh
-  evidence_notes: GA4GH standard with implementations; decide whether cryptographic container standards belong in
-    core scope.
-  next_step: Boundary review after htsget and Passports expansion.
+  evidence_notes: Cryptographic container formats are real infrastructure but do not answer a distinct scientific
+    integration problem beyond access-policy and retrieval entries already in scope. Passports and htsget cover the
+    decision surface users need first.
+  next_step: Closed as out of scope for the main scientific-interoperability corpus; do not reopen without a dedicated
+    controlled-access packaging decision guide.
 - id: ga4gh-rnaget
   name: GA4GH RNAget
   official_url: https://www.ga4gh.org/product/rnaget/
   candidate_section: Workflows and Execution
   coverage_family: transcriptomics-data-access
   priority: P2
-  disposition: watchlist
+  disposition: rejected-out-of-scope
   mechanism: API for retrieving expression matrices and transcriptomic data across repositories.
   why_distinct: Extends GA4GH access patterns to RNA expression data.
   primary_sources:
   - https://www.ga4gh.org/product/rnaget/
   - https://github.com/ga4gh-rnaseq/schema
-  evidence_notes: Current product with implementations; adoption breadth should be compared with htsget.
-  next_step: Monitor production implementations and avoid GA4GH family overconcentration.
+  evidence_notes: Useful product, but GA4GH family concentration after Batch C outweighs the incremental
+    transcriptomics-access decision value. htsget already exemplifies GA4GH data-access interoperability.
+  next_step: Closed to avoid GA4GH overconcentration; reopen only after a family policy explicitly budgets another
+    access API role.
 - id: cdisc-define-xml
   name: CDISC Define-XML
   official_url: https://www.cdisc.org/standards/data-exchange/define-xml
   candidate_section: Metadata and Semantics
   coverage_family: clinical-submission-metadata
   priority: P2
-  disposition: watchlist
+  disposition: rejected-represented-by
+  represented_by_resource_ids:
+  - cdisc-operational-data-model-odm
   mechanism: ODM-based metadata standard for describing the structure and controlled terminology of clinical submission
     datasets.
   why_distinct: Adds machine-readable dataset-definition metadata for regulatory clinical research.
   primary_sources:
   - https://www.cdisc.org/standards/data-exchange/define-xml
-  evidence_notes: Important CDISC extension; likely best represented as a related profile under ODM.
-  next_step: Do not add separately unless decision guides require submission-specific comparison.
+  evidence_notes: Define-XML is an ODM-family submission profile. CDISC ODM already represents the operational clinical
+    exchange contract; a separate main-list entry would duplicate family coverage.
+  next_step: Closed as represented by cdisc-operational-data-model-odm unless submission-specific decision guidance
+    later requires an explicit Define-XML comparison.
 - id: openehr-archetype-model
   name: openEHR Archetype Model
   official_url: https://specifications.openehr.org/
   candidate_section: Metadata and Semantics
   coverage_family: clinical-knowledge-modeling
   priority: P2
-  disposition: watchlist
+  disposition: rejected-out-of-scope
   mechanism: Reference model, archetype language, templates, and service specifications for interoperable longitudinal
     health records.
   why_distinct: Potential complement to FHIR and OMOP at the semantic clinical-model layer.
   primary_sources:
   - https://specifications.openehr.org/
   - https://github.com/openEHR/specifications-ITS
-  evidence_notes: Substantial international adoption; breadth and healthcare focus require scope review.
-  next_step: Evaluate against FHIR and OMOP after clinical batch.
+  evidence_notes: Broad EHR modeling stack exceeds the catalog's clinical-research interoperability focus already
+    covered by FHIR for operational exchange and OMOP for analytical harmonization.
+  next_step: Closed as out of scope for this corpus; reopen only if a clinical knowledge-modeling decision guide is
+    approved beyond FHIR and OMOP.

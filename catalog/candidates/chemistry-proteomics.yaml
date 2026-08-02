@@ -6,7 +6,9 @@ candidates:
   candidate_section: Data and Digital Objects
   coverage_family: synthetic-biology-design-exchange
   priority: P1
-  disposition: boundary-review
+  disposition: deferred-family-review
+  deferred_family_id: biological-design-and-pathway-semantics
+  scheduled_review: '2027-02-02'
   mechanism: Machine-readable standard for exchanging genetic designs, components, sequences, interactions, activities,
     and provenance.
   why_distinct: Adds a major synthetic-biology design contract not represented by model or laboratory-procedure
@@ -15,30 +17,36 @@ candidates:
   - https://sbolstandard.org/
   - https://github.com/SynBioDex/SBOL-specification
   - https://github.com/SynBioDex/pySBOL3
-  evidence_notes: SBOL 3 specification and multiple libraries; evaluate current institutional adoption evidence.
-  next_step: Admission review with BioPAX, SBML, and Autoprotocol boundaries.
+  evidence_notes: Distinct design-exchange role from SBML/CellML, but synthetic-biology and pathway semantics should
+    be decided as one family with BioPAX rather than admitting adjacent COMBINE-adjacent standards one by one.
+  next_step: Closed as deferred under biological-design-and-pathway-semantics with BioPAX until the scheduled family
+    review.
 - id: biological-pathway-exchange-biopax
   name: Biological Pathway Exchange (BioPAX)
   official_url: https://www.biopax.org/
   candidate_section: Metadata and Semantics
   coverage_family: biological-pathway-knowledge-exchange
   priority: P1
-  disposition: boundary-review
+  disposition: deferred-family-review
+  deferred_family_id: biological-design-and-pathway-semantics
+  scheduled_review: '2027-02-02'
   mechanism: OWL ontology for exchanging pathways, molecular interactions, entities, evidence, provenance, and cross-references.
   why_distinct: Adds pathway knowledge exchange across databases and analysis tools.
   primary_sources:
   - https://www.biopax.org/
   - https://www.biopax.org/release/
   - https://github.com/BioPAX/Paxtools
-  evidence_notes: Stable Level 3 ontology and validator; maintenance cadence and current adoption require review.
-  next_step: Compare with SBGN and knowledge-graph entries.
+  evidence_notes: Stable pathway-knowledge ontology, but current maintenance cadence and overlap with SBML/knowledge
+    systems require a joint family decision with SBOL rather than immediate admission.
+  next_step: Closed as deferred under biological-design-and-pathway-semantics with SBOL until the scheduled family
+    review.
 - id: systems-biology-graphical-notation-sbgn
   name: Systems Biology Graphical Notation (SBGN)
   official_url: https://sbgn.github.io/
   candidate_section: Metadata and Semantics
   coverage_family: biological-diagram-exchange
   priority: P1
-  disposition: boundary-review
+  disposition: rejected-out-of-scope
   mechanism: Standard visual languages and exchange formats for process descriptions, entity relationships, and
     activity flows.
   why_distinct: Represents interoperable biological diagrams and visual semantics not covered by SBML or BioPAX.
@@ -46,15 +54,19 @@ candidates:
   - https://sbgn.github.io/
   - https://github.com/sbgn/sbgn
   - https://github.com/sbgn/libsbgn
-  evidence_notes: Community standard with exchange schema and multiple tools.
-  next_step: Decide whether visual-notation interoperability is in core scope.
+  evidence_notes: Visual-notation interoperability is real but secondary to executable model and data-exchange
+    contracts that drive North-Star integration decisions in this corpus.
+  next_step: Closed as out of scope; diagram exchange remains outside the core admission bar unless a dedicated
+    visual-semantics guide is approved.
 - id: hupo-psi-mzidentml
   name: HUPO-PSI mzIdentML
   official_url: https://hupo-psi.github.io/mzIdentML/mzidentml.html
   candidate_section: Data and Digital Objects
   coverage_family: proteomics-identification-exchange
   priority: P1
-  disposition: boundary-review
+  disposition: rejected-represented-by
+  represented_by_resource_ids:
+  - hupo-psi-mzml
   mechanism: Controlled-vocabulary-backed exchange format for peptide and protein identifications derived from mass
     spectra.
   why_distinct: Complements mzML raw and processed spectra with identification results.
@@ -62,15 +74,20 @@ candidates:
   - https://hupo-psi.github.io/mzIdentML/mzidentml.html
   - https://github.com/HUPO-PSI/mzIdentML
   - https://github.com/HUPO-PSI/psi-ms-CV
-  evidence_notes: Final 1.3.0 specification and repository/tool support.
-  next_step: Apply PSI family cap and decide whether mzML should represent the family alone.
+  evidence_notes: Valuable PSI companion, but the catalog represents the proteomics exchange family through mzML as
+    the primary spectral contract. Additional PSI result formats would over-concentrate the family without a separate
+    user decision problem.
+  next_step: Closed as represented by hupo-psi-mzml under the PSI family cap.
 - id: nmrml
   name: nmrML
   official_url: https://nmrml.org/
   candidate_section: Data and Digital Objects
   coverage_family: nmr-data-exchange
   priority: P1
-  disposition: boundary-review
+  disposition: rejected-represented-by
+  represented_by_resource_ids:
+  - analytical-information-markup-language-animl
+  - allotrope-data-format
   mechanism: XML and controlled-vocabulary standard for exchanging nuclear magnetic resonance raw and processed
     data and acquisition metadata.
   why_distinct: Adds a domain-specific analytical chemistry exchange contract absent from current laboratory formats.
@@ -78,22 +95,22 @@ candidates:
   - https://nmrml.org/
   - https://github.com/nmrML/nmrML
   - https://github.com/HUPO-PSI/psi-ms-CV
-  evidence_notes: Public specification and reference tooling; current maintenance and independent adoption need
-    confirmation.
-  next_step: Add to watchlist if maintenance evidence is insufficient.
+  evidence_notes: Narrow NMR exchange lacks exceptional decision value beyond the broader analytical-instrument
+    formats already listed. Maintenance and adoption evidence also remain thinner than AnIML and Allotrope.
+  next_step: Closed as represented by analytical laboratory formats AnIML and Allotrope Data Format.
 - id: chemical-markup-language-cml
   name: Chemical Markup Language (CML)
   official_url: https://www.xml-cml.org/
   candidate_section: Data and Digital Objects
   coverage_family: chemical-structure-data-exchange
   priority: P1
-  disposition: boundary-review
+  disposition: rejected-out-of-scope
   mechanism: XML vocabulary for exchanging molecules, reactions, spectra, crystallography, and computational chemistry
     data.
   why_distinct: Covers broad chemical semantics and structures beyond analytical-instrument formats.
   primary_sources:
   - https://www.xml-cml.org/
   - https://github.com/BlueObelisk/cmlxom
-  evidence_notes: Historically influential with implementations; current stewardship and exceptional-quality status
-    require review.
-  next_step: Review maintenance before admission.
+  evidence_notes: Historically influential, but current stewardship and exceptional-quality evidence are insufficient
+    for main-list admission relative to stronger domain contracts already present.
+  next_step: Closed as out of scope pending renewed stewardship and a sharper chemistry decision role.

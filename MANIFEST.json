@@ -84,38 +84,38 @@
     },
     {
       "path": "catalog/candidates/chemistry-proteomics.yaml",
-      "sha256": "d14a595f24dcb8ca1e08263da27c950b1e415300f0b7b8e6e18474b07c9d37d8",
-      "bytes": 4839
+      "sha256": "cb33972d500078b589feb068c96950c606fbb5d6d3fc26ccfa709781b9a48f6e",
+      "bytes": 6140
     },
     {
       "path": "catalog/candidates/cross-domain-and-emerging.yaml",
-      "sha256": "c00a2b5025dc39174f853c05a7ef050b5f5438c15e707375c758f1d7e0f84988",
-      "bytes": 3846
+      "sha256": "e9099d5b2f2fce2b416e09e42db3cf4b5901c80a4fbb267a7eaafc4f3c6b4f19",
+      "bytes": 5121
     },
     {
       "path": "catalog/candidates/ecology-agriculture.yaml",
-      "sha256": "93674f47fd6805d3f022c5c608cf34992b5657eb9327d36fcd542ca93bd02935",
-      "bytes": 1553
+      "sha256": "c5b6ff0401ab576bb777df4a7c30506c473a579367ed8623276dc025eb726fcd",
+      "bytes": 2094
     },
     {
       "path": "catalog/candidates/genomics-clinical.yaml",
-      "sha256": "4cc2cb57b9ea7a6b4a959c80d366ba48e6482da34f9b96f170d82242dce0dd87",
-      "bytes": 4748
+      "sha256": "5162820f7ae191eb15b8e85fa85b09327efc5c52338ad5623993506945e39447",
+      "bytes": 6276
     },
     {
       "path": "catalog/candidates/geospatial-environmental.yaml",
-      "sha256": "e3e94ba51b62cd49cfc5547731e1af01e70c65758656d98b89f3044179a6888e",
-      "bytes": 5194
+      "sha256": "f5aa048161367ba4b3a173150a28b81ee6c6a6cd173c103c6a3a0b9f20905cc4",
+      "bytes": 6952
     },
     {
       "path": "catalog/candidates/preservation-infrastructure.yaml",
-      "sha256": "cc30028bb6575cdf8fe64f84db0a267d63cb8104a0de7e1ca19aba3f7452102a",
-      "bytes": 5623
+      "sha256": "725719dc47f6b49346e2c4543c52e663063edc84106dd0131d0bf94755850336",
+      "bytes": 7163
     },
     {
       "path": "catalog/candidates/systems-biology-neuroscience.yaml",
-      "sha256": "7feb1e998c286b15d360e3db087dda52a36d8c89d4985a96480211c877d95194",
-      "bytes": 1457
+      "sha256": "0c2b747c9835fbf7743fe1e0fce045e77ea50b62ec2ee2a1423d6acce6322fa3",
+      "bytes": 2010
     },
     {
       "path": "catalog/expansion-candidates.yaml",
@@ -564,8 +564,8 @@
     },
     {
       "path": "schema/expansion-candidates.schema.json",
-      "sha256": "8d17472c902f5dea0546fe62c0dd21b2083520401aec00bb3e6536ac1ccba4c2",
-      "bytes": 3424
+      "sha256": "17e34c8d5a40a85ac3fb9649c3dc0c2e37c21737672fdde8d65d51c3f97484c7",
+      "bytes": 4974
     },
     {
       "path": "schema/implementations.schema.json",
@@ -649,8 +649,8 @@
     },
     {
       "path": "scripts/validate_expansion_candidates.py",
-      "sha256": "07e5eb92e3d710e57d17ad3eb5fed5a73b47a1b8f756f2c86fa5ce5f634ea84c",
-      "bytes": 6875
+      "sha256": "d3a85350bfa79fcc9d1794671c89f9cfc47cee717bf7108cbb5b8d55a2da440b",
+      "bytes": 9478
     },
     {
       "path": "scripts/validate_problem_index.py",
@@ -824,8 +824,8 @@
     },
     {
       "path": "tests/test_expansion_candidates.py",
-      "sha256": "5dc9aa321925e620776a47ac979fba9b1160189df18e2b5f4b28462821fdd401",
-      "bytes": 2396
+      "sha256": "9dbd6e6e1b64bad210943cedc44e8d8d291afbcba82a3a7d4853f3855f7cd1a4",
+      "bytes": 3545
     },
     {
       "path": "tests/test_export_catalog.py",

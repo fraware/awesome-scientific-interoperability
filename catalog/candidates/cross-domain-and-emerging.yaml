@@ -6,69 +6,90 @@ candidates:
   candidate_section: Data and Digital Objects
   coverage_family: omics-result-exchange
   priority: P1
-  disposition: boundary-review
-  mechanism: Tabular exchange format for proteomics and metabolomics identification and quantification results.
+  disposition: rejected-represented-by
+  mechanism: Tabular exchange format for proteomics and metabolomics identification and quantification
+    results.
   why_distinct: Provides a lightweight result-exchange layer across proteomics and metabolomics tools.
   primary_sources:
   - https://www.psidev.info/mztab
   - https://github.com/HUPO-PSI/mzTab
-  evidence_notes: Established PSI format; family-level distinctiveness requires review.
-  next_step: Compare with mzIdentML and mzML.
+  evidence_notes: mzTab is a PSI result table format complementary to mzML spectra exchange. mzML already
+    represents the HUPO-PSI mass-spectrometry interoperability decision for this corpus; companion result
+    formats would over-concentrate the family.
+  next_step: Closed as represented by hupo-psi-mzml; reopen only if a proteomics results-exchange decision
+    guide is approved.
+  represented_by_resource_ids:
+  - hupo-psi-mzml
 - id: system-structure-and-parameterization-ssp
   name: System Structure and Parameterization (SSP)
   official_url: https://ssp-standard.org/
   candidate_section: Data and Digital Objects
   coverage_family: system-simulation-composition
   priority: P1
-  disposition: boundary-review
-  mechanism: Modelica Association standard for exchanging system structures, component connections, parameter sets,
-    and referenced simulation artifacts.
+  disposition: deferred-family-review
+  mechanism: Modelica Association standard for exchanging system structures, component connections, parameter
+    sets, and referenced simulation artifacts.
   why_distinct: Complements FMI by standardizing composition and parameterization of multi-component simulation
     systems.
   primary_sources:
   - https://ssp-standard.org/
   - https://github.com/modelica/ssp-standard
-  evidence_notes: Formal standard and implementations in simulation-tool ecosystems.
-  next_step: Admission review with FMI; likely strongest engineering expansion candidate.
+  evidence_notes: SSP complements FMI for system composition, but FMI already occupies the engineering/model-exchange
+    exemplar. Further Modelica Association standards need a family review rather than immediate admission.
+  next_step: Closed as deferred under modelica-cosimulation-family with FMI as the admitted anchor.
+  deferred_family_id: modelica-cosimulation-family
+  scheduled_review: '2027-02-02'
 - id: distributed-co-simulation-protocol-dcp
   name: Distributed Co-Simulation Protocol (DCP)
   official_url: https://dcp-standard.org/
   candidate_section: Workflows and Execution
   coverage_family: distributed-co-simulation
   priority: P1
-  disposition: boundary-review
-  mechanism: Real-time communication and state-management protocol for distributed co-simulation across tools and
-    hardware.
-  why_distinct: Addresses operational interoperability among simulation components, complementing FMI model exchange.
+  disposition: deferred-family-review
+  mechanism: Real-time communication and state-management protocol for distributed co-simulation across
+    tools and hardware.
+  why_distinct: Addresses operational interoperability among simulation components, complementing FMI
+    model exchange.
   primary_sources:
   - https://dcp-standard.org/
   - https://github.com/modelica/DCP-standard
-  evidence_notes: Formal Modelica Association project; adoption breadth requires review.
-  next_step: Consider watchlist unless multiple independent implementations are documented.
+  evidence_notes: DCP addresses distributed co-simulation transport. Adoption breadth and overlap with
+    FMI operational use require a joint family review before any admission.
+  next_step: Closed as deferred under modelica-cosimulation-family; do not admit beside FMI without documented
+    independent operational deployments.
+  deferred_family_id: modelica-cosimulation-family
+  scheduled_review: '2027-02-02'
 - id: asam-measurement-data-format-mdf
   name: ASAM Measurement Data Format (MDF)
   official_url: https://www.asam.net/standards/detail/mdf/
   candidate_section: Data and Digital Objects
   coverage_family: engineering-measurement-data-exchange
   priority: P2
-  disposition: watchlist
-  mechanism: Binary standard for time-series measurement data, channels, metadata, and high-volume test acquisition.
+  disposition: rejected-out-of-scope
+  mechanism: Binary standard for time-series measurement data, channels, metadata, and high-volume test
+    acquisition.
   why_distinct: Potential engineering and experimental-measurement exemplar beyond laboratory formats.
   primary_sources:
   - https://www.asam.net/standards/detail/mdf/
-  evidence_notes: Industry standard; public inspectability and scientific decision value need review.
-  next_step: Assess accessibility and multi-vendor scientific use.
+  evidence_notes: ASAM MDF is an industry measurement format. Public inspectability for scientific decision-making
+    is weaker than laboratory/instrument standards already in the corpus, and the integration problem
+    is not sharply scientific-interoperability-first.
+  next_step: Closed as out of scope; reopen only with openly inspectable scientific multi-vendor evidence.
 - id: rda-pid-kernel-information
   name: RDA PID Kernel Information
   official_url: https://www.rd-alliance.org/groups/pid-kernel-information-wg
   candidate_section: Identifiers and Discovery
   coverage_family: persistent-identifier-metadata
   priority: P2
-  disposition: watchlist
-  mechanism: Minimal machine-actionable metadata attached to persistent identifiers for discovery, type resolution,
-    and automation.
+  disposition: rejected-represented-by
+  mechanism: Minimal machine-actionable metadata attached to persistent identifiers for discovery, type
+    resolution, and automation.
   why_distinct: Potential operational complement to FAIR Digital Objects and identifier systems.
   primary_sources:
   - https://www.rd-alliance.org/groups/pid-kernel-information-wg
-  evidence_notes: Recommendation and pilots exist; implementation and stewardship evidence need review.
-  next_step: Monitor adoption in FAIR Digital Object infrastructure.
+  evidence_notes: RDA PID Kernel Information is a recommendation overlapping FAIR Digital Object and identifier
+    metadata roles. The FDO Framework already anchors that decision surface.
+  next_step: Closed as represented by fair-digital-object-framework; monitor only if FDO guidance explicitly
+    depends on kernel-information profiles.
+  represented_by_resource_ids:
+  - fair-digital-object-framework

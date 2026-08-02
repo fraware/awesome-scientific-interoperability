@@ -115,7 +115,10 @@
           "enum": [
             "admission-pr",
             "boundary-review",
-            "watchlist"
+            "watchlist",
+            "rejected-out-of-scope",
+            "rejected-represented-by",
+            "deferred-family-review"
           ]
         },
         "mechanism": {
@@ -146,8 +149,72 @@
           "enum": [
             "watchlist"
           ]
+        },
+        "represented_by_resource_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/slug"
+          }
+        },
+        "scheduled_review": {
+          "type": "string",
+          "format": "date"
+        },
+        "deferred_family_id": {
+          "$ref": "#/$defs/slug"
+        },
+        "review_due_on": {
+          "type": "string",
+          "format": "date"
         }
-      }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "disposition": {
+                "const": "rejected-represented-by"
+              }
+            },
+            "required": [
+              "disposition"
+            ]
+          },
+          "then": {
+            "required": [
+              "represented_by_resource_ids"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "disposition": {
+                "const": "deferred-family-review"
+              }
+            },
+            "required": [
+              "disposition"
+            ]
+          },
+          "then": {
+            "anyOf": [
+              {
+                "required": [
+                  "scheduled_review"
+                ]
+              },
+              {
+                "required": [
+                  "deferred_family_id"
+                ]
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 }

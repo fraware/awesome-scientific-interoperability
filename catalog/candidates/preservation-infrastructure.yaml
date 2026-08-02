@@ -6,116 +6,130 @@ candidates:
   candidate_section: Data and Digital Objects
   coverage_family: chunked-array-storage
   priority: P1
-  disposition: boundary-review
-  mechanism: Versioned chunked N-dimensional array storage specification for filesystems and object 
-    stores.
-  why_distinct: Underlying cross-language storage contract for OME-NGFF, climate, genomics, and 
-    large scientific arrays.
+  disposition: rejected-represented-by
+  mechanism: Versioned chunked N-dimensional array storage specification for filesystems and object stores.
+  why_distinct: Underlying cross-language storage contract for OME-NGFF, climate, genomics, and large
+    scientific arrays.
   primary_sources:
   - https://zarr-specs.readthedocs.io/en/latest/
   - https://github.com/zarr-developers/zarr-specs
   - https://zarr.dev/
-  evidence_notes: Cross-language implementations and major scientific adoption; general-substrate 
-    policy applies.
-  next_step: Admit only if scientific profiles make the substrate indispensable to decision 
-    guidance.
+  evidence_notes: Zarr is the storage substrate under OME-NGFF/OME-Zarr. The catalog already admits the
+    scientific profile that carries interoperability semantics; admitting bare Zarr would elevate a general
+    substrate without a sharper North-Star decision.
+  next_step: Closed as represented by ome-ngff; reopen only for an explicit substrate comparison guide
+    against NetCDF/HDF5 that the corpus approves.
+  represented_by_resource_ids:
+  - ome-ngff
 - id: premis-data-dictionary
   name: PREMIS Data Dictionary
   official_url: https://www.loc.gov/standards/premis/
   candidate_section: Provenance and Evidence
   coverage_family: digital-preservation-provenance
   priority: P1
-  disposition: boundary-review
-  mechanism: Preservation metadata data dictionary and XML schema for objects, events, agents, 
-    rights, and fixity.
-  why_distinct: Adds long-term digital-preservation evidence semantics beyond repository layout and 
-    research provenance.
+  disposition: rejected-out-of-scope
+  mechanism: Preservation metadata data dictionary and XML schema for objects, events, agents, rights,
+    and fixity.
+  why_distinct: Adds long-term digital-preservation evidence semantics beyond repository layout and research
+    provenance.
   primary_sources:
   - https://www.loc.gov/standards/premis/
   - https://github.com/LibraryOfCongress/premis
-  evidence_notes: Institutionally stewarded and widely implemented in repositories.
-  next_step: Compare with W3C PROV and OCFL before admission.
+  evidence_notes: PREMIS is important library/archive preservation metadata, but the corpus already covers
+    research-object packaging (RO-Crate/BagIt) and repository layout (OCFL) plus W3C PROV for research
+    provenance. PREMIS does not answer a distinct scientific integration problem beyond that preservation
+    stack.
+  next_step: Closed as out of scope for the scientific-interoperability main list; do not reopen without
+    a dedicated digital-preservation metadata decision guide.
 - id: shapes-constraint-language-shacl
   name: Shapes Constraint Language (SHACL)
   official_url: https://www.w3.org/TR/shacl/
   candidate_section: Validation and Conformance
   coverage_family: semantic-data-validation
   priority: P1
-  disposition: boundary-review
-  mechanism: W3C language for expressing and validating structural and semantic constraints over RDF
-    graphs.
-  why_distinct: Underpins profile-aware scientific validators such as RO-Crate validation and many 
-    ontology pipelines.
+  disposition: rejected-out-of-scope
+  mechanism: W3C language for expressing and validating structural and semantic constraints over RDF graphs.
+  why_distinct: Underpins profile-aware scientific validators such as RO-Crate validation and many ontology
+    pipelines.
   primary_sources:
   - https://www.w3.org/TR/shacl/
   - https://github.com/w3c/data-shapes
-  evidence_notes: W3C Recommendation with multiple implementations; general-substrate rule applies.
-  next_step: Admit only through documented scientific validator dependence and boundary against 
-    generic semantic-web tooling.
+  evidence_notes: SHACL is a generic RDF constraint language used inside validators such as the RO-Crate
+    Validator. The catalog admits the scientific validator and packaging contracts, not every underlying
+    semantic-web substrate.
+  next_step: Closed as generic semantic-web substrate; scientific dependence remains documented through
+    ro-crate-validator evidence rather than a separate SHACL entry.
 - id: netcdf
   name: NetCDF
   official_url: https://www.unidata.ucar.edu/software/netcdf/
   candidate_section: Data and Digital Objects
   coverage_family: multidimensional-array-storage
   priority: P2
-  disposition: boundary-review
-  mechanism: Self-describing multidimensional array data model, APIs, and file formats used 
-    throughout earth and climate sciences.
-  why_distinct: Foundational substrate for CF data, but the catalog currently prefers CF because it 
-    carries domain semantics.
+  disposition: rejected-represented-by
+  mechanism: Self-describing multidimensional array data model, APIs, and file formats used throughout
+    earth and climate sciences.
+  why_distinct: Foundational substrate for CF data, but the catalog currently prefers CF because it carries
+    domain semantics.
   primary_sources:
   - https://www.unidata.ucar.edu/software/netcdf/
   - https://github.com/Unidata/netcdf-c
-  evidence_notes: Extremely mature and widely implemented; general-substrate and duplication rules 
-    apply.
-  next_step: Retain as explicit exclusion unless users need storage-layer comparison with Zarr.
+  evidence_notes: NetCDF is foundational array storage, but CF Metadata Conventions already provide the
+    scientific semantic contract the catalog uses for climate/forecast interoperability. Bare NetCDF is
+    a general substrate.
+  next_step: Closed as represented by climate-and-forecast-cf-metadata-conventions; reopen only if a storage-layer
+    comparison against Zarr is explicitly scoped.
+  represented_by_resource_ids:
+  - climate-and-forecast-cf-metadata-conventions
 - id: hdf5
   name: HDF5
   official_url: https://www.hdfgroup.org/solutions/hdf5/
   candidate_section: Data and Digital Objects
   coverage_family: hierarchical-scientific-storage
   priority: P2
-  disposition: boundary-review
+  disposition: rejected-represented-by
   mechanism: Hierarchical binary data model and file format for large, complex scientific datasets.
-  why_distinct: Underlying substrate for NeXus, NWB, and many domain formats, but domain profiles 
-    usually provide stronger decision value.
+  why_distinct: Underlying substrate for NeXus, NWB, and many domain formats, but domain profiles usually
+    provide stronger decision value.
   primary_sources:
   - https://www.hdfgroup.org/solutions/hdf5/
   - https://github.com/HDFGroup/hdf5
-  evidence_notes: Foundational and broadly implemented; likely remain excluded under 
-    general-substrate policy.
-  next_step: Document exclusion unless a substrate comparison guide is added.
+  evidence_notes: HDF5 is hierarchical binary storage underlying NeXus, NWB, and other domain formats.
+    Those domain profiles already supply the interoperability decisions users need.
+  next_step: Closed as represented by nexus and neurodata-without-borders-nwb; do not admit the generic
+    substrate unless a cross-format storage guide is approved.
+  represented_by_resource_ids:
+  - nexus
+  - neurodata-without-borders-nwb
 - id: apache-arrow-columnar-format
   name: Apache Arrow Columnar Format
   official_url: https://arrow.apache.org/docs/format/
   candidate_section: Data and Digital Objects
   coverage_family: columnar-memory-interchange
   priority: P2
-  disposition: watchlist
-  mechanism: Language-independent in-memory columnar format and IPC protocol for zero-copy analytics
-    interoperability.
+  disposition: rejected-out-of-scope
+  mechanism: Language-independent in-memory columnar format and IPC protocol for zero-copy analytics interoperability.
   why_distinct: Increasingly important across scientific computing but currently general-purpose.
   primary_sources:
   - https://arrow.apache.org/docs/format/
   - https://github.com/apache/arrow
-  evidence_notes: Strong implementations; scientific indispensability and scope boundary remain 
-    unresolved.
-  next_step: Monitor use as a scientific interchange contract rather than internal compute 
-    substrate.
+  evidence_notes: Apache Arrow is a general analytics memory/IPC substrate. It lacks a distinct scientific
+    interoperability contract beyond compute frameworks already out of scope.
+  next_step: Closed as general-purpose analytics substrate; reopen only if a scientific profile makes
+    Arrow itself the exchange contract.
 - id: apache-parquet
   name: Apache Parquet
   official_url: https://parquet.apache.org/docs/file-format/
   candidate_section: Data and Digital Objects
   coverage_family: columnar-file-exchange
   priority: P2
-  disposition: watchlist
-  mechanism: Language-neutral columnar file format with schema, encodings, metadata, and nested data
-    support.
-  why_distinct: Substrate for GeoParquet and scientific analytics, but domain profiles may carry 
-    stronger interoperability semantics.
+  disposition: rejected-out-of-scope
+  mechanism: Language-neutral columnar file format with schema, encodings, metadata, and nested data support.
+  why_distinct: Substrate for GeoParquet and scientific analytics, but domain profiles may carry stronger
+    interoperability semantics.
   primary_sources:
   - https://parquet.apache.org/docs/file-format/
   - https://github.com/apache/parquet-format
-  evidence_notes: Broad implementations; general-purpose status limits direct admission.
-  next_step: Represent through GeoParquet unless a general analytical-data substrate guide is 
-    approved.
+  evidence_notes: Apache Parquet is a general columnar file substrate. Domain overlays (for example GeoParquet)
+    may later justify admission, but bare Parquet does not.
+  next_step: Closed as general-purpose file substrate; any future geospatial/analytics admission must
+    target the scientific profile, not bare Parquet.

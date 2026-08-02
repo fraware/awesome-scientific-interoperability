@@ -19,6 +19,15 @@ SCHEMA_PATH = ROOT / "schema" / "expansion-candidates.schema.json"
 CATALOG_INDEX = ROOT / "catalog" / "resources.yaml"
 WATCHLIST_PATH = ROOT / "catalog" / "watchlist.yaml"
 
+TERMINAL_DISPOSITIONS = frozenset(
+    {
+        "rejected-out-of-scope",
+        "rejected-represented-by",
+        "deferred-family-review",
+    }
+)
+ACTIVE_DISPOSITIONS = frozenset({"admission-pr", "boundary-review", "watchlist"})
+
 
 def load_yaml(path: Path) -> Any:
     with path.open(encoding="utf-8") as handle:
@@ -91,14 +100,48 @@ def validate() -> list[str]:
     live_ids, live_names, live_urls = live_resource_keys()
     watch_ids, watch_names, watch_urls = watchlist_keys()
 
+    active: list[dict[str, Any]] = []
+    terminal: list[dict[str, Any]] = []
+
     for item in candidates:
         cid = item.get("id", "<missing>")
+        disposition = item.get("disposition")
         if item.get("official_url") not in item.get("primary_sources", []):
             errors.append(f"{cid}: official_url must appear in primary_sources")
-        if item.get("priority") == "P0" and item.get("disposition") != "admission-pr":
-            errors.append(f"{cid}: P0 candidates must use disposition admission-pr")
-        if item.get("disposition") == "admission-pr" and len(item.get("primary_sources", [])) < 3:
-            errors.append(f"{cid}: admission-pr requires at least three primary sources")
+        if disposition in TERMINAL_DISPOSITIONS:
+            terminal.append(item)
+            if item.get("priority") == "P0":
+                errors.append(f"{cid}: terminal dispositions must not use priority P0")
+            if disposition == "rejected-represented-by":
+                represented = item.get("represented_by_resource_ids") or []
+                if not represented:
+                    errors.append(f"{cid}: rejected-represented-by requires represented_by_resource_ids")
+                missing = sorted(set(represented) - live_ids)
+                if missing:
+                    errors.append(
+                        f"{cid}: represented_by_resource_ids missing from main catalog: {missing}"
+                    )
+            if disposition == "deferred-family-review":
+                if not item.get("scheduled_review") and not item.get("deferred_family_id"):
+                    errors.append(
+                        f"{cid}: deferred-family-review requires scheduled_review or deferred_family_id"
+                    )
+        elif disposition in ACTIVE_DISPOSITIONS:
+            active.append(item)
+            if item.get("priority") == "P0" and disposition != "admission-pr":
+                errors.append(f"{cid}: P0 candidates must use disposition admission-pr")
+            if disposition == "admission-pr" and len(item.get("primary_sources", [])) < 3:
+                errors.append(f"{cid}: admission-pr requires at least three primary sources")
+            next_step = (item.get("next_step") or "").strip()
+            if not next_step:
+                errors.append(f"{cid}: active dispositions require a non-empty next_step")
+            if not item.get("review_due_on"):
+                errors.append(
+                    f"{cid}: active disposition {disposition} requires review_due_on"
+                )
+        else:
+            errors.append(f"{cid}: unknown disposition {disposition!r}")
+
         if cid in live_ids or item.get("name") in live_names or item.get("official_url") in live_urls:
             errors.append(f"{cid}: candidate already exists in the main catalog")
 
@@ -121,18 +164,27 @@ def validate() -> list[str]:
     unknown_completed = sorted(completed_set - live_ids)
     if unknown_completed:
         errors.append(f"completed candidate IDs missing from main catalog: {unknown_completed}")
+
     program_size = payload.get("research_program_size")
-    if isinstance(program_size, int) and len(candidates) + len(completed) != program_size:
-        errors.append(
-            "candidate registry plus completed outcomes must equal research_program_size"
-        )
+    unresolved_active = len(active)
+    completed_admitted = len(completed)
+    completed_negative = len(terminal)
+    if isinstance(program_size, int):
+        if unresolved_active + completed_admitted + completed_negative != program_size:
+            errors.append(
+                "conservation failed: unresolved_active + completed_admitted + "
+                "completed_negative must equal research_program_size "
+                f"({unresolved_active} + {completed_admitted} + {completed_negative} "
+                f"!= {program_size})"
+            )
     if not isinstance(program_size, int) or program_size < 60:
         errors.append("research_program_size must preserve the comprehensive landscape baseline (>=60)")
-    families = {item.get("coverage_family") for item in candidates}
-    minimum_family_count = max(1, (4 * len(candidates) + 4) // 5) if candidates else 0
+
+    families = {item.get("coverage_family") for item in active}
+    minimum_family_count = max(1, (4 * len(active) + 4) // 5) if active else 0
     if len(families) < minimum_family_count:
         errors.append(
-            "unresolved candidate families must cover at least 80% of unresolved records"
+            "unresolved active candidate families must cover at least 80% of unresolved active records"
         )
 
     return errors
@@ -150,13 +202,17 @@ def main() -> int:
 
     payload = load_registry()
     candidates = payload["candidates"]
-    counts = Counter(item["priority"] for item in candidates)
+    active = [item for item in candidates if item["disposition"] in ACTIVE_DISPOSITIONS]
+    terminal = [item for item in candidates if item["disposition"] in TERMINAL_DISPOSITIONS]
+    counts = Counter(item["priority"] for item in active)
     dispositions = Counter(item["disposition"] for item in candidates)
     print(
-        f"Validated {len(candidates)} expansion candidates across "
-        f"{len({item['coverage_family'] for item in candidates})} families; "
-        f"priorities={dict(sorted(counts.items()))}; "
-        f"dispositions={dict(sorted(dispositions.items()))}."
+        f"Validated {len(candidates)} expansion candidates "
+        f"({len(active)} active, {len(terminal)} terminal) across "
+        f"{len({item['coverage_family'] for item in active})} active families; "
+        f"active_priorities={dict(sorted(counts.items()))}; "
+        f"dispositions={dict(sorted(dispositions.items()))}; "
+        f"completed_admitted={len(payload['completed_candidate_ids'])}."
     )
     return 0
 
