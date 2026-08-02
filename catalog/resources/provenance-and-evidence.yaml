@@ -22,9 +22,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: common-workflow-language-project
-  domains:
-  - computational-workflows
-  - provenance
   source_refs:
   - ref_id: cwltool-readthedocs-io-en-latest-cwlprov-html
     role: technical-definition
@@ -55,6 +52,12 @@ resources:
     resource_id: w3c-prov
   - type: depends-on
     resource_id: common-workflow-language-cwl
+  scientific_domains: []
+  integration_functions:
+  - computational-workflows
+  - provenance
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: iso-23494-2-2026-common-provenance-model
   name: ISO 23494-2:2026 Common Provenance Model
   url: https://www.iso.org/standard/87714.html
@@ -78,9 +81,6 @@ resources:
   implementation_status: unknown
   conformance_status: none-known
   steward_id: international-organization-for-standardization-iso
-  domains:
-  - biotechnology
-  - provenance
   source_refs:
   - ref_id: iso-org-standard-87714-html
     role: technical-definition
@@ -96,6 +96,12 @@ resources:
   relations:
   - type: complements
     resource_id: w3c-prov
+  scientific_domains:
+  - biotechnology
+  integration_functions:
+  - provenance
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: p-plan
   name: P-Plan
   url: https://www.opmw.org/model/p-plan/
@@ -118,9 +124,6 @@ resources:
   implementation_status: unknown
   conformance_status: none-known
   steward_id: open-provenance-model-for-workflows-opmw
-  domains:
-  - provenance
-  - computational-workflows
   source_refs:
   - ref_id: opmw-org-model-p-plan
     role: technical-definition
@@ -136,6 +139,12 @@ resources:
   relations:
   - type: complements
     resource_id: w3c-prov
+  scientific_domains: []
+  integration_functions:
+  - provenance
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: runcrate
   name: runcrate
   url: https://www.researchobject.org/runcrate/
@@ -160,9 +169,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: research-object-community
-  domains:
-  - computational-workflows
-  - provenance
   source_refs:
   - ref_id: researchobject-org-runcrate
     role: technical-definition
@@ -184,6 +190,12 @@ resources:
     resource_id: ro-crate
   - type: implements
     resource_id: workflow-run-ro-crate
+  scientific_domains: []
+  integration_functions:
+  - computational-workflows
+  - provenance
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: w3c-prov
   name: W3C PROV
   url: https://www.w3.org/TR/prov-o/
@@ -207,9 +219,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: w3c
-  domains:
-  - cross-domain
-  - provenance
   source_refs:
   - ref_id: w3-org-tr-prov-o
     role: technical-definition
@@ -236,6 +245,12 @@ resources:
     resource_id: workflow-run-ro-crate
   - type: complements
     resource_id: runcrate
+  scientific_domains: []
+  integration_functions:
+  - provenance
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: biocompute-objects
   name: BioCompute Objects
   url: https://docs.biocomputeobject.org/
@@ -258,9 +273,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: ieee-biocompute-community
-  domains:
-  - genomics
-  - life-sciences
   source_refs:
   - ref_id: docs-biocomputeobject-org-root
     role: technical-definition
@@ -288,3 +300,9 @@ resources:
     resource_id: workflow-run-ro-crate
   - type: complements
     resource_id: cwlprov
+  scientific_domains:
+  - genomics
+  - life-sciences
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []

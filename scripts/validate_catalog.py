@@ -31,7 +31,9 @@ from lib.catalog_model import (  # noqa: E402
     load_stewards,
     load_taxonomy,
     relation_type_ids,
+    resource_dimension_tags,
     resource_kind_ids,
+    taxonomy_dimension_ids,
 )
 from lib.independence import (  # noqa: E402
     independent_operator_stewards,
@@ -71,6 +73,7 @@ FORBIDDEN_LEGACY_FIELDS = frozenset(
         "source_urls",
         "alternatives",
         "related_resource_ids",
+        "domains",
     }
 )
 GENERIC_PLACEHOLDER_URL_FRAGMENTS = (
@@ -268,7 +271,7 @@ def semantic_errors(
             else []
         )
     kinds = resource_kind_ids()
-    domains = domain_ids()
+    dimension_values = taxonomy_dimension_ids()
     roles = claim_role_ids()
     artifacts = conformance_artifact_types()
 
@@ -365,9 +368,15 @@ def semantic_errors(
                         f"{resource_id}: implements relation requires an implementation-like source kind"
                     )
 
-        for domain in resource.get("domains", []):
-            if domain not in domains:
-                errors.append(f"{resource_id}: unknown domain {domain!r}")
+        for field, allowed in dimension_values.items():
+            for tag in resource.get(field) or []:
+                if tag not in allowed:
+                    errors.append(f"{resource_id}: unknown {field} value {tag!r}")
+        if not resource_dimension_tags(resource):
+            errors.append(
+                f"{resource_id}: require at least one taxonomy tag across scientific_domains, "
+                "integration_functions, infrastructure_contexts, or artifact_classes"
+            )
 
         steward_id = resource.get("steward_id")
         if check_registries and steward_id not in stewards:

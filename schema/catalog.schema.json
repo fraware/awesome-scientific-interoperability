@@ -107,7 +107,10 @@
         "implementation_status",
         "conformance_status",
         "steward_id",
-        "domains",
+        "scientific_domains",
+        "integration_functions",
+        "infrastructure_contexts",
+        "artifact_classes",
         "source_refs",
         "relations",
         "decision_basis",
@@ -237,9 +240,32 @@
           "type": "string",
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
         },
-        "domains": {
+        "scientific_domains": {
           "type": "array",
-          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        },
+        "integration_functions": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        },
+        "infrastructure_contexts": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        },
+        "artifact_classes": {
+          "type": "array",
           "uniqueItems": true,
           "items": {
             "type": "string",

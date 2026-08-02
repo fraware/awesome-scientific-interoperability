@@ -1,174 +1,209 @@
-# Controlled vocabularies for catalog model v2.1.
-# Unknown values fail validation.
-
-version: "1.0.0"
-
+version: 1.0.0
 resource_kinds:
-  - id: specification
-    label: Specification
-    description: Normative specifications, principles, and cross-domain frameworks.
-  - id: api-standard
-    label: API standard
-    description: Documented service or protocol APIs for scientific systems.
-  - id: ontology-vocabulary
-    label: Ontology or vocabulary
-    description: Ontologies, controlled vocabularies, and coding systems.
-  - id: metadata-standard
-    label: Metadata standard
-    description: Metadata formats, conventions, profiles, and schemas.
-  - id: packaging-format
-    label: Packaging format
-    description: Archives, crates, containers, and packaging conventions.
-  - id: identifier-system
-    label: Identifier system
-    description: Persistent identifiers, resolvers, and identifier registries.
-  - id: registry-catalog
-    label: Registry or catalog
-    description: Curated registries, catalogs, and discovery indexes.
-  - id: workflow-language
-    label: Workflow language
-    description: Portable workflow and tool description languages.
-  - id: execution-service
-    label: Execution service
-    description: Execution APIs, runners, backends, and workflow registries.
-  - id: provenance-model
-    label: Provenance model
-    description: Provenance models, profiles, and evidence records.
-  - id: conformance-artifact
-    label: Conformance artifact
-    description: Public validators, conformance suites, and execution testbeds.
-  - id: exchange-standard
-    label: Exchange standard
-    description: Domain data exchange and laboratory or clinical interoperability standards.
-  - id: implementation
-    label: Implementation
-    description: Reference implementations, toolkits, and scientific tool platforms.
-  - id: link-protocol
-    label: Link protocol
-    description: Link-exchange conventions and agent or tool interface protocols.
-
-domains:
-  - ai-agents
-  - analytical-chemistry
-  - analytical-instruments
-  - biodiversity
-  - bioinformatics
-  - biomedical
-  - biosimulation
-  - biotechnology
-  - chemistry
-  - climate-science
-  - clinical-informatics
-  - clinical-laboratory
-  - computational-biology
-  - computational-science
-  - computational-workflows
-  - cross-domain
-  - data-governance
-  - digital-preservation
-  - earth-observation
-  - engineering
-  - environmental-science
-  - european-research
-  - genomics
-  - geosciences
-  - geospatial
-  - hpc
-  - knowledge-representation
-  - laboratory-automation
-  - laboratory-data
-  - laboratory-medicine
-  - life-sciences
-  - machine-learning
-  - materials-science
-  - physics
-  - provenance
-  - reproducibility
-  - research-data
-  - research-information
-  - research-objects
-  - research-software
-  - sample-curation
-  - scholarly-communication
-  - scientific-computing
-  - semantic-web
-  - sensor-networks
-  - social-science
-  - systems-biology
-
-# Domain aliases applied during migration (not accepted as live values).
-domain_aliases:
-  workflows: computational-workflows
-  scholarly-publishing: scholarly-communication
-
+- id: specification
+  label: Specification
+  description: Normative specifications, principles, and cross-domain frameworks.
+- id: api-standard
+  label: API standard
+  description: Documented service or protocol APIs for scientific systems.
+- id: ontology-vocabulary
+  label: Ontology or vocabulary
+  description: Ontologies, controlled vocabularies, and coding systems.
+- id: metadata-standard
+  label: Metadata standard
+  description: Metadata formats, conventions, profiles, and schemas.
+- id: packaging-format
+  label: Packaging format
+  description: Archives, crates, containers, and packaging conventions.
+- id: identifier-system
+  label: Identifier system
+  description: Persistent identifiers, resolvers, and identifier registries.
+- id: registry-catalog
+  label: Registry or catalog
+  description: Curated registries, catalogs, and discovery indexes.
+- id: workflow-language
+  label: Workflow language
+  description: Portable workflow and tool description languages.
+- id: execution-service
+  label: Execution service
+  description: Execution APIs, runners, backends, and workflow registries.
+- id: provenance-model
+  label: Provenance model
+  description: Provenance models, profiles, and evidence records.
+- id: conformance-artifact
+  label: Conformance artifact
+  description: Public validators, conformance suites, and execution testbeds.
+- id: exchange-standard
+  label: Exchange standard
+  description: Domain data exchange and laboratory or clinical interoperability standards.
+- id: implementation
+  label: Implementation
+  description: Reference implementations, toolkits, and scientific tool platforms.
+- id: link-protocol
+  label: Link protocol
+  description: Link-exchange conventions and agent or tool interface protocols.
 claim_roles:
-  - technical-definition
-  - stewardship
-  - implementation
-  - adoption
-  - conformance
-  - interoperability-testing
-  - maintenance
-  - limitations
-
+- technical-definition
+- stewardship
+- implementation
+- adoption
+- conformance
+- interoperability-testing
+- maintenance
+- limitations
 reference_types:
-  - specification
-  - normative-schema
-  - api-documentation
-  - implementation-repository
-  - adoption-evidence
-  - registry-record
-  - validator
-  - conformance-suite
-  - interoperability-result
-  - governance-source
-  - technical-documentation
-
-# Artifact classes that satisfy public-suite / public-validator fail-closed rules.
+- specification
+- normative-schema
+- api-documentation
+- implementation-repository
+- adoption-evidence
+- registry-record
+- validator
+- conformance-suite
+- interoperability-result
+- governance-source
+- technical-documentation
 conformance_artifact_types:
-  - validator
-  - conformance-suite
-  - interoperability-result
-
+- validator
+- conformance-suite
+- interoperability-result
 steward_types:
-  - standards-body
-  - consortium
-  - foundation
-  - institution
-  - community
-  - vendor-led
-
+- standards-body
+- consortium
+- foundation
+- institution
+- community
+- vendor-led
 relation_types:
-  - id: alternative-to
-    label: Alternative to
-    description: Competing or overlapping mechanism for a similar integration job.
-  - id: complements
-    label: Complements
-    description: Useful together without a stronger typed dependency.
-  - id: profile-of
-    label: Profile of
-    description: Constrains or profiles a base standard.
-  - id: implements
-    label: Implements
-    description: Software or service that implements a standard or profile.
-  - id: validates
-    label: Validates
-    description: Validator, suite, or testbed that checks conformance.
-  - id: extends
-    label: Extends
-    description: Extends or specializes another catalog resource.
-  - id: supersedes
-    label: Supersedes
-    description: Replaces an older mechanism for the same job.
-  - id: depends-on
-    label: Depends on
-    description: Requires another resource to function as specified.
-  - id: serializes
-    label: Serializes
-    description: Serialization or packaging binding for another model.
-  - id: registers
-    label: Registers
-    description: Registry or catalog that indexes another resource class.
-  - id: executes
-    label: Executes
-    description: Runner or service that executes workflows or tools.
+- id: alternative-to
+  label: Alternative to
+  description: Competing or overlapping mechanism for a similar integration job.
+- id: complements
+  label: Complements
+  description: Useful together without a stronger typed dependency.
+- id: profile-of
+  label: Profile of
+  description: Constrains or profiles a base standard.
+- id: implements
+  label: Implements
+  description: Software or service that implements a standard or profile.
+- id: validates
+  label: Validates
+  description: Validator, suite, or testbed that checks conformance.
+- id: extends
+  label: Extends
+  description: Extends or specializes another catalog resource.
+- id: supersedes
+  label: Supersedes
+  description: Replaces an older mechanism for the same job.
+- id: depends-on
+  label: Depends on
+  description: Requires another resource to function as specified.
+- id: serializes
+  label: Serializes
+  description: Serialization or packaging binding for another model.
+- id: registers
+  label: Registers
+  description: Registry or catalog that indexes another resource class.
+- id: executes
+  label: Executes
+  description: Runner or service that executes workflows or tools.
+scientific_domains:
+- ai-agents
+- analytical-chemistry
+- biodiversity
+- bioinformatics
+- biomedical
+- biosimulation
+- biotechnology
+- chemistry
+- climate-science
+- clinical-informatics
+- clinical-laboratory
+- computational-biology
+- earth-observation
+- environmental-science
+- genomics
+- geosciences
+- geospatial
+- laboratory-medicine
+- life-sciences
+- machine-learning
+- materials-science
+- physics
+- scholarly-communication
+- sensor-networks
+- social-science
+- systems-biology
+integration_functions:
+- computational-science
+- computational-workflows
+- data-governance
+- digital-preservation
+- knowledge-representation
+- laboratory-automation
+- laboratory-data
+- provenance
+- reproducibility
+- research-data
+- research-information
+- sample-curation
+- scientific-computing
+- semantic-web
+infrastructure_contexts:
+- analytical-instruments
+- cross-domain
+- engineering
+- european-research
+- hpc
+artifact_classes:
+- research-objects
+- research-software
+domain_dimension_aliases:
+  ai-agents: scientific_domains
+  analytical-chemistry: scientific_domains
+  analytical-instruments: infrastructure_contexts
+  biodiversity: scientific_domains
+  bioinformatics: scientific_domains
+  biomedical: scientific_domains
+  biosimulation: scientific_domains
+  biotechnology: scientific_domains
+  chemistry: scientific_domains
+  climate-science: scientific_domains
+  clinical-informatics: scientific_domains
+  clinical-laboratory: scientific_domains
+  computational-biology: scientific_domains
+  computational-science: integration_functions
+  computational-workflows: integration_functions
+  cross-domain: infrastructure_contexts
+  data-governance: integration_functions
+  digital-preservation: integration_functions
+  earth-observation: scientific_domains
+  engineering: infrastructure_contexts
+  environmental-science: scientific_domains
+  european-research: infrastructure_contexts
+  genomics: scientific_domains
+  geosciences: scientific_domains
+  geospatial: scientific_domains
+  hpc: infrastructure_contexts
+  knowledge-representation: integration_functions
+  laboratory-automation: integration_functions
+  laboratory-data: integration_functions
+  laboratory-medicine: scientific_domains
+  life-sciences: scientific_domains
+  machine-learning: scientific_domains
+  materials-science: scientific_domains
+  physics: scientific_domains
+  provenance: integration_functions
+  reproducibility: integration_functions
+  research-data: integration_functions
+  research-information: integration_functions
+  research-objects: artifact_classes
+  research-software: artifact_classes
+  sample-curation: integration_functions
+  scholarly-communication: scientific_domains
+  scientific-computing: integration_functions
+  semantic-web: integration_functions
+  sensor-networks: scientific_domains
+  social-science: scientific_domains
+  systems-biology: scientific_domains

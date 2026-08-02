@@ -38,8 +38,12 @@ class ProvenanceV21Tests(unittest.TestCase):
     def test_taxonomy_counts(self) -> None:
         taxonomy = catalog_model.load_taxonomy()
         self.assertEqual(len(taxonomy["resource_kinds"]), 14)
-        self.assertEqual(len(taxonomy["domains"]), 47)
+        self.assertEqual(len(taxonomy["scientific_domains"]), 26)
+        self.assertEqual(len(taxonomy["integration_functions"]), 14)
+        self.assertEqual(len(taxonomy["infrastructure_contexts"]), 5)
+        self.assertEqual(len(taxonomy["artifact_classes"]), 2)
         self.assertEqual(len(taxonomy["claim_roles"]), 8)
+        self.assertEqual(len(catalog_model.domain_ids()), 47)
 
     def test_registries_load(self) -> None:
         references = catalog_model.load_references()
@@ -51,11 +55,13 @@ class ProvenanceV21Tests(unittest.TestCase):
 
     def test_live_resources_use_controlled_kinds_and_domains(self) -> None:
         kinds = catalog_model.resource_kind_ids()
-        domains = catalog_model.domain_ids()
+        dimensions = catalog_model.taxonomy_dimension_ids()
         for resource in catalog_model.load_catalog_resources():
             self.assertIn(resource["resource_kind"], kinds)
-            for domain in resource["domains"]:
-                self.assertIn(domain, domains)
+            for field, allowed in dimensions.items():
+                for tag in resource.get(field) or []:
+                    self.assertIn(tag, allowed)
+            self.assertTrue(catalog_model.resource_dimension_tags(resource))
 
     def test_all_source_refs_resolve(self) -> None:
         references = catalog_model.load_references()
@@ -153,9 +159,9 @@ class ProvenanceV21Tests(unittest.TestCase):
     def test_unknown_domain_rejected(self) -> None:
         catalog, schema, _ = validate_module.load()
         catalog["resources"] = [dict(catalog["resources"][0])]
-        catalog["resources"][0]["domains"] = ["not-a-real-domain"]
+        catalog["resources"][0]["scientific_domains"] = ["not-a-real-domain"]
         errors = validate_module.validate_catalog(catalog, schema, as_of=date(2026, 8, 1))
-        self.assertTrue(any("unknown domain" in error for error in errors))
+        self.assertTrue(any("unknown scientific_domains value" in error for error in errors))
 
     def test_unknown_kind_rejected(self) -> None:
         catalog, schema, _ = validate_module.load()

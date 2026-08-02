@@ -25,9 +25,6 @@ resources:
   implementation_status: multiple-independent
   conformance_status: public-suite
   steward_id: common-workflow-language-project
-  domains:
-  - computational-workflows
-  - cross-domain
   source_refs:
   - ref_id: commonwl-org-root
     role: technical-definition
@@ -54,6 +51,12 @@ resources:
     resource_id: cwltool
   - type: complements
     resource_id: cwlprov
+  scientific_domains: []
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: cwltool
   name: cwltool
   url: https://github.com/common-workflow-language/cwltool
@@ -78,8 +81,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: common-workflow-language-project
-  domains:
-  - computational-workflows
   source_refs:
   - ref_id: github-com-common-workflow-language-cwltool
     role: technical-definition
@@ -102,6 +103,11 @@ resources:
     resource_id: cwlprov
   - type: implements
     resource_id: common-workflow-language-cwl
+  scientific_domains: []
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ga4gh-data-repository-service-drs
   name: GA4GH Data Repository Service (DRS)
   url: https://www.ga4gh.org/product/data-repository-service-drs/
@@ -127,9 +133,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: ga4gh
-  domains:
-  - genomics
-  - computational-workflows
   source_refs:
   - ref_id: ga4gh-org-product-data-repository-service-drs
     role: technical-definition
@@ -152,6 +155,12 @@ resources:
     resource_id: ga4gh-workflow-execution-service-wes
   - type: complements
     resource_id: ga4gh-task-execution-service-tes
+  scientific_domains:
+  - genomics
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ga4gh-task-execution-service-tes
   name: GA4GH Task Execution Service (TES)
   url: https://www.ga4gh.org/product/task-execution-service-tes/
@@ -175,9 +184,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: ga4gh
-  domains:
-  - genomics
-  - computational-workflows
   source_refs:
   - ref_id: ga4gh-org-product-task-execution-service-tes
     role: technical-definition
@@ -200,6 +206,12 @@ resources:
     resource_id: ga4gh-workflow-execution-service-wes
   - type: complements
     resource_id: ga4gh-data-repository-service-drs
+  scientific_domains:
+  - genomics
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ga4gh-workflow-execution-service-wes
   name: GA4GH Workflow Execution Service (WES)
   url: https://www.ga4gh.org/product/workflow-execution-service-wes/
@@ -223,9 +235,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: ga4gh
-  domains:
-  - genomics
-  - computational-workflows
   source_refs:
   - ref_id: ga4gh-org-product-workflow-execution-service-wes
     role: technical-definition
@@ -249,6 +258,12 @@ resources:
     resource_id: ga4gh-data-repository-service-drs
   - type: complements
     resource_id: sapporo
+  scientific_domains:
+  - genomics
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: lifemonitor
   name: LifeMonitor
   url: https://lifemonitor.eu/
@@ -271,9 +286,6 @@ resources:
   implementation_status: single-known
   conformance_status: none-known
   steward_id: lifemonitor-project-elixir
-  domains:
-  - computational-workflows
-  - life-sciences
   source_refs:
   - ref_id: lifemonitor-eu-root
     role: technical-definition
@@ -295,6 +307,12 @@ resources:
     resource_id: common-workflow-language-cwl
   - type: complements
     resource_id: workflow-testing-ro-crate
+  scientific_domains:
+  - life-sciences
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: sapporo
   name: Sapporo
   url: https://github.com/sapporo-wes/sapporo
@@ -316,9 +334,6 @@ resources:
   implementation_status: single-known
   conformance_status: none-known
   steward_id: sapporo-contributors
-  domains:
-  - computational-workflows
-  - genomics
   source_refs:
   - ref_id: github-com-sapporo-wes-sapporo
     role: technical-definition
@@ -342,6 +357,12 @@ resources:
     resource_id: ga4gh-workflow-execution-service-wes
   - type: executes
     resource_id: common-workflow-language-cwl
+  scientific_domains:
+  - genomics
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: wfexs-backend
   name: WfExS-backend
   url: https://github.com/inab/WfExS-backend
@@ -365,9 +386,6 @@ resources:
   implementation_status: single-known
   conformance_status: none-known
   steward_id: barcelona-supercomputing-center-inb
-  domains:
-  - computational-workflows
-  - life-sciences
   source_refs:
   - ref_id: github-com-inab-wfexs-backend
     role: technical-definition
@@ -392,6 +410,12 @@ resources:
     resource_id: workflow-description-language-wdl
   - type: executes
     resource_id: common-workflow-language-cwl
+  scientific_domains:
+  - life-sciences
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: workflow-description-language-wdl
   name: Workflow Description Language (WDL)
   url: https://openwdl.org/
@@ -414,9 +438,6 @@ resources:
   implementation_status: multiple-independent
   conformance_status: none-known
   steward_id: openwdl
-  domains:
-  - computational-workflows
-  - genomics
   source_refs:
   - ref_id: openwdl-org-root
     role: technical-definition
@@ -441,6 +462,12 @@ resources:
     resource_id: sapporo
   - type: complements
     resource_id: common-workflow-language-cwl
+  scientific_domains:
+  - genomics
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: workflowhub
   name: WorkflowHub
   url: https://workflowhub.eu/
@@ -467,9 +494,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: workflowhub
-  domains:
-  - computational-workflows
-  - life-sciences
   source_refs:
   - ref_id: workflowhub-eu-root
     role: technical-definition
@@ -493,6 +517,12 @@ resources:
     resource_id: lifemonitor
   - type: complements
     resource_id: ga4gh-workflow-execution-service-wes
+  scientific_domains:
+  - life-sciences
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: openeo-api
   name: openEO API
   url: https://www.ogc.org/standards/openeo/
@@ -516,9 +546,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: openeo-consortium-ogc
-  domains:
-  - environmental-science
-  - geospatial
   source_refs:
   - ref_id: ogc-org-standards-openeo
     role: technical-definition
@@ -545,3 +572,9 @@ resources:
     resource_id: spatiotemporal-asset-catalog-stac
   - type: complements
     resource_id: ogc-api-coverages
+  scientific_domains:
+  - environmental-science
+  - geospatial
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []

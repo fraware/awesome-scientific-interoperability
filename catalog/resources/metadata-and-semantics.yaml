@@ -22,8 +22,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: bioschemas-community
-  domains:
-  - life-sciences
   source_refs:
   - ref_id: bioschemas-org-profiles
     role: technical-definition
@@ -44,6 +42,11 @@ resources:
   relations:
   - type: profile-of
     resource_id: schema-org
+  scientific_domains:
+  - life-sciences
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: climate-and-forecast-cf-metadata-conventions
   name: Climate and Forecast (CF) Metadata Conventions
   url: https://cfconventions.org/
@@ -65,9 +68,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: cf-conventions-community
-  domains:
-  - climate-science
-  - geosciences
   source_refs:
   - ref_id: cfconventions-org-root
     role: technical-definition
@@ -85,6 +85,12 @@ resources:
   relations:
   - type: complements
     resource_id: unified-code-for-units-of-measure-ucum
+  scientific_domains:
+  - climate-science
+  - geosciences
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: croissant
   name: Croissant
   url: https://docs.mlcommons.org/croissant/docs/croissant-spec-1.1.html
@@ -112,9 +118,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-validator
   steward_id: mlcommons
-  domains:
-  - machine-learning
-  - research-data
   source_refs:
   - ref_id: docs-mlcommons-org-croissant-docs-croissant-spec-1-1-html
     role: technical-definition
@@ -132,6 +135,12 @@ resources:
   relations:
   - type: complements
     resource_id: schema-org
+  scientific_domains:
+  - machine-learning
+  integration_functions:
+  - research-data
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: darwin-core
   name: Darwin Core
   url: https://dwc.tdwg.org/
@@ -154,8 +163,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: biodiversity-information-standards-tdwg
-  domains:
-  - biodiversity
   source_refs:
   - ref_id: dwc-tdwg-org-root
     role: technical-definition
@@ -173,6 +180,11 @@ resources:
     resource_id: bioschemas
   - type: complements
     resource_id: schema-org
+  scientific_domains:
+  - biodiversity
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ddi-lifecycle
   name: DDI Lifecycle
   url: https://ddialliance.org/Specification/DDI-Lifecycle/
@@ -197,8 +209,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: ddi-alliance
-  domains:
-  - social-science
   source_refs:
   - ref_id: ddialliance-org-specification-ddi-lifecycle
     role: technical-definition
@@ -220,6 +230,11 @@ resources:
     resource_id: sdmx
   - type: complements
     resource_id: schema-org
+  scientific_domains:
+  - social-science
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: edam-ontology
   name: EDAM Ontology
   url: https://edamontology.org/
@@ -243,9 +258,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: edam-ontology-maintainers-elixir-norway-embl-ebi
-  domains:
-  - bioinformatics
-  - life-sciences
   source_refs:
   - ref_id: edamontology-org-root
     role: technical-definition
@@ -265,6 +277,12 @@ resources:
     resource_id: obo-foundry
   - type: complements
     resource_id: ga4gh-tool-registry-service-trs
+  scientific_domains:
+  - bioinformatics
+  - life-sciences
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: obo-foundry
   name: OBO Foundry
   url: https://obofoundry.org/
@@ -286,9 +304,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: obo-foundry
-  domains:
-  - biomedical
-  - life-sciences
   source_refs:
   - ref_id: obofoundry-org-root
     role: technical-definition
@@ -306,6 +321,12 @@ resources:
   relations:
   - type: complements
     resource_id: edam-ontology
+  scientific_domains:
+  - biomedical
+  - life-sciences
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: qudt
   name: QUDT
   url: https://www.qudt.org/
@@ -328,8 +349,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: qudt-org
-  domains:
-  - cross-domain
   source_refs:
   - ref_id: qudt-org-root
     role: technical-definition
@@ -346,6 +365,11 @@ resources:
   relations:
   - type: alternative-to
     resource_id: unified-code-for-units-of-measure-ucum
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: schema-org
   name: Schema.org
   url: https://schema.org/
@@ -369,8 +393,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: schema-org-community
-  domains:
-  - cross-domain
   source_refs:
   - ref_id: schema-org-root
     role: technical-definition
@@ -393,6 +415,11 @@ resources:
     resource_id: croissant
   - type: complements
     resource_id: w3c-data-catalog-vocabulary-dcat
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: sdmx
   name: SDMX
   url: https://sdmx.org/standards-2/
@@ -419,9 +446,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: sdmx-initiative-seven-sponsor-organizations
-  domains:
-  - social-science
-  - cross-domain
   source_refs:
   - ref_id: sdmx-org-standards-2
     role: technical-definition
@@ -451,6 +475,12 @@ resources:
     resource_id: w3c-data-catalog-vocabulary-dcat
   - type: complements
     resource_id: simple-knowledge-organization-system-skos
+  scientific_domains:
+  - social-science
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: simple-knowledge-organization-system-skos
   name: Simple Knowledge Organization System (SKOS)
   url: https://www.w3.org/TR/skos-reference/
@@ -472,9 +502,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: w3c
-  domains:
-  - cross-domain
-  - semantic-web
   source_refs:
   - ref_id: w3-org-tr-skos-reference
     role: technical-definition
@@ -492,6 +519,12 @@ resources:
   relations:
   - type: complements
     resource_id: w3c-data-catalog-vocabulary-dcat
+  scientific_domains: []
+  integration_functions:
+  - semantic-web
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: sosa-ssn
   name: SOSA/SSN
   url: https://www.w3.org/TR/vocab-ssn/
@@ -514,9 +547,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: world-wide-web-consortium-w3c-and-open-geospatial-consortium
-  domains:
-  - environmental-science
-  - sensor-networks
   source_refs:
   - ref_id: w3-org-tr-vocab-ssn
     role: technical-definition
@@ -536,6 +566,12 @@ resources:
     resource_id: ogc-sensorthings-api
   - type: complements
     resource_id: schema-org
+  scientific_domains:
+  - environmental-science
+  - sensor-networks
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: spatiotemporal-asset-catalog-stac
   name: SpatioTemporal Asset Catalog (STAC)
   url: https://stacspec.org/
@@ -562,9 +598,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-validator
   steward_id: stac-community
-  domains:
-  - geospatial
-  - earth-observation
   source_refs:
   - ref_id: stacspec-org-root
     role: technical-definition
@@ -585,6 +618,12 @@ resources:
   relations:
   - type: complements
     resource_id: w3c-data-catalog-vocabulary-dcat
+  scientific_domains:
+  - geospatial
+  - earth-observation
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: unified-code-for-units-of-measure-ucum
   name: Unified Code for Units of Measure (UCUM)
   url: https://ucum.org/
@@ -607,9 +646,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: regenstrief-institute-ucum
-  domains:
-  - cross-domain
-  - clinical-informatics
   source_refs:
   - ref_id: ucum-org-root
     role: technical-definition
@@ -629,6 +665,12 @@ resources:
   relations:
   - type: alternative-to
     resource_id: qudt
+  scientific_domains:
+  - clinical-informatics
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: w3c-data-catalog-vocabulary-dcat
   name: W3C Data Catalog Vocabulary (DCAT)
   url: https://www.w3.org/TR/vocab-dcat-3/
@@ -652,9 +694,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: w3c
-  domains:
-  - cross-domain
-  - research-data
   source_refs:
   - ref_id: w3-org-tr-vocab-dcat-3
     role: technical-definition
@@ -674,6 +713,12 @@ resources:
     resource_id: schema-org
   - type: complements
     resource_id: simple-knowledge-organization-system-skos
+  scientific_domains: []
+  integration_functions:
+  - research-data
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: isa-json
   name: ISA-JSON
   url: https://isa-specs.readthedocs.io/en/latest/isajson.html
@@ -700,8 +745,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-validator
   steward_id: isa-tools-community
-  domains:
-  - life-sciences
   source_refs:
   - ref_id: isa-specs-readthedocs-io-en-latest-isajson-html
     role: technical-definition
@@ -724,3 +767,8 @@ resources:
     resource_id: ro-crate
   - type: complements
     resource_id: bioschemas
+  scientific_domains:
+  - life-sciences
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []

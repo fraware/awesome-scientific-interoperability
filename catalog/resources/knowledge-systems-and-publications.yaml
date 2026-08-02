@@ -23,8 +23,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: national-library-of-medicine
-  domains:
-  - scholarly-communication
   source_refs:
   - ref_id: jats-nlm-nih-gov-root
     role: technical-definition
@@ -48,6 +46,11 @@ resources:
     resource_id: scholix
   - type: complements
     resource_id: citation-file-format-citation-cff
+  scientific_domains:
+  - scholarly-communication
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: nanopublications
   name: Nanopublications
   url: https://nanopub.net/
@@ -71,9 +74,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: nanopublications-community
-  domains:
-  - semantic-web
-  - knowledge-representation
   source_refs:
   - ref_id: nanopub-net-root
     role: technical-definition
@@ -97,6 +97,12 @@ resources:
     resource_id: open-research-knowledge-graph-orkg
   - type: complements
     resource_id: schema-org
+  scientific_domains: []
+  integration_functions:
+  - semantic-web
+  - knowledge-representation
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: open-research-knowledge-graph-orkg
   name: Open Research Knowledge Graph (ORKG)
   url: https://www.orkg.org/
@@ -121,8 +127,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: tib-leibniz-information-centre-for-science-and-technology
-  domains:
-  - scholarly-communication
   source_refs:
   - ref_id: orkg-org-root
     role: technical-definition
@@ -142,6 +146,11 @@ resources:
     resource_id: nanopublications
   - type: complements
     resource_id: openaire-research-graph
+  scientific_domains:
+  - scholarly-communication
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: openaire-research-graph
   name: OpenAIRE Research Graph
   url: https://graph.openaire.eu/
@@ -168,9 +177,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: openaire
-  domains:
-  - scholarly-communication
-  - research-information
   source_refs:
   - ref_id: graph-openaire-eu-root
     role: technical-definition
@@ -189,6 +195,12 @@ resources:
     resource_id: open-research-knowledge-graph-orkg
   - type: complements
     resource_id: scholix
+  scientific_domains:
+  - scholarly-communication
+  integration_functions:
+  - research-information
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: scholix
   name: Scholix
   url: https://github.com/scholix/schema
@@ -214,9 +226,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: rda-scholix-working-group
-  domains:
-  - scholarly-communication
-  - research-data
   source_refs:
   - ref_id: github-com-scholix-schema
     role: technical-definition
@@ -240,3 +249,9 @@ resources:
     resource_id: openaire-research-graph
   - type: complements
     resource_id: journal-article-tag-suite-jats
+  scientific_domains:
+  - scholarly-communication
+  integration_functions:
+  - research-data
+  infrastructure_contexts: []
+  artifact_classes: []

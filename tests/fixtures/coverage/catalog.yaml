@@ -5,8 +5,6 @@ resources:
   maturity: maintained
   implementation_status: single-known
   conformance_status: none-known
-  domains:
-  - physics
   evidence_types:
   - reference-implementation
   reviewed_on: '2026-08-01'
@@ -16,14 +14,17 @@ resources:
   steward_type: community
   source_refs: []
   relations: []
+  scientific_domains:
+  - physics
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: demo-impl-a
   name: Demo Implementation A
   section: Foundations
   maturity: maintained
   implementation_status: reference-and-others
   conformance_status: none-known
-  domains:
-  - physics
   evidence_types:
   - reference-implementation
   reviewed_on: '2026-08-01'
@@ -37,14 +38,17 @@ resources:
   relations:
   - type: complements
     resource_id: demo-spec
+  scientific_domains:
+  - physics
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: demo-impl-b
   name: Demo Implementation B
   section: Foundations
   maturity: maintained
   implementation_status: reference-and-others
   conformance_status: none-known
-  domains:
-  - physics
   evidence_types:
   - reference-implementation
   reviewed_on: '2026-08-01'
@@ -58,14 +62,17 @@ resources:
   relations:
   - type: complements
     resource_id: demo-spec
+  scientific_domains:
+  - physics
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: demo-impl-c
   name: Demo Implementation C
   section: Foundations
   maturity: maintained
   implementation_status: reference-and-others
   conformance_status: none-known
-  domains:
-  - physics
   evidence_types:
   - reference-implementation
   reviewed_on: '2026-08-01'
@@ -79,14 +86,17 @@ resources:
   relations:
   - type: complements
     resource_id: demo-spec
+  scientific_domains:
+  - physics
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: general-vocab
   name: General Vocabulary
   section: Metadata and Semantics
   maturity: established
   implementation_status: multiple-independent
   conformance_status: none-known
-  domains:
-  - cross-domain
   evidence_types:
   - normative-specification
   reviewed_on: '2026-08-01'
@@ -98,14 +108,17 @@ resources:
   - ref_id: cov-ref-1
     role: technical-definition
   relations: []
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: general-units
   name: General Units
   section: Metadata and Semantics
   maturity: established
   implementation_status: multiple-independent
   conformance_status: none-known
-  domains:
-  - cross-domain
   evidence_types:
   - normative-specification
   reviewed_on: '2026-08-01'
@@ -117,14 +130,17 @@ resources:
   - ref_id: cov-ref-1
     role: technical-definition
   relations: []
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: isolated-entry
   name: Isolated Entry
   section: Validation and Conformance
   maturity: maintained
   implementation_status: single-known
   conformance_status: public-validator
-  domains:
-  - chemistry
   evidence_types:
   - public-validator
   reviewed_on: '2026-08-01'
@@ -136,3 +152,8 @@ resources:
   - ref_id: cov-ref-1
     role: technical-definition
   relations: []
+  scientific_domains:
+  - chemistry
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []

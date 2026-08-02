@@ -23,9 +23,6 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  domains:
-  - cross-domain
-  - digital-preservation
   decision_basis: Simple, durable mechanism for exchanging content packages with integrity evidence.
   boundary_note: Lower semantic expressiveness than RO-Crate; complementary for transfer and fixity.
   reviewed_on: '2026-08-01'
@@ -41,6 +38,12 @@ resources:
   relations:
   - type: alternative-to
     resource_id: ro-crate
+  scientific_domains: []
+  integration_functions:
+  - digital-preservation
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: combine-omex-archive
   name: COMBINE/OMEX Archive
   url: https://combinearchive.org/
@@ -64,9 +67,6 @@ resources:
   - institutional-adoption
   implementation_status: reference-and-others
   conformance_status: none-known
-  domains:
-  - computational-biology
-  - systems-biology
   decision_basis: Mature domain package enabling interoperable computational biology studies.
   boundary_note: Domain exemplar with strong relation to SED-ML and SBML; closest general alternative
     RO-Crate remains in group A migration.
@@ -83,6 +83,12 @@ resources:
   relations:
   - type: complements
     resource_id: bagit
+  scientific_domains:
+  - computational-biology
+  - systems-biology
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: fair-signposting
   name: FAIR Signposting
   url: https://signposting.org/
@@ -105,9 +111,6 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: documented-tests
-  domains:
-  - cross-domain
-  - scholarly-communication
   decision_basis: Lightweight operational bridge allowing machines to navigate research objects across
     repositories.
   boundary_note: Complements repository APIs and packaging formats; not a packaging or provenance standard.
@@ -124,6 +127,12 @@ resources:
   relations:
   - type: complements
     resource_id: bagit
+  scientific_domains:
+  - scholarly-communication
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: ro-crate
   name: RO-Crate
   url: https://www.researchobject.org/ro-crate/specification/1.3/
@@ -149,8 +158,6 @@ resources:
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: public-validator
-  domains:
-  - cross-domain
   decision_basis: One of the strongest cross-domain mechanisms for packaging heterogeneous scientific
     objects and context.
   boundary_note: Use profiles to distinguish specialized use cases; packaging is distinct from execution
@@ -174,6 +181,11 @@ resources:
     resource_id: workflow-run-ro-crate
   - type: complements
     resource_id: workflow-testing-ro-crate
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: workflow-ro-crate
   name: Workflow RO-Crate
   url: https://about.workflowhub.eu/Workflow-RO-Crate/
@@ -196,9 +208,6 @@ resources:
   - institutional-adoption
   implementation_status: reference-and-others
   conformance_status: documented-tests
-  domains:
-  - computational-workflows
-  - cross-domain
   decision_basis: Connects workflow authors, registries, and downstream systems through a portable research
     object.
   boundary_note: Distinct from execution provenance, which belongs to Workflow Run RO-Crate.
@@ -219,6 +228,12 @@ resources:
     resource_id: workflow-testing-ro-crate
   - type: profile-of
     resource_id: ro-crate
+  scientific_domains: []
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: workflow-run-ro-crate
   name: Workflow Run RO-Crate
   url: https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/
@@ -242,9 +257,6 @@ resources:
   - independent-implementation
   implementation_status: reference-and-others
   conformance_status: documented-tests
-  domains:
-  - computational-workflows
-  - provenance
   decision_basis: Direct cross-engine evidence format with multiple implementations and strong North-Star
     utility.
   boundary_note: Profile conformance does not alone prove semantic equivalence across implementations.
@@ -269,6 +281,12 @@ resources:
     resource_id: ro-crate
   - type: extends
     resource_id: workflow-ro-crate
+  scientific_domains: []
+  integration_functions:
+  - computational-workflows
+  - provenance
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: workflow-testing-ro-crate
   name: Workflow Testing RO-Crate
   url: https://w3id.org/ro/wftest
@@ -289,8 +307,6 @@ resources:
   - reference-implementation
   implementation_status: reference-and-others
   conformance_status: documented-tests
-  domains:
-  - computational-workflows
   decision_basis: Makes workflow tests portable across registries and monitoring systems.
   boundary_note: Adoption should be reviewed alongside LifeMonitor and WorkflowHub.
   reviewed_on: '2026-08-01'
@@ -310,6 +326,11 @@ resources:
     resource_id: lifemonitor
   - type: profile-of
     resource_id: ro-crate
+  scientific_domains: []
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: apptainer-singularity-image-format
   name: Apptainer / Singularity Image Format
   url: https://apptainer.org/docs/user/latest/introduction.html
@@ -331,9 +352,6 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  domains:
-  - scientific-computing
-  - hpc
   decision_basis: High-value operational interoperability layer across scientific computing environments
     where OCI workflows alone may be insufficient.
   boundary_note: The entry should emphasize image/runtime portability across HPC infrastructure; OCI containers
@@ -351,6 +369,12 @@ resources:
   relations:
   - type: complements
     resource_id: bagit
+  scientific_domains: []
+  integration_functions:
+  - scientific-computing
+  infrastructure_contexts:
+  - hpc
+  artifact_classes: []
 - id: citation-file-format-citation-cff
   name: Citation File Format (CITATION.cff)
   url: https://citation-file-format.github.io/
@@ -373,9 +397,6 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: public-validator
-  domains:
-  - research-software
-  - scholarly-communication
   decision_basis: Practical interoperability mechanism connecting source repositories with citation and
     archival systems.
   boundary_note: Narrower than CodeMeta but exceptionally deployable.
@@ -394,6 +415,12 @@ resources:
     resource_id: codemeta
   - type: complements
     resource_id: codemeta
+  scientific_domains:
+  - scholarly-communication
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes:
+  - research-software
 - id: codemeta
   name: CodeMeta
   url: https://codemeta.github.io/
@@ -415,8 +442,6 @@ resources:
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: none-known
-  domains:
-  - research-software
   decision_basis: Core cross-system metadata bridge for research software discovery and exchange.
   boundary_note: Complementary to CITATION.cff, which emphasizes repository-local citation metadata.
   reviewed_on: '2026-08-01'
@@ -434,6 +459,11 @@ resources:
     resource_id: citation-file-format-citation-cff
   - type: complements
     resource_id: citation-file-format-citation-cff
+  scientific_domains: []
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes:
+  - research-software
 - id: reprozip
   name: ReproZip
   url: https://www.reprozip.org/
@@ -454,9 +484,6 @@ resources:
   - interoperability-demonstration
   implementation_status: reference-and-others
   conformance_status: none-known
-  domains:
-  - reproducibility
-  - computational-science
   decision_basis: Strong executable-environment bridge supporting transfer and reproduction across systems.
   boundary_note: Interoperability depends on unpacker support and environment compatibility; packaging
     not provenance.
@@ -473,6 +500,12 @@ resources:
   relations:
   - type: complements
     resource_id: bagit
+  scientific_domains: []
+  integration_functions:
+  - reproducibility
+  - computational-science
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: software-hash-identifiers-swhids
   name: Software Hash Identifiers (SWHIDs)
   url: https://www.swhid.org/
@@ -494,9 +527,6 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  domains:
-  - research-software
-  - digital-preservation
   decision_basis: Connects exact software artifacts to scholarly records and reproducibility evidence.
   boundary_note: Complement DOI-level software records with content-addressed identity.
   reviewed_on: '2026-08-01'
@@ -512,6 +542,12 @@ resources:
   relations:
   - type: complements
     resource_id: bagit
+  scientific_domains: []
+  integration_functions:
+  - digital-preservation
+  infrastructure_contexts: []
+  artifact_classes:
+  - research-software
 - id: common-workflow-language-cwl
   name: Common Workflow Language (CWL)
   url: https://www.commonwl.org/
@@ -535,9 +571,6 @@ resources:
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: public-suite
-  domains:
-  - computational-workflows
-  - cross-domain
   decision_basis: Canonical cross-engine workflow portability standard with a mature conformance ecosystem.
   boundary_note: Execution portability still depends on supported features and environments; distinct
     from WES/TES execution APIs.
@@ -558,6 +591,12 @@ resources:
     resource_id: cwltool
   - type: complements
     resource_id: cwlprov
+  scientific_domains: []
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
 - id: cwltool
   name: cwltool
   url: https://github.com/common-workflow-language/cwltool
@@ -580,8 +619,6 @@ resources:
   - conformance-suite
   implementation_status: reference-and-others
   conformance_status: public-suite
-  domains:
-  - computational-workflows
   decision_basis: Canonical implementation linking the CWL specification, conformance suite, execution,
     and provenance.
   boundary_note: Avoid treating it as evidence that every CWL runner is equivalent.
@@ -600,6 +637,11 @@ resources:
     resource_id: cwlprov
   - type: implements
     resource_id: common-workflow-language-cwl
+  scientific_domains: []
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ga4gh-data-repository-service-drs
   name: GA4GH Data Repository Service (DRS)
   url: https://www.ga4gh.org/product/data-repository-service-drs/
@@ -622,9 +664,6 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: documented-tests
-  domains:
-  - genomics
-  - computational-workflows
   decision_basis: Critical data-access bridge in federated scientific workflow stacks.
   boundary_note: Access authorization remains a separate interoperability layer; DRS is data access not
     workflow language.
@@ -643,6 +682,12 @@ resources:
     resource_id: ga4gh-workflow-execution-service-wes
   - type: complements
     resource_id: ga4gh-task-execution-service-tes
+  scientific_domains:
+  - genomics
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ga4gh-task-execution-service-tes
   name: GA4GH Task Execution Service (TES)
   url: https://www.ga4gh.org/product/task-execution-service-tes/
@@ -663,9 +708,6 @@ resources:
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: documented-tests
-  domains:
-  - genomics
-  - computational-workflows
   decision_basis: Separates workflow orchestration from interoperable task execution across backends.
   boundary_note: Genomics origin, but broadly useful cloud-compute contract; distinct from WES workflow-run
     API.
@@ -684,6 +726,12 @@ resources:
     resource_id: ga4gh-workflow-execution-service-wes
   - type: complements
     resource_id: ga4gh-data-repository-service-drs
+  scientific_domains:
+  - genomics
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ga4gh-workflow-execution-service-wes
   name: GA4GH Workflow Execution Service (WES)
   url: https://www.ga4gh.org/product/workflow-execution-service-wes/
@@ -705,9 +753,6 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: documented-tests
-  domains:
-  - genomics
-  - computational-workflows
   decision_basis: Direct operational interoperability contract between clients and workflow-execution
     services.
   boundary_note: Implementation listings do not guarantee conformance; test evidence should be noted.
@@ -729,6 +774,12 @@ resources:
     resource_id: ga4gh-data-repository-service-drs
   - type: complements
     resource_id: sapporo
+  scientific_domains:
+  - genomics
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: lifemonitor
   name: LifeMonitor
   url: https://lifemonitor.eu/
@@ -749,9 +800,6 @@ resources:
   - interoperability-demonstration
   implementation_status: single-known
   conformance_status: none-known
-  domains:
-  - computational-workflows
-  - life-sciences
   decision_basis: Unusually direct bridge between portable workflow-test descriptions and external execution
     services.
   boundary_note: Narrower than a general interoperability observatory; distinct from WorkflowHub registry
@@ -773,6 +821,12 @@ resources:
     resource_id: common-workflow-language-cwl
   - type: complements
     resource_id: workflow-testing-ro-crate
+  scientific_domains:
+  - life-sciences
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: sapporo
   name: Sapporo
   url: https://github.com/sapporo-wes/sapporo
@@ -792,9 +846,6 @@ resources:
   - interoperability-demonstration
   implementation_status: single-known
   conformance_status: documented-tests
-  domains:
-  - computational-workflows
-  - genomics
   decision_basis: Concrete cross-language WES implementation and useful reference point for testing client-service
     interoperability.
   boundary_note: Implementation inclusion should be tied to reference value and multi-language support;
@@ -816,6 +867,12 @@ resources:
     resource_id: ga4gh-workflow-execution-service-wes
   - type: executes
     resource_id: common-workflow-language-cwl
+  scientific_domains:
+  - genomics
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: wfexs-backend
   name: WfExS-backend
   url: https://github.com/inab/WfExS-backend
@@ -837,9 +894,6 @@ resources:
   - interoperability-demonstration
   implementation_status: single-known
   conformance_status: none-known
-  domains:
-  - computational-workflows
-  - life-sciences
   decision_basis: Strong reference implementation connecting heterogeneous workflows with reproducible
     execution and evidence packaging.
   boundary_note: Independent review should confirm current supported engines and profiles.
@@ -862,6 +916,12 @@ resources:
     resource_id: workflow-description-language-wdl
   - type: executes
     resource_id: common-workflow-language-cwl
+  scientific_domains:
+  - life-sciences
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: workflow-description-language-wdl
   name: Workflow Description Language (WDL)
   url: https://openwdl.org/
@@ -882,9 +942,6 @@ resources:
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: none-known
-  domains:
-  - computational-workflows
-  - genomics
   decision_basis: Major scientific workflow language with meaningful implementation diversity.
   boundary_note: Governance and conformance maturity should be compared with CWL; language not execution
     API.
@@ -905,6 +962,12 @@ resources:
     resource_id: sapporo
   - type: complements
     resource_id: common-workflow-language-cwl
+  scientific_domains:
+  - genomics
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: workflowhub
   name: WorkflowHub
   url: https://workflowhub.eu/
@@ -929,9 +992,6 @@ resources:
   - interoperability-demonstration
   implementation_status: reference-and-others
   conformance_status: documented-tests
-  domains:
-  - computational-workflows
-  - life-sciences
   decision_basis: Exemplary multi-standard infrastructure connecting workflow publication, discovery,
     packaging, and execution systems.
   boundary_note: Registry role is distinct from LifeMonitor's test monitoring; GA4GH TRS cross-ref deferred
@@ -955,6 +1015,12 @@ resources:
     resource_id: lifemonitor
   - type: complements
     resource_id: ga4gh-workflow-execution-service-wes
+  scientific_domains:
+  - life-sciences
+  integration_functions:
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: cwlprov
   name: CWLProv
   url: https://cwltool.readthedocs.io/en/latest/CWLProv.html
@@ -975,9 +1041,6 @@ resources:
   - reference-implementation
   implementation_status: reference-and-others
   conformance_status: documented-tests
-  domains:
-  - computational-workflows
-  - provenance
   decision_basis: Concrete bridge between a workflow language, execution provenance, and portable evidence.
   boundary_note: Related to Workflow Run RO-Crate; descriptions must clarify their distinct profiles and
     evolution.
@@ -1004,6 +1067,12 @@ resources:
     resource_id: w3c-prov
   - type: depends-on
     resource_id: common-workflow-language-cwl
+  scientific_domains: []
+  integration_functions:
+  - computational-workflows
+  - provenance
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: iso-23494-2-2026-common-provenance-model
   name: ISO 23494-2:2026 Common Provenance Model
   url: https://www.iso.org/standard/87714.html
@@ -1025,9 +1094,6 @@ resources:
   - normative-specification
   implementation_status: unknown
   conformance_status: none-known
-  domains:
-  - biotechnology
-  - provenance
   decision_basis: Newly published international scientific provenance standard with explicit interoperability
     requirements.
   boundary_note: Biotechnology-focused; include as a current domain standard and monitor implementation
@@ -1043,6 +1109,12 @@ resources:
   relations:
   - type: complements
     resource_id: w3c-prov
+  scientific_domains:
+  - biotechnology
+  integration_functions:
+  - provenance
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: p-plan
   name: P-Plan
   url: https://www.opmw.org/model/p-plan/
@@ -1063,9 +1135,6 @@ resources:
   - normative-specification
   implementation_status: unknown
   conformance_status: none-known
-  domains:
-  - provenance
-  - computational-workflows
   decision_basis: Addresses the important bridge between intended scientific procedures and observed execution.
   boundary_note: Assess current implementation adoption during double review.
   reviewed_on: '2026-08-01'
@@ -1081,6 +1150,12 @@ resources:
   relations:
   - type: complements
     resource_id: w3c-prov
+  scientific_domains: []
+  integration_functions:
+  - provenance
+  - computational-workflows
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: runcrate
   name: runcrate
   url: https://www.researchobject.org/runcrate/
@@ -1103,9 +1178,6 @@ resources:
   - interoperability-demonstration
   implementation_status: reference-and-others
   conformance_status: none-known
-  domains:
-  - computational-workflows
-  - provenance
   decision_basis: Makes a portable provenance profile operationally usable and inspectable.
   boundary_note: Implementation maturity and supported profiles should be recorded.
   reviewed_on: '2026-08-01'
@@ -1127,6 +1199,12 @@ resources:
     resource_id: ro-crate
   - type: implements
     resource_id: workflow-run-ro-crate
+  scientific_domains: []
+  integration_functions:
+  - computational-workflows
+  - provenance
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: w3c-prov
   name: W3C PROV
   url: https://www.w3.org/TR/prov-o/
@@ -1148,9 +1226,6 @@ resources:
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: none-known
-  domains:
-  - cross-domain
-  - provenance
   decision_basis: Foundational cross-domain provenance contract used by many scientific profiles.
   boundary_note: General standard justified by extensive scientific reuse; profiles such as CWLProv and
     Workflow Run RO-Crate specialize it.
@@ -1173,3 +1248,9 @@ resources:
     resource_id: workflow-run-ro-crate
   - type: complements
     resource_id: runcrate
+  scientific_domains: []
+  integration_functions:
+  - provenance
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []

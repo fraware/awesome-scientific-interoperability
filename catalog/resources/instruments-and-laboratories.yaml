@@ -24,9 +24,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: allotrope-foundation
-  domains:
-  - analytical-chemistry
-  - laboratory-data
   source_refs:
   - ref_id: docs-allotrope-org-root
     role: technical-definition
@@ -46,6 +43,12 @@ resources:
     resource_id: analytical-information-markup-language-animl
   - type: complements
     resource_id: analytical-information-markup-language-animl
+  scientific_domains:
+  - analytical-chemistry
+  integration_functions:
+  - laboratory-data
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: analytical-information-markup-language-animl
   name: Analytical Information Markup Language (AnIML)
   url: https://www.animl.org/
@@ -67,8 +70,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: astm-international
-  domains:
-  - analytical-chemistry
   source_refs:
   - ref_id: animl-org-root
     role: technical-definition
@@ -90,6 +91,11 @@ resources:
     resource_id: allotrope-data-format
   - type: complements
     resource_id: allotrope-data-format
+  scientific_domains:
+  - analytical-chemistry
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: autoprotocol
   name: Autoprotocol
   url: https://github.com/autoprotocol/autoprotocol-python
@@ -112,8 +118,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: autoprotocol-community
-  domains:
-  - laboratory-automation
   source_refs:
   - ref_id: github-com-autoprotocol-autoprotocol-python
     role: technical-definition
@@ -135,6 +139,11 @@ resources:
     resource_id: sila-2
   - type: complements
     resource_id: sila-2
+  scientific_domains: []
+  integration_functions:
+  - laboratory-automation
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: hl7-fhir
   name: HL7 FHIR
   url: https://hl7.org/fhir/
@@ -160,9 +169,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: hl7-international
-  domains:
-  - clinical-informatics
-  - laboratory-medicine
   source_refs:
   - ref_id: hl7-org-fhir
     role: technical-definition
@@ -184,6 +190,12 @@ resources:
   relations:
   - type: complements
     resource_id: loinc
+  scientific_domains:
+  - clinical-informatics
+  - laboratory-medicine
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: loinc
   name: LOINC
   url: https://loinc.org/
@@ -205,9 +217,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: regenstrief-institute
-  domains:
-  - clinical-informatics
-  - laboratory-medicine
   source_refs:
   - ref_id: loinc-org-root
     role: technical-definition
@@ -229,6 +238,12 @@ resources:
   relations:
   - type: complements
     resource_id: hl7-fhir
+  scientific_domains:
+  - clinical-informatics
+  - laboratory-medicine
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: opc-ua-laboratory-and-analytical-device-standard-lads
   name: OPC UA Laboratory and Analytical Device Standard (LADS)
   url: https://opcfoundation.org/markets-collaboration/lads/
@@ -251,9 +266,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: opc-foundation
-  domains:
-  - laboratory-automation
-  - analytical-instruments
   source_refs:
   - ref_id: opcfoundation-org-markets-collaboration-lads
     role: technical-definition
@@ -272,6 +284,12 @@ resources:
     resource_id: sila-2
   - type: complements
     resource_id: sila-2
+  scientific_domains: []
+  integration_functions:
+  - laboratory-automation
+  infrastructure_contexts:
+  - analytical-instruments
+  artifact_classes: []
 - id: sila-2
   name: SiLA 2
   url: https://sila2.gitlab.io/sila_base/
@@ -294,8 +312,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: none-known
   steward_id: sila-consortium
-  domains:
-  - laboratory-automation
   source_refs:
   - ref_id: sila2-gitlab-io-sila-base
     role: technical-definition
@@ -318,6 +334,11 @@ resources:
     resource_id: opc-ua-laboratory-and-analytical-device-standard-lads
   - type: complements
     resource_id: opc-ua-laboratory-and-analytical-device-standard-lads
+  scientific_domains: []
+  integration_functions:
+  - laboratory-automation
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: ogc-sensorthings-api
   name: OGC SensorThings API
   url: https://www.ogc.org/standards/sensorthings/
@@ -342,9 +363,6 @@ resources:
   implementation_status: reference-and-others
   conformance_status: public-suite
   steward_id: open-geospatial-consortium-ogc
-  domains:
-  - environmental-science
-  - geospatial
   source_refs:
   - ref_id: ogc-org-standards-sensorthings
     role: technical-definition
@@ -366,6 +384,12 @@ resources:
     resource_id: sosa-ssn
   - type: complements
     resource_id: sosa-ssn
+  scientific_domains:
+  - environmental-science
+  - geospatial
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
 - id: dicomweb
   name: DICOMweb
   url: https://www.dicomstandard.org/using/dicomweb
@@ -387,9 +411,6 @@ resources:
   implementation_status: multiple-independent
   conformance_status: none-known
   steward_id: dicom-standards-committee-nema
-  domains:
-  - life-sciences
-  - clinical-laboratory
   source_refs:
   - ref_id: dicomstandard-org-using-dicomweb
     role: technical-definition
@@ -411,3 +432,9 @@ resources:
   relations:
   - type: alternative-to
     resource_id: hl7-fhir
+  scientific_domains:
+  - life-sciences
+  - clinical-laboratory
+  integration_functions: []
+  infrastructure_contexts: []
+  artifact_classes: []
