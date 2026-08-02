@@ -32,6 +32,8 @@ resources:
     role: stewardship
   - ref_id: github-com-libraryofcongress-bagit-python
     role: implementation
+  - ref_id: github-com-libraryofcongress-bagit-java
+    role: implementation
   alternatives:
   - ro-crate
   related_resource_ids: []
@@ -106,8 +108,8 @@ resources:
   - normative-specification
   - independent-implementation
   - institutional-adoption
-  implementation_status: multiple-independent
-  conformance_status: documented-tests
+  implementation_status: reference-and-others
+  conformance_status: none-known
   steward_id: signposting-community
   domains:
   - cross-domain
@@ -118,6 +120,8 @@ resources:
   - ref_id: signposting-org-root
     role: stewardship
   - ref_id: doi-org-10-5281-zenodo-10490289
+    role: technical-definition
+  - ref_id: signposting-org-fair
     role: technical-definition
   alternatives: []
   related_resource_ids:
@@ -165,6 +169,10 @@ resources:
     role: stewardship
   - ref_id: github-com-crs4-rocrate-validator
     role: conformance
+  - ref_id: github-com-researchobject-ro-crate-py
+    role: implementation
+  - ref_id: github-com-crs4-rocrate-validator
+    role: implementation
   alternatives:
   - bagit
   related_resource_ids:
@@ -200,7 +208,7 @@ resources:
   - reference-implementation
   - institutional-adoption
   implementation_status: reference-and-others
-  conformance_status: documented-tests
+  conformance_status: none-known
   steward_id: workflowhub
   domains:
   - computational-workflows
@@ -244,7 +252,7 @@ resources:
   - reference-implementation
   - independent-implementation
   implementation_status: reference-and-others
-  conformance_status: documented-tests
+  conformance_status: none-known
   steward_id: research-object-community
   domains:
   - computational-workflows
@@ -289,7 +297,7 @@ resources:
   - normative-specification
   - reference-implementation
   implementation_status: reference-and-others
-  conformance_status: documented-tests
+  conformance_status: none-known
   steward_id: research-object-community
   domains:
   - computational-workflows
@@ -329,8 +337,9 @@ resources:
   - normative-specification
   - institutional-adoption
   - documented-tests
-  implementation_status: multiple-independent
-  conformance_status: documented-tests
+  - public-validator
+  implementation_status: reference-and-others
+  conformance_status: public-validator
   steward_id: international-union-of-crystallography-iucr
   domains:
   - materials-science
@@ -342,6 +351,10 @@ resources:
     role: stewardship
   - ref_id: iucr-org-resources-cif-spec
     role: technical-definition
+  - ref_id: www-iucr-org-resources-cif-software-checkcif
+    role: conformance
+  - ref_id: github-com-comcifs-cif-core
+    role: implementation
   alternatives:
   - nexus
   related_resource_ids:
@@ -373,8 +386,9 @@ resources:
   - independent-implementation
   - institutional-adoption
   - documented-tests
+  - conformance-suite
   implementation_status: multiple-independent
-  conformance_status: documented-tests
+  conformance_status: public-suite
   steward_id: modelica-association-project-fmi
   domains:
   - engineering
@@ -386,6 +400,8 @@ resources:
     role: stewardship
   - ref_id: github-com-modelica-fmi-standard
     role: implementation
+  - ref_id: github-com-modelica-fmi-cross-check
+    role: conformance
   alternatives:
   - combine-omex-archive
   related_resource_ids: []
@@ -415,8 +431,9 @@ resources:
   - normative-specification
   - institutional-adoption
   - documented-tests
-  implementation_status: multiple-independent
-  conformance_status: documented-tests
+  - public-validator
+  implementation_status: reference-and-others
+  conformance_status: public-validator
   steward_id: nexus-international-advisory-committee-niac
   domains:
   - physics
@@ -430,6 +447,10 @@ resources:
     role: technical-definition
   - ref_id: journals-iucr-org-j-issues-2015-01-00-po5029-po5029-pdf
     role: technical-definition
+  - ref_id: github-com-nexusformat-cnxvalidate
+    role: conformance
+  - ref_id: github-com-nexusformat-definitions
+    role: implementation
   alternatives: []
   related_resource_ids:
   - climate-and-forecast-cf-metadata-conventions
@@ -504,8 +525,9 @@ resources:
   evidence_types:
   - normative-specification
   - documented-tests
-  implementation_status: multiple-independent
-  conformance_status: documented-tests
+  - conformance-suite
+  implementation_status: reference-and-others
+  conformance_status: public-suite
   steward_id: open-geospatial-consortium-ogc
   domains:
   - geospatial
@@ -516,6 +538,8 @@ resources:
     role: stewardship
   - ref_id: docs-ogc-org-is-17-069r4-17-069r4-html
     role: technical-definition
+  - ref_id: github-com-opengeospatial-ets-ogcapi-features10
+    role: conformance
   alternatives: []
   related_resource_ids:
   - spatiotemporal-asset-catalog-stac

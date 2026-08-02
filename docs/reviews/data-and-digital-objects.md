@@ -40,3 +40,6 @@ None.
 - Closed isolates: `combine-omex-archive` related to RO-Crate and BioCompute Objects; `fair-signposting` related to RO-Crate and Schema.org; `crystallographic-information-framework-cif` alternatives/related to NeXus.
 - Corrected OGC API - Coverages to emerging / reference-and-others / none-known (no public-suite claim without a direct suite artifact).
 - Downgraded CIF, FMI, NeXus, OGC API Features, OPTIMADE, and related prior public-* claims to `documented-tests` where artifact URLs were not already present.
+
+## Issue #30 Batch 3 data objects evidence (2026-08-01): enriched BagIt/CIF/FMI/NeXus/OGC Features/RO-Crate; downgraded FAIR Signposting and workflow RO-Crate profile conformance where no suite artifact.
+

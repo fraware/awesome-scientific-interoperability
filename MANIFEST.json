@@ -84,8 +84,8 @@
     },
     {
       "path": "catalog/resources/data-and-digital-objects.yaml",
-      "sha256": "dc6c2c3139de150c5d3e8ac4b7baa6a86f4e2a59d1ebb22c60dd52b5e5d1b4e8",
-      "bytes": 17939
+      "sha256": "7f35c3df1021f088881d4120e5da0baa84ecab2d3bcf186058347452d68ae262",
+      "bytes": 18717
     },
     {
       "path": "catalog/resources/foundations.yaml",
@@ -334,8 +334,8 @@
     },
     {
       "path": "docs/reviews/data-and-digital-objects.md",
-      "sha256": "cec19d7e30f4f5e457e2626a8607d14463b8a443a66b18dee08562be6850fd2f",
-      "bytes": 3224
+      "sha256": "e5b9f9f10c9bd4a625c5ddac41eacd06b55e29a9a2ecc741f73d69d16e6d956a",
+      "bytes": 3430
     },
     {
       "path": "docs/reviews/foundations.md",
