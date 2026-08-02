@@ -1,0 +1,1371 @@
+references_version: 1.0.0
+reviewed_on: '2026-08-01'
+references:
+- id: a2a-protocol-org-v1-0-0
+  title: Agent2Agent (A2A) Protocol
+  url: https://a2a-protocol.org/v1.0.0/
+  type: specification
+  publisher: a2a-protocol.org
+  accessed_on: '2026-08-01'
+- id: about-workflowhub-eu-workflow-ro-crate
+  title: Workflow RO-Crate
+  url: https://about.workflowhub.eu/Workflow-RO-Crate/
+  type: specification
+  publisher: about.workflowhub.eu
+  accessed_on: '2026-08-01'
+- id: academic-oup-com-bioinformatics-article-36-2-555-5680463
+  title: Open Research Knowledge Graph (ORKG)
+  url: https://academic.oup.com/bioinformatics/article/36/2/555/5680463
+  type: technical-documentation
+  publisher: academic.oup.com
+  accessed_on: '2026-08-01'
+- id: allotrope-org-adf
+  title: Allotrope Data Format
+  url: https://www.allotrope.org/adf/
+  type: technical-documentation
+  publisher: allotrope.org
+  accessed_on: '2026-08-01'
+- id: allotrope-org-root
+  title: Allotrope Foundation
+  url: https://www.allotrope.org/
+  type: governance-source
+  publisher: allotrope.org
+  accessed_on: '2026-08-01'
+- id: animl-org-root
+  title: Analytical Information Markup Language (AnIML)
+  url: https://www.animl.org/
+  type: specification
+  publisher: animl.org
+  accessed_on: '2026-08-01'
+- id: api-crossref-org-root
+  title: Crossref REST API and Metadata
+  url: https://api.crossref.org/
+  type: technical-documentation
+  publisher: api.crossref.org
+  accessed_on: '2026-08-01'
+- id: apptainer-org-docs-user-latest-introduction-html
+  title: Apptainer / Singularity Image Format
+  url: https://apptainer.org/docs/user/latest/introduction.html
+  type: specification
+  publisher: apptainer.org
+  accessed_on: '2026-08-01'
+- id: apptainer-org-root
+  title: Apptainer Project
+  url: https://apptainer.org/
+  type: governance-source
+  publisher: apptainer.org
+  accessed_on: '2026-08-01'
+- id: arxiv-org-abs-2512-24189
+  title: Science Context Protocol
+  url: https://arxiv.org/abs/2512.24189
+  type: specification
+  publisher: arxiv.org
+  accessed_on: '2026-08-01'
+- id: astm-org-e13
+  title: Analytical Information Markup Language (AnIML)
+  url: https://www.astm.org/e13
+  type: technical-documentation
+  publisher: astm.org
+  accessed_on: '2026-08-01'
+- id: astm-org-root
+  title: ASTM International
+  url: https://www.astm.org/
+  type: governance-source
+  publisher: astm.org
+  accessed_on: '2026-08-01'
+- id: autoprotocol-org-root
+  title: Autoprotocol
+  url: https://autoprotocol.org/
+  type: technical-documentation
+  publisher: autoprotocol.org
+  accessed_on: '2026-08-01'
+- id: bioprotocols-github-io-root
+  title: LabOP
+  url: https://bioprotocols.github.io/
+  type: implementation-repository
+  publisher: bioprotocols.github.io
+  accessed_on: '2026-08-01'
+- id: bioschemas-org-profiles
+  title: Bioschemas
+  url: https://bioschemas.org/profiles/
+  type: normative-schema
+  publisher: bioschemas.org
+  accessed_on: '2026-08-01'
+- id: bioschemas-org-root
+  title: Bioschemas community
+  url: https://bioschemas.org/
+  type: governance-source
+  publisher: bioschemas.org
+  accessed_on: '2026-08-01'
+- id: biosimulators-org-root
+  title: BioSimulators community
+  url: https://biosimulators.org/
+  type: governance-source
+  publisher: biosimulators.org
+  accessed_on: '2026-08-01'
+- id: bsc-es-root
+  title: Barcelona Supercomputing Center (INB)
+  url: https://www.bsc.es/
+  type: governance-source
+  publisher: bsc.es
+  accessed_on: '2026-08-01'
+- id: cdif-codata-org-root
+  title: Cross-Domain Interoperability Framework (CDIF)
+  url: https://cdif.codata.org/
+  type: specification
+  publisher: cdif.codata.org
+  accessed_on: '2026-08-01'
+- id: cfconventions-org-data-cf-conventions-cf-conventions-1-10-cf-conve
+  title: Climate and Forecast (CF) Metadata Conventions
+  url: https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html
+  type: technical-documentation
+  publisher: cfconventions.org
+  accessed_on: '2026-08-01'
+- id: cfconventions-org-root
+  title: Climate and Forecast (CF) Metadata Conventions
+  url: https://cfconventions.org/
+  type: specification
+  publisher: cfconventions.org
+  accessed_on: '2026-08-01'
+- id: citation-file-format-github-io-root
+  title: Citation File Format (CITATION.cff)
+  url: https://citation-file-format.github.io/
+  type: implementation-repository
+  publisher: citation-file-format.github.io
+  accessed_on: '2026-08-01'
+- id: codata-org-root
+  title: CODATA (Committee on Data of the International Science Council)
+  url: https://codata.org/
+  type: governance-source
+  publisher: codata.org
+  accessed_on: '2026-08-01'
+- id: codemeta-github-io-root
+  title: CodeMeta
+  url: https://codemeta.github.io/
+  type: implementation-repository
+  publisher: codemeta.github.io
+  accessed_on: '2026-08-01'
+- id: combinearchive-org-root
+  title: COMBINE/OMEX Archive
+  url: https://combinearchive.org/
+  type: specification
+  publisher: combinearchive.org
+  accessed_on: '2026-08-01'
+- id: commonwl-org-root
+  title: Common Workflow Language (CWL)
+  url: https://www.commonwl.org/
+  type: specification
+  publisher: commonwl.org
+  accessed_on: '2026-08-01'
+- id: commonwl-org-v1-2-conformancetests-html
+  title: CWL Conformance Tests
+  url: https://www.commonwl.org/v1.2/ConformanceTests.html
+  type: conformance-suite
+  publisher: commonwl.org
+  accessed_on: '2026-08-01'
+- id: cromwell-readthedocs-io-root
+  title: Cromwell
+  url: https://cromwell.readthedocs.io/
+  type: specification
+  publisher: cromwell.readthedocs.io
+  accessed_on: '2026-08-01'
+- id: crossref-org-documentation-retrieve-metadata-rest-api
+  title: Crossref REST API and Metadata
+  url: https://www.crossref.org/documentation/retrieve-metadata/rest-api/
+  type: api-documentation
+  publisher: crossref.org
+  accessed_on: '2026-08-01'
+- id: crossref-org-root
+  title: Crossref
+  url: https://www.crossref.org/
+  type: governance-source
+  publisher: crossref.org
+  accessed_on: '2026-08-01'
+- id: cwltool-readthedocs-io-en-latest-cwlprov-html
+  title: CWLProv
+  url: https://cwltool.readthedocs.io/en/latest/CWLProv.html
+  type: specification
+  publisher: cwltool.readthedocs.io
+  accessed_on: '2026-08-01'
+- id: datacite-org-root
+  title: DataCite
+  url: https://datacite.org/
+  type: governance-source
+  publisher: datacite.org
+  accessed_on: '2026-08-01'
+- id: datatracker-ietf-org-doc-html-rfc8493
+  title: BagIt
+  url: https://datatracker.ietf.org/doc/html/rfc8493
+  type: specification
+  publisher: datatracker.ietf.org
+  accessed_on: '2026-08-01'
+- id: ddialliance-org-hubfs-specification-ddi-cdi-1-0-ddi-cdi-model-sp
+  title: DDI Cross Domain Integration (DDI-CDI)
+  url: https://ddialliance.org/hubfs/Specification/DDI-CDI/1.0/DDI-CDI_Model_Specification.pdf
+  type: specification
+  publisher: ddialliance.org
+  accessed_on: '2026-08-01'
+- id: ddialliance-org-root
+  title: DDI Alliance
+  url: https://ddialliance.org/
+  type: governance-source
+  publisher: ddialliance.org
+  accessed_on: '2026-08-01'
+- id: ddialliance-org-specification-ddi-cdi
+  title: DDI Cross Domain Integration (DDI-CDI)
+  url: https://ddialliance.org/Specification/DDI-CDI/
+  type: specification
+  publisher: ddialliance.org
+  accessed_on: '2026-08-01'
+- id: ddialliance-org-specification-ddi-lifecycle
+  title: DDI Lifecycle
+  url: https://ddialliance.org/Specification/DDI-Lifecycle/
+  type: specification
+  publisher: ddialliance.org
+  accessed_on: '2026-08-01'
+- id: dicom-nema-org-medical-dicom-current-output-html-part18-html
+  title: DICOMweb
+  url: https://dicom.nema.org/medical/dicom/current/output/html/part18.html
+  type: technical-documentation
+  publisher: dicom.nema.org
+  accessed_on: '2026-08-01'
+- id: dicomstandard-org-root
+  title: DICOM Standards Committee (NEMA)
+  url: https://www.dicomstandard.org/
+  type: governance-source
+  publisher: dicomstandard.org
+  accessed_on: '2026-08-01'
+- id: dicomstandard-org-using-dicomweb
+  title: DICOMweb
+  url: https://www.dicomstandard.org/using/dicomweb
+  type: specification
+  publisher: dicomstandard.org
+  accessed_on: '2026-08-01'
+- id: docs-allotrope-org-root
+  title: Allotrope Data Format
+  url: https://docs.allotrope.org/
+  type: specification
+  publisher: docs.allotrope.org
+  accessed_on: '2026-08-01'
+- id: docs-biocomputeobject-org-root
+  title: BioCompute Objects
+  url: https://docs.biocomputeobject.org/
+  type: specification
+  publisher: docs.biocomputeobject.org
+  accessed_on: '2026-08-01'
+- id: docs-biosimulators-org-biosimulators-test-suite
+  title: BioSimulators Test Suite
+  url: https://docs.biosimulators.org/Biosimulators_test_suite/
+  type: conformance-suite
+  publisher: docs.biosimulators.org
+  accessed_on: '2026-08-01'
+- id: docs-identifiers-org-root
+  title: Identifiers.org
+  url: https://docs.identifiers.org/
+  type: registry-record
+  publisher: docs.identifiers.org
+  accessed_on: '2026-08-01'
+- id: docs-mlcommons-org-croissant-docs-croissant-spec-1-1-html
+  title: Croissant
+  url: https://docs.mlcommons.org/croissant/docs/croissant-spec-1.1.html
+  type: specification
+  publisher: docs.mlcommons.org
+  accessed_on: '2026-08-01'
+- id: docs-ogc-org-cs-24-059-24-059-html
+  title: openEO API
+  url: https://docs.ogc.org/cs/24-059/24-059.html
+  type: technical-documentation
+  publisher: docs.ogc.org
+  accessed_on: '2026-08-01'
+- id: docs-ogc-org-is
+  title: OGC API - Coverages
+  url: https://docs.ogc.org/is/
+  type: technical-documentation
+  publisher: docs.ogc.org
+  accessed_on: '2026-08-01'
+- id: docs-ogc-org-is-17-069r4-17-069r4-html
+  title: OGC API - Features
+  url: https://docs.ogc.org/is/17-069r4/17-069r4.html
+  type: technical-documentation
+  publisher: docs.ogc.org
+  accessed_on: '2026-08-01'
+- id: docs-ogc-org-is-18-088-18-088-html
+  title: OGC SensorThings API
+  url: https://docs.ogc.org/is/18-088/18-088.html
+  type: technical-documentation
+  publisher: docs.ogc.org
+  accessed_on: '2026-08-01'
+- id: doi-org-10-1162-99608f92-aa3103a5
+  title: Scholix
+  url: https://doi.org/10.1162/99608f92.aa3103a5
+  type: technical-documentation
+  publisher: doi.org
+  accessed_on: '2026-08-01'
+- id: doi-org-10-5281-zenodo-10490289
+  title: FAIR Signposting
+  url: https://doi.org/10.5281/zenodo.10490289
+  type: technical-documentation
+  publisher: doi.org
+  accessed_on: '2026-08-01'
+- id: doi-org-10-5281-zenodo-10843882
+  title: EOSC Interoperability Framework
+  url: https://doi.org/10.5281/zenodo.10843882
+  type: technical-documentation
+  publisher: doi.org
+  accessed_on: '2026-08-01'
+- id: doi-org-10-5281-zenodo-11236871
+  title: Cross-Domain Interoperability Framework (CDIF)
+  url: https://doi.org/10.5281/zenodo.11236871
+  type: technical-documentation
+  publisher: doi.org
+  accessed_on: '2026-08-01'
+- id: doi-org-10-5281-zenodo-7781925
+  title: FAIR Digital Object Framework
+  url: https://doi.org/10.5281/zenodo.7781925
+  type: technical-documentation
+  publisher: doi.org
+  accessed_on: '2026-08-01'
+- id: dwc-tdwg-org-root
+  title: Darwin Core
+  url: https://dwc.tdwg.org/
+  type: specification
+  publisher: dwc.tdwg.org
+  accessed_on: '2026-08-01'
+- id: ebi-ac-uk-root
+  title: EMBL-EBI (ELIXIR Interoperability Platform)
+  url: https://www.ebi.ac.uk/
+  type: governance-source
+  publisher: ebi.ac.uk
+  accessed_on: '2026-08-01'
+- id: edamontology-org-root
+  title: EDAM Ontology
+  url: https://edamontology.org/
+  type: specification
+  publisher: edamontology.org
+  accessed_on: '2026-08-01'
+- id: eosc-eu-eosc-interoperability-framework
+  title: EOSC Interoperability Framework
+  url: https://eosc.eu/eosc-interoperability-framework/
+  type: specification
+  publisher: eosc.eu
+  accessed_on: '2026-08-01'
+- id: eosc-eu-root
+  title: EOSC Association
+  url: https://eosc.eu/
+  type: governance-source
+  publisher: eosc.eu
+  accessed_on: '2026-08-01'
+- id: ev-igsn-org-about-igsns
+  title: IGSN ID
+  url: https://ev.igsn.org/about-igsns
+  type: specification
+  publisher: ev.igsn.org
+  accessed_on: '2026-08-01'
+- id: ev-igsn-org-root
+  title: IGSN e.V.
+  url: https://ev.igsn.org/
+  type: governance-source
+  publisher: ev.igsn.org
+  accessed_on: '2026-08-01'
+- id: fairdo-org-root
+  title: FAIR Digital Object Forum (FDO Forum)
+  url: https://fairdo.org/
+  type: governance-source
+  publisher: fairdo.org
+  accessed_on: '2026-08-01'
+- id: fairdo-org-specifications
+  title: FAIR Digital Object Framework
+  url: https://fairdo.org/specifications/
+  type: specification
+  publisher: fairdo.org
+  accessed_on: '2026-08-01'
+- id: fairsharing-github-io-fairsharing-api
+  title: FAIRsharing
+  url: https://fairsharing.github.io/FAIRsharing-API/
+  type: implementation-repository
+  publisher: fairsharing.github.io
+  accessed_on: '2026-08-01'
+- id: fairsharing-org-root
+  title: FAIRsharing
+  url: https://fairsharing.org/
+  type: registry-record
+  publisher: fairsharing.org
+  accessed_on: '2026-08-01'
+- id: fmi-standard-org-about
+  title: Modelica Association Project FMI
+  url: https://fmi-standard.org/about/
+  type: governance-source
+  publisher: fmi-standard.org
+  accessed_on: '2026-08-01'
+- id: fmi-standard-org-docs-3-0
+  title: Functional Mock-up Interface (FMI)
+  url: https://fmi-standard.org/docs/3.0/
+  type: specification
+  publisher: fmi-standard.org
+  accessed_on: '2026-08-01'
+- id: ga4gh-org-product-data-repository-service-drs
+  title: GA4GH Data Repository Service (DRS)
+  url: https://www.ga4gh.org/product/data-repository-service-drs/
+  type: specification
+  publisher: ga4gh.org
+  accessed_on: '2026-08-01'
+- id: ga4gh-org-product-data-use-ontology-duo
+  title: GA4GH Data Use Ontology (DUO)
+  url: https://www.ga4gh.org/product/data-use-ontology-duo/
+  type: specification
+  publisher: ga4gh.org
+  accessed_on: '2026-08-01'
+- id: ga4gh-org-product-ga4gh-passports
+  title: GA4GH Passports
+  url: https://www.ga4gh.org/product/ga4gh-passports/
+  type: specification
+  publisher: ga4gh.org
+  accessed_on: '2026-08-01'
+- id: ga4gh-org-product-service-info
+  title: GA4GH Service Info
+  url: https://www.ga4gh.org/product/service-info/
+  type: specification
+  publisher: ga4gh.org
+  accessed_on: '2026-08-01'
+- id: ga4gh-org-product-service-registry
+  title: GA4GH Service Registry
+  url: https://www.ga4gh.org/product/service-registry/
+  type: registry-record
+  publisher: ga4gh.org
+  accessed_on: '2026-08-01'
+- id: ga4gh-org-product-task-execution-service-tes
+  title: GA4GH Task Execution Service (TES)
+  url: https://www.ga4gh.org/product/task-execution-service-tes/
+  type: specification
+  publisher: ga4gh.org
+  accessed_on: '2026-08-01'
+- id: ga4gh-org-product-tool-registry-service-trs
+  title: GA4GH Tool Registry Service (TRS)
+  url: https://www.ga4gh.org/product/tool-registry-service-trs/
+  type: registry-record
+  publisher: ga4gh.org
+  accessed_on: '2026-08-01'
+- id: ga4gh-org-product-workflow-execution-service-wes
+  title: GA4GH Workflow Execution Service (WES)
+  url: https://www.ga4gh.org/product/workflow-execution-service-wes/
+  type: specification
+  publisher: ga4gh.org
+  accessed_on: '2026-08-01'
+- id: ga4gh-org-root
+  title: Global Alliance for Genomics and Health (GA4GH)
+  url: https://www.ga4gh.org/
+  type: governance-source
+  publisher: ga4gh.org
+  accessed_on: '2026-08-01'
+- id: galaxyproject-org-root
+  title: Galaxy
+  url: https://galaxyproject.org/
+  type: specification
+  publisher: galaxyproject.org
+  accessed_on: '2026-08-01'
+- id: github-com-apptainer-apptainer
+  title: Apptainer / Singularity Image Format
+  url: https://github.com/apptainer/apptainer
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-autoprotocol-autoprotocol-python
+  title: Autoprotocol
+  url: https://github.com/autoprotocol/autoprotocol-python
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-biocompute-objects-bco-documentation
+  title: BioCompute Objects
+  url: https://github.com/biocompute-objects/BCO_Documentation
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-bioschemas-bioschemas-github-io
+  title: Bioschemas
+  url: https://github.com/Bioschemas/bioschemas.github.io
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-biosimulators-biosimulators-test-suite
+  title: BioSimulators Test Suite
+  url: https://github.com/biosimulators/Biosimulators_test_suite
+  type: conformance-suite
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-citation-file-format-cffconvert
+  title: Citation File Format (CITATION.cff)
+  url: https://github.com/citation-file-format/cffconvert
+  type: validator
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-codemeta-codemeta
+  title: CodeMeta
+  url: https://github.com/codemeta/codemeta
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-common-workflow-language-cwl-v1-2
+  title: Common Workflow Language (CWL)
+  url: https://github.com/common-workflow-language/cwl-v1.2
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-common-workflow-language-cwltool
+  title: cwltool
+  url: https://github.com/common-workflow-language/cwltool
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-crs4-rocrate-validator
+  title: RO-Crate
+  url: https://github.com/crs4/rocrate-validator
+  type: validator
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ddi-cdi-ddi-cdi
+  title: DDI Cross Domain Integration (DDI-CDI)
+  url: https://github.com/ddi-cdi/ddi-cdi
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ddialliance-specification-ddi-lifecycle
+  title: DDI Lifecycle
+  url: https://github.com/ddialliance/Specification-DDI-Lifecycle
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ebispot-duo
+  title: GA4GH Data Use Ontology (DUO)
+  url: https://github.com/EBISPOT/DUO
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-edamontology-edamontology
+  title: EDAM Ontology
+  url: https://github.com/edamontology/edamontology
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-fhir-fhir-test-cases
+  title: HL7 FHIR
+  url: https://github.com/FHIR/fhir-test-cases
+  type: conformance-suite
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ga4gh-data-repository-service-schemas
+  title: GA4GH Data Repository Service (DRS)
+  url: https://github.com/ga4gh/data-repository-service-schemas
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ga4gh-discovery-ga4gh-service-info
+  title: GA4GH Service Info
+  url: https://github.com/ga4gh-discovery/ga4gh-service-info
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ga4gh-discovery-ga4gh-service-registry
+  title: GA4GH Service Registry
+  url: https://github.com/ga4gh-discovery/ga4gh-service-registry
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ga4gh-duri-ga4gh-passport-standard
+  title: GA4GH Passports
+  url: https://github.com/ga4gh-duri/ga4gh-passport-standard
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ga4gh-task-execution-schemas
+  title: GA4GH Task Execution Service (TES)
+  url: https://github.com/ga4gh/task-execution-schemas
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ga4gh-tool-registry-service-schemas
+  title: GA4GH Tool Registry Service (TRS)
+  url: https://github.com/ga4gh/tool-registry-service-schemas
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ga4gh-workflow-execution-service-schemas
+  title: GA4GH Workflow Execution Service (WES)
+  url: https://github.com/ga4gh/workflow-execution-service-schemas
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-hicai-zju-scitoolagent
+  title: SciToolAgent
+  url: https://github.com/hicai-zju/scitoolagent
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-inab-wfexs-backend
+  title: WfExS-backend
+  url: https://github.com/inab/WfExS-backend
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-jats-tml-jats-tag-library
+  title: Journal Article Tag Suite (JATS)
+  url: https://github.com/JATS-TML/JATS-Tag-Library
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-libraryofcongress-bagit-python
+  title: BagIt
+  url: https://github.com/LibraryOfCongress/bagit-python
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-life-monitor-life-monitor
+  title: LifeMonitor
+  url: https://github.com/life-monitor/life-monitor
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-materials-consortia-optimade
+  title: OPTIMADE
+  url: https://github.com/Materials-Consortia/OPTIMADE
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-mims-harvard-tooluniverse
+  title: ToolUniverse
+  url: https://github.com/mims-harvard/ToolUniverse
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-mlcommons-croissant
+  title: Croissant
+  url: https://github.com/mlcommons/croissant
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-modelcontextprotocol-specification
+  title: Model Context Protocol (MCP)
+  url: https://github.com/modelcontextprotocol/specification
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-modelica-fmi-standard
+  title: Functional Mock-up Interface (FMI)
+  url: https://github.com/modelica/fmi-standard
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-nanopub-nanopub-java
+  title: Nanopublications
+  url: https://github.com/nanopub/nanopub-java
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-obofoundry-obofoundry-github-io
+  title: OBO Foundry
+  url: https://github.com/OBOFoundry/OBOFoundry.github.io
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-openwdl-wdl
+  title: Workflow Description Language (WDL)
+  url: https://github.com/openwdl/wdl
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-qudt-qudt-public-repo
+  title: QUDT
+  url: https://github.com/qudt/qudt-public-repo
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-radiantearth-stac-spec
+  title: SpatioTemporal Asset Catalog (STAC)
+  url: https://github.com/radiantearth/stac-spec
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-researchobject-runcrate
+  title: runcrate
+  url: https://github.com/ResearchObject/runcrate
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-researchobject-workflow-run-crate
+  title: Workflow Run RO-Crate
+  url: https://github.com/ResearchObject/workflow-run-crate
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-ror-community-ror-api
+  title: Research Organization Registry (ROR)
+  url: https://github.com/ror-community/ror-api
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-sapporo-wes-sapporo
+  title: Sapporo
+  url: https://github.com/sapporo-wes/sapporo
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-sbmlteam-sbml-test-suite
+  title: SBML Test Suite
+  url: https://github.com/sbmlteam/sbml-test-suite
+  type: conformance-suite
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-schemaorg-schemaorg
+  title: Schema.org
+  url: https://github.com/schemaorg/schemaorg
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-scholix-schema
+  title: Scholix
+  url: https://github.com/scholix/schema
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-semsproject-combinearchive
+  title: COMBINE/OMEX Archive
+  url: https://github.com/SemsProject/CombineArchive
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-tdwg-dwc
+  title: Darwin Core
+  url: https://github.com/tdwg/dwc
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-unifiedcodeunits4unitsofmeasure-ucum
+  title: Unified Code for Units of Measure (UCUM)
+  url: https://github.com/UnifiedCodeUnits4UnitsOfMeasure/ucum
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-vida-nyu-reprozip
+  title: ReproZip
+  url: https://github.com/ViDA-NYU/reprozip
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: github-com-w3c-dxwg
+  title: W3C Data Catalog Vocabulary (DCAT)
+  url: https://github.com/w3c/dxwg
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-01'
+- id: gitlab-com-sila2
+  title: SiLA 2
+  url: https://gitlab.com/sila2
+  type: technical-documentation
+  publisher: gitlab.com
+  accessed_on: '2026-08-01'
+- id: go-fair-org-fair-principles
+  title: FAIR Principles
+  url: https://www.go-fair.org/fair-principles/
+  type: specification
+  publisher: go-fair.org
+  accessed_on: '2026-08-01'
+- id: go-fair-org-root
+  title: GO FAIR Foundation
+  url: https://www.go-fair.org/
+  type: governance-source
+  publisher: go-fair.org
+  accessed_on: '2026-08-01'
+- id: graph-openaire-eu-docs
+  title: OpenAIRE Research Graph
+  url: https://graph.openaire.eu/docs/
+  type: specification
+  publisher: graph.openaire.eu
+  accessed_on: '2026-08-01'
+- id: graph-openaire-eu-root
+  title: OpenAIRE Research Graph
+  url: https://graph.openaire.eu/
+  type: specification
+  publisher: graph.openaire.eu
+  accessed_on: '2026-08-01'
+- id: hl7-org-fhir
+  title: HL7 FHIR
+  url: https://hl7.org/fhir/
+  type: specification
+  publisher: hl7.org
+  accessed_on: '2026-08-01'
+- id: hl7-org-root
+  title: HL7 International
+  url: https://www.hl7.org/
+  type: governance-source
+  publisher: hl7.org
+  accessed_on: '2026-08-01'
+- id: identifiers-org-root
+  title: Identifiers.org
+  url: https://identifiers.org/
+  type: registry-record
+  publisher: identifiers.org
+  accessed_on: '2026-08-01'
+- id: ietf-org-root
+  title: Internet Engineering Task Force (IETF)
+  url: https://www.ietf.org/
+  type: governance-source
+  publisher: ietf.org
+  accessed_on: '2026-08-01'
+- id: info-orcid-org-what-is-orcid
+  title: ORCID
+  url: https://info.orcid.org/what-is-orcid/
+  type: specification
+  publisher: info.orcid.org
+  accessed_on: '2026-08-01'
+- id: isa-specs-readthedocs-io-en-latest-isajson-html
+  title: ISA-JSON
+  url: https://isa-specs.readthedocs.io/en/latest/isajson.html
+  type: specification
+  publisher: isa-specs.readthedocs.io
+  accessed_on: '2026-08-01'
+- id: isa-tools-org-root
+  title: ISA-Tools community
+  url: https://isa-tools.org/
+  type: governance-source
+  publisher: isa-tools.org
+  accessed_on: '2026-08-01'
+- id: iso-org-root
+  title: International Organization for Standardization (ISO)
+  url: https://www.iso.org/
+  type: governance-source
+  publisher: iso.org
+  accessed_on: '2026-08-01'
+- id: iso-org-standard-87714-html
+  title: ISO 23494-2:2026 Common Provenance Model
+  url: https://www.iso.org/standard/87714.html
+  type: specification
+  publisher: iso.org
+  accessed_on: '2026-08-01'
+- id: iucr-org-resources-cif
+  title: Crystallographic Information Framework (CIF)
+  url: https://www.iucr.org/resources/cif
+  type: specification
+  publisher: iucr.org
+  accessed_on: '2026-08-01'
+- id: iucr-org-resources-cif-comcifs-policy
+  title: International Union of Crystallography (IUCr)
+  url: https://www.iucr.org/resources/cif/comcifs/policy
+  type: governance-source
+  publisher: iucr.org
+  accessed_on: '2026-08-01'
+- id: iucr-org-resources-cif-spec
+  title: Crystallographic Information Framework (CIF)
+  url: https://www.iucr.org/resources/cif/spec
+  type: technical-documentation
+  publisher: iucr.org
+  accessed_on: '2026-08-01'
+- id: jats-nlm-nih-gov-root
+  title: Journal Article Tag Suite (JATS)
+  url: https://jats.nlm.nih.gov/
+  type: specification
+  publisher: jats.nlm.nih.gov
+  accessed_on: '2026-08-01'
+- id: journals-iucr-org-j-issues-2015-01-00-po5029-po5029-pdf
+  title: NeXus
+  url: https://journals.iucr.org/j/issues/2015/01/00/po5029/po5029.pdf
+  type: technical-documentation
+  publisher: journals.iucr.org
+  accessed_on: '2026-08-01'
+- id: lifemonitor-eu-root
+  title: Workflow Testing RO-Crate
+  url: https://lifemonitor.eu/
+  type: technical-documentation
+  publisher: lifemonitor.eu
+  accessed_on: '2026-08-01'
+- id: loinc-org-kb-users-guide
+  title: LOINC
+  url: https://loinc.org/kb/users-guide/
+  type: technical-documentation
+  publisher: loinc.org
+  accessed_on: '2026-08-01'
+- id: loinc-org-root
+  title: LOINC
+  url: https://loinc.org/
+  type: specification
+  publisher: loinc.org
+  accessed_on: '2026-08-01'
+- id: manual-nexusformat-org-impatient
+  title: NeXus
+  url: https://manual.nexusformat.org/impatient/
+  type: technical-documentation
+  publisher: manual.nexusformat.org
+  accessed_on: '2026-08-01'
+- id: mlcommons-org-root
+  title: MLCommons
+  url: https://mlcommons.org/
+  type: governance-source
+  publisher: mlcommons.org
+  accessed_on: '2026-08-01'
+- id: modelcontextprotocol-io-registry-about
+  title: Official MCP Registry
+  url: https://modelcontextprotocol.io/registry/about
+  type: registry-record
+  publisher: modelcontextprotocol.io
+  accessed_on: '2026-08-01'
+- id: modelcontextprotocol-io-root
+  title: Model Context Protocol project
+  url: https://modelcontextprotocol.io/
+  type: governance-source
+  publisher: modelcontextprotocol.io
+  accessed_on: '2026-08-01'
+- id: modelcontextprotocol-io-specification-2026-07-28
+  title: Model Context Protocol (MCP)
+  url: https://modelcontextprotocol.io/specification/2026-07-28
+  type: specification
+  publisher: modelcontextprotocol.io
+  accessed_on: '2026-08-01'
+- id: nanopub-net-root
+  title: Nanopublications
+  url: https://nanopub.net/
+  type: specification
+  publisher: nanopub.net
+  accessed_on: '2026-08-01'
+- id: nature-com-articles-sdata201618
+  title: FAIR Principles
+  url: https://www.nature.com/articles/sdata201618
+  type: technical-documentation
+  publisher: nature.com
+  accessed_on: '2026-08-01'
+- id: nextflow-io-root
+  title: Nextflow
+  url: https://www.nextflow.io/
+  type: specification
+  publisher: nextflow.io
+  accessed_on: '2026-08-01'
+- id: nexusformat-org-root
+  title: NeXus
+  url: https://www.nexusformat.org/
+  type: specification
+  publisher: nexusformat.org
+  accessed_on: '2026-08-01'
+- id: obofoundry-org-root
+  title: OBO Foundry
+  url: https://obofoundry.org/
+  type: specification
+  publisher: obofoundry.org
+  accessed_on: '2026-08-01'
+- id: ocfl-io-root
+  title: Oxford Common File Layout (OCFL)
+  url: https://ocfl.io/
+  type: specification
+  publisher: ocfl.io
+  accessed_on: '2026-08-01'
+- id: ogc-org-root
+  title: Open Geospatial Consortium (OGC)
+  url: https://www.ogc.org/
+  type: governance-source
+  publisher: ogc.org
+  accessed_on: '2026-08-01'
+- id: ogc-org-standards-openeo
+  title: openEO API
+  url: https://www.ogc.org/standards/openeo/
+  type: specification
+  publisher: ogc.org
+  accessed_on: '2026-08-01'
+- id: ogc-org-standards-sensorthings
+  title: OGC SensorThings API
+  url: https://www.ogc.org/standards/sensorthings/
+  type: specification
+  publisher: ogc.org
+  accessed_on: '2026-08-01'
+- id: ogc-org-standards-ssn
+  title: SOSA/SSN
+  url: https://www.ogc.org/standards/ssn/
+  type: technical-documentation
+  publisher: ogc.org
+  accessed_on: '2026-08-01'
+- id: ogcapi-ogc-org-coverages
+  title: OGC API - Coverages
+  url: https://ogcapi.ogc.org/coverages/
+  type: api-documentation
+  publisher: ogcapi.ogc.org
+  accessed_on: '2026-08-01'
+- id: ogcapi-ogc-org-coverages-overview-html
+  title: OGC API - Coverages
+  url: https://ogcapi.ogc.org/coverages/overview.html
+  type: technical-documentation
+  publisher: ogcapi.ogc.org
+  accessed_on: '2026-08-01'
+- id: ogcapi-ogc-org-features
+  title: OGC API - Features
+  url: https://ogcapi.ogc.org/features/
+  type: api-documentation
+  publisher: ogcapi.ogc.org
+  accessed_on: '2026-08-01'
+- id: opcfoundation-org-markets-collaboration-lads
+  title: OPC UA Laboratory and Analytical Device Standard (LADS)
+  url: https://opcfoundation.org/markets-collaboration/lads/
+  type: specification
+  publisher: opcfoundation.org
+  accessed_on: '2026-08-01'
+- id: opcfoundation-org-root
+  title: OPC Foundation
+  url: https://opcfoundation.org/
+  type: governance-source
+  publisher: opcfoundation.org
+  accessed_on: '2026-08-01'
+- id: openaire-eu-root
+  title: OpenAIRE
+  url: https://www.openaire.eu/
+  type: governance-source
+  publisher: openaire.eu
+  accessed_on: '2026-08-01'
+- id: openalex-org-root
+  title: OpenAlex
+  url: https://openalex.org/
+  type: specification
+  publisher: openalex.org
+  accessed_on: '2026-08-01'
+- id: openeo-org-root
+  title: openEO consortium / OGC
+  url: https://openeo.org/
+  type: governance-source
+  publisher: openeo.org
+  accessed_on: '2026-08-01'
+- id: openwdl-org-root
+  title: Workflow Description Language (WDL)
+  url: https://openwdl.org/
+  type: specification
+  publisher: openwdl.org
+  accessed_on: '2026-08-01'
+- id: opmw-org-model-p-plan
+  title: P-Plan
+  url: https://www.opmw.org/model/p-plan/
+  type: specification
+  publisher: opmw.org
+  accessed_on: '2026-08-01'
+- id: opmw-org-root
+  title: Open Provenance Model for Workflows (OPMW)
+  url: https://www.opmw.org/
+  type: governance-source
+  publisher: opmw.org
+  accessed_on: '2026-08-01'
+- id: optimade-org-root
+  title: OPTIMADE consortium (Materials-Consortia)
+  url: https://optimade.org/
+  type: governance-source
+  publisher: optimade.org
+  accessed_on: '2026-08-01'
+- id: optimade-org-specification-latest
+  title: OPTIMADE
+  url: https://www.optimade.org/specification/latest/
+  type: specification
+  publisher: optimade.org
+  accessed_on: '2026-08-01'
+- id: orcid-org-root
+  title: ORCID
+  url: https://orcid.org/
+  type: governance-source
+  publisher: orcid.org
+  accessed_on: '2026-08-01'
+- id: orkg-org-root
+  title: Open Research Knowledge Graph (ORKG)
+  url: https://www.orkg.org/
+  type: specification
+  publisher: orkg.org
+  accessed_on: '2026-08-01'
+- id: pmc-ncbi-nlm-nih-gov-articles-pmc8444265
+  title: ISA-JSON
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8444265/
+  type: technical-documentation
+  publisher: pmc.ncbi.nlm.nih.gov
+  accessed_on: '2026-08-01'
+- id: pub-orcid-org-v3-0
+  title: ORCID
+  url: https://pub.orcid.org/v3.0/
+  type: technical-documentation
+  publisher: pub.orcid.org
+  accessed_on: '2026-08-01'
+- id: purl-dataone-org-provone-v1-dev
+  title: PROV-ONE
+  url: https://purl.dataone.org/provone-v1-dev
+  type: specification
+  publisher: purl.dataone.org
+  accessed_on: '2026-08-01'
+- id: qudt-org-root
+  title: QUDT
+  url: https://www.qudt.org/
+  type: specification
+  publisher: qudt.org
+  accessed_on: '2026-08-01'
+- id: rd-alliance-org-groups-scholarly-link-exchange-wg
+  title: RDA Scholix working group
+  url: https://www.rd-alliance.org/groups/scholarly-link-exchange-wg
+  type: governance-source
+  publisher: rd-alliance.org
+  accessed_on: '2026-08-01'
+- id: reference-opcfoundation-org-root
+  title: OPC UA Laboratory and Analytical Device Standard (LADS)
+  url: https://reference.opcfoundation.org/
+  type: technical-documentation
+  publisher: reference.opcfoundation.org
+  accessed_on: '2026-08-01'
+- id: reprozip-org-root
+  title: ReproZip
+  url: https://www.reprozip.org/
+  type: specification
+  publisher: reprozip.org
+  accessed_on: '2026-08-01'
+- id: researchobject-org-ro-crate
+  title: CRS4 / RO-Crate community
+  url: https://www.researchobject.org/ro-crate/
+  type: governance-source
+  publisher: researchobject.org
+  accessed_on: '2026-08-01'
+- id: researchobject-org-ro-crate-specification-1-3
+  title: RO-Crate
+  url: https://www.researchobject.org/ro-crate/specification/1.3/
+  type: specification
+  publisher: researchobject.org
+  accessed_on: '2026-08-01'
+- id: researchobject-org-root
+  title: Research Object community
+  url: https://www.researchobject.org/
+  type: governance-source
+  publisher: researchobject.org
+  accessed_on: '2026-08-01'
+- id: researchobject-org-runcrate
+  title: runcrate
+  url: https://www.researchobject.org/runcrate/
+  type: specification
+  publisher: researchobject.org
+  accessed_on: '2026-08-01'
+- id: researchobject-org-workflow-run-crate
+  title: WfExS-backend
+  url: https://www.researchobject.org/workflow-run-crate/
+  type: technical-documentation
+  publisher: researchobject.org
+  accessed_on: '2026-08-01'
+- id: researchobject-org-workflow-run-crate-profiles-workflow-run-crate
+  title: Workflow Run RO-Crate
+  url: https://www.researchobject.org/workflow-run-crate/profiles/workflow_run_crate/
+  type: specification
+  publisher: researchobject.org
+  accessed_on: '2026-08-01'
+- id: ror-org-about
+  title: Research Organization Registry (ROR)
+  url: https://ror.org/about/
+  type: specification
+  publisher: ror.org
+  accessed_on: '2026-08-01'
+- id: ror-org-root
+  title: ROR (Research Organization Registry)
+  url: https://ror.org/
+  type: governance-source
+  publisher: ror.org
+  accessed_on: '2026-08-01'
+- id: sbml-org-root
+  title: SBML community
+  url: https://sbml.org/
+  type: governance-source
+  publisher: sbml.org
+  accessed_on: '2026-08-01'
+- id: sbml-org-software-sbml-test-suite
+  title: SBML Test Suite
+  url: https://sbml.org/software/sbml-test-suite/
+  type: conformance-suite
+  publisher: sbml.org
+  accessed_on: '2026-08-01'
+- id: schema-datacite-org-root
+  title: DataCite Metadata Schema and REST API
+  url: https://schema.datacite.org/
+  type: normative-schema
+  publisher: schema.datacite.org
+  accessed_on: '2026-08-01'
+- id: schema-org-root
+  title: Schema.org
+  url: https://schema.org/
+  type: normative-schema
+  publisher: schema.org
+  accessed_on: '2026-08-01'
+- id: sdmx-org-root
+  title: SDMX initiative (seven sponsor organizations)
+  url: https://sdmx.org/
+  type: governance-source
+  publisher: sdmx.org
+  accessed_on: '2026-08-01'
+- id: sdmx-org-standards-2
+  title: SDMX
+  url: https://sdmx.org/standards-2/
+  type: specification
+  publisher: sdmx.org
+  accessed_on: '2026-08-01'
+- id: sdmx-org-wp-content-uploads-sdmx-3-1-0-section-1-final-pd
+  title: SDMX
+  url: https://sdmx.org/wp-content/uploads/SDMX_3-1-0_SECTION_1_FINAL.pdf
+  type: technical-documentation
+  publisher: sdmx.org
+  accessed_on: '2026-08-01'
+- id: sdmx-org-wp-content-uploads-sdmx-mes-og-termsofreference
+  title: SDMX
+  url: https://sdmx.org/wp-content/uploads/SDMX-MES_OG_TermsOfReference.pdf
+  type: technical-documentation
+  publisher: sdmx.org
+  accessed_on: '2026-08-01'
+- id: signposting-org-root
+  title: FAIR Signposting
+  url: https://signposting.org/
+  type: specification
+  publisher: signposting.org
+  accessed_on: '2026-08-01'
+- id: sila-standard-com-root
+  title: SiLA Consortium
+  url: https://sila-standard.com/
+  type: governance-source
+  publisher: sila-standard.com
+  accessed_on: '2026-08-01'
+- id: sila2-gitlab-io-sila-base
+  title: SiLA 2
+  url: https://sila2.gitlab.io/sila_base/
+  type: specification
+  publisher: sila2.gitlab.io
+  accessed_on: '2026-08-01'
+- id: snakemake-github-io-root
+  title: Snakemake
+  url: https://snakemake.github.io/
+  type: implementation-repository
+  publisher: snakemake.github.io
+  accessed_on: '2026-08-01'
+- id: softwareheritage-org-root
+  title: Software Heritage
+  url: https://www.softwareheritage.org/
+  type: governance-source
+  publisher: softwareheritage.org
+  accessed_on: '2026-08-01'
+- id: spdx-dev-specifications
+  title: SPDX
+  url: https://spdx.dev/specifications/
+  type: specification
+  publisher: spdx.dev
+  accessed_on: '2026-08-01'
+- id: stacspec-org-root
+  title: SpatioTemporal Asset Catalog (STAC)
+  url: https://stacspec.org/
+  type: specification
+  publisher: stacspec.org
+  accessed_on: '2026-08-01'
+- id: standards-ieee-org-ieee-3971-12500
+  title: IEEE P3971
+  url: https://standards.ieee.org/ieee/3971/12500/
+  type: specification
+  publisher: standards.ieee.org
+  accessed_on: '2026-08-01'
+- id: support-datacite-org-docs-api
+  title: DataCite Metadata Schema and REST API
+  url: https://support.datacite.org/docs/api
+  type: api-documentation
+  publisher: support.datacite.org
+  accessed_on: '2026-08-01'
+- id: support-datacite-org-docs-igsn-ids
+  title: IGSN ID
+  url: https://support.datacite.org/docs/igsn-ids
+  type: specification
+  publisher: support.datacite.org
+  accessed_on: '2026-08-01'
+- id: swhid-org-root
+  title: Software Hash Identifiers (SWHIDs)
+  url: https://www.swhid.org/
+  type: specification
+  publisher: swhid.org
+  accessed_on: '2026-08-01'
+- id: tdwg-org-root
+  title: Biodiversity Information Standards (TDWG)
+  url: https://www.tdwg.org/
+  type: governance-source
+  publisher: tdwg.org
+  accessed_on: '2026-08-01'
+- id: tib-eu-root
+  title: TIB Leibniz Information Centre for Science and Technology
+  url: https://www.tib.eu/
+  type: governance-source
+  publisher: tib.eu
+  accessed_on: '2026-08-01'
+- id: ucum-org-root
+  title: Unified Code for Units of Measure (UCUM)
+  url: https://ucum.org/
+  type: specification
+  publisher: ucum.org
+  accessed_on: '2026-08-01'
+- id: w3-org-2009-08-skos-reference-skos-html
+  title: Simple Knowledge Organization System (SKOS)
+  url: https://www.w3.org/2009/08/skos-reference/skos.html
+  type: technical-documentation
+  publisher: w3.org
+  accessed_on: '2026-08-01'
+- id: w3-org-root
+  title: World Wide Web Consortium (W3C)
+  url: https://www.w3.org/
+  type: governance-source
+  publisher: w3.org
+  accessed_on: '2026-08-01'
+- id: w3-org-tr-odrl-model
+  title: Open Digital Rights Language (ODRL)
+  url: https://www.w3.org/TR/odrl-model/
+  type: specification
+  publisher: w3.org
+  accessed_on: '2026-08-01'
+- id: w3-org-tr-prov-dm
+  title: W3C PROV
+  url: https://www.w3.org/TR/prov-dm/
+  type: technical-documentation
+  publisher: w3.org
+  accessed_on: '2026-08-01'
+- id: w3-org-tr-prov-o
+  title: P-Plan
+  url: https://www.w3.org/TR/prov-o/
+  type: technical-documentation
+  publisher: w3.org
+  accessed_on: '2026-08-01'
+- id: w3-org-tr-skos-reference
+  title: Simple Knowledge Organization System (SKOS)
+  url: https://www.w3.org/TR/skos-reference/
+  type: specification
+  publisher: w3.org
+  accessed_on: '2026-08-01'
+- id: w3-org-tr-vocab-dcat-3
+  title: W3C Data Catalog Vocabulary (DCAT)
+  url: https://www.w3.org/TR/vocab-dcat-3/
+  type: specification
+  publisher: w3.org
+  accessed_on: '2026-08-01'
+- id: w3-org-tr-vocab-ssn
+  title: SOSA/SSN
+  url: https://www.w3.org/TR/vocab-ssn/
+  type: specification
+  publisher: w3.org
+  accessed_on: '2026-08-01'
+- id: w3id-org-ro-wftest
+  title: Workflow Testing RO-Crate
+  url: https://w3id.org/ro/wftest
+  type: specification
+  publisher: w3id.org
+  accessed_on: '2026-08-01'
+- id: workflowhub-eu-root
+  title: WorkflowHub / ELIXIR
+  url: https://workflowhub.eu/
+  type: governance-source
+  publisher: workflowhub.eu
+  accessed_on: '2026-08-01'
+- id: zenodo-org-records-10376350
+  title: Five Safes RO-Crate
+  url: https://zenodo.org/records/10376350
+  type: specification
+  publisher: zenodo.org
+  accessed_on: '2026-08-01'
+- id: zitniklab-hms-harvard-edu-root
+  title: Zitnik Lab, Harvard Medical School
+  url: https://zitniklab.hms.harvard.edu/
+  type: governance-source
+  publisher: zitniklab.hms.harvard.edu
+  accessed_on: '2026-08-01'
+- id: zitniklab-hms-harvard-edu-tooluniverse-en
+  title: ToolUniverse
+  url: https://zitniklab.hms.harvard.edu/ToolUniverse/en/
+  type: specification
+  publisher: zitniklab.hms.harvard.edu
+  accessed_on: '2026-08-01'

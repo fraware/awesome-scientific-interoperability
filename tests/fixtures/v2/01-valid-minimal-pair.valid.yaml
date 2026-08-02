@@ -1,13 +1,12 @@
-catalog_version: 2.0.0
+catalog_version: 2.1.0
 reviewed_on: '2026-08-01'
-north_star: A technically competent user should identify the strongest available interoperability
-  mechanism for a concrete scientific integration problem.
+north_star: A technically competent user should identify the strongest available interoperability mechanism
+  for a concrete scientific integration problem.
 resources:
 - id: example-ro-crate
   name: Example RO-Crate
   url: https://www.researchobject.org/ro-crate/specification/1.3/
   section: Data and Digital Objects
-  resource_type: Packaging Specification
   interoperability_layers: &id001
   - Syntactic
   - Semantic
@@ -15,55 +14,45 @@ resources:
   - Research objects
   - repositories
   mechanism: Aggregates files and JSON-LD metadata into a portable research object
-  summary: Packaging convention that aggregates research data and metadata into a
-    portable research object.
+  summary: Packaging convention that aggregates research data and metadata into a portable research object.
   maturity: established
   evidence_types:
   - normative-specification
   - public-validator
   implementation_status: multiple-independent
   conformance_status: public-validator
-  stewardship:
-    name: Research Object community
-    type: community
-    url: https://www.researchobject.org/
-  domains: &id003
+  domains:
   - cross-domain
-  source_urls:
-  - https://www.researchobject.org/ro-crate/specification/1.3/
-  - https://github.com/crs4/rocrate-validator
   alternatives:
   - example-bagit
   related_resource_ids: []
-  decision_basis: Widely used packaging contract for research objects with public
-    validators.
+  decision_basis: Widely used packaging contract for research objects with public validators.
   boundary_note: Packaging conformance does not prove reproducibility.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: packaging-format
+  steward_id: fixture-research-object-community
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition
 - id: example-bagit
   name: Example BagIt
   url: https://datatracker.ietf.org/doc/html/rfc8493
   section: Data and Digital Objects
-  resource_type: Packaging Format
   interoperability_layers: *id001
   connects: *id002
   mechanism: Checksum manifests and bag structure for transfer integrity
-  summary: Hierarchical file packaging format with manifests for reliable transfer
-    of digital content.
+  summary: Hierarchical file packaging format with manifests for reliable transfer of digital content.
   maturity: established
   evidence_types:
   - normative-specification
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: IETF
-    type: standards-body
-    url: https://www.ietf.org/
-  domains: *id003
-  source_urls:
-  - https://datatracker.ietf.org/doc/html/rfc8493
-  - https://github.com/LibraryOfCongress/bagit-python
+  domains:
+  - cross-domain
   alternatives:
   - example-ro-crate
   related_resource_ids:
@@ -73,3 +62,10 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
+  resource_kind: packaging-format
+  steward_id: fixture-ietf
+  source_refs:
+  - ref_id: fixture-ref-1
+    role: technical-definition
+  - ref_id: fixture-ref-2
+    role: technical-definition

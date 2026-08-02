@@ -13,11 +13,10 @@ general_purpose_substrate_ids:
   - unified-code-for-units-of-measure-ucum
   - w3c-data-catalog-vocabulary-dcat
   - w3c-prov
-implementation_resource_types:
-  - Reference Implementation
-  - Implementation / Toolkit
-  - Workflow Execution Backend
-  - Testing / Monitoring Service
+implementation_resource_kinds:
+  - implementation
+  - execution-service
+  - conformance-artifact
 standard_families:
   cwl:
     - common-workflow-language-cwl

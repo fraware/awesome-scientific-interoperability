@@ -1,0 +1,350 @@
+stewards_version: 1.0.0
+reviewed_on: '2026-08-01'
+stewards:
+- id: allotrope-foundation
+  name: Allotrope Foundation
+  type: consortium
+  url: https://www.allotrope.org/
+  aliases: []
+- id: apptainer-project
+  name: Apptainer Project
+  type: foundation
+  url: https://apptainer.org/
+  aliases: []
+- id: astm-international
+  name: ASTM International
+  type: standards-body
+  url: https://www.astm.org/
+  aliases: []
+- id: autoprotocol-community
+  name: Autoprotocol community
+  type: community
+  url: https://github.com/autoprotocol/autoprotocol-python
+  aliases: []
+- id: barcelona-supercomputing-center-inb
+  name: Barcelona Supercomputing Center (INB)
+  type: institution
+  url: https://www.bsc.es/
+  aliases: []
+- id: biodiversity-information-standards-tdwg
+  name: Biodiversity Information Standards (TDWG)
+  type: standards-body
+  url: https://www.tdwg.org/
+  aliases: []
+- id: bioschemas-community
+  name: Bioschemas community
+  type: community
+  url: https://bioschemas.org/
+  aliases: []
+- id: biosimulators-community
+  name: BioSimulators community
+  type: community
+  url: https://biosimulators.org/
+  aliases: []
+- id: cf-conventions-community
+  name: CF Conventions community
+  type: community
+  url: https://cfconventions.org/
+  aliases: []
+- id: citation-file-format-project
+  name: Citation File Format project
+  type: community
+  url: https://citation-file-format.github.io/
+  aliases: []
+- id: codata-codata
+  name: CODATA (Committee on Data of the International Science Council)
+  type: consortium
+  url: https://codata.org/
+  aliases: []
+- id: codemeta-project
+  name: CodeMeta project
+  type: community
+  url: https://codemeta.github.io/
+  aliases: []
+- id: combine-archive-community
+  name: COMBINE Archive community
+  type: community
+  url: https://combinearchive.org/
+  aliases: []
+- id: common-workflow-language-project
+  name: Common Workflow Language project
+  type: community
+  url: https://www.commonwl.org/
+  aliases: []
+- id: crossref
+  name: Crossref
+  type: foundation
+  url: https://www.crossref.org/
+  aliases: []
+- id: crs4-ro-crate-community
+  name: CRS4 / RO-Crate community
+  type: community
+  url: https://www.researchobject.org/ro-crate/
+  aliases: []
+- id: datacite
+  name: DataCite
+  type: consortium
+  url: https://datacite.org/
+  aliases: []
+- id: ddi-alliance
+  name: DDI Alliance
+  type: consortium
+  url: https://ddialliance.org/
+  aliases: []
+- id: dicom-standards-committee-nema
+  name: DICOM Standards Committee (NEMA)
+  type: standards-body
+  url: https://www.dicomstandard.org/
+  aliases: []
+- id: edam-ontology-maintainers-elixir-norway-embl-ebi
+  name: EDAM ontology maintainers (ELIXIR Norway / EMBL-EBI)
+  type: community
+  url: https://edamontology.org/
+  aliases: []
+- id: embl-ebi-elixir-interoperability-platform
+  name: EMBL-EBI (ELIXIR Interoperability Platform)
+  type: institution
+  url: https://www.ebi.ac.uk/
+  aliases: []
+- id: eosc-association
+  name: EOSC Association
+  type: consortium
+  url: https://eosc.eu/
+  aliases: []
+- id: fair-digital-object-forum-fdo-forum
+  name: FAIR Digital Object Forum (FDO Forum)
+  type: community
+  url: https://fairdo.org/
+  aliases: []
+- id: fairsharing-oxford-data-readiness-group
+  name: FAIRsharing (University of Oxford Data Readiness Group)
+  type: institution
+  url: https://fairsharing.org/
+  aliases: []
+- id: ga4gh
+  name: Global Alliance for Genomics and Health
+  type: consortium
+  url: https://www.ga4gh.org/
+  aliases:
+  - Global Alliance for Genomics and Health (GA4GH)
+- id: go-fair-foundation
+  name: GO FAIR Foundation
+  type: foundation
+  url: https://www.go-fair.org/
+  aliases: []
+- id: hl7-international
+  name: HL7 International
+  type: standards-body
+  url: https://www.hl7.org/
+  aliases: []
+- id: ieee-biocompute-community
+  name: IEEE / BioCompute community
+  type: standards-body
+  url: https://docs.biocomputeobject.org/
+  aliases: []
+- id: igsn-e-v
+  name: IGSN e.V.
+  type: foundation
+  url: https://ev.igsn.org/
+  aliases: []
+- id: international-organization-for-standardization-iso
+  name: International Organization for Standardization (ISO)
+  type: standards-body
+  url: https://www.iso.org/
+  aliases: []
+- id: international-union-of-crystallography-iucr
+  name: International Union of Crystallography (IUCr)
+  type: standards-body
+  url: https://www.iucr.org/resources/cif/comcifs/policy
+  aliases: []
+- id: internet-engineering-task-force-ietf
+  name: Internet Engineering Task Force (IETF)
+  type: standards-body
+  url: https://www.ietf.org/
+  aliases: []
+- id: isa-tools-community
+  name: ISA-Tools community
+  type: community
+  url: https://isa-tools.org/
+  aliases: []
+- id: lifemonitor-project-elixir
+  name: LifeMonitor project (ELIXIR)
+  type: consortium
+  url: https://lifemonitor.eu/
+  aliases: []
+- id: mlcommons
+  name: MLCommons
+  type: consortium
+  url: https://mlcommons.org/
+  aliases: []
+- id: model-context-protocol-project
+  name: Model Context Protocol project
+  type: community
+  url: https://modelcontextprotocol.io/
+  aliases: []
+- id: modelica-association-project-fmi
+  name: Modelica Association Project FMI
+  type: consortium
+  url: https://fmi-standard.org/about/
+  aliases: []
+- id: nanopublications-community
+  name: Nanopublications community
+  type: community
+  url: https://nanopub.net/
+  aliases: []
+- id: national-library-of-medicine
+  name: National Library of Medicine
+  type: standards-body
+  url: https://jats.nlm.nih.gov/
+  aliases: []
+- id: nexus-international-advisory-committee-niac
+  name: NeXus International Advisory Committee (NIAC)
+  type: community
+  url: https://www.nexusformat.org/
+  aliases: []
+- id: obo-foundry
+  name: OBO Foundry
+  type: community
+  url: https://obofoundry.org/
+  aliases: []
+- id: opc-foundation
+  name: OPC Foundation
+  type: consortium
+  url: https://opcfoundation.org/
+  aliases: []
+- id: open-geospatial-consortium-ogc
+  name: Open Geospatial Consortium (OGC)
+  type: standards-body
+  url: https://www.ogc.org/
+  aliases: []
+- id: open-provenance-model-for-workflows-opmw
+  name: Open Provenance Model for Workflows (OPMW)
+  type: community
+  url: https://www.opmw.org/
+  aliases: []
+- id: openaire
+  name: OpenAIRE
+  type: consortium
+  url: https://www.openaire.eu/
+  aliases: []
+- id: openeo-consortium-ogc
+  name: openEO consortium / OGC
+  type: consortium
+  url: https://openeo.org/
+  aliases: []
+- id: openwdl
+  name: OpenWDL
+  type: community
+  url: https://openwdl.org/
+  aliases: []
+- id: optimade-consortium-materials-consortia
+  name: OPTIMADE consortium (Materials-Consortia)
+  type: consortium
+  url: https://optimade.org/
+  aliases: []
+- id: orcid
+  name: ORCID
+  type: foundation
+  url: https://orcid.org/
+  aliases: []
+- id: qudt-org
+  name: QUDT.org
+  type: community
+  url: https://www.qudt.org/
+  aliases: []
+- id: rda-scholix-working-group
+  name: RDA Scholix working group
+  type: community
+  url: https://www.rd-alliance.org/groups/scholarly-link-exchange-wg
+  aliases: []
+- id: regenstrief-institute
+  name: Regenstrief Institute
+  type: institution
+  url: https://loinc.org/
+  aliases: []
+- id: regenstrief-institute-ucum
+  name: Regenstrief Institute (UCUM)
+  type: institution
+  url: https://ucum.org/
+  aliases: []
+- id: reprozip-project-nyu-tandon-school-of-engineering
+  name: ReproZip project (NYU Tandon School of Engineering)
+  type: institution
+  url: https://www.reprozip.org/
+  aliases: []
+- id: research-object-community
+  name: Research Object community
+  type: community
+  url: https://www.researchobject.org/
+  aliases: []
+- id: ror-research-organization-registry
+  name: ROR (Research Organization Registry)
+  type: community
+  url: https://ror.org/
+  aliases: []
+- id: sapporo-contributors
+  name: Sapporo contributors
+  type: community
+  url: https://github.com/sapporo-wes/sapporo
+  aliases: []
+- id: sbml-community
+  name: SBML community
+  type: community
+  url: https://sbml.org/
+  aliases: []
+- id: schema-org-community
+  name: Schema.org community
+  type: community
+  url: https://schema.org/
+  aliases: []
+- id: sdmx-initiative-seven-sponsor-organizations
+  name: SDMX initiative (seven sponsor organizations)
+  type: consortium
+  url: https://sdmx.org/
+  aliases: []
+- id: signposting-community
+  name: Signposting community
+  type: community
+  url: https://signposting.org/
+  aliases: []
+- id: sila-consortium
+  name: SiLA Consortium
+  type: consortium
+  url: https://sila-standard.com/
+  aliases: []
+- id: software-heritage
+  name: Software Heritage
+  type: institution
+  url: https://www.softwareheritage.org/
+  aliases: []
+- id: stac-community
+  name: STAC community
+  type: community
+  url: https://stacspec.org/
+  aliases: []
+- id: tib-leibniz-information-centre-for-science-and-technology
+  name: TIB Leibniz Information Centre for Science and Technology
+  type: institution
+  url: https://www.tib.eu/
+  aliases: []
+- id: w3c
+  name: World Wide Web Consortium (W3C)
+  type: standards-body
+  url: https://www.w3.org/
+  aliases: []
+- id: workflowhub
+  name: WorkflowHub
+  type: consortium
+  url: https://workflowhub.eu/
+  aliases:
+  - WorkflowHub (University of Manchester and HITS gGmbH)
+- id: world-wide-web-consortium-w3c-and-open-geospatial-consortium
+  name: World Wide Web Consortium (W3C) and Open Geospatial Consortium (OGC)
+  type: standards-body
+  url: https://www.w3.org/
+  aliases: []
+- id: zitnik-lab-harvard-medical-school
+  name: Zitnik Lab, Harvard Medical School
+  type: institution
+  url: https://zitniklab.hms.harvard.edu/
+  aliases: []

@@ -125,7 +125,7 @@ def resource_record(resource: dict[str, Any]) -> dict[str, Any]:
         "name": resource["name"],
         "url": resource["url"],
         "section": resource["section"],
-        "resource_type": resource["resource_type"],
+        "resource_kind": resource["resource_kind"],
         "interoperability_layers": list(resource.get("interoperability_layers", [])),
         "connects": list(resource.get("connects", [])),
         "mechanism": resource["mechanism"],
@@ -212,6 +212,7 @@ def main(argv: list[str] | None = None) -> int:
         "conformance-suite",
         "public-validator",
         "interoperability-demonstration",
+        "documented-tests",
     }:
         print(f"ERROR: unknown evidence type: {args.evidence!r}", file=sys.stderr)
         return 2

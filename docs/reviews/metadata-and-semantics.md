@@ -40,3 +40,7 @@
 ## Conflicts
 
 None.
+
+## v2.1 provenance migration (2026-08-01)
+
+- Closed isolates: Darwin Core, DDI Lifecycle, and SOSA/SSN via related links to Bioschemas/Schema.org, SDMX, and SensorThings respectively.

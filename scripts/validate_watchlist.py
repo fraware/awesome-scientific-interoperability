@@ -16,10 +16,17 @@ import yaml
 from jsonschema import Draft202012Validator, FormatChecker
 
 ROOT = Path(__file__).resolve().parents[1]
+SCRIPTS = Path(__file__).resolve().parent
+if str(SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS))
+
+from lib.catalog_model import claim_role_ids, clear_caches, load_references  # noqa: E402
+
 WATCHLIST_PATH = ROOT / "catalog" / "watchlist.yaml"
 SCHEMA_PATH = ROOT / "schema" / "watchlist.schema.json"
 PROSE_PATH = ROOT / "docs" / "watchlist.md"
 CATALOG_INDEX_PATH = ROOT / "catalog" / "resources.yaml"
+REFERENCES_PATH = ROOT / "catalog" / "references.yaml"
 ENTRY_RE = re.compile(r"^- \[([^\]]+)\]\((https://[^)]+)\) - (.+)$")
 CANDIDATE_SECTIONS = {
     "Foundations",
@@ -82,6 +89,7 @@ def semantic_errors(
     *,
     as_of: date | None = None,
     catalog_ids: set[str] | None = None,
+    check_references: bool = True,
 ) -> list[str]:
     errors: list[str] = []
     items = watchlist.get("items", [])
@@ -122,6 +130,20 @@ def semantic_errors(
         if item_id in catalog_ids:
             errors.append(f"{item_id}: watchlist id conflicts with main-list catalog id")
 
+        if check_references and REFERENCES_PATH.exists():
+            references = load_references()
+            roles = claim_role_ids()
+            for source_ref in item.get("source_refs") or []:
+                if not isinstance(source_ref, dict):
+                    errors.append(f"{item_id}: source_refs entries must be objects")
+                    continue
+                ref_id = source_ref.get("ref_id")
+                role = source_ref.get("role")
+                if role not in roles:
+                    errors.append(f"{item_id}: unknown claim role {role!r}")
+                if ref_id not in references:
+                    errors.append(f"{item_id}: unresolved ref_id {ref_id!r}")
+
     return errors
 
 
@@ -131,13 +153,21 @@ def validate_watchlist(
     *,
     as_of: date | None = None,
     catalog_ids: set[str] | None = None,
+    check_references: bool = True,
 ) -> list[str]:
     errors: list[str] = []
     validator = Draft202012Validator(schema, format_checker=FormatChecker())
     for error in sorted(validator.iter_errors(watchlist), key=lambda item: list(item.absolute_path)):
         path = ".".join(str(part) for part in error.absolute_path) or "watchlist"
         errors.append(f"schema:{path}: {error.message}")
-    errors.extend(semantic_errors(watchlist, as_of=as_of, catalog_ids=catalog_ids))
+    errors.extend(
+        semantic_errors(
+            watchlist,
+            as_of=as_of,
+            catalog_ids=catalog_ids,
+            check_references=check_references,
+        )
+    )
     return errors
 
 
@@ -168,6 +198,7 @@ def parity_errors(watchlist: dict[str, Any], prose: str) -> list[str]:
 
 
 def validate(*, as_of: date | None = None) -> list[str]:
+    clear_caches()
     watchlist = load_watchlist()
     schema = load_schema()
     prose = PROSE_PATH.read_text(encoding="utf-8")

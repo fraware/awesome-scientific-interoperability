@@ -4,7 +4,7 @@ resources:
   name: Allotrope Data Format
   url: https://docs.allotrope.org/
   section: Instruments and Laboratories
-  resource_type: Analytical Data Exchange Framework
+  resource_kind: exchange-standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -15,32 +15,33 @@ resources:
   - analytics
   - archives
   mechanism: Common data format, ontologies, and metadata models for analytical laboratory data
-  summary: Common data format, ontologies, and metadata models for exchanging analytical laboratory data across
-    instruments and applications.
+  summary: Common data format, ontologies, and metadata models for exchanging analytical laboratory data
+    across instruments and applications.
   maturity: maintained
   evidence_types:
   - normative-specification
   - reference-implementation
   implementation_status: reference-and-others
   conformance_status: none-known
-  stewardship:
-    name: Allotrope Foundation
-    type: consortium
-    url: https://www.allotrope.org/
+  steward_id: allotrope-foundation
   domains:
   - analytical-chemistry
   - laboratory-data
-  source_urls:
-  - https://docs.allotrope.org/
-  - https://www.allotrope.org/adf/
+  source_refs:
+  - ref_id: docs-allotrope-org-root
+    role: technical-definition
+  - ref_id: allotrope-org-root
+    role: stewardship
+  - ref_id: allotrope-org-adf
+    role: technical-definition
   alternatives:
   - analytical-information-markup-language-animl
   related_resource_ids:
   - analytical-information-markup-language-animl
-  decision_basis: Substantial cross-vendor analytical-data interoperability ecosystem with published ontologies and
-    format specifications.
-  boundary_note: Consortium membership and licensing govern some specification access; analytical-data exchange only,
-    not device control.
+  decision_basis: Substantial cross-vendor analytical-data interoperability ecosystem with published ontologies
+    and format specifications.
+  boundary_note: Consortium membership and licensing govern some specification access; analytical-data
+    exchange only, not device control.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -48,7 +49,7 @@ resources:
   name: Analytical Information Markup Language (AnIML)
   url: https://www.animl.org/
   section: Instruments and Laboratories
-  resource_type: Analytical Data Standard
+  resource_kind: exchange-standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -64,21 +65,24 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: ASTM International
-    type: standards-body
-    url: https://www.astm.org/
+  steward_id: astm-international
   domains:
   - analytical-chemistry
-  source_urls:
-  - https://www.animl.org/
-  - https://www.astm.org/e13
+  source_refs:
+  - ref_id: animl-org-root
+    role: technical-definition
+  - ref_id: astm-org-root
+    role: stewardship
+  - ref_id: astm-org-e13
+    role: technical-definition
   alternatives:
   - allotrope-data-format
   related_resource_ids:
   - allotrope-data-format
-  decision_basis: Direct laboratory analytical-data interoperability standard with explicit cross-vendor purpose.
-  boundary_note: Domain-specific technique definitions may vary in maturity; device communication is out of scope.
+  decision_basis: Direct laboratory analytical-data interoperability standard with explicit cross-vendor
+    purpose.
+  boundary_note: Domain-specific technique definitions may vary in maturity; device communication is out
+    of scope.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -86,7 +90,7 @@ resources:
   name: Autoprotocol
   url: https://github.com/autoprotocol/autoprotocol-python
   section: Instruments and Laboratories
-  resource_type: Laboratory Procedure Language
+  resource_kind: exchange-standard
   interoperability_layers:
   - Syntactic
   - Operational
@@ -103,21 +107,26 @@ resources:
   - reference-implementation
   implementation_status: reference-and-others
   conformance_status: none-known
-  stewardship:
-    name: Autoprotocol community
-    type: community
-    url: https://github.com/autoprotocol/autoprotocol-python
+  steward_id: autoprotocol-community
   domains:
   - laboratory-automation
-  source_urls:
-  - https://github.com/autoprotocol/autoprotocol-python
-  - https://autoprotocol.org/
-  alternatives: []
-  related_resource_ids: []
-  decision_basis: Important operational contract for expressing executable wet-lab procedures independent of a single
-    vendor platform.
-  boundary_note: Procedure representation does not establish device compatibility; ecosystem breadth and stewardship
-    require periodic review.
+  source_refs:
+  - ref_id: github-com-autoprotocol-autoprotocol-python
+    role: technical-definition
+  - ref_id: github-com-autoprotocol-autoprotocol-python
+    role: stewardship
+  - ref_id: github-com-autoprotocol-autoprotocol-python
+    role: implementation
+  - ref_id: autoprotocol-org-root
+    role: technical-definition
+  alternatives:
+  - sila-2
+  related_resource_ids:
+  - sila-2
+  decision_basis: Important operational contract for expressing executable wet-lab procedures independent
+    of a single vendor platform.
+  boundary_note: Procedure representation does not establish device compatibility; ecosystem breadth and
+    stewardship require periodic review.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-01-31'
   primary_source_inspected: true
@@ -125,7 +134,7 @@ resources:
   name: HL7 FHIR
   url: https://hl7.org/fhir/
   section: Instruments and Laboratories
-  resource_type: Clinical Exchange Standard
+  resource_kind: exchange-standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -145,21 +154,24 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: public-suite
-  stewardship:
-    name: HL7 International
-    type: standards-body
-    url: https://www.hl7.org/
+  steward_id: hl7-international
   domains:
   - clinical-informatics
   - laboratory-medicine
-  source_urls:
-  - https://hl7.org/fhir/
-  - https://github.com/FHIR/fhir-test-cases
+  source_refs:
+  - ref_id: hl7-org-fhir
+    role: technical-definition
+  - ref_id: hl7-org-root
+    role: stewardship
+  - ref_id: github-com-fhir-fhir-test-cases
+    role: conformance
   alternatives: []
   related_resource_ids:
   - loinc
-  decision_basis: Exceptional domain exemplar demonstrating a large modular clinical and laboratory exchange ecosystem.
-  boundary_note: Included as a clinical-exchange exemplar, not as evidence that the list covers all healthcare standards.
+  decision_basis: Exceptional domain exemplar demonstrating a large modular clinical and laboratory exchange
+    ecosystem.
+  boundary_note: Included as a clinical-exchange exemplar, not as evidence that the list covers all healthcare
+    standards.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -167,7 +179,7 @@ resources:
   name: LOINC
   url: https://loinc.org/
   section: Instruments and Laboratories
-  resource_type: Terminology Standard
+  resource_kind: ontology-vocabulary
   interoperability_layers:
   - Semantic
   connects:
@@ -183,22 +195,24 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: Regenstrief Institute
-    type: institution
-    url: https://loinc.org/
+  steward_id: regenstrief-institute
   domains:
   - clinical-informatics
   - laboratory-medicine
-  source_urls:
-  - https://loinc.org/
-  - https://loinc.org/kb/users-guide/
+  source_refs:
+  - ref_id: loinc-org-root
+    role: technical-definition
+  - ref_id: loinc-org-root
+    role: stewardship
+  - ref_id: loinc-org-kb-users-guide
+    role: technical-definition
   alternatives: []
   related_resource_ids:
   - hl7-fhir
-  decision_basis: Mature semantic interoperability mechanism for laboratory measurements and clinical observations.
-  boundary_note: Clinical terminology orientation; pairs naturally with FHIR for exchange and UCUM for units outside
-    this catalog.
+  decision_basis: Mature semantic interoperability mechanism for laboratory measurements and clinical
+    observations.
+  boundary_note: Clinical terminology orientation; pairs naturally with FHIR for exchange and UCUM for
+    units outside this catalog.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -206,7 +220,7 @@ resources:
   name: OPC UA Laboratory and Analytical Device Standard (LADS)
   url: https://opcfoundation.org/markets-collaboration/lads/
   section: Instruments and Laboratories
-  resource_type: Device Communication Standard
+  resource_kind: exchange-standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -223,21 +237,23 @@ resources:
   - reference-implementation
   implementation_status: reference-and-others
   conformance_status: none-known
-  stewardship:
-    name: OPC Foundation
-    type: consortium
-    url: https://opcfoundation.org/
+  steward_id: opc-foundation
   domains:
   - laboratory-automation
   - analytical-instruments
-  source_urls:
-  - https://opcfoundation.org/markets-collaboration/lads/
-  - https://reference.opcfoundation.org/
+  source_refs:
+  - ref_id: opcfoundation-org-markets-collaboration-lads
+    role: technical-definition
+  - ref_id: opcfoundation-org-root
+    role: stewardship
+  - ref_id: reference-opcfoundation-org-root
+    role: technical-definition
   alternatives:
   - sila-2
   related_resource_ids:
   - sila-2
-  decision_basis: Modern industrial-scientific bridge for interoperable device control, status, and data access.
+  decision_basis: Modern industrial-scientific bridge for interoperable device control, status, and data
+    access.
   boundary_note: Device communication does not standardize experimental semantics or analytical file exchange.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -246,7 +262,7 @@ resources:
   name: SiLA 2
   url: https://sila2.gitlab.io/sila_base/
   section: Instruments and Laboratories
-  resource_type: Device Communication Standard
+  resource_kind: exchange-standard
   interoperability_layers:
   - Syntactic
   - Operational
@@ -255,38 +271,39 @@ resources:
   - services
   - orchestration software
   mechanism: gRPC-based device and service communication with extensible feature definitions
-  summary: Open gRPC-based standard for controlling laboratory devices and services through extensible feature
-    definitions.
+  summary: Open gRPC-based standard for controlling laboratory devices and services through extensible
+    feature definitions.
   maturity: established
   evidence_types:
   - normative-specification
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: SiLA Consortium
-    type: consortium
-    url: https://sila-standard.com/
+  steward_id: sila-consortium
   domains:
   - laboratory-automation
-  source_urls:
-  - https://sila2.gitlab.io/sila_base/
-  - https://gitlab.com/sila2
+  source_refs:
+  - ref_id: sila2-gitlab-io-sila-base
+    role: technical-definition
+  - ref_id: sila-standard-com-root
+    role: stewardship
+  - ref_id: gitlab-com-sila2
+    role: technical-definition
   alternatives:
   - opc-ua-laboratory-and-analytical-device-standard-lads
   related_resource_ids:
   - opc-ua-laboratory-and-analytical-device-standard-lads
   decision_basis: Canonical open laboratory-device interoperability standard with multi-language implementations.
-  boundary_note: Device communication does not by itself standardize experimental semantics or analytical data formats.
+  boundary_note: Device communication does not by itself standardize experimental semantics or analytical
+    data formats.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
-
 - id: ogc-sensorthings-api
   name: OGC SensorThings API
   url: https://www.ogc.org/standards/sensorthings/
   section: Instruments and Laboratories
-  resource_type: Sensor Data API
+  resource_kind: api-standard
   interoperability_layers:
   - Syntactic
   - Operational
@@ -295,38 +312,42 @@ resources:
   - dashboards
   - environmental monitoring systems
   mechanism: REST/OData endpoints for Things, Datastreams, Observations, and Tasking entities
-  summary: REST API for managing and retrieving IoT sensor observations and tasking actuators; connects sensor networks, dashboards, and environmental monitoring systems.
+  summary: REST API for managing and retrieving IoT sensor observations and tasking actuators; connects
+    sensor networks, dashboards, and environmental monitoring systems.
   maturity: established
   evidence_types:
   - normative-specification
   - independent-implementation
+  - documented-tests
   implementation_status: multiple-independent
-  conformance_status: public-suite
-  stewardship:
-    name: Open Geospatial Consortium (OGC)
-    type: standards-body
-    url: https://www.ogc.org/
+  conformance_status: documented-tests
+  steward_id: open-geospatial-consortium-ogc
   domains:
   - environmental-science
   - geospatial
-  source_urls:
-  - https://www.ogc.org/standards/sensorthings/
-  - https://docs.ogc.org/is/18-088/18-088.html
+  source_refs:
+  - ref_id: ogc-org-standards-sensorthings
+    role: technical-definition
+  - ref_id: ogc-org-root
+    role: stewardship
+  - ref_id: docs-ogc-org-is-18-088-18-088-html
+    role: technical-definition
   alternatives:
   - sosa-ssn
   related_resource_ids:
   - sosa-ssn
-  decision_basis: Operational sensor-ingest and tasking API where SOSA/SSN supplies semantic observation models but not live exchange.
-  boundary_note: IoT/sensor platform API; does not replace laboratory device protocols such as SiLA or OPC UA LADS.
+  decision_basis: Operational sensor-ingest and tasking API where SOSA/SSN supplies semantic observation
+    models but not live exchange.
+  boundary_note: IoT/sensor platform API; does not replace laboratory device protocols such as SiLA or
+    OPC UA LADS.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
-
 - id: dicomweb
   name: DICOMweb
   url: https://www.dicomstandard.org/using/dicomweb
   section: Instruments and Laboratories
-  resource_type: Imaging Interoperability Profile
+  resource_kind: exchange-standard
   interoperability_layers:
   - Operational
   connects:
@@ -334,28 +355,32 @@ resources:
   - viewers
   - analysis pipelines
   mechanism: DICOM PS3.18 REST services including QIDO-RS, WADO-RS, and STOW-RS
-  summary: DICOM PS3.18 REST services for web-based medical and scientific imaging exchange; connects PACS, viewers, and analysis pipelines.
+  summary: DICOM PS3.18 REST services for web-based medical and scientific imaging exchange; connects
+    PACS, viewers, and analysis pipelines.
   maturity: established
   evidence_types:
   - normative-specification
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: documented-tests
-  stewardship:
-    name: DICOM Standards Committee (NEMA)
-    type: standards-body
-    url: https://www.dicomstandard.org/
+  steward_id: dicom-standards-committee-nema
   domains:
   - life-sciences
   - clinical-laboratory
-  source_urls:
-  - https://www.dicomstandard.org/using/dicomweb
-  - https://dicom.nema.org/medical/dicom/current/output/html/part18.html
+  source_refs:
+  - ref_id: dicomstandard-org-using-dicomweb
+    role: technical-definition
+  - ref_id: dicomstandard-org-root
+    role: stewardship
+  - ref_id: dicom-nema-org-medical-dicom-current-output-html-part18-html
+    role: technical-definition
   alternatives:
   - hl7-fhir
   related_resource_ids: []
-  decision_basis: Narrower web imaging contract than full DICOM; enables scientific pipelines to retrieve and store imaging objects over HTTPS.
-  boundary_note: Imaging transport and metadata access; clinical semantics remain in FHIR/LOINC where applicable.
+  decision_basis: Narrower web imaging contract than full DICOM; enables scientific pipelines to retrieve
+    and store imaging objects over HTTPS.
+  boundary_note: Imaging transport and metadata access; clinical semantics remain in FHIR/LOINC where
+    applicable.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true

@@ -15,5 +15,6 @@ items:
   - Objective promotion signal observed.
   rejection_conditions:
   - Objective rejection signal observed.
-  source_urls:
-  - https://example.org/unknown-section
+  source_refs:
+  - ref_id: fixture-wl-ref-1
+    role: technical-definition

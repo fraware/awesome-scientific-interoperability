@@ -36,3 +36,7 @@
 ## Conflicts
 
 None.
+
+## v2.1 provenance migration (2026-08-01)
+
+- Closed isolate: `identifiers-org` related to DataCite and ORCID.

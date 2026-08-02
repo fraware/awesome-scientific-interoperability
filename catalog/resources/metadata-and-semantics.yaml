@@ -4,7 +4,7 @@ resources:
   name: Bioschemas
   url: https://bioschemas.org/profiles/
   section: Metadata and Semantics
-  resource_type: Scientific Metadata Profiles
+  resource_kind: metadata-standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -12,31 +12,30 @@ resources:
   - Life-science resources
   - search engines
   - registries
-  mechanism: Schema.org profiles for datasets, tools, workflows, training materials,
-    and scientific resources
-  summary: Schema.org profiles for datasets, tools, workflows, training materials,
-    and scientific resources; connects Life-science resources, search engines, and
-    registries.
+  mechanism: Schema.org profiles for datasets, tools, workflows, training materials, and scientific resources
+  summary: Schema.org profiles for datasets, tools, workflows, training materials, and scientific resources;
+    connects Life-science resources, search engines, and registries.
   maturity: maintained
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: Bioschemas community
-    type: community
-    url: https://bioschemas.org/
+  steward_id: bioschemas-community
   domains:
   - life-sciences
-  source_urls:
-  - https://bioschemas.org/profiles/
-  - https://github.com/Bioschemas/bioschemas.github.io
+  source_refs:
+  - ref_id: bioschemas-org-profiles
+    role: technical-definition
+  - ref_id: bioschemas-org-root
+    role: stewardship
+  - ref_id: github-com-bioschemas-bioschemas-github-io
+    role: implementation
   alternatives: []
   related_resource_ids:
   - schema-org
-  decision_basis: Strong domain exemplar translating general web semantics into actionable
-    scientific resource profiles.
+  decision_basis: Strong domain exemplar translating general web semantics into actionable scientific
+    resource profiles.
   boundary_note: Life-science-centered; avoid listing every profile individually.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -45,40 +44,38 @@ resources:
   name: Climate and Forecast (CF) Metadata Conventions
   url: https://cfconventions.org/
   section: Metadata and Semantics
-  resource_type: Metadata Convention
+  resource_kind: metadata-standard
   interoperability_layers:
   - Semantic
   connects:
   - NetCDF datasets
   - climate and forecast tools
   - archives
-  mechanism: Standardized variable descriptions, units, coordinates, and metadata
-    conventions
-  summary: Standardized variable descriptions, units, coordinates, and metadata conventions;
-    connects NetCDF datasets, climate and forecast tools, and archives.
+  mechanism: Standardized variable descriptions, units, coordinates, and metadata conventions
+  summary: Standardized variable descriptions, units, coordinates, and metadata conventions; connects
+    NetCDF datasets, climate and forecast tools, and archives.
   maturity: established
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: CF Conventions community
-    type: community
-    url: https://cfconventions.org/
+  steward_id: cf-conventions-community
   domains:
   - climate-science
   - geosciences
-  source_urls:
-  - https://cfconventions.org/
-  - https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html
+  source_refs:
+  - ref_id: cfconventions-org-root
+    role: technical-definition
+  - ref_id: cfconventions-org-root
+    role: stewardship
+  - ref_id: cfconventions-org-data-cf-conventions-cf-conventions-1-10-cf-conve
+    role: technical-definition
   alternatives: []
   related_resource_ids:
   - unified-code-for-units-of-measure-ucum
-  decision_basis: The semantic layer that makes NetCDF climate data interpretable
-    across tools.
-  boundary_note: Prefer this over a generic NetCDF entry for the interoperability
-    list.
+  decision_basis: The semantic layer that makes NetCDF climate data interpretable across tools.
+  boundary_note: Prefer this over a generic NetCDF entry for the interoperability list.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -86,7 +83,7 @@ resources:
   name: Croissant
   url: https://docs.mlcommons.org/croissant/docs/croissant-spec-1.1.html
   section: Metadata and Semantics
-  resource_type: Dataset Metadata Standard
+  resource_kind: metadata-standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -97,32 +94,32 @@ resources:
   - training frameworks
   - consumers
   mechanism: Machine-readable dataset descriptions built on Schema.org
-  summary: Machine-readable dataset descriptions built on Schema.org; connects machine-learning
-    datasets, repositories, training frameworks, and consumers.
+  summary: Machine-readable dataset descriptions built on Schema.org; connects machine-learning datasets,
+    repositories, training frameworks, and consumers.
   maturity: maintained
   evidence_types:
   - normative-specification
   - reference-implementation
   - independent-implementation
+  - documented-tests
   implementation_status: multiple-independent
-  conformance_status: public-validator
-  stewardship:
-    name: MLCommons
-    type: consortium
-    url: https://mlcommons.org/
+  conformance_status: documented-tests
+  steward_id: mlcommons
   domains:
   - machine-learning
   - research-data
-  source_urls:
-  - https://docs.mlcommons.org/croissant/docs/croissant-spec-1.1.html
-  - https://github.com/mlcommons/croissant
+  source_refs:
+  - ref_id: docs-mlcommons-org-croissant-docs-croissant-spec-1-1-html
+    role: technical-definition
+  - ref_id: mlcommons-org-root
+    role: stewardship
+  - ref_id: github-com-mlcommons-croissant
+    role: implementation
   alternatives: []
   related_resource_ids:
   - schema-org
-  decision_basis: Current, implementation-oriented bridge between dataset repositories
-    and ML tooling.
-  boundary_note: Include for AI-ready scientific datasets, while excluding generic
-    AI datasets.
+  decision_basis: Current, implementation-oriented bridge between dataset repositories and ML tooling.
+  boundary_note: Include for AI-ready scientific datasets, while excluding generic AI datasets.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -130,7 +127,7 @@ resources:
   name: Darwin Core
   url: https://dwc.tdwg.org/
   section: Metadata and Semantics
-  resource_type: Vocabulary / Standard
+  resource_kind: ontology-vocabulary
   interoperability_layers:
   - Semantic
   connects:
@@ -138,27 +135,29 @@ resources:
   - collections
   - aggregators
   - repositories
-  mechanism: Shared terms for biodiversity occurrence, taxonomy, location, and event
-    data
-  summary: Shared terms for biodiversity occurrence, taxonomy, location, and event
-    data; connects biodiversity observations, collections, aggregators, and repositories.
+  mechanism: Shared terms for biodiversity occurrence, taxonomy, location, and event data
+  summary: Shared terms for biodiversity occurrence, taxonomy, location, and event data; connects biodiversity
+    observations, collections, aggregators, and repositories.
   maturity: established
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: Biodiversity Information Standards (TDWG)
-    type: standards-body
-    url: https://www.tdwg.org/
+  steward_id: biodiversity-information-standards-tdwg
   domains:
   - biodiversity
-  source_urls:
-  - https://dwc.tdwg.org/
-  - https://github.com/tdwg/dwc
+  source_refs:
+  - ref_id: dwc-tdwg-org-root
+    role: technical-definition
+  - ref_id: tdwg-org-root
+    role: stewardship
+  - ref_id: github-com-tdwg-dwc
+    role: implementation
   alternatives: []
-  related_resource_ids: []
+  related_resource_ids:
+  - bioschemas
+  - schema-org
   decision_basis: Mature domain standard enabling global biodiversity data exchange.
   boundary_note: Domain exemplar with broad institutional adoption.
   reviewed_on: '2026-08-01'
@@ -168,7 +167,7 @@ resources:
   name: DDI Lifecycle
   url: https://ddialliance.org/Specification/DDI-Lifecycle/
   section: Metadata and Semantics
-  resource_type: Metadata Standard
+  resource_kind: metadata-standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -178,33 +177,33 @@ resources:
   - surveys
   - archives
   - analysis systems
-  mechanism: Lifecycle metadata model covering conceptualization, collection, processing,
-    and dissemination
-  summary: Lifecycle metadata model covering conceptualization, collection, processing,
-    and dissemination; connects social-science data, surveys, archives, and analysis
-    systems.
+  mechanism: Lifecycle metadata model covering conceptualization, collection, processing, and dissemination
+  summary: Lifecycle metadata model covering conceptualization, collection, processing, and dissemination;
+    connects social-science data, surveys, archives, and analysis systems.
   maturity: established
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: DDI Alliance
-    type: consortium
-    url: https://ddialliance.org/
+  steward_id: ddi-alliance
   domains:
   - social-science
-  source_urls:
-  - https://ddialliance.org/Specification/DDI-Lifecycle/
-  - https://github.com/ddialliance/Specification-DDI-Lifecycle
+  source_refs:
+  - ref_id: ddialliance-org-specification-ddi-lifecycle
+    role: technical-definition
+  - ref_id: ddialliance-org-root
+    role: stewardship
+  - ref_id: github-com-ddialliance-specification-ddi-lifecycle
+    role: implementation
   alternatives: []
-  related_resource_ids: []
-  decision_basis: Mature lifecycle metadata standard connecting social-science study
-    design, collection, processing, archiving, and dissemination across independent
-    institutions and systems.
-  boundary_note: Include as a social-science domain standard; avoid expanding into
-    a comprehensive survey-metadata catalog.
+  related_resource_ids:
+  - sdmx
+  - schema-org
+  decision_basis: Mature lifecycle metadata standard connecting social-science study design, collection,
+    processing, archiving, and dissemination across independent institutions and systems.
+  boundary_note: Include as a social-science domain standard; avoid expanding into a comprehensive survey-metadata
+    catalog.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -212,7 +211,7 @@ resources:
   name: EDAM Ontology
   url: https://edamontology.org/
   section: Metadata and Semantics
-  resource_type: Ontology
+  resource_kind: ontology-vocabulary
   interoperability_layers:
   - Semantic
   connects:
@@ -221,35 +220,32 @@ resources:
   - formats
   - operations
   - workflow registries
-  mechanism: Controlled concepts connecting scientific operations, data types, formats,
-    and topics
-  summary: Controlled concepts connecting scientific operations, data types, formats,
-    and topics; connects bioinformatics tools, data, formats, operations, and workflow
-    registries.
+  mechanism: Controlled concepts connecting scientific operations, data types, formats, and topics
+  summary: Controlled concepts connecting scientific operations, data types, formats, and topics; connects
+    bioinformatics tools, data, formats, operations, and workflow registries.
   maturity: established
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: EDAM ontology maintainers (ELIXIR Norway / EMBL-EBI)
-    type: community
-    url: https://edamontology.org/
+  steward_id: edam-ontology-maintainers-elixir-norway-embl-ebi
   domains:
   - bioinformatics
   - life-sciences
-  source_urls:
-  - https://edamontology.org/
-  - https://github.com/edamontology/edamontology
+  source_refs:
+  - ref_id: edamontology-org-root
+    role: technical-definition
+  - ref_id: edamontology-org-root
+    role: stewardship
+  - ref_id: github-com-edamontology-edamontology
+    role: implementation
   alternatives: []
   related_resource_ids:
   - obo-foundry
   - ga4gh-tool-registry-service-trs
-  decision_basis: Operationally useful semantic bridge across tools, workflows, and
-    registries.
-  boundary_note: Life-science-focused but unusually clear in connecting operations
-    to data and formats.
+  decision_basis: Operationally useful semantic bridge across tools, workflows, and registries.
+  boundary_note: Life-science-focused but unusually clear in connecting operations to data and formats.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -257,7 +253,7 @@ resources:
   name: OBO Foundry
   url: https://obofoundry.org/
   section: Metadata and Semantics
-  resource_type: Ontology Governance / Registry
+  resource_kind: registry-catalog
   interoperability_layers:
   - Semantic
   - Organizational
@@ -265,31 +261,29 @@ resources:
   - Biomedical ontologies
   - data systems
   - knowledge graphs
-  mechanism: Shared principles, identifiers, and coordination for interoperable open
-    ontologies
-  summary: Shared principles, identifiers, and governance for interoperable open biomedical
-    ontologies.
+  mechanism: Shared principles, identifiers, and coordination for interoperable open ontologies
+  summary: Shared principles, identifiers, and governance for interoperable open biomedical ontologies.
   maturity: established
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: OBO Foundry
-    type: community
-    url: https://obofoundry.org/
+  steward_id: obo-foundry
   domains:
   - biomedical
   - life-sciences
-  source_urls:
-  - https://obofoundry.org/
-  - https://github.com/OBOFoundry/OBOFoundry.github.io
+  source_refs:
+  - ref_id: obofoundry-org-root
+    role: technical-definition
+  - ref_id: obofoundry-org-root
+    role: stewardship
+  - ref_id: github-com-obofoundry-obofoundry-github-io
+    role: implementation
   alternatives: []
   related_resource_ids:
   - edam-ontology
-  decision_basis: Field-defining governance and coordination mechanism for interoperable
-    biomedical semantics.
+  decision_basis: Field-defining governance and coordination mechanism for interoperable biomedical semantics.
   boundary_note: Curate the Foundry as the ecosystem entry, not every member ontology.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -298,7 +292,7 @@ resources:
   name: QUDT
   url: https://www.qudt.org/
   section: Metadata and Semantics
-  resource_type: Ontology / Vocabulary
+  resource_kind: ontology-vocabulary
   interoperability_layers:
   - Semantic
   connects:
@@ -306,32 +300,31 @@ resources:
   - units
   - scientific datasets
   - knowledge systems
-  mechanism: Machine-readable ontologies for quantities, units, dimensions, and data
-    types
-  summary: Ontologies for quantities, units, dimensions, and data types that preserve
-    measurement meaning across scientific systems.
+  mechanism: Machine-readable ontologies for quantities, units, dimensions, and data types
+  summary: Ontologies for quantities, units, dimensions, and data types that preserve measurement meaning
+    across scientific systems.
   maturity: maintained
   evidence_types:
   - normative-specification
   - independent-implementation
   implementation_status: reference-and-others
   conformance_status: none-known
-  stewardship:
-    name: QUDT.org
-    type: community
-    url: https://www.qudt.org/
+  steward_id: qudt-org
   domains:
   - cross-domain
-  source_urls:
-  - https://www.qudt.org/
-  - https://github.com/qudt/qudt-public-repo
+  source_refs:
+  - ref_id: qudt-org-root
+    role: technical-definition
+  - ref_id: qudt-org-root
+    role: stewardship
+  - ref_id: github-com-qudt-qudt-public-repo
+    role: implementation
   alternatives:
   - unified-code-for-units-of-measure-ucum
   related_resource_ids: []
-  decision_basis: Directly addresses a recurring source of semantic incompatibility
-    in scientific systems.
-  boundary_note: 'Compare with UCUM: QUDT emphasizes semantic models; UCUM emphasizes
-    computable unit codes.'
+  decision_basis: Directly addresses a recurring source of semantic incompatibility in scientific systems.
+  boundary_note: 'Compare with UCUM: QUDT emphasizes semantic models; UCUM emphasizes computable unit
+    codes.'
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -339,7 +332,7 @@ resources:
   name: Schema.org
   url: https://schema.org/
   section: Metadata and Semantics
-  resource_type: Vocabulary
+  resource_kind: ontology-vocabulary
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -348,8 +341,8 @@ resources:
   - search systems
   - structured-data consumers
   mechanism: Shared web vocabulary expressed through JSON-LD, Microdata, or RDFa
-  summary: Shared web vocabulary used by scientific profiles to expose structured
-    resources to search engines and machine clients.
+  summary: Shared web vocabulary used by scientific profiles to expose structured resources to search
+    engines and machine clients.
   maturity: established
   evidence_types:
   - normative-specification
@@ -357,22 +350,23 @@ resources:
   - independent-implementation
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: Schema.org community
-    type: community
-    url: https://schema.org/
+  steward_id: schema-org-community
   domains:
   - cross-domain
-  source_urls:
-  - https://schema.org/
-  - https://github.com/schemaorg/schemaorg
+  source_refs:
+  - ref_id: schema-org-root
+    role: technical-definition
+  - ref_id: schema-org-root
+    role: stewardship
+  - ref_id: github-com-schemaorg-schemaorg
+    role: implementation
   alternatives: []
   related_resource_ids:
   - bioschemas
   - croissant
   - w3c-data-catalog-vocabulary-dcat
-  decision_basis: Foundational semantic substrate used by scientific profiles including
-    Bioschemas and dataset descriptions.
+  decision_basis: Foundational semantic substrate used by scientific profiles including Bioschemas and
+    dataset descriptions.
   boundary_note: General-purpose; include because scientific profiles depend on it.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -381,7 +375,7 @@ resources:
   name: SDMX
   url: https://sdmx.org/standards-2/
   section: Metadata and Semantics
-  resource_type: Statistical Metadata and Data Exchange Standard
+  resource_kind: metadata-standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -390,11 +384,11 @@ resources:
   - National statistical offices
   - international agencies
   - analysis systems
-  mechanism: ISO 17369 information model with REST API and SDMX-JSON or SDMX-ML transmission
-    formats for statistical structures and datasets
-  summary: ISO-backed standard for exchanging statistical data structures, constraints, and payloads
-    through REST APIs and SDMX-JSON or SDMX-ML; connects national statistical offices, international
-    agencies, and analysis systems.
+  mechanism: ISO 17369 information model with REST API and SDMX-JSON or SDMX-ML transmission formats for
+    statistical structures and datasets
+  summary: ISO-backed standard for exchanging statistical data structures, constraints, and payloads through
+    REST APIs and SDMX-JSON or SDMX-ML; connects national statistical offices, international agencies,
+    and analysis systems.
   maturity: established
   evidence_types:
   - normative-specification
@@ -402,17 +396,19 @@ resources:
   - interoperability-demonstration
   implementation_status: multiple-independent
   conformance_status: documented-tests
-  stewardship:
-    name: SDMX initiative (seven sponsor organizations)
-    type: consortium
-    url: https://sdmx.org/
+  steward_id: sdmx-initiative-seven-sponsor-organizations
   domains:
   - social-science
   - cross-domain
-  source_urls:
-  - https://sdmx.org/standards-2/
-  - https://sdmx.org/wp-content/uploads/SDMX_3-1-0_SECTION_1_FINAL.pdf
-  - https://sdmx.org/wp-content/uploads/SDMX-MES_OG_TermsOfReference.pdf
+  source_refs:
+  - ref_id: sdmx-org-standards-2
+    role: technical-definition
+  - ref_id: sdmx-org-root
+    role: stewardship
+  - ref_id: sdmx-org-wp-content-uploads-sdmx-3-1-0-section-1-final-pd
+    role: technical-definition
+  - ref_id: sdmx-org-wp-content-uploads-sdmx-mes-og-termsofreference
+    role: technical-definition
   alternatives:
   - ddi-lifecycle
   - w3c-data-catalog-vocabulary-dcat
@@ -420,11 +416,10 @@ resources:
   - ddi-lifecycle
   - w3c-data-catalog-vocabulary-dcat
   - simple-knowledge-organization-system-skos
-  decision_basis: Strongest documented contract for operational exchange of official statistics
-    and macroeconomic indicators where producers and consumers must share Data Structure Definitions
-    and payload formats.
-  boundary_note: Addresses statistical structure and payload exchange, not survey wave lifecycle
-    documentation; pair with DDI Lifecycle when study metadata must accompany statistical feeds.
+  decision_basis: Strongest documented contract for operational exchange of official statistics and macroeconomic
+    indicators where producers and consumers must share Data Structure Definitions and payload formats.
+  boundary_note: Addresses statistical structure and payload exchange, not survey wave lifecycle documentation;
+    pair with DDI Lifecycle when study metadata must accompany statistical feeds.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -432,7 +427,7 @@ resources:
   name: Simple Knowledge Organization System (SKOS)
   url: https://www.w3.org/TR/skos-reference/
   section: Metadata and Semantics
-  resource_type: Vocabulary / Standard
+  resource_kind: ontology-vocabulary
   interoperability_layers:
   - Semantic
   connects:
@@ -441,31 +436,29 @@ resources:
   - knowledge graphs
   - metadata systems
   mechanism: RDF model for sharing and linking controlled vocabularies
-  summary: RDF model for publishing, mapping, and exchanging thesauri, taxonomies,
-    and controlled vocabularies.
+  summary: RDF model for publishing, mapping, and exchanging thesauri, taxonomies, and controlled vocabularies.
   maturity: established
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: World Wide Web Consortium (W3C)
-    type: standards-body
-    url: https://www.w3.org/
+  steward_id: w3c
   domains:
   - cross-domain
   - semantic-web
-  source_urls:
-  - https://www.w3.org/TR/skos-reference/
-  - https://www.w3.org/2009/08/skos-reference/skos.html
+  source_refs:
+  - ref_id: w3-org-tr-skos-reference
+    role: technical-definition
+  - ref_id: w3-org-root
+    role: stewardship
+  - ref_id: w3-org-2009-08-skos-reference-skos-html
+    role: technical-definition
   alternatives: []
   related_resource_ids:
   - w3c-data-catalog-vocabulary-dcat
-  decision_basis: Foundational mechanism for cross-system vocabulary exchange and
-    mapping.
-  boundary_note: Generic standard justified by pervasive scientific semantic infrastructure
-    use.
+  decision_basis: Foundational mechanism for cross-system vocabulary exchange and mapping.
+  boundary_note: Generic standard justified by pervasive scientific semantic infrastructure use.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -473,7 +466,7 @@ resources:
   name: SOSA/SSN
   url: https://www.w3.org/TR/vocab-ssn/
   section: Metadata and Semantics
-  resource_type: Ontology / Standard
+  resource_kind: ontology-vocabulary
   interoperability_layers:
   - Semantic
   connects:
@@ -483,30 +476,30 @@ resources:
   - actuators
   - platforms
   mechanism: W3C/OGC ontologies for observations, sampling, sensing, and actuation
-  summary: W3C and OGC ontologies connecting sensors, observations, samples, actuators,
-    and platforms.
+  summary: W3C and OGC ontologies connecting sensors, observations, samples, actuators, and platforms.
   maturity: established
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: World Wide Web Consortium (W3C) and Open Geospatial Consortium (OGC)
-    type: standards-body
-    url: https://www.w3.org/
+  steward_id: world-wide-web-consortium-w3c-and-open-geospatial-consortium
   domains:
   - environmental-science
   - sensor-networks
-  source_urls:
-  - https://www.w3.org/TR/vocab-ssn/
-  - https://www.ogc.org/standards/ssn/
+  source_refs:
+  - ref_id: w3-org-tr-vocab-ssn
+    role: technical-definition
+  - ref_id: w3-org-root
+    role: stewardship
+  - ref_id: ogc-org-standards-ssn
+    role: technical-definition
   alternatives: []
-  related_resource_ids: []
-  decision_basis: Core semantic contract for instrument, sensor, observation, and
-    sample interoperability.
-  boundary_note: Broad enough to connect environmental, laboratory, and IoT scientific
-    systems.
+  related_resource_ids:
+  - ogc-sensorthings-api
+  - schema-org
+  decision_basis: Core semantic contract for instrument, sensor, observation, and sample interoperability.
+  boundary_note: Broad enough to connect environmental, laboratory, and IoT scientific systems.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -514,7 +507,7 @@ resources:
   name: SpatioTemporal Asset Catalog (STAC)
   url: https://stacspec.org/
   section: Metadata and Semantics
-  resource_type: Specification / API
+  resource_kind: api-standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -525,8 +518,8 @@ resources:
   - clients
   - cloud storage
   mechanism: Common metadata model and APIs for spatiotemporal assets
-  summary: Common metadata model and APIs for spatiotemporal assets; connects geospatial
-    assets, catalogs, clients, and cloud storage.
+  summary: Common metadata model and APIs for spatiotemporal assets; connects geospatial assets, catalogs,
+    clients, and cloud storage.
   maturity: established
   evidence_types:
   - normative-specification
@@ -534,21 +527,22 @@ resources:
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: documented-tests
-  stewardship:
-    name: STAC community
-    type: community
-    url: https://stacspec.org/
+  steward_id: stac-community
   domains:
   - geospatial
   - earth-observation
-  source_urls:
-  - https://stacspec.org/
-  - https://github.com/radiantearth/stac-spec
+  source_refs:
+  - ref_id: stacspec-org-root
+    role: technical-definition
+  - ref_id: stacspec-org-root
+    role: stewardship
+  - ref_id: github-com-radiantearth-stac-spec
+    role: implementation
   alternatives: []
   related_resource_ids:
   - w3c-data-catalog-vocabulary-dcat
-  decision_basis: Strong cross-provider interoperability standard for Earth-observation
-    and geospatial scientific assets.
+  decision_basis: Strong cross-provider interoperability standard for Earth-observation and geospatial
+    scientific assets.
   boundary_note: Domain exemplar with mature implementation diversity.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -557,7 +551,7 @@ resources:
   name: Unified Code for Units of Measure (UCUM)
   url: https://ucum.org/
   section: Metadata and Semantics
-  resource_type: Coding Standard
+  resource_kind: ontology-vocabulary
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -567,29 +561,28 @@ resources:
   - laboratory data
   - software
   mechanism: Unambiguous machine-processable codes for units of measure
-  summary: Machine-processable codes for unambiguous exchange and computation of measurement
-    units.
+  summary: Machine-processable codes for unambiguous exchange and computation of measurement units.
   maturity: established
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: Regenstrief Institute (UCUM)
-    type: institution
-    url: https://ucum.org/
+  steward_id: regenstrief-institute-ucum
   domains:
   - cross-domain
   - clinical-informatics
-  source_urls:
-  - https://ucum.org/
-  - https://github.com/UnifiedCodeUnits4UnitsOfMeasure/ucum
+  source_refs:
+  - ref_id: ucum-org-root
+    role: technical-definition
+  - ref_id: ucum-org-root
+    role: stewardship
+  - ref_id: github-com-unifiedcodeunits4unitsofmeasure-ucum
+    role: implementation
   alternatives:
   - qudt
   related_resource_ids: []
-  decision_basis: Provides a compact operational unit contract used across clinical
-    and scientific systems.
+  decision_basis: Provides a compact operational unit contract used across clinical and scientific systems.
   boundary_note: Complementary to QUDT rather than redundant.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -598,7 +591,7 @@ resources:
   name: W3C Data Catalog Vocabulary (DCAT)
   url: https://www.w3.org/TR/vocab-dcat-3/
   section: Metadata and Semantics
-  resource_type: Vocabulary / Standard
+  resource_kind: ontology-vocabulary
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -608,24 +601,25 @@ resources:
   - services
   - federated discovery systems
   mechanism: RDF vocabulary for interoperable catalog and dataset descriptions
-  summary: RDF vocabulary for exchanging catalog, dataset, distribution, and data-service
-    descriptions across federated catalogs.
+  summary: RDF vocabulary for exchanging catalog, dataset, distribution, and data-service descriptions
+    across federated catalogs.
   maturity: established
   evidence_types:
   - normative-specification
   - institutional-adoption
   implementation_status: multiple-independent
   conformance_status: none-known
-  stewardship:
-    name: World Wide Web Consortium (W3C)
-    type: standards-body
-    url: https://www.w3.org/
+  steward_id: w3c
   domains:
   - cross-domain
   - research-data
-  source_urls:
-  - https://www.w3.org/TR/vocab-dcat-3/
-  - https://github.com/w3c/dxwg
+  source_refs:
+  - ref_id: w3-org-tr-vocab-dcat-3
+    role: technical-definition
+  - ref_id: w3-org-root
+    role: stewardship
+  - ref_id: github-com-w3c-dxwg
+    role: implementation
   alternatives: []
   related_resource_ids:
   - schema-org
@@ -635,12 +629,11 @@ resources:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
-
 - id: isa-json
   name: ISA-JSON
   url: https://isa-specs.readthedocs.io/en/latest/isajson.html
   section: Metadata and Semantics
-  resource_type: Experimental Metadata Standard
+  resource_kind: metadata-standard
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -650,28 +643,32 @@ resources:
   - repositories
   - analysis pipelines
   mechanism: JSON Schema serialization of Investigation/Study/Assay experimental metadata model
-  summary: JSON serialization of the Investigation/Study/Assay model for experimental metadata; connects life-science studies, assays, repositories, and analysis pipelines.
+  summary: JSON serialization of the Investigation/Study/Assay model for experimental metadata; connects
+    life-science studies, assays, repositories, and analysis pipelines.
   maturity: established
   evidence_types:
   - normative-specification
   - reference-implementation
   - independent-implementation
+  - documented-tests
   implementation_status: multiple-independent
-  conformance_status: public-validator
-  stewardship:
-    name: ISA-Tools community
-    type: community
-    url: https://isa-tools.org/
+  conformance_status: documented-tests
+  steward_id: isa-tools-community
   domains:
   - life-sciences
-  source_urls:
-  - https://isa-specs.readthedocs.io/en/latest/isajson.html
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC8444265/
+  source_refs:
+  - ref_id: isa-specs-readthedocs-io-en-latest-isajson-html
+    role: technical-definition
+  - ref_id: isa-tools-org-root
+    role: stewardship
+  - ref_id: pmc-ncbi-nlm-nih-gov-articles-pmc8444265
+    role: technical-definition
   alternatives:
   - ro-crate
   related_resource_ids:
   - bioschemas
-  decision_basis: Strongest open contract for machine-readable multi-assay experimental metadata beyond ad hoc JSON-LD packaging alone.
+  decision_basis: Strongest open contract for machine-readable multi-assay experimental metadata beyond
+    ad hoc JSON-LD packaging alone.
   boundary_note: Experimental metadata model, not an instrument control or clinical exchange standard.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'

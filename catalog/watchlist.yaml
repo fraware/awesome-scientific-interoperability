@@ -1,4 +1,4 @@
-watchlist_version: 1.0.0
+watchlist_version: 1.1.0
 reviewed_on: '2026-08-01'
 items:
 - id: agent2agent-a2a-protocol
@@ -18,8 +18,9 @@ items:
   rejection_conditions:
   - Remains a general agent protocol without substantive scientific adoption evidence.
   - Superseded by a finalized IEEE or domain standard with stronger governance.
-  source_urls:
-  - https://a2a-protocol.org/v1.0.0/
+  source_refs:
+  - ref_id: a2a-protocol-org-v1-0-0
+    role: technical-definition
 - id: cromwell
   name: Cromwell
   url: https://cromwell.readthedocs.io/
@@ -37,8 +38,9 @@ items:
   rejection_conditions:
   - WDL remains the canonical workflow-language entry and Cromwell adds no new mechanism.
   - Better represented through an existing main-list workflow resource.
-  source_urls:
-  - https://cromwell.readthedocs.io/
+  source_refs:
+  - ref_id: cromwell-readthedocs-io-root
+    role: technical-definition
 - id: five-safes-ro-crate
   name: Five Safes RO-Crate
   url: https://zenodo.org/records/10376350
@@ -56,8 +58,9 @@ items:
   rejection_conditions:
   - Remains a pilot profile without broader adoption.
   - Absorbed into a broader RO-Crate or policy standard without a distinct mechanism.
-  source_urls:
-  - https://zenodo.org/records/10376350
+  source_refs:
+  - ref_id: zenodo-org-records-10376350
+    role: technical-definition
 - id: galaxy
   name: Galaxy
   url: https://galaxyproject.org/
@@ -75,8 +78,9 @@ items:
   rejection_conditions:
   - Interoperability contributions are fully subsumed by existing workflow or platform entries.
   - Cannot be described without duplicating main-list mechanisms.
-  source_urls:
-  - https://galaxyproject.org/
+  source_refs:
+  - ref_id: galaxyproject-org-root
+    role: technical-definition
 - id: ieee-p3971
   name: IEEE P3971
   url: https://standards.ieee.org/ieee/3971/12500/
@@ -94,8 +98,9 @@ items:
   rejection_conditions:
   - Project stalls, is withdrawn, or lacks a public specification.
   - Superseded by another standard already represented in the main list.
-  source_urls:
-  - https://standards.ieee.org/ieee/3971/12500/
+  source_refs:
+  - ref_id: standards-ieee-org-ieee-3971-12500
+    role: technical-definition
 - id: labop
   name: LabOP
   url: https://bioprotocols.github.io/
@@ -113,14 +118,16 @@ items:
   rejection_conditions:
   - Remains a single-project protocol without broader adoption.
   - Overlaps an existing main-list laboratory mechanism without adding distinct value.
-  source_urls:
-  - https://bioprotocols.github.io/
+  source_refs:
+  - ref_id: bioprotocols-github-io-root
+    role: technical-definition
 - id: nextflow
   name: Nextflow
   url: https://www.nextflow.io/
   candidate_section: Workflows and Execution
   status: needs-boundary-decision
-  reason: Include only if its cross-backend contracts and interoperability contributions are described precisely.
+  reason: Include only if its cross-backend contracts and interoperability contributions are described
+    precisely.
   missing_evidence:
   - Precise description of cross-backend execution contracts distinct from CWL and WDL.
   - Boundary analysis against Snakemake and existing workflow entries.
@@ -132,8 +139,9 @@ items:
   rejection_conditions:
   - Adds no mechanism beyond languages and engines already in the main list.
   - Better covered by a Related List or external workflow-engine roundup.
-  source_urls:
-  - https://www.nextflow.io/
+  source_refs:
+  - ref_id: nextflow-io-root
+    role: technical-definition
 - id: official-mcp-registry
   name: Official MCP Registry
   url: https://modelcontextprotocol.io/registry/about
@@ -151,8 +159,9 @@ items:
   rejection_conditions:
   - Remains an unstable or general-purpose registry without scientific relevance.
   - Duplicates MCP protocol coverage without a distinct interoperability mechanism.
-  source_urls:
-  - https://modelcontextprotocol.io/registry/about
+  source_refs:
+  - ref_id: modelcontextprotocol-io-registry-about
+    role: technical-definition
 - id: open-digital-rights-language-odrl
   name: Open Digital Rights Language (ODRL)
   url: https://www.w3.org/TR/odrl-model/
@@ -170,8 +179,9 @@ items:
   rejection_conditions:
   - Scientific adoption remains theoretical or limited to non-primary policy layers.
   - Better represented through an existing main-list licensing or policy entry.
-  source_urls:
-  - https://www.w3.org/TR/odrl-model/
+  source_refs:
+  - ref_id: w3-org-tr-odrl-model
+    role: technical-definition
 - id: openalex
   name: OpenAlex
   url: https://openalex.org/
@@ -189,8 +199,9 @@ items:
   rejection_conditions:
   - Treated as a bibliographic database rather than an interoperability mechanism.
   - Policy decision keeps broad graphs outside the main list scope.
-  source_urls:
-  - https://openalex.org/
+  source_refs:
+  - ref_id: openalex-org-root
+    role: technical-definition
 - id: oxford-common-file-layout-ocfl
   name: Oxford Common File Layout (OCFL)
   url: https://ocfl.io/
@@ -208,8 +219,9 @@ items:
   rejection_conditions:
   - Repository layout interoperability is deferred from launch scope.
   - Mechanism overlaps BagIt or RO-Crate without a distinct integration role.
-  source_urls:
-  - https://ocfl.io/
+  source_refs:
+  - ref_id: ocfl-io-root
+    role: technical-definition
 - id: prov-one
   name: PROV-ONE
   url: https://purl.dataone.org/provone-v1-dev
@@ -227,8 +239,9 @@ items:
   rejection_conditions:
   - Superseded or fully subsumed by W3C PROV and existing workflow provenance models.
   - Insufficient maintenance signal for a main-list entry.
-  source_urls:
-  - https://purl.dataone.org/provone-v1-dev
+  source_refs:
+  - ref_id: purl-dataone-org-provone-v1-dev
+    role: technical-definition
 - id: science-context-protocol
   name: Science Context Protocol
   url: https://arxiv.org/abs/2512.24189
@@ -246,8 +259,9 @@ items:
   rejection_conditions:
   - Remains a preprint without implementations or governance.
   - Merged into or superseded by IEEE P3971 or another main-list standard.
-  source_urls:
-  - https://arxiv.org/abs/2512.24189
+  source_refs:
+  - ref_id: arxiv-org-abs-2512-24189
+    role: technical-definition
 - id: scitoolagent
   name: SciToolAgent
   url: https://github.com/hicai-zju/scitoolagent
@@ -265,8 +279,9 @@ items:
   rejection_conditions:
   - Single-project research prototype without broader adoption.
   - Mechanism duplicated by MCP or other main-list agent resources.
-  source_urls:
-  - https://github.com/hicai-zju/scitoolagent
+  source_refs:
+  - ref_id: github-com-hicai-zju-scitoolagent
+    role: technical-definition
 - id: snakemake
   name: Snakemake
   url: https://snakemake.github.io/
@@ -284,8 +299,9 @@ items:
   rejection_conditions:
   - Covered by Related Lists or external workflow roundups without a new mechanism.
   - Adds no interoperability contract beyond languages already in the main list.
-  source_urls:
-  - https://snakemake.github.io/
+  source_refs:
+  - ref_id: snakemake-github-io-root
+    role: technical-definition
 - id: spdx
   name: SPDX
   url: https://spdx.dev/specifications/
@@ -303,26 +319,34 @@ items:
   rejection_conditions:
   - Software assurance remains out of scope for this interoperability list.
   - Better represented through external software-supply-chain resources.
-  source_urls:
-  - https://spdx.dev/specifications/
+  source_refs:
+  - ref_id: spdx-dev-specifications
+    role: technical-definition
 - id: ddi-cross-domain-integration-ddi-cdi
   name: DDI Cross Domain Integration (DDI-CDI)
   url: https://ddialliance.org/Specification/DDI-CDI/
   candidate_section: Metadata and Semantics
   status: needs-evidence
-  reason: Published v1.0 cross-domain datum and process model complements DDI Lifecycle but production adoption remains early.
+  reason: Published v1.0 cross-domain datum and process model complements DDI Lifecycle but production
+    adoption remains early.
   missing_evidence:
-  - Multiple independent production pipelines publishing and consuming DDI-CDI serializations beyond pilot integrations.
+  - Multiple independent production pipelines publishing and consuming DDI-CDI serializations beyond pilot
+    integrations.
   - Public validators or documented conformance tests beyond JSON Schema for the abstract model.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-02-01'
   promotion_conditions:
-  - Independent archives or integration systems use DDI-CDI in production with documented cross-domain datum exchange.
-  - Clear boundary analysis shows distinct integration value from DDI Lifecycle for datum-level cross-domain integration.
+  - Independent archives or integration systems use DDI-CDI in production with documented cross-domain
+    datum exchange.
+  - Clear boundary analysis shows distinct integration value from DDI Lifecycle for datum-level cross-domain
+    integration.
   rejection_conditions:
   - Remains specification-only without substantive adoption evidence.
   - Merged into DDI Lifecycle product updates without a distinct interoperability mechanism.
-  source_urls:
-  - https://ddialliance.org/Specification/DDI-CDI/
-  - https://ddialliance.org/hubfs/Specification/DDI-CDI/1.0/DDI-CDI_Model_Specification.pdf
-  - https://github.com/ddi-cdi/ddi-cdi
+  source_refs:
+  - ref_id: ddialliance-org-specification-ddi-cdi
+    role: technical-definition
+  - ref_id: ddialliance-org-hubfs-specification-ddi-cdi-1-0-ddi-cdi-model-sp
+    role: technical-definition
+  - ref_id: github-com-ddi-cdi-ddi-cdi
+    role: technical-definition

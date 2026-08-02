@@ -33,3 +33,10 @@
 ## Conflicts
 
 None.
+
+## v2.1 provenance migration (2026-08-01)
+
+- Migrated all records to `source_refs`, `steward_id`, and controlled `resource_kind` / domains.
+- Closed isolates: `combine-omex-archive` related to RO-Crate and BioCompute Objects; `fair-signposting` related to RO-Crate and Schema.org; `crystallographic-information-framework-cif` alternatives/related to NeXus.
+- Corrected OGC API - Coverages to emerging / reference-and-others / none-known (no public-suite claim without a direct suite artifact).
+- Downgraded CIF, FMI, NeXus, OGC API Features, OPTIMADE, and related prior public-* claims to `documented-tests` where artifact URLs were not already present.

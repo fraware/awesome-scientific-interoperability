@@ -1,0 +1,139 @@
+# Controlled vocabularies for catalog model v2.1.
+# Unknown values fail validation.
+
+version: "1.0.0"
+
+resource_kinds:
+  - id: specification
+    label: Specification
+    description: Normative specifications, principles, and cross-domain frameworks.
+  - id: api-standard
+    label: API standard
+    description: Documented service or protocol APIs for scientific systems.
+  - id: ontology-vocabulary
+    label: Ontology or vocabulary
+    description: Ontologies, controlled vocabularies, and coding systems.
+  - id: metadata-standard
+    label: Metadata standard
+    description: Metadata formats, conventions, profiles, and schemas.
+  - id: packaging-format
+    label: Packaging format
+    description: Archives, crates, containers, and packaging conventions.
+  - id: identifier-system
+    label: Identifier system
+    description: Persistent identifiers, resolvers, and identifier registries.
+  - id: registry-catalog
+    label: Registry or catalog
+    description: Curated registries, catalogs, and discovery indexes.
+  - id: workflow-language
+    label: Workflow language
+    description: Portable workflow and tool description languages.
+  - id: execution-service
+    label: Execution service
+    description: Execution APIs, runners, backends, and workflow registries.
+  - id: provenance-model
+    label: Provenance model
+    description: Provenance models, profiles, and evidence records.
+  - id: conformance-artifact
+    label: Conformance artifact
+    description: Public validators, conformance suites, and execution testbeds.
+  - id: exchange-standard
+    label: Exchange standard
+    description: Domain data exchange and laboratory or clinical interoperability standards.
+  - id: implementation
+    label: Implementation
+    description: Reference implementations, toolkits, and scientific tool platforms.
+  - id: link-protocol
+    label: Link protocol
+    description: Link-exchange conventions and agent or tool interface protocols.
+
+domains:
+  - ai-agents
+  - analytical-chemistry
+  - analytical-instruments
+  - biodiversity
+  - bioinformatics
+  - biomedical
+  - biosimulation
+  - biotechnology
+  - chemistry
+  - climate-science
+  - clinical-informatics
+  - clinical-laboratory
+  - computational-biology
+  - computational-science
+  - computational-workflows
+  - cross-domain
+  - data-governance
+  - digital-preservation
+  - earth-observation
+  - engineering
+  - environmental-science
+  - european-research
+  - genomics
+  - geosciences
+  - geospatial
+  - hpc
+  - knowledge-representation
+  - laboratory-automation
+  - laboratory-data
+  - laboratory-medicine
+  - life-sciences
+  - machine-learning
+  - materials-science
+  - physics
+  - provenance
+  - reproducibility
+  - research-data
+  - research-information
+  - research-objects
+  - research-software
+  - sample-curation
+  - scholarly-communication
+  - scientific-computing
+  - semantic-web
+  - sensor-networks
+  - social-science
+  - systems-biology
+
+# Domain aliases applied during migration (not accepted as live values).
+domain_aliases:
+  workflows: computational-workflows
+  scholarly-publishing: scholarly-communication
+
+claim_roles:
+  - technical-definition
+  - stewardship
+  - implementation
+  - adoption
+  - conformance
+  - interoperability-testing
+  - maintenance
+  - limitations
+
+reference_types:
+  - specification
+  - normative-schema
+  - api-documentation
+  - implementation-repository
+  - adoption-evidence
+  - registry-record
+  - validator
+  - conformance-suite
+  - interoperability-result
+  - governance-source
+  - technical-documentation
+
+# Artifact classes that satisfy public-suite / public-validator fail-closed rules.
+conformance_artifact_types:
+  - validator
+  - conformance-suite
+  - interoperability-result
+
+steward_types:
+  - standards-body
+  - consortium
+  - foundation
+  - institution
+  - community
+  - vendor-led

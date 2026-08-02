@@ -4,7 +4,7 @@ resources:
   name: BioSimulators Test Suite
   url: https://docs.biosimulators.org/Biosimulators_test_suite/
   section: Validation and Conformance
-  resource_type: Execution Test Suite
+  resource_kind: conformance-artifact
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -14,31 +14,34 @@ resources:
   - container interfaces
   - standard models and simulations
   mechanism: Automated testing of standardized simulator interfaces, formats, and execution behavior
-  summary: Automated execution tests for standardized simulator interfaces, modeling formats, containers, and
-    scientific assertions.
+  summary: Automated execution tests for standardized simulator interfaces, modeling formats, containers,
+    and scientific assertions.
   maturity: maintained
   evidence_types:
   - conformance-suite
   - interoperability-demonstration
   implementation_status: reference-and-others
   conformance_status: public-suite
-  stewardship:
-    name: BioSimulators community
-    type: community
-    url: https://biosimulators.org/
+  steward_id: biosimulators-community
   domains:
   - systems-biology
   - biosimulation
-  source_urls:
-  - https://docs.biosimulators.org/Biosimulators_test_suite/
-  - https://github.com/biosimulators/Biosimulators_test_suite
+  source_refs:
+  - ref_id: docs-biosimulators-org-biosimulators-test-suite
+    role: technical-definition
+  - ref_id: biosimulators-org-root
+    role: stewardship
+  - ref_id: docs-biosimulators-org-biosimulators-test-suite
+    role: conformance
+  - ref_id: github-com-biosimulators-biosimulators-test-suite
+    role: conformance
   alternatives: []
   related_resource_ids:
   - sbml-test-suite
-  decision_basis: Strong evidence-backed interoperability system combining standard interfaces, containers, and
-    scientific assertions against documented simulator contracts.
-  boundary_note: Domain-specific and complementary to the SBML Test Suite; tests execution behavior, not general
-    FAIRness scoring.
+  decision_basis: Strong evidence-backed interoperability system combining standard interfaces, containers,
+    and scientific assertions against documented simulator contracts.
+  boundary_note: Domain-specific and complementary to the SBML Test Suite; tests execution behavior, not
+    general FAIRness scoring.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -46,7 +49,7 @@ resources:
   name: CWL Conformance Tests
   url: https://github.com/common-workflow-language/cwl-v1.2
   section: Validation and Conformance
-  resource_type: Conformance Suite
+  resource_kind: conformance-artifact
   interoperability_layers:
   - Syntactic
   - Operational
@@ -55,28 +58,34 @@ resources:
   - workflow runners
   - implementation maintainers
   mechanism: Versioned tests checking workflow-runner behavior against CWL requirements
-  summary: Versioned test suite for checking workflow-runner behavior against Common Workflow Language requirements.
+  summary: Versioned test suite for checking workflow-runner behavior against Common Workflow Language
+    requirements.
   maturity: established
   evidence_types:
   - conformance-suite
   - normative-specification
   implementation_status: multiple-independent
   conformance_status: public-suite
-  stewardship:
-    name: Common Workflow Language project
-    type: community
-    url: https://www.commonwl.org/
+  steward_id: common-workflow-language-project
   domains:
-  - workflows
-  source_urls:
-  - https://github.com/common-workflow-language/cwl-v1.2
-  - https://www.commonwl.org/v1.2/ConformanceTests.html
+  - computational-workflows
+  source_refs:
+  - ref_id: github-com-common-workflow-language-cwl-v1-2
+    role: technical-definition
+  - ref_id: commonwl-org-root
+    role: stewardship
+  - ref_id: github-com-common-workflow-language-cwl-v1-2
+    role: implementation
+  - ref_id: commonwl-org-v1-2-conformancetests-html
+    role: conformance
   alternatives: []
-  related_resource_ids: []
-  decision_basis: Mature implementation-level conformance infrastructure tied to a portable scientific workflow
-    standard with versioned runner tests.
-  boundary_note: Passing conformance does not establish full scientific-stack interoperability; CWL language entry
-    is outside this shard.
+  related_resource_ids:
+  - common-workflow-language-cwl
+  - cwltool
+  decision_basis: Mature implementation-level conformance infrastructure tied to a portable scientific
+    workflow standard with versioned runner tests.
+  boundary_note: Passing conformance does not establish full scientific-stack interoperability; CWL language
+    entry is outside this shard.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -84,7 +93,7 @@ resources:
   name: RO-Crate Validator
   url: https://github.com/crs4/rocrate-validator
   section: Validation and Conformance
-  resource_type: Validator
+  resource_kind: conformance-artifact
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -103,21 +112,26 @@ resources:
   - normative-specification
   implementation_status: reference-and-others
   conformance_status: public-validator
-  stewardship:
-    name: CRS4 / RO-Crate community
-    type: community
-    url: https://www.researchobject.org/ro-crate/
+  steward_id: crs4-ro-crate-community
   domains:
   - research-objects
-  source_urls:
-  - https://github.com/crs4/rocrate-validator
-  - https://www.researchobject.org/ro-crate/specification/1.3/
+  source_refs:
+  - ref_id: github-com-crs4-rocrate-validator
+    role: technical-definition
+  - ref_id: researchobject-org-ro-crate
+    role: stewardship
+  - ref_id: github-com-crs4-rocrate-validator
+    role: conformance
+  - ref_id: researchobject-org-ro-crate-specification-1-3
+    role: technical-definition
   alternatives: []
-  related_resource_ids: []
-  decision_basis: Maintained validator covering several core and workflow-oriented RO-Crate profiles against documented
-    SHACL shapes.
-  boundary_note: Validation establishes profile conformance, not cross-system interoperability; RO-Crate packaging
-    entry is outside this shard.
+  related_resource_ids:
+  - ro-crate
+  - workflow-run-ro-crate
+  decision_basis: Maintained validator covering several core and workflow-oriented RO-Crate profiles against
+    documented SHACL shapes.
+  boundary_note: Validation establishes profile conformance, not cross-system interoperability; RO-Crate
+    packaging entry is outside this shard.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -125,7 +139,7 @@ resources:
   name: SBML Test Suite
   url: https://sbml.org/software/sbml-test-suite/
   section: Validation and Conformance
-  resource_type: Semantic Conformance Suite
+  resource_kind: conformance-artifact
   interoperability_layers:
   - Syntactic
   - Semantic
@@ -143,22 +157,25 @@ resources:
   - interoperability-demonstration
   implementation_status: multiple-independent
   conformance_status: public-suite
-  stewardship:
-    name: SBML community
-    type: community
-    url: https://sbml.org/
+  steward_id: sbml-community
   domains:
   - systems-biology
-  source_urls:
-  - https://sbml.org/software/sbml-test-suite/
-  - https://github.com/sbmlteam/sbml-test-suite
+  source_refs:
+  - ref_id: sbml-org-software-sbml-test-suite
+    role: technical-definition
+  - ref_id: sbml-org-root
+    role: stewardship
+  - ref_id: sbml-org-software-sbml-test-suite
+    role: conformance
+  - ref_id: github-com-sbmlteam-sbml-test-suite
+    role: conformance
   alternatives: []
   related_resource_ids:
   - biosimulators-test-suite
   decision_basis: Exceptional precedent for testing scientific semantic behavior across independent implementations
     against the SBML contract.
-  boundary_note: Domain-specific but highly transferable as a conformance architecture; not a general software-quality
-    or FAIRness score.
+  boundary_note: Domain-specific but highly transferable as a conformance architecture; not a general
+    software-quality or FAIRness score.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true

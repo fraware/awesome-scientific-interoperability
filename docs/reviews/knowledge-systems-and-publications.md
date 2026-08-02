@@ -30,3 +30,7 @@
 ## Conflicts
 
 None.
+
+## v2.1 provenance migration (2026-08-01)
+
+- Closed isolates among JATS, Nanopublications, ORKG, OpenAIRE Research Graph, and Scholix via related_resource_ids.

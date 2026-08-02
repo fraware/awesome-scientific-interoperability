@@ -1,106 +1,142 @@
 resources:
-  - id: demo-spec
-    name: Demo Specification
-    section: Foundations
-    resource_type: Specification
-    maturity: maintained
-    implementation_status: single-known
-    conformance_status: none-known
-    domains: [physics]
-    evidence_types: [reference-implementation]
-    source_urls: []
-    alternatives: []
-    related_resource_ids: []
-    reviewed_on: "2026-08-01"
-    review_due_on: "2027-08-01"
-    stewardship: {type: community}
-  - id: demo-impl-a
-    name: Demo Implementation A
-    section: Foundations
-    resource_type: Reference Implementation
-    maturity: maintained
-    implementation_status: reference-and-others
-    conformance_status: none-known
-    domains: [physics]
-    evidence_types: [reference-implementation]
-    source_urls: [https://example.org/a]
-    alternatives: []
-    related_resource_ids: [demo-spec]
-    reviewed_on: "2026-08-01"
-    review_due_on: "2027-08-01"
-    stewardship: {type: community}
-  - id: demo-impl-b
-    name: Demo Implementation B
-    section: Foundations
-    resource_type: Reference Implementation
-    maturity: maintained
-    implementation_status: reference-and-others
-    conformance_status: none-known
-    domains: [physics]
-    evidence_types: [reference-implementation]
-    source_urls: [https://example.org/b]
-    alternatives: []
-    related_resource_ids: [demo-spec]
-    reviewed_on: "2026-08-01"
-    review_due_on: "2027-08-01"
-    stewardship: {type: community}
-  - id: demo-impl-c
-    name: Demo Implementation C
-    section: Foundations
-    resource_type: Testing / Monitoring Service
-    maturity: maintained
-    implementation_status: reference-and-others
-    conformance_status: none-known
-    domains: [physics]
-    evidence_types: [reference-implementation]
-    source_urls: [https://example.org/c]
-    alternatives: []
-    related_resource_ids: [demo-spec]
-    reviewed_on: "2026-08-01"
-    review_due_on: "2027-08-01"
-    stewardship: {type: community}
-  - id: general-vocab
-    name: General Vocabulary
-    section: Metadata and Semantics
-    resource_type: Vocabulary / Standard
-    maturity: established
-    implementation_status: multiple-independent
-    conformance_status: none-known
-    domains: [cross-domain]
-    evidence_types: [normative-specification]
-    source_urls: [https://example.org/vocab]
-    alternatives: []
-    related_resource_ids: []
-    reviewed_on: "2026-08-01"
-    review_due_on: "2027-08-01"
-    stewardship: {type: standards-body}
-  - id: general-units
-    name: General Units
-    section: Metadata and Semantics
-    resource_type: Coding Standard
-    maturity: established
-    implementation_status: multiple-independent
-    conformance_status: none-known
-    domains: [cross-domain]
-    evidence_types: [normative-specification]
-    source_urls: [https://example.org/units]
-    alternatives: []
-    related_resource_ids: []
-    reviewed_on: "2026-08-01"
-    review_due_on: "2027-08-01"
-    stewardship: {type: standards-body}
-  - id: isolated-entry
-    name: Isolated Entry
-    section: Validation and Conformance
-    resource_type: Validator
-    maturity: maintained
-    implementation_status: single-known
-    conformance_status: public-validator
-    domains: [chemistry]
-    evidence_types: [public-validator]
-    source_urls: [https://example.org/validator]
-    alternatives: []
-    related_resource_ids: []
-    reviewed_on: "2026-08-01"
-    review_due_on: "2027-08-01"
-    stewardship: {type: community}
+- id: demo-spec
+  name: Demo Specification
+  section: Foundations
+  maturity: maintained
+  implementation_status: single-known
+  conformance_status: none-known
+  domains:
+  - physics
+  evidence_types:
+  - reference-implementation
+  alternatives: []
+  related_resource_ids: []
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  resource_kind: specification
+  steward_id: fixture-community
+  steward_type: community
+  source_refs: []
+- id: demo-impl-a
+  name: Demo Implementation A
+  section: Foundations
+  maturity: maintained
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  domains:
+  - physics
+  evidence_types:
+  - reference-implementation
+  alternatives: []
+  related_resource_ids:
+  - demo-spec
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  resource_kind: implementation
+  steward_id: fixture-community
+  steward_type: community
+  source_refs:
+  - ref_id: cov-ref-1
+    role: technical-definition
+- id: demo-impl-b
+  name: Demo Implementation B
+  section: Foundations
+  maturity: maintained
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  domains:
+  - physics
+  evidence_types:
+  - reference-implementation
+  alternatives: []
+  related_resource_ids:
+  - demo-spec
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  resource_kind: implementation
+  steward_id: fixture-community
+  steward_type: community
+  source_refs:
+  - ref_id: cov-ref-1
+    role: technical-definition
+- id: demo-impl-c
+  name: Demo Implementation C
+  section: Foundations
+  maturity: maintained
+  implementation_status: reference-and-others
+  conformance_status: none-known
+  domains:
+  - physics
+  evidence_types:
+  - reference-implementation
+  alternatives: []
+  related_resource_ids:
+  - demo-spec
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  resource_kind: execution-service
+  steward_id: fixture-community
+  steward_type: community
+  source_refs:
+  - ref_id: cov-ref-1
+    role: technical-definition
+- id: general-vocab
+  name: General Vocabulary
+  section: Metadata and Semantics
+  maturity: established
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  domains:
+  - cross-domain
+  evidence_types:
+  - normative-specification
+  alternatives: []
+  related_resource_ids: []
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  resource_kind: ontology-vocabulary
+  steward_id: fixture-standards-body
+  steward_type: standards-body
+  source_refs:
+  - ref_id: cov-ref-1
+    role: technical-definition
+- id: general-units
+  name: General Units
+  section: Metadata and Semantics
+  maturity: established
+  implementation_status: multiple-independent
+  conformance_status: none-known
+  domains:
+  - cross-domain
+  evidence_types:
+  - normative-specification
+  alternatives: []
+  related_resource_ids: []
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  resource_kind: ontology-vocabulary
+  steward_id: fixture-standards-body
+  steward_type: standards-body
+  source_refs:
+  - ref_id: cov-ref-1
+    role: technical-definition
+- id: isolated-entry
+  name: Isolated Entry
+  section: Validation and Conformance
+  maturity: maintained
+  implementation_status: single-known
+  conformance_status: public-validator
+  domains:
+  - chemistry
+  evidence_types:
+  - public-validator
+  alternatives: []
+  related_resource_ids: []
+  reviewed_on: '2026-08-01'
+  review_due_on: '2027-08-01'
+  resource_kind: conformance-artifact
+  steward_id: fixture-community
+  steward_type: community
+  source_refs:
+  - ref_id: cov-ref-1
+    role: technical-definition

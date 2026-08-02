@@ -41,6 +41,29 @@
       "format": "uri",
       "pattern": "^https://"
     },
+    "sourceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ref_id", "role"],
+      "properties": {
+        "ref_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "role": {
+          "enum": [
+            "technical-definition",
+            "stewardship",
+            "implementation",
+            "adoption",
+            "conformance",
+            "interoperability-testing",
+            "maintenance",
+            "limitations"
+          ]
+        }
+      }
+    },
     "resource": {
       "type": "object",
       "additionalProperties": false,
@@ -49,7 +72,7 @@
         "name",
         "url",
         "section",
-        "resource_type",
+        "resource_kind",
         "interoperability_layers",
         "connects",
         "mechanism",
@@ -58,9 +81,9 @@
         "evidence_types",
         "implementation_status",
         "conformance_status",
-        "stewardship",
+        "steward_id",
         "domains",
-        "source_urls",
+        "source_refs",
         "alternatives",
         "related_resource_ids",
         "decision_basis",
@@ -95,9 +118,23 @@
             "Validation and Conformance"
           ]
         },
-        "resource_type": {
-          "type": "string",
-          "minLength": 2
+        "resource_kind": {
+          "enum": [
+            "specification",
+            "api-standard",
+            "ontology-vocabulary",
+            "metadata-standard",
+            "packaging-format",
+            "identifier-system",
+            "registry-catalog",
+            "workflow-language",
+            "execution-service",
+            "provenance-model",
+            "conformance-artifact",
+            "exchange-standard",
+            "implementation",
+            "link-protocol"
+          ]
         },
         "interoperability_layers": {
           "type": "array",
@@ -149,7 +186,8 @@
               "institutional-adoption",
               "conformance-suite",
               "public-validator",
-              "interoperability-demonstration"
+              "interoperability-demonstration",
+              "documented-tests"
             ]
           }
         },
@@ -171,33 +209,9 @@
             "not-applicable"
           ]
         },
-        "stewardship": {
-          "type": "object",
-          "additionalProperties": false,
-          "required": [
-            "name",
-            "type",
-            "url"
-          ],
-          "properties": {
-            "name": {
-              "type": "string",
-              "minLength": 2
-            },
-            "type": {
-              "enum": [
-                "standards-body",
-                "consortium",
-                "foundation",
-                "institution",
-                "community",
-                "vendor-led"
-              ]
-            },
-            "url": {
-              "$ref": "#/$defs/httpsUrl"
-            }
-          }
+        "steward_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
         },
         "domains": {
           "type": "array",
@@ -208,12 +222,11 @@
             "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
           }
         },
-        "source_urls": {
+        "source_refs": {
           "type": "array",
           "minItems": 1,
-          "uniqueItems": true,
           "items": {
-            "$ref": "#/$defs/httpsUrl"
+            "$ref": "#/$defs/sourceRef"
           }
         },
         "alternatives": {
@@ -264,7 +277,7 @@
           },
           "then": {
             "properties": {
-              "source_urls": {
+              "source_refs": {
                 "minItems": 2
               }
             }
@@ -286,7 +299,7 @@
           },
           "then": {
             "properties": {
-              "source_urls": {
+              "source_refs": {
                 "minItems": 1
               }
             }
