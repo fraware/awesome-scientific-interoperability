@@ -80,6 +80,8 @@ An entry must expose a reusable and publicly inspectable interoperability mechan
 - [BagIt](https://datatracker.ietf.org/doc/html/rfc8493) - Manifest-based packaging format for transferring digital content with fixity and completeness checks.
 - [Crystallographic Information Framework (CIF)](https://www.iucr.org/resources/cif) - IUCr dictionaries and file syntax for exchanging and archiving crystallographic and structural-science data; connects diffractometers, structure databases, and journals.
 - [COMBINE/OMEX Archive](https://combinearchive.org/) - Archive format bundling models, simulations, metadata, and related files; connects computational models, simulation descriptions, data, and metadata.
+- [Data Package Standard](https://datapackage.org/standard/data-package/) - Lightweight JSON packaging standard for describing datasets, resources, schemas, dialects, licenses, and distribution metadata.
+- [Oxford Common File Layout (OCFL)](https://ocfl.io/) - Application-independent repository storage layout for versioned objects with inventories, fixity, and rebuildable storage roots.
 - [Functional Mock-up Interface (FMI)](https://fmi-standard.org/docs/3.0/) - ZIP-packaged dynamic models with XML, C code, and co-simulation or model-exchange APIs; connects simulation tools, digital-twin platforms, and supplier models.
 - [FAIR Signposting](https://signposting.org/) - Typed HTTP Link relations that let machine clients discover identifiers, metadata, licenses, and files from repository landing pages.
 - [NeXus](https://www.nexusformat.org/) - HDF5-based application definitions and field dictionary for neutron, X-ray, and muon experimental data; connects beamlines, analysis software, and facility archives.

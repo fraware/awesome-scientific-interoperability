@@ -11,10 +11,25 @@ stewards:
   type: foundation
   url: https://apptainer.org/
   aliases: []
+- id: artefactual-systems
+  name: Artefactual Systems
+  type: institution
+  url: https://www.artefactual.com/
+  aliases: []
+- id: arvados-foundation
+  name: Arvados Foundation
+  type: foundation
+  url: https://arvados.org/
+  aliases: []
 - id: astm-international
   name: ASTM International
   type: standards-body
   url: https://www.astm.org/
+  aliases: []
+- id: astropy-project
+  name: Astropy Project
+  type: community
+  url: https://www.astropy.org/
   aliases: []
 - id: autoprotocol-community
   name: Autoprotocol community
@@ -26,6 +41,12 @@ stewards:
   type: institution
   url: https://www.bsc.es/
   aliases: []
+- id: bids-community
+  name: BIDS community
+  type: community
+  url: https://bids.neuroimaging.io/
+  aliases:
+  - Brain Imaging Data Structure community
 - id: biodiversity-information-standards-tdwg
   name: Biodiversity Information Standards (TDWG)
   type: standards-body
@@ -41,10 +62,38 @@ stewards:
   type: community
   url: https://biosimulators.org/
   aliases: []
+- id: broad-institute
+  name: Broad Institute of MIT and Harvard
+  type: institution
+  url: https://www.broadinstitute.org/
+  aliases: []
+- id: canadian-astronomy-data-centre
+  name: Canadian Astronomy Data Centre
+  type: institution
+  url: https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/
+  aliases:
+  - CADC
+  - OpenCADC
+- id: cdisc
+  name: Clinical Data Interchange Standards Consortium
+  type: standards-body
+  url: https://www.cdisc.org/
+  aliases:
+  - CDISC
+- id: cellml-community
+  name: CellML community
+  type: community
+  url: https://www.cellml.org/
+  aliases: []
 - id: cf-conventions-community
   name: CF Conventions community
   type: community
   url: https://cfconventions.org/
+  aliases: []
+- id: chanzuckerberg-initiative
+  name: Chan Zuckerberg Initiative
+  type: foundation
+  url: https://chanzuckerberg.com/
   aliases: []
 - id: citation-file-format-project
   name: Citation File Format project
@@ -71,6 +120,11 @@ stewards:
   type: community
   url: https://www.commonwl.org/
   aliases: []
+- id: copasi-project
+  name: COPASI project
+  type: community
+  url: https://copasi.org/
+  aliases: []
 - id: crossref
   name: Crossref
   type: foundation
@@ -81,10 +135,27 @@ stewards:
   type: community
   url: https://www.researchobject.org/ro-crate/
   aliases: []
+- id: data-package-working-group
+  name: Data Package Working Group
+  type: community
+  url: https://datapackage.org/
+  aliases:
+  - Data Package
+  - Frictionless Specs
+- id: databiosphere
+  name: Data Biosphere
+  type: consortium
+  url: https://www.databio.org/
+  aliases: []
 - id: datacite
   name: DataCite
   type: consortium
   url: https://datacite.org/
+  aliases: []
+- id: dcm4che
+  name: dcm4che
+  type: community
+  url: https://www.dcm4che.org/
   aliases: []
 - id: ddi-alliance
   name: DDI Alliance
@@ -96,6 +167,17 @@ stewards:
   type: standards-body
   url: https://www.dicomstandard.org/
   aliases: []
+- id: dockstore-consortium
+  name: Dockstore Consortium
+  type: consortium
+  url: https://dockstore.org/
+  aliases: []
+- id: ecological-metadata-language-community
+  name: Ecological Metadata Language community
+  type: community
+  url: https://eml.ecoinformatics.org/
+  aliases:
+  - EML
 - id: edam-ontology-maintainers-elixir-norway-embl-ebi
   name: EDAM ontology maintainers (ELIXIR Norway / EMBL-EBI)
   type: community
@@ -116,27 +198,80 @@ stewards:
   type: community
   url: https://fairdo.org/
   aliases: []
+- id: fairmat-nomad
+  name: FAIRmat / NOMAD
+  type: consortium
+  url: https://nomad-lab.eu/
+  aliases: []
 - id: fairsharing-oxford-data-readiness-group
   name: FAIRsharing (University of Oxford Data Readiness Group)
   type: institution
   url: https://fairsharing.org/
   aliases: []
+- id: frictionless-js-project
+  name: frictionless-js project
+  type: community
+  url: https://github.com/frictionlessdata/frictionless-js
+  aliases:
+  - frictionless-js
+- id: frictionlessdata
+  name: Frictionless Data
+  type: community
+  url: https://frictionlessdata.io/
+  aliases:
+  - Frictionless Framework
 - id: ga4gh
   name: Global Alliance for Genomics and Health
   type: consortium
   url: https://www.ga4gh.org/
   aliases:
   - Global Alliance for Genomics and Health (GA4GH)
+- id: genomic-standards-consortium
+  name: Genomic Standards Consortium
+  type: consortium
+  url: https://www.gensc.org/
+  aliases:
+  - GSC
+- id: german-astrophysical-virtual-observatory
+  name: German Astrophysical Virtual Observatory
+  type: institution
+  url: https://www.g-vo.org/
+  aliases:
+  - GAVO
+- id: glencoe-software
+  name: Glencoe Software
+  type: institution
+  url: https://www.glencoesoftware.com/
+  aliases: []
 - id: go-fair-foundation
   name: GO FAIR Foundation
   type: foundation
   url: https://www.go-fair.org/
   aliases: []
+- id: heasarc-nasa-goddard
+  name: NASA HEASARC
+  type: institution
+  url: https://heasarc.gsfc.nasa.gov/
+  aliases:
+  - High Energy Astrophysics Science Archive Research Center
 - id: hl7-international
   name: HL7 International
   type: standards-body
   url: https://www.hl7.org/
   aliases: []
+- id: hupo-proteomics-standards-initiative
+  name: HUPO Proteomics Standards Initiative
+  type: consortium
+  url: https://www.psidev.info/
+  aliases:
+  - HUPO-PSI
+  - PSI
+- id: iau-fits-working-group
+  name: IAU FITS Working Group
+  type: standards-body
+  url: https://fits.gsfc.nasa.gov/iaufwg/
+  aliases:
+  - IAU-FWG
 - id: ieee-biocompute-community
   name: IEEE / BioCompute community
   type: standards-body
@@ -157,6 +292,12 @@ stewards:
   type: standards-body
   url: https://www.iucr.org/resources/cif/comcifs/policy
   aliases: []
+- id: international-virtual-observatory-alliance
+  name: International Virtual Observatory Alliance
+  type: standards-body
+  url: https://www.ivoa.net/
+  aliases:
+  - IVOA
 - id: internet-engineering-task-force-ietf
   name: Internet Engineering Task Force (IETF)
   type: standards-body
@@ -167,16 +308,32 @@ stewards:
   type: community
   url: https://isa-tools.org/
   aliases: []
+- id: library-of-congress
+  name: Library of Congress
+  type: institution
+  url: https://www.loc.gov/
+  aliases: []
 - id: lifemonitor-project-elixir
   name: LifeMonitor project (ELIXIR)
   type: consortium
   url: https://lifemonitor.eu/
+  aliases: []
+- id: materials-project
+  name: Materials Project
+  type: institution
+  url: https://materialsproject.org/
   aliases: []
 - id: mlcommons
   name: MLCommons
   type: consortium
   url: https://mlcommons.org/
   aliases: []
+- id: mne-project
+  name: MNE project
+  type: community
+  url: https://mne.tools/
+  aliases:
+  - MNE-Python project
 - id: model-context-protocol-project
   name: Model Context Protocol project
   type: community
@@ -197,15 +354,50 @@ stewards:
   type: standards-body
   url: https://jats.nlm.nih.gov/
   aliases: []
+- id: neurodata-without-borders
+  name: Neurodata Without Borders
+  type: community
+  url: https://nwb.org/
+  aliases:
+  - NWB
 - id: nexus-international-advisory-committee-niac
   name: NeXus International Advisory Committee (NIAC)
   type: community
   url: https://www.nexusformat.org/
   aliases: []
+- id: nipy-community
+  name: Neuroimaging in Python community
+  type: community
+  url: https://nipy.org/
+  aliases:
+  - NiPy
 - id: obo-foundry
   name: OBO Foundry
   type: community
   url: https://obofoundry.org/
+  aliases: []
+- id: ocfl-java-project
+  name: OCFL Java project
+  type: community
+  url: https://github.com/OCFL/ocfl-java
+  aliases:
+  - ocfl-java
+- id: ocfl-py-project
+  name: ocfl-py project
+  type: community
+  url: https://github.com/zimeon/ocfl-py
+  aliases:
+  - ocfl-py
+- id: ohdsi
+  name: Observational Health Data Sciences and Informatics
+  type: consortium
+  url: https://www.ohdsi.org/
+  aliases:
+  - OHDSI
+- id: ohif
+  name: OHIF
+  type: community
+  url: https://ohif.org/
   aliases: []
 - id: opc-foundation
   name: OPC Foundation
@@ -217,6 +409,20 @@ stewards:
   type: standards-body
   url: https://www.ogc.org/
   aliases: []
+- id: open-knowledge-foundation
+  name: Open Knowledge Foundation
+  type: foundation
+  url: https://okfn.org/
+  aliases:
+  - OKF
+  - Open Knowledge
+- id: open-microscopy-environment
+  name: Open Microscopy Environment
+  type: community
+  url: https://www.openmicroscopy.org/
+  aliases:
+  - OME
+  - OME-NGFF community
 - id: open-provenance-model-for-workflows-opmw
   name: Open Provenance Model for Workflows (OPMW)
   type: community
@@ -227,10 +433,20 @@ stewards:
   type: consortium
   url: https://www.openaire.eu/
   aliases: []
+- id: opencor-project
+  name: OpenCOR project
+  type: community
+  url: https://opencor.ws/
+  aliases: []
 - id: openeo-consortium-ogc
   name: openEO consortium / OGC
   type: consortium
   url: https://openeo.org/
+  aliases: []
+- id: openms-project
+  name: OpenMS project
+  type: community
+  url: https://openms.de/
   aliases: []
 - id: openwdl
   name: OpenWDL
@@ -247,6 +463,27 @@ stewards:
   type: foundation
   url: https://orcid.org/
   aliases: []
+- id: oxford-common-file-layout-community
+  name: Oxford Common File Layout community
+  type: community
+  url: https://ocfl.io/
+  aliases:
+  - OCFL
+- id: phenopackets-community
+  name: Phenopackets community
+  type: community
+  url: https://github.com/phenopackets
+  aliases: []
+- id: proteowizard-project
+  name: ProteoWizard project
+  type: community
+  url: https://proteowizard.sourceforge.io/
+  aliases: []
+- id: pymzml-project
+  name: pymzML project
+  type: community
+  url: https://pymzml.readthedocs.io/en/latest/
+  aliases: []
 - id: qudt-org
   name: QUDT.org
   type: community
@@ -256,6 +493,11 @@ stewards:
   name: RDA Scholix working group
   type: community
   url: https://www.rd-alliance.org/groups/scholarly-link-exchange-wg
+  aliases: []
+- id: refget-reference-server-project
+  name: Refget reference server project
+  type: community
+  url: https://github.com/andrewyatz/refget-server-perl
   aliases: []
 - id: regenstrief-institute
   name: Regenstrief Institute
@@ -277,10 +519,20 @@ stewards:
   type: community
   url: https://www.researchobject.org/
   aliases: []
+- id: ropensci
+  name: rOpenSci
+  type: community
+  url: https://ropensci.org/
+  aliases: []
 - id: ror-research-organization-registry
   name: ROR (Research Organization Registry)
   type: community
   url: https://ror.org/
+  aliases: []
+- id: samtools-community
+  name: SAMtools and HTSlib community
+  type: community
+  url: https://github.com/samtools
   aliases: []
 - id: sapporo-contributors
   name: Sapporo contributors
@@ -302,6 +554,12 @@ stewards:
   type: consortium
   url: https://sdmx.org/
   aliases: []
+- id: sed-ml-community
+  name: SED-ML community
+  type: community
+  url: https://sed-ml.org/
+  aliases:
+  - Simulation Experiment Description Markup Language community
 - id: signposting-community
   name: Signposting community
   type: community
@@ -321,6 +579,18 @@ stewards:
   name: STAC community
   type: community
   url: https://stacspec.org/
+  aliases: []
+- id: starlink-java-project
+  name: Starlink Java Project
+  type: community
+  url: https://www.star.bris.ac.uk/mbt/stilts/
+  aliases:
+  - STILTS
+  - Starjava
+- id: tellurium-project
+  name: Tellurium project
+  type: community
+  url: https://tellurium.readthedocs.io/
   aliases: []
 - id: tib-leibniz-information-centre-for-science-and-technology
   name: TIB Leibniz Information Centre for Science and Technology
@@ -348,229 +618,3 @@ stewards:
   type: institution
   url: https://zitniklab.hms.harvard.edu/
   aliases: []
-- id: artefactual-systems
-  name: Artefactual Systems
-  type: institution
-  url: https://www.artefactual.com/
-  aliases: []
-- id: arvados-foundation
-  name: Arvados Foundation
-  type: foundation
-  url: https://arvados.org/
-  aliases: []
-- id: broad-institute
-  name: Broad Institute of MIT and Harvard
-  type: institution
-  url: https://www.broadinstitute.org/
-  aliases: []
-- id: chanzuckerberg-initiative
-  name: Chan Zuckerberg Initiative
-  type: foundation
-  url: https://chanzuckerberg.com/
-  aliases: []
-- id: databiosphere
-  name: Data Biosphere
-  type: consortium
-  url: https://www.databio.org/
-  aliases: []
-- id: dcm4che
-  name: dcm4che
-  type: community
-  url: https://www.dcm4che.org/
-  aliases: []
-- id: dockstore-consortium
-  name: Dockstore Consortium
-  type: consortium
-  url: https://dockstore.org/
-  aliases: []
-- id: fairmat-nomad
-  name: FAIRmat / NOMAD
-  type: consortium
-  url: https://nomad-lab.eu/
-  aliases: []
-- id: library-of-congress
-  name: Library of Congress
-  type: institution
-  url: https://www.loc.gov/
-  aliases: []
-- id: materials-project
-  name: Materials Project
-  type: institution
-  url: https://materialsproject.org/
-  aliases: []
-- id: ohif
-  name: OHIF
-  type: community
-  url: https://ohif.org/
-  aliases: []
-- id: bids-community
-  name: BIDS community
-  type: community
-  url: https://bids.neuroimaging.io/
-  aliases:
-  - Brain Imaging Data Structure community
-- id: cellml-community
-  name: CellML community
-  type: community
-  url: https://www.cellml.org/
-  aliases: []
-- id: copasi-project
-  name: COPASI project
-  type: community
-  url: https://copasi.org/
-  aliases: []
-- id: mne-project
-  name: MNE project
-  type: community
-  url: https://mne.tools/
-  aliases:
-  - MNE-Python project
-- id: neurodata-without-borders
-  name: Neurodata Without Borders
-  type: community
-  url: https://nwb.org/
-  aliases:
-  - NWB
-- id: nipy-community
-  name: Neuroimaging in Python community
-  type: community
-  url: https://nipy.org/
-  aliases:
-  - NiPy
-- id: opencor-project
-  name: OpenCOR project
-  type: community
-  url: https://opencor.ws/
-  aliases: []
-- id: sed-ml-community
-  name: SED-ML community
-  type: community
-  url: https://sed-ml.org/
-  aliases:
-  - Simulation Experiment Description Markup Language community
-- id: tellurium-project
-  name: Tellurium project
-  type: community
-  url: https://tellurium.readthedocs.io/
-  aliases: []
-- id: open-microscopy-environment
-  name: Open Microscopy Environment
-  type: community
-  url: https://www.openmicroscopy.org/
-  aliases:
-  - OME
-  - OME-NGFF community
-- id: glencoe-software
-  name: Glencoe Software
-  type: institution
-  url: https://www.glencoesoftware.com/
-  aliases: []
-- id: iau-fits-working-group
-  name: IAU FITS Working Group
-  type: standards-body
-  url: https://fits.gsfc.nasa.gov/iaufwg/
-  aliases:
-  - IAU-FWG
-- id: heasarc-nasa-goddard
-  name: NASA HEASARC
-  type: institution
-  url: https://heasarc.gsfc.nasa.gov/
-  aliases:
-  - High Energy Astrophysics Science Archive Research Center
-- id: astropy-project
-  name: Astropy Project
-  type: community
-  url: https://www.astropy.org/
-  aliases: []
-- id: international-virtual-observatory-alliance
-  name: International Virtual Observatory Alliance
-  type: standards-body
-  url: https://www.ivoa.net/
-  aliases:
-  - IVOA
-- id: canadian-astronomy-data-centre
-  name: Canadian Astronomy Data Centre
-  type: institution
-  url: https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/
-  aliases:
-  - CADC
-  - OpenCADC
-- id: german-astrophysical-virtual-observatory
-  name: German Astrophysical Virtual Observatory
-  type: institution
-  url: https://www.g-vo.org/
-  aliases:
-  - GAVO
-- id: starlink-java-project
-  name: Starlink Java Project
-  type: community
-  url: https://www.star.bris.ac.uk/mbt/stilts/
-  aliases:
-  - STILTS
-  - Starjava
-- id: phenopackets-community
-  name: Phenopackets community
-  type: community
-  url: https://github.com/phenopackets
-  aliases: []
-- id: samtools-community
-  name: SAMtools and HTSlib community
-  type: community
-  url: https://github.com/samtools
-  aliases: []
-- id: refget-reference-server-project
-  name: Refget reference server project
-  type: community
-  url: https://github.com/andrewyatz/refget-server-perl
-  aliases: []
-- id: genomic-standards-consortium
-  name: Genomic Standards Consortium
-  type: consortium
-  url: https://www.gensc.org/
-  aliases:
-  - GSC
-- id: ecological-metadata-language-community
-  name: Ecological Metadata Language community
-  type: community
-  url: https://eml.ecoinformatics.org/
-  aliases:
-  - EML
-- id: ropensci
-  name: rOpenSci
-  type: community
-  url: https://ropensci.org/
-  aliases: []
-- id: hupo-proteomics-standards-initiative
-  name: HUPO Proteomics Standards Initiative
-  type: consortium
-  url: https://www.psidev.info/
-  aliases:
-  - HUPO-PSI
-  - PSI
-- id: proteowizard-project
-  name: ProteoWizard project
-  type: community
-  url: https://proteowizard.sourceforge.io/
-  aliases: []
-- id: openms-project
-  name: OpenMS project
-  type: community
-  url: https://openms.de/
-  aliases: []
-- id: pymzml-project
-  name: pymzML project
-  type: community
-  url: https://pymzml.readthedocs.io/en/latest/
-  aliases: []
-- id: ohdsi
-  name: Observational Health Data Sciences and Informatics
-  type: consortium
-  url: https://www.ohdsi.org/
-  aliases:
-  - OHDSI
-- id: cdisc
-  name: Clinical Data Interchange Standards Consortium
-  type: standards-body
-  url: https://www.cdisc.org/
-  aliases:
-  - CDISC

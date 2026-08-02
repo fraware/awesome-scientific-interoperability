@@ -28,7 +28,8 @@ items:
   status: needs-boundary-decision
   reason: Potentially redirect to WDL or select as a reference implementation after comparison.
   missing_evidence:
-  - A precise decision on whether WDL or Cromwell is the stronger representative for workflow execution.
+  - A precise decision on whether WDL or Cromwell is the stronger representative for workflow 
+    execution.
   - Documented cross-backend interoperability claims distinct from WDL already listed.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -53,7 +54,8 @@ items:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   promotion_conditions:
-  - Multiple independent TRE or trusted-research implementations publish machine-readable Five Safes metadata.
+  - Multiple independent TRE or trusted-research implementations publish machine-readable Five Safes
+    metadata.
   - Clear boundary against RO-Crate and related policy mechanisms already in the main list.
   rejection_conditions:
   - Remains a pilot profile without broader adoption.
@@ -73,7 +75,8 @@ items:
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   promotion_conditions:
-  - Precise analysis shows Galaxy contributes a distinct integration pattern for scientific environments.
+  - Precise analysis shows Galaxy contributes a distinct integration pattern for scientific 
+    environments.
   - Selected as Reference Architecture with explicit comparison to workflow-engine entries.
   rejection_conditions:
   - Interoperability contributions are fully subsumed by existing workflow or platform entries.
@@ -126,8 +129,8 @@ items:
   url: https://www.nextflow.io/
   candidate_section: Workflows and Execution
   status: needs-boundary-decision
-  reason: Include only if its cross-backend contracts and interoperability contributions are described
-    precisely.
+  reason: Include only if its cross-backend contracts and interoperability contributions are 
+    described precisely.
   missing_evidence:
   - Precise description of cross-backend execution contracts distinct from CWL and WDL.
   - Boundary analysis against Snakemake and existing workflow entries.
@@ -201,26 +204,6 @@ items:
   - Policy decision keeps broad graphs outside the main list scope.
   source_refs:
   - ref_id: openalex-org-root
-    role: technical-definition
-- id: oxford-common-file-layout-ocfl
-  name: Oxford Common File Layout (OCFL)
-  url: https://ocfl.io/
-  candidate_section: Data and Digital Objects
-  status: needs-boundary-decision
-  reason: Potential inclusion if repository interoperability is retained as a launch priority.
-  missing_evidence:
-  - Confirmed editorial priority for repository-layout interoperability at launch.
-  - Comparison with BagIt, RO-Crate, and other packaging mechanisms in the main list.
-  reviewed_on: '2026-08-01'
-  review_due_on: '2027-08-01'
-  promotion_conditions:
-  - Launch scope explicitly includes repository preservation layouts.
-  - OCFL shows independent adoption beyond a single vendor or pilot archive.
-  rejection_conditions:
-  - Repository layout interoperability is deferred from launch scope.
-  - Mechanism overlaps BagIt or RO-Crate without a distinct integration role.
-  source_refs:
-  - ref_id: ocfl-io-root
     role: technical-definition
 - id: prov-one
   name: PROV-ONE
@@ -327,19 +310,19 @@ items:
   url: https://ddialliance.org/Specification/DDI-CDI/
   candidate_section: Metadata and Semantics
   status: needs-evidence
-  reason: Published v1.0 cross-domain datum and process model complements DDI Lifecycle but production
-    adoption remains early.
+  reason: Published v1.0 cross-domain datum and process model complements DDI Lifecycle but 
+    production adoption remains early.
   missing_evidence:
-  - Multiple independent production pipelines publishing and consuming DDI-CDI serializations beyond pilot
-    integrations.
+  - Multiple independent production pipelines publishing and consuming DDI-CDI serializations beyond
+    pilot integrations.
   - Public validators or documented conformance tests beyond JSON Schema for the abstract model.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-02-01'
   promotion_conditions:
-  - Independent archives or integration systems use DDI-CDI in production with documented cross-domain
-    datum exchange.
-  - Clear boundary analysis shows distinct integration value from DDI Lifecycle for datum-level cross-domain
-    integration.
+  - Independent archives or integration systems use DDI-CDI in production with documented 
+    cross-domain datum exchange.
+  - Clear boundary analysis shows distinct integration value from DDI Lifecycle for datum-level 
+    cross-domain integration.
   rejection_conditions:
   - Remains specification-only without substantive adoption evidence.
   - Merged into DDI Lifecycle product updates without a distinct interoperability mechanism.

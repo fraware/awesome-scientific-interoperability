@@ -135,7 +135,7 @@ You must transfer or archive a coherent bundle of files, software, people, instr
 
 For general research-object exchange, start with [resource:ro-crate] JSON-LD packaging. Use profiled crates where the use case is narrower: [resource:workflow-ro-crate] for portable workflow definitions, [resource:workflow-run-ro-crate] for executed runs, and [resource:workflow-testing-ro-crate] for portable workflow tests.
 
-For fixity-checked transfer without rich semantic graphs, [resource:bagit] remains appropriate. Computational modeling communities may prefer [resource:combine-omex-archive] when bundling models and simulation descriptions. [resource:fair-signposting] complements packaging by helping clients locate crate files and related metadata from landing pages.
+For fixity-checked transfer without rich semantic graphs, [resource:bagit] remains appropriate. For durable repository object stores with inventories and rebuildability, prefer [resource:oxford-common-file-layout-ocfl]. For lightweight dataset and tabular resource descriptors, prefer [resource:data-package-standard]. Computational modeling communities may prefer [resource:combine-omex-archive] when bundling models and simulation descriptions. [resource:fair-signposting] complements packaging by helping clients locate crate files and related metadata from landing pages.
 
 ### When an alternative is stronger
 
@@ -150,11 +150,12 @@ For fixity-checked transfer without rich semantic graphs, [resource:bagit] remai
 - Assuming RO-Crate conformance proves scientific reproducibility or semantic equivalence.
 - Using Workflow RO-Crate where a executed-run profile ([resource:workflow-run-ro-crate]) is required.
 - Treating BagIt manifests as a substitute for provenance graphs (see Problem 7).
+- Treating OCFL layout validation as semantic packaging completeness, or Data Package descriptor validation as proof that referenced datasets are available and scientifically correct.
 - Publishing a crate without validating against [resource:ro-crate-validator] for the intended profile.
 
 ### Relevant catalog entries
 
-[resource:ro-crate] [resource:workflow-ro-crate] [resource:workflow-run-ro-crate] [resource:workflow-testing-ro-crate] [resource:bagit] [resource:combine-omex-archive] [resource:fair-signposting] [resource:crystallographic-information-framework-cif] [resource:functional-mock-up-interface-fmi] [resource:nexus] [resource:cwlprov] [resource:reprozip] [resource:ro-crate-validator]
+[resource:ro-crate] [resource:workflow-ro-crate] [resource:workflow-run-ro-crate] [resource:workflow-testing-ro-crate] [resource:bagit] [resource:oxford-common-file-layout-ocfl] [resource:data-package-standard] [resource:combine-omex-archive] [resource:fair-signposting] [resource:crystallographic-information-framework-cif] [resource:functional-mock-up-interface-fmi] [resource:nexus] [resource:cwlprov] [resource:reprozip] [resource:ro-crate-validator]
 
 ### Example architecture
 

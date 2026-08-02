@@ -55,6 +55,19 @@ references:
   type: governance-source
   publisher: apptainer.org
   accessed_on: '2026-08-01'
+- id: archivematica-adr-0006-bagit
+  title: Archivematica ADR 0006 — Use BagIt to package transfers
+  url: 
+    https://github.com/archivematica/archivematica-architectural-decisions/blob/main/0006-use-bagit-to-package-transfers.md
+  type: technical-documentation
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: arvados-org-cwl
+  title: Arvados — Running CWL workflows
+  url: https://doc.arvados.org/user/cwl/index.html
+  type: technical-documentation
+  publisher: arvados.org
+  accessed_on: '2026-08-02'
 - id: arxiv-org-abs-2512-24189
   title: Science Context Protocol
   url: https://arxiv.org/abs/2512.24189
@@ -79,6 +92,24 @@ references:
   type: technical-documentation
   publisher: autoprotocol.org
   accessed_on: '2026-08-01'
+- id: bids-neuroimaging-io-root
+  title: BIDS community
+  url: https://bids.neuroimaging.io/
+  type: governance-source
+  publisher: bids.neuroimaging.io
+  accessed_on: '2026-08-02'
+- id: bids-specification-readthedocs-stable
+  title: Brain Imaging Data Structure 1.11.1
+  url: https://bids-specification.readthedocs.io/en/stable/
+  type: specification
+  publisher: bids-specification.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: bids-validator-readthedocs-web
+  title: BIDS Validator web interface
+  url: https://bids-validator.readthedocs.io/en/latest/user_guide/web.html
+  type: validator
+  publisher: bids-validator.readthedocs.io
+  accessed_on: '2026-08-02'
 - id: bioprotocols-github-io-root
   title: LabOP
   url: https://bioprotocols.github.io/
@@ -115,6 +146,48 @@ references:
   type: specification
   publisher: cdif.codata.org
   accessed_on: '2026-08-01'
+- id: cdisc-data-exchange
+  title: CDISC Data Exchange standards
+  url: https://www.cdisc.org/standards/data-exchange
+  type: governance-source
+  publisher: CDISC
+  accessed_on: '2026-08-02'
+- id: cdisc-odm-implementation
+  title: CDISC ODM implementation guidance
+  url: https://www.cdisc.org/odm-implementation
+  type: technical-documentation
+  publisher: CDISC
+  accessed_on: '2026-08-02'
+- id: cdisc-odm-linkml
+  title: CDISC ODM v2.0 LinkML model
+  url: https://cdisc-org.github.io/DataExchange-ODM-LinkML/
+  type: implementation-repository
+  publisher: CDISC
+  accessed_on: '2026-08-02'
+- id: cdisc-odm-v2-0
+  title: CDISC Operational Data Model v2.0
+  url: https://www.cdisc.org/standards/data-exchange/odm-xml/odm-v2-0
+  type: specification
+  publisher: CDISC
+  accessed_on: '2026-08-02'
+- id: cdisc-org-root
+  title: Clinical Data Interchange Standards Consortium
+  url: https://www.cdisc.org/
+  type: governance-source
+  publisher: CDISC
+  accessed_on: '2026-08-02'
+- id: cellml-org-root
+  title: CellML community
+  url: https://www.cellml.org/
+  type: governance-source
+  publisher: cellml.org
+  accessed_on: '2026-08-02'
+- id: cellml-org-specifications-cellml-2-0
+  title: CellML 2.0 specification
+  url: https://www.cellml.org/specifications/cellml_2.0/
+  type: specification
+  publisher: cellml.org
+  accessed_on: '2026-08-02'
 - id: cfconventions-org-data-cf-conventions-cf-conventions-1-10-cf-conve
   title: Climate and Forecast (CF) Metadata Conventions
   url: https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html
@@ -175,6 +248,20 @@ references:
   type: conformance-suite
   publisher: commonwl.org
   accessed_on: '2026-08-01'
+- id: copasi-org-sbml-import-export
+  title: COPASI SBML import and export
+  url: 
+    https://copasi.org/Support/User_Manual/Importing_and_Exporting/Importing_and_Exporting_SBML_Files/
+  type: technical-documentation
+  publisher: copasi.org
+  accessed_on: '2026-08-02'
+- id: copasi-org-sedml-import-export
+  title: COPASI SED-ML import and export
+  url: 
+    https://copasi.org/Support/User_Manual/Importing_and_Exporting/Importing_and_Exporting_SEDML_Files/
+  type: technical-documentation
+  publisher: copasi.org
+  accessed_on: '2026-08-02'
 - id: cromwell-readthedocs-io-root
   title: Cromwell
   url: https://cromwell.readthedocs.io/
@@ -199,12 +286,48 @@ references:
   type: specification
   publisher: cwltool.readthedocs.io
   accessed_on: '2026-08-01'
+- id: dachs-doc-readthedocs-io
+  title: GAVO DaCHS 2.9 documentation
+  url: https://dachs-doc.readthedocs.io/
+  type: technical-documentation
+  publisher: dachs-doc.readthedocs.io
+  accessed_on: '2026-08-02'
 - id: datacite-org-root
   title: DataCite
   url: https://datacite.org/
   type: governance-source
   publisher: datacite.org
   accessed_on: '2026-08-01'
+- id: datapackage-org-blog-2024-06-26-v2-release
+  title: Data Package (v2) is released!
+  url: https://datapackage.org/blog/2024-06-26-v2-release/
+  type: technical-documentation
+  publisher: datapackage.org
+  accessed_on: '2026-08-02'
+- id: datapackage-org-profiles-2-0-datapackage
+  title: Data Package profile 2.0
+  url: https://datapackage.org/profiles/2.0/datapackage.json
+  type: normative-schema
+  publisher: datapackage.org
+  accessed_on: '2026-08-02'
+- id: datapackage-org-standard-data-package
+  title: Data Package Standard
+  url: https://datapackage.org/standard/data-package/
+  type: specification
+  publisher: datapackage.org
+  accessed_on: '2026-08-02'
+- id: datapackage-org-standard-data-resource
+  title: Data Resource specification
+  url: https://datapackage.org/standard/data-resource/
+  type: specification
+  publisher: datapackage.org
+  accessed_on: '2026-08-02'
+- id: datapackage-org-standard-table-schema
+  title: Table Schema specification
+  url: https://datapackage.org/standard/table-schema/
+  type: specification
+  publisher: datapackage.org
+  accessed_on: '2026-08-02'
 - id: datatracker-ietf-org-doc-html-rfc8493
   title: BagIt
   url: https://datatracker.ietf.org/doc/html/rfc8493
@@ -265,6 +388,24 @@ references:
   type: specification
   publisher: docs.allotrope.org
   accessed_on: '2026-08-01'
+- id: docs-astropy-org-fits
+  title: Astropy FITS file handling
+  url: https://docs.astropy.org/en/stable/io/fits/
+  type: technical-documentation
+  publisher: docs.astropy.org
+  accessed_on: '2026-08-02'
+- id: docs-astropy-org-fits-verification
+  title: Astropy FITS verification
+  url: https://docs.astropy.org/en/stable/io/fits/usage/verification.html
+  type: validator
+  publisher: docs.astropy.org
+  accessed_on: '2026-08-02'
+- id: docs-astropy-org-votable
+  title: Astropy VOTable handling
+  url: https://docs.astropy.org/en/stable/io/votable/index.html
+  type: technical-documentation
+  publisher: docs.astropy.org
+  accessed_on: '2026-08-02'
 - id: docs-biocomputeobject-org-root
   title: BioCompute Objects
   url: https://docs.biocomputeobject.org/
@@ -313,6 +454,18 @@ references:
   type: technical-documentation
   publisher: docs.ogc.org
   accessed_on: '2026-08-01'
+- id: docs-ropensci-org-eml
+  title: rOpenSci EML package
+  url: https://docs.ropensci.org/EML/
+  type: implementation-repository
+  publisher: rOpenSci
+  accessed_on: '2026-08-02'
+- id: docs-ropensci-org-emld-eml-validate
+  title: rOpenSci emld EML validator
+  url: https://docs.ropensci.org/emld/reference/eml_validate.html
+  type: validator
+  publisher: rOpenSci
+  accessed_on: '2026-08-02'
 - id: doi-org-10-1162-99608f92-aa3103a5
   title: Scholix
   url: https://doi.org/10.1162/99608f92.aa3103a5
@@ -361,6 +514,24 @@ references:
   type: specification
   publisher: edamontology.org
   accessed_on: '2026-08-01'
+- id: eml-ecoinformatics-org-root
+  title: Ecological Metadata Language 2.2.0
+  url: https://eml.ecoinformatics.org/
+  type: specification
+  publisher: EML community
+  accessed_on: '2026-08-02'
+- id: eml-ecoinformatics-org-schema
+  title: EML XML Schema documentation
+  url: https://eml.ecoinformatics.org/eml-schema
+  type: normative-schema
+  publisher: EML community
+  accessed_on: '2026-08-02'
+- id: eml-ecoinformatics-org-validation
+  title: EML validation rules and validity parser
+  url: https://eml.ecoinformatics.org/validation-and-content-references
+  type: validator
+  publisher: EML community
+  accessed_on: '2026-08-02'
 - id: eosc-eu-eosc-interoperability-framework
   title: EOSC Interoperability Framework
   url: https://eosc.eu/eosc-interoperability-framework/
@@ -409,6 +580,24 @@ references:
   type: registry-record
   publisher: fairsharing.org
   accessed_on: '2026-08-01'
+- id: fits-gsfc-nasa-gov-fits-standard
+  title: FITS Standard 4.0
+  url: https://fits.gsfc.nasa.gov/fits_standard.html
+  type: specification
+  publisher: fits.gsfc.nasa.gov
+  accessed_on: '2026-08-02'
+- id: fits-gsfc-nasa-gov-iau-fwg-rules
+  title: IAU FITS Working Group rules
+  url: https://fits.gsfc.nasa.gov/iaufwg/iaufwg_rules.html
+  type: governance-source
+  publisher: fits.gsfc.nasa.gov
+  accessed_on: '2026-08-02'
+- id: fits-gsfc-nasa-gov-registry
+  title: Registry of FITS Conventions
+  url: https://fits.gsfc.nasa.gov/fits_registry.html
+  type: registry-record
+  publisher: fits.gsfc.nasa.gov
+  accessed_on: '2026-08-02'
 - id: fmi-standard-org-about
   title: Modelica Association Project FMI
   url: https://fmi-standard.org/about/
@@ -427,6 +616,42 @@ references:
   type: adoption-evidence
   publisher: force11.org
   accessed_on: '2026-08-01'
+- id: framework-frictionlessdata-io-validating-data
+  title: Frictionless Framework validating data guide
+  url: https://framework.frictionlessdata.io/docs/guides/validating-data.html
+  type: validator
+  publisher: framework.frictionlessdata.io
+  accessed_on: '2026-08-02'
+- id: ga4gh-github-io-refget
+  title: GA4GH refget specifications
+  url: https://ga4gh.github.io/refget/
+  type: governance-source
+  publisher: ga4gh.github.io
+  accessed_on: '2026-08-02'
+- id: ga4gh-github-io-refget-compliance
+  title: Refget compliance report
+  url: https://ga4gh.github.io/refget-compliance/
+  type: interoperability-result
+  publisher: ga4gh.github.io
+  accessed_on: '2026-08-02'
+- id: ga4gh-github-io-refget-compliance-ena-server
+  title: ENA CRAM Reference Registry compliance report
+  url: https://ga4gh.github.io/refget-compliance/reports/ena-server.html
+  type: interoperability-result
+  publisher: ga4gh.github.io
+  accessed_on: '2026-08-02'
+- id: ga4gh-github-io-refget-compliance-refget-server-perl
+  title: Refget reference server compliance report
+  url: https://ga4gh.github.io/refget-compliance/reports/refget-server-perl.html
+  type: interoperability-result
+  publisher: ga4gh.github.io
+  accessed_on: '2026-08-02'
+- id: ga4gh-github-io-refget-sequences
+  title: Refget Sequences v2.0.0
+  url: https://ga4gh.github.io/refget/sequences/
+  type: specification
+  publisher: ga4gh.github.io
+  accessed_on: '2026-08-02'
 - id: ga4gh-org-product-data-repository-service-drs
   title: GA4GH Data Repository Service (DRS)
   url: https://www.ga4gh.org/product/data-repository-service-drs/
@@ -445,6 +670,18 @@ references:
   type: specification
   publisher: ga4gh.org
   accessed_on: '2026-08-01'
+- id: ga4gh-org-product-htsget
+  title: GA4GH htsget
+  url: https://www.ga4gh.org/product/htsget/
+  type: governance-source
+  publisher: ga4gh.org
+  accessed_on: '2026-08-02'
+- id: ga4gh-org-product-phenopackets
+  title: GA4GH Phenopackets
+  url: https://www.ga4gh.org/product/phenopackets/
+  type: governance-source
+  publisher: ga4gh.org
+  accessed_on: '2026-08-02'
 - id: ga4gh-org-product-service-info
   title: GA4GH Service Info
   url: https://www.ga4gh.org/product/service-info/
@@ -487,6 +724,24 @@ references:
   type: specification
   publisher: galaxyproject.org
   accessed_on: '2026-08-01'
+- id: genomicsstandardsconsortium-github-mixs-docs
+  title: MIxS specification documentation
+  url: https://genomicsstandardsconsortium.github.io/mixs/
+  type: specification
+  publisher: Genomic Standards Consortium
+  accessed_on: '2026-08-02'
+- id: gensc-org-root
+  title: Genomic Standards Consortium
+  url: https://www.gensc.org/
+  type: governance-source
+  publisher: Genomic Standards Consortium
+  accessed_on: '2026-08-02'
+- id: github-com-andrewyatz-refget-server-perl
+  title: Refget reference server Perl implementation
+  url: https://github.com/andrewyatz/refget-server-perl
+  type: implementation-repository
+  publisher: github.com/andrewyatz
+  accessed_on: '2026-08-02'
 - id: github-com-animl-animl-core
   title: AnIML core
   url: https://github.com/AnIML/animl-core
@@ -505,12 +760,30 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-artefactual-archivematica
+  title: Archivematica digital preservation system
+  url: https://github.com/artefactual/archivematica
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-arvados-arvados
+  title: Arvados platform (CWL runner)
+  url: https://github.com/arvados/arvados
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-autoprotocol-autoprotocol-python
   title: Autoprotocol
   url: https://github.com/autoprotocol/autoprotocol-python
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-bids-standard-bids-validator
+  title: BIDS Validator
+  url: https://github.com/bids-standard/bids-validator
+  type: validator
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-biocompute-objects-bco-documentation
   title: BioCompute Objects
   url: https://github.com/biocompute-objects/BCO_Documentation
@@ -565,6 +838,12 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-cellml-libcellml
+  title: libCellML
+  url: https://github.com/cellml/libcellml
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-cf-convention-cf-conventions
   title: CF Conventions repository
   url: https://github.com/cf-convention/cf-conventions
@@ -637,6 +916,12 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-copasi-copasi
+  title: COPASI
+  url: https://github.com/copasi/COPASI
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-crossref-rest-api-doc
   title: Crossref REST API docs repo
   url: https://github.com/CrossRef/rest-api-doc
@@ -703,12 +988,36 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-fbergmann-libsedml
+  title: libSEDML
+  url: https://github.com/fbergmann/libSEDML
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-fhir-fhir-test-cases
   title: HL7 FHIR
   url: https://github.com/FHIR/fhir-test-cases
   type: conformance-suite
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-frictionlessdata-datapackage
+  title: frictionlessdata/datapackage
+  url: https://github.com/frictionlessdata/datapackage
+  type: governance-source
+  publisher: github.com/frictionlessdata
+  accessed_on: '2026-08-02'
+- id: github-com-frictionlessdata-frictionless-js
+  title: frictionlessdata/frictionless-js
+  url: https://github.com/frictionlessdata/frictionless-js
+  type: implementation-repository
+  publisher: github.com/frictionlessdata
+  accessed_on: '2026-08-02'
+- id: github-com-frictionlessdata-frictionless-py
+  title: frictionlessdata/frictionless-py
+  url: https://github.com/frictionlessdata/frictionless-py
+  type: implementation-repository
+  publisher: github.com/frictionlessdata
+  accessed_on: '2026-08-02'
 - id: github-com-ga4gh-data-repository-service-schemas
   title: GA4GH Data Repository Service (DRS)
   url: https://github.com/ga4gh/data-repository-service-schemas
@@ -757,12 +1066,24 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-ga4gh-htsget-refserver
+  title: GA4GH htsget reference server
+  url: https://github.com/ga4gh/htsget-refserver
+  type: implementation-repository
+  publisher: github.com/ga4gh
+  accessed_on: '2026-08-02'
 - id: github-com-ga4gh-openapi-test-runner
   title: GA4GH TES compliance suite (openapi-test-runner)
   url: https://github.com/ga4gh/openapi-test-runner
   type: conformance-suite
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-ga4gh-refget
+  title: GA4GH refget specification and compliance tooling
+  url: https://github.com/ga4gh/refget
+  type: implementation-repository
+  publisher: github.com/ga4gh
+  accessed_on: '2026-08-02'
 - id: github-com-ga4gh-service-info
   title: GA4GH service-info
   url: https://github.com/ga4gh/service-info
@@ -787,12 +1108,48 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-ga4gh-vrs
+  title: GA4GH VRS specification repository
+  url: https://github.com/ga4gh/vrs
+  type: normative-schema
+  publisher: github.com/ga4gh
+  accessed_on: '2026-08-02'
+- id: github-com-ga4gh-vrs-python
+  title: GA4GH VRS Python implementation
+  url: https://github.com/ga4gh/vrs-python
+  type: implementation-repository
+  publisher: github.com/ga4gh
+  accessed_on: '2026-08-02'
+- id: github-com-ga4gh-vrs-python-tests-validation
+  title: VRS Python specification validation tests
+  url: https://github.com/ga4gh/vrs-python/tree/main/tests/validation
+  type: conformance-suite
+  publisher: github.com/ga4gh
+  accessed_on: '2026-08-02'
 - id: github-com-ga4gh-workflow-execution-service-schemas
   title: GA4GH Workflow Execution Service (WES)
   url: https://github.com/ga4gh/workflow-execution-service-schemas
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-genomicsstandardsconsortium-mixs
+  title: MIxS source and LinkML implementation
+  url: https://github.com/GenomicsStandardsConsortium/mixs
+  type: implementation-repository
+  publisher: GitHub
+  accessed_on: '2026-08-02'
+- id: github-com-genomicsstandardsconsortium-mixs-tests
+  title: MIxS valid and invalid example tests
+  url: https://github.com/GenomicsStandardsConsortium/mixs/tree/main/tests
+  type: conformance-suite
+  publisher: GitHub
+  accessed_on: '2026-08-02'
+- id: github-com-glencoesoftware-bioformats2raw
+  title: bioformats2raw
+  url: https://github.com/glencoesoftware/bioformats2raw
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-gvwilson-fair-signposting
   title: FAIR Signposting materials
   url: https://github.com/gvwilson/fair-signposting
@@ -811,6 +1168,18 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-hupo-psi-mzml
+  title: HUPO-PSI mzML specification repository
+  url: https://github.com/HUPO-PSI/mzML
+  type: implementation-repository
+  publisher: GitHub
+  accessed_on: '2026-08-02'
+- id: github-com-hupo-psi-psi-ms-cv
+  title: PSI-MS controlled vocabulary
+  url: https://github.com/HUPO-PSI/psi-ms-CV
+  type: normative-schema
+  publisher: GitHub
+  accessed_on: '2026-08-02'
 - id: github-com-identifiers-org-identifiers-org
   title: Identifiers.org repository
   url: https://github.com/identifiers-org/identifiers-org
@@ -841,6 +1210,18 @@ references:
   type: validator
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-ivoa-std-tap
+  title: IVOA TAP specification repository
+  url: https://github.com/ivoa-std/TAP
+  type: governance-source
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-ivoa-std-votable
+  title: IVOA VOTable specification repository
+  url: https://github.com/ivoa-std/VOTable
+  type: governance-source
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-jats-tml-jats-tag-library
   title: Journal Article Tag Suite (JATS)
   url: https://github.com/JATS-TML/JATS-Tag-Library
@@ -889,6 +1270,12 @@ references:
   type: validator
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-mne-tools-mne-bids
+  title: MNE-BIDS
+  url: https://github.com/mne-tools/mne-bids
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-modelcontextprotocol-servers
   title: MCP reference servers
   url: https://github.com/modelcontextprotocol/servers
@@ -943,6 +1330,36 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-nceas-eml
+  title: EML specification source and validator
+  url: https://github.com/NCEAS/eml
+  type: implementation-repository
+  publisher: GitHub
+  accessed_on: '2026-08-02'
+- id: github-com-neurodatawithoutborders-aqnwb
+  title: AqNWB
+  url: https://github.com/NeurodataWithoutBorders/aqnwb
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-neurodatawithoutborders-matnwb
+  title: MatNWB
+  url: https://github.com/NeurodataWithoutBorders/matnwb
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-neurodatawithoutborders-nwbinspector
+  title: NWB Inspector
+  url: https://github.com/NeurodataWithoutBorders/nwbinspector
+  type: validator
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-neurodatawithoutborders-pynwb
+  title: PyNWB
+  url: https://github.com/NeurodataWithoutBorders/pynwb
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-nexusformat-cnxvalidate
   title: NeXus cnxvalidate
   url: https://github.com/nexusformat/cnxvalidate
@@ -955,12 +1372,36 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-nipy-heudiconv
+  title: HeuDiConv
+  url: https://github.com/nipy/heudiconv
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-obofoundry-obofoundry-github-io
   title: OBO Foundry
   url: https://github.com/OBOFoundry/OBOFoundry.github.io
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-ocfl-ocfl-java
+  title: OCFL/ocfl-java
+  url: https://github.com/OCFL/ocfl-java
+  type: implementation-repository
+  publisher: github.com/OCFL
+  accessed_on: '2026-08-02'
+- id: github-com-ocfl-spec
+  title: OCFL/spec
+  url: https://github.com/OCFL/spec
+  type: governance-source
+  publisher: github.com/OCFL
+  accessed_on: '2026-08-02'
+- id: github-com-ohdsi-common-data-model
+  title: OMOP Common Data Model source and DDL package
+  url: https://github.com/OHDSI/CommonDataModel
+  type: implementation-repository
+  publisher: GitHub
+  accessed_on: '2026-08-02'
 - id: github-com-ohif-viewers
   title: OHIF Viewer
   url: https://github.com/OHIF/Viewers
@@ -973,6 +1414,18 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-ome-ngff
+  title: OME-NGFF specification repository
+  url: https://github.com/ome/ngff
+  type: governance-source
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-ome-ome-zarr-py
+  title: ome-zarr-py
+  url: https://github.com/ome/ome-zarr-py
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-open-eo-openeo-geopyspark-driver
   title: openEO GeoPySpark backend
   url: https://github.com/Open-EO/openeo-geopyspark-driver
@@ -997,6 +1450,12 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-opencadc-tap
+  title: OpenCADC TAP
+  url: https://github.com/opencadc/tap
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-opengeospatial-ets-ogcapi-features10
   title: OGC API Features ETS
   url: https://github.com/opengeospatial/ets-ogcapi-features10
@@ -1027,6 +1486,18 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-phenopackets-phenopacket-schema
+  title: Phenopacket Schema repository and language bindings
+  url: https://github.com/phenopackets/phenopacket-schema
+  type: implementation-repository
+  publisher: github.com/phenopackets
+  accessed_on: '2026-08-02'
+- id: github-com-phenopackets-phenopacket-tools
+  title: Phenopacket tools and validator
+  url: https://github.com/phenopackets/phenopacket-tools
+  type: validator
+  publisher: github.com/phenopackets
+  accessed_on: '2026-08-02'
 - id: github-com-qudt-qudt-public-repo
   title: QUDT
   url: https://github.com/qudt/qudt-public-repo
@@ -1069,6 +1540,18 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-samtools-hts-specs-htsget
+  title: htsget protocol specification
+  url: https://github.com/samtools/hts-specs/blob/master/Htsget.md
+  type: specification
+  publisher: github.com/samtools
+  accessed_on: '2026-08-02'
+- id: github-com-samtools-htslib
+  title: HTSlib htsget-capable client library
+  url: https://github.com/samtools/htslib
+  type: implementation-repository
+  publisher: github.com/samtools
+  accessed_on: '2026-08-02'
 - id: github-com-sapporo-wes-sapporo
   title: Sapporo
   url: https://github.com/sapporo-wes/sapporo
@@ -1141,6 +1624,12 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-sys-bio-tellurium
+  title: Tellurium
+  url: https://github.com/sys-bio/tellurium
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
 - id: github-com-tdwg-dwc
   title: Darwin Core
   url: https://github.com/tdwg/dwc
@@ -1189,6 +1678,12 @@ references:
   type: implementation-repository
   publisher: github.com
   accessed_on: '2026-08-01'
+- id: github-com-zimeon-ocfl-py
+  title: zimeon/ocfl-py
+  url: https://github.com/zimeon/ocfl-py
+  type: implementation-repository
+  publisher: github.com/zimeon
+  accessed_on: '2026-08-02'
 - id: gitlab-com-sila2
   title: SiLA 2
   url: https://gitlab.com/sila2
@@ -1225,6 +1720,18 @@ references:
   type: specification
   publisher: graph.openaire.eu
   accessed_on: '2026-08-01'
+- id: heasarc-gsfc-nasa-gov-cfitsio
+  title: CFITSIO 4.6.4
+  url: https://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html
+  type: implementation-repository
+  publisher: heasarc.gsfc.nasa.gov
+  accessed_on: '2026-08-02'
+- id: heudiconv-readthedocs-root
+  title: HeuDiConv documentation
+  url: https://heudiconv.readthedocs.io/
+  type: technical-documentation
+  publisher: heudiconv.readthedocs.io
+  accessed_on: '2026-08-02'
 - id: hl7-org-fhir
   title: HL7 FHIR
   url: https://hl7.org/fhir/
@@ -1297,6 +1804,24 @@ references:
   type: technical-documentation
   publisher: iucr.org
   accessed_on: '2026-08-01'
+- id: ivoa-net-about
+  title: International Virtual Observatory Alliance
+  url: https://www.ivoa.net/about/what-is-ivoa.html
+  type: governance-source
+  publisher: ivoa.net
+  accessed_on: '2026-08-02'
+- id: ivoa-net-documents-tap
+  title: IVOA Table Access Protocol 1.1
+  url: https://ivoa.net/documents/TAP/
+  type: specification
+  publisher: ivoa.net
+  accessed_on: '2026-08-02'
+- id: ivoa-net-documents-votable
+  title: IVOA VOTable 1.5
+  url: https://www.ivoa.net/documents/VOTable/
+  type: specification
+  publisher: ivoa.net
+  accessed_on: '2026-08-02'
 - id: jats-nlm-nih-gov-root
   title: Journal Article Tag Suite (JATS)
   url: https://jats.nlm.nih.gov/
@@ -1309,6 +1834,12 @@ references:
   type: technical-documentation
   publisher: journals.iucr.org
   accessed_on: '2026-08-01'
+- id: libcellml-org-root
+  title: libCellML
+  url: https://libcellml.org/
+  type: technical-documentation
+  publisher: libcellml.org
+  accessed_on: '2026-08-02'
 - id: lifemonitor-eu-root
   title: Workflow Testing RO-Crate
   url: https://lifemonitor.eu/
@@ -1333,12 +1864,24 @@ references:
   type: technical-documentation
   publisher: manual.nexusformat.org
   accessed_on: '2026-08-01'
+- id: miniwdl-readthedocs-getting-started
+  title: miniwdl documentation — Getting started
+  url: https://miniwdl.readthedocs.io/en/latest/getting_started.html
+  type: technical-documentation
+  publisher: readthedocs.io
+  accessed_on: '2026-08-02'
 - id: mlcommons-org-root
   title: MLCommons
   url: https://mlcommons.org/
   type: governance-source
   publisher: mlcommons.org
   accessed_on: '2026-08-01'
+- id: mne-tools-mne-bids-stable
+  title: MNE-BIDS documentation
+  url: https://mne.tools/mne-bids/stable/
+  type: technical-documentation
+  publisher: mne.tools
+  accessed_on: '2026-08-02'
 - id: modelcontextprotocol-io-registry-about
   title: Official MCP Registry
   url: https://modelcontextprotocol.io/registry/about
@@ -1381,12 +1924,84 @@ references:
   type: specification
   publisher: nexusformat.org
   accessed_on: '2026-08-01'
+- id: ngff-openmicroscopy-org-0-5
+  title: OME-Zarr specification 0.5
+  url: https://ngff.openmicroscopy.org/0.5/
+  type: specification
+  publisher: ngff.openmicroscopy.org
+  accessed_on: '2026-08-02'
+- id: ngff-openmicroscopy-org-tools
+  title: OME-Zarr tools and implementations
+  url: https://ngff.openmicroscopy.org/tools/
+  type: registry-record
+  publisher: ngff.openmicroscopy.org
+  accessed_on: '2026-08-02'
+- id: nomad-lab-optimade-info
+  title: NOMAD OPTIMADE API info endpoint
+  url: https://nomad-lab.eu/prod/rae/optimade/v1/info
+  type: api-documentation
+  publisher: nomad-lab.eu
+  accessed_on: '2026-08-02'
+- id: nwb-org-about
+  title: About Neurodata Without Borders
+  url: https://nwb.org/about-nwb/
+  type: governance-source
+  publisher: nwb.org
+  accessed_on: '2026-08-02'
+- id: nwb-org-aqnwb
+  title: AqNWB
+  url: https://nwb.org/aqnwb/
+  type: technical-documentation
+  publisher: nwb.org
+  accessed_on: '2026-08-02'
+- id: nwb-org-nwb-schema
+  title: NWB Schema
+  url: https://nwb.org/tools/core/nwb-schema/
+  type: specification
+  publisher: nwb.org
+  accessed_on: '2026-08-02'
+- id: nwb-org-nwbinspector
+  title: NWB Inspector
+  url: https://nwb.org/tools/core/nwbinspector/
+  type: validator
+  publisher: nwb.org
+  accessed_on: '2026-08-02'
+- id: nwb-schema-readthedocs-root
+  title: NWB format specification
+  url: https://nwb-schema.readthedocs.io/
+  type: normative-schema
+  publisher: nwb-schema.readthedocs.io
+  accessed_on: '2026-08-02'
 - id: obofoundry-org-root
   title: OBO Foundry
   url: https://obofoundry.org/
   type: specification
   publisher: obofoundry.org
   accessed_on: '2026-08-01'
+- id: ocfl-io-1-1-implementation-notes
+  title: OCFL Implementation Notes v1.1
+  url: https://ocfl.io/1.1/implementation-notes/
+  type: technical-documentation
+  publisher: ocfl.io
+  accessed_on: '2026-08-02'
+- id: ocfl-io-1-1-spec
+  title: OCFL Specification v1.1
+  url: https://ocfl.io/1.1/spec/
+  type: specification
+  publisher: ocfl.io
+  accessed_on: '2026-08-02'
+- id: ocfl-io-1-1-validation-codes
+  title: OCFL Validation Codes v1.1
+  url: https://ocfl.io/1.1/spec/validation-codes.html
+  type: validator
+  publisher: ocfl.io
+  accessed_on: '2026-08-02'
+- id: ocfl-io-implementations-wiki
+  title: OCFL Implementations wiki
+  url: https://github.com/OCFL/spec/wiki/Implementations
+  type: adoption-evidence
+  publisher: github.com/OCFL
+  accessed_on: '2026-08-02'
 - id: ocfl-io-root
   title: Oxford Common File Layout (OCFL)
   url: https://ocfl.io/
@@ -1435,6 +2050,36 @@ references:
   type: api-documentation
   publisher: ogcapi.ogc.org
   accessed_on: '2026-08-01'
+- id: ohdsi-common-data-model
+  title: OMOP Common Data Model
+  url: https://ohdsi.github.io/CommonDataModel/
+  type: specification
+  publisher: OHDSI
+  accessed_on: '2026-08-02'
+- id: ohdsi-data-quality-dashboard
+  title: OMOP DataQualityDashboard
+  url: https://ohdsi.github.io/DataQualityDashboard/
+  type: validator
+  publisher: OHDSI
+  accessed_on: '2026-08-02'
+- id: ohdsi-data-quality-dashboard-cdmfield
+  title: OMOP CDM field conformance check
+  url: https://ohdsi.github.io/DataQualityDashboard/articles/checks/cdmField.html
+  type: validator
+  publisher: OHDSI
+  accessed_on: '2026-08-02'
+- id: ohdsi-org-root
+  title: Observational Health Data Sciences and Informatics
+  url: https://www.ohdsi.org/
+  type: governance-source
+  publisher: OHDSI
+  accessed_on: '2026-08-02'
+- id: ome-github-io-ome-ngff-validator
+  title: OME-NGFF Validator
+  url: https://ome.github.io/ome-ngff-validator/
+  type: validator
+  publisher: ome.github.io
+  accessed_on: '2026-08-02'
 - id: opcfoundation-org-markets-collaboration-lads
   title: OPC UA Laboratory and Analytical Device Standard (LADS)
   url: https://opcfoundation.org/markets-collaboration/lads/
@@ -1459,12 +2104,30 @@ references:
   type: specification
   publisher: openalex.org
   accessed_on: '2026-08-01'
+- id: opencor-ws-simulation-experiment-view
+  title: OpenCOR Simulation Experiment view
+  url: https://opencor.ws/user/plugins/simulation/simulationExperimentView.html
+  type: technical-documentation
+  publisher: opencor.ws
+  accessed_on: '2026-08-02'
 - id: openeo-org-root
   title: openEO consortium / OGC
   url: https://openeo.org/
   type: governance-source
   publisher: openeo.org
   accessed_on: '2026-08-01'
+- id: openms-mzmlfile
+  title: OpenMS mzML reader and writer
+  url: https://openms.de/documentation/classOpenMS_1_1MzMLFile.html
+  type: implementation-repository
+  publisher: OpenMS
+  accessed_on: '2026-08-02'
+- id: openms-mzmlvalidator
+  title: OpenMS mzML semantic validator
+  url: https://openms.de/current_doxygen/html/classOpenMS_1_1Internal_1_1MzMLValidator.html
+  type: validator
+  publisher: OpenMS
+  accessed_on: '2026-08-02'
 - id: openwdl-org-root
   title: Workflow Description Language (WDL)
   url: https://openwdl.org/
@@ -1483,6 +2146,12 @@ references:
   type: governance-source
   publisher: opmw.org
   accessed_on: '2026-08-01'
+- id: optimade-materialsproject-base
+  title: Materials Project OPTIMADE base URL
+  url: https://optimade.materialsproject.org/
+  type: api-documentation
+  publisher: materialsproject.org
+  accessed_on: '2026-08-02'
 - id: optimade-org-root
   title: OPTIMADE consortium (Materials-Consortia)
   url: https://optimade.org/
@@ -1495,6 +2164,18 @@ references:
   type: specification
   publisher: optimade.org
   accessed_on: '2026-08-01'
+- id: optimade-providers-dashboard-mp
+  title: OPTIMADE provider dashboard — Materials Project
+  url: https://www.optimade.org/providers-dashboard/providers/mp.html
+  type: registry-record
+  publisher: optimade.org
+  accessed_on: '2026-08-02'
+- id: optimade-providers-dashboard-nmd
+  title: OPTIMADE provider dashboard — NOMAD
+  url: https://www.optimade.org/providers-dashboard/providers/nmd.html
+  type: registry-record
+  publisher: optimade.org
+  accessed_on: '2026-08-02'
 - id: orcid-org-root
   title: ORCID
   url: https://orcid.org/
@@ -1507,12 +2188,42 @@ references:
   type: specification
   publisher: orkg.org
   accessed_on: '2026-08-01'
+- id: phenopacket-schema-readthedocs-latest
+  title: Phenopacket Schema v2 documentation
+  url: https://phenopacket-schema.readthedocs.io/en/latest/
+  type: specification
+  publisher: phenopacket-schema.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: phenopacket-schema-readthedocs-requirements
+  title: Phenopacket requirement levels and validation
+  url: https://phenopacket-schema.readthedocs.io/en/latest/requirements.html
+  type: technical-documentation
+  publisher: phenopacket-schema.readthedocs.io
+  accessed_on: '2026-08-02'
 - id: pmc-ncbi-nlm-nih-gov-articles-pmc8444265
   title: ISA-JSON
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8444265/
   type: technical-documentation
   publisher: pmc.ncbi.nlm.nih.gov
   accessed_on: '2026-08-01'
+- id: proteowizard-sourceforge-mzml
+  title: ProteoWizard mzML implementation
+  url: https://proteowizard.sourceforge.io/formats/mzml.html
+  type: implementation-repository
+  publisher: ProteoWizard
+  accessed_on: '2026-08-02'
+- id: psidev-info-mzml
+  title: HUPO-PSI mzML
+  url: https://www.psidev.info/mzML
+  type: specification
+  publisher: HUPO-PSI
+  accessed_on: '2026-08-02'
+- id: psidev-info-root
+  title: Proteomics Standards Initiative
+  url: https://www.psidev.info/
+  type: governance-source
+  publisher: HUPO-PSI
+  accessed_on: '2026-08-02'
 - id: pub-orcid-org-v3-0
   title: ORCID
   url: https://pub.orcid.org/v3.0/
@@ -1525,6 +2236,12 @@ references:
   type: specification
   publisher: purl.dataone.org
   accessed_on: '2026-08-01'
+- id: pymzml-readthedocs
+  title: pymzML reader documentation
+  url: https://pymzml.readthedocs.io/en/latest/
+  type: implementation-repository
+  publisher: pymzML
+  accessed_on: '2026-08-02'
 - id: qudt-org-root
   title: QUDT
   url: https://www.qudt.org/
@@ -1597,6 +2314,12 @@ references:
   type: governance-source
   publisher: ror.org
   accessed_on: '2026-08-01'
+- id: sbml-org-level-3-version-2-core-release-2
+  title: SBML Level 3 Version 2 Core Release 2
+  url: https://sbml.org/documents/specifications/level-3/version-2/core/release-2/
+  type: specification
+  publisher: sbml.org
+  accessed_on: '2026-08-02'
 - id: sbml-org-root
   title: SBML community
   url: https://sbml.org/
@@ -1645,6 +2368,24 @@ references:
   type: technical-documentation
   publisher: sdmx.org
   accessed_on: '2026-08-01'
+- id: sed-ml-org-root
+  title: SED-ML community
+  url: https://sed-ml.org/
+  type: governance-source
+  publisher: sed-ml.org
+  accessed_on: '2026-08-02'
+- id: sed-ml-org-showcase
+  title: SED-ML software tools and libraries
+  url: https://sed-ml.org/showcase.html
+  type: registry-record
+  publisher: sed-ml.org
+  accessed_on: '2026-08-02'
+- id: sed-ml-org-specifications
+  title: SED-ML Level 1 Version 5 specification
+  url: https://sed-ml.org/specifications.html
+  type: specification
+  publisher: sed-ml.org
+  accessed_on: '2026-08-02'
 - id: signposting-org-fair
   title: FAIR Signposting specification
   url: https://signposting.org/FAIR/
@@ -1699,6 +2440,24 @@ references:
   type: specification
   publisher: standards.ieee.org
   accessed_on: '2026-08-01'
+- id: star-bris-ac-uk-stilts
+  title: STILTS 3.5-5
+  url: https://www.star.bris.ac.uk/mbt/stilts/
+  type: technical-documentation
+  publisher: star.bris.ac.uk
+  accessed_on: '2026-08-02'
+- id: star-bris-ac-uk-stilts-taplint
+  title: STILTS taplint
+  url: https://www.star.bris.ac.uk/~mbt/stilts/sun256/taplint.html
+  type: validator
+  publisher: star.bris.ac.uk
+  accessed_on: '2026-08-02'
+- id: star-bris-ac-uk-stilts-votlint
+  title: STILTS votlint
+  url: https://www.star.bris.ac.uk/~mbt/stilts/sun256/votlint.html
+  type: validator
+  publisher: star.bris.ac.uk
+  accessed_on: '2026-08-02'
 - id: support-datacite-org-docs-api
   title: DataCite Metadata Schema and REST API
   url: https://support.datacite.org/docs/api
@@ -1723,6 +2482,12 @@ references:
   type: governance-source
   publisher: tdwg.org
   accessed_on: '2026-08-01'
+- id: tellurium-readthedocs-quickstart
+  title: Tellurium SBML quick start
+  url: https://tellurium.readthedocs.io/en/latest/quickstart.html
+  type: technical-documentation
+  publisher: tellurium.readthedocs.io
+  accessed_on: '2026-08-02'
 - id: tib-eu-root
   title: TIB Leibniz Information Centre for Science and Technology
   url: https://www.tib.eu/
@@ -1735,6 +2500,24 @@ references:
   type: specification
   publisher: ucum.org
   accessed_on: '2026-08-01'
+- id: vrs-ga4gh-org-computed-identifiers
+  title: VRS computed identifiers
+  url: https://vrs.ga4gh.org/en/stable/conventions/computed_identifiers.html
+  type: technical-documentation
+  publisher: vrs.ga4gh.org
+  accessed_on: '2026-08-02'
+- id: vrs-ga4gh-org-releases-2-0
+  title: VRS 2.0 release notes
+  url: https://vrs.ga4gh.org/en/stable/releases/2.0.html
+  type: technical-documentation
+  publisher: vrs.ga4gh.org
+  accessed_on: '2026-08-02'
+- id: vrs-ga4gh-org-stable
+  title: GA4GH Variation Representation Specification
+  url: https://vrs.ga4gh.org/en/stable/
+  type: specification
+  publisher: vrs.ga4gh.org
+  accessed_on: '2026-08-02'
 - id: w3-org-2009-08-skos-reference-skos-html
   title: Simple Knowledge Organization System (SKOS)
   url: https://www.w3.org/2009/08/skos-reference/skos.html
@@ -1789,6 +2572,12 @@ references:
   type: specification
   publisher: w3id.org
   accessed_on: '2026-08-01'
+- id: workflowhub-eu-developer-trs
+  title: WorkflowHub TRS API documentation
+  url: https://about.workflowhub.eu/developer/trs/
+  type: api-documentation
+  publisher: about.workflowhub.eu
+  accessed_on: '2026-08-02'
 - id: workflowhub-eu-root
   title: WorkflowHub / ELIXIR
   url: https://workflowhub.eu/
@@ -1825,693 +2614,3 @@ references:
   type: specification
   publisher: zitniklab.hms.harvard.edu
   accessed_on: '2026-08-01'
-- id: archivematica-adr-0006-bagit
-  title: Archivematica ADR 0006 — Use BagIt to package transfers
-  url: https://github.com/archivematica/archivematica-architectural-decisions/blob/main/0006-use-bagit-to-package-transfers.md
-  type: technical-documentation
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: arvados-org-cwl
-  title: Arvados — Running CWL workflows
-  url: https://doc.arvados.org/user/cwl/index.html
-  type: technical-documentation
-  publisher: arvados.org
-  accessed_on: '2026-08-02'
-- id: github-com-artefactual-archivematica
-  title: Archivematica digital preservation system
-  url: https://github.com/artefactual/archivematica
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: github-com-arvados-arvados
-  title: Arvados platform (CWL runner)
-  url: https://github.com/arvados/arvados
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: miniwdl-readthedocs-getting-started
-  title: miniwdl documentation — Getting started
-  url: https://miniwdl.readthedocs.io/en/latest/getting_started.html
-  type: technical-documentation
-  publisher: readthedocs.io
-  accessed_on: '2026-08-02'
-- id: nomad-lab-optimade-info
-  title: NOMAD OPTIMADE API info endpoint
-  url: https://nomad-lab.eu/prod/rae/optimade/v1/info
-  type: api-documentation
-  publisher: nomad-lab.eu
-  accessed_on: '2026-08-02'
-- id: optimade-materialsproject-base
-  title: Materials Project OPTIMADE base URL
-  url: https://optimade.materialsproject.org/
-  type: api-documentation
-  publisher: materialsproject.org
-  accessed_on: '2026-08-02'
-- id: optimade-providers-dashboard-mp
-  title: OPTIMADE provider dashboard — Materials Project
-  url: https://www.optimade.org/providers-dashboard/providers/mp.html
-  type: registry-record
-  publisher: optimade.org
-  accessed_on: '2026-08-02'
-- id: optimade-providers-dashboard-nmd
-  title: OPTIMADE provider dashboard — NOMAD
-  url: https://www.optimade.org/providers-dashboard/providers/nmd.html
-  type: registry-record
-  publisher: optimade.org
-  accessed_on: '2026-08-02'
-- id: workflowhub-eu-developer-trs
-  title: WorkflowHub TRS API documentation
-  url: https://about.workflowhub.eu/developer/trs/
-  type: api-documentation
-  publisher: about.workflowhub.eu
-  accessed_on: '2026-08-02'
-- id: sbml-org-level-3-version-2-core-release-2
-  title: SBML Level 3 Version 2 Core Release 2
-  url: https://sbml.org/documents/specifications/level-3/version-2/core/release-2/
-  type: specification
-  publisher: sbml.org
-  accessed_on: '2026-08-02'
-- id: github-com-copasi-copasi
-  title: COPASI
-  url: https://github.com/copasi/COPASI
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: copasi-org-sbml-import-export
-  title: COPASI SBML import and export
-  url: https://copasi.org/Support/User_Manual/Importing_and_Exporting/Importing_and_Exporting_SBML_Files/
-  type: technical-documentation
-  publisher: copasi.org
-  accessed_on: '2026-08-02'
-- id: github-com-sys-bio-tellurium
-  title: Tellurium
-  url: https://github.com/sys-bio/tellurium
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: tellurium-readthedocs-quickstart
-  title: Tellurium SBML quick start
-  url: https://tellurium.readthedocs.io/en/latest/quickstart.html
-  type: technical-documentation
-  publisher: tellurium.readthedocs.io
-  accessed_on: '2026-08-02'
-- id: sed-ml-org-specifications
-  title: SED-ML Level 1 Version 5 specification
-  url: https://sed-ml.org/specifications.html
-  type: specification
-  publisher: sed-ml.org
-  accessed_on: '2026-08-02'
-- id: sed-ml-org-root
-  title: SED-ML community
-  url: https://sed-ml.org/
-  type: governance-source
-  publisher: sed-ml.org
-  accessed_on: '2026-08-02'
-- id: sed-ml-org-showcase
-  title: SED-ML software tools and libraries
-  url: https://sed-ml.org/showcase.html
-  type: registry-record
-  publisher: sed-ml.org
-  accessed_on: '2026-08-02'
-- id: github-com-fbergmann-libsedml
-  title: libSEDML
-  url: https://github.com/fbergmann/libSEDML
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: copasi-org-sedml-import-export
-  title: COPASI SED-ML import and export
-  url: https://copasi.org/Support/User_Manual/Importing_and_Exporting/Importing_and_Exporting_SEDML_Files/
-  type: technical-documentation
-  publisher: copasi.org
-  accessed_on: '2026-08-02'
-- id: cellml-org-specifications-cellml-2-0
-  title: CellML 2.0 specification
-  url: https://www.cellml.org/specifications/cellml_2.0/
-  type: specification
-  publisher: cellml.org
-  accessed_on: '2026-08-02'
-- id: cellml-org-root
-  title: CellML community
-  url: https://www.cellml.org/
-  type: governance-source
-  publisher: cellml.org
-  accessed_on: '2026-08-02'
-- id: github-com-cellml-libcellml
-  title: libCellML
-  url: https://github.com/cellml/libcellml
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: libcellml-org-root
-  title: libCellML
-  url: https://libcellml.org/
-  type: technical-documentation
-  publisher: libcellml.org
-  accessed_on: '2026-08-02'
-- id: opencor-ws-simulation-experiment-view
-  title: OpenCOR Simulation Experiment view
-  url: https://opencor.ws/user/plugins/simulation/simulationExperimentView.html
-  type: technical-documentation
-  publisher: opencor.ws
-  accessed_on: '2026-08-02'
-- id: bids-specification-readthedocs-stable
-  title: Brain Imaging Data Structure 1.11.1
-  url: https://bids-specification.readthedocs.io/en/stable/
-  type: specification
-  publisher: bids-specification.readthedocs.io
-  accessed_on: '2026-08-02'
-- id: bids-neuroimaging-io-root
-  title: BIDS community
-  url: https://bids.neuroimaging.io/
-  type: governance-source
-  publisher: bids.neuroimaging.io
-  accessed_on: '2026-08-02'
-- id: github-com-bids-standard-bids-validator
-  title: BIDS Validator
-  url: https://github.com/bids-standard/bids-validator
-  type: validator
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: bids-validator-readthedocs-web
-  title: BIDS Validator web interface
-  url: https://bids-validator.readthedocs.io/en/latest/user_guide/web.html
-  type: validator
-  publisher: bids-validator.readthedocs.io
-  accessed_on: '2026-08-02'
-- id: github-com-mne-tools-mne-bids
-  title: MNE-BIDS
-  url: https://github.com/mne-tools/mne-bids
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: mne-tools-mne-bids-stable
-  title: MNE-BIDS documentation
-  url: https://mne.tools/mne-bids/stable/
-  type: technical-documentation
-  publisher: mne.tools
-  accessed_on: '2026-08-02'
-- id: github-com-nipy-heudiconv
-  title: HeuDiConv
-  url: https://github.com/nipy/heudiconv
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: heudiconv-readthedocs-root
-  title: HeuDiConv documentation
-  url: https://heudiconv.readthedocs.io/
-  type: technical-documentation
-  publisher: heudiconv.readthedocs.io
-  accessed_on: '2026-08-02'
-- id: nwb-org-nwb-schema
-  title: NWB Schema
-  url: https://nwb.org/tools/core/nwb-schema/
-  type: specification
-  publisher: nwb.org
-  accessed_on: '2026-08-02'
-- id: nwb-schema-readthedocs-root
-  title: NWB format specification
-  url: https://nwb-schema.readthedocs.io/
-  type: normative-schema
-  publisher: nwb-schema.readthedocs.io
-  accessed_on: '2026-08-02'
-- id: nwb-org-about
-  title: About Neurodata Without Borders
-  url: https://nwb.org/about-nwb/
-  type: governance-source
-  publisher: nwb.org
-  accessed_on: '2026-08-02'
-- id: github-com-neurodatawithoutborders-pynwb
-  title: PyNWB
-  url: https://github.com/NeurodataWithoutBorders/pynwb
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: github-com-neurodatawithoutborders-matnwb
-  title: MatNWB
-  url: https://github.com/NeurodataWithoutBorders/matnwb
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: nwb-org-aqnwb
-  title: AqNWB
-  url: https://nwb.org/aqnwb/
-  type: technical-documentation
-  publisher: nwb.org
-  accessed_on: '2026-08-02'
-- id: github-com-neurodatawithoutborders-aqnwb
-  title: AqNWB
-  url: https://github.com/NeurodataWithoutBorders/aqnwb
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: nwb-org-nwbinspector
-  title: NWB Inspector
-  url: https://nwb.org/tools/core/nwbinspector/
-  type: validator
-  publisher: nwb.org
-  accessed_on: '2026-08-02'
-- id: github-com-neurodatawithoutborders-nwbinspector
-  title: NWB Inspector
-  url: https://github.com/NeurodataWithoutBorders/nwbinspector
-  type: validator
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: ngff-openmicroscopy-org-0-5
-  title: OME-Zarr specification 0.5
-  url: https://ngff.openmicroscopy.org/0.5/
-  type: specification
-  publisher: ngff.openmicroscopy.org
-  accessed_on: '2026-08-02'
-- id: ngff-openmicroscopy-org-tools
-  title: OME-Zarr tools and implementations
-  url: https://ngff.openmicroscopy.org/tools/
-  type: registry-record
-  publisher: ngff.openmicroscopy.org
-  accessed_on: '2026-08-02'
-- id: github-com-ome-ngff
-  title: OME-NGFF specification repository
-  url: https://github.com/ome/ngff
-  type: governance-source
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: github-com-ome-ome-zarr-py
-  title: ome-zarr-py
-  url: https://github.com/ome/ome-zarr-py
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: github-com-glencoesoftware-bioformats2raw
-  title: bioformats2raw
-  url: https://github.com/glencoesoftware/bioformats2raw
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: ome-github-io-ome-ngff-validator
-  title: OME-NGFF Validator
-  url: https://ome.github.io/ome-ngff-validator/
-  type: validator
-  publisher: ome.github.io
-  accessed_on: '2026-08-02'
-- id: fits-gsfc-nasa-gov-fits-standard
-  title: FITS Standard 4.0
-  url: https://fits.gsfc.nasa.gov/fits_standard.html
-  type: specification
-  publisher: fits.gsfc.nasa.gov
-  accessed_on: '2026-08-02'
-- id: fits-gsfc-nasa-gov-iau-fwg-rules
-  title: IAU FITS Working Group rules
-  url: https://fits.gsfc.nasa.gov/iaufwg/iaufwg_rules.html
-  type: governance-source
-  publisher: fits.gsfc.nasa.gov
-  accessed_on: '2026-08-02'
-- id: fits-gsfc-nasa-gov-registry
-  title: Registry of FITS Conventions
-  url: https://fits.gsfc.nasa.gov/fits_registry.html
-  type: registry-record
-  publisher: fits.gsfc.nasa.gov
-  accessed_on: '2026-08-02'
-- id: heasarc-gsfc-nasa-gov-cfitsio
-  title: CFITSIO 4.6.4
-  url: https://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html
-  type: implementation-repository
-  publisher: heasarc.gsfc.nasa.gov
-  accessed_on: '2026-08-02'
-- id: docs-astropy-org-fits
-  title: Astropy FITS file handling
-  url: https://docs.astropy.org/en/stable/io/fits/
-  type: technical-documentation
-  publisher: docs.astropy.org
-  accessed_on: '2026-08-02'
-- id: docs-astropy-org-fits-verification
-  title: Astropy FITS verification
-  url: https://docs.astropy.org/en/stable/io/fits/usage/verification.html
-  type: validator
-  publisher: docs.astropy.org
-  accessed_on: '2026-08-02'
-- id: ivoa-net-documents-tap
-  title: IVOA Table Access Protocol 1.1
-  url: https://ivoa.net/documents/TAP/
-  type: specification
-  publisher: ivoa.net
-  accessed_on: '2026-08-02'
-- id: ivoa-net-about
-  title: International Virtual Observatory Alliance
-  url: https://www.ivoa.net/about/what-is-ivoa.html
-  type: governance-source
-  publisher: ivoa.net
-  accessed_on: '2026-08-02'
-- id: github-com-ivoa-std-tap
-  title: IVOA TAP specification repository
-  url: https://github.com/ivoa-std/TAP
-  type: governance-source
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: github-com-opencadc-tap
-  title: OpenCADC TAP
-  url: https://github.com/opencadc/tap
-  type: implementation-repository
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: dachs-doc-readthedocs-io
-  title: GAVO DaCHS 2.9 documentation
-  url: https://dachs-doc.readthedocs.io/
-  type: technical-documentation
-  publisher: dachs-doc.readthedocs.io
-  accessed_on: '2026-08-02'
-- id: star-bris-ac-uk-stilts-taplint
-  title: STILTS taplint
-  url: https://www.star.bris.ac.uk/~mbt/stilts/sun256/taplint.html
-  type: validator
-  publisher: star.bris.ac.uk
-  accessed_on: '2026-08-02'
-- id: ivoa-net-documents-votable
-  title: IVOA VOTable 1.5
-  url: https://www.ivoa.net/documents/VOTable/
-  type: specification
-  publisher: ivoa.net
-  accessed_on: '2026-08-02'
-- id: github-com-ivoa-std-votable
-  title: IVOA VOTable specification repository
-  url: https://github.com/ivoa-std/VOTable
-  type: governance-source
-  publisher: github.com
-  accessed_on: '2026-08-02'
-- id: docs-astropy-org-votable
-  title: Astropy VOTable handling
-  url: https://docs.astropy.org/en/stable/io/votable/index.html
-  type: technical-documentation
-  publisher: docs.astropy.org
-  accessed_on: '2026-08-02'
-- id: star-bris-ac-uk-stilts
-  title: STILTS 3.5-5
-  url: https://www.star.bris.ac.uk/mbt/stilts/
-  type: technical-documentation
-  publisher: star.bris.ac.uk
-  accessed_on: '2026-08-02'
-- id: star-bris-ac-uk-stilts-votlint
-  title: STILTS votlint
-  url: https://www.star.bris.ac.uk/~mbt/stilts/sun256/votlint.html
-  type: validator
-  publisher: star.bris.ac.uk
-  accessed_on: '2026-08-02'
-- id: vrs-ga4gh-org-stable
-  title: GA4GH Variation Representation Specification
-  url: https://vrs.ga4gh.org/en/stable/
-  type: specification
-  publisher: vrs.ga4gh.org
-  accessed_on: '2026-08-02'
-- id: vrs-ga4gh-org-releases-2-0
-  title: VRS 2.0 release notes
-  url: https://vrs.ga4gh.org/en/stable/releases/2.0.html
-  type: technical-documentation
-  publisher: vrs.ga4gh.org
-  accessed_on: '2026-08-02'
-- id: vrs-ga4gh-org-computed-identifiers
-  title: VRS computed identifiers
-  url: https://vrs.ga4gh.org/en/stable/conventions/computed_identifiers.html
-  type: technical-documentation
-  publisher: vrs.ga4gh.org
-  accessed_on: '2026-08-02'
-- id: github-com-ga4gh-vrs
-  title: GA4GH VRS specification repository
-  url: https://github.com/ga4gh/vrs
-  type: normative-schema
-  publisher: github.com/ga4gh
-  accessed_on: '2026-08-02'
-- id: github-com-ga4gh-vrs-python
-  title: GA4GH VRS Python implementation
-  url: https://github.com/ga4gh/vrs-python
-  type: implementation-repository
-  publisher: github.com/ga4gh
-  accessed_on: '2026-08-02'
-- id: github-com-ga4gh-vrs-python-tests-validation
-  title: VRS Python specification validation tests
-  url: https://github.com/ga4gh/vrs-python/tree/main/tests/validation
-  type: conformance-suite
-  publisher: github.com/ga4gh
-  accessed_on: '2026-08-02'
-- id: ga4gh-org-product-phenopackets
-  title: GA4GH Phenopackets
-  url: https://www.ga4gh.org/product/phenopackets/
-  type: governance-source
-  publisher: ga4gh.org
-  accessed_on: '2026-08-02'
-- id: phenopacket-schema-readthedocs-latest
-  title: Phenopacket Schema v2 documentation
-  url: https://phenopacket-schema.readthedocs.io/en/latest/
-  type: specification
-  publisher: phenopacket-schema.readthedocs.io
-  accessed_on: '2026-08-02'
-- id: phenopacket-schema-readthedocs-requirements
-  title: Phenopacket requirement levels and validation
-  url: https://phenopacket-schema.readthedocs.io/en/latest/requirements.html
-  type: technical-documentation
-  publisher: phenopacket-schema.readthedocs.io
-  accessed_on: '2026-08-02'
-- id: github-com-phenopackets-phenopacket-schema
-  title: Phenopacket Schema repository and language bindings
-  url: https://github.com/phenopackets/phenopacket-schema
-  type: implementation-repository
-  publisher: github.com/phenopackets
-  accessed_on: '2026-08-02'
-- id: github-com-phenopackets-phenopacket-tools
-  title: Phenopacket tools and validator
-  url: https://github.com/phenopackets/phenopacket-tools
-  type: validator
-  publisher: github.com/phenopackets
-  accessed_on: '2026-08-02'
-- id: ga4gh-org-product-htsget
-  title: GA4GH htsget
-  url: https://www.ga4gh.org/product/htsget/
-  type: governance-source
-  publisher: ga4gh.org
-  accessed_on: '2026-08-02'
-- id: github-com-samtools-hts-specs-htsget
-  title: htsget protocol specification
-  url: https://github.com/samtools/hts-specs/blob/master/Htsget.md
-  type: specification
-  publisher: github.com/samtools
-  accessed_on: '2026-08-02'
-- id: github-com-ga4gh-htsget-refserver
-  title: GA4GH htsget reference server
-  url: https://github.com/ga4gh/htsget-refserver
-  type: implementation-repository
-  publisher: github.com/ga4gh
-  accessed_on: '2026-08-02'
-- id: github-com-samtools-htslib
-  title: HTSlib htsget-capable client library
-  url: https://github.com/samtools/htslib
-  type: implementation-repository
-  publisher: github.com/samtools
-  accessed_on: '2026-08-02'
-- id: ga4gh-github-io-refget
-  title: GA4GH refget specifications
-  url: https://ga4gh.github.io/refget/
-  type: governance-source
-  publisher: ga4gh.github.io
-  accessed_on: '2026-08-02'
-- id: ga4gh-github-io-refget-sequences
-  title: Refget Sequences v2.0.0
-  url: https://ga4gh.github.io/refget/sequences/
-  type: specification
-  publisher: ga4gh.github.io
-  accessed_on: '2026-08-02'
-- id: github-com-ga4gh-refget
-  title: GA4GH refget specification and compliance tooling
-  url: https://github.com/ga4gh/refget
-  type: implementation-repository
-  publisher: github.com/ga4gh
-  accessed_on: '2026-08-02'
-- id: ga4gh-github-io-refget-compliance
-  title: Refget compliance report
-  url: https://ga4gh.github.io/refget-compliance/
-  type: interoperability-result
-  publisher: ga4gh.github.io
-  accessed_on: '2026-08-02'
-- id: ga4gh-github-io-refget-compliance-ena-server
-  title: ENA CRAM Reference Registry compliance report
-  url: https://ga4gh.github.io/refget-compliance/reports/ena-server.html
-  type: interoperability-result
-  publisher: ga4gh.github.io
-  accessed_on: '2026-08-02'
-- id: ga4gh-github-io-refget-compliance-refget-server-perl
-  title: Refget reference server compliance report
-  url: https://ga4gh.github.io/refget-compliance/reports/refget-server-perl.html
-  type: interoperability-result
-  publisher: ga4gh.github.io
-  accessed_on: '2026-08-02'
-- id: github-com-andrewyatz-refget-server-perl
-  title: Refget reference server Perl implementation
-  url: https://github.com/andrewyatz/refget-server-perl
-  type: implementation-repository
-  publisher: github.com/andrewyatz
-  accessed_on: '2026-08-02'
-- id: genomicsstandardsconsortium-github-mixs-docs
-  title: MIxS specification documentation
-  url: https://genomicsstandardsconsortium.github.io/mixs/
-  type: specification
-  publisher: Genomic Standards Consortium
-  accessed_on: '2026-08-02'
-- id: github-com-genomicsstandardsconsortium-mixs
-  title: MIxS source and LinkML implementation
-  url: https://github.com/GenomicsStandardsConsortium/mixs
-  type: implementation-repository
-  publisher: GitHub
-  accessed_on: '2026-08-02'
-- id: github-com-genomicsstandardsconsortium-mixs-tests
-  title: MIxS valid and invalid example tests
-  url: https://github.com/GenomicsStandardsConsortium/mixs/tree/main/tests
-  type: conformance-suite
-  publisher: GitHub
-  accessed_on: '2026-08-02'
-- id: gensc-org-root
-  title: Genomic Standards Consortium
-  url: https://www.gensc.org/
-  type: governance-source
-  publisher: Genomic Standards Consortium
-  accessed_on: '2026-08-02'
-- id: eml-ecoinformatics-org-root
-  title: Ecological Metadata Language 2.2.0
-  url: https://eml.ecoinformatics.org/
-  type: specification
-  publisher: EML community
-  accessed_on: '2026-08-02'
-- id: eml-ecoinformatics-org-schema
-  title: EML XML Schema documentation
-  url: https://eml.ecoinformatics.org/eml-schema
-  type: normative-schema
-  publisher: EML community
-  accessed_on: '2026-08-02'
-- id: eml-ecoinformatics-org-validation
-  title: EML validation rules and validity parser
-  url: https://eml.ecoinformatics.org/validation-and-content-references
-  type: validator
-  publisher: EML community
-  accessed_on: '2026-08-02'
-- id: github-com-nceas-eml
-  title: EML specification source and validator
-  url: https://github.com/NCEAS/eml
-  type: implementation-repository
-  publisher: GitHub
-  accessed_on: '2026-08-02'
-- id: docs-ropensci-org-eml
-  title: rOpenSci EML package
-  url: https://docs.ropensci.org/EML/
-  type: implementation-repository
-  publisher: rOpenSci
-  accessed_on: '2026-08-02'
-- id: docs-ropensci-org-emld-eml-validate
-  title: rOpenSci emld EML validator
-  url: https://docs.ropensci.org/emld/reference/eml_validate.html
-  type: validator
-  publisher: rOpenSci
-  accessed_on: '2026-08-02'
-- id: psidev-info-mzml
-  title: HUPO-PSI mzML
-  url: https://www.psidev.info/mzML
-  type: specification
-  publisher: HUPO-PSI
-  accessed_on: '2026-08-02'
-- id: github-com-hupo-psi-mzml
-  title: HUPO-PSI mzML specification repository
-  url: https://github.com/HUPO-PSI/mzML
-  type: implementation-repository
-  publisher: GitHub
-  accessed_on: '2026-08-02'
-- id: github-com-hupo-psi-psi-ms-cv
-  title: PSI-MS controlled vocabulary
-  url: https://github.com/HUPO-PSI/psi-ms-CV
-  type: normative-schema
-  publisher: GitHub
-  accessed_on: '2026-08-02'
-- id: proteowizard-sourceforge-mzml
-  title: ProteoWizard mzML implementation
-  url: https://proteowizard.sourceforge.io/formats/mzml.html
-  type: implementation-repository
-  publisher: ProteoWizard
-  accessed_on: '2026-08-02'
-- id: openms-mzmlfile
-  title: OpenMS mzML reader and writer
-  url: https://openms.de/documentation/classOpenMS_1_1MzMLFile.html
-  type: implementation-repository
-  publisher: OpenMS
-  accessed_on: '2026-08-02'
-- id: openms-mzmlvalidator
-  title: OpenMS mzML semantic validator
-  url: https://openms.de/current_doxygen/html/classOpenMS_1_1Internal_1_1MzMLValidator.html
-  type: validator
-  publisher: OpenMS
-  accessed_on: '2026-08-02'
-- id: pymzml-readthedocs
-  title: pymzML reader documentation
-  url: https://pymzml.readthedocs.io/en/latest/
-  type: implementation-repository
-  publisher: pymzML
-  accessed_on: '2026-08-02'
-- id: psidev-info-root
-  title: Proteomics Standards Initiative
-  url: https://www.psidev.info/
-  type: governance-source
-  publisher: HUPO-PSI
-  accessed_on: '2026-08-02'
-- id: ohdsi-common-data-model
-  title: OMOP Common Data Model
-  url: https://ohdsi.github.io/CommonDataModel/
-  type: specification
-  publisher: OHDSI
-  accessed_on: '2026-08-02'
-- id: github-com-ohdsi-common-data-model
-  title: OMOP Common Data Model source and DDL package
-  url: https://github.com/OHDSI/CommonDataModel
-  type: implementation-repository
-  publisher: GitHub
-  accessed_on: '2026-08-02'
-- id: ohdsi-data-quality-dashboard
-  title: OMOP DataQualityDashboard
-  url: https://ohdsi.github.io/DataQualityDashboard/
-  type: validator
-  publisher: OHDSI
-  accessed_on: '2026-08-02'
-- id: ohdsi-data-quality-dashboard-cdmfield
-  title: OMOP CDM field conformance check
-  url: https://ohdsi.github.io/DataQualityDashboard/articles/checks/cdmField.html
-  type: validator
-  publisher: OHDSI
-  accessed_on: '2026-08-02'
-- id: ohdsi-org-root
-  title: Observational Health Data Sciences and Informatics
-  url: https://www.ohdsi.org/
-  type: governance-source
-  publisher: OHDSI
-  accessed_on: '2026-08-02'
-- id: cdisc-odm-v2-0
-  title: CDISC Operational Data Model v2.0
-  url: https://www.cdisc.org/standards/data-exchange/odm-xml/odm-v2-0
-  type: specification
-  publisher: CDISC
-  accessed_on: '2026-08-02'
-- id: cdisc-data-exchange
-  title: CDISC Data Exchange standards
-  url: https://www.cdisc.org/standards/data-exchange
-  type: governance-source
-  publisher: CDISC
-  accessed_on: '2026-08-02'
-- id: cdisc-odm-linkml
-  title: CDISC ODM v2.0 LinkML model
-  url: https://cdisc-org.github.io/DataExchange-ODM-LinkML/
-  type: implementation-repository
-  publisher: CDISC
-  accessed_on: '2026-08-02'
-- id: cdisc-odm-implementation
-  title: CDISC ODM implementation guidance
-  url: https://www.cdisc.org/odm-implementation
-  type: technical-documentation
-  publisher: CDISC
-  accessed_on: '2026-08-02'
-- id: cdisc-org-root
-  title: Clinical Data Interchange Standards Consortium
-  url: https://www.cdisc.org/
-  type: governance-source
-  publisher: CDISC
-  accessed_on: '2026-08-02'

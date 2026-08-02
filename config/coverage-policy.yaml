@@ -102,3 +102,12 @@ standard_families:
   - cdisc-operational-data-model-odm
   - hl7-fhir
   - ga4gh-phenopackets
+  repository-preservation-layout:
+  - oxford-common-file-layout-ocfl
+  - bagit
+  - fair-signposting
+  general-data-packaging:
+  - data-package-standard
+  - ro-crate
+  - croissant
+  - combine-omex-archive

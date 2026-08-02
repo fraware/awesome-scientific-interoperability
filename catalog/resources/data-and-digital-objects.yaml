@@ -13,8 +13,8 @@ resources:
   - repositories
   - transfer systems
   mechanism: Manifest-based packaging and fixity verification for reliable transfer
-  summary: Manifest-based packaging format for transferring digital content with fixity and completeness
-    checks.
+  summary: Manifest-based packaging format for transferring digital content with fixity and 
+    completeness checks.
   maturity: established
   evidence_types:
   - normative-specification
@@ -66,8 +66,8 @@ resources:
   - data
   - metadata
   mechanism: Archive format bundling models, simulations, metadata, and related files
-  summary: Archive format bundling models, simulations, metadata, and related files; connects computational
-    models, simulation descriptions, data, and metadata.
+  summary: Archive format bundling models, simulations, metadata, and related files; connects 
+    computational models, simulation descriptions, data, and metadata.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -84,8 +84,8 @@ resources:
   - ref_id: github-com-semsproject-combinearchive
     role: implementation
   decision_basis: Mature domain package enabling interoperable computational biology studies.
-  boundary_note: Domain exemplar with strong relation to SED-ML and SBML; closest general alternative
-    RO-Crate remains in group A migration.
+  boundary_note: Domain exemplar with strong relation to SED-ML and SBML; closest general 
+    alternative RO-Crate remains in group A migration.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -126,8 +126,8 @@ resources:
   - landing pages
   - metadata and content resources
   mechanism: Typed HTTP Link relations exposing identifiers, metadata, licenses, and files
-  summary: Typed HTTP Link relations that let machine clients discover identifiers, metadata, licenses,
-    and files from repository landing pages.
+  summary: Typed HTTP Link relations that let machine clients discover identifiers, metadata, 
+    licenses, and files from repository landing pages.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -145,9 +145,10 @@ resources:
     role: technical-definition
   - ref_id: signposting-org-fair
     role: technical-definition
-  decision_basis: Lightweight operational bridge allowing machines to navigate research objects across
-    repositories.
-  boundary_note: Complements repository APIs and packaging formats; not a packaging or provenance standard.
+  decision_basis: Lightweight operational bridge allowing machines to navigate research objects 
+    across repositories.
+  boundary_note: Complements repository APIs and packaging formats; not a packaging or provenance 
+    standard.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -185,8 +186,8 @@ resources:
   - instruments
   - publications
   mechanism: JSON-LD research-object packaging with profiles and contextual entities
-  summary: JSON-LD packaging for exchanging data, software, workflows, people, instruments, and provenance
-    as a coherent research object.
+  summary: JSON-LD packaging for exchanging data, software, workflows, people, instruments, and 
+    provenance as a coherent research object.
   maturity: established
   evidence_types:
   - normative-specification
@@ -206,10 +207,10 @@ resources:
     role: implementation
   - ref_id: github-com-crs4-rocrate-validator
     role: implementation
-  decision_basis: One of the strongest cross-domain mechanisms for packaging heterogeneous scientific
-    objects and context.
-  boundary_note: Use profiles to distinguish specialized use cases; packaging is distinct from execution
-    provenance profiles.
+  decision_basis: One of the strongest cross-domain mechanisms for packaging heterogeneous 
+    scientific objects and context.
+  boundary_note: Use profiles to distinguish specialized use cases; packaging is distinct from 
+    execution provenance profiles.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -247,8 +248,8 @@ resources:
   - registries
   - metadata consumers
   mechanism: RO-Crate profile for packaging computational workflows and their metadata
-  summary: RO-Crate profile for publishing portable workflow definitions, metadata, diagrams, examples,
-    and tests.
+  summary: RO-Crate profile for publishing portable workflow definitions, metadata, diagrams, 
+    examples, and tests.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -262,8 +263,8 @@ resources:
     role: technical-definition
   - ref_id: workflowhub-eu-root
     role: stewardship
-  decision_basis: Connects workflow authors, registries, and downstream systems through a portable research
-    object.
+  decision_basis: Connects workflow authors, registries, and downstream systems through a portable 
+    research object.
   boundary_note: Distinct from execution provenance, which belongs to Workflow Run RO-Crate.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -302,8 +303,8 @@ resources:
   - archives
   - result consumers
   mechanism: Portable representation of workflow execution provenance and outputs
-  summary: RO-Crate profile for exchanging workflow-run inputs, outputs, software, execution records,
-    and provenance across workflow systems.
+  summary: RO-Crate profile for exchanging workflow-run inputs, outputs, software, execution 
+    records, and provenance across workflow systems.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -319,9 +320,10 @@ resources:
     role: stewardship
   - ref_id: github-com-researchobject-workflow-run-crate
     role: implementation
-  decision_basis: Direct cross-engine evidence format with multiple implementations and strong North-Star
-    utility.
-  boundary_note: Profile conformance does not alone prove semantic equivalence across implementations.
+  decision_basis: Direct cross-engine evidence format with multiple implementations and strong 
+    North-Star utility.
+  boundary_note: Profile conformance does not alone prove semantic equivalence across 
+    implementations.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -360,9 +362,10 @@ resources:
   - Workflow test definitions
   - monitoring services
   - CI systems
-  mechanism: Research-object profile for packaging workflow tests, inputs, expected outputs, and services
-  summary: Portable research-object profile for exchanging workflow test suites, inputs, expected outputs,
-    and test services.
+  mechanism: Research-object profile for packaging workflow tests, inputs, expected outputs, and 
+    services
+  summary: Portable research-object profile for exchanging workflow test suites, inputs, expected 
+    outputs, and test services.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -412,9 +415,10 @@ resources:
   - Diffractometers
   - structure databases
   - journals
-  mechanism: STAR-derived file syntax with machine-readable domain dictionaries and validation services
-  summary: IUCr dictionaries and file syntax for exchanging and archiving crystallographic and structural-science
-    data; connects diffractometers, structure databases, and journals.
+  mechanism: STAR-derived file syntax with machine-readable domain dictionaries and validation 
+    services
+  summary: IUCr dictionaries and file syntax for exchanging and archiving crystallographic and 
+    structural-science data; connects diffractometers, structure databases, and journals.
   maturity: established
   evidence_types:
   - normative-specification
@@ -435,8 +439,8 @@ resources:
     role: conformance
   - ref_id: github-com-comcifs-cif-core
     role: implementation
-  decision_basis: Authoritative structural-science exchange contract with journal and database adoption
-    plus public validation tooling.
+  decision_basis: Authoritative structural-science exchange contract with journal and database 
+    adoption plus public validation tooling.
   boundary_note: Crystallography and structural science scope; not a general materials-database API.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -471,8 +475,8 @@ resources:
   - digital-twin platforms
   - supplier models
   mechanism: FMU container with XML model description and C API for model exchange or co-simulation
-  summary: ZIP-packaged dynamic models with XML, C code, and co-simulation or model-exchange APIs; connects
-    simulation tools, digital-twin platforms, and supplier models.
+  summary: ZIP-packaged dynamic models with XML, C code, and co-simulation or model-exchange APIs; 
+    connects simulation tools, digital-twin platforms, and supplier models.
   maturity: established
   evidence_types:
   - normative-specification
@@ -492,8 +496,8 @@ resources:
     role: implementation
   - ref_id: github-com-modelica-fmi-cross-check
     role: conformance
-  decision_basis: De facto contract for exchanging dynamic simulation models across independent CAE and
-    systems-engineering tools.
+  decision_basis: De facto contract for exchanging dynamic simulation models across independent CAE 
+    and systems-engineering tools.
   boundary_note: Model container and runtime API, not a general workflow or provenance standard.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -526,8 +530,8 @@ resources:
   - analysis software
   - facility archives
   mechanism: HDF5 hierarchy rules, NXDL application definitions, and nxvalidate conformance checks
-  summary: HDF5-based application definitions and field dictionary for neutron, X-ray, and muon experimental
-    data; connects beamlines, analysis software, and facility archives.
+  summary: HDF5-based application definitions and field dictionary for neutron, X-ray, and muon 
+    experimental data; connects beamlines, analysis software, and facility archives.
   maturity: established
   evidence_types:
   - normative-specification
@@ -550,8 +554,8 @@ resources:
     role: conformance
   - ref_id: github-com-nexusformat-definitions
     role: implementation
-  decision_basis: Strongest documented HDF5 scientific profile for scattering-facility data exchange with
-    application definitions and validation.
+  decision_basis: Strongest documented HDF5 scientific profile for scattering-facility data exchange
+    with application definitions and validation.
   boundary_note: Scientific profile over HDF5, not generic HDF5; facility-scoped domain standard.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
@@ -586,8 +590,8 @@ resources:
   - clients
   - analysis pipelines
   mechanism: OGC API - Common REST resources for coverage collections, schemas, and retrieval
-  summary: REST API for discovering, querying, and retrieving raster coverages and data cubes; connects
-    geospatial services, clients, and analysis pipelines.
+  summary: REST API for discovering, querying, and retrieving raster coverages and data cubes; 
+    connects geospatial services, clients, and analysis pipelines.
   maturity: emerging
   evidence_types:
   - normative-specification
@@ -604,10 +608,10 @@ resources:
     role: technical-definition
   - ref_id: docs-ogc-org-is
     role: technical-definition
-  decision_basis: Draft OGC coverage API with documented reference implementation support; strongest listed
-    option for coverage retrieval where STAC catalogs assets only.
-  boundary_note: Emerging draft; no public conformance suite cited at public-suite strength. Data access
-    API, not a file-format or semantic observation model.
+  decision_basis: Draft OGC coverage API with documented reference implementation support; strongest
+    listed option for coverage retrieval where STAC catalogs assets only.
+  boundary_note: Emerging draft; no public conformance suite cited at public-suite strength. Data 
+    access API, not a file-format or semantic observation model.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -643,8 +647,8 @@ resources:
   - web services
   - geospatial databases
   mechanism: OGC API - Common REST endpoints for feature collections, items, and queryables
-  summary: REST API for creating, modifying, and querying vector feature collections; connects GIS clients,
-    web services, and geospatial databases.
+  summary: REST API for creating, modifying, and querying vector feature collections; connects GIS 
+    clients, web services, and geospatial databases.
   maturity: established
   evidence_types:
   - normative-specification
@@ -662,10 +666,10 @@ resources:
     role: technical-definition
   - ref_id: github-com-opengeospatial-ets-ogcapi-features10
     role: conformance
-  decision_basis: Canonical REST replacement path for WFS-style vector feature exchange across independent
-    servers.
-  boundary_note: Feature geometry and properties access; not a catalog vocabulary or sensor semantics
-    layer.
+  decision_basis: Canonical REST replacement path for WFS-style vector feature exchange across 
+    independent servers.
+  boundary_note: Feature geometry and properties access; not a catalog vocabulary or sensor 
+    semantics layer.
   reviewed_on: '2026-08-01'
   review_due_on: '2027-08-01'
   primary_source_inspected: true
@@ -697,10 +701,10 @@ resources:
   - simulation tools
   - model repositories
   - analysis platforms
-  mechanism: Versioned XML model language with normative mathematical semantics and extensible Level 3
-    packages
-  summary: XML-based standard for exchanging quantitative systems-biology models, including species, reactions,
-    mathematical rules, events, units, and extensible Level 3 packages.
+  mechanism: Versioned XML model language with normative mathematical semantics and extensible Level
+    3 packages
+  summary: XML-based standard for exchanging quantitative systems-biology models, including species,
+    reactions, mathematical rules, events, units, and extensible Level 3 packages.
   maturity: established
   evidence_types:
   - normative-specification
@@ -741,10 +745,10 @@ resources:
     resource_id: combine-omex-archive
   - type: complements
     resource_id: sbml-test-suite
-  decision_basis: Canonical systems-biology model exchange language with public conformance tests and
-    separately operated simulation tools.
-  boundary_note: Encodes models and mathematical semantics; simulation procedures belong in SED-ML, and
-    multi-file packaging belongs in COMBINE/OMEX.
+  decision_basis: Canonical systems-biology model exchange language with public conformance tests 
+    and separately operated simulation tools.
+  boundary_note: Encodes models and mathematical semantics; simulation procedures belong in SED-ML, 
+    and multi-file packaging belongs in COMBINE/OMEX.
   reviewed_on: '2026-08-02'
   review_due_on: '2027-08-02'
   primary_source_inspected: true
@@ -768,10 +772,10 @@ resources:
   - physiological modeling tools
   - model repositories
   - simulation environments
-  mechanism: XML and MathML language for modular components, variables, units, imports, resets, and mathematical
-    relationships
-  summary: XML and MathML-based standard for exchanging modular mathematical models with explicit components,
-    variables, units, imports, resets, and reusable model composition.
+  mechanism: XML and MathML language for modular components, variables, units, imports, resets, and 
+    mathematical relationships
+  summary: XML and MathML-based standard for exchanging modular mathematical models with explicit 
+    components, variables, units, imports, resets, and reusable model composition.
   maturity: established
   evidence_types:
   - normative-specification
@@ -805,10 +809,10 @@ resources:
     resource_id: simulation-experiment-description-markup-language-sed-ml
   - type: complements
     resource_id: combine-omex-archive
-  decision_basis: Strongest maintained exchange standard for modular physiological and mathematical models
-    with explicit units and imports.
-  boundary_note: Optimized for modular equation-based models; reaction-network packages and broad biochemical
-    semantics are generally stronger in SBML.
+  decision_basis: Strongest maintained exchange standard for modular physiological and mathematical 
+    models with explicit units and imports.
+  boundary_note: Optimized for modular equation-based models; reaction-network packages and broad 
+    biochemical semantics are generally stronger in SBML.
   reviewed_on: '2026-08-02'
   review_due_on: '2027-08-02'
   primary_source_inspected: true
@@ -832,10 +836,10 @@ resources:
   - research datasets
   - data archives
   - analysis pipelines
-  mechanism: Standardized directory hierarchy, filenames, JSON and TSV sidecars, modality rules, derivatives,
-    and schema validation
-  summary: Community specification for organizing and describing neuroimaging, electrophysiology, microscopy,
-    behavioral, and derivative datasets through standardized paths and sidecar metadata.
+  mechanism: Standardized directory hierarchy, filenames, JSON and TSV sidecars, modality rules, 
+    derivatives, and schema validation
+  summary: Community specification for organizing and describing neuroimaging, electrophysiology, 
+    microscopy, behavioral, and derivative datasets through standardized paths and sidecar metadata.
   maturity: established
   evidence_types:
   - normative-specification
@@ -869,10 +873,10 @@ resources:
     resource_id: neurodata-without-borders-nwb
   - type: complements
     resource_id: dicomweb
-  decision_basis: Dominant cross-tool dataset organization and metadata contract for multimodal neuroscience,
-    with independent writers and a public validator.
-  boundary_note: Organizes datasets and metadata while retaining modality file formats; continuous neurophysiology
-    acquisition and rich internal data structures are stronger in NWB.
+  decision_basis: Dominant cross-tool dataset organization and metadata contract for multimodal 
+    neuroscience, with independent writers and a public validator.
+  boundary_note: Organizes datasets and metadata while retaining modality file formats; continuous 
+    neurophysiology acquisition and rich internal data structures are stronger in NWB.
   reviewed_on: '2026-08-02'
   review_due_on: '2027-02-02'
   primary_source_inspected: true
@@ -896,10 +900,10 @@ resources:
   - experimental datasets
   - analysis tools
   - data archives
-  mechanism: Extensible schema over HDF5 with typed neurodata objects, cross-language APIs, extensions,
-    and validation
-  summary: Extensible schema and HDF5-based standard for exchanging neurophysiology acquisition, processing,
-    analysis, behavioral, and experimental metadata across tools and archives.
+  mechanism: Extensible schema over HDF5 with typed neurodata objects, cross-language APIs, 
+    extensions, and validation
+  summary: Extensible schema and HDF5-based standard for exchanging neurophysiology acquisition, 
+    processing, analysis, behavioral, and experimental metadata across tools and archives.
   maturity: established
   evidence_types:
   - normative-specification
@@ -938,10 +942,10 @@ resources:
     resource_id: brain-imaging-data-structure-bids
   - type: complements
     resource_id: nexus
-  decision_basis: Strongest maintained standard for rich neurophysiology data exchange, cross-language
-    access, extensions, and schema-aware validation.
-  boundary_note: Defines internal neurophysiology data structures; BIDS is stronger for cross-dataset
-    organization, and NWB does not replace repository packaging or provenance records.
+  decision_basis: Strongest maintained standard for rich neurophysiology data exchange, 
+    cross-language access, extensions, and schema-aware validation.
+  boundary_note: Defines internal neurophysiology data structures; BIDS is stronger for 
+    cross-dataset organization, and NWB does not replace repository packaging or provenance records.
   reviewed_on: '2026-08-02'
   review_due_on: '2027-02-02'
   primary_source_inspected: true
@@ -965,10 +969,11 @@ resources:
   - object stores
   - image viewers
   - analysis platforms
-  mechanism: Versioned OME metadata and hierarchy rules over Zarr v3 for multiscale images, labels, plates,
-    wells, axes, and coordinate transformations
-  summary: Cloud-native OME-Zarr specification for exchanging chunked multidimensional bioimages, multiscales,
-    labels, plates, wells, axes, and coordinate metadata across storage and analysis systems.
+  mechanism: Versioned OME metadata and hierarchy rules over Zarr v3 for multiscale images, labels, 
+    plates, wells, axes, and coordinate transformations
+  summary: Cloud-native OME-Zarr specification for exchanging chunked multidimensional bioimages, 
+    multiscales, labels, plates, wells, axes, and coordinate metadata across storage and analysis 
+    systems.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -1006,10 +1011,10 @@ resources:
     resource_id: dicomweb
   - type: complements
     resource_id: ro-crate
-  decision_basis: Strongest current cloud and object-store exchange contract for multidimensional bioimaging,
-    with a released specification, active tools, and public validation.
-  boundary_note: OME-TIFF remains stronger for mature single-file exchange; OME-Zarr 0.5 depends on Zarr v3
-    and still contains transitional metadata, so version support must be recorded.
+  decision_basis: Strongest current cloud and object-store exchange contract for multidimensional 
+    bioimaging, with a released specification, active tools, and public validation.
+  boundary_note: OME-TIFF remains stronger for mature single-file exchange; OME-Zarr 0.5 depends on 
+    Zarr v3 and still contains transitional metadata, so version support must be recorded.
   reviewed_on: '2026-08-02'
   review_due_on: '2027-02-02'
   primary_source_inspected: true
@@ -1032,10 +1037,11 @@ resources:
   - mission archives
   - analysis libraries
   - visualization and catalog tools
-  mechanism: IAU-governed header-data-unit format for multidimensional arrays, images, ASCII and binary tables,
-    metadata, coordinates, and registered conventions
-  summary: IAU-governed astronomical exchange standard for multidimensional arrays, images, spectra, tables,
-    metadata, coordinates, and compressed scientific data across instruments, archives, and software.
+  mechanism: IAU-governed header-data-unit format for multidimensional arrays, images, ASCII and 
+    binary tables, metadata, coordinates, and registered conventions
+  summary: IAU-governed astronomical exchange standard for multidimensional arrays, images, spectra,
+    tables, metadata, coordinates, and compressed scientific data across instruments, archives, and 
+    software.
   maturity: established
   evidence_types:
   - normative-specification
@@ -1070,10 +1076,10 @@ resources:
     resource_id: ivoa-votable
   - type: complements
     resource_id: ivoa-table-access-protocol-tap
-  decision_basis: Foundational astronomy file and metadata contract with formal IAU governance, decades of
-    archive use, independent libraries, and public verification.
-  boundary_note: FITS is strongest for durable astronomical files; VOTable is stronger for VO table responses,
-    TAP for remote query services, and ASDF for some hierarchical modern data models.
+  decision_basis: Foundational astronomy file and metadata contract with formal IAU governance, 
+    decades of archive use, independent libraries, and public verification.
+  boundary_note: FITS is strongest for durable astronomical files; VOTable is stronger for VO table 
+    responses, TAP for remote query services, and ASDF for some hierarchical modern data models.
   reviewed_on: '2026-08-02'
   review_due_on: '2027-08-02'
   primary_source_inspected: true
@@ -1097,10 +1103,10 @@ resources:
   - astronomy catalogs
   - table clients
   - analysis applications
-  mechanism: Versioned XML table format with rich field metadata, arrays, links, parameters, and TABLEDATA,
-    BINARY, BINARY2, or FITS serializations
-  summary: IVOA XML table standard for exchanging astronomical tabular data, arrays, field metadata, links,
-    parameters, and multiple serializations across Virtual Observatory services and clients.
+  mechanism: Versioned XML table format with rich field metadata, arrays, links, parameters, and 
+    TABLEDATA, BINARY, BINARY2, or FITS serializations
+  summary: IVOA XML table standard for exchanging astronomical tabular data, arrays, field metadata,
+    links, parameters, and multiple serializations across Virtual Observatory services and clients.
   maturity: established
   evidence_types:
   - normative-specification
@@ -1134,10 +1140,10 @@ resources:
     resource_id: ivoa-table-access-protocol-tap
   - type: complements
     resource_id: flexible-image-transport-system-fits
-  decision_basis: Canonical Virtual Observatory table serialization with a current IVOA Recommendation, independent
-    readers and writers, and direct semantic validation.
-  boundary_note: VOTable serializes and annotates table results; TAP defines remote query behavior, while FITS
-    remains stronger for durable array and image files.
+  decision_basis: Canonical Virtual Observatory table serialization with a current IVOA 
+    Recommendation, independent readers and writers, and direct semantic validation.
+  boundary_note: VOTable serializes and annotates table results; TAP defines remote query behavior, 
+    while FITS remains stronger for durable array and image files.
   reviewed_on: '2026-08-02'
   review_due_on: '2027-08-02'
   primary_source_inspected: true
@@ -1161,10 +1167,10 @@ resources:
   - vendor converters
   - analysis software
   - proteomics repositories
-  mechanism: Controlled-vocabulary-backed XML schema for spectra, chromatograms, binary arrays, instrument configuration,
-    acquisition, and processing metadata
-  summary: HUPO-PSI XML standard for exchanging mass-spectrometry spectra, chromatograms, binary arrays, instrument
-    settings, acquisition context, and processing metadata.
+  mechanism: Controlled-vocabulary-backed XML schema for spectra, chromatograms, binary arrays, 
+    instrument configuration, acquisition, and processing metadata
+  summary: HUPO-PSI XML standard for exchanging mass-spectrometry spectra, chromatograms, binary 
+    arrays, instrument settings, acquisition context, and processing metadata.
   maturity: established
   evidence_types:
   - normative-specification
@@ -1206,10 +1212,10 @@ resources:
     resource_id: analytical-information-markup-language-animl
   - type: complements
     resource_id: allotrope-data-format
-  decision_basis: Dominant open exchange contract for mass-spectrometry primary data with controlled semantics,
-    independent software support, and direct semantic validation.
-  boundary_note: mzML focuses on mass-spectrometry data; AnIML and Allotrope cover broader analytical domains, and
-    downstream identification formats remain separate PSI family decisions.
+  decision_basis: Dominant open exchange contract for mass-spectrometry primary data with controlled
+    semantics, independent software support, and direct semantic validation.
+  boundary_note: mzML focuses on mass-spectrometry data; AnIML and Allotrope cover broader 
+    analytical domains, and downstream identification formats remain separate PSI family decisions.
   reviewed_on: '2026-08-02'
   review_due_on: '2027-08-02'
   primary_source_inspected: true
@@ -1234,10 +1240,10 @@ resources:
   - electronic data capture platforms
   - archives
   - submission pipelines
-  mechanism: Vendor-neutral study data and metadata model with audit, administrative, reference, query, and extension
-    structures serializable as XML, JSON, or other media types
-  summary: Vendor-neutral model for exchanging and archiving clinical study data, metadata, administrative records,
-    reference information, audit trails, and operational structures.
+  mechanism: Vendor-neutral study data and metadata model with audit, administrative, reference, 
+    query, and extension structures serializable as XML, JSON, or other media types
+  summary: Vendor-neutral model for exchanging and archiving clinical study data, metadata, 
+    administrative records, reference information, audit trails, and operational structures.
   maturity: maintained
   evidence_types:
   - normative-specification
@@ -1270,10 +1276,11 @@ resources:
     resource_id: hl7-fhir
   - type: complements
     resource_id: omop-common-data-model
-  decision_basis: Authoritative cross-system study-operation and archival contract for clinical research data and
-    metadata.
-  boundary_note: ODM exchanges study structures and operational records; OMOP supports observational analytics,
-    FHIR supports broader healthcare exchange, and deployed tools may implement earlier ODM versions.
+  decision_basis: Authoritative cross-system study-operation and archival contract for clinical 
+    research data and metadata.
+  boundary_note: ODM exchanges study structures and operational records; OMOP supports observational
+    analytics, FHIR supports broader healthcare exchange, and deployed tools may implement earlier 
+    ODM versions.
   reviewed_on: '2026-08-02'
   review_due_on: '2027-08-02'
   primary_source_inspected: true
@@ -1283,3 +1290,152 @@ resources:
     reviewed_on: '2026-08-02'
     conflict_disclosure: none identified; human maintainer approval required before merge
     decision_record: issue-44-batch-d
+- id: oxford-common-file-layout-ocfl
+  name: Oxford Common File Layout (OCFL)
+  url: https://ocfl.io/
+  section: Data and Digital Objects
+  resource_kind: packaging-format
+  interoperability_layers:
+  - Syntactic
+  - Evidentiary
+  - Operational
+  connects:
+  - Digital repositories
+  - preservation storage
+  - object inventories
+  - fixity systems
+  mechanism: Application-independent versioned object layout with inventories, digests, and named 
+    validation codes for durable repository storage roots
+  summary: Application-independent repository storage layout for versioned objects with inventories,
+    fixity, and rebuildable storage roots.
+  maturity: established
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - independent-implementation
+  - public-validator
+  - institutional-adoption
+  implementation_status: reference-and-others
+  conformance_status: public-validator
+  steward_id: oxford-common-file-layout-community
+  scientific_domains: []
+  integration_functions:
+  - digital-preservation
+  - research-data
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
+  source_refs:
+  - ref_id: ocfl-io-root
+    role: technical-definition
+  - ref_id: ocfl-io-1-1-spec
+    role: technical-definition
+  - ref_id: ocfl-io-1-1-validation-codes
+    role: conformance
+  - ref_id: github-com-ocfl-spec
+    role: stewardship
+  - ref_id: github-com-zimeon-ocfl-py
+    role: implementation
+  - ref_id: github-com-zimeon-ocfl-py
+    role: conformance
+  - ref_id: github-com-ocfl-ocfl-java
+    role: implementation
+  - ref_id: ocfl-io-implementations-wiki
+    role: adoption
+  relations:
+  - type: alternative-to
+    resource_id: bagit
+  - type: complements
+    resource_id: ro-crate
+  - type: complements
+    resource_id: fair-signposting
+  decision_basis: Canonical repository-layout contract for durable, versioned, rebuildable object 
+    stores distinct from transfer packaging and semantic research objects.
+  boundary_note: OCFL standardizes repository storage layout, inventories, and fixity; BagIt covers 
+    bounded transfer packages, and RO-Crate covers semantic research-object context. Public 
+    validation proves layout and digest rules, not scientific semantics of stored content.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-e
+- id: data-package-standard
+  name: Data Package Standard
+  url: https://datapackage.org/standard/data-package/
+  section: Data and Digital Objects
+  resource_kind: packaging-format
+  interoperability_layers:
+  - Syntactic
+  - Semantic
+  - Operational
+  connects:
+  - Datasets
+  - tabular resources
+  - data portals
+  - analysis tools
+  mechanism: JSON descriptor family for packages, resources, table schemas, dialects, licenses, and 
+    distribution metadata
+  summary: Lightweight JSON packaging standard for describing datasets, resources, schemas, 
+    dialects, licenses, and distribution metadata.
+  maturity: maintained
+  evidence_types:
+  - normative-specification
+  - reference-implementation
+  - public-validator
+  - documented-tests
+  implementation_status: reference-and-others
+  conformance_status: public-validator
+  steward_id: data-package-working-group
+  scientific_domains: []
+  integration_functions:
+  - research-data
+  infrastructure_contexts:
+  - cross-domain
+  artifact_classes: []
+  source_refs:
+  - ref_id: datapackage-org-standard-data-package
+    role: technical-definition
+  - ref_id: datapackage-org-profiles-2-0-datapackage
+    role: technical-definition
+  - ref_id: datapackage-org-blog-2024-06-26-v2-release
+    role: technical-definition
+  - ref_id: datapackage-org-blog-2024-06-26-v2-release
+    role: limitations
+  - ref_id: github-com-frictionlessdata-datapackage
+    role: stewardship
+  - ref_id: github-com-frictionlessdata-frictionless-py
+    role: implementation
+  - ref_id: framework-frictionlessdata-io-validating-data
+    role: conformance
+  - ref_id: datapackage-org-standard-data-resource
+    role: technical-definition
+  - ref_id: datapackage-org-standard-table-schema
+    role: technical-definition
+  relations:
+  - type: alternative-to
+    resource_id: ro-crate
+  - type: complements
+    resource_id: bagit
+  - type: complements
+    resource_id: croissant
+  - type: complements
+    resource_id: oxford-common-file-layout-ocfl
+  decision_basis: Current lightweight dataset and resource descriptor contract complementary to 
+    semantically richer RO-Crate packaging and ML-oriented Croissant metadata.
+  boundary_note: Data Package v2 is published, but surrounding software is still migrating unevenly 
+    from earlier Frictionless specs. Validator success covers descriptor and declared schema checks;
+    it does not prove that referenced datasets are available, scientifically correct, or losslessly 
+    interpreted.
+  reviewed_on: '2026-08-02'
+  review_due_on: '2027-08-02'
+  primary_source_inspected: true
+  review:
+    reviewed_by: ai-assisted-catalog-maintainer
+    review_type: author
+    reviewed_on: '2026-08-02'
+    conflict_disclosure: none identified; human maintainer approval required before merge
+    decision_record: issue-44-batch-e

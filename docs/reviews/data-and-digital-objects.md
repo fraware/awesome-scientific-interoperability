@@ -82,3 +82,10 @@ None.
 |---|---|---|
 | HUPO-PSI mzML | [PSI specification](https://www.psidev.info/mzML); [OpenMS validator](https://openms.de/current_doxygen/html/classOpenMS_1_1Internal_1_1MzMLValidator.html) | Established; multiple independent implementations; public semantic validator |
 | CDISC ODM v2.0 | [ODM v2.0](https://www.cdisc.org/standards/data-exchange/odm-xml/odm-v2-0); [LinkML model](https://cdisc-org.github.io/DataExchange-ODM-LinkML/) | Maintained; single known official implementation; no public conformance artifact recorded |
+
+## Issue #44 Batch E candidate additions — pending human review
+
+| Resource | Primary evidence | Conservative classification |
+|---|---|---|
+| Oxford Common File Layout (OCFL) | [OCFL 1.1](https://ocfl.io/1.1/spec/); [validation codes](https://ocfl.io/1.1/spec/validation-codes.html); [ocfl-py](https://github.com/zimeon/ocfl-py); [ocfl-java](https://github.com/OCFL/ocfl-java) | Established; reference-and-others; public validator for layout/fixity rules |
+| Data Package Standard v2 | [Data Package](https://datapackage.org/standard/data-package/); [v2 release](https://datapackage.org/blog/2024-06-26-v2-release/); [Frictionless validate](https://framework.frictionlessdata.io/docs/guides/validating-data.html) | Maintained; reference-and-others; public descriptor validator with uneven v2 software migration |

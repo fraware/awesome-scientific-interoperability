@@ -14,7 +14,6 @@ Structured records live in `catalog/watchlist.yaml` and are validated against `s
 - [Official MCP Registry](https://modelcontextprotocol.io/registry/about) - Reassess after registry stabilization and meaningful scientific coverage.
 - [Open Digital Rights Language (ODRL)](https://www.w3.org/TR/odrl-model/) - Potential foundation for machine-readable licenses and data-use policies.
 - [OpenAlex](https://openalex.org/) - Potential inclusion after defining a policy for broad research graphs.
-- [Oxford Common File Layout (OCFL)](https://ocfl.io/) - Potential inclusion if repository interoperability is retained as a launch priority.
 - [PROV-ONE](https://purl.dataone.org/provone-v1-dev) - Potential domain/reference entry after comparison with P-Plan and OPMW.
 - [Science Context Protocol](https://arxiv.org/abs/2512.24189) - Monitor alongside IEEE P3971.
 - [SciToolAgent](https://github.com/hicai-zju/scitoolagent) - Potential Reference Architecture entry, not a foundational standard.
