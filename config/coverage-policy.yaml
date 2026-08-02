@@ -58,3 +58,15 @@ standard_families:
     - cwlprov
     - p-plan
     - iso-23494-2-2026-common-provenance-model
+  combine-modeling:
+    - systems-biology-markup-language-sbml
+    - simulation-experiment-description-markup-language-sed-ml
+    - cellml
+    - combine-omex-archive
+    - sbml-test-suite
+    - biosimulators-test-suite
+  neuroscience-data:
+    - brain-imaging-data-structure-bids
+    - neurodata-without-borders-nwb
+    - dicomweb
+    - nexus

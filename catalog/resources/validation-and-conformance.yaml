@@ -42,6 +42,8 @@ resources:
   relations:
   - type: complements
     resource_id: sbml-test-suite
+  - type: validates
+    resource_id: simulation-experiment-description-markup-language-sed-ml
   scientific_domains:
   - systems-biology
   - biosimulation
@@ -212,6 +214,8 @@ resources:
   relations:
   - type: complements
     resource_id: biosimulators-test-suite
+  - type: validates
+    resource_id: systems-biology-markup-language-sbml
   scientific_domains:
   - systems-biology
   integration_functions: []

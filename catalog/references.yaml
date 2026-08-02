@@ -1885,3 +1885,195 @@ references:
   type: api-documentation
   publisher: about.workflowhub.eu
   accessed_on: '2026-08-02'
+- id: sbml-org-level-3-version-2-core-release-2
+  title: SBML Level 3 Version 2 Core Release 2
+  url: https://sbml.org/documents/specifications/level-3/version-2/core/release-2/
+  type: specification
+  publisher: sbml.org
+  accessed_on: '2026-08-02'
+- id: github-com-copasi-copasi
+  title: COPASI
+  url: https://github.com/copasi/COPASI
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: copasi-org-sbml-import-export
+  title: COPASI SBML import and export
+  url: https://copasi.org/Support/User_Manual/Importing_and_Exporting/Importing_and_Exporting_SBML_Files/
+  type: technical-documentation
+  publisher: copasi.org
+  accessed_on: '2026-08-02'
+- id: github-com-sys-bio-tellurium
+  title: Tellurium
+  url: https://github.com/sys-bio/tellurium
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: tellurium-readthedocs-quickstart
+  title: Tellurium SBML quick start
+  url: https://tellurium.readthedocs.io/en/latest/quickstart.html
+  type: technical-documentation
+  publisher: tellurium.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: sed-ml-org-specifications
+  title: SED-ML Level 1 Version 5 specification
+  url: https://sed-ml.org/specifications.html
+  type: specification
+  publisher: sed-ml.org
+  accessed_on: '2026-08-02'
+- id: sed-ml-org-root
+  title: SED-ML community
+  url: https://sed-ml.org/
+  type: governance-source
+  publisher: sed-ml.org
+  accessed_on: '2026-08-02'
+- id: sed-ml-org-showcase
+  title: SED-ML software tools and libraries
+  url: https://sed-ml.org/showcase.html
+  type: registry-record
+  publisher: sed-ml.org
+  accessed_on: '2026-08-02'
+- id: github-com-fbergmann-libsedml
+  title: libSEDML
+  url: https://github.com/fbergmann/libSEDML
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: copasi-org-sedml-import-export
+  title: COPASI SED-ML import and export
+  url: https://copasi.org/Support/User_Manual/Importing_and_Exporting/Importing_and_Exporting_SEDML_Files/
+  type: technical-documentation
+  publisher: copasi.org
+  accessed_on: '2026-08-02'
+- id: cellml-org-specifications-cellml-2-0
+  title: CellML 2.0 specification
+  url: https://www.cellml.org/specifications/cellml_2.0/
+  type: specification
+  publisher: cellml.org
+  accessed_on: '2026-08-02'
+- id: cellml-org-root
+  title: CellML community
+  url: https://www.cellml.org/
+  type: governance-source
+  publisher: cellml.org
+  accessed_on: '2026-08-02'
+- id: github-com-cellml-libcellml
+  title: libCellML
+  url: https://github.com/cellml/libcellml
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: libcellml-org-root
+  title: libCellML
+  url: https://libcellml.org/
+  type: technical-documentation
+  publisher: libcellml.org
+  accessed_on: '2026-08-02'
+- id: opencor-ws-simulation-experiment-view
+  title: OpenCOR Simulation Experiment view
+  url: https://opencor.ws/user/plugins/simulation/simulationExperimentView.html
+  type: technical-documentation
+  publisher: opencor.ws
+  accessed_on: '2026-08-02'
+- id: bids-specification-readthedocs-stable
+  title: Brain Imaging Data Structure 1.11.1
+  url: https://bids-specification.readthedocs.io/en/stable/
+  type: specification
+  publisher: bids-specification.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: bids-neuroimaging-io-root
+  title: BIDS community
+  url: https://bids.neuroimaging.io/
+  type: governance-source
+  publisher: bids.neuroimaging.io
+  accessed_on: '2026-08-02'
+- id: github-com-bids-standard-bids-validator
+  title: BIDS Validator
+  url: https://github.com/bids-standard/bids-validator
+  type: validator
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: bids-validator-readthedocs-web
+  title: BIDS Validator web interface
+  url: https://bids-validator.readthedocs.io/en/latest/user_guide/web.html
+  type: validator
+  publisher: bids-validator.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: github-com-mne-tools-mne-bids
+  title: MNE-BIDS
+  url: https://github.com/mne-tools/mne-bids
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: mne-tools-mne-bids-stable
+  title: MNE-BIDS documentation
+  url: https://mne.tools/mne-bids/stable/
+  type: technical-documentation
+  publisher: mne.tools
+  accessed_on: '2026-08-02'
+- id: github-com-nipy-heudiconv
+  title: HeuDiConv
+  url: https://github.com/nipy/heudiconv
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: heudiconv-readthedocs-root
+  title: HeuDiConv documentation
+  url: https://heudiconv.readthedocs.io/
+  type: technical-documentation
+  publisher: heudiconv.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: nwb-org-nwb-schema
+  title: NWB Schema
+  url: https://nwb.org/tools/core/nwb-schema/
+  type: specification
+  publisher: nwb.org
+  accessed_on: '2026-08-02'
+- id: nwb-schema-readthedocs-root
+  title: NWB format specification
+  url: https://nwb-schema.readthedocs.io/
+  type: normative-schema
+  publisher: nwb-schema.readthedocs.io
+  accessed_on: '2026-08-02'
+- id: nwb-org-about
+  title: About Neurodata Without Borders
+  url: https://nwb.org/about-nwb/
+  type: governance-source
+  publisher: nwb.org
+  accessed_on: '2026-08-02'
+- id: github-com-neurodatawithoutborders-pynwb
+  title: PyNWB
+  url: https://github.com/NeurodataWithoutBorders/pynwb
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: github-com-neurodatawithoutborders-matnwb
+  title: MatNWB
+  url: https://github.com/NeurodataWithoutBorders/matnwb
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: nwb-org-aqnwb
+  title: AqNWB
+  url: https://nwb.org/aqnwb/
+  type: technical-documentation
+  publisher: nwb.org
+  accessed_on: '2026-08-02'
+- id: github-com-neurodatawithoutborders-aqnwb
+  title: AqNWB
+  url: https://github.com/NeurodataWithoutBorders/aqnwb
+  type: implementation-repository
+  publisher: github.com
+  accessed_on: '2026-08-02'
+- id: nwb-org-nwbinspector
+  title: NWB Inspector
+  url: https://nwb.org/tools/core/nwbinspector/
+  type: validator
+  publisher: nwb.org
+  accessed_on: '2026-08-02'
+- id: github-com-neurodatawithoutborders-nwbinspector
+  title: NWB Inspector
+  url: https://github.com/NeurodataWithoutBorders/nwbinspector
+  type: validator
+  publisher: github.com
+  accessed_on: '2026-08-02'

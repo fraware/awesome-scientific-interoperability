@@ -1,103 +1,86 @@
 # Validation Report
 
-**Release:** 1.1.0  
-**Validation date:** 2026-08-01  
-**Catalog version:** 2.0.0  
-**Commit baseline:** post PR-18 merge on `main` (includes PR-20 publishing prep)
+**State:** Issue #44 Batch A candidate tree
+**Validation date:** 2026-08-02
+**Catalog version:** 2.2.0
+**Human review status:** Pending maintainer approval before merge
 
 ## Corpus counts
 
 | Item | Count |
-| --- | ---: |
-| Main-list catalog entries | 87 |
-| README list entries (parity) | 87 |
+|---|---:|
+| Main-list catalog entries | 92 |
+| README list entries (parity) | 92 |
 | Section-scoped resource shards | 11 |
+| Technical references | 346 |
+| Steward identities | 89 |
+| Implementation/validator identities | 28 |
 | Watchlist items | 17 |
-| Decision guides (excluding README) | 9 |
-| Integration problems in problem index | 12 |
-| v2 schema validation fixtures | 14+ |
-| Watchlist validation fixtures | 3 |
-| Unit tests (`python -m unittest discover -s tests`) | 64 |
+| Expansion candidates remaining | 56 |
+| Decision guides (excluding index) | 11 |
+| Integration problems | 14 |
+| Deterministic unit tests | 108 |
 
-## Completed checks
+## Batch A additions
 
-- JSON Schema validation passed for all **87** catalog entries loaded from **11** section-scoped shards.
-- Catalog-index and shard loading passed (`catalog/resources.yaml` lists 11 files; each shard present).
-- README and catalog parity passed for name, URL, section, and summary text.
-- Duplicate identifier, name, and URL checks passed.
-- Summary capitalization, terminal punctuation, length, and promotional-language checks passed.
-- Every catalog entry identifies at least two connected objects or systems.
-- No legacy v1 catalog fields remain in live shards.
-- Contents is the first level-two README section; Contributing and Footnotes are excluded from Contents.
-- All **87** canonical URLs passed offline HTTPS syntax validation.
-- Problem index validation passed (`docs/integration-problems.md`).
-- Decision guide validation passed (nine guides under `docs/decision-guides/`).
-- Watchlist schema and README parity passed (**17** items).
-- Review freshness passed for all **87** resources as of 2026-08-01.
-- Coverage audit integrity checks passed; editorial warnings only (CWL implementation-family concentration; **18** isolated entries).
-- All **64** repository unit tests passed on Python 3.13.
-- Manifest covers every tracked file except the manifest itself and verifies SHA-256 digests and byte counts.
-- Governance files present: `docs/reviewer-roles.md`, `.github/CODEOWNERS`, `docs/decision-records.md`, `docs/human-review-log.md`.
-- PR-20/21 publishing prep recorded in `docs/publishing.md` (standalone mode; central path closed pending gates).
+- Systems Biology Markup Language (SBML)
+- Simulation Experiment Description Markup Language (SED-ML)
+- CellML
+- Brain Imaging Data Structure (BIDS)
+- Neurodata Without Borders (NWB)
 
-## Network link audit
+The records include claim-specific references, normalized stewards, implementation identities, typed relations, four-dimensional taxonomy, review provenance, and two new decision paths. SBML and BIDS retain `multiple-independent` only through distinct independently operated implementations. SED-ML, CellML, and NWB use narrower implementation claims where the evidence does not justify stronger independence.
 
-- **Workflow:** `.github/workflows/links.yml` (manual dispatch on `main`).
-- **Run ID:** `30723706703` (2026-08-01T23:38:21Z).
-- **URLs checked:** 87.
-- **Blocking failures:** 0 (`permanent-failure`, `tls-or-dns-failure`, `invalid-url`).
-- **Classifications:** 78 ok, 7 redirected, 2 access-policy (ISO 23494-2 catalogue page; IUCr CIF page), 0 transient-failure.
-- Baseline recorded in `docs/link-audit-baseline.md`.
+## Completed local checks
 
-## Awesome lint
+- JSON Schema and semantic validation passed for all 92 resources.
+- README/catalog name, URL, section, and summary parity passed at 92/92.
+- Reference, steward, and implementation registries resolved without unknown IDs.
+- Independent-implementation checks passed using distinct operator identities outside the specification steward.
+- Public-suite, public-validator, and documented-tests claims resolve to direct artifact-class evidence.
+- Typed relations resolve without isolates or self-links.
+- Four taxonomy dimensions accept all live values, including the new `neuroscience` scientific domain.
+- Decision-guide and integration-problem resource markers resolve.
+- Watchlist validation and expansion-candidate validation pass.
+- Review freshness passes as of 2026-08-02.
+- Data-quality audit reports zero integrity errors and zero evidence-depth queues.
+- Coverage audit reports no concentration or integrity warnings.
+- Offline syntax validation covers 362 unique HTTPS URLs across canonical, watchlist, steward, implementation, and evidence references.
+- All 108 deterministic unit tests pass.
+- Manifest generation and verification are required on the exact final PR head.
 
-- Native `npx --yes awesome-lint` runs in `.github/workflows/quality.yml` and the Makefile. No custom rule filter remains.
-- Repository description and topics satisfy the Awesome GitHub metadata rule.
+## Network link audit status
 
-## Quality CI alignment (§13 intent)
+The last completed network audit remains the historical v1.1.0 run:
 
-The Quality workflow implements these logically separate checks:
+- **Workflow run:** `30723706703`
+- **Date:** 2026-08-01
+- **Corpus:** 87 main-list canonical URLs
+- **Blocking failures:** 0
+- **Classifications:** 78 ok, 7 redirected, 2 access-policy
 
-| §13 step | Implementation |
-| --- | --- |
-| Catalog and schema validation | `scripts/validate_catalog.py` |
-| Unit tests | `python -m unittest discover -s tests` |
-| Offline URL validation | `scripts/check_links.py --offline` |
-| Problem-index and decision-guide reference validation | `validate_problem_index.py`, `validate_decision_guides.py` |
-| Watchlist validation | `scripts/validate_watchlist.py` |
-| Review freshness | `scripts/check_review_freshness.py` |
-| Coverage invariant checks | `scripts/audit_coverage.py` |
-| Manifest verification | `scripts/verify_manifest.py` |
-| Standard Awesome lint | separate `awesome-lint` job |
+Batch A adds new URLs. This report does not claim that those URLs have passed a network audit. The Links workflow must be run on the merged or exact PR head, and its JSON/Markdown artifacts must be retained before the next release.
 
-Network link validation is delegated to the scheduled Links workflow; it does not mutate the repository.
+## Quality workflow alignment
 
-## Test architecture (§12)
+| Check | Implementation |
+|---|---|
+| Catalog, registries, independence, typed relations, review provenance | `scripts/validate_catalog.py` and unit tests |
+| Fail-closed evidence depth | `scripts/audit_data_quality.py --fail-on warning` |
+| Decision support | `validate_problem_index.py`, `validate_decision_guides.py` |
+| Expansion registry | `validate_expansion_candidates.py` |
+| Watchlist and freshness | `validate_watchlist.py`, `check_review_freshness.py` |
+| Offline URL scope | `check_links.py --offline --scope all` |
+| Coverage balance | `audit_coverage.py` |
+| Manifest integrity | `generate_manifest.py`, `verify_manifest.py` |
+| Awesome formatting | native `npx --yes awesome-lint` in GitHub Actions |
 
-| Required module | Status |
-| --- | --- |
-| Catalog loading and shard integrity | `tests/test_catalog.py` |
-| JSON Schema validation | `tests/test_catalog.py` (fixtures + live catalog) |
-| README parsing and parity | `tests/test_catalog.py` |
-| Duplicate IDs, names, URLs | `tests/test_catalog.py` (`test_repository_invariants`) |
-| Cross-reference resolution | `tests/test_catalog.py` (fixtures) |
-| Review-date freshness | `tests/test_catalog.py` (`ReviewFreshnessTests`) |
-| Evidence/source consistency | Partial — `tests/test_coverage_audit.py` fixture `evidence-without-source`; no dedicated standalone module |
-| Link-policy classification | `tests/test_links.py` |
-| Problem-index resource references | `tests/test_problem_index.py` |
-| Decision-guide resource references | `tests/test_decision_guides.py` |
-| Watchlist schema and parity | `tests/test_watchlist.py` |
-| Coverage-audit determinism | `tests/test_coverage_audit.py` |
-| Manifest generation and verification | CI scripts only (`generate_manifest.py`, `verify_manifest.py`); **no dedicated test module** |
-| Query CLI behavior | `tests/test_query_catalog.py` |
+## Review constraint
 
-## Archive
-
-No main-list resources were removed in this release cycle. See `archive.md`.
+The five Batch A records were prepared through AI-assisted primary-source review and carry author-level review provenance. They must not be represented as independently reviewed. A human maintainer must inspect the primary sources, accept or revise each admission decision, and record approval before merge.
 
 ## Release constraints
 
-- This report does **not** claim completeness, certification, or exhaustive landscape coverage.
-- Central Awesome submission is **closed pending gates** (PR-21): earliest eligible date **2026-09-01**, and the non-AI-generated requirement cannot be certified truthfully today. See `docs/publishing.md` and `docs/human-review-log.md`.
-- The list operates as a standalone Awesome list until maintainers can answer every central template checkbox truthfully or receive clarification from central maintainers.
-- No pull request has been opened against `sindresorhus/awesome`.
+- This report does not claim completeness, certification, or exhaustive landscape coverage.
+- Central Awesome submission remains closed pending the timing and honesty gates in `docs/publishing.md`.
+- No main-list resource is automatically admitted from the expansion registry.

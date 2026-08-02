@@ -467,3 +467,77 @@ Contributors submit Workflow RO-Crate packages to a registry that validates prof
 ## Maintenance
 
 Update this index when catalog boundary notes change or when new main-list entries alter starting recommendations. Run `python scripts/validate_problem_index.py` locally and in CI after edits. Query the structured catalog with `python scripts/query_catalog.py` for filterable views of the entries cited here.
+
+---
+
+## 13. Exchange computational models and reproducible simulation experiments
+
+[problem:exchange-computational-models]
+
+### Situation
+
+Independent modeling tools must exchange a quantitative model, describe the simulation procedure to run, package all required artifacts, and test whether different engines interpret the contracts consistently.
+
+### Starting point
+
+Use [resource:systems-biology-markup-language-sbml] for biochemical and systems-biology reaction-network models and [resource:cellml] for modular equation-based physiological models with explicit units and imports. Describe model changes, simulations, repeated tasks, data processing, and requested outputs with [resource:simulation-experiment-description-markup-language-sed-ml]. Package the complete study with [resource:combine-omex-archive].
+
+Validate implementation behavior separately with [resource:sbml-test-suite] and [resource:biosimulators-test-suite]. These suites test documented contracts; they do not establish scientific correctness of a model or equivalence for untested optional features.
+
+### When an alternative is stronger
+
+- General data-processing pipelines rather than mathematical simulation experiments: use [resource:common-workflow-language-cwl] or [resource:workflow-description-language-wdl].
+- Executed workflow provenance rather than prospective simulation intent: use [resource:workflow-run-ro-crate], [resource:cwlprov], or [resource:w3c-prov].
+- Cross-tool engineering model exchange and co-simulation: [resource:functional-mock-up-interface-fmi] is stronger than SBML or CellML.
+
+### Limitations and common category errors
+
+- Treating SED-ML as a model language or execution trace.
+- Treating COMBINE Archive as proof that every contained model is supported by every simulator.
+- Assuming SBML-to-CellML conversion preserves every package, event, unit, and modularity construct.
+- Using conformance results as evidence of biological validity.
+
+### Relevant catalog entries
+
+[resource:systems-biology-markup-language-sbml] [resource:cellml] [resource:simulation-experiment-description-markup-language-sed-ml] [resource:combine-omex-archive] [resource:sbml-test-suite] [resource:biosimulators-test-suite] [resource:common-workflow-language-cwl] [resource:workflow-description-language-wdl] [resource:functional-mock-up-interface-fmi]
+
+### Example architecture
+
+A model repository stores an SBML or CellML model, a SED-ML experiment, and supporting data inside a COMBINE Archive. Continuous integration checks the SBML engine against the SBML Test Suite and executes compatible archive cases through the BioSimulators Test Suite, recording tool and specification versions separately.
+
+---
+
+## 14. Organize neuroscience datasets and exchange neurophysiology recordings
+
+[problem:exchange-neuroscience-data]
+
+### Situation
+
+A neuroscience program must organize multi-subject datasets, preserve modality metadata, exchange continuous neurophysiology and derived results, and connect research datasets with clinical imaging infrastructure.
+
+### Starting point
+
+Use [resource:brain-imaging-data-structure-bids] for dataset-level organization, filenames, modality metadata, sidecars, and derivatives. Use [resource:neurodata-without-borders-nwb] for typed neurophysiology acquisition, stimulus, behavior, processing, and analysis structures inside extensible files. Use [resource:dicomweb] when clinical imaging studies must move through DICOM services.
+
+BIDS and NWB solve different layers and may be composed. BIDS is generally stronger for dataset layout and pipeline discovery; NWB is stronger for rich internal neurophysiology structures and cross-language access.
+
+### When an alternative is stronger
+
+- Beamline or scattering-facility experiments: use [resource:nexus].
+- Generic research-object packaging across data, software, people, and workflows: use [resource:ro-crate].
+- Exact workflow execution evidence: use [resource:workflow-run-ro-crate] or [resource:cwlprov].
+
+### Limitations and common category errors
+
+- Treating BIDS validation as scientific or acquisition-quality validation.
+- Treating HDF5 or NIfTI alone as substitutes for BIDS or NWB semantics.
+- Discarding DICOM metadata during conversion without a traceability plan.
+- Assuming NWB replaces dataset-level organization or BIDS replaces typed signal structures.
+
+### Relevant catalog entries
+
+[resource:brain-imaging-data-structure-bids] [resource:neurodata-without-borders-nwb] [resource:dicomweb] [resource:nexus] [resource:ro-crate] [resource:workflow-run-ro-crate] [resource:cwlprov]
+
+### Example architecture
+
+A repository ingests scanner data through DICOMweb, converts deidentified acquisitions into a BIDS dataset, validates the resulting layout, and stores electrophysiology sessions in NWB. A RO-Crate publication layer links datasets, software, investigators, and provenance without replacing either domain standard.

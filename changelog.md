@@ -2,6 +2,16 @@
 
 All notable editorial, schema, and maintenance changes for this repository are documented here. The list does not claim completeness of the scientific interoperability landscape.
 
+## Unreleased — Issue #44 corpus expansion
+
+### Batch A: systems biology and neuroscience
+
+- Proposed five evidence-backed main-list additions: SBML, SED-ML, CellML, BIDS, and NWB.
+- Added 32 technical references, 9 steward identities, 14 implementation/validator identities, and the `neuroscience` scientific-domain tag.
+- Added two decision guides and two integration-problem paths covering computational-model exchange and neuroscience data.
+- Removed admitted resources from the expansion-candidate registry; 56 researched candidates remain.
+- Human maintainer approval remains required before merge.
+
 ## [1.1.0] — 2026-08-01
 
 First decision-oriented release after catalog v2 migration, domain gap reviews, and maintainer governance formalization. Supersedes the v1.0.0 release candidate documented in `docs/validation-report.md` (initial public corpus: 75 main-list entries; no prior annotated tag).

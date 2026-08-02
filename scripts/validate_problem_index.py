@@ -31,6 +31,8 @@ REQUIRED_PROBLEMS = frozenset(
         "expose-tools-to-agents",
         "controlled-data-access",
         "validate-conformance",
+        "exchange-computational-models",
+        "exchange-neuroscience-data",
     }
 )
 

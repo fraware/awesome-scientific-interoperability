@@ -1,7 +1,7 @@
 # Link Audit Baseline
 
-**Audit date:** 2026-08-01  
-**Latest source run:** GitHub Actions Links workflow on `main` (`30723706703`, 2026-08-01T23:38:21Z) after PR-16D and PR-18 merges.  
+**Audit date:** 2026-08-01
+**Latest source run:** GitHub Actions Links workflow on `main` (`30723706703`, 2026-08-01T23:38:21Z) after PR-16D and PR-18 merges.
 **Initial source run:** `30720888543` before PR-02 classification hardening, plus local classification against the remediated catalog.
 
 ## Policy
@@ -54,6 +54,10 @@ Access-policy responses (unchanged from initial baseline):
 - `https://www.iucr.org/resources/cif` — IUCr CIF landing page (added with PR-16B).
 
 Seven URLs returned successful redirects (for example CDIF, COMBINE Archive, DDI Lifecycle, EDAM, EOSC Interoperability Framework, workflow-testing RO-Crate profile, ORKG). These are reported but do not fail the audit.
+
+## Batch A offline scope (2026-08-02)
+
+`python scripts/check_links.py --offline --scope all` validates the syntax of **362 unique HTTPS URLs** on the Batch A candidate tree. This is an offline structural check, not a replacement for the network audit. The historical network classifications below remain limited to the 87-entry v1.1.0 corpus until the Links workflow is run on the new exact head.
 
 ## Post-remediation expectation
 

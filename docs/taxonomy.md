@@ -92,3 +92,8 @@ No main-list entry is classified as a reference architecture. Broad platforms un
 
 - At least three watchlist or new candidates pass reference-architecture promotion conditions with explicit comparison to existing main-list entries (see `catalog/watchlist.yaml` promotion conditions for `galaxy`, `cromwell`, `scitoolagent`).
 - A maintainer decision record in [decision records](decision-records.md) (DR-005) formalizes reference-architecture criteria so inclusion is consistent.
+
+
+## Batch A domain addition (2026-08-02)
+
+- Added `neuroscience` as a controlled scientific domain for BIDS and NWB. Storage substrates remain represented through domain standards rather than standalone HDF5 or NIfTI entries.
