@@ -62,3 +62,13 @@ None.
 | MIxS | [specification](https://genomicsstandardsconsortium.github.io/mixs/); [source and tests](https://github.com/GenomicsStandardsConsortium/mixs) | Maintained; single known official implementation; documented tests |
 | Ecological Metadata Language | [EML 2.2.0](https://eml.ecoinformatics.org/); [validation rules](https://eml.ecoinformatics.org/validation-and-content-references) | Established; reference and other implementation; public validator |
 | OMOP Common Data Model | [CDM documentation](https://ohdsi.github.io/CommonDataModel/); [DataQualityDashboard](https://ohdsi.github.io/DataQualityDashboard/) | Established; reference and other implementations; public validator with bounded data-quality scope |
+
+## MIAPPE admission — pending human maintainer sign-off (2026-08-03)
+
+**Status:** AI-assisted author review; see [maintainer-signoff-miappe-brapi-sbol.md](maintainer-signoff-miappe-brapi-sbol.md).
+
+| Resource | Primary evidence | Conservative classification |
+|---|---|---|
+| MIAPPE | [miappe.org](https://www.miappe.org/); [releases (v1.2)](https://www.miappe.org/releases/); [isa4j MIAPPE v1.1 validation](https://ipk-bit.github.io/isa4j/miappe-validation.html) | Maintained; reference-and-others; public validator bounded to configured ISA/MIAPPE field checks (v1.1 tooling vs current v1.2 release) |
+
+**Conflict disclosure:** None identified. Human maintainer approval required; do not mark `review_type: independent` without a distinct human reviewer.

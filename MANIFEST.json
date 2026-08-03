@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-02",
-  "file_count": 178,
+  "file_count": 181,
   "files": [
     {
       "path": ".github/CODEOWNERS",
@@ -21,6 +21,11 @@
       "path": ".github/ISSUE_TEMPLATE/correction.yml",
       "sha256": "7d6e46277193805a7852f6728673f09b2a70e2ae3e911e19a5322e8d7a62b991",
       "bytes": 617
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/peer-review-offer.yml",
+      "sha256": "ebd1f0dadd93ae19ddc417e03141ce1ebdd876f5e9507b2b330ba0221243c83f",
+      "bytes": 2113
     },
     {
       "path": ".github/ISSUE_TEMPLATE/remove-resource.yml",
@@ -134,13 +139,13 @@
     },
     {
       "path": "catalog/implementations.yaml",
-      "sha256": "8cdb7797c11a14c0261a412d0d43110a357a0734fd50a95d08c9f280214f77fe",
-      "bytes": 38842
+      "sha256": "aacd925fcd451a99620b6411598d97b591132a2d7a0976724efe00777d7f690c",
+      "bytes": 39188
     },
     {
       "path": "catalog/references.yaml",
-      "sha256": "5e130bb82e6ce44bd6ee878db33b394d8a0b3da29b72fc990fadd26a4818e437",
-      "bytes": 99076
+      "sha256": "b66fbead85698c45568c7aeb0b03e5ceaf9632d68b115163bed34279c398cc52",
+      "bytes": 99095
     },
     {
       "path": "catalog/resources.yaml",
@@ -154,8 +159,8 @@
     },
     {
       "path": "catalog/resources/data-and-digital-objects.yaml",
-      "sha256": "655477f70517d80b8cc8fef62f051c5aa23ba237594da97bd639e1a137443efe",
-      "bytes": 63266
+      "sha256": "2569327251b5facffc7b446460626ec2178fa2c19fe492c7aa563c5e98a634a0",
+      "bytes": 63263
     },
     {
       "path": "catalog/resources/foundations.yaml",
@@ -414,8 +419,8 @@
     },
     {
       "path": "docs/governance.md",
-      "sha256": "27378eddc0eb106e71cea4a719efc36328577c917f62f1e680268ef18f2f40da",
-      "bytes": 5651
+      "sha256": "1cd27759c3b1f4b9d6b435008d613da6ab3a44230580858bf17714db65a68d89",
+      "bytes": 5842
     },
     {
       "path": "docs/integration-problems.md",
@@ -424,8 +429,8 @@
     },
     {
       "path": "docs/link-audit-baseline.md",
-      "sha256": "caf1f7cebaf80053cedae22764f94e52023de4fa46188aac0ef8b03768743f34",
-      "bytes": 4943
+      "sha256": "094eb153796b1e4df28d9cf16b5d9d9883b959d36573da81f8d60636d1125aac",
+      "bytes": 8478
     },
     {
       "path": "docs/maintainers/README.md",
@@ -469,8 +474,8 @@
     },
     {
       "path": "docs/reviews/data-and-digital-objects.md",
-      "sha256": "5de431b1dfde695d72eb70478b90e1e91be034bf40a6e5da2aa8c4659c197198",
-      "bytes": 7476
+      "sha256": "1c06ea22273cf0f23c4ffa24763e2fa1a49bb0f8cd5d0b589a0fb2c104d42b96",
+      "bytes": 8283
     },
     {
       "path": "docs/reviews/foundations.md",
@@ -498,9 +503,19 @@
       "bytes": 1647
     },
     {
+      "path": "docs/reviews/maintainer-signoff-miappe-brapi-sbol.md",
+      "sha256": "dc9a2b8f159539725c63df6c9dc9562b1f5edd2069deb55799091cea41293885",
+      "bytes": 13503
+    },
+    {
       "path": "docs/reviews/metadata-and-semantics.md",
-      "sha256": "e00687b6d6faceb6da8961255040a2dc3a1ba26c325be7ec47154490025cce73",
-      "bytes": 5458
+      "sha256": "b8b0153dedd2fc996e00846dbf74a6c5df9fed7cea52405768fb71cc1ca73802",
+      "bytes": 6218
+    },
+    {
+      "path": "docs/reviews/peer-review-invitation-miappe-brapi-sbol.md",
+      "sha256": "407e8c779c0c106f4c4893abfb089efd426434949cc0a322250a60185c8ad761",
+      "bytes": 3338
     },
     {
       "path": "docs/reviews/provenance-and-evidence.md",
@@ -519,8 +534,8 @@
     },
     {
       "path": "docs/reviews/workflows-and-execution.md",
-      "sha256": "999dee553a0a25917f73ce26369f03a23fca1ffdacfe9fc5d8f8156e8d03b6b0",
-      "bytes": 4023
+      "sha256": "16cd26bc61342b2e9277eef7c72a1e595a7413efa395b1b75ee9b075a8a1f4f2",
+      "bytes": 4705
     },
     {
       "path": "docs/taxonomy.md",

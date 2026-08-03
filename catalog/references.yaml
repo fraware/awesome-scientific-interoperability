@@ -182,11 +182,11 @@ references:
   publisher: cadc-ccda.hia-iha.nrc-cnrc.gc.ca
   accessed_on: '2026-08-02'
 - id: cassavabase-org-brapi-v2
-  title: Cassavabase BrAPI v2 endpoint
-  url: https://cassavabase.org/brapi/v2/
+  title: Cassavabase BrAPI v2 serverinfo endpoint
+  url: https://cassavabase.org/brapi/v2/serverinfo
   type: implementation-repository
   publisher: cassavabase.org
-  accessed_on: '2026-08-02'
+  accessed_on: '2026-08-03'
 - id: cdif-codata-org-root
   title: Cross-Domain Interoperability Framework (CDIF)
   url: https://cdif.codata.org/
@@ -1719,10 +1719,10 @@ references:
   accessed_on: '2026-08-02'
 - id: github-com-plantbreeding-api
   title: BrAPI OpenAPI specification repository
-  url: https://github.com/plantbreeding/API
+  url: https://github.com/plantbreeding/BrAPI
   type: specification
   publisher: github.com
-  accessed_on: '2026-08-02'
+  accessed_on: '2026-08-03'
 - id: github-com-qudt-qudt-public-repo
   title: QUDT
   url: https://github.com/qudt/qudt-public-repo
@@ -2013,10 +2013,10 @@ references:
   accessed_on: '2026-08-02'
 - id: ipk-gatersleben-brapi-v1
   title: IPK Gatersleben BrAPI endpoint
-  url: https://webapps.ipk-gatersleben.de/api/brapi/v1/
+  url: https://webapps.ipk-gatersleben.de/brapi/v1/
   type: implementation-repository
   publisher: ipk-gatersleben.de
-  accessed_on: '2026-08-02'
+  accessed_on: '2026-08-03'
 - id: isa-specs-readthedocs-io-en-latest-isajson-html
   title: ISA-JSON
   url: https://isa-specs.readthedocs.io/en/latest/isajson.html
