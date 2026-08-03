@@ -76,9 +76,9 @@ Expected time commitment for an active section: roughly one focused review pass 
 
 ## Recruitment
 
-Open recruitment tracks live in GitHub issues titled for domain reviewer recruiting. Target sections include systems biology and models, neuroscience, astronomy / Virtual Observatory, bioimaging, genomics, ecology, proteomics, clinical research data, preservation and packaging, workflows and provenance, and agents and controlled access.
+Open recruitment tracks live in GitHub issues titled for domain reviewer recruiting. Target sections include systems biology and models, plant phenotyping and breeding APIs, synthetic biology design exchange, neuroscience, astronomy / Virtual Observatory, bioimaging, genomics, ecology, proteomics, clinical research data, preservation and packaging, workflows and provenance, and agents and controlled access.
 
-Acceptance is explicit: a person comments that they accept the section, conflict-of-interest rules, and CODEOWNERS responsibility. Only then may a pull request add their GitHub handle to CODEOWNERS for the relevant paths.
+Acceptance is explicit: a person comments that they accept the section, conflict-of-interest rules, and CODEOWNERS responsibility. Only then may a pull request add their GitHub handle to CODEOWNERS for the relevant paths. Optional single-resource peer review may use the peer-review offer issue form without implying CODEOWNERS appointment.
 
 ## How to propose corrections or challenges
 

@@ -89,3 +89,15 @@ None.
 |---|---|---|
 | Oxford Common File Layout (OCFL) | [OCFL 1.1](https://ocfl.io/1.1/spec/); [validation codes](https://ocfl.io/1.1/spec/validation-codes.html); [ocfl-py](https://github.com/zimeon/ocfl-py); [ocfl-java](https://github.com/OCFL/ocfl-java) | Established; reference-and-others; public validator for layout/fixity rules |
 | Data Package Standard v2 | [Data Package](https://datapackage.org/standard/data-package/); [v2 release](https://datapackage.org/blog/2024-06-26-v2-release/); [Frictionless validate](https://framework.frictionlessdata.io/docs/guides/validating-data.html) | Maintained; reference-and-others; public descriptor validator with uneven v2 software migration |
+
+## SBOL admission — pending human maintainer sign-off (2026-08-03)
+
+**Status:** AI-assisted author review; see [maintainer-signoff-miappe-brapi-sbol.md](maintainer-signoff-miappe-brapi-sbol.md).
+
+| Resource | Primary evidence | Conservative classification |
+|---|---|---|
+| SBOL 3.1.0 | [Data Model 3.1.0](https://sbolstandard.org/datamodel-specification/version-3.1.0/); [pySBOL3](https://github.com/SynBioDex/pySBOL3); [libSBOLj3](https://github.com/SynBioDex/libSBOLj3) | Established; reference-and-others (same SynBioDex steward family); public validator for data-model rules only |
+
+**Relation fix:** `alternative-to` CellML corrected to `complements` (design exchange is not a competing physiological-model mechanism).
+
+**Conflict disclosure:** None identified. Human maintainer approval required.

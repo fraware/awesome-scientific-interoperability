@@ -109,7 +109,7 @@ implementations:
     is not counted as independent implementation evidence.
 - id: cassavabase-brapi
   name: Cassavabase BrAPI server
-  url: https://cassavabase.org/brapi/v2/
+  url: https://cassavabase.org/brapi/v2/serverinfo
   implements_resource_id: breeding-api-brapi
   operator_steward_id: boyce-thompson-institute
   relationship: independent-implementation
@@ -119,7 +119,8 @@ implementations:
   - cassavabase-org-brapi-v2
   - brapi-org-servers
   notes: Production Breedbase-family server operated outside the BrAPI specification steward, listed in
-    the BrAPI servers directory.
+    the BrAPI servers directory. Catalog URL points at the BrAPI serverinfo discovery path because the
+    module root returns 404 while serverinfo authenticates the live V2 service (HTTP 401 without credentials).
 - id: cdisc-odm-linkml-model
   name: CDISC ODM v2.0 LinkML model
   url: https://cdisc-org.github.io/DataExchange-ODM-LinkML/
@@ -308,7 +309,7 @@ implementations:
   notes: Separately operated genomic data library with htsget client support.
 - id: ipk-gatersleben-brapi
   name: IPK Gatersleben BrAPI server
-  url: https://webapps.ipk-gatersleben.de/api/brapi/v1/
+  url: https://webapps.ipk-gatersleben.de/brapi/v1/
   implements_resource_id: breeding-api-brapi
   operator_steward_id: ipk-gatersleben
   relationship: independent-implementation
@@ -318,6 +319,8 @@ implementations:
   - ipk-gatersleben-brapi-v1
   - brapi-org-servers
   notes: Institute-operated germplasm and phenotypic BrAPI endpoint distinct from Breedbase operators.
+    Replaces the obsolete /api/brapi/v1/ path still mirrored in some BrAPI directory listings; live
+    responses confirmed on /brapi/v1/ and /brapi/v1/calls.
 - id: isa4j-miappe-validator
   name: isa4j MIAPPE validation
   url: https://ipk-bit.github.io/isa4j/miappe-validation.html

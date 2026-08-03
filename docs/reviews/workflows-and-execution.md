@@ -51,3 +51,13 @@ None.
 - openEO: added `openeo-test-suite` plus GeoPySpark and Python drivers; conformance upgraded to `public-suite`.
 - Sapporo and WorkflowHub: conformance downgraded to `none-known` (no direct public suite artifact for these entries).
 | GA4GH htsget | [GA4GH product page](https://www.ga4gh.org/product/htsget/); [protocol specification](https://github.com/samtools/hts-specs/blob/master/Htsget.md); [reference server](https://github.com/ga4gh/htsget-refserver) |
+
+## BrAPI admission — pending human maintainer sign-off (2026-08-03)
+
+**Status:** AI-assisted author review; see [maintainer-signoff-miappe-brapi-sbol.md](maintainer-signoff-miappe-brapi-sbol.md).
+
+| Resource | Primary evidence | Conservative classification |
+|---|---|---|
+| Breeding API (BrAPI) | [specification index](https://brapi.org/specification) (V2.1 latest stable); [servers directory](https://brapi.org/servers); Cassavabase `/brapi/v2/serverinfo`; IPK `/brapi/v1/` | Established; multiple-independent via Boyce Thompson Institute and IPK operators; `none-known` public conformance suite |
+
+**Conflict disclosure:** None identified. Human maintainer approval required.

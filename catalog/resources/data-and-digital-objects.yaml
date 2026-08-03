@@ -1777,7 +1777,7 @@ resources:
     resource_id: systems-biology-markup-language-sbml
   - type: complements
     resource_id: combine-omex-archive
-  - type: alternative-to
+  - type: complements
     resource_id: cellml
   decision_basis: Strongest governed design-exchange contract for synthetic biology, distinct from executable
     systems-biology model languages.

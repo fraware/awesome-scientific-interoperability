@@ -1,0 +1,66 @@
+name: Peer review offer
+description: Offer optional domain peer review for catalog entries (does not invent or close review gates).
+title: "Peer review offer: "
+labels: ["peer-review"]
+body:
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Domain focus
+      options:
+        - Plant phenotyping / MIAPPE
+        - Breeding APIs / BrAPI
+        - Synthetic biology / SBOL
+        - Systems biology / models
+        - Neuroscience
+        - Astronomy / VO
+        - Bioimaging
+        - Genomics
+        - Ecology
+        - Proteomics
+        - Clinical research data
+        - Preservation / packaging
+        - Workflows / provenance
+        - Agents / controlled access
+        - Other (describe below)
+    validations:
+      required: true
+  - type: textarea
+    id: resources
+    attributes:
+      label: Catalog IDs or files you will review
+      description: For example minimum-information-about-plant-phenotyping-experiments-miappe, or a docs/reviews/ path.
+    validations:
+      required: true
+  - type: dropdown
+    id: time_estimate
+    attributes:
+      label: Estimated time you can commit
+      options:
+        - Under 30 minutes
+        - 30–90 minutes
+        - Half day
+        - Ongoing section reviewer interest
+    validations:
+      required: true
+  - type: textarea
+    id: conflicts
+    attributes:
+      label: Conflict-of-interest disclosure
+      description: Affiliations with the resource, steward, funder, or competitor. Write "none" if none. Affiliated reviewers must not sole-approve.
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I understand disagreement is welcome and this is optional peer input, not automatic merge authority.
+          required: true
+        - label: I accept the conflict-of-interest rules in docs/conflicts-of-interest.md.
+          required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes or constraints
+      description: Availability windows, preferred communication, or resources you decline.
