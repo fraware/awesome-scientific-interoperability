@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-08-02",
+  "generated_on": "2026-09-22",
   "file_count": 181,
   "files": [
     {
@@ -144,8 +144,8 @@
     },
     {
       "path": "catalog/references.yaml",
-      "sha256": "b66fbead85698c45568c7aeb0b03e5ceaf9632d68b115163bed34279c398cc52",
-      "bytes": 99095
+      "sha256": "e9e8db1a70010ad2635886d993500de85783478cdf5c7169ae8d2e77e6abe7eb",
+      "bytes": 99309
     },
     {
       "path": "catalog/resources.yaml",
@@ -214,8 +214,8 @@
     },
     {
       "path": "catalog/watchlist.yaml",
-      "sha256": "a6ef64bdd52aa53085656f35834b284455a3af5acfd52c77f58940ad9db19905",
-      "bytes": 18202
+      "sha256": "531e0018cdf536a374b3716b098e0b5cca6d5c0bd516cd0257a9dc3e8da97946",
+      "bytes": 19386
     },
     {
       "path": "changelog.md",
@@ -299,12 +299,12 @@
     },
     {
       "path": "docs/data-quality-baseline.json",
-      "sha256": "fea7e4b1bc5b9479fd998960d75ca6922fbd914c732599d0753b49be97eb9bbb",
+      "sha256": "946bfa1393d0944579156188191e7eb9f9b0ba555f7da5b78ca5f4ea801c3fd5",
       "bytes": 266
     },
     {
       "path": "docs/data-quality-baseline.md",
-      "sha256": "73bba661cd0ba5f4e540c1f4df9669dca2c3b4f502a87a9579cf6ea120152f2c",
+      "sha256": "b23af72d677bf6aed514a5f0390f1313d73e8d8eae460c33d6ffaa0c319c30cb",
       "bytes": 2279
     },
     {
@@ -544,8 +544,8 @@
     },
     {
       "path": "docs/watchlist.md",
-      "sha256": "3f2e4110b6aecffa4babc9aef9af185510647f5717db78a0c6018512a324bcec",
-      "bytes": 2962
+      "sha256": "77d185a940ca40e57f399c5210c2ab28b5c04282401f9946b1661ecea3d0e1dd",
+      "bytes": 3198
     },
     {
       "path": "examples/README.md",
@@ -904,7 +904,7 @@
     },
     {
       "path": "tests/test_watchlist.py",
-      "sha256": "c8666614cdeb5835d31ed7d1a4660bf6d0e6c503032e1d664e62868ed9cefd58",
+      "sha256": "7e947f366b0b6e6270778d1084bb34a0c91f56a9b8cdd817e94932d490460538",
       "bytes": 3934
     }
   ]

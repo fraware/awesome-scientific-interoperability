@@ -1,5 +1,5 @@
 watchlist_version: 1.1.0
-reviewed_on: '2026-08-02'
+reviewed_on: '2026-09-22'
 items:
 - id: agent2agent-a2a-protocol
   name: Agent2Agent (A2A) Protocol
@@ -20,6 +20,27 @@ items:
   - Superseded by a finalized IEEE or domain standard with stronger governance.
   source_refs:
   - ref_id: a2a-protocol-org-v1-0-0
+    role: technical-definition
+- id: allowly-receipt-format
+  name: Allowly Receipt Format
+  url: https://github.com/Allowly-AI/allowly-receipt-format
+  candidate_section: Agents, Access, and Policy
+  status: needs-evidence
+  reason: Monitor as an emerging signed policy-decision receipt contract until independent scientific
+    implementations or deployments establish cross-system value.
+  missing_evidence:
+  - Independent scientific issuers and verifiers outside Allowly using the wire format.
+  - Scientific deployments showing interoperable decision-record exchange beyond the originating product.
+  reviewed_on: '2026-09-22'
+  review_due_on: '2027-03-22'
+  promotion_conditions:
+  - At least two independent scientific implementations exchange and verify receipts with shared test vectors.
+  - Boundary analysis shows distinct decision value beside GA4GH Passports, DUO, MCP, and provenance formats.
+  rejection_conditions:
+  - Remains an originating-vendor format without independent scientific adoption.
+  - A broader standard supersedes the wire format without a distinct scientific integration role.
+  source_refs:
+  - ref_id: github-com-allowly-ai-allowly-receipt-format
     role: technical-definition
 - id: cromwell
   name: Cromwell

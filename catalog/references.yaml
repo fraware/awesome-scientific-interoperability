@@ -901,6 +901,12 @@ references:
   type: specification
   publisher: Allen Institute and Blue Brain Project
   accessed_on: '2026-08-02'
+- id: github-com-allowly-ai-allowly-receipt-format
+  title: Allowly Receipt Format
+  url: https://github.com/Allowly-AI/allowly-receipt-format
+  type: specification
+  publisher: Allowly
+  accessed_on: '2026-09-22'
 - id: github-com-andrewyatz-refget-server-perl
   title: Refget reference server Perl implementation
   url: https://github.com/andrewyatz/refget-server-perl
