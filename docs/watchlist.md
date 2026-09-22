@@ -5,6 +5,7 @@ These resources are relevant but do not yet satisfy the main-list admission bar 
 Structured records live in `catalog/watchlist.yaml` and are validated against `schema/watchlist.schema.json`. Each prose line below must match the corresponding record's `name`, `url`, and `reason` fields exactly.
 
 - [Agent2Agent (A2A) Protocol](https://a2a-protocol.org/v1.0.0/) - Potential inclusion when scientific multi-agent systems adopt it substantively.
+- [Allowly Receipt Format](https://github.com/Allowly-AI/allowly-receipt-format) - Monitor as an emerging signed policy-decision receipt contract until independent scientific implementations or deployments establish cross-system value.
 - [Cromwell](https://cromwell.readthedocs.io/) - Potentially redirect to WDL or select as a reference implementation after comparison.
 - [Five Safes RO-Crate](https://zenodo.org/records/10376350) - Reassess after implementation growth in TRE-FX, DARE UK, and EOSC-ENTRUST.
 - [GA4GH Beacon v2](https://www.ga4gh.org/product/beacon-api/) - Federated genomic discovery is distinct, but GA4GH family concentration after VRS, Phenopackets, htsget, and refget blocks immediate admission.
