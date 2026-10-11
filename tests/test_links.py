@@ -105,6 +105,15 @@ class LinkClassificationTests(unittest.TestCase):
         self.assertEqual(result.classification, "permanent-failure")
         self.assertEqual(result.status, 404)
 
+    def test_transport_timeout_is_transient_and_retried(self) -> None:
+        opener = mock.Mock()
+        opener.open.side_effect = urllib.error.URLError(TimeoutError("The read operation timed out"))
+        with mock.patch.object(module.urllib.request, "build_opener", return_value=opener):
+            with mock.patch.object(module.time, "sleep"):
+                result = module.check_url("https://example.com/slow", self.policy, timeout=0.1)
+        self.assertEqual(result.classification, "transient-failure")
+        self.assertEqual(result.attempts, self.policy["retries"] + 1)
+
     def test_tls_failure(self) -> None:
         opener = mock.Mock()
         opener.open.side_effect = urllib.error.URLError(ssl.SSLError("certificate verify failed"))
