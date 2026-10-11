@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-08-02",
+  "generated_on": "2026-10-11",
   "file_count": 181,
   "files": [
     {
@@ -84,8 +84,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "416131a636d6c90b4174c9600c07f5a5e65a25743fe734ca22aa5cf38b6bca9b",
-      "bytes": 28974
+      "sha256": "aaab0ffb97603c4d1fcb3ac86e27737f2ad3ea80306d7c3d93c8602c8c78e223",
+      "bytes": 28988
     },
     {
       "path": "archive.md",
@@ -144,8 +144,8 @@
     },
     {
       "path": "catalog/references.yaml",
-      "sha256": "b66fbead85698c45568c7aeb0b03e5ceaf9632d68b115163bed34279c398cc52",
-      "bytes": 99095
+      "sha256": "df39f8a33bffa2925ba7f86e9b3817d8910cfab38d8477b6b3e45f46d0a72256",
+      "bytes": 99109
     },
     {
       "path": "catalog/resources.yaml",
@@ -164,8 +164,8 @@
     },
     {
       "path": "catalog/resources/foundations.yaml",
-      "sha256": "c2d935c1c494e9353b4193e1f2a134dd28890d38cec41167ce962ea3f4a623cf",
-      "bytes": 7161
+      "sha256": "107ab41cf9464b1ce80767bd7d60c491f695a06dcca63b622be30802d42f6d37",
+      "bytes": 7175
     },
     {
       "path": "catalog/resources/identifiers-and-discovery.yaml",
@@ -614,8 +614,8 @@
     },
     {
       "path": "scripts/check_links.py",
-      "sha256": "c395441223d7420b29df87fd691b0cfceef2d82784e3b83c4d04fb46e3f85e88",
-      "bytes": 12155
+      "sha256": "52a7254e1cf66f5ae16c6e62a48dd9e2103a72ead9f8199f223c7e8a4772486c",
+      "bytes": 12188
     },
     {
       "path": "scripts/check_review_freshness.py",
@@ -874,8 +874,8 @@
     },
     {
       "path": "tests/test_links.py",
-      "sha256": "dd3209c83f9fd799e5fb9cef1d37319cc7695f8cbf40cb6440f7474dc505d5c9",
-      "bytes": 4785
+      "sha256": "7a24945431c09e280dd4684953eb0b64d6f15a3be7aa351783f5eadc7df77039",
+      "bytes": 5373
     },
     {
       "path": "tests/test_problem_index.py",

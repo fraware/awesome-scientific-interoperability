@@ -89,10 +89,10 @@ def _transport_classification(exc: BaseException) -> str:
     text = str(exc).lower()
     if isinstance(exc, ssl.SSLError) or "ssl" in text or "certificate" in text:
         return "tls-or-dns-failure"
+    if isinstance(exc, TimeoutError) or "timed out" in text or "timeout" in text or "temporarily" in text:
+        return "transient-failure"
     if isinstance(exc, socket_error_types()) or "name or service not known" in text or "getaddrinfo" in text:
         return "tls-or-dns-failure"
-    if "timed out" in text or "timeout" in text or "temporarily" in text:
-        return "transient-failure"
     return "tls-or-dns-failure"
 
 

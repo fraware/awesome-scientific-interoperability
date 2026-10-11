@@ -48,7 +48,7 @@ General scientific software, broad open-science guidance, private connectors, an
 
 - [Cross-Domain Interoperability Framework (CDIF)](https://cdif.codata.org/) - Discovery, integration, provenance, and semantic profiles for reusing research data across scientific domains.
 - [EOSC Interoperability Framework](https://eosc.eu/eosc-interoperability-framework/) - Technical, semantic, organizational, and legal guidance for federating European research data and services.
-- [FAIR Digital Object Framework](https://fairdo.org/specifications/) - Typed and persistently identified digital objects designed for machine action across repositories and automated services.
+- [FAIR Digital Object Framework](https://fairdo.org/documents/fdo_specifications/) - Typed and persistently identified digital objects designed for machine action across repositories and automated services.
 - [FAIR Principles](https://www.go-fair.org/fair-principles/) - Principles for machine-actionable findability, accessibility, interoperability, and reuse across digital research objects and services.
 
 ## Identifiers and Discovery
