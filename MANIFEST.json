@@ -49,8 +49,8 @@
     },
     {
       "path": ".github/workflows/links.yml",
-      "sha256": "50a72279ce1461d7085cf94228e15d059d6bfabb2fb285c1913f47a728d80ad5",
-      "bytes": 671
+      "sha256": "03a9256e0e82c526cf736496bba56838179fdc42690ae6617dbdd9153eee8581",
+      "bytes": 1051
     },
     {
       "path": ".github/workflows/pages.yml",

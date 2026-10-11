@@ -1,6 +1,22 @@
 name: Links
 
 on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "catalog/**"
+      - "README.md"
+      - "scripts/check_links.py"
+      - "config/link-policy.yaml"
+      - ".github/workflows/links.yml"
+  push:
+    branches: [main]
+    paths:
+      - "catalog/**"
+      - "README.md"
+      - "scripts/check_links.py"
+      - "config/link-policy.yaml"
+      - ".github/workflows/links.yml"
   workflow_dispatch:
   schedule:
     - cron: "17 6 * * 1"
