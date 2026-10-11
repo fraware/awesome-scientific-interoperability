@@ -111,7 +111,7 @@ resources:
     decision_record: docs/reviews/
 - id: fair-digital-object-framework
   name: FAIR Digital Object Framework
-  url: https://fairdo.org/specifications/
+  url: https://fairdo.org/documents/fdo_specifications/
   section: Foundations
   resource_kind: specification
   interoperability_layers:
